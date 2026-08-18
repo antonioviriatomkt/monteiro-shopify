@@ -134,7 +134,7 @@ order,name,family,page,row,col,hex,note,swatch_file,px,status,shopify_name,class
 133,MIMOSA,Amarelos / dourados,17,1,6,#DCBD90,,MIMOSA.jpg,467x467,live,MIMOSA,[6/7],
 134,PRIMROSE,Amarelos / dourados,17,2,1,#FCB204,,PRIMROSE.jpg,467x467,live,PRIMROSE,[6/7],
 135,SUNNY,Amarelos / dourados,17,2,2,#FAAA52,,SUNNY.jpg,467x467,live,SUNNY,[6/7],
-136,DUNE,Amarelos / dourados,17,2,3,#F9B65F,,DUNE.jpg,623x623,new,,,
+136,DUNE,Amarelos / dourados,17,2,3,#F9B65F,rename pendente de MEDIFLEX DESERT,DUNE.jpg,623x623,mediflex-rename-pending,,,CHANCE Mediflex (como DESERT)
 137,BUTTERCUP,Amarelos / dourados,17,2,4,#FAD87D,,BUTTERCUP.jpg,467x467,live,BUTTERCUP,[6/7],
 138,SHEEN,Amarelos / dourados,17,2,6,#D4B96D,,SHEEN.jpg,467x467,live,SHEEN,[6/7],
 139,FUSION,Amarelos / dourados,17,3,1,#FBBA01,,FUSION.jpg,467x467,live,FUSION,[6/7],
@@ -160,7 +160,7 @@ order,name,family,page,row,col,hex,note,swatch_file,px,status,shopify_name,class
 159,CACTUS,Verdes,18,2,4,#4D6630,,CACTUS.jpg,467x467,live,CACTUS,[7/7],
 160,EDEN,Verdes,18,2,5,#204832,,EDEN.jpg,467x467,live,EDEN,[7/7],CHANCE Crib 7 | B1
 161,DRAGONFLY,Verdes,18,2,6,#304136,,DRAGONFLY.jpg,467x467,live,DRAGONFLY,[7/7],
-162,OASIS,Verdes,18,3,1,#ACB850,,OASIS.jpg,624x623,new,,,
+162,OASIS,Verdes,18,3,1,#ACB850,rename pendente de MEDIFLEX SHALE,OASIS.jpg,624x623,mediflex-rename-pending,,,CHANCE Mediflex (como SHALE)
 163,LIME,Verdes,18,3,2,#AEB289,,LIME.jpg,467x467,new,,,CHANCE Mediflex
 164,CELADON,Verdes,18,3,3,#686856,,CELADON.jpg,467x467,live,CELADON,[7/7],
 165,CAMPSITE,Verdes,18,3,4,#444236,,CAMPSITE.jpg,467x467,live,CAMPSITE,[7/7],
@@ -178,7 +178,7 @@ order,name,family,page,row,col,hex,note,swatch_file,px,status,shopify_name,class
 177,VICTORIA,Aquas / turquesas,19,1,4,#275067,,VICTORIA.jpg,623x623,new,,,CHANCE Mediflex
 178,YALE,Aquas / turquesas,19,1,5,#36596E,,YALE.jpg,467x467,live,YALE,[4/7],
 179,SHERPA,Aquas / turquesas,19,1,6,#1A313B,,SHERPA.jpg,467x467,live,SHERPA,[4/7],
-180,LAGOON,Aquas / turquesas,19,2,1,#5BB8AE,,LAGOON.jpg,623x624,new,,,
+180,LAGOON,Aquas / turquesas,19,2,1,#5BB8AE,rename pendente de MEDIFLEX OCEAN,LAGOON.jpg,623x624,mediflex-rename-pending,,,CHANCE Mediflex (como OCEAN)
 181,ACQUAGREEN,Aquas / turquesas,19,2,2,#01A699,,ACQUAGREEN.jpg,467x467,live,ACQUAGREEN,[4/7],
 182,ISLAND,Aquas / turquesas,19,2,3,#018695,,ISLAND.jpg,467x467,live,ISLAND,[4/7],
 183,PERSIAN,Aquas / turquesas,19,2,4,#3E8184,,PERSIAN.jpg,467x467,live,PERSIAN,[4/7],

@@ -50,9 +50,17 @@ product setup (e.g. a dedicated Bioblend product, cosmetic product/colour rename
 Performance-Fabrics content is the *other* launch gate but is tracked separately.
 
 **Done / de-risked:** the six grade collection pages already carry **datasheet-accurate specs**
-(DC 073.01) with no `[TO CONFIRM]`; the Mediflex colour renames (Desert→Dune, Ocean→Lagoon,
-Shale→Oasis) are **live**; the "DOWNLOAD CATALOGUE" CTA → the CHANCE 2.0 catalogue PDF is wired on
-the hub + all six grade pages; the Classic `templateSuffix` handle/translation conflict is resolved.
+(DC 073.01) with no `[TO CONFIRM]`; ~~the Mediflex colour renames (Desert→Dune, Ocean→Lagoon,
+Shale→Oasis) are **live**~~ *(see correction below)*; the "DOWNLOAD CATALOGUE" CTA → the CHANCE 2.0
+catalogue PDF is wired on the hub + all six grade pages; the Classic `templateSuffix`
+handle/translation conflict is resolved.
+
+> ⚠️ **Correction 2026-08-18 — the Mediflex renames are NOT live.** Read from the store twice:
+> `mediflex-collection` still carries **DESERT, OCEAN and SHALE**; DUNE, LAGOON and OASIS do not
+> exist on it. The rename is *designed but unapplied*. It matters because all three old names
+> **collide with different Classic colours of the same name** (DESERT on [5/7], OCEAN on [4/7],
+> SHALE on [1/7]) — which is exactly what the rename was meant to resolve. The AGO2026 catalogue
+> carries **both** sides of each pair, confirming the intent. Pending work, not done work.
 
 **Not gating (per client):** the migration/IA decisions (Sectors hub URL, redirect plan, About-Us
 merge) — real work, but not what's holding Chance 2.0.
