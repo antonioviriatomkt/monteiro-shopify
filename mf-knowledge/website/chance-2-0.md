@@ -20,11 +20,20 @@ entry, grade-cards section) is built and previewable. What's missing before it c
 **Decision confirmed with the client (2026-07-15):**
 - The launch is **held** until all marketing material is ready (the same hold that pauses the whole
   [June 2026 redesign](/website/june-2026-redesign.md)).
-- Chance 2.0 was **made invisible on the homepage** for the (now-held) launch — `chance_2_feature`
-  is `disabled: true` in `templates/index.json`.
+- ~~Chance 2.0 was **made invisible on the homepage** for the (now-held) launch — `chance_2_feature`
+  is `disabled: true` in `templates/index.json`.~~ **Reverted 2026-08-18:** the band is **enabled**
+  and stays enabled. Hiding it was only a contingency for launching before Chance 2.0 was ready.
 - A stop-gap **editorial LP for the original Chance** (`/pages/chance-lp`, "CHANCE / 236 SHADES") was
   built as a fallback for going live *without* Chance 2.0. **It is now shelved / no longer needed** —
   the plan is to **keep the Chance 2.0 system and finish it**, not revert to original Chance.
+
+**🔴 Blocking item — Bioblend contains the Peel product (verified live 2026-08-18).** The
+`chance-bioblend` collection holds **`peel-collection`**, and the grade page renders that product
+directly with its title block suppressed — so **Peel is being presented as CHANCE Bioblend**, while
+Peel also lives at `/pages/peel-collection` and `/products/peel-collection`. This contradicts the
+2026-07-13 client correction that Bioblend is a **separate new collection**, not a Peel rebrand.
+Duplicate content and a factual misstatement of what the grade is. **Bioblend needs its own product
+before launch.** (The audit flagged this as open on 2026-07-13; it is still open.)
 
 **Blocking item — Chance 2.0 colour samples (all four aspects open):**
 1. **Swatch images missing** — no colour swatch images exist on any grade variant yet (the

@@ -10,6 +10,12 @@ visibility: private
 confidence: high
 ---
 
+> **Update 2026-08-18 — the homepage de-scoping is void.** The `performance_fabrics_feature` and
+> `chance_2_feature` bands are **enabled** on the sandbox and stay enabled. Disabling them was a
+> contingency for launching *before* PF and Chance 2.0 were ready; the client chose to launch with
+> everything ready, so it no longer applies. Any statement below that they are `disabled: true` is
+> superseded.
+
 > **Launch on hold (2026-07-15).** Ivana has decided to hold the whole launch until all
 > marketing material is available — no target date. The theme is built and previewable; what
 > remains is **content, not code**: finish **Chance 2.0** (colour samples + catalogue/copy) and the
