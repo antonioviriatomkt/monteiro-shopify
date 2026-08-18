@@ -55,12 +55,17 @@ Shale→Oasis) are **live**~~ *(see correction below)*; the "DOWNLOAD CATALOGUE"
 catalogue PDF is wired on the hub + all six grade pages; the Classic `templateSuffix`
 handle/translation conflict is resolved.
 
-> ⚠️ **Correction 2026-08-18 — the Mediflex renames are NOT live.** Read from the store twice:
-> `mediflex-collection` still carries **DESERT, OCEAN and SHALE**; DUNE, LAGOON and OASIS do not
-> exist on it. The rename is *designed but unapplied*. It matters because all three old names
-> **collide with different Classic colours of the same name** (DESERT on [5/7], OCEAN on [4/7],
-> SHALE on [1/7]) — which is exactly what the rename was meant to resolve. The AGO2026 catalogue
-> carries **both** sides of each pair, confirming the intent. Pending work, not done work.
+> ⚠️ **Correction 2026-08-18 — the renames were recorded as done but had never been applied.**
+> Read from the store twice: `mediflex-collection` still carried **DESERT, OCEAN and SHALE**.
+> They matter because all three **collide with different Classic colours of the same name**
+> (DESERT on [5/7], OCEAN on [4/7], SHALE on [1/7]) — exactly what the rename was meant to resolve —
+> and the AGO2026 catalogue carries **both** sides of each pair.
+>
+> ✅ **Applied for real on 2026-08-18**, after Ivana's stock-service email re-confirmed them in her
+> own hand (`Desert > DUNE`, `Ocean > LAGOON`, `Shale > OASIS`). Done as option-value renames on the
+> live product: handle `mediflex-collection` untouched, 37 variants intact, images intact. This is
+> the store's highest-value product page (172 clicks / 7,161 impressions in 6 months), so the handle
+> stays as-is permanently.
 
 **Not gating (per client):** the migration/IA decisions (Sectors hub URL, redirect plan, About-Us
 merge) — real work, but not what's holding Chance 2.0.
