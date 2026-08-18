@@ -109,7 +109,7 @@
         "title_width": 12,
         "text": "<p>Use this text to share information about your store. Describe products, share announcements, or welcome customers to your store.</p>",
         "button_label": "View here",
-        "button_link": "shopify://pages/fabrics-by-industry",
+        "button_link": "shopify://pages/sectors",
         "text_alignment": "center",
         "text_width": 50,
         "button_style": "auto",

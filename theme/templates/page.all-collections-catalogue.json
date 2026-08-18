@@ -168,7 +168,7 @@
             "title": "Industry",
             "text": "<p>Contract, Mobility, Outdoor, Shoes, Fashion Accessories, and Sustainable</p>",
             "button_label": "View all",
-            "link": "shopify://pages/fabrics-by-industry"
+            "link": "shopify://pages/sectors"
           }
         },
         "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-1": {
@@ -180,7 +180,7 @@
             "title": "Applicability",
             "text": "<p>Automotive, Aviation, Fashion, Fitness, Healthcare, Hospitality, Marine Interior, Mass Transportation, Motorcycle, Office, Residential and Train</p>",
             "button_label": "view",
-            "link": "shopify://pages/fabrics-by-industry"
+            "link": "shopify://pages/sectors"
           }
         },
         "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-2": {

@@ -158,7 +158,7 @@
         "grid": 4,
         "grid_mobile": "2",
         "show_view_all": true,
-        "view_all_link": "shopify://pages/fabrics-by-industry",
+        "view_all_link": "shopify://pages/sectors",
         "alternate_bg_color": false
       }
     },
