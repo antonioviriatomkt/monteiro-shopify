@@ -415,6 +415,12 @@
             "collection": "mass-transportation"
           }
         },
+        "4d326f44-8216-456a-affe-30b57642ca2e": {
+          "type": "collection",
+          "settings": {
+            "collection": "train"
+          }
+        },
         "0f9e4487-e7be-4e2f-bdd4-d6711797d613": {
           "type": "collection",
           "settings": {
@@ -456,6 +462,7 @@
         "bd672009-6c22-47c6-a4b7-f338872136db",
         "441f9817-0c94-4452-931a-a5084b1c9e15",
         "aed32177-75a0-4ebf-94c4-d0af8aa9fe08",
+        "4d326f44-8216-456a-affe-30b57642ca2e",
         "0f9e4487-e7be-4e2f-bdd4-d6711797d613",
         "f14dc6b9-c200-4857-ab98-a6506880298d",
         "57d32a76-a392-4255-9400-361786ad88c9",

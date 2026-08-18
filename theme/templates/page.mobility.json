@@ -175,6 +175,21 @@
             "text_alignment": "position--left position--bottom"
           }
         },
+        "image_UgyRmk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TRAINS-FABRICS-UPHOLSTERY.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "TRAINS",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
         "image_mJMhbz": {
           "type": "image",
           "settings": {
@@ -210,6 +225,7 @@
         "image_cReCgL",
         "image_GPijhd",
         "image_zUF3qV",
+        "image_UgyRmk",
         "image_mJMhbz",
         "image_TxNn7P"
       ],
