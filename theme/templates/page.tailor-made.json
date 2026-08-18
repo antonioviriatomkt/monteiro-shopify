@@ -1,0 +1,297 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 50px;}",
+        "p {font-size: 20px;}"
+      ],
+      "name": "Hero",
+      "settings": {
+        "image": "shopify://shop_images/5.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 450,
+        "subheading": "Engineered to your specification",
+        "title": "Tailor-made Solutions",
+        "title_size": 46,
+        "title_width": 16,
+        "heading_h1": true,
+        "text": "<p>From bespoke fabric development to colour matching and bulk customization — we build to your exact technical and design requirements.</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "ca79e6f3-25bb-40af-a911-faa1f3265a9b": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Production",
+        "title": "Custom Fabric Production",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We work closely with our clients to develop and produce fabrics that are tailormade to their exact specifications. We collaborate with them to understand their unique needs, including fabric composition, weight, texture, pattern, color, durability, flame retardancy, design, safety and finishing treatments. Our goal is to create fabrics that meet their specific requirements and preferences.</p>",
+        "button_label": "Start a custom project",
+        "button_link": "shopify://pages/contact",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "secondary",
+        "image": "shopify://shop_images/M_R114.jpg",
+        "video_shopify": "shopify://files/videos/fabrics manufacturers portugal.mp4",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "23ad5fcc-4dd0-4111-8981-4298a968cc3c": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Design & development",
+        "title": "Design and Development Assistance",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We provide design and development support to our clients, offering guidance and expertise in choosing suitable fabric options. We can suggest innovative designs and assist in the development of new fabric blends or finishes. Our team can conduct research and development activities to create new fabric variations based on client requests.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Mara-Neutros_20231.jpg",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "7b123a0e-2239-46a1-acad-e98cbe4c92e2": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Quality & testing",
+        "title": "Quality Control and Testing",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We implement tailored quality control measures and testing services to ensure that our fabrics meet the highest standards. We can conduct specific tests or inspections requested by our clients, ensure compliance with industry regulations, and address any specific quality concerns or requirements they may have.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/M_R165.jpg",
+        "video_shopify": "shopify://files/videos/quality control fabrics.mp4",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "dbe8e30a-0bcf-4e5b-8b8d-c6405e3a926a": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Consultation",
+        "title": "Consultation Services",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Our team provides consultation services to help clients select the most suitable fabrics for their intended purposes. We analyze their requirements and provide expert advice on fabric selection based on factors like durability, functionality, aesthetics, and cost-effectiveness.</p>",
+        "button_label": "Book a consultation",
+        "button_link": "shopify://pages/contact",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "secondary",
+        "image": "shopify://shop_images/decor-fabrics-furniture9.jpg",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bc096427-1c48-44b3-923b-c4492e6aa0a0": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Bulk orders",
+        "title": "Bulk Order Customization",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We offer personalized solutions for clients placing large or bulk orders. This may include customization options such as printing client logos or designs onto the fabrics, incorporating special features, or adapting fabric characteristics to suit specific applications or industries.</p>",
+        "button_label": "Enquire about bulk orders",
+        "button_link": "shopify://pages/contact",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "secondary",
+        "image": "shopify://shop_images/DX5A0733.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "a036f2fb-82c9-4e0d-9289-9d0d7eb0915d": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Colour matching",
+        "title": "Colour matching",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Colour is one of the most fundamental aspects of fabric design and contributes greatly to the overall success of a Product. With our state-of-the-art colour-matching technology, we can match the colour of your sample. </p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/M_R143.jpg",
+        "video_shopify": "shopify://files/videos/3a.mp4",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "testimonials_XHnnig": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_i9mt6R": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "The Vila Foz Hotel & Spa",
+            "text": "<p>The Vila Foz Hotel & Spa won three of the World Luxury Hotel Awards, namely the Best Luxury Architecture Design in Southern Europe and the Best Interior Design Spa in Portugal.  Nini Andrade Silva top interior designer, chose our Portus BLT for the sun loungers' pillows, making the space not only comfortable but beautiful.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/savoy-palace-nini-andrade-silva",
+            "image1": "shopify://shop_images/1villa-foz-hotel-fabrics-spa.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_VWjf3M": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "Official McDonald's Supplier",
+            "text": "<p>Monteiro Fabrics Sets the Stage for a Greener Future at McDonald's Worldwide Convention 2024</p>",
+            "button_label": "Know more",
+            "link": "shopify://blogs/news/monteiro-fabrics-mcdonalds",
+            "image1": "shopify://shop_images/MCDONALDS_FABRICS_SUPPLIER.png",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_m3HnHr": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 0,
+            "title": "Savoy Palace Hotel by Nini Andrade",
+            "text": "<p>Named by Forbes the number one Hotel to visit in Madeira, the Savoy Palace is synonymous with luxury and high-end tourism, so it’s an honour to be a small part of that experience. The design was meticulously thought by Nini Andrade, who chose our fabrics to complement the Palace’s amazing architecture.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/savoy-palace-nini-andrade-silva",
+            "image1": "shopify://shop_images/1Savoy-Palace-Hotel--fabrics.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_yGJpbr": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 0,
+            "title": "Canteen by PF Architecture studio",
+            "text": "<p>Monteiro Fabrics Canteen project at ArchDaily \"An exciting project in its challenge and goals\" designed by Pedro Ferreira Architecture Studio to create a comfortable and efficient space that respected the industrial character of the building.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/cantina-project",
+            "image1": "shopify://shop_images/1canteen-fabrics--arch-daily1.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_i9mt6R",
+        "testimonial_VWjf3M",
+        "testimonial_m3HnHr",
+        "testimonial_yGJpbr"
+      ],
+      "custom_css": [
+        "p {text-align: left;}",
+        "h3 {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Trusted on demanding projects",
+        "button_style": "primary",
+        "alternate_bg_color": false
+      }
+    },
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315": {
+      "type": "rich-text",
+      "name": "Closing CTA",
+      "settings": {
+        "subheading": "Do you have a project?",
+        "title": "Let's engineer your solution.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us your specification — fabric composition, performance standards, colour, finish — and our team will develop it with you.</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "ca79e6f3-25bb-40af-a911-faa1f3265a9b",
+    "23ad5fcc-4dd0-4111-8981-4298a968cc3c",
+    "7b123a0e-2239-46a1-acad-e98cbe4c92e2",
+    "dbe8e30a-0bcf-4e5b-8b8d-c6405e3a926a",
+    "bc096427-1c48-44b3-923b-c4492e6aa0a0",
+    "a036f2fb-82c9-4e0d-9289-9d0d7eb0915d",
+    "testimonials_XHnnig",
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315"
+  ]
+}

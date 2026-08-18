@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_79VTGg": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/banner_medical_v6.png",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "Medical",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Upholstery fabrics for healthcare environments such as hospitals, clinics and operating theaters.</p>",
+        "enlarge_text": true,
+        "button_label": "Request a quote today",
+        "image_link": "",
+        "overlay_position": "position--left position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "image_with_text_bLEarY": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "Certified performance. Easy to clean.",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>18 healthcare collections designed for hospitals, clinics, and medical interiors, combining antibacterial protection, biocompatibility, alcohol and bleach resistance, high abrasion durability, and certified fire performance.</p>",
+        "button_label": "Speak to our specialists",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MR_Electra_Deep_OR.webp",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_fMYTxi": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Certified performance. Easy to clean.",
+        "title_size": 40,
+        "title_width": 36,
+        "heading_h1": false,
+        "text": "<p>18 healthcare collections designed for hospitals, clinics, and medical interiors, combining antibacterial protection, biocompatibility, alcohol and bleach resistance, high abrasion durability, and certified fire performance.</p>",
+        "image_width": 120,
+        "button_label": "Speak to our specialists",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "product_list_xh4Ldm": {
+      "type": "product-list",
+      "blocks": {
+        "product_UXqX7B": {
+          "type": "product",
+          "settings": {
+            "product": "mediflex-collection"
+          }
+        },
+        "product_DM4xJC": {
+          "type": "product",
+          "settings": {
+            "product": "electra-collection"
+          }
+        },
+        "product_WQXR8A": {
+          "type": "product",
+          "settings": {
+            "product": "mara-collection"
+          }
+        },
+        "product_ywtA9T": {
+          "type": "product",
+          "settings": {
+            "product": "manta-collection"
+          }
+        },
+        "product_AGjhaJ": {
+          "type": "product",
+          "settings": {
+            "product": "glam-collection"
+          }
+        },
+        "product_QBTawg": {
+          "type": "product",
+          "settings": {
+            "product": "laguna-collection"
+          }
+        },
+        "product_mrcWRY": {
+          "type": "product",
+          "settings": {
+            "product": "jazz-collection"
+          }
+        },
+        "product_cdqpRc": {
+          "type": "product",
+          "settings": {
+            "product": "chance-collection-iv"
+          }
+        },
+        "product_Fa6x8n": {
+          "type": "product",
+          "settings": {
+            "product": "paiva-collection"
+          }
+        },
+        "product_qNUjX7": {
+          "type": "product",
+          "settings": {
+            "product": "beta-collection"
+          }
+        },
+        "product_jGkfre": {
+          "type": "product",
+          "settings": {
+            "product": "portus-collection"
+          }
+        },
+        "product_QbacQz": {
+          "type": "product",
+          "settings": {
+            "product": "garbe-collection"
+          }
+        },
+        "product_xmiHkR": {
+          "type": "product",
+          "settings": {
+            "product": "villa-nabuck-collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_UXqX7B",
+        "product_DM4xJC",
+        "product_WQXR8A",
+        "product_ywtA9T",
+        "product_AGjhaJ",
+        "product_QBTawg",
+        "product_mrcWRY",
+        "product_cdqpRc",
+        "product_Fa6x8n",
+        "product_qNUjX7",
+        "product_jGkfre",
+        "product_QbacQz",
+        "product_xmiHkR"
+      ],
+      "name": "Product list",
+      "settings": {
+        "title": "Product list",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_79VTGg",
+    "image_with_text_bLEarY",
+    "main",
+    "rich_text_fMYTxi",
+    "product_list_xh4Ldm"
+  ]
+}

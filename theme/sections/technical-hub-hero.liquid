@@ -1,0 +1,85 @@
+{% comment %}
+  Technical Hub hero — a distinct "resource library" header for the Technical Hub blog,
+  deliberately different from the photographic Newsroom hero: a flat brand-blue band with a
+  subtle blueprint grid. Emits the page H1.
+{% endcomment %}
+
+{%- assign bg = section.settings.bg_color | default: '#2F519B' -%}
+{%- assign fg = section.settings.text_color | default: '#FFFFFF' -%}
+
+<section class="section-technical-hub-hero" data-section-type="technical-hub-hero">
+  {% style %}
+    #th-{{ section.id }} { position: relative; overflow: hidden; background: {{ bg }}; color: {{ fg }}; }
+    #th-{{ section.id }}::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 44px 44px;
+      -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, #000 55%, transparent 100%);
+              mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, #000 55%, transparent 100%);
+    }
+    #th-{{ section.id }}::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+      background: rgba(255,255,255,0.65);
+    }
+    #th-{{ section.id }} .th-inner {
+      position: relative; z-index: 1; max-width: 820px; margin: 0 auto; text-align: center;
+      padding: {{ section.settings.pad_desktop }}px 24px;
+    }
+    #th-{{ section.id }} .th-eyebrow {
+      color: {{ fg }}; text-transform: uppercase; letter-spacing: 0.16em; font-size: 13px; font-weight: 600;
+      opacity: 0.82; margin: 0 0 20px; display: inline-flex; align-items: center; gap: 10px;
+    }
+    #th-{{ section.id }} .th-eyebrow::before,
+    #th-{{ section.id }} .th-eyebrow::after { content: ""; width: 26px; height: 1px; background: currentColor; opacity: 0.6; }
+    #th-{{ section.id }} .th-title { color: {{ fg }}; font-size: 56px; line-height: 1.08; font-weight: 400; margin: 0; letter-spacing: -0.01em; }
+    #th-{{ section.id }} .th-sub { color: {{ fg }}; margin: 20px auto 0; max-width: 640px; font-size: 18px; line-height: 1.6; opacity: 0.9; }
+    #th-{{ section.id }} .th-sub p { margin: 0; }
+    #th-{{ section.id }} .th-topics {
+      color: {{ fg }}; margin-top: 26px; font-size: 13px; letter-spacing: 0.04em; opacity: 0.75;
+    }
+    @media (max-width: 749px) {
+      #th-{{ section.id }} .th-inner { padding: {{ section.settings.pad_mobile }}px 20px; }
+      #th-{{ section.id }} .th-title { font-size: 34px; }
+      #th-{{ section.id }} .th-sub { font-size: 16px; }
+      #th-{{ section.id }} .th-eyebrow::before,
+      #th-{{ section.id }} .th-eyebrow::after { width: 16px; }
+    }
+  {% endstyle %}
+
+  <div id="th-{{ section.id }}">
+    <div class="th-inner" data-cc-animate>
+      {% if section.settings.eyebrow != blank %}
+        <div class="th-eyebrow">{{ section.settings.eyebrow | escape }}</div>
+      {% endif %}
+      <h1 class="th-title">{{ section.settings.title | default: blog.title | escape }}</h1>
+      {% if section.settings.subhead != blank %}
+        <div class="th-sub">{{ section.settings.subhead }}</div>
+      {% endif %}
+      {% if section.settings.topics != blank %}
+        <div class="th-topics">{{ section.settings.topics | escape }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Technical Hub hero",
+    "class": "section-technical-hub-hero-wrap",
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Resource Library" },
+      { "type": "text", "id": "title", "label": "Heading (defaults to blog title)", "default": "Technical Hub" },
+      { "type": "richtext", "id": "subhead", "label": "Subheading", "default": "<p>Fire ratings, cleaning standards, healthcare specifications and certification — the technical know-how behind Monteiro performance fabrics.</p>" },
+      { "type": "text", "id": "topics", "label": "Topics line", "default": "Fire safety · Cleaning & hygiene · Healthcare · Certification" },
+      { "type": "header", "content": "Layout" },
+      { "type": "range", "id": "pad_desktop", "min": 60, "max": 180, "step": 10, "unit": "px", "label": "Vertical padding (desktop)", "default": 110 },
+      { "type": "range", "id": "pad_mobile", "min": 40, "max": 120, "step": 10, "unit": "px", "label": "Vertical padding (mobile)", "default": 70 },
+      { "type": "header", "content": "Colours" },
+      { "type": "color", "id": "bg_color", "label": "Background", "default": "#2F519B" },
+      { "type": "color", "id": "text_color", "label": "Text", "default": "#FFFFFF" }
+    ],
+    "presets": [ { "name": "Technical Hub hero" } ]
+  }
+{% endschema %}

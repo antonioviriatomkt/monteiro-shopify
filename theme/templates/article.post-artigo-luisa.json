@@ -1,0 +1,487 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8926e558-9838-4f0d-9a19-bbf21b16c5e5": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/upholstery-fabrics-chairs3.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "edc35c5e-389f-4cb2-80ce-0189359e589b": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "{{ article.title }}",
+        "title_size": 36,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p>Imagine If Every Hotel Chose PEEL</p>",
+        "image": "shopify://shop_images/logo-png-1-monteiro-fabrics.jpg",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_XmAqYx": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 36,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p>The resurgence of business and tourism travel in the post-pandemic world has fueled a boom in hotel renovations and new constructions [2]. Global demand for hospitality upholstery fabrics is expected to grow by 30% between 2023 and 2028. Currently, approximately 67% of the fabrics used in this sector are synthetic, relying heavily on fossil-based raw materials [1].</p><p>On average, each hotel room requires between 11 and 17 m² of upholstery fabric, priced between €7 and €15 per square meter. Based on projected growth, 2 to 6 million new hotel rooms in Europe alone may need upholstering by 2028. With an average fabric weight of 450 g/m², this translates to 11 to 24 thousand tons of material—nearly all of it synthetic.</p><p>Now, imagine if all of this synthetic fabric were replaced with <strong>PEEL</strong>—a renewable, plant-based alternative developed by Monteiro Fabrics. This single shift could eliminate the need for 19 to 41 thousand tons of fossil-based inputs globally, replacing them with renewable resources that are significantly more biodegradable and less ecotoxic (according to Monteiro Fabrics internal composting studies and life cycle assessments)<br/><br/></p>",
+        "image": "shopify://shop_images/1100vegan-white_f21b00d3-9446-4bea-94fb-b670e1aef7f9.png",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "1d862462-6fb2-4740-a51d-020f8acd47dd": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Fossil Based Material Savings with PEEL",
+        "title": "65% Biobased *",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Using PEEL as an alternative to synthetic upholstery textiles in the hospitality sector – estimated projection for 2028.</p><p> -</p><p><strong>Region | Estimated Savings</strong></p><p><strong>Europe | 5,000 – 10,000 ton</strong></p><p><strong>North America | 5,000 – 11,000 ton</strong></p><p><strong>Asia Pacific | 7,000 – 14,000 ton</strong></p><p><strong>Other Regions | 3,000 – 6,000 ton</strong></p><p>  </p><p><strong>➤ Total 19,000 – 41,000 ton</strong></p><p><strong> -</strong></p><p><em>*ASTM D6866-22-Method B</em></p><p></p>",
+        "button_label": "PEEL COLECTION",
+        "button_link": "shopify://pages/peel-collection",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/PEEL-COLLECTION_17d0204d-b0fc-4a44-8c1c-09ff8dd148d6.jpg",
+        "image_width": 74,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "accordions_QUCyrk": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_b4jX6Y": {
+          "type": "accordion",
+          "settings": {
+            "icon": "percent",
+            "title": "A glance at the data:",
+            "text": "<p>Global Consumption (2023): 3.9 billion €</p><p>Expected Growth by 2028: +30%</p><p>Europe’s Share of Demand Growth: 25,2%</p><p>Hospitality Application Share: 37%</p><p>Share of Synthetic Fabrics: 67%</p><p> -</p><p><strong>Hotel Room Upholstery Use:</strong></p><ul><li>Average Fabric Use: 11–17 m²/room</li><li>Price Range: 7–15 €/m²</li><li>Average Fabric Weight: 450 g/m²</li><li>Re-upholstery Cycle (Mid-range Hotels): 5–7 years</li></ul>",
+            "open": true
+          }
+        }
+      },
+      "block_order": [
+        "accordion_b4jX6Y"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Upholstery Fabric by the Numbers",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "cf7ca0e0-fa43-4dee-9975-5fc9db4d1584": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "3dc40745-d692-4039-a5ed-40e1d6e17b76": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/fabrics_upholstery_manufacturers5.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/sustainable-fabrics-upholstery1_5ad908c3-07f2-4d7d-8b06-d33319e63b4a.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "648689d0-d5b6-48c5-829b-eff4f3b354ce": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/coated-fabrics-home-decor2_fda9c194-c172-4be6-b811-880dc7c519dd.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        }
+      },
+      "block_order": [
+        "3dc40745-d692-4039-a5ed-40e1d6e17b76",
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-3",
+        "648689d0-d5b6-48c5-829b-eff4f3b354ce"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "square",
+        "alternate_bg_color": false,
+        "full_width": true
+      }
+    },
+    "dc784b1e-548c-4ffe-823f-b0ea3d4bbf1e": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Durability: The Other Side of Sustainability",
+        "title_size": 36,
+        "title_width": 38,
+        "heading_h1": false,
+        "text": "<p>Another essential aspect of sustainable design is <strong>durability</strong>. High-performance upholstery—like PEEL—can drastically reduce the need for frequent refurbishments. Mid-range hotels typically renovate every 5 to 7 years, but if the lifespan of upholstery is extended by just 3 to 5 years, material usage could drop by as much as 40%.</p><p>Durability is largely defined by rubbing resistance. While standard uncoated fabrics rarely exceed 100,000 Martindale cycles, high-end materials like PEEL can reach 400,000 cycles (ISO 5470-2). PEEL also delivers superior resistance to fraying, staining, and shape deformation, all while remaining easy to clean and disinfect.</p><p>Leather is often seen as a naturally durable and biobased contract upholstery alternative—but it also presents <strong>notable drawbacks</strong>. High costs and <strong>limited availability</strong> make it insufficient to meet the scale of demand in the hospitality sector. Furthermore, to match the cleanability and surface resistance of PVC-coated fabrics, leather must often be heavily coated—<strong>diminishing the relevance of its biobased appeal</strong>.</p><p><strong>PEEL provides a more practical solution</strong>: it matches or exceeds leather in durability and hygiene performance, while being more cost-effective, widely available, and aligned with the growing demand for scalable, sustainable materials.</p><p>Procurement strategies in the hospitality industry are evolving. Durability metrics and life cycle cost analyses are replacing simplistic price-based decisions [1]. In this context, PEEL stands out—not only as a sustainable choice but also as a smart, long-term investment that reduces waste and enhances operational efficiency.</p><p></p><p></p>",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_LNd4YF": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "PEEL collection",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PEEL offers a forward-looking solution—minimizing environmental impact, maximizing durability, and aligning with the hospitality sector’s shifting priorities.</p><p>Imagine if every hotel chose PEEL. The impact would be transformative.</p><p></p>",
+        "button_label": "View PEEL Collection",
+        "button_link": "shopify://pages/peel-collection",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Slide_16_9_-_11_9fc9a072-3d95-4901-89ed-819f0b2b8f63.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2defb2bf-796b-451b-a255-2901ec48f0be": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "video_shopify": "shopify://files/videos/V7 Peel.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "65% ORGANIC COMPONENTS",
+        "title": "PEEL COLLECTION",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "KNOW MORE",
+        "button_link": "shopify://pages/peel-collection",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "image_with_text_overlay_b3htzR": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Frame_221.png",
+        "height": "natural",
+        "height_desktop": 200,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "text_columns_with_images_FKErXG": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "text_block_ecNyzQ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/porto-fabrics.jpg",
+            "image_width": 700,
+            "title": "Porto",
+            "text": "<p>Porto is undergoing a tourism-driven transformation. With 122 new hotel projects currently underway, the city will soon add nearly 12,000 new beds to its existing 23,000-bed capacity—21,500 of which are in hotels [3].<br/><br/></p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_EYyJqr": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/villa-foz-hotel-fabrics-spa2_81e4ae44-4163-47f0-90cb-c0d8bb535c23.jpg",
+            "image_width": 700,
+            "title": "Hotel",
+            "text": "<p>These new developments alone will require an estimated 71 to 111 tons of upholstery fabric. When regular refurbishments of the existing hotel stock are considered, the demand—and environmental impact—grows substantially.<br/><br/></p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_jfGqht": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/sustainable-fabrics-portugal_fe5cd184-16fa-4316-be37-109561fcb464.jpg",
+            "image_width": 700,
+            "title": "Sustainablility",
+            "text": "<p>By choosing a bio-based alternative like PEEL over conventional synthetics, Porto’s hospitality sector could avoid using 48 to 74 tons of fossil-derived raw materials. This would be a meaningful step toward a more sustainable, climate-conscious urban future.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_ecNyzQ",
+        "text_block_EYyJqr",
+        "text_block_jfGqht"
+      ],
+      "name": "Text columns with media",
+      "settings": {
+        "title": "Local Case Study – Porto",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "media_shape": "landscape",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "0139f2bf-54ee-4438-81e4-3a2b8873e413": {
+      "type": "featured-product",
+      "blocks": {
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-vendor_and_type-1": {
+          "type": "vendor_and_type",
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-title-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-rating-1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-vendor_and_type-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-title-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-price-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-rating-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-variant_picker-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "peel-collection",
+        "show_backorder_text": false,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "accordions_LhtEWc": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_z4gkDm": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "[1] ",
+            "text": "<p>“pmarketresearch,” Fevereiro 2025. [Online]. Available: https://pmarketresearch.com/chemi/commercial-grade-upholstery-fabric-market/. [Acedido em Julho 2025].</p><p>[2] </p><p>L. Mirani, “Wish you weren't here - The shock of 'overtourism' will subside in 2025,” <em>The Economist, </em>p. 76, Dezembro 2024. </p><p>[3] </p><p>“Jornal Notícias,” 26 fevereiro 2025. [Online]. Available: https://www.jn.pt/106747712/porto-vai-ter-mais-122-novos-hoteis/. [Acedido em 2025 julho 2025].</p><p>Luísa Sousa</p><p>Sustainability Projects coordination</p><p>Group Monteiro Ribas</p>",
+            "open": false
+          }
+        },
+        "accordion_T7jQ8m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "[2] ",
+            "text": "<p>L. Mirani, “Wish you weren't here - The shock of 'overtourism' will subside in 2025,” <em>The Economist, </em>p. 76, Dezembro 2024. </p>",
+            "open": false
+          }
+        },
+        "accordion_JdhQeb": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "[3] ",
+            "text": "<p>“Jornal Notícias,” 26 fevereiro 2025. [Online]. Available: https://www.jn.pt/106747712/porto-vai-ter-mais-122-novos-hoteis/. [Acedido em 2025 julho 2025].</p>",
+            "open": false
+          }
+        },
+        "accordion_Dan8Pp": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Article written by:",
+            "text": "<p>Luísa Sousa</p><p>Sustainability Projects coordination</p><p>Group Monteiro Ribas</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_z4gkDm",
+        "accordion_T7jQ8m",
+        "accordion_JdhQeb",
+        "accordion_Dan8Pp"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Bibliography",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "featured_image": "none",
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "blog_show_social": true
+      }
+    },
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Other blog posts",
+        "blog": "sustainability",
+        "post_limit": 3,
+        "show_view_all": false,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": false,
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    }
+  },
+  "order": [
+    "8926e558-9838-4f0d-9a19-bbf21b16c5e5",
+    "edc35c5e-389f-4cb2-80ce-0189359e589b",
+    "rich_text_XmAqYx",
+    "1d862462-6fb2-4740-a51d-020f8acd47dd",
+    "accordions_QUCyrk",
+    "cf7ca0e0-fa43-4dee-9975-5fc9db4d1584",
+    "dc784b1e-548c-4ffe-823f-b0ea3d4bbf1e",
+    "image_with_text_LNd4YF",
+    "2defb2bf-796b-451b-a255-2901ec48f0be",
+    "image_with_text_overlay_b3htzR",
+    "text_columns_with_images_FKErXG",
+    "0139f2bf-54ee-4438-81e4-3a2b8873e413",
+    "accordions_LhtEWc",
+    "main",
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d"
+  ]
+}

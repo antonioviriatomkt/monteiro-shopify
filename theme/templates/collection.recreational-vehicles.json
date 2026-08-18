@@ -1,0 +1,312 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "RV &amp; motorhome upholstery",
+        "title": "Recreational Vehicle Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's recreational vehicle upholstery fabrics are hard-wearing coated fabrics for motorhome, RV, caravan and campervan interiors. Every fabric in the collection is UV-resistant, water-repellent, abrasion-resistant and easy to clean — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "recreational",
+            "label": "Made for recreational vehicles"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "water-repellent",
+            "label": "Water repellent"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "UV and light resistant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for life on the road",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "UV & light fastness",
+            "value": "UV-resistant; resists fading through windows"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Water resistance",
+            "value": "Water-repellent, non-absorbent surface"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Mould & mildew",
+            "value": "Mildew-resistant"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty for daily travel use"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean with mild detergent"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for motorhome and RV interiors",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for motorhome and RV interiors?",
+            "answer": "<p>Recreational vehicle upholstery fabrics must cope with strong sunlight through windows, occasional moisture and constant daily use in a confined space. Monteiro's RV fabrics are hard-wearing coated fabrics that are UV-resistant, water-repellent, abrasion-resistant and easy to clean.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics UV-resistant for sun through the windows?",
+            "answer": "<p>Yes. The collection is UV- and light-resistant and designed to resist fading from prolonged sunlight through motorhome, caravan and campervan windows, helping the upholstery keep its colour over years of travel.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they water- and mildew-resistant?",
+            "answer": "<p>Yes — the coated surface is water-repellent and non-absorbent, and the fabrics are mildew-resistant, which helps keep interiors fresh in the damp, enclosed conditions common to parked vehicles.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they easy to clean on the road?",
+            "answer": "<p>Yes. The wipe-clean surface can be cleaned with a mild detergent and a soft cloth, with no solvents or abrasive cleaners required — ideal for quick maintenance while travelling.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are specified for RV and motorhome dinettes, caravan seating, campervan conversions, cabin upholstery and headboards — anywhere that demands hard-wearing, UV- and water-resistant surfaces for life on the road.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your conversion or fleet specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "RV fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Recreational Vehicle Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Recreational Vehicle Upholstery Fabrics",
+        "cp_description": "Hard-wearing, UV- and water-resistant coated upholstery fabrics for motorhome, RV, caravan and campervan interiors. Mildew-resistant, easy to clean and made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/recreational-vehicles"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to an RV upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your conversion or fleet and we'll recommend the right hard-wearing fabric and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

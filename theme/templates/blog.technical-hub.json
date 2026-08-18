@@ -1,0 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "technical-hub-hero",
+      "settings": {
+        "eyebrow": "Resource Library",
+        "title": "Technical Hub",
+        "subhead": "<p>Fire ratings, cleaning standards, healthcare specifications and certification — the technical know-how behind Monteiro Performance Fabrics.</p>",
+        "topics": "Fire safety · Cleaning & hygiene · Healthcare · Certification",
+        "pad_desktop": 110,
+        "pad_mobile": 70,
+        "bg_color": "#2f519b",
+        "text_color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "blog_layout": "rows",
+        "card_image_shape": "square",
+        "blog_excerpt": "below",
+        "show_category": true,
+        "show_readtime": true,
+        "featured_first": true,
+        "intro_text": "",
+        "blog_posts_per_page": 12,
+        "blog_posts_per_row_mobile": "2",
+        "blog_show_title": false,
+        "blog_show_filter": true,
+        "blog_show_rss_link": false
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "subheading": "",
+        "title": "Get new technical guides",
+        "text": "<p>Specification guidance, fire and cleaning standards, and new fabric know-how — sent when we publish. Join the Monteiro technical list.</p>",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "newsletter"
+  ]
+}

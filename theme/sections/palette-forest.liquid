@@ -1,0 +1,121 @@
+{% comment %}
+  Palette feature — an editorial "colour story" band. Presents a collection's
+  colour families as a row of tall portrait tiles, each captioned with the
+  natural element that inspired it (source) and an optional tone name. Built for
+  the Amazónia designer collaboration but reusable for any palette-led story.
+{% endcomment %}
+
+<div class="section-palette" data-section-type="palette-forest" data-cc-animate
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }}; position: relative; overflow: hidden;">
+  {% if section.settings.motif_image %}
+    {%- assign m_align = section.settings.motif_align -%}
+    <img class="pf-motif" src="{{ section.settings.motif_image | image_url: width: 1600 }}" alt="" aria-hidden="true" loading="lazy"
+         style="position:absolute; z-index:0; pointer-events:none; width:{{ section.settings.motif_width }}px; max-width:96vw; opacity:{{ section.settings.motif_opacity | divided_by: 100.0 }}; top:50%; {% if m_align == 'left' %}left:-4%;{% elsif m_align == 'right' %}right:-4%;{% else %}left:50%;{% endif %} transform:translateY(calc(-50% + {{ section.settings.motif_offset_y }}px)){% if m_align == 'center' %} translateX(-50%){% endif %};">
+  {% endif %}
+  {% style %}
+    #pf-{{ section.id }} { position: relative; z-index: 1; }
+    #pf-{{ section.id }} .pf-head { text-align: center; max-width: 740px; margin: 0 auto 56px; }
+    #pf-{{ section.id }} .pf-eyebrow { letter-spacing: 0.18em; text-transform: uppercase; font-size: 13px; opacity: 0.7; margin-bottom: 14px; }
+    #pf-{{ section.id }} .pf-title { font-size: 38px; font-weight: 400; line-height: 1.18; margin: 0; color: {{ section.settings.text_color }}; }
+    #pf-{{ section.id }} .pf-body { margin-top: 18px; line-height: 1.6; opacity: 0.92; }
+    #pf-{{ section.id }} .pf-body p { margin: 0; }
+    #pf-{{ section.id }} .pf-grid { display: grid; grid-template-columns: repeat({{ section.settings.columns }}, 1fr); gap: 24px; }
+    #pf-{{ section.id }} .pf-tile { margin: 0; }
+    #pf-{{ section.id }} .pf-link { display: block; color: inherit; text-decoration: none; }
+    #pf-{{ section.id }} .pf-frame { position: relative; overflow: hidden; aspect-ratio: {{ section.settings.aspect }}; background: #eee; }
+    #pf-{{ section.id }} .pf-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+    #pf-{{ section.id }} .pf-tile:hover .pf-frame img { transform: scale(1.06); }
+    #pf-{{ section.id }} .pf-cap { padding-top: 16px; border-top: 1px solid {{ section.settings.text_color }}; margin-top: 14px; display: flex; align-items: baseline; gap: 8px; }
+    #pf-{{ section.id }} .pf-dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; transform: translateY(1px); }
+    #pf-{{ section.id }} .pf-source { letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px; opacity: 0.75; }
+    #pf-{{ section.id }} .pf-tone { display: block; font-size: 18px; line-height: 1.3; margin-top: 4px; }
+    @media (max-width: 989px) { #pf-{{ section.id }} .pf-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 749px) {
+      #pf-{{ section.id }} .pf-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      #pf-{{ section.id }} .pf-title { font-size: 28px; }
+    }
+  {% endstyle %}
+
+  <div id="pf-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank or section.settings.body != blank %}
+      <div class="pf-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="pf-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="pf-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.body != blank %}<div class="pf-body rte">{{ section.settings.body }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    <div class="pf-grid">
+      {% for block in section.blocks %}
+        <figure class="pf-tile" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.08 | append: 's' }}">
+          {%- if block.settings.link != blank -%}<a class="pf-link" href="{{ block.settings.link }}">{%- endif -%}
+          <div class="pf-frame">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.tone | default: block.settings.source | escape }}" loading="lazy">
+            {% endif %}
+          </div>
+          <figcaption class="pf-cap">
+            {% if block.settings.swatch_color != blank %}<span class="pf-dot" style="background: {{ block.settings.swatch_color }};"></span>{% endif %}
+            <span>
+              {% if block.settings.source != blank %}<span class="pf-source">{{ block.settings.source | escape }}</span>{% endif %}
+              {% if block.settings.tone != blank %}<span class="pf-tone">{{ block.settings.tone | escape }}</span>{% endif %}
+            </span>
+          </figcaption>
+          {%- if block.settings.link != blank -%}</a>{%- endif -%}
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Palette feature",
+    "class": "section-palette-wrap",
+    "max_blocks": 12,
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The Palette" },
+      { "type": "text", "id": "title", "label": "Heading", "default": "A Palette Drawn from the Forest" },
+      { "type": "richtext", "id": "body", "label": "Intro text" },
+      { "type": "range", "id": "columns", "min": 2, "max": 6, "step": 1, "label": "Tiles per row (desktop)", "default": 5 },
+      { "type": "select", "id": "aspect", "label": "Tile shape", "default": "3 / 4",
+        "options": [
+          { "value": "3 / 4", "label": "Portrait" },
+          { "value": "4 / 5", "label": "Tall" },
+          { "value": "1 / 1", "label": "Square" },
+          { "value": "2 / 3", "label": "Extra tall" }
+        ] },
+      { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#FFFFFF" },
+      { "type": "color", "id": "text_color", "label": "Text colour", "default": "#111111" },
+      { "type": "header", "content": "Background motif (watermark)" },
+      { "type": "image_picker", "id": "motif_image", "label": "Motif image (transparent PNG)" },
+      { "type": "range", "id": "motif_opacity", "min": 3, "max": 60, "step": 1, "unit": "%", "label": "Motif opacity", "default": 10 },
+      { "type": "range", "id": "motif_width", "min": 300, "max": 1600, "step": 20, "unit": "px", "label": "Motif width", "default": 1000 },
+      { "type": "select", "id": "motif_align", "label": "Motif anchor", "default": "center",
+        "options": [ { "value": "left", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "right", "label": "Right" } ] },
+      { "type": "range", "id": "motif_offset_y", "min": -300, "max": 300, "step": 10, "unit": "px", "label": "Motif vertical nudge", "default": 0 }
+    ],
+    "blocks": [
+      {
+        "type": "swatch",
+        "name": "Colour",
+        "settings": [
+          { "type": "image_picker", "id": "image", "label": "Image" },
+          { "type": "text", "id": "source", "label": "Natural source", "default": "Iridescent plumage" },
+          { "type": "text", "id": "tone", "label": "Tone name", "default": "Kingfisher blue" },
+          { "type": "color", "id": "swatch_color", "label": "Swatch dot (optional)" },
+          { "type": "url", "id": "link", "label": "Link (optional)" }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Palette feature",
+        "blocks": [
+          { "type": "swatch" }, { "type": "swatch" }, { "type": "swatch" },
+          { "type": "swatch" }, { "type": "swatch" }
+        ]
+      }
+    ]
+  }
+{% endschema %}

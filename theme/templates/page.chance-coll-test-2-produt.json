@@ -1,0 +1,532 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Monteiro-Fabrics-CHANCE-BANNER.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "CHANCE Collection",
+        "title": "",
+        "title_size": 44,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "image_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "A RANGE OF",
+        "title": "228 SHADES",
+        "title_size": 56,
+        "heading_h1": false,
+        "text": "<p>Of our iconic texture in an unmatched color spectrum.<br/>CHANCE collection allows countless options for all upholstery applications, where durability, comfort and high performance are assured.</p>",
+        "image_width": 120,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "575afe37-da34-4806-8703-c9cb32105543": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "The most colorful collection of Europe",
+        "title_size": 28,
+        "text": "<p>An iconic engraving offered in an Unrivalled Spectrum of colours that allows freedom of expression and individuality.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "link",
+        "image": "shopify://shop_images/Monteiro-Fabrics-CHANCE-BANNER-3.png",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "A range of 228 colours",
+        "title_size": 48,
+        "heading_h1": false,
+        "text": "<p>Chance collection allows countless options for all upholstery applications, where durability, comfort and high performance are assured. Manufactured in compliance with EU regulation REACH ☑️  </p>",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "ea952254-6a3c-46c7-85e9-4b30d1d791d7": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-0": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-2": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-3": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-4": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-0",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-1",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-2",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-3",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-4",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-5"
+      ],
+      "settings": {
+        "product": "chance-collection-1",
+        "show_backorder_text": false,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "8dbdefc0-e7fc-4094-9f1b-0c6bc5a25c6f": {
+      "type": "featured-product",
+      "blocks": {
+        "94009654-a90a-4e7a-8b46-4eb05bbba86d": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "fec1db86-4867-4b9f-93ee-c109c27e63a3": {
+          "type": "title",
+          "settings": {}
+        },
+        "597c80d9-5fef-45c7-8e6c-c206bfb958b1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "bea95189-0f10-46d9-b2ad-5bda2825c087": {
+          "type": "rating",
+          "settings": {}
+        },
+        "d41f1d55-d6da-46b0-bc33-ccdd439bf062": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "a93c6d6f-472b-4c9a-9e51-2caf95484c0e": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "94009654-a90a-4e7a-8b46-4eb05bbba86d",
+        "fec1db86-4867-4b9f-93ee-c109c27e63a3",
+        "597c80d9-5fef-45c7-8e6c-c206bfb958b1",
+        "bea95189-0f10-46d9-b2ad-5bda2825c087",
+        "d41f1d55-d6da-46b0-bc33-ccdd439bf062",
+        "a93c6d6f-472b-4c9a-9e51-2caf95484c0e"
+      ],
+      "settings": {
+        "product": "chance-collection-1",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "b0c9221f-0cb0-41ce-a5d8-26b41c5bf167": {
+      "type": "featured-product",
+      "blocks": {
+        "e0afff9f-8c62-41b3-8fe8-fc7272344c7e": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "434cfe77-c4ea-4e3d-b849-664d16088d84": {
+          "type": "title",
+          "settings": {}
+        },
+        "df1aa845-1192-4777-8ac4-ccfe4e35c517": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "ee56e115-8b0e-4f19-8cae-dbe889a6f7c9": {
+          "type": "rating",
+          "settings": {}
+        },
+        "187e474e-4427-45cd-bce0-4eb7ad5bae7a": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "3169078e-706b-484e-bfac-c8380b0c8505": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "e0afff9f-8c62-41b3-8fe8-fc7272344c7e",
+        "434cfe77-c4ea-4e3d-b849-664d16088d84",
+        "df1aa845-1192-4777-8ac4-ccfe4e35c517",
+        "ee56e115-8b0e-4f19-8cae-dbe889a6f7c9",
+        "187e474e-4427-45cd-bce0-4eb7ad5bae7a",
+        "3169078e-706b-484e-bfac-c8380b0c8505"
+      ],
+      "settings": {
+        "product": "beta-teste",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "top",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "3cdfb8c2-fb5d-4a4b-a072-7c7b6c5aa4d7": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "collection": "chance",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "96186325-e209-4c72-b2c0-cc5c79e49b44": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "All Requirements Covered",
+        "title_size": 28,
+        "text": "<p>Easy to clean with a soapy water solution and a damp cloth. Free from harmful substances and Manufactured in compliance with EU regulation REACH ((EC) no 1907/2006).<strong>‍‍</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "link",
+        "image": "shopify://shop_images/Instagram_post_-_95.png",
+        "image_width": 78,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture11.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Instagram_post_-_112_0e4d0f7c-2221-4287-a762-cfecf7113cb0.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/chance.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture5.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture12.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "height": "fixed",
+        "height_desktop": 250,
+        "height_mobile": 100,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "5b1e88bb-e41f-488d-8add-4464ccff8465": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/decor-fabrics-furniture4.jpg",
+        "height": "full",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Other coated fabrics",
+        "collection": "all-products",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "575afe37-da34-4806-8703-c9cb32105543",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "ea952254-6a3c-46c7-85e9-4b30d1d791d7",
+    "8dbdefc0-e7fc-4094-9f1b-0c6bc5a25c6f",
+    "b0c9221f-0cb0-41ce-a5d8-26b41c5bf167",
+    "3cdfb8c2-fb5d-4a4b-a072-7c7b6c5aa4d7",
+    "96186325-e209-4c72-b2c0-cc5c79e49b44",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79",
+    "5b1e88bb-e41f-488d-8add-4464ccff8465",
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d"
+  ]
+}

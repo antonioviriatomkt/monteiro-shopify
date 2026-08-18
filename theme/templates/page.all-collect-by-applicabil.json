@@ -1,0 +1,606 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "86966321-1adf-4fa6-8c35-bf49132a1fc0": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/decor-fabrics-furniture2.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "Find the best fabrics",
+        "title": "By Application",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "e8df4a97-c664-4b68-b23a-711dff865403": {
+      "type": "gallery",
+      "blocks": {
+        "9607311b-3a24-4518-9e4d-6b8f79c06394": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ex-de-equipamento-CHANCE.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "shopify://collections/all",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19044945625391__95bdcbb6-1449-499c-b375-6df939f6f16c-168483876762e4b44c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ex-de-equipamento-CHANCEMOBILITY.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "4f462b13-695e-4e13-9bdf-9fe5e0b39a80": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ex-de-equipamento-CHANCEMOBILITY.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "5f4054e2-9d9e-4ead-949c-20ac9d41e00f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ex-de-equipamento-CHANCEMOBILITY.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "0bfc8046-2c05-44b6-a0a8-9ea035f27cd4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ex-de-equipamento-CHANCEMOBILITY.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "9607311b-3a24-4518-9e4d-6b8f79c06394",
+        "template--19044945625391__95bdcbb6-1449-499c-b375-6df939f6f16c-168483876762e4b44c-0",
+        "4f462b13-695e-4e13-9bdf-9fe5e0b39a80",
+        "5f4054e2-9d9e-4ead-949c-20ac9d41e00f",
+        "0bfc8046-2c05-44b6-a0a8-9ea035f27cd4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 100,
+        "mobile_image_height": 180,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "d8cbed71-ecb2-4cfb-a9be-16efd60baf3c": {
+      "type": "collection-list",
+      "blocks": {
+        "5be0b3cf-fd53-49d4-ba56-cc670401c2c5": {
+          "type": "collection",
+          "settings": {
+            "collection": "hospitality-fabrics"
+          }
+        },
+        "234d75a7-f1af-4b34-82c0-596d0acb68c8": {
+          "type": "collection",
+          "settings": {
+            "collection": "automotive"
+          }
+        },
+        "02ae5dfa-9050-4d5a-8866-ef9f43f37045": {
+          "type": "collection",
+          "settings": {
+            "collection": "office-fabrics-upholstery"
+          }
+        },
+        "ae6143b2-5458-4f48-ab62-5e8027bec2d2": {
+          "type": "collection",
+          "settings": {
+            "collection": "marine",
+            "image": "shopify://shop_images/marine_fabrics1.webp"
+          }
+        },
+        "87caaf57-3ff1-4388-892a-8af4454923af": {
+          "type": "collection",
+          "settings": {
+            "collection": "healthcare"
+          }
+        },
+        "6e63ee0f-383c-4546-847c-4a3f5d421903": {
+          "type": "collection",
+          "settings": {
+            "collection": "recreational-vehicles"
+          }
+        },
+        "94f0465a-53d4-4772-85f3-bf61577fa55d": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor"
+          }
+        },
+        "c7deb76a-79cd-476c-9f51-585a3e575761": {
+          "type": "collection",
+          "settings": {
+            "collection": "public-spaces"
+          }
+        },
+        "a2d6cf62-245e-4ab2-9ab1-9c9801f31965": {
+          "type": "collection",
+          "settings": {
+            "collection": "restaurants-fabrics"
+          }
+        },
+        "10ee3a9f-2c28-478e-92dc-f98b20929a33": {
+          "type": "collection",
+          "settings": {
+            "collection": "retail"
+          }
+        },
+        "bd672009-6c22-47c6-a4b7-f338872136db": {
+          "type": "collection",
+          "settings": {
+            "collection": "fashion"
+          }
+        },
+        "441f9817-0c94-4452-931a-a5084b1c9e15": {
+          "type": "collection",
+          "settings": {
+            "collection": "aviation"
+          }
+        },
+        "aed32177-75a0-4ebf-94c4-d0af8aa9fe08": {
+          "type": "collection",
+          "settings": {
+            "collection": "mass-transportation"
+          }
+        },
+        "0f9e4487-e7be-4e2f-bdd4-d6711797d613": {
+          "type": "collection",
+          "settings": {
+            "collection": "motorcycle"
+          }
+        },
+        "f14dc6b9-c200-4857-ab98-a6506880298d": {
+          "type": "collection",
+          "settings": {
+            "collection": "fitness-1",
+            "image": "shopify://shop_images/gym-exercise-bench.jpg"
+          }
+        },
+        "57d32a76-a392-4255-9400-361786ad88c9": {
+          "type": "collection",
+          "settings": {
+            "collection": "residential-1"
+          }
+        },
+        "2fc4dfa5-2b55-4ead-a844-db0b462d9bd0": {
+          "type": "collection",
+          "settings": {
+            "collection": "coated-fabrics"
+          }
+        }
+      },
+      "block_order": [
+        "5be0b3cf-fd53-49d4-ba56-cc670401c2c5",
+        "234d75a7-f1af-4b34-82c0-596d0acb68c8",
+        "02ae5dfa-9050-4d5a-8866-ef9f43f37045",
+        "ae6143b2-5458-4f48-ab62-5e8027bec2d2",
+        "87caaf57-3ff1-4388-892a-8af4454923af",
+        "6e63ee0f-383c-4546-847c-4a3f5d421903",
+        "94f0465a-53d4-4772-85f3-bf61577fa55d",
+        "c7deb76a-79cd-476c-9f51-585a3e575761",
+        "a2d6cf62-245e-4ab2-9ab1-9c9801f31965",
+        "10ee3a9f-2c28-478e-92dc-f98b20929a33",
+        "bd672009-6c22-47c6-a4b7-f338872136db",
+        "441f9817-0c94-4452-931a-a5084b1c9e15",
+        "aed32177-75a0-4ebf-94c4-d0af8aa9fe08",
+        "0f9e4487-e7be-4e2f-bdd4-d6711797d613",
+        "f14dc6b9-c200-4857-ab98-a6506880298d",
+        "57d32a76-a392-4255-9400-361786ad88c9",
+        "2fc4dfa5-2b55-4ead-a844-db0b462d9bd0"
+      ],
+      "custom_css": [
+        ".title {font-size: 1.5rem; font-weight: 100;}"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "4251b62e-ce94-402e-a42f-ab375f5fb006": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MONTEIRO-RIBAS_-text-Public-Spaces.png",
+            "image_width": 180,
+            "title": "Public Spaces",
+            "text": "<p>Cinema, acustic, theaters </p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "dcc89464-29d4-414f-b7ad-65b64cede4bc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MONTEIRO-RIBAS_-text-Fitnessa.png",
+            "image_width": 180,
+            "title": "Fitness",
+            "text": "<p>Gym, exercise machine</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "9d6ceea9-c3f2-44ee-944d-b075f3e554d7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MONTEIRO-RIBAS_-text-Retail.png",
+            "image_width": 180,
+            "title": "Retail",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "c9826daf-93fd-40b4-9f6c-0c0455e7f1ee": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MONTEIRO-RIBAS_-text-HealthcareR.png",
+            "image_width": 180,
+            "title": "Healthcare",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/89580957_s.jpg",
+            "image_width": 700,
+            "title": "Mobility",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Slide_16_9_-_10.jpg",
+            "image_width": 700,
+            "title": "Outdoor",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "a4837bb5-7c3d-4a75-9144-5843f377e448": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/imagem_9.3_18902298435c49d51aba236_29784075160897a3c908ff.jpg",
+            "image_width": 700,
+            "title": "Fashion",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "c409d50b-511a-47a5-b955-8b6d0b4a82c7": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Slide_16_9_-_14.jpg",
+            "image_width": 700,
+            "title": "Sustainable",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-0",
+        "dcc89464-29d4-414f-b7ad-65b64cede4bc",
+        "9d6ceea9-c3f2-44ee-944d-b075f3e554d7",
+        "c9826daf-93fd-40b4-9f6c-0c0455e7f1ee",
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-1",
+        "template--18867693453615__4251b62e-ce94-402e-a42f-ab375f5fb006-1682683665f4d50462-2",
+        "a4837bb5-7c3d-4a75-9144-5843f377e448",
+        "c409d50b-511a-47a5-b955-8b6d0b4a82c7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "link",
+        "media_shape": "square",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "e065455c-fe4d-4bea-abe4-3f2124b38fa0": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "STOCK SERVICE",
+        "title": "Ready in 48 hours",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Monteiro Fabrics offers the best service with 1-piece minimums delivered by a fast, reliable, and organized team. With more than 1 million meters always in stock, ready to be shipped within 48 hours of our order, our Stock Service is a unique combination of product, service, quality, and reliability.</p>",
+        "button_label": "order with us",
+        "button_link": "shopify://pages/contact",
+        "text_alignment": "right",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-6_a6236486-5612-4b72-a5fa-c535d4ece9a4.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "#f6f6f6",
+        "color_text": ""
+      }
+    },
+    "10cfa9d8-0d9f-48fe-8c19-c4dec6202c5c": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "add your samples to the cart",
+        "title": "FREE SAMPLES",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Add to your cart the samples you are interested and we will send them to you for free. </p>",
+        "image": "shopify://shop_images/Instagram_post_-_266.png",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "d4f171b6-e2a5-4b5e-84e1-9bec92106c19": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro-fabrics-certifications2.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-0",
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-1",
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "72e6d8e5-238c-44a9-8325-0dd7104a9a13": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "mobile_image": "shopify://shop_images/monteiro-fabrics-certifications4.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "804bf713-ba89-4ee3-bb72-45b9f1e73f67": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "3d7a69d2-73ba-4964-99db-026e39e08757": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083",
+        "804bf713-ba89-4ee3-bb72-45b9f1e73f67",
+        "3d7a69d2-73ba-4964-99db-026e39e08757"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "86966321-1adf-4fa6-8c35-bf49132a1fc0",
+    "main",
+    "e8df4a97-c664-4b68-b23a-711dff865403",
+    "d8cbed71-ecb2-4cfb-a9be-16efd60baf3c",
+    "4251b62e-ce94-402e-a42f-ab375f5fb006",
+    "e065455c-fe4d-4bea-abe4-3f2124b38fa0",
+    "10cfa9d8-0d9f-48fe-8c19-c4dec6202c5c",
+    "d4f171b6-e2a5-4b5e-84e1-9bec92106c19",
+    "72e6d8e5-238c-44a9-8325-0dd7104a9a13"
+  ]
+}

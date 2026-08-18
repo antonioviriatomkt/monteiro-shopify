@@ -1,0 +1,424 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_RQBRXj": {
+      "type": "image-with-text-overlay",
+      "name": "Hero",
+      "settings": {
+        "image": "shopify://shop_images/banner_chance.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "High-performance upholstery, by sector",
+        "title": "Our Sectors",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>Find the fabric engineered for the standards your space demands — from antimicrobial healthcare to fire-rated transport.</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "value_props_diff": {
+      "type": "value-props",
+      "blocks": {
+        "vp1": {
+          "type": "item",
+          "settings": {
+            "value": "10-year",
+            "caption": "warranty — longest on the market",
+            "link": ""
+          }
+        },
+        "vp2": {
+          "type": "item",
+          "settings": {
+            "value": "236",
+            "caption": "colours in stock service",
+            "link": ""
+          }
+        },
+        "vp3": {
+          "type": "item",
+          "settings": {
+            "value": "48h",
+            "caption": "sample dispatch",
+            "link": ""
+          }
+        },
+        "vp4": {
+          "type": "item",
+          "settings": {
+            "value": "Bio-based",
+            "caption": "chestnut & olive collections",
+            "link": ""
+          }
+        },
+        "vp5": {
+          "type": "item",
+          "settings": {
+            "value": "100%",
+            "caption": "made in Portugal",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "vp1",
+        "vp2",
+        "vp3",
+        "vp4",
+        "vp5"
+      ],
+      "disabled": true,
+      "name": "Differentiators",
+      "settings": {
+        "subheading": "Why specifiers choose Monteiro",
+        "title": "",
+        "accent_color": "#111111",
+        "show_dividers": true,
+        "alternate_bg_color": false
+      }
+    },
+    "collection_list_MqwqYK": {
+      "type": "collection-list",
+      "blocks": {
+        "s_health": {
+          "type": "collection",
+          "settings": {
+            "collection": "healthcare"
+          }
+        },
+        "s_medical": {
+          "type": "collection",
+          "settings": {
+            "collection": "medical"
+          }
+        },
+        "s_hosp": {
+          "type": "collection",
+          "settings": {
+            "collection": "hospitality-fabrics"
+          }
+        },
+        "s_office": {
+          "type": "collection",
+          "settings": {
+            "collection": "office-fabrics-upholstery"
+          }
+        },
+        "s_public": {
+          "type": "collection",
+          "settings": {
+            "collection": "public-spaces"
+          }
+        },
+        "s_rest": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "restaurants-fabrics"
+          }
+        },
+        "s_retail": {
+          "type": "collection",
+          "settings": {
+            "collection": "retail"
+          }
+        },
+        "s_resid": {
+          "type": "collection",
+          "settings": {
+            "collection": "residential-1"
+          }
+        },
+        "s_fitness": {
+          "type": "collection",
+          "settings": {
+            "collection": "fitness-1",
+            "image": "shopify://shop_images/gym-exercise-bench.jpg"
+          }
+        },
+        "s_fashion": {
+          "type": "collection",
+          "settings": {
+            "collection": "fashion"
+          }
+        },
+        "s_outdoor": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor"
+          }
+        },
+        "s_marine": {
+          "type": "collection",
+          "settings": {
+            "collection": "marine",
+            "image": "shopify://shop_images/marine_fabrics1.webp"
+          }
+        },
+        "s_auto": {
+          "type": "collection",
+          "settings": {
+            "collection": "automotive"
+          }
+        },
+        "s_moto": {
+          "type": "collection",
+          "settings": {
+            "collection": "motorcycle"
+          }
+        },
+        "s_avia": {
+          "type": "collection",
+          "settings": {
+            "collection": "aviation"
+          }
+        },
+        "s_mass": {
+          "type": "collection",
+          "settings": {
+            "collection": "mass-transportation"
+          }
+        },
+        "s_rv": {
+          "type": "collection",
+          "settings": {
+            "collection": "recreational-vehicles"
+          }
+        }
+      },
+      "block_order": [
+        "s_health",
+        "s_medical",
+        "s_hosp",
+        "s_office",
+        "s_public",
+        "s_rest",
+        "s_retail",
+        "s_resid",
+        "s_fitness",
+        "s_fashion",
+        "s_outdoor",
+        "s_marine",
+        "s_auto",
+        "s_moto",
+        "s_avia",
+        "s_mass",
+        "s_rv"
+      ],
+      "name": "Sectors",
+      "settings": {
+        "title": "Choose your sector",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "performance_tech_sectors": {
+      "type": "performance-tech",
+      "blocks": {
+        "pt1": {
+          "type": "feature",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Anti-microbial"
+          }
+        },
+        "pt2": {
+          "type": "feature",
+          "settings": {
+            "icon": "flame-retardant",
+            "label": "Flame retardant"
+          }
+        },
+        "pt3": {
+          "type": "feature",
+          "settings": {
+            "icon": "ink-stain",
+            "label": "Ink & stain resistant"
+          }
+        },
+        "pt4": {
+          "type": "feature",
+          "settings": {
+            "icon": "abrasion-resistant",
+            "label": "Abrasion resistant"
+          }
+        },
+        "pt5": {
+          "type": "feature",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        },
+        "pt6": {
+          "type": "feature",
+          "settings": {
+            "icon": "vegan",
+            "label": "Vegan"
+          }
+        }
+      },
+      "block_order": [
+        "pt1",
+        "pt2",
+        "pt3",
+        "pt4",
+        "pt5",
+        "pt6"
+      ],
+      "disabled": true,
+      "name": "Performance technology",
+      "settings": {
+        "eyebrow": "Engineered for performance",
+        "title": "Built to the standards each sector demands",
+        "bg_color": "#2f519b",
+        "text_color": "#ffffff",
+        "cta_label": "Find the right fabric for your application",
+        "cta_link": "shopify://pages/contact"
+      }
+    },
+    "68364a46-b8f6-408b-8c8a-03e332a8058d": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "STOCK SERVICE",
+        "title": "Ready in 48 hours",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Monteiro Fabrics offers the best service with 1-piece minimums delivered by a fast, reliable, and organized team. With more than 1 million meters always in stock, ready to be shipped within 48 hours of our order, our Stock Service is a unique combination of product, service, quality, and reliability.</p>",
+        "button_label": "order with us",
+        "button_link": "shopify://pages/contact",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-6_a6236486-5612-4b72-a5fa-c535d4ece9a4.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "#f6f6f6",
+        "color_text": ""
+      }
+    },
+    "value_props_certs": {
+      "type": "value-props",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "value": "ISO 9001",
+            "caption": "Quality management",
+            "link": ""
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "value": "ISO 14001",
+            "caption": "Environmental management",
+            "link": ""
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "value": "Sanitized®",
+            "caption": "Hygiene & antimicrobial",
+            "link": ""
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "value": "REACH",
+            "caption": "Chemical compliance",
+            "link": ""
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "value": "Vegan",
+            "caption": "Animal-free materials",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "subheading": "Certified & compliant",
+        "title": "",
+        "accent_color": "#111111",
+        "show_dividers": true,
+        "alternate_bg_color": false
+      }
+    },
+    "cta_close": {
+      "type": "rich-text",
+      "custom_css": [],
+      "name": "Closing CTA",
+      "settings": {
+        "subheading": "Do you have a project?",
+        "title": "Let's engineer your solution.",
+        "title_size": 54,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us the sector, the application and the standards you need to hit — we'll recommend the fabric and send samples. Prefer to browse first? <a href=\"/collections/coated-fabrics\">Request free samples</a>.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_RQBRXj",
+    "value_props_diff",
+    "collection_list_MqwqYK",
+    "performance_tech_sectors",
+    "68364a46-b8f6-408b-8c8a-03e332a8058d",
+    "value_props_certs",
+    "cta_close"
+  ]
+}

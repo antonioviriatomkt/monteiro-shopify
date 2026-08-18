@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Coated fabrics &amp; vegan leather",
+        "title": "Coated Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's coated upholstery fabrics are a durable vegan leather alternative made in Portugal. A coated fabric is a textile base finished with a protective polymer coating, giving a hard-wearing, easy to clean surface that is stain- and water-resistant, flame-retardant, phthalate-free and REACH-compliant.</p><p>Browse the full range below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Colour-fast and light resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Why coated fabrics",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric — textile base with a protective polymer coating"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Surface",
+            "value": "Smooth, non-absorbent, leather-like"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, contract grade"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Stain & water resistance",
+            "value": "High; wipe-clean surface"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean with mild detergent"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Flame retardancy",
+            "value": "Meets contract upholstery fire-safety standards"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Animal-free",
+            "value": "Vegan leather alternative"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "What makes a coated fabric",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What are coated fabrics?",
+            "answer": "<p>Coated fabrics are textiles finished with a protective polymer coating bonded to a fabric base. The coating creates a smooth, non-absorbent, leather-like surface that is hard-wearing, easy to clean and resistant to stains and water — making coated fabrics a practical upholstery material across many sectors.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How are coated fabrics different from real leather?",
+            "answer": "<p>Unlike real leather, coated fabrics are animal-free and made to a consistent specification, so colour, texture and performance are uniform across every roll. They offer a leather-like look and feel while being easier to clean, more colour-fast and free from the natural variation and marks found in hides.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are coated fabrics durable and easy to clean?",
+            "answer": "<p>Yes. Coated fabrics are abrasion-resistant and contract-grade, built to withstand heavy use. The non-absorbent surface wipes clean with a mild detergent and resists stains and water, so they stay looking good with minimal maintenance.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they a vegan leather alternative?",
+            "answer": "<p>Yes — coated fabrics are an animal-free, vegan leather alternative. They deliver the appearance and durability associated with leather upholstery without using any animal materials.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "What are coated fabrics used for?",
+            "answer": "<p>Coated fabrics are specified across healthcare, hospitality, office, marine, automotive, retail, public spaces and more — anywhere upholstery needs to be hard-wearing, easy to clean and resistant to stains and water.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right coated fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Coated fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Coated Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Coated Upholstery Fabrics",
+        "cp_description": "Durable coated upholstery fabrics — a vegan leather alternative made in Portugal. Hard-wearing, easy to clean, stain- and water-resistant, flame-retardant and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/coated-fabrics"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a coated-fabric specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and we'll recommend the right coated fabric, share certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

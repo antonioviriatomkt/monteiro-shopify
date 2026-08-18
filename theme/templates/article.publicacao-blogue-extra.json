@@ -1,0 +1,445 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "featured_image": "narrow",
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "blog_show_social": false
+      }
+    },
+    "rich_text_gm7TUi": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Bioshoes4All Open House",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_6BPVwt": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Bioshoes4all",
+        "title": "Innovation with Every Step",
+        "title_size": 42,
+        "title_width": 12,
+        "text": "<p>On July 3rd, Monteiro Fabrics opened its doors to host a special demonstration day for the <em>Bioshoes4All</em> project. Organized by <a href=\"https://www.apiccaps.pt/\" target=\"_blank\"><strong>APICCAPS</strong></a>, this open house welcomed around 70 visitors — including project partners and key representatives from <a href=\"https://www.iapmei.pt/\" target=\"_blank\"><strong>IAPMEI</strong>,</a> <a href=\"https://www.aicep.com/\" target=\"_blank\"><strong>AICEP</strong></a>, <strong>Direção Geral da Economia</strong>, and the <strong>PRR task force – Recuperar Portugal</strong>.</p><p>It was a valuable opportunity to bring the industry and institutions together for a close-up view of sustainable innovation in action.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 51,
+        "button_style": "auto",
+        "image": "shopify://shop_images/CTC_Acao_demonstracao-327.jpg",
+        "image_width": 87,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_bCJQfy": {
+      "type": "gallery",
+      "blocks": {
+        "image_QXHf7T": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-317.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_DDkMXe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-324.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_YnWRtr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-330.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_Mp6PyD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-354.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_P6AbYG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-359.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_miw6GN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-345.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_yMJaym": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-347.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_xQXL3R": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-351.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_QXHf7T",
+        "image_DDkMXe",
+        "image_YnWRtr",
+        "image_Mp6PyD",
+        "image_P6AbYG",
+        "image_miw6GN",
+        "image_yMJaym",
+        "image_xQXL3R"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "image_with_text_MNWr6A": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Bioshoes4all",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>During the visit, guests experienced live demonstrations of our <strong>production process</strong>, from <strong>raw bio-based inputs</strong> to finished materials.</p><p>In our laboratory, we revealed how bio-waste incorporation starts: through systematic experimentation, with over 16 bio-waste sources tested across hundreds of lab trials, dozens of mechanical tests, and several pilot and industrial runs.</p><h3>The result? Three fully viable, industry-ready collections now at <strong>TRL 9</strong> — a key milestone for industrial scalability.</h3>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/CTC_Acao_demonstracao-356.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_UAkJNQ": {
+      "type": "gallery",
+      "blocks": {
+        "image_qbLb7p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-316.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_f6QGij": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-325.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_eX3hfW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-336.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_bXC3zT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-335.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_6cWbRk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-344.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_VdGjnL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-349.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_MYWhyG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-338.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_panVfM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTC_Acao_demonstracao-320.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 4,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_qbLb7p",
+        "image_f6QGij",
+        "image_eX3hfW",
+        "image_bXC3zT",
+        "image_6cWbRk",
+        "image_VdGjnL",
+        "image_MYWhyG",
+        "image_panVfM"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 310,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "image_with_text_gkqk4e": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "But innovation wasn't just seen — it was worn.",
+        "title_size": 46,
+        "title_width": 12,
+        "text": "<p>Our team proudly walked the talk, quite literally, wearing sneakers produced by <strong>RXMShoes</strong>, made with <em>ORIGIN</em> — a material developed by Monteiro Fabrics that is <strong>72% bio-based</strong> and includes olive tree waste.</p><p>A tangible example of how textile innovation can power a more sustainable future for the footwear industry.</p><p> </p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 49,
+        "button_style": "auto",
+        "image": "shopify://shop_images/CTC_Acao_demonstracao-319.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_zErhiU": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Bioshoes4All",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Integrated Project – Innovation and Training of the footwear sector for a sustainable bioeconomy.</p>",
+        "image": "shopify://shop_images/CTC_Acao_demonstracao-315_5508887f-3498-42b0-abfa-c0b3dda6941b.jpg",
+        "image_width": 660,
+        "button_label": "Know more about the project here",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/ficha_projeto_bioshoes4all_v1_31_07_2023.pdf?v=1705502320",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_gm7TUi",
+    "image_with_text_6BPVwt",
+    "gallery_bCJQfy",
+    "image_with_text_MNWr6A",
+    "gallery_UAkJNQ",
+    "image_with_text_gkqk4e",
+    "rich_text_zErhiU"
+  ]
+}

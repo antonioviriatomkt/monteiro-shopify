@@ -1,0 +1,432 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_eNyPHf": {
+      "type": "slideshow",
+      "blocks": {
+        "image_dEkbEW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PVC_Fabrics_why.jpg",
+            "slide_link": "",
+            "subheading": "Why Choose This Material for Upholstery?",
+            "title": "PVC FABRICS",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p><br/></p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "image_dEkbEW"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "edc35c5e-389f-4cb2-80ce-0189359e589b": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "PVC Fabrics",
+        "title": "Why Choose PVC for Upholstery?",
+        "title_size": 36,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p>PVC (polyvinyl chloride - a synthetic thermoplastic material made by polymerizing vinyl chloride) is one of the most widely used plastics in the world—and for good reason.</p><p>Its durability, versatility, and recyclability make it an excellent material for coated fabrics across many industries, from furniture and automotive to healthcare and hospitality. </p><p>At Monteiro Fabrics, we specialize in high-performance PVC-coated fabrics that meet the evolving demands of design, functionality, and sustainability.</p>",
+        "image": "shopify://shop_images/logo-png-1-monteiro-fabrics.jpg",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "97828bff-9024-4e42-81b0-a810c30a03f0": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "1. PVC Is Recyclable ♻",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PVC is 100% recyclable and can be reused several times without losing its core properties. Choosing PVC-coated fabrics contributes to a <strong>circular economy </strong>and reduces environmental impact.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/fabrics_manufactures.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_MpcLxW": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "image_with_text_eLWqAr": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "2. Long-Lasting Performance",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PVC is known for its durability. It resists weathering, chemicals, corrosion, and impact. Among the most used plastics, PVC is the most long-lasting—our fabrics come with up to <strong>10 years of warranty.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/fabrics_upholstery_manufacturers.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_mtgdXA": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "image_with_text_jjmHbr": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "3. Low Maintenance Material",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PVC-coated fabrics are<strong> easy to clean</strong> and require minimal upkeep. Just a damp cloth with mild soap is enough to maintain their appearance and performance over time.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/PVC_Fabrics_upholstery4.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_aFanY4": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "image_with_text_agyLVm": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "4. Fire-Resistant by Nature",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PVC is naturally less flammable than many other materials, making it a safer choice for environments where fire resistance is crucial.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/PVC_Fabrics_upholstery2.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_He7akm": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "image_with_text_KBFeyP": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "5. Safe for Everyday Use",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>PVC is widely used in medical equipment, food packaging, and even drinking water systems. It presents no health risks for consumers, making it <strong>ideal for sensitive applications.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/coated-fabrics-interior-decoration.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_J9PRjE": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "image_with_text_mxPHA3": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "6. A Versatile Solution",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Whether rigid or flexible, PVC adapts to countless uses—from blood bags and water pipes to stylish upholstery fabrics. Its presence in our daily lives proves its practicality and adaptability.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/decor-fabrics-furniture4_2e0d32d1-6d30-487c-8c3e-d633d23f9c62.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2c6a86fc-f2d3-49ef-9f6d-05dedf3ab371": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Discover Our PVC-Coated Fabrics",
+        "title_size": 28,
+        "title_width": 32,
+        "heading_h1": false,
+        "text": "<p>At Monteiro Fabrics, we offer a wide range of PVC-coated fabrics designed for performance and sustainability. From automotive and office seating to medical applications, our collections are engineered to last.</p><p>Explore our collections, download our catalog, or request a free sample to experience the quality firsthand.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "collection_list_DX6Vdf": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_eepHFA": {
+          "type": "collection",
+          "settings": {
+            "collection": "residential-1"
+          }
+        },
+        "collection_Jg93nE": {
+          "type": "collection",
+          "settings": {
+            "collection": "hospitality-fabrics"
+          }
+        },
+        "collection_yrK7fX": {
+          "type": "collection",
+          "settings": {
+            "collection": "office-fabrics-upholstery"
+          }
+        }
+      },
+      "block_order": [
+        "collection_eepHFA",
+        "collection_Jg93nE",
+        "collection_yrK7fX"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ask your free samples here",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "57044bf4-6adc-4758-94af-3d70ddfe29d3": {
+      "type": "gallery",
+      "blocks": {
+        "template--21552150249775__57044bf4-6adc-4758-94af-3d70ddfe29d3-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SUSTAINABLE-UPHOLSTERY-FABRICS-WHITE.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "ORIGIN COLLECTION",
+            "title": "Sustainable fabrics",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "ORIGIN COLLECTION",
+            "link": "shopify://pages/origin-sustainable-fabrics",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_rtUDdz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-9_8527f31c-85ad-4502-a412-37fc785bdad9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "CHANCE COLLECTION",
+            "title": "A range of 228 shades",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "CHANCE COLLECTION",
+            "link": "shopify://collections/chance",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_Fbbbgt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-upholstery3_b21d82c5-1cdb-4e47-814b-b952287b90a5.jpg",
+            "video_external": "",
+            "enlarge_image": true,
+            "subheading": "PEEL COLLECTION",
+            "title": "65% Organic Components",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "PEEL COLLECTION",
+            "link": "shopify://pages/peel-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--21552150249775__57044bf4-6adc-4758-94af-3d70ddfe29d3-image-1",
+        "image_rtUDdz",
+        "image_Fbbbgt"
+      ],
+      "settings": {
+        "title": "Collections",
+        "grid": 3,
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "featured_image": "none",
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "blog_show_social": true
+      }
+    },
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Other blog posts",
+        "blog": "news",
+        "post_limit": 5,
+        "show_view_all": false,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": false,
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    }
+  },
+  "order": [
+    "slideshow_eNyPHf",
+    "edc35c5e-389f-4cb2-80ce-0189359e589b",
+    "97828bff-9024-4e42-81b0-a810c30a03f0",
+    "custom_liquid_MpcLxW",
+    "image_with_text_eLWqAr",
+    "custom_liquid_mtgdXA",
+    "image_with_text_jjmHbr",
+    "custom_liquid_aFanY4",
+    "image_with_text_agyLVm",
+    "custom_liquid_He7akm",
+    "image_with_text_KBFeyP",
+    "custom_liquid_J9PRjE",
+    "image_with_text_mxPHA3",
+    "2c6a86fc-f2d3-49ef-9f6d-05dedf3ab371",
+    "collection_list_DX6Vdf",
+    "57044bf4-6adc-4758-94af-3d70ddfe29d3",
+    "main",
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d"
+  ]
+}

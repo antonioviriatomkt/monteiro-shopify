@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Commercial &amp; contract upholstery",
+        "title": "Contract Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's contract upholstery fabrics are commercial-grade coated fabrics for hospitality, office, healthcare, retail and public-space projects. Every fabric in the collection is built for heavy-duty durability and is flame-retardant, stain-resistant, easy to clean and REACH-compliant — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": { "type": "icon", "settings": { "icon": "abrasion", "label": "Heavy-duty abrasion resistant" } },
+        "c2": { "type": "icon", "settings": { "icon": "flame", "label": "Flame retardant" } },
+        "c3": { "type": "icon", "settings": { "icon": "easy-clean", "label": "Easy to clean" } },
+        "c4": { "type": "icon", "settings": { "icon": "light-resistant", "label": "Colour-fast and light resistant" } },
+        "c5": { "type": "icon", "settings": { "icon": "long-lasting", "label": "Long lasting" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "c5"],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built to commercial standards",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#FFFFFF",
+        "text_color": "#111111"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": { "type": "spec", "settings": { "label": "Material", "value": "Coated fabric" } },
+        "s2": { "type": "spec", "settings": { "label": "Abrasion resistance", "value": "Heavy-duty, contract grade" } },
+        "s3": { "type": "spec", "settings": { "label": "Stain resistance", "value": "High; non-absorbent surface" } },
+        "s4": { "type": "spec", "settings": { "label": "Cleanability", "value": "Wipe-clean with mild detergent" } },
+        "s5": { "type": "spec", "settings": { "label": "Flame retardancy", "value": "Meets contract upholstery fire-safety standards" } },
+        "s6": { "type": "spec", "settings": { "label": "Light & colour fastness", "value": "Colour-fast, resists fading" } },
+        "s7": { "type": "spec", "settings": { "label": "Phthalates", "value": "Phthalate-free" } },
+        "s8": { "type": "spec", "settings": { "label": "Chemical compliance", "value": "REACH-compliant" } },
+        "s9": { "type": "spec", "settings": { "label": "Care", "value": "No solvents or abrasive cleaners required" } },
+        "s10": { "type": "spec", "settings": { "label": "Origin", "value": "Made in Portugal" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10"],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for contract projects",
+        "align": "center",
+        "bg_color": "#FAFAF8",
+        "text_color": "#111111",
+        "line_color": "#E0E0DC",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What are contract upholstery fabrics?",
+            "answer": "<p>Contract upholstery fabrics are commercial-grade materials made for high-use furniture in professional environments rather than the home. Monteiro's contract fabrics are coated fabrics engineered for heavy-duty durability — flame-retardant, stain-resistant, easy to clean and REACH-compliant — suitable for hospitality, office, healthcare, retail and public-space projects.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How do contract fabrics differ from residential ones?",
+            "answer": "<p>Contract fabrics are built to withstand far more intensive use than residential upholstery. They offer heavier-duty abrasion resistance, meet commercial fire-safety standards, resist staining and fading, and are designed to be cleaned frequently — so they keep performing in busy public and commercial settings.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "How durable are they?",
+            "answer": "<p>The collection is engineered for heavy-duty, contract-grade durability. The coated surface resists abrasion, staining and fading, and stands up to repeated cleaning, making it well suited to high-traffic commercial seating that needs to last.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they meet fire-safety standards for commercial projects?",
+            "answer": "<p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Ask our team for the specific certificates and test reports your project requires.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Which sectors are these fabrics used in?",
+            "answer": "<p>They are specified across commercial sectors including hotels and hospitality, offices and workplaces, healthcare, retail, restaurants and bars, and public spaces — anywhere that demands hard-wearing, easy-to-clean upholstery.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples or specify for a project?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right commercial-grade fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "eyebrow": "Contract fabrics — answered",
+        "title": "Frequently asked questions",
+        "open_first": true,
+        "bg_color": "#FAFAF8",
+        "text_color": "#111111",
+        "line_color": "#E0E0DC",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Contract Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Contract Upholstery Fabrics",
+        "cp_description": "Commercial-grade coated upholstery fabrics for hospitality, office, healthcare, retail and public-space projects. Heavy-duty, flame-retardant, stain-resistant and easy to clean. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/contract"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a contract upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and we'll recommend the right commercial-grade fabric across any sector, share certificates and send samples.</p>",
+        "image_width": 120,
+        "text_alignment": "center",
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "enlarge_text": false,
+        "full_width": false,
+        "color_scheme": "alt"
+      }
+    }
+  },
+  "order": ["intro", "main", "credentials", "specs", "faq", "cta"]
+}

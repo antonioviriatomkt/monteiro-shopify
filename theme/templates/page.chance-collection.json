@@ -1,0 +1,345 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/V3d Chance.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "One iconic engraving. Six performance grades.",
+        "title": "CHANCE 2.0",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>An unrivalled spectrum of colour, now offered in six performance grades — keep the iconic look and choose the grade your project needs.</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "CHANCE 2.0",
+        "title": "One look. Six performance grades.",
+        "title_size": 40,
+        "title_width": 20,
+        "heading_h1": false,
+        "text": "<p>CHANCE is now a family. Every grade shares the same iconic engraving, the same ≥400,000 Martindale durability and the same 10-year, 100% vegan, REACH-compliant build — so you keep the signature CHANCE look across an entire project and simply choose the grade that meets each space's fire, hygiene, sustainability or weather requirement.</p>",
+        "image_width": 120,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_JUN2026_Ipad_bx.pdf?v=1782924961",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "grades": {
+      "type": "grade-cards",
+      "blocks": {
+        "g1": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "The original",
+            "title": "CHANCE CLASSIC",
+            "stat": "236 colours · from stock",
+            "text": "The iconic engraving in an unrivalled spectrum of colour — supple, long-lasting and low-maintenance, for broad contract use.",
+            "accent": "#111111",
+            "cta_label": "Explore Classic",
+            "cta_link": "shopify://collections/chance"
+          }
+        },
+        "g2": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Healthcare",
+            "title": "CHANCE MEDIFLEX",
+            "stat": "Antimicrobial + antiviral · bi-elastic",
+            "text": "Built for intensive disinfection — resists alcohol- and bleach-based cleaners while keeping a soft touch, and stretches to complex shapes.",
+            "accent": "#2f519b",
+            "cta_label": "Explore Mediflex",
+            "cta_link": "shopify://collections/chance-mediflex"
+          }
+        },
+        "g3": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Outdoor & marine",
+            "title": "CHANCE OUTDOOR",
+            "stat": "Light-, weather- & mould-resistant",
+            "text": "High performance for extreme conditions and intensive use, with excellent light fastness and an easy-clean surface.",
+            "accent": "#3fa7c4",
+            "cta_label": "Explore Outdoor",
+            "cta_link": "shopify://collections/chance-outdoor"
+          }
+        },
+        "g4": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sustainable",
+            "title": "CHANCE BIOBLEND",
+            "stat": "65% biobased · chestnut by-products",
+            "text": "Circular design meets coated-fabric technology — agricultural by-products turned into a durable, fire-resistant material.",
+            "accent": "#6e8b3d",
+            "cta_label": "Explore Bioblend",
+            "cta_link": "shopify://collections/chance-bioblend"
+          }
+        },
+        "g5": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Public venues",
+            "title": "CHANCE CRIB 7 / B1",
+            "stat": "Crib 7 · DIN 4102 B1 · M1",
+            "text": "For stadiums, auditoriums and high-traffic public spaces — the most stringent fire resistance with lasting seating comfort.",
+            "accent": "#8c3b3b",
+            "cta_label": "Explore Crib 7 / B1",
+            "cta_link": "shopify://collections/chance-crib-7-b1"
+          }
+        },
+        "g6": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Hospitality",
+            "title": "CHANCE CRIB 5",
+            "stat": "Crib 5 (BS 5852)",
+            "text": "For hospitality where safety is essential — Crib 5 fire resistance with durability, comfort and easy maintenance.",
+            "accent": "#b5742e",
+            "cta_label": "Explore Crib 5",
+            "cta_link": "shopify://collections/chance-crib-5"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6"
+      ],
+      "settings": {
+        "eyebrow": "Choose your grade",
+        "title": "Same engraving. Pick the performance.",
+        "intro": "",
+        "columns": 3,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "card_bg": "#ffffff",
+        "line_color": "#e6e6e2"
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "icon_reach": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH compliant"
+          }
+        },
+        "icon_vegan": {
+          "type": "icon",
+          "settings": {
+            "icon": "vegan",
+            "label": "100% vegan (VVV+)"
+          }
+        },
+        "icon_abrasion": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "icon_flame": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "icon_long": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "10-year warranty"
+          }
+        }
+      },
+      "block_order": [
+        "icon_reach",
+        "icon_vegan",
+        "icon_abrasion",
+        "icon_flame",
+        "icon_long"
+      ],
+      "settings": {
+        "eyebrow": "Shared across every grade",
+        "title": "One build standard, six specialisms",
+        "body": "<p>Every CHANCE 2.0 grade is built on the same iconic engraving and the same core standards — &ge;400,000 Martindale abrasion resistance, 100% vegan (LAV VVV+), full EU REACH compliance and a 10-year warranty. Made in Portugal by Monteiro Fabrics.</p>",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "compare": {
+      "type": "custom-liquid",
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": "<div class=\"c2-compare\"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style><h2>Compare the six grades</h2><p class=\"c2-sub\">Same engraving, same &#8805;400,000 Martindale durability &mdash; choose by requirement.</p><div class=\"c2-wrap\"><table><thead><tr><th>&nbsp;</th><th>Classic</th><th>Mediflex</th><th>Outdoor</th><th>Bioblend</th><th>Crib 7 / B1</th><th>Crib 5</th></tr></thead><tbody><tr><th>Best for</th><td>Broad contract &amp; colour</td><td>Healthcare</td><td>Outdoor &amp; marine</td><td>Sustainable projects</td><td>Stadiums &amp; venues</td><td>Hospitality</td></tr><tr><th>Signature</th><td>236 colours &middot; from stock</td><td>Bi-elastic; soft touch</td><td>Weather &amp; mould resistance</td><td>65% biobased (chestnut)</td><td>Top fire spec</td><td>Crib 5 fire</td></tr><tr><th>Top fire</th><td>M2 + broad list</td><td>EN 1021 &middot; IMO &middot; TB117</td><td>IMO &middot; TB117</td><td>Crib 5 &middot; M2</td><td>Crib 7 &middot; B1 &middot; M1</td><td>Crib 5 (BS 5852)</td></tr><tr><th>Antimicrobial</th><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes + antiviral</td><td class=\"c2-y\">Yes</td><td>&mdash;</td><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes</td></tr><tr><th>Biobased</th><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td class=\"c2-y\">65%</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table></div><p class=\"c2-foot\">All grades: the iconic CHANCE engraving &middot; &#8805;400,000 Martindale &middot; 100% vegan (VVV+) &middot; REACH &middot; 10-year warranty.</p></div>"
+      }
+    },
+    "colour": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "CHANCE CLASSIC",
+        "title": "236 colours, one iconic texture",
+        "title_size": 36,
+        "title_width": 18,
+        "heading_h1": false,
+        "text": "<p>The original CHANCE — an unrivalled spectrum of colour, from soft muted neutrals to vibrant jewel tones and bold statement shades, available from stock. The broadest palette in the family.</p>",
+        "image_width": 120,
+        "button_label": "Explore CHANCE Classic",
+        "button_link": "shopify://collections/chance",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What is CHANCE 2.0?",
+            "answer": "<p>CHANCE 2.0 is one iconic engraving offered in six performance grades — Classic, Mediflex, Outdoor, Bioblend, Crib 7 / B1 and Crib 5. You keep the same signature CHANCE look across a project and choose the grade that meets each space's fire, hygiene, sustainability or weather requirement.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "What's the difference between the six grades?",
+            "answer": "<p>They share the CHANCE engraving, &ge;400,000 Martindale abrasion resistance, a 10-year warranty and vegan / REACH credentials. They differ by specialism: Classic (236 colours, from stock), Mediflex (healthcare — antimicrobial and antiviral, bi-elastic), Outdoor (weather and marine), Bioblend (65% biobased), Crib 7 / B1 (top fire for public venues) and Crib 5 (Crib 5 hospitality fire).</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Which grade should I choose?",
+            "answer": "<p>By requirement: the widest colour choice and stock availability — Classic; healthcare and intensive disinfection — Mediflex; outdoor or marine exposure — Outdoor; a sustainability story — Bioblend; the highest fire rating for stadiums and public venues — Crib 7 / B1; hospitality where Crib 5 is required — Crib 5.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do all six grades come in the same colours?",
+            "answer": "<p>CHANCE Classic offers the full 236-shade palette and is available from stock. The other grades have their own colour ranges tuned to their use — ask our team to match a colour across grades for a project.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Are the CHANCE 2.0 fabrics sustainable?",
+            "answer": "<p>All six are 100% vegan (LAV VVV+, the highest Animal Free rating), fully EU REACH compliant and carry a 10-year warranty that extends their life cycle. CHANCE Bioblend goes further with 65% biobased content made from chestnut by-products.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples of any grade, and our specialists will help you match the right CHANCE grade to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "CHANCE 2.0 — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "CHANCE 2.0",
+        "emit_collectionpage": true,
+        "cp_name": "CHANCE 2.0",
+        "cp_description": "CHANCE 2.0 — one iconic engraving in six performance grades (Classic, Mediflex, Outdoor, Bioblend, Crib 7 / B1, Crib 5). The same look across a project; choose the grade by fire, hygiene, sustainability or weather requirement. Made in Portugal.",
+        "cp_url": "https://www.monteirofabrics.com/pages/chance-collection"
+      }
+    },
+    "cta_close": {
+      "type": "rich-text",
+      "name": "Closing CTA",
+      "settings": {
+        "subheading": "Bring CHANCE 2.0 to your project",
+        "title": "Find your grade.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and we'll recommend the right CHANCE grade, share the certificates you need and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "grades",
+    "credentials",
+    "compare",
+    "colour",
+    "faq",
+    "cta_close"
+  ]
+}

@@ -1,0 +1,74 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c32cbc25-b125-4db8-a112-46391f1b48e9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pv-64.jpg",
+        "height": "fixed",
+        "height_desktop": 550,
+        "height_mobile": 400,
+        "subheading": "Newsroom",
+        "title": "News",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "blog_layout": "rows",
+        "card_image_shape": "square",
+        "blog_excerpt": "below",
+        "show_category": true,
+        "show_readtime": true,
+        "featured_first": true,
+        "intro_text": "<p>Trade fairs, projects and material thinking from a fourth-generation Portuguese coated-fabric maker.</p>",
+        "blog_posts_per_page": 12,
+        "blog_posts_per_row_mobile": "2",
+        "blog_show_title": false,
+        "blog_show_filter": true,
+        "blog_show_rss_link": false
+      }
+    },
+    "a598c52c-7054-4611-b38a-c9eedb9f79c8": {
+      "type": "newsletter",
+      "settings": {
+        "subheading": "",
+        "title": "Subscribe to our newsletter",
+        "text": "<p>Join the Monteiro family and stay updated on industry trends, educational articles, trade shows, and new projects. Be ahead of the curve. Sign up now!</p>",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "c32cbc25-b125-4db8-a112-46391f1b48e9",
+    "main",
+    "a598c52c-7054-4611-b38a-c9eedb9f79c8"
+  ]
+}

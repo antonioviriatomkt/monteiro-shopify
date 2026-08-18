@@ -1,0 +1,328 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Medical &amp; healthcare upholstery",
+        "title": "Healthcare Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's healthcare upholstery fabrics are medical-grade coated fabrics engineered for hospitals, clinics, care homes and patient seating. Every fabric in the collection is antimicrobial, fluid-proof and easy to disinfect with alcohol- and bleach-based cleaners — REACH-compliant, phthalate-free and made in Portugal.</p><p>Specifying for medical devices or clinical equipment? See our <a href='/collections/medical' title='Medical-grade upholstery fabrics'>medical-grade fabrics</a>.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Anti-microbial and anti-fungal"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean and disinfect"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH compliant"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for clinical use",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Antimicrobial & antifungal",
+            "value": "Yes — inhibits bacteria, fungi and mould"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Disinfection",
+            "value": "Wipe-clean; compatible with alcohol and diluted-bleach disinfectants"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Fluid barrier",
+            "value": "Waterproof, non-absorbent surface"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Stain resistance",
+            "value": "High"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, contract grade"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Flame retardancy",
+            "value": "Meets contract upholstery fire-safety standards"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Care",
+            "value": "No solvents or abrasive cleaners required"
+          }
+        },
+        "s11": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for healthcare environments",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for healthcare upholstery?",
+            "answer": "<p>Healthcare upholstery fabrics must withstand repeated disinfection, resist fluids and stains, inhibit microbial growth and meet fire-safety requirements — while staying comfortable for patients. Monteiro's healthcare fabrics are antimicrobial coated fabrics that are waterproof, easy to clean and REACH-compliant.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Can Monteiro healthcare fabrics be cleaned with alcohol or bleach?",
+            "answer": "<p>Yes. The coated surface is designed to be wiped down with alcohol-based disinfectants and diluted bleach solutions used in clinical cleaning protocols, without cracking or losing colour. Avoid abrasive pads and undiluted solvents.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics antimicrobial?",
+            "answer": "<p>Yes — the collection inhibits the growth of bacteria, fungi and mould on the fabric surface, helping maintain hygiene on high-contact healthcare seating.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are Monteiro healthcare fabrics used?",
+            "answer": "<p>They are specified for hospital and clinic furniture, patient and examination seating, wheelchairs and mobility seating, dental practices and care-home upholstery — anywhere that demands hygienic, hard-wearing, easy-to-clean surfaces.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Are the fabrics flame-retardant and REACH-compliant?",
+            "answer": "<p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Ask our team for the specific certificates and test reports your project requires.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples of the healthcare collection?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Healthcare fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Healthcare Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Healthcare Upholstery Fabrics",
+        "cp_description": "Medical-grade antimicrobial coated upholstery fabrics for hospitals, clinics, care homes and patient seating. Easy to disinfect, fluid-proof, flame-retardant and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/healthcare"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a healthcare upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and we'll recommend the right antimicrobial fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

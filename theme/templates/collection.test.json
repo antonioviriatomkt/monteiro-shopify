@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_rVbJYL": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 200,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "rich_text_qGBTxX": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "10-Year Warranty | ISO 9001 & 14001 | 48h Stock Delivery",
+        "title": "Marine interior fabrics engineered for the world's finest vessels",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>From superyacht salons to commercial vessel cabins, Monteiro marine fabrics combine Portuguese craftsmanship with advanced PVC coating technology — delivering interiors that endure the harshest marine environments while maintaining the elegance your clients expect.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "38e29a98-4ef4-4331-b728-cf644d4d7917": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Why leading yacht designers specify Monteiro marine fabrics",
+        "title_size": 28,
+        "title_width": 16,
+        "text": "<p>Monteiro has manufactured coated fabrics in Porto, Portugal since 1917 — four generations of technical expertise in PVC coating, calendering, and finishing.</p><p>Proven in luxury hospitality (<a href=\"/blogs/news/savoy-palace-nini-andrade-silva\" target=\"_blank\" title=\"Savoy Palace, Nini Andrade Silva\">Vila Foz Hotel</a>, <a href=\"/blogs/news/savoy-palace-nini-andrade-silva\" target=\"_blank\" title=\"Savoy Palace, Nini Andrade Silva\">Savoy Palace</a>) where durability and aesthetics face equal scrutiny — marine interiors demand the same balance.</p><p>Unlike commodity suppliers, Monteiro offers manufacturer-direct service: custom colour matching, tailormade development, 1-piece minimums, and guaranteed 48-hour dispatch from stock.</p><p>55+ years of PVC coating expertise means every metre is engineered for UV resistance, salt spray durability, mildew prevention, and sustained colour stability.</p>",
+        "button_label": "",
+        "button_link": "shopify://pages/fabrics-by-industry",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/yacht.webp",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": true,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "rich_text_pjjEjy": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "From superyacht salons to workboat cabins — built for every marine application",
+        "title": "Applications and use cases",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li><strong>Luxury yachts and superyachts</strong>: Salon seating, cabin headboards, wall panels, ceiling linings. Colour-matched to interior design schemes with 228+ shades available. Proven luxury credentials from five-star hospitality projects.</li><li><strong>Sailboats and cruisers</strong>: Cockpit cushions, cabin upholstery, nav station surfaces. UV stability and mildew resistance for long passages. Easy cleaning with mild detergent.</li><li><strong>Commercial vessels</strong>: Crew seating, passenger cabins, public area furnishing. Fire-retardant options available. High-cycle abrasion resistance for heavy traffic.</li><li><strong>Leisure and pontoon boats</strong>: Helm seating, sun pad upholstery, console wraps. Waterproof, stain-resistant, quick-drying performance.</li><li><strong>Yacht refit projects</strong>: Ideal for refurbishment — available from stock in 48 hours, 1-piece minimum orders, custom colour matching for heritage vessel restorations.</li></ul>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_cgQMnK": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "ISO certified, independently tested, backed by the industry's longest warranty",
+        "title": "Certifications and quality assurance",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li><strong>ISO 9001:2015</strong> — Quality management system certification ensures consistent manufacturing standards across every production run.</li><li><strong>ISO 14001:2015</strong> — Environmental management certification confirms Monteiro's commitment to sustainable manufacturing practices.</li><li><strong>REACH Compliance</strong> — (EC) No 1907/2006. All fabrics comply with EU chemical safety regulations.</li><li><strong>10-Year Warranty</strong> — The longest guarantee in the marine coated fabric industry. Every Monteiro fabric is warranted against manufacturing defects for a full decade.</li><li>Independent third-party testing for UV resistance, abrasion, colour fastness, and hydrolysis.</li></ul>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_9zBq7e": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "Responsible manufacturing from a factory that's been here for over a century",
+        "title": "Sustainability",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<ul><li>Monteiro's ISO 14001 certification is not a badge — it's an active environmental management programme governing energy use, waste reduction, and emissions at the Porto factory.</li><li>REACH compliance ensures no hazardous substances enter the marine environment through our fabrics.</li><li>Fourth-generation family ownership means long-term thinking: investing in cleaner production processes, not quarterly returns.</li></ul>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "accordions_jkRhTY": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_dgUc3L": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What type of fabric is best for boat and yacht interiors?",
+            "text": "<p>PVC coated fabrics are the preferred choice for marine interior upholstery because they combine the aesthetic appeal of leather with superior resistance to water, UV light, mildew, and salt spray. Unlike natural leather, PVC coated fabric does not absorb moisture, crack in sunlight, or require expensive conditioning treatments. High-quality PVC marine fabrics from manufacturers like Monteiro offer Martindale abrasion ratings suitable for high-traffic yacht areas, while maintaining a soft hand feel and luxury appearance. For interior applications — cabin seating, salon furnishing, wall panels, and headboards — PVC coated fabric delivers the best balance of durability, aesthetics, and value.</p>",
+            "open": false
+          }
+        },
+        "accordion_KNPMUw": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How long does marine upholstery fabric last?",
+            "text": "<p>Premium PVC coated marine upholstery fabric typically lasts 8–15 years depending on UV exposure, cleaning frequency, and installation quality. Monteiro marine fabrics are backed by a 10-year warranty against manufacturing defects — the longest guarantee offered by any European marine fabric manufacturer. To maximise lifespan, clean regularly with mild detergent and a damp cloth, avoid harsh chemical cleaners, and ensure proper ventilation to prevent moisture build-up in enclosed cabins.</p>",
+            "open": false
+          }
+        },
+        "accordion_haK6g8": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What certifications should marine upholstery fabric have?",
+            "text": "<p>For recreational boats and yachts, look for fabrics that meet fire retardancy standards (such as EN 1021, FMVSS 302, or IMO FTP Code for commercial vessels), UV resistance testing, and mildew resistance. The fabric manufacturer should hold ISO 9001 (quality management) certification for consistent production standards. For fabrics used in the European market, REACH compliance (EC No 1907/2006) is legally required to ensure no hazardous chemicals are present. ISO 14001 (environmental management) certification indicates responsible manufacturing practices. Monteiro holds both ISO 9001 and ISO 14001 certifications and meets all applicable REACH requirements.</p>",
+            "open": false
+          }
+        },
+        "accordion_eXg8Eq": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I order marine fabric samples before purchasing?",
+            "text": "<p>Yes. Monteiro offers free sample swatches for all marine fabric collections, shipped directly to your studio, design office, or shipyard. There is no minimum order requirement for samples. Samples typically ship within 48 hours of the request. You can order samples directly through the website by clicking \"Add Free Sample\" on any collection page, or by contacting the Monteiro sales team.</p>",
+            "open": false
+          }
+        },
+        "accordion_9wyrxF": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What is the minimum order quantity for marine interior fabric?",
+            "text": "<p>Monteiro offers 1-piece minimum orders for all stock marine fabrics, making it practical for yacht refit projects, prototyping, small vessels, and custom upholstery work. For large-scale OEM boat builder programmes or tailormade development projects, contact the Monteiro marine team to discuss volume pricing and custom production options.</p>",
+            "open": false
+          }
+        },
+        "accordion_RBttXd": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How quickly can marine fabric be delivered in Europe?",
+            "text": "<p>Monteiro dispatches stock marine fabric collections within 48 hours from its warehouse in Porto, Portugal. Delivery times to European destinations typically range from 2–5 business days depending on location. For urgent projects or large volume orders, contact the sales team to arrange priority shipping or scheduled delivery.</p>",
+            "open": false
+          }
+        },
+        "accordion_tGwdpr": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What makes PVC coated fabric better than vinyl or natural leather for boats?",
+            "text": "<p>PVC coated fabric outperforms standard vinyl and natural leather in marine environments for several reasons. Compared to basic vinyl, high-quality PVC coated fabric offers superior UV stability, better colour retention, softer hand feel, and longer service life. Compared to natural leather, PVC coated fabric is waterproof, mildew-resistant, lighter, easier to clean, and significantly more cost-effective — while advanced texturing and colour technology now achieves leather-like aesthetics virtually indistinguishable from genuine hide. PVC coated fabric also resists salt spray corrosion, a persistent problem for natural leather in marine environments.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_dgUc3L",
+        "accordion_KNPMUw",
+        "accordion_haK6g8",
+        "accordion_eXg8Eq",
+        "accordion_9wyrxF",
+        "accordion_RBttXd",
+        "accordion_tGwdpr"
+      ],
+      "disabled": true,
+      "name": "Expandable content",
+      "settings": {
+        "title": "Frequently asked questions about marine interior fabrics",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "rich_text_TMTinY": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Start your marine interior project with Monteiro",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Whether you're specifying fabrics for a 60m superyacht or replacing cushions on a day cruiser, our marine team is ready to help. Request free samples, <a href=\"/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">discuss custom development</a>, or get a <a href=\"/pages/contact\" target=\"_blank\" title=\"Contact us\">project quotation</a>.</p>",
+        "image_width": 120,
+        "button_label": "GET IN TOUCH",
+        "button_link": "shopify://pages/contact",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_rVbJYL",
+    "rich_text_qGBTxX",
+    "38e29a98-4ef4-4331-b728-cf644d4d7917",
+    "main",
+    "rich_text_pjjEjy",
+    "rich_text_cgQMnK",
+    "rich_text_9zBq7e",
+    "accordions_jkRhTY",
+    "rich_text_TMTinY"
+  ]
+}

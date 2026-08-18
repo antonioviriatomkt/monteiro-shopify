@@ -1,0 +1,503 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8926e558-9838-4f0d-9a19-bbf21b16c5e5": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "{{ article.image }}",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "edc35c5e-389f-4cb2-80ce-0189359e589b": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Monteiro Fabrics proudly represents Portugal and showcases Coated Fabrics with 65% BIO-based material in Cologne, Germany!",
+        "title_size": 36,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p>Gisela Ferreira, our R&D and Technical Manager, was a speaker at the 15th edition of <a href=\"https://www.ami-events.com/event/2fd605e8-2f69-47a4-bb2e-448b9682ee7f/summary\" title=\"https://www.ami-events.com/event/2fd605e8-2f69-47a4-bb2e-448b9682ee7f/summary\">PVC Formulation</a>, which took place from September 12 to 14, 2023, in Germany.</p>",
+        "image": "shopify://shop_images/logo-png-1-monteiro-fabrics.jpg",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "1d862462-6fb2-4740-a51d-020f8acd47dd": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Where the PEEL collection was presented.",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>65% ORGANIC COMPONENTS</p><p>Fabrics made from chestnuts.</p><p>During chestnut processing, several by products are generated, like chestnut wood, flowers, leaves, shells, barks, and burs. With local partners, we've collected these otherwise wasted scraps turning it into a fashionable material.</p><p></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/decor-fabrics-furniture1_50b2efd4-87ca-4619-a88d-e45cfd2a77ef.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "dc784b1e-548c-4ffe-823f-b0ea3d4bbf1e": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 36,
+        "title_width": 38,
+        "heading_h1": false,
+        "text": "<p>Gisela Ferreira, our R&D and Technical Manager, delivered a captivating talk on the integration of sustainability in PVC upholstery for the <a href=\"https://www.ami-events.com/event/2fd605e8-2f69-47a4-bb2e-448b9682ee7f/summary\" target=\"_blank\">15th edition of PVC Formulation</a>, in Cologne, Germany.  An event focus on sustainability, supply chain, technology, and additives in the PVC industry. A leading conference and exhibition organizer by AMI Events. </p><p><strong>Sustainability in PVC upholstery: Combining with nature. </strong></p><p>The following topics were presented:</p><ul><li>Company's sustainable strategy for PVC upholstery</li><li>R&D developments and the approach to the local supply chain</li><li>Presentation of products made with PVC and chestnut residues</li></ul>",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "57044bf4-6adc-4758-94af-3d70ddfe29d3": {
+      "type": "gallery",
+      "blocks": {
+        "template--21552150249775__57044bf4-6adc-4758-94af-3d70ddfe29d3-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PVC_FORMULATION-_AMI_EVENTS.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "26449143-d418-4da5-be83-f89035cbd702": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PVC-FORMULATION-AMI-EVENTOS.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "a2f1b9a6-03d8-43af-8729-ea714530c835": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PVC-FORMULATION-MONTEIRO-FABRICS.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--21552150249775__57044bf4-6adc-4758-94af-3d70ddfe29d3-image-1",
+        "26449143-d418-4da5-be83-f89035cbd702",
+        "a2f1b9a6-03d8-43af-8729-ea714530c835"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "97828bff-9024-4e42-81b0-a810c30a03f0": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Gisela Ferreira at PVC Formulation, by AMI Events",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Gisela Ferreira is the R&D and Technical manager of Monteiro Fabrics, specialists in coated fabrics based in Portugal. She holds a master’s degree in Bioengineering from the Faculty of Engineering at the University of Porto (FEUP) and a master’s in Management from Catholic University of Porto (FEG-UCP).</p><p></p><p>Her career began as a researcher, but her desire to impact people's lives led her to transition to the industry world. With over 10 years of experience, Gisela is responsible for technical support and the development of new products using PVC and PU coated fabrics for upholstery.</p><p>She spoke at the <a href=\"https://www.ami-events.com/event/2fd605e8-2f69-47a4-bb2e-448b9682ee7f/summary\" target=\"_blank\">PVC Formulation Congress</a> last September in Cologne, an event that brings together all major players in the PVC market under one roof.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/PVC_FORMULATION-_AMI_EVENTS-1.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2c6a86fc-f2d3-49ef-9f6d-05dedf3ab371": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "We spoke to Gisela and asked her about the experience",
+        "title_size": 28,
+        "title_width": 32,
+        "heading_h1": false,
+        "text": "<p><em>It was a very enriching and rewarding experience!</em></p><p><em>Firstly, being present at an event that gathers the key experts, researchers, and companies in the sector is, in itself, an excellent opportunity to establish professional relationships that often result in partnerships and collaborations, leading to the sharing and generation of know-how. Furthermore, being at the congress as a speaker allowed for the dissemination of the company and our innovation projects, which fills me with pride.</em></p><h2><em>My presentation emphasized the importance of sustainability in the PVC sector, especially at a time when the future of PVC is being widely questioned.</em></h2><p><em>This was one of the most impactful presentations, showcasing the real and effective possibility of creating a truly sustainable product when compared to a traditional coated fabric. Indeed, the audience responded enthusiastically when I discussed a differentiated product that combines PVC and nature, </em><a href=\"https://www.monteirofabrics.com/pages/peel-collection\" target=\"_blank\"><em><strong>the PEEL collection</strong></em></a><em>, comprising a total of 65% biological content (according to ASTM 6866), particularly due to its high performance in abrasion (400,000 cycles) and fire resistance (compliant with high French and English standards – M2 and Crib5).</em></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2defb2bf-796b-451b-a255-2901ec48f0be": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/V7 Peel.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "65% ORGANIC COMPONENTS",
+        "title": "PEEL COLLECTION",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "KNOW MORE",
+        "button_link": "shopify://pages/peel-collection",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "b986f7b5-28b7-4c83-bfde-2ca8a5913a9a": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "65% ORGANIC COMPONENTS",
+        "title_size": 30,
+        "title_width": 20,
+        "heading_h1": false,
+        "text": "<p><em>Presenting a comparative life-cycle assessment between </em><a href=\"https://www.monteirofabrics.com/pages/peel-collection\" target=\"_blank\"><em>PEEL </em></a><em>and a traditional product, clearly demonstrating the benefits, including reduced environmental impact, lower water toxicity, or lower consumption of fossil-based raw materials during PEEL production, further reinforced the credibility of our development. The audience's enthusiasm heightened when I explained our focus on sourcing waste from other industries, such as chestnut shells, cereal dust, or by-products of the paper industry, as well as when I emphasized our resolute strategy of exclusive sourcing within Europe to minimize the environmental impact of transportation.</em></p><p></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "0bae2641-73ed-444e-9c29-50340c912ef4": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Sustainable Performance in PEEL Collection",
+        "title_size": 30,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p><em>As a crop by-product, no aditional water or land is required.‍ We're managed to produce a technologically viable product ready to be produced on a high scale, and without compromising on performance.</em></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "cf7ca0e0-fa43-4dee-9975-5fc9db4d1584": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Slide_16_9_-_14_922efe61-3376-445d-9906-c578049c0d63.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "3dc40745-d692-4039-a5ed-40e1d6e17b76": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/fabrics_upholstery_manufacturers5.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Slide_16_9_-_11_9fc9a072-3d95-4901-89ed-819f0b2b8f63.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "60467066-d782-437d-88f0-0c7ecee675b3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Slide_16_9_-_10.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "e3a203d6-50e4-4ded-8e46-99eb7c8ca1f2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PEEL-COLLECTION.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        },
+        "648689d0-d5b6-48c5-829b-eff4f3b354ce": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/fabrics_upholstery_manufacturers6.jpg",
+            "image_width": 700,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/pages/peel-collection"
+          }
+        }
+      },
+      "block_order": [
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-2",
+        "3dc40745-d692-4039-a5ed-40e1d6e17b76",
+        "template--21552150249775__cf7ca0e0-fa43-4dee-9975-5fc9db4d1584-text_block-3",
+        "60467066-d782-437d-88f0-0c7ecee675b3",
+        "e3a203d6-50e4-4ded-8e46-99eb7c8ca1f2",
+        "648689d0-d5b6-48c5-829b-eff4f3b354ce"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "square",
+        "alternate_bg_color": false,
+        "full_width": true
+      }
+    },
+    "7fc685bc-0d9f-4e47-a46c-93ca542d0460": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "<p><em>September 14, 2023, will be a significant milestone in our story; for me, it was the validation by Europe of what is the most sustainable and high-performing coated fabric produced in Europe!</em></p><p><em><strong>It was the overflowing pride of a team that, despite being small, has the technical expertise, agility, and focus to position us at the forefront of Europe... And the validation of what is the instinct and ability of a winning team: Monteiro Fabrics!</strong></em></p><p>Gisela Ferreira, R&D and Technical Manager,</p><p>MONTEIRO FABRICS, Portugal</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "0139f2bf-54ee-4438-81e4-3a2b8873e413": {
+      "type": "featured-product",
+      "blocks": {
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-vendor_and_type-1": {
+          "type": "vendor_and_type",
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-title-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-rating-1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-vendor_and_type-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-title-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-price-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-rating-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-variant_picker-1",
+        "template--21546716037423__0139f2bf-54ee-4438-81e4-3a2b8873e413-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "{{ article.metafields.custom.produto.value }}",
+        "show_backorder_text": false,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "featured_image": "none",
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "blog_show_social": true
+      }
+    },
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Other blog posts",
+        "blog": "sustainability",
+        "post_limit": 3,
+        "show_view_all": false,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": false,
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    }
+  },
+  "order": [
+    "8926e558-9838-4f0d-9a19-bbf21b16c5e5",
+    "edc35c5e-389f-4cb2-80ce-0189359e589b",
+    "1d862462-6fb2-4740-a51d-020f8acd47dd",
+    "dc784b1e-548c-4ffe-823f-b0ea3d4bbf1e",
+    "57044bf4-6adc-4758-94af-3d70ddfe29d3",
+    "97828bff-9024-4e42-81b0-a810c30a03f0",
+    "2c6a86fc-f2d3-49ef-9f6d-05dedf3ab371",
+    "2defb2bf-796b-451b-a255-2901ec48f0be",
+    "b986f7b5-28b7-4c83-bfde-2ca8a5913a9a",
+    "0bae2641-73ed-444e-9c29-50340c912ef4",
+    "cf7ca0e0-fa43-4dee-9975-5fc9db4d1584",
+    "7fc685bc-0d9f-4e47-a46c-93ca542d0460",
+    "0139f2bf-54ee-4438-81e4-3a2b8873e413",
+    "main",
+    "b506428e-0f5c-4c6e-87da-cba3e79f6f3d"
+  ]
+}

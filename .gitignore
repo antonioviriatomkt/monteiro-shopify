@@ -1,0 +1,21 @@
+# --- secrets / credentials — never commit ---
+.oauth-state.json
+.shopify-token.json
+.install-url.txt
+.sender-token
+.env
+.env.local
+
+# --- noise ---
+node_modules/
+.DS_Store
+.~lock.*#
+
+# --- heavy binary source assets (~523 MB): versioned by Dropbox, not git ---
+# catalogue PDFs, form exports, imagery
+data/
+assets-source/
+
+# --- root-level working exports ---
+/*.xlsx
+/*.docx

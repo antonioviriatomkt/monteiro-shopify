@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Marine &amp; yacht upholstery",
+        "title": "Marine Interior Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's marine interior upholstery fabrics are coated fabrics for yacht and boat interiors, engineered to perform in demanding on-board conditions. Every fabric in the collection is UV-resistant, salt- and water-resistant, mildew-resistant, flame-retardant and easy to clean — phthalate-free and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "water-repellent",
+            "label": "Water repellent"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "UV and light resistant"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for life on the water",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "UV & light fastness",
+            "value": "UV-resistant; resists fading in strong sunlight"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Water resistance",
+            "value": "Water-repellent, non-absorbent surface"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Salt & moisture",
+            "value": "Resists salt, humidity and mildew"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean with mild detergent"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, contract grade"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Flame retardancy",
+            "value": "Meets contract upholstery fire-safety standards"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for marine interiors",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for marine and yacht interiors?",
+            "answer": "<p>Marine interior fabrics must cope with strong sunlight, salt air, humidity and frequent cleaning while staying comfortable on board. Monteiro's marine fabrics are coated fabrics that are UV-resistant, water-repellent, mildew-resistant and easy to clean, with a wipe-clean surface built for life on the water.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics UV-resistant and colour-fast in strong sun?",
+            "answer": "<p>Yes. The collection is UV-resistant and engineered to resist fading in strong sunlight, helping interiors keep their colour through extended exposure on deck and through cabin glazing.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they water- and mildew-resistant?",
+            "answer": "<p>Yes — the coated surface is water-repellent and non-absorbent, and resists salt, humidity and mildew. This keeps the fabric hygienic and easy to maintain in damp, salt-laden marine environments.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they meet fire-safety standards?",
+            "answer": "<p>The fabrics meet contract upholstery fire-safety standards and are phthalate-free and REACH-compliant. Ask our team for the specific marine certificates your project requires.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are specified for yacht and boat interiors — cabins, saloons, seating, headboards and cruise furniture — anywhere on board that demands durable, UV- and water-resistant, easy-to-clean upholstery.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Marine fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Marine Interior Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Marine Interior Upholstery Fabrics",
+        "cp_description": "UV- and water-resistant coated upholstery fabrics for yacht and boat interiors; mildew-resistant, flame-retardant, easy to clean; made in Portugal.",
+        "cp_url": "https://www.monteirofabrics.com/collections/marine"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a marine upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your vessel or project and we'll recommend the right UV- and water-resistant fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

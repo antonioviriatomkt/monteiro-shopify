@@ -1,0 +1,103 @@
+{%- comment -%}
+  Article card. Used by the News listing (sections/main-blog) and the
+  "More news" carousel (sections/featured-blog).
+
+  Accepts:
+    article        {Article}  required
+    show_date      {Boolean}
+    show_author    {Boolean}
+    image_shape    {String}   landscape | square | portrait | portrait_tall
+    blog_excerpt   {String}   none | below | hover
+    show_category  {Boolean}  show the category pill (listing only)
+    show_readtime  {Boolean}  show the estimated read time (listing only)
+    index          {Number}   stagger index for entrance animation
+  June 2026 redesign: added category pill + read time. Both opt-in, so the
+  featured-blog carousel (which doesn't pass them) is unchanged.
+{%- endcomment -%}
+
+{%- liquid
+  assign category = ''
+  if show_category and article.tags.size > 0
+    assign priority = 'Sustainability,Projects,Hospitality,Collections,Material,Company,Delivery,Manufacturers' | split: ','
+    assign tags_dc = ''
+    for tag in article.tags
+      assign tag_dc = tag | downcase
+      assign tags_dc = tags_dc | append: '|' | append: tag_dc | append: '|'
+    endfor
+    for label in priority
+      assign label_dc = label | downcase
+      assign needle = '|' | append: label_dc | append: '|'
+      if tags_dc contains needle
+        assign category = label
+        break
+      endif
+    endfor
+    if category == ''
+      assign category = article.tags.first | capitalize
+    endif
+  endif
+
+  assign read_minutes = 0
+  if show_readtime
+    assign word_count = article.content | strip_html | strip_newlines | split: ' ' | size
+    assign read_minutes = word_count | divided_by: 200 | at_least: 1
+  endif
+-%}
+
+<a href="{{ article.url }}"
+   data-cc-animate-click
+   class="article-block {% if blog_excerpt == "below" %}article-block--excerpt-below{% endif %}"
+   data-cc-animate="cc-fade-in-up"
+   {% if index %}
+    data-loop-index="{{ index }}"
+    data-cc-animate-delay="{{ index | times: 0.1 }}s"
+   {% endif %}
+>
+
+  <div class="article-block__image article-block__image--{{ image_shape }} {% if blog_excerpt == "hover" %}image-overlay image-overlay--bg-full{% endif %}">
+    {% if article.image %}
+      {% render 'responsive-image', image: article.image %}
+    {% else %}
+      <div class="placeholder-image">{{ 'collection-2' | placeholder_svg_tag }}</div>
+    {% endif %}
+
+    {% if category != '' %}
+      <span class="article-block__cat">{{ category }}</span>
+    {% endif %}
+
+    {% if blog_excerpt == "hover" %}
+      <div class="article-block__excerpt">
+        {% if blog_excerpt == "hover" %}<p>{{ article.excerpt_or_content | strip_html | truncate: 100 }}</p>{% endif %}
+        <span data-cc-animate class="button alt no-hover" href="{{ article.url }}">
+          {{ 'blogs.article.read_more' | t }}
+        </span>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="article-block__content">
+    {% if show_date or show_author or read_minutes > 0 %}
+      <div class="article-block__meta ">
+        {%- if show_author -%}
+          <span class="author feature-subheader">{{ article.author }}</span>
+          {%- if show_date or read_minutes > 0 -%}&nbsp;<span class="cc-bullet">&bull;</span>&nbsp;{%- endif -%}
+        {%- endif -%}
+        {%- if show_date -%}
+          <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}" class="feature-subheader">{{ article.published_at | date: format: 'month_date_year_blog' }}</time>
+        {%- endif -%}
+        {%- if read_minutes > 0 -%}
+          {%- if show_date -%}&nbsp;<span class="cc-bullet">&bull;</span>&nbsp;{%- endif -%}
+          <span class="feature-subheader article-block__readtime">{{ read_minutes }} min read</span>
+        {%- endif -%}
+      </div>
+    {% endif %}
+
+    <h3 class="article-block__title align-left">{{ article.title }}</h3>
+
+    {% if blog_excerpt == "below" %}
+      <div class="article-block__excerpt rte">
+        <p>{{ article.excerpt_or_content | strip_html | truncate: 160 }}</p>
+      </div>
+    {% endif %}
+  </div>
+</a>

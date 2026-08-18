@@ -1,0 +1,576 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.template-faq",
+  "sections": {
+    "rich_text_jLkgMi": {
+      "type": "rich-text",
+      "custom_css": [
+        "h1 {font-family: 'KometPro', sans-serif;}",
+        "p {font-family: 'KometPro', sans-serif;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "{{ page.title }}",
+        "title_size": 48,
+        "title_width": 40,
+        "heading_h1": true,
+        "text": "<p>To get help as quickly as possible, start by browsing our Frequently Asked Questions below.</p><p>If your query isn’t covered, our customer service team is here — send us a message using the form at the bottom of this page, or reach us by phone and email <a href=\"/pages/contact\" title=\"Contact us\">here</a>.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-faq",
+      "custom_css": [
+        "#faq-search__input {font-family: 'KometPro', sans-serif;}"
+      ],
+      "settings": {
+        "show_title": false,
+        "show_content": false,
+        "text_alignment": "left",
+        "show_search": true,
+        "show_sidebar": true,
+        "sidebar_title": "Quick links",
+        "search_placeholder": "Search FAQs"
+      }
+    },
+    "16336816691fb51b7b": {
+      "type": "accordions",
+      "blocks": {
+        "16336816691fb51b7b-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How can I place an order?",
+            "text": "<p>To place an order, simply get in touch with our sales team <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a>. Let us know the fabric references, colours, and quantities you need, and we'll guide you through the rest — from quotation to delivery.</p>",
+            "open": false
+          }
+        },
+        "16336816691fb51b7b-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I order directly online?",
+            "text": "<p>Orders aren't placed directly through the website — they're handled personally by our sales team <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a>, so you get the right fabric, quantity, and lead time for your project. You can, however, order samples online and download catalogues and technical files for every collection.</p>",
+            "open": false
+          }
+        },
+        "16336816691fb51b7b-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request a proforma invoice?",
+            "text": "<p>Yes — we can issue a proforma invoice on request. Just let our sales team know when you enquire and we'll prepare one for you.</p>",
+            "open": false
+          }
+        },
+        "accordion_QTidCM": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Is there a minimum order quantity?",
+            "text": "<p>Yes. The minimum order is one roll for stock-service items, and 300 linear metres for tailormade articles.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "16336816691fb51b7b-0",
+        "16336816691fb51b7b-2",
+        "16336816691fb51b7b-1",
+        "accordion_QTidCM"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "settings": {
+        "title": "Orders and purchasing",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "1633681707d0a1c902": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_qytQpM": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request fabric samples?",
+            "text": "<p>Yes. You can request up to 10 different samples in a single order, free of charge, using your company email account. Just browse the collection product pages and add the samples you'd like to your cart.</p>",
+            "open": false
+          }
+        },
+        "accordion_TgTbHE": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How do I ask for a physical catalogue?",
+            "text": "<p>Physical catalogues can be ordered straight from each collection's product page. Scroll past the colour variants to find the catalogue option, add it to your cart, and complete checkout — we'll ship it to you.</p>",
+            "open": false
+          }
+        },
+        "accordion_rCryNi": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are samples available for all collections?",
+            "text": "<p>Yes — samples are available for every collection in our range, so you can check colour, texture, and quality before placing an order.</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Is there a limit to the number of samples I can request?",
+            "text": "<p>Yes. You can request up to 10 individual samples per order. If you're working on a larger project and need more, contact our team <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a> and we'll be happy to help.</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How long does sample delivery take?",
+            "text": "<p>Delivery times depend on the item: stock-service samples typically arrive within 2–5 days, while tailormade articles can take up to 4–5 weeks.</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request samples for a specific project or mood board?",
+            "text": "<p>Absolutely. Browse our collection product pages to choose samples yourself, or contact our specialists <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a> — share your project or mood board and we'll recommend fabrics to match.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qytQpM",
+        "accordion_TgTbHE",
+        "accordion_rCryNi",
+        "1633681707d0a1c902-0",
+        "1633681707d0a1c902-1",
+        "1633681707d0a1c902-2"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: left; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "settings": {
+        "title": "Samples and catalogue requests",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "1633684277a52541f1": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_DgXT7R": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Which fabrics are available from stock?",
+            "text": "<p>Our stock-service materials are held in stock for immediate dispatch — typically shipped within 48 hours, subject to availability — and are covered by our 10-year warranty. Stock-service items are indicated on each collection's product page. To confirm current availability for a specific fabric and colour, contact our sales team <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a>.</p>",
+            "open": false
+          }
+        },
+        "accordion_Py8EyH": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How quickly are stock items shipped?",
+            "text": "<p>Stock items are dispatched within 48 hours, subject to availability.</p>",
+            "open": false
+          }
+        },
+        "1633684277a52541f1-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What happens if a fabric is out of stock?",
+            "text": "<p>If a fabric is temporarily out of stock, the usual production time is 2–3 weeks.</p>",
+            "open": false
+          }
+        },
+        "1633684277a52541f1-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I check availability before placing an order?",
+            "text": "<p>Yes — our team can confirm current availability before you place your order.</p>",
+            "open": false
+          }
+        },
+        "cc3ff187-0164-4771-94eb-f1ca2d23b5d8": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do lead times vary by collection?",
+            "text": "<p>No — lead times are consistent across our collections.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_DgXT7R",
+        "accordion_Py8EyH",
+        "1633684277a52541f1-0",
+        "1633684277a52541f1-1",
+        "cc3ff187-0164-4771-94eb-f1ca2d23b5d8"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "settings": {
+        "title": "Stock and lead times",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_HcGz4d": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_UnyNYP": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where can I find technical specifications?",
+            "text": "<p>Technical specifications are listed on each collection's product page. For full detail, you can also download the collection's technical file and catalogue from that same page.</p>",
+            "open": false
+          }
+        },
+        "accordion_V4LRjU": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What is the width of each fabric?",
+            "text": "<p>Our fabrics are approximately 140 cm wide.</p>",
+            "open": false
+          }
+        },
+        "accordion_e8P9wt": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are the fabrics suitable for contract use?",
+            "text": "<p>Yes. Our fabrics are suitable for contract use.</p>",
+            "open": false
+          }
+        },
+        "accordion_W6UEUT": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where can I find cleaning and maintenance instructions?",
+            "text": "<p>You'll find care instructions in each collection's downloadable technical file, as well as on our <a href=\"https://www.monteirofabrics.com/pages/care-cleaning\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/care-cleaning\">Care & Cleaning</a> page, which covers cleaning and upkeep across our fabrics.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_UnyNYP",
+        "accordion_V4LRjU",
+        "accordion_e8P9wt",
+        "accordion_W6UEUT"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Technical information",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_8VXhUa": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_fEr4ip": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you offer bio-based or recycled collections?",
+            "text": "<p>Yes. Our Origin and Peel collections are our bio-based options, developed with renewable raw materials as part of our commitment to more sustainable fabrics.</p>",
+            "open": false
+          }
+        },
+        "accordion_KePbhj": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are your fabrics certified?",
+            "text": "<p>Yes. Each collection carries its own certifications, listed on its product page. For a full overview, visit our <a href=\"https://www.monteirofabrics.com/pages/about-us\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/about-us\">Certifications</a> page.</p>",
+            "open": false
+          }
+        },
+        "accordion_bkr7Ur": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are your products free from animal-derived materials?",
+            "text": "<p>Yes. All our products are Animal-Free certified, containing no animal-derived materials.</p>",
+            "open": false
+          }
+        },
+        "accordion_C6NyLA": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you provide information about REACH or other compliance standards?",
+            "text": "<p>Yes. We can provide information on REACH and other relevant compliance standards on request.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_fEr4ip",
+        "accordion_KePbhj",
+        "accordion_bkr7Ur",
+        "accordion_C6NyLA"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Sustainability and compliance",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_XUMAae": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_7QYgAR": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you work with trade customers and professionals?",
+            "text": "<p>Yes. We regularly work with trade customers and professionals.</p>",
+            "open": false
+          }
+        },
+        "accordion_GHmaNQ": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How can I contact your sales team?",
+            "text": "<p>You can reach our sales team by phone or email — all the details are <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a>. We're happy to help with quotations, orders, and project advice.</p>",
+            "open": false
+          }
+        },
+        "accordion_mqik8m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request support for a specification project?",
+            "text": "<p>Yes. Our specialists support specification projects from start to finish — from fabric selection to technical and compliance requirements. Get in touch <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_L3bYeV": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you assist with custom or tailored fabric needs?",
+            "text": "<p>Yes. We offer bespoke, tailormade solutions for specific design and technical requirements. Contact us <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a>, or visit our <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/tailormade\">Custom Solutions</a> page to learn more.</p>",
+            "open": false
+          }
+        },
+        "accordion_VEEP7m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I receive updates on new collections and launches?",
+            "text": "<p>Yes. Subscribe to our monthly newsletter to be the first to hear about new collections, launches, and updates.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_7QYgAR",
+        "accordion_GHmaNQ",
+        "accordion_mqik8m",
+        "accordion_L3bYeV",
+        "accordion_VEEP7m"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Account and trade support",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_meTmdJ": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_qydWta": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where do you deliver?",
+            "text": "<p>We deliver worldwide.</p>",
+            "open": false
+          }
+        },
+        "accordion_Dn8w9W": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I track my order?",
+            "text": "<p>Order tracking isn't available online — please contact our customer care team and we'll update you on your order's status.</p>",
+            "open": false
+          }
+        },
+        "accordion_KNMDAy": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What should I do if I need help after placing an order?",
+            "text": "<p>If you need any help after placing your order — questions about order status, delivery, or aftercare — just contact us <a href=\"https://www.monteirofabrics.com/pages/contact\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/contact\">here</a> and our team will assist you.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qydWta",
+        "accordion_Dn8w9W",
+        "accordion_KNMDAy"
+      ],
+      "custom_css": [
+        ".h2 {font-family: 'KometPro'; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: 'KometPro';}",
+        "p {font-family: 'KometPro';}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Delivery and aftercare",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "help_contact_head": {
+      "type": "rich-text",
+      "name": "Contact heading",
+      "settings": {
+        "subheading": "Still need help?",
+        "title": "Talk to our team",
+        "title_size": 40,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Can’t find your answer above? Send us your enquiry and our specialists will get back to you as soon as possible.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "help_contact_form": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_help": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "278222",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_help"
+      ],
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "help_contact_email": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Contact us",
+        "title": "By email",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Whether you need a quotation request, orders, or a project in mind, we are here to help. Please email us at <strong>hello@monteirofabrics.com</strong> and we will get back to you as soon as possible.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Monteiro_fabrics_customer_care_team.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_jLkgMi",
+    "main",
+    "16336816691fb51b7b",
+    "1633681707d0a1c902",
+    "1633684277a52541f1",
+    "accordions_HcGz4d",
+    "accordions_8VXhUa",
+    "accordions_XUMAae",
+    "accordions_meTmdJ",
+    "help_contact_head",
+    "help_contact_form",
+    "help_contact_email"
+  ]
+}

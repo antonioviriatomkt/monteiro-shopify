@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-14.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 250,
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 4,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "65934332-69d8-41e9-8ff2-9423580ebf9e": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 18,
+        "heading_h1": false,
+        "text": "<p>Follow Us on Social Media</p>",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2b4c7b14-f99b-439f-bd00-4dacb45acc62": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Instagram_logo_2016_svg.webp",
+            "image_width": 60,
+            "title": "INSTAGRAM",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.instagram.com/monteirofabrics/"
+          }
+        },
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/facebook-circle-logo-png.png",
+            "image_width": 60,
+            "title": "FACEBOOK",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.facebook.com/monteirofabrics"
+          }
+        },
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/174857.png",
+            "image_width": 60,
+            "title": "LINKEDIN",
+            "text": "",
+            "button_label": "",
+            "link": "https://www.linkedin.com/company/monteiro-fabrics/"
+          }
+        }
+      },
+      "block_order": [
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-0",
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-1",
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-2"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "media_shape": "square",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "0d5a2d90-22b7-4ed9-aeef-4361b558cc0a": {
+      "type": "featured-blog",
+      "disabled": true,
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "Articles",
+        "blog": "sustainability",
+        "post_limit": 4,
+        "show_view_all": true,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": true,
+        "height": "fixed",
+        "height_desktop": 620,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    },
+    "ace9cb5a-bfb2-495e-877b-57b0c847ec6d": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "Coated Fabrics",
+        "collection": "all-products",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "12df712b-3900-4652-84d8-14805913ecc6": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "newsletter_dHLeWq": {
+      "type": "newsletter",
+      "settings": {
+        "subheading": "",
+        "title": "Subscribe to our newsletter",
+        "text": "<p>Join the Monteiro family and stay updated on industry trends, educational articles, trade shows, and new projects. Sign up now!</p>",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "65934332-69d8-41e9-8ff2-9423580ebf9e",
+    "2b4c7b14-f99b-439f-bd00-4dacb45acc62",
+    "0d5a2d90-22b7-4ed9-aeef-4361b558cc0a",
+    "ace9cb5a-bfb2-495e-877b-57b0c847ec6d",
+    "12df712b-3900-4652-84d8-14805913ecc6",
+    "newsletter_dHLeWq"
+  ]
+}

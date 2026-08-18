@@ -1,0 +1,312 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Aviation &amp; cabin upholstery",
+        "title": "Aviation Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's aviation upholstery fabrics are lightweight coated fabrics for aircraft cabin interiors and seating. Every fabric in the collection is flame-retardant, abrasion-resistant, easy to clean and REACH-compliant — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Colour-fast and light resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for the cabin",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Weight",
+            "value": "Lightweight construction"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Flame retardancy",
+            "value": "Meets cabin-interior fire-safety standards"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, contract grade"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean with mild detergent"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Light & colour fastness",
+            "value": "Colour-fast, resists fading"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for aircraft interiors",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for aircraft interiors?",
+            "answer": "<p>Aircraft interior fabrics must be lightweight, meet cabin fire-safety standards, resist heavy wear and stay easy to clean throughout a long service life. Monteiro's aviation fabrics are lightweight coated fabrics that are flame-retardant, abrasion-resistant, easy to clean and REACH-compliant.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics lightweight?",
+            "answer": "<p>Yes. The collection uses lightweight coated constructions suited to aircraft cabins, where reducing weight matters, while still delivering contract-grade durability and an easy-clean surface.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they meet aviation fire-safety requirements?",
+            "answer": "<p>The fabrics are engineered to meet cabin fire-safety standards for interior materials. Aviation certification depends on the specific application and authority, so ask our team for the specific aviation certificates your project requires.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are the fabrics abrasion-resistant and easy to clean?",
+            "answer": "<p>Yes. The coated surface is heavy-duty and contract grade, resisting the wear of high-contact cabin seating, and it wipes clean with a mild detergent without losing colour.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are specified for aircraft seating, cabin panels and armrests, including business and private jets — anywhere that demands lightweight, flame-retardant, hard-wearing surfaces.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Aviation fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Aviation Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Aviation Upholstery Fabrics",
+        "cp_description": "Lightweight, flame-retardant coated upholstery fabrics for aircraft cabin interiors and seating. Abrasion-resistant, easy to clean and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/aviation"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to an aviation upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your cabin project and we'll recommend the right lightweight, flame-retardant fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

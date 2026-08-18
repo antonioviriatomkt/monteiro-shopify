@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Residential upholstery",
+        "title": "Residential Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's residential upholstery fabrics are soft-touch coated fabrics for home furniture, sofas and headboards. Every fabric in the collection is stain-resistant, easy to clean, durable and pet- and family-friendly — REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "residential",
+            "label": "Made for the home"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Colour-fast and light resistant"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for the home",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Feel",
+            "value": "Soft-touch, supple hand"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Stain resistance",
+            "value": "High; non-absorbent surface, family- and pet-friendly"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean with mild detergent"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Durable for everyday domestic use"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Light & colour fastness",
+            "value": "Colour-fast, resists fading"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Care",
+            "value": "No solvents or abrasive cleaners required"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for everyday home life",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a good upholstery fabric for the home?",
+            "answer": "<p>A good home upholstery fabric balances comfort with durability: it should feel soft to the touch, resist stains and everyday wear, be easy to clean and keep its colour over time. Monteiro's residential fabrics are soft-touch coated fabrics that are stain-resistant, hard-wearing and REACH-compliant.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics soft to the touch yet durable?",
+            "answer": "<p>Yes. The collection is engineered to offer a soft, supple hand for comfortable seating while remaining abrasion-resistant and durable enough for daily use on sofas, armchairs and headboards.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they stain-resistant and easy to clean with kids and pets?",
+            "answer": "<p>Yes. The non-absorbent coated surface resists stains and spills, so most marks wipe away with a mild detergent. This makes the fabrics well suited to busy, family- and pet-friendly homes without the need for solvents or abrasive cleaners.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Will the colours fade by a sunny window?",
+            "answer": "<p>The fabrics are colour-fast and designed to resist fading from everyday light exposure, helping furniture keep its appearance over time. For pieces placed in direct, prolonged sunlight, our specialists can advise on the most suitable options.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are ideal for sofas, armchairs, headboards, dining chairs, benches and ottomans — anywhere in the home that needs a soft-touch, easy-clean and durable upholstery surface.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your interior.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Residential fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Residential Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Residential Upholstery Fabrics",
+        "cp_description": "Soft-touch, easy-clean coated upholstery fabrics for home furniture, sofas and headboards. Stain-resistant, durable, family- and pet-friendly. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/residential-1"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a residential upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your interior and we'll recommend the right soft-touch, easy-clean fabric and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

@@ -1,0 +1,94 @@
+{% comment %}
+  Grade cards — a responsive grid of "pick-a-variant" cards, built for a product
+  family where one look comes in several performance grades (e.g. CHANCE 2.0).
+  Each card carries a use-case eyebrow, the grade name, a signature stat, a
+  one-line description and a CTA into that grade's page. An optional accent
+  colour tops each card. Reusable for any family / tiered range.
+{% endcomment %}
+
+<div class="section-grade-cards" data-section-type="grade-cards" data-cc-animate
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #gc-{{ section.id }} .gc-head { text-align: center; max-width: 760px; margin: 0 auto 48px; }
+    #gc-{{ section.id }} .gc-eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; opacity: 0.7; margin-bottom: 12px; }
+    #gc-{{ section.id }} .gc-title { font-size: 32px; font-weight: 400; line-height: 1.2; margin: 0; color: {{ section.settings.text_color }}; }
+    #gc-{{ section.id }} .gc-intro { margin-top: 16px; line-height: 1.6; opacity: 0.92; }
+    #gc-{{ section.id }} .gc-intro p { margin: 0; }
+    #gc-{{ section.id }} .gc-grid { display: grid; grid-template-columns: repeat({{ section.settings.columns }}, minmax(0, 1fr)); gap: 22px; max-width: 1180px; margin: 0 auto; }
+    #gc-{{ section.id }} .gc-card { display: flex; flex-direction: column; height: 100%; padding: 28px 24px; background: {{ section.settings.card_bg }}; border: 1px solid {{ section.settings.line_color }}; border-top: 3px solid var(--accent, {{ section.settings.text_color }}); color: inherit; text-decoration: none; transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease; }
+    #gc-{{ section.id }} a.gc-card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(0,0,0,0.08); }
+    #gc-{{ section.id }} .gc-card-eyebrow { letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px; color: var(--accent, {{ section.settings.text_color }}); font-weight: 600; }
+    #gc-{{ section.id }} .gc-name { font-size: 22px; font-weight: 400; line-height: 1.2; margin: 10px 0 0; text-align: left; }
+    #gc-{{ section.id }} .gc-stat { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; }
+    #gc-{{ section.id }} .gc-text { margin: 14px 0 0; font-size: 15px; line-height: 1.55; opacity: 0.85; }
+    #gc-{{ section.id }} .gc-link { margin-top: auto; padding-top: 18px; font-size: 14px; font-weight: 600; color: var(--accent, {{ section.settings.text_color }}); }
+    #gc-{{ section.id }} a.gc-card:hover .gc-link { text-decoration: underline; }
+    @media (max-width: 989px) { #gc-{{ section.id }} .gc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 619px) { #gc-{{ section.id }} .gc-grid { grid-template-columns: 1fr; } #gc-{{ section.id }} .gc-title { font-size: 26px; } }
+  {% endstyle %}
+
+  <div id="gc-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank or section.settings.intro != blank %}
+      <div class="gc-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="gc-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="gc-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.intro != blank %}<div class="gc-intro rte">{{ section.settings.intro }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    <div class="gc-grid">
+      {% for block in section.blocks %}
+        {%- assign tag = 'div' -%}
+        {%- if block.settings.cta_link != blank -%}{%- assign tag = 'a' -%}{%- endif -%}
+        <{{ tag }} class="gc-card" {% if block.settings.cta_link != blank %}href="{{ block.settings.cta_link }}"{% endif %}
+             {% if block.settings.accent != blank %}style="--accent: {{ block.settings.accent }};"{% endif %}
+             {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.07 | append: 's' }}">
+          {% if block.settings.eyebrow != blank %}<span class="gc-card-eyebrow">{{ block.settings.eyebrow | escape }}</span>{% endif %}
+          {% if block.settings.title != blank %}<h3 class="gc-name">{{ block.settings.title | escape }}</h3>{% endif %}
+          {% if block.settings.stat != blank %}<span class="gc-stat">{{ block.settings.stat | escape }}</span>{% endif %}
+          {% if block.settings.text != blank %}<p class="gc-text">{{ block.settings.text | escape }}</p>{% endif %}
+          {% if block.settings.cta_link != blank %}<span class="gc-link">{{ block.settings.cta_label | default: 'Explore' | escape }} &rarr;</span>{% endif %}
+        </{{ tag }}>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Grade cards",
+    "class": "section-grade-cards-wrap",
+    "max_blocks": 8,
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The family" },
+      { "type": "text", "id": "title", "label": "Heading", "default": "Six performance grades" },
+      { "type": "richtext", "id": "intro", "label": "Intro text" },
+      { "type": "range", "id": "columns", "min": 2, "max": 4, "step": 1, "label": "Cards per row (desktop)", "default": 3 },
+      { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#FAFAF8" },
+      { "type": "color", "id": "text_color", "label": "Text colour", "default": "#111111" },
+      { "type": "color", "id": "card_bg", "label": "Card background", "default": "#FFFFFF" },
+      { "type": "color", "id": "line_color", "label": "Card border", "default": "#E6E6E2" }
+    ],
+    "blocks": [
+      {
+        "type": "grade",
+        "name": "Grade",
+        "settings": [
+          { "type": "text", "id": "eyebrow", "label": "Use-case eyebrow", "default": "Best for" },
+          { "type": "text", "id": "title", "label": "Grade name", "default": "CHANCE GRADE" },
+          { "type": "text", "id": "stat", "label": "Signature stat" },
+          { "type": "textarea", "id": "text", "label": "One-line description" },
+          { "type": "color", "id": "accent", "label": "Accent colour" },
+          { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Explore" },
+          { "type": "url", "id": "cta_link", "label": "CTA link" }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Grade cards",
+        "blocks": [ { "type": "grade" }, { "type": "grade" }, { "type": "grade" } ]
+      }
+    ]
+  }
+{% endschema %}

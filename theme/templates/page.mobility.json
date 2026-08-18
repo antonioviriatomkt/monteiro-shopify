@@ -1,0 +1,579 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 50px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/transportation-fabrics1.png",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "Upholstery Solutions",
+        "title": "MOBILITY FABRICS",
+        "title_size": 46,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "824869db-d95d-4e64-8e87-3a2785848477": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image": "shopify://shop_images/mobility-icons-black_9d20a24f-8c4a-4ca7-8db0-fccf110f5329.png",
+        "image_width": 700,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "ca79e6f3-25bb-40af-a911-faa1f3265a9b": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Mobility & Transportation",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Explore our extensive collection of high-quality fabrics tailored specifically for the Mobility industry. Our versatile fabrics are designed to meet the unique requirements of Automotive, Recreational Vehicles, Aviation, Marine, and more. </p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Frame_101.png",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "9738a3c6-9f42-4241-9605-3c1ef2c60dba": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "23ad5fcc-4dd0-4111-8981-4298a968cc3c": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Tailored solutions for enhanced mobility experiences",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>At Monteiro Fabrics, we excel in crafting fabrics that elevate the mobility experience. With our unparalleled expertise, we engineer fabrics that not only prioritize safety but also deliver unrivaled comfort and style. Our fabrics surpass industry standards, exceeding OEM benchmarks for seat abrasion and wear resistance. </p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/fabrics_for_cars_upholstery.png",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "deb15cb5-c511-427e-99c0-8a257a4e32cc": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "gallery_7QQbXk": {
+      "type": "gallery",
+      "blocks": {
+        "image_cReCgL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/automotive_fabrics.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "AUTOMOTIVE",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_GPijhd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/AVIATION_FABRICS1.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "AVIATION",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_zUF3qV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MAS-TRANSPORTATION-FABRICS.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "MASS TRANSPORTATION",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_mJMhbz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MOTORCYCLE-UPHOLSTERY-FABRICS.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "MOTORCYCLE",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_TxNn7P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RECREATIONAL-VEHICLES-_FABRICS.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "RECREATIONAL VEHICLES",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_cReCgL",
+        "image_GPijhd",
+        "image_zUF3qV",
+        "image_mJMhbz",
+        "image_TxNn7P"
+      ],
+      "settings": {
+        "title": "Applicability",
+        "grid": 3,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "featured_collection_NAEnJC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Ask your free samples here",
+        "collection": "mobility",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "7b123a0e-2239-46a1-acad-e98cbe4c92e2": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Quality Control and Testing:",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We implement tailored quality control measures and testing services to ensure that our fabrics meet the highest standards. We can conduct specific tests or inspections requested by our clients, ensure compliance with industry regulations, and address any specific quality concerns or requirements they may have.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/M_R165.jpg",
+        "video_shopify": "shopify://files/videos/quality control fabrics.mp4",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "f87f5fb9-d197-46d4-9f25-8b4c97c351c4": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "dbe8e30a-0bcf-4e5b-8b8d-c6405e3a926a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Consultation Services:",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Our team provides consultation services to help clients select the most suitable fabrics for their intended purposes. We analyze their requirements and provide expert advice on fabric selection based on factors like durability, functionality, aesthetics, and cost-effectiveness.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/decor-fabrics-furniture9.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "3956bdf8-a0f1-4226-9ca6-307beae91d51": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "div {padding-top: 30px; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "a036f2fb-82c9-4e0d-9289-9d0d7eb0915d": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Colour matching:",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Colour is one of the most fundamental aspects of fabric design and contributes greatly to the overall success of a Product. With our state-of-the-art colour-matching technology, we can match the colour of your sample. </p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/M_R143.jpg",
+        "video_shopify": "shopify://files/videos/3a.mp4",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2c7e5c8d-a98b-4838-ad32-00827389aa37": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Unique ideas require individual solutions",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/pexels-photo-6583362.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "fc280108-51ab-4960-8469-98e161b0a6fb": {
+      "type": "scrolling-banner",
+      "disabled": true,
+      "settings": {
+        "text": "Your scrolling text here",
+        "link": "",
+        "text_size": 16,
+        "line_height": 1.5,
+        "speed": 14,
+        "direction": "left",
+        "font": "heading",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "custom",
+        "color_bg": "#1c4469",
+        "color_text": "#ffffff"
+      }
+    },
+    "text_columns_with_images_GzP7Wd": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "text_block_VXtdeU": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/pure_move_catalog_monteiro.jpg",
+            "image_width": 370,
+            "title": "",
+            "text": "",
+            "button_label": "Download Catalogue",
+            "link": "https://www.dropbox.com/scl/fi/sweq0qj0s283t45qj7v9i/Pure-Move-Monteiro-Fabrics.pdf?rlkey=n1ingtuhgfd7530881fv7t879&st=9rkuriy9&dl=0"
+          }
+        },
+        "text_block_D4qKmx": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/catalog_pure_convertible.jpg",
+            "image_width": 370,
+            "title": "",
+            "text": "",
+            "button_label": "Download Catalogue",
+            "link": "https://www.dropbox.com/scl/fi/uy4rduuw9y9xd5esia9yv/Pure-Convertible.pdf?rlkey=5stk6w6vn5k4eiq3e3bl1yh3b&st=ftepma1u&dl=0"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_VXtdeU",
+        "text_block_D4qKmx"
+      ],
+      "settings": {
+        "title": "",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "media_shape": "landscape",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "DO YOU HAVE A PROJECT?",
+        "title": "Let's work together!",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions.</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 120,
+        "button_label": "contact us",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    },
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"/pages/press\" target=\"_blank\" title=\"Press Kit\"> here. </a></p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide a lab dip for your approval or a pilot sample.</p>",
+            "open": false
+          }
+        },
+        "4b3fa574-4ac5-48fd-a6bf-2f7d25d80ebd": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "4b3fa574-4ac5-48fd-a6bf-2f7d25d80ebd"
+      ],
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "f7e426a5-c570-4894-ae75-4cec3394af2c": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "mobile_image": "shopify://shop_images/monteiro-fabrics-certifications4.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "824869db-d95d-4e64-8e87-3a2785848477",
+    "ca79e6f3-25bb-40af-a911-faa1f3265a9b",
+    "9738a3c6-9f42-4241-9605-3c1ef2c60dba",
+    "23ad5fcc-4dd0-4111-8981-4298a968cc3c",
+    "deb15cb5-c511-427e-99c0-8a257a4e32cc",
+    "gallery_7QQbXk",
+    "featured_collection_NAEnJC",
+    "7b123a0e-2239-46a1-acad-e98cbe4c92e2",
+    "f87f5fb9-d197-46d4-9f25-8b4c97c351c4",
+    "dbe8e30a-0bcf-4e5b-8b8d-c6405e3a926a",
+    "3956bdf8-a0f1-4226-9ca6-307beae91d51",
+    "a036f2fb-82c9-4e0d-9289-9d0d7eb0915d",
+    "2c7e5c8d-a98b-4838-ad32-00827389aa37",
+    "fc280108-51ab-4960-8469-98e161b0a6fb",
+    "text_columns_with_images_GzP7Wd",
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315",
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0",
+    "f7e426a5-c570-4894-ae75-4cec3394af2c"
+  ]
+}

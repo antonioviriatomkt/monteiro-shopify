@@ -1,0 +1,338 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Sustainable · CHANCE 2.0",
+        "title": "CHANCE Bioblend",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>CHANCE Bioblend is the sustainable grade — a coated fabric made with 65% biobased content that incorporates natural by-products from chestnut processing. It turns agricultural waste into a high-performance material: durable, fire-resistant and available in contemporary colours.</p>",
+        "image_width": 120,
+        "button_label": "Explore all CHANCE 2.0 grades",
+        "button_link": "shopify://pages/chance-collection",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "product": {
+      "type": "featured-product",
+      "blocks": {
+        "b_price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "b_variant": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "b_buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "b_price",
+        "b_variant",
+        "b_buy"
+      ],
+      "settings": {
+        "product": "peel-collection",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "plant-based",
+            "label": "65% biobased"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "organic-cotton",
+            "label": "Organic cotton"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "10-year warranty"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Why CHANCE Bioblend",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "DOWNLOAD CATALOGUE",
+        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_JUN2026_Ipad_bx.pdf?v=1782924961",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Composition",
+            "value": "PVC 35% · plant-based 38% · organic cotton 27%"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Biobased content",
+            "value": "65% (ASTM D6866-22 Method B)"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Natural source",
+            "value": "By-products from chestnut processing"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Weight",
+            "value": "800 g/m² ±5%"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Thickness",
+            "value": "1.00–1.30 mm"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion",
+            "value": "≥400,000 Martindale (ISO 5470-2)"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Temperature resistance",
+            "value": "−40 to +80 ºC"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Fire resistance",
+            "value": "BS 5852 (Crib 5) · EN 1021-1+2 · FMVSS302 · NF P 92-507 (M2)"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Compliance",
+            "value": "100% vegan (VVV+) · REACH · 10-year warranty"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "CHANCE Bioblend — specifications",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What is CHANCE Bioblend?",
+            "answer": "<p>CHANCE Bioblend is the sustainable grade of the CHANCE family — a coated fabric with 65% biobased content that keeps the iconic CHANCE look while lowering its fossil footprint.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "What is it made of?",
+            "answer": "<p>65% biobased content (ASTM D6866-22 Method B): PVC 35%, plant-based 38% and organic cotton 27%, incorporating natural by-products from chestnut processing.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it durable and fire-resistant?",
+            "answer": "<p>Yes — ≥400,000 Martindale abrasion resistance (ISO 5470-2) and a fire list including BS 5852 (Crib 5), EN 1021-1+2, FMVSS302 and NF P 92-507 (M2), with a 10-year warranty.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Where is CHANCE Bioblend used?",
+            "answer": "<p>Hospitality, office, restaurants, residential and retail interiors, as well as handbags and luggage.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it vegan?",
+            "answer": "<p>Yes — 100% vegan (LAV VVV+, the highest Animal Free rating) and fully EU REACH compliant. Made in Portugal.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples and our specialists will help match the right CHANCE grade to your project.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "CHANCE Bioblend — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "CHANCE 2.0",
+        "crumb_home_url": "https://www.monteirofabrics.com/pages/chance-collection",
+        "crumb_current": "CHANCE Bioblend",
+        "emit_collectionpage": true,
+        "cp_name": "CHANCE Bioblend",
+        "cp_description": "CHANCE Bioblend — the sustainable grade of CHANCE 2.0. 65% biobased coated fabric made with chestnut by-products; durable and fire-resistant. Made in Portugal.",
+        "cp_url": "https://www.monteirofabrics.com/collections/chance-bioblend"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Bring CHANCE Bioblend to your project",
+        "title": "Design with less waste.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Order free samples, or talk to a specialist about a more sustainable specification.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "product",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

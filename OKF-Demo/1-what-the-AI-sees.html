@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What the AI sees — Monteiro Fabrics</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --ink:#e9ecf1; --muted:#9aa3b2;
+    --line:#262b36; --bad:#ff6b6b; --good:#4ade80; --accent:#7aa2ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:34px 28px 18px;max-width:1180px;margin:0 auto}
+  h1{margin:0 0 6px;font-size:26px;letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:760px;font-size:15px}
+  .tag{display:inline-block;background:#1f2430;color:var(--accent);border:1px solid var(--line);
+    padding:3px 10px;border-radius:999px;font-size:12px;margin-bottom:14px}
+  .wrap{max-width:1180px;margin:0 auto;padding:6px 28px 60px;
+    display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:900px){.wrap{grid-template-columns:1fr}}
+  .col{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .col h2{margin:0;padding:14px 18px;font-size:14px;letter-spacing:.02em;text-transform:uppercase;
+    border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px}
+  .dot{width:9px;height:9px;border-radius:50%}
+  .left h2 .dot{background:var(--bad)} .right h2 .dot{background:var(--good)}
+  .meta{padding:10px 18px;color:var(--muted);font-size:12.5px;border-bottom:1px solid var(--line);background:#12151c}
+  pre{margin:0;padding:18px;overflow:auto;font:12.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    white-space:pre-wrap;word-break:break-word;flex:1;max-height:560px}
+  .left pre{color:#c8cdd8} .right pre{color:#dfe6ee}
+  .right .k{color:#7aa2ff} .right .h{color:#9ad27f}
+  .foot{max-width:1180px;margin:0 auto;padding:0 28px 70px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .card h3{margin:0 0 10px;font-size:16px}
+  .pts{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin-top:6px}
+  @media(max-width:760px){.pts{grid-template-columns:1fr}}
+  .pt{font-size:14px;color:#d4d9e2} .pt b{color:#fff}
+  .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+  .lbl.bad{color:var(--bad)} .lbl.good{color:var(--good)}
+</style>
+</head>
+<body>
+<header>
+  <div class="tag">OKF demo · 1 of 2 · Monteiro Fabrics</div>
+  <h1>What an AI assistant sees today vs. with OKF</h1>
+  <p class="sub">Same product — the <b>Beta Collection</b> upholstery fabric. On the left is the raw page source an
+  AI agent has to scrape and guess from today. On the right is the clean, structured OKF concept file we publish
+  for it instead. Both are real, pulled from the live Monteiro store.</p>
+</header>
+
+<div class="wrap">
+  <div class="col left">
+    <h2><span class="dot"></span>Today — raw scraped HTML</h2>
+    <div class="meta">GET https://www.monteirofabrics.com/products/beta-collection &nbsp;→&nbsp; text/html · the agent must strip markup, tables and styling to find the facts</div>
+<pre>&lt;table style="width: 89.1239%;"&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="width: 45.9834%;" data-mce-style="width: 45.9834%;"&gt;
+     &lt;span data-mce-fragment="1"&gt;TECHNICAL PROPERTIES&lt;/span&gt;&lt;/td&gt;
+   &lt;td style="width: 50.8974%;"&gt;BETA&lt;br&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;&lt;span&gt;Weight&lt;/span&gt;&lt;/td&gt;
+   &lt;td style="width: 50.8974%;"&gt;660 g/m2 ± 5%&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;&lt;span&gt;Composition&lt;/span&gt;&lt;/td&gt;
+   &lt;td&gt;PVC – 87%&lt;br&gt;PES – 8%&lt;br data-mce-fragment="1"&gt;
+     &lt;span data-mce-fragment="1"&gt;CO – 5%&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;&lt;span&gt;Abrasion Resistance&lt;/span&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;span&gt;≥150.000&lt;br&gt;Martindale cycles&lt;br&gt;
+     (ISO 5470-2)&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;&lt;span&gt;Fire Resistance&lt;/span&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;span&gt;FMVSS302&lt;br&gt;EN 1021-1+2&lt;br&gt;NFP92-503
+     Classification M2&lt;/span&gt;&lt;span&gt;BS 5852 Crib 5&lt;br&gt;
+     IMO 2010 FTC Code&lt;br&gt;Part 8 ...&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;&lt;span&gt;Width&lt;/span&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;span&gt;1.37 – 1.40 m&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- + nav, cookie banner, related-products carousel,
+     theme JS, 43 colour swatches as image tags... --&gt;</pre>
+  </div>
+
+  <div class="col right">
+    <h2><span class="dot"></span>With OKF — /okf/products/beta-collection.md</h2>
+    <div class="meta">GET https://okf.monteirofabrics.com/products/beta-collection.md &nbsp;→&nbsp; text/markdown · structured fields the agent reads directly, no guessing</div>
+<pre><span class="k">---</span>
+<span class="k">type:</span> Product
+<span class="k">title:</span> Beta Collection
+<span class="k">description:</span> Soft, durable, easy-care coated upholstery fabric.
+<span class="k">resource:</span> https://www.monteirofabrics.com/products/beta-collection
+<span class="k">range:</span> Essentials
+<span class="k">tags:</span> [coated-fabric, upholstery, contract, essentials]
+<span class="k">timestamp:</span> 2026-06-22T12:00:00Z
+<span class="k">---</span>
+
+<span class="h"># Overview</span>
+
+Beta Collection is part of Monteiro Fabrics' Essentials range —
+a soft, durable, easy-care coated upholstery fabric supplied by
+the roll for contract and residential interior projects.
+
+<span class="h"># Specifications</span>
+
+| Attribute            | Value |
+|----------------------|-------|
+| Composition          | PVC 87% · PES 8% · CO 5% |
+| Weight               | 660 g/m² ± 5% |
+| Thickness            | 0,90 – 1,10 mm |
+| Abrasion resistance  | ≥150.000 Martindale (ISO 5470-2) |
+| Roll width           | 1,37 – 1,40 m |
+| Antibacterial        | Yes |
+| Fire resistance      | EN 1021-1+2 · M2 · Crib 5 · IMO |
+| Colours              | 43 shades |
+
+<span class="h"># Suitable applications</span>
+
+Hospitality, Healthcare, Office, Marine Interior, Retail.
+
+<span class="h"># Related</span>
+
+* See the full [products catalogue](/products/index.md).
+* Order a free swatch — see [free samples](/policies/shipping.md).</pre>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="card">
+    <h3>Why this matters</h3>
+    <div class="pts">
+      <div class="pt"><span class="lbl bad">Left — today</span><br>The facts are buried in
+        layout tables, inline styles and <b>data-mce</b> junk, mixed with navigation, cookie banners and
+        carousels. An agent has to <b>guess</b> which numbers are real — and often gets composition, width or
+        fire ratings wrong, or skips the product entirely.</div>
+      <div class="pt"><span class="lbl good">Right — with OKF</span><br>The same facts as
+        labelled fields plus a clean spec table and explicit links to related concepts. The agent reads
+        <b>authoritative data</b> — no scraping, no guessing — so it answers correctly and credits the source.</div>
+      <div class="pt"><b>One file per fabric.</b> Every collection, policy and contact becomes a concept the
+        agent can retrieve on its own.</div>
+      <div class="pt"><b>Cross-linked.</b> "Free swatch", "related fabric" and "returns" are real links, so an
+        agent can follow Monteiro's knowledge like a graph.</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

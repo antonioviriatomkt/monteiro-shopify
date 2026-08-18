@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask Monteiro — OKF demo</title>
+<style>
+  :root{
+    --bg:#0f1115;--panel:#161a21;--ink:#eef1f6;--muted:#9aa3b2;--line:#262b36;
+    --accent:#7aa2ff;--good:#4ade80;--bubl:#1d2330;--bubu:#2b3550;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .page{max-width:1080px;margin:0 auto;padding:30px 24px 50px;display:grid;grid-template-columns:1fr 320px;gap:22px}
+  @media(max-width:880px){.page{grid-template-columns:1fr}}
+  header{grid-column:1/-1}
+  .tag{display:inline-block;background:#1f2430;color:var(--accent);border:1px solid var(--line);
+    padding:3px 10px;border-radius:999px;font-size:12px;margin-bottom:12px}
+  h1{margin:0 0 6px;font-size:25px;letter-spacing:-.01em}
+  .sub{color:var(--muted);max-width:720px}
+  .chat{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;height:600px;overflow:hidden}
+  .bar{padding:13px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px;font-size:14px}
+  .live{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 3px rgba(74,222,128,.18)}
+  .bar small{color:var(--muted);margin-left:auto;font-size:12px}
+  .msgs{flex:1;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:14px}
+  .m{max-width:84%;padding:11px 14px;border-radius:14px;font-size:14.5px;white-space:pre-wrap}
+  .u{align-self:flex-end;background:var(--bubu);border:1px solid #34406b;border-bottom-right-radius:4px}
+  .a{align-self:flex-start;background:var(--bubl);border:1px solid var(--line);border-bottom-left-radius:4px}
+  .src{margin-top:9px;padding-top:9px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}
+  .src b{color:var(--good);font-weight:600}
+  .src code{color:#cdd5e3;background:#11151c;padding:1px 6px;border-radius:5px;font-size:11.5px}
+  .form{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line)}
+  input{flex:1;background:#11151c;border:1px solid var(--line);color:var(--ink);
+    padding:12px 14px;border-radius:10px;font-size:14.5px;outline:none}
+  input:focus{border-color:var(--accent)}
+  button{background:var(--accent);color:#0b0e14;border:0;padding:0 18px;border-radius:10px;font-weight:600;cursor:pointer;font-size:14.5px}
+  .side{display:flex;flex-direction:column;gap:16px}
+  .box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .box h3{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .chip{display:inline-block;margin:0 6px 8px 0;padding:7px 11px;background:#1b212c;border:1px solid var(--line);
+    border-radius:9px;font-size:13px;color:#dbe2ee;cursor:pointer}
+  .chip:hover{border-color:var(--accent);color:#fff}
+  .note{font-size:12.5px;color:var(--muted);line-height:1.5}
+  .kpi{font-size:13px;color:#d4d9e2;margin:6px 0}
+  .kpi b{color:#fff}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="tag">OKF demo · 2 of 2 · Monteiro Fabrics</div>
+    <h1>"Ask Monteiro" — an assistant running on the OKF bundle</h1>
+    <p class="sub">This chat answers <b>only</b> from the OKF files generated from Monteiro's live catalogue —
+    no internet, no guessing. Every answer cites the exact concept file it came from. It's both the proof that
+    the bundle is machine-readable and a working preview of an on-site assistant you could ship.</p>
+  </header>
+
+  <div class="chat">
+    <div class="bar"><span class="live"></span> Ask Monteiro <small id="cnt">reading 21 OKF concepts</small></div>
+    <div class="msgs" id="msgs"></div>
+    <form class="form" id="f">
+      <input id="q" autocomplete="off" placeholder="Ask about a fabric, spec, sample or policy…">
+      <button>Send</button>
+    </form>
+  </div>
+
+  <div class="side">
+    <div class="box">
+      <h3>Try asking</h3>
+      <div id="chips"></div>
+    </div>
+    <div class="box">
+      <h3>How it works</h3>
+      <p class="note">The assistant retrieves the most relevant OKF concept(s) for your question, then answers
+      from their structured fields. Swap the embedded bundle for the live one at
+      <code>okf.monteirofabrics.com</code> and the same engine works against the real catalogue.</p>
+    </div>
+    <div class="box">
+      <h3>Loaded knowledge</h3>
+      <div class="kpi"><b>12</b> fabric collections</div>
+      <div class="kpi"><b>3</b> policies (shipping, returns, terms)</div>
+      <div class="kpi"><b>2</b> company concepts + FAQ</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---- OKF concepts (generated from Monteiro's live Shopify catalogue) ----
+const P = [
+ {id:"products/beta-collection",t:"Beta Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2 · Crib 5 · IMO",anti:"Yes",colors:"43 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Retail",desc:"Soft, durable, easy-care coated upholstery fabric."},
+ {id:"products/chance-collection-1",t:"Chance Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥400.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5 · IMO",anti:"Yes",colors:"228 shades",uses:"Hospitality, Healthcare, Marine, Office, Residential, Retail",desc:"Iconic texture, 228-shade palette."},
+ {id:"products/glam-collection",t:"Glam Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"43 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Retail",desc:"Knitted look, timeless shades."},
+ {id:"products/laguna-collection",t:"Laguna Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"42 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Retail",desc:"Fine grain, matte texture."},
+ {id:"products/lima-collection",t:"Lima Collection",rng:"Essentials",comp:"PVC 88% · PES 12%",w:"565 g/m² ± 5%",th:"0,85–1,05 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2",anti:"Yes",colors:"31 shades",uses:"Marine Exterior, Outdoor, Office",desc:"Indoor style with outdoor & marine-exterior performance."},
+ {id:"products/manta-collection",t:"Manta Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"43 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Retail",desc:"Textile texture, distinctly matte."},
+ {id:"products/paiva-collection",t:"Paiva Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"43 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Retail",desc:"Soft, durable and easy to care for."},
+ {id:"products/villa-nabuck-collection",t:"Villa Nabuck Collection",rng:"Essentials",comp:"PVC 87% · PES 8% · CO 5%",w:"660 g/m² ± 5%",th:"0,90–1,10 mm",abr:"≥150.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"10 shades",uses:"Hospitality, Healthcare, Office, Marine Interior, Residential, Retail",desc:"Fine leather grain, soft texture — a leather alternative."},
+ {id:"products/peel-collection",t:"Peel Collection",rng:"Natrue",comp:"Plant-Based 60% · PVC 40%",w:"800 g/m² ± 5%",th:"1,00–1,30 mm",abr:"≥400.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · IMO",anti:"Yes",colors:"9 shades",uses:"Hospitality, Office, Restaurants, Retail",desc:"Nature-inspired, sustainable, plant-based coated fabric."},
+ {id:"products/mara-collection",t:"Mara Collection",rng:"Pure Contract",comp:"PVC 79% · CO 21%",w:"950 g/m² ± 5%",th:"1,35–1,55 mm",abr:"≥400.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5 · IMO",anti:"Yes",colors:"48 shades",uses:"Hospitality, Healthcare, Office, Restaurants, Retail",desc:"Distinctly matte, high-performance contract fabric."},
+ {id:"products/prosoft-collection",t:"Prosoft Collection",rng:"Pure Contract",comp:"PVC 67% · CO 33%",w:"900 g/m² ± 5%",th:"1,15–1,35 mm",abr:"≥400.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5 · IMO",anti:"Yes (antimicrobial)",colors:"25 shades",uses:"Hospitality, Office, Restaurants, Retail",desc:"Top performance, durable, antimicrobial."},
+ {id:"products/furna-collection",t:"Furna Collection",rng:"Pure Contract",comp:"PVC 83% · CO 17%",w:"830 g/m² ± 5%",th:"1,20–1,40 mm",abr:"≥400.000 Martindale",width:"1,37–1,40 m",fire:"EN 1021-1+2 · M2/Crib 5",anti:"Yes",colors:"35 shades",uses:"Hospitality, Healthcare, Office, Restaurants, Retail",desc:"Strong, matte-textured contract fabric."},
+];
+const DOC = {
+ "policies/shipping":{t:"Shipping & Free Samples",body:"Monteiro Fabrics offers free fabric samples. Open a product page, choose your colour(s), click Add to cart (you can add several), then check out with your contact and delivery address. Samples ship within a few days. Questions: hello@monteirofabrics.com."},
+ "policies/returns":{t:"Returns & Refunds",body:"Free samples cannot be returned or exchanged. If a sample arrives damaged or defective, contact customer service for a replacement. The standard return policy applies to purchased items — contact hello@monteirofabrics.com."},
+ "policies/terms":{t:"Terms of Service",body:"The website is operated by Monteiro Fabrics and governed by the laws of Portugal. Prices and products may change without notice; on-screen colours may differ slightly from the physical fabric."},
+ "company/contact":{t:"Contact Monteiro Fabrics",body:"Email: hello@monteirofabrics.com (general) / marketing@monteirofabrics.com. Phone: +351 22 833 8640. Address: Estrada da Circunvalação 9020, 4250-140 Porto, Portugal. VAT: 508396387."},
+ "company/about":{t:"About Monteiro Fabrics",body:"Monteiro Fabrics is a Porto-based manufacturer of coated technical upholstery fabrics for contract and residential interiors, across three ranges: Essentials, Pure Contract and Natrue (sustainable). Sold by the roll, with free samples."},
+};
+
+const norm = s => s.toLowerCase().replace(/[^a-z0-9 ]/g," ");
+function score(qWords, hay){let s=0;hay=norm(hay);qWords.forEach(w=>{if(w.length>2&&hay.includes(w))s++;});return s;}
+
+function answer(q){
+  const ql=norm(q), qw=[...new Set(ql.split(/\s+/).filter(Boolean))];
+  // doc/policy intents
+  const wantSample = /(sample|swatch|free)/.test(ql);
+  const wantReturn = /(return|refund|exchang|damaged|defect)/.test(ql);
+  const wantContact = /(contact|email|phone|call|address|reach|located|where)/.test(ql);
+  const wantShip = /(ship|deliver|dispatch|post)/.test(ql);
+  if(wantReturn) return docAns("policies/returns");
+  if(wantSample||wantShip) return docAns("policies/shipping");
+  if(wantContact) return docAns("company/contact");
+
+  // attribute intents over products
+  const attrs=[];
+  if(/(composition|made of|material|pvc|plant|sustainab|eco|recycl)/.test(ql))attrs.push(["Composition","comp"]);
+  if(/(weight|gsm|g\/m|heavy|heaviest|thick)/.test(ql)){attrs.push(["Weight","w"]);attrs.push(["Thickness","th"]);}
+  if(/(abrasion|martindale|durable|hard.?wearing|wear|toughest|strong)/.test(ql))attrs.push(["Abrasion","abr"]);
+  if(/(width|roll)/.test(ql))attrs.push(["Roll width","width"]);
+  if(/(fire|flame|crib|imo|m2|ignit)/.test(ql))attrs.push(["Fire resistance","fire"]);
+  if(/(colour|color|shade)/.test(ql))attrs.push(["Colours","colors"]);
+  if(/(anti|bacteri|microb|hygien|fungal)/.test(ql))attrs.push(["Antibacterial","anti"]);
+
+  // selection intents
+  if(/(outdoor|exterior|marine|outside|boat)/.test(ql)){
+    const p=P.find(x=>x.id.includes("lima"));
+    return {t:`For outdoor and marine-exterior use, the best fit is the **${p.t}** (${p.comp}, ${p.abr}). It's the range built for exterior performance; many other ranges are rated for marine *interior*.`,src:[p.id]};
+  }
+  if(/(sustainab|eco|plant|recycl|green|environment)/.test(ql)){
+    const p=P.find(x=>x.id.includes("peel"));
+    return {t:`The sustainable option is the **${p.t}** — ${p.comp}, so 60% plant-based. Abrasion ${p.abr}, ${p.colors}.`,src:[p.id]};
+  }
+  if(/(toughest|most durable|hardest|highest abrasion|heavy duty|heaviest|hard.?wearing|most hard)/.test(ql)){
+    const top=P.filter(x=>x.abr.includes("400")).sort((a,b)=>parseInt(b.w)-parseInt(a.w));
+    const p=top[0];
+    return {t:`The most hard-wearing fabrics are the Pure Contract range and Chance — all rated ≥400.000 Martindale. The heaviest is **${p.t}** (${p.w}, ${p.comp}, ${p.abr}).`,src:top.slice(0,3).map(x=>x.id)};
+  }
+
+  // find best-matching product(s)
+  const ranked = P.map(p=>({p,s:score(qw,p.t+" "+p.rng+" "+p.uses+" "+p.desc+" "+p.comp)})).sort((a,b)=>b.s-a.s);
+  const best = ranked[0];
+  if(best.s>0){
+    const p=best.p;
+    if(attrs.length){
+      const lines = attrs.map(([lbl,k])=>`• ${lbl}: ${p[k]}`).join("\n");
+      return {t:`**${p.t}** (${p.rng})\n${lines}`,src:[p.id]};
+    }
+    return {t:`**${p.t}** — ${p.desc}\n• Composition: ${p.comp}\n• Weight: ${p.w}\n• Abrasion: ${p.abr}\n• Roll width: ${p.width}\n• Colours: ${p.colors}\n• Suitable for: ${p.uses}`,src:[p.id]};
+  }
+  // attribute query with no specific product -> apply across a sensible match
+  if(attrs.length){
+    const p=ranked[0].p;
+    const lines = attrs.map(([lbl,k])=>`• ${lbl}: ${p[k]}`).join("\n");
+    return {t:`Here's an example — **${p.t}**:\n${lines}\nAsk about a specific collection for its exact figures.`,src:[p.id]};
+  }
+  return {t:"I can answer from Monteiro's catalogue and policies — try asking about a specific fabric (e.g. Mara, Peel, Lima), a spec (composition, weight, fire rating, abrasion), or samples, returns and contact.",src:[]};
+}
+function docAns(id){const d=DOC[id];return {t:d.body,src:[id]};}
+
+function srcHtml(ids){
+  if(!ids.length) return "";
+  const links = ids.map(i=>`<code>okf/${i}.md</code>`).join(" &nbsp;");
+  return `<div class="src"><b>Source${ids.length>1?"s":""} (OKF):</b> ${links}</div>`;
+}
+
+const msgs=document.getElementById("msgs");
+function add(role,html){const d=document.createElement("div");d.className="m "+role;d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
+function bold(s){return s.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");}
+function ask(q){
+  add("u",q.replace(/</g,"&lt;"));
+  setTimeout(()=>{const r=answer(q);add("a",bold(r.t.replace(/</g,"&lt;").replace(/\n/g,"<br>"))+srcHtml(r.src));},220);
+}
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const v=document.getElementById("q").value.trim();if(!v)return;document.getElementById("q").value="";ask(v);});
+
+const examples=[
+ "What is the Mara Collection made of?",
+ "Which fabric is best for outdoor or marine use?",
+ "Do you have a sustainable option?",
+ "What's the most hard-wearing fabric?",
+ "Fire rating of Prosoft?",
+ "How do I get a free sample?",
+ "Can I return a sample?",
+ "How do I contact you?"
+];
+const chips=document.getElementById("chips");
+examples.forEach(x=>{const c=document.createElement("span");c.className="chip";c.textContent=x;c.onclick=()=>ask(x);chips.appendChild(c);});
+
+add("a","Hi — I'm Monteiro's assistant, answering from the OKF knowledge bundle built from the live catalogue. Ask me about any fabric, its specs, samples, returns or contact details. Try a suggestion on the right →");
+</script>
+</body>
+</html>

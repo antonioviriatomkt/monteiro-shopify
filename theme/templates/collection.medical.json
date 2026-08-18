@@ -1,0 +1,209 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Medical-grade upholstery",
+        "title": "Medical-Grade Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 26,
+        "heading_h1": true,
+        "text": "<p>Monteiro's medical-grade fabrics are technical coated textiles engineered for medical devices, clinical equipment and specialist medical seating — the <strong>Mediflex</strong>, <strong>Electra</strong> and <strong>Flora</strong> ranges, made in Portugal.</p><p>Furnishing general hospital, clinic or care-home seating? Browse our <a href='/collections/healthcare' title='Healthcare upholstery fabrics'>healthcare upholstery fabrics</a>.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "explainer": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "The standard",
+        "title": "What makes a fabric medical-grade?",
+        "title_size": 34,
+        "title_width": 30,
+        "heading_h1": false,
+        "text": "<p>\"Medical-grade\" isn't a single certificate — it's the set of properties a fabric has to meet to be safe and durable in clinical use. Ours are built to clear that bar:</p><ul><li><strong>Antimicrobial &amp; antifungal</strong> — the surface inhibits the growth of bacteria, fungi and mould.</li><li><strong>Fluid-proof</strong> — a non-absorbent, waterproof surface that resists spills and bodily fluids.</li><li><strong>Disinfectant-tolerant</strong> — wipes clean with alcohol-based disinfectants and diluted bleach without cracking or fading.</li><li><strong>Phthalate-free &amp; REACH-compliant</strong> — formulated without phthalates and compliant with EU chemical regulation.</li><li><strong>Heavy-duty &amp; flame-retardant</strong> — contract-grade abrasion resistance and fire-safety classification for demanding environments.</li></ul>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "none",
+        "filter_mode_mobile": "none",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "applications": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Applications",
+        "title": "Where medical-grade fabrics are specified",
+        "title_size": 34,
+        "title_width": 30,
+        "heading_h1": false,
+        "text": "<ul><li>Medical devices and equipment housings</li><li>Examination and treatment tables</li><li>Dental, podiatry and treatment chairs</li><li>Operating-theatre, recovery and ICU seating</li><li>Patient-handling, positioning and mobility equipment</li><li>Rehabilitation, imaging and laboratory furniture</li></ul><p>For general waiting-room and ward seating, see our <a href='/collections/healthcare' title='Healthcare upholstery fabrics'>healthcare collection</a>.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": { "type": "icon", "settings": { "icon": "anti-microbial", "label": "Anti-microbial and anti-fungal" } },
+        "c2": { "type": "icon", "settings": { "icon": "easy-clean", "label": "Easy to clean and disinfect" } },
+        "c3": { "type": "icon", "settings": { "icon": "flame", "label": "Flame retardant" } },
+        "c4": { "type": "icon", "settings": { "icon": "abrasion", "label": "Abrasion resistant" } },
+        "c5": { "type": "icon", "settings": { "icon": "reach", "label": "REACH compliant" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "c5"],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built to a medical-grade standard",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": { "type": "spec", "settings": { "label": "Range", "value": "Mediflex, Electra and Flora" } },
+        "s2": { "type": "spec", "settings": { "label": "Material", "value": "Technical, medical-grade coated fabric" } },
+        "s3": { "type": "spec", "settings": { "label": "Antimicrobial & antifungal", "value": "Yes — inhibits bacteria, fungi and mould" } },
+        "s4": { "type": "spec", "settings": { "label": "Disinfection", "value": "Wipe-clean; compatible with alcohol and diluted-bleach disinfectants" } },
+        "s5": { "type": "spec", "settings": { "label": "Fluid barrier", "value": "Waterproof, non-absorbent surface" } },
+        "s6": { "type": "spec", "settings": { "label": "Stretch", "value": "Bi-elastic options for shaped and moulded surfaces (Mediflex)" } },
+        "s7": { "type": "spec", "settings": { "label": "Abrasion resistance", "value": "Heavy-duty, contract grade" } },
+        "s8": { "type": "spec", "settings": { "label": "Flame retardancy", "value": "By fabric — Flora: FMVSS302, EN 1021-1/2, BS 5852 Crib 5, IMO FTP Part 8 · Mediflex: FMVSS302, EN 1021-1/2, IMO FTP Part 8, Cal. TB 117, NFPA 260 · Electra: FMVSS302, EN 1021-1/2, Cal. TB 117, NFPA 260" } },
+        "s9": { "type": "spec", "settings": { "label": "Phthalates", "value": "Phthalate-free" } },
+        "s10": { "type": "spec", "settings": { "label": "Chemical compliance", "value": "REACH-compliant" } },
+        "s11": { "type": "spec", "settings": { "label": "Certificates", "value": "Test standards and certificates listed per fabric on the technical data sheet" } },
+        "s12": { "type": "spec", "settings": { "label": "Origin", "value": "Made in Portugal" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for medical environments",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q2": { "type": "faq", "settings": { "question": "How do medical-grade fabrics differ from the healthcare range?", "answer": "<p>The <a href='/collections/healthcare' title='Healthcare upholstery fabrics'>healthcare collection</a> covers general hospital, clinic and care-home upholstery, while the medical range is a focused selection of technical fabrics — including bi-elastic Mediflex — for medical devices and specialist applications that need extra stretch, hygiene and durability.</p>" } },
+        "q3": { "type": "faq", "settings": { "question": "Which standards and certificates do they carry?", "answer": "<p>Our medical-grade fabrics are antimicrobial and antifungal, fluid-proof, phthalate-free and REACH-compliant, and carry flammability classifications for contract use. The specific test standards and certificates for each fabric are listed on its technical data sheet — <a href='/pages/contact' title='Contact our technical team'>ask our technical team</a> for the current certificates.</p>" } },
+        "q4": { "type": "faq", "settings": { "question": "Can these fabrics be cleaned with alcohol or bleach?", "answer": "<p>Yes. The coated surface is designed to be wiped down with alcohol-based disinfectants and diluted bleach solutions used in clinical cleaning, without cracking or losing colour. Avoid abrasive pads and undiluted solvents. See our <a href='/pages/care-cleaning' title='Care & Cleaning'>care and cleaning guidance</a> for detail.</p>" } },
+        "q5": { "type": "faq", "settings": { "question": "Are the medical fabrics antimicrobial?", "answer": "<p>Yes — the range inhibits the growth of bacteria, fungi and mould on the fabric surface, helping maintain hygiene on high-contact medical surfaces.</p>" } },
+        "q6": { "type": "faq", "settings": { "question": "What is Mediflex used for?", "answer": "<p>Mediflex is a bi-elastic medical fabric that stretches in multiple directions, making it suited to shaped and moulded surfaces such as medical mattresses, positioning aids and contoured seating.</p>" } },
+        "q7": { "type": "faq", "settings": { "question": "Can I order samples of the medical collection?", "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>" } }
+      },
+      "block_order": ["q2", "q3", "q4", "q5", "q6", "q7"],
+      "settings": {
+        "eyebrow": "Medical-grade fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Medical-Grade Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Medical-Grade Upholstery Fabrics",
+        "cp_description": "Medical-grade antimicrobial coated fabrics — Mediflex, Electra and Flora — for medical devices, clinical equipment and specialist medical seating. Fluid-proof, disinfectant-tolerant, phthalate-free and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/medical"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a medical-grade fabric specialist",
+        "title_size": 34,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Tell us about your application and we'll recommend the right medical-grade fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Get in touch",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": ["intro", "explainer", "main", "applications", "credentials", "specs", "faq", "cta"]
+}

@@ -1,0 +1,591 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_imXeV4": {
+      "type": "image-with-text-overlay",
+      "name": "Hero",
+      "settings": {
+        "image": "shopify://shop_images/banner_chance_3.jpg",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "subheading": "Over 100 years of Industrial Legacy",
+        "title": "Strategic partner for demanding coated fabric solutions.",
+        "title_size": 50,
+        "title_width": 40,
+        "heading_h1": true,
+        "text": "<p>Monteiro Fabrics is a leading European manufacturer of high-performance, design-driven coated upholstery fabrics, with over 300 clients in more than 30 countries.</p>",
+        "enlarge_text": false,
+        "button_label": "Speak to our specialists",
+        "button_link": "shopify://pages/contact",
+        "button_2_label": "",
+        "button_2_link": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "value_props_diff": {
+      "type": "value-props",
+      "blocks": {
+        "vp1": {
+          "type": "item",
+          "settings": {
+            "value": "10-year",
+            "caption": "warranty — longest on the market",
+            "link": ""
+          }
+        },
+        "vp2": {
+          "type": "item",
+          "settings": {
+            "value": "236",
+            "caption": "colours available",
+            "link": ""
+          }
+        },
+        "vp3": {
+          "type": "item",
+          "settings": {
+            "value": "48h",
+            "caption": "sample dispatch",
+            "link": ""
+          }
+        },
+        "vp4": {
+          "type": "item",
+          "settings": {
+            "value": "Bio-based",
+            "caption": "chestnut & olive collections",
+            "link": ""
+          }
+        },
+        "vp5": {
+          "type": "item",
+          "settings": {
+            "value": "100%",
+            "caption": "made in Portugal",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "vp1",
+        "vp2",
+        "vp3",
+        "vp4",
+        "vp5"
+      ],
+      "name": "Differentiators",
+      "settings": {
+        "subheading": "Why specifiers choose Monteiro",
+        "title": "",
+        "accent_color": "#111111",
+        "show_dividers": true,
+        "alternate_bg_color": false
+      }
+    },
+    "chance_2_feature": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Our flagship, reimagined",
+        "title": "CHANCE 2.0 — one engraving, six performance grades, 236 colours",
+        "title_size": 30,
+        "title_width": 40,
+        "text": "<p>The iconic CHANCE engraving now comes in six grades — Classic, Mediflex, Outdoor, Bioblend, Crib 7/B1 and Crib 5 — so you keep the signature look and choose the fire, hygiene, sustainability or weather performance each project needs.</p>",
+        "button_label": "Explore CHANCE 2.0",
+        "button_link": "shopify://pages/chance-collection",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/CHANCE-5269_edit.webp",
+        "image_width": 85,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "collection_list_xBGz4B": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_cAHjqW": {
+          "type": "collection",
+          "settings": {
+            "collection": "healthcare"
+          }
+        },
+        "collection_fXzX6X": {
+          "type": "collection",
+          "settings": {
+            "collection": "contract"
+          }
+        },
+        "collection_Pj986Y": {
+          "type": "collection",
+          "settings": {
+            "collection": "hospitality-fabrics"
+          }
+        },
+        "collection_4byWRb": {
+          "type": "collection",
+          "settings": {
+            "collection": "marine"
+          }
+        }
+      },
+      "block_order": [
+        "collection_cAHjqW",
+        "collection_fXzX6X",
+        "collection_Pj986Y",
+        "collection_4byWRb"
+      ],
+      "name": "Solutions by industry",
+      "settings": {
+        "title": "Solutions by industry & application",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "view_all_link": "shopify://pages/fabrics-by-industry",
+        "alternate_bg_color": false
+      }
+    },
+    "performance_tech_main": {
+      "type": "performance-tech",
+      "blocks": {
+        "pt1": {
+          "type": "feature",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Anti-microbial"
+          }
+        },
+        "pt2": {
+          "type": "feature",
+          "settings": {
+            "icon": "flame-retardant",
+            "label": "Flame retardant"
+          }
+        },
+        "pt3": {
+          "type": "feature",
+          "settings": {
+            "icon": "ink-stain",
+            "label": "Ink & stain resistant"
+          }
+        },
+        "pt4": {
+          "type": "feature",
+          "settings": {
+            "icon": "abrasion-resistant",
+            "label": "Abrasion resistant"
+          }
+        },
+        "pt5": {
+          "type": "feature",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        },
+        "pt6": {
+          "type": "feature",
+          "settings": {
+            "icon": "vegan",
+            "label": "Vegan"
+          }
+        }
+      },
+      "block_order": [
+        "pt1",
+        "pt2",
+        "pt3",
+        "pt4",
+        "pt5",
+        "pt6"
+      ],
+      "name": "Performance technology",
+      "settings": {
+        "eyebrow": "Engineered for performance",
+        "title": "The technology built into every metre",
+        "bg_color": "#2f519b",
+        "text_color": "#ffffff",
+        "cta_label": "Find the right fabric for your application",
+        "cta_link": "shopify://pages/contact"
+      }
+    },
+    "439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"/pages/press\" target=\"_blank\" title=\"Press Kit\"> here. </a></p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Custom Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here. </a></p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide a lab dip for your approval or a pilot sample. </p>",
+            "open": false
+          }
+        },
+        "221eabcb-03f0-4155-8a19-e0c815185540": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "221eabcb-03f0-4155-8a19-e0c815185540"
+      ],
+      "custom_css": [
+        ".h2 {text-align: left; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "sustainability_rt": {
+      "type": "rich-text",
+      "custom_css": [],
+      "name": "Sustainability",
+      "settings": {
+        "subheading": "Sustainability as advantage",
+        "title": "Bio-based performance, certified.",
+        "title_size": 44,
+        "title_width": 14,
+        "heading_h1": false,
+        "text": "<p>Our chestnut- and olive-based collections meet the same technical bar as conventional coated fabric — proof, not promise. Sustainability you can specify with confidence.</p>",
+        "image_width": 120,
+        "button_label": "Explore our sustainability story",
+        "button_link": "shopify://pages/sustainable",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f4f6f1",
+        "color_text": ""
+      }
+    },
+    "value_props_certs": {
+      "type": "value-props",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "value": "ISO 9001",
+            "caption": "Quality management",
+            "link": ""
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "value": "ISO 14001",
+            "caption": "Environmental management",
+            "link": ""
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "value": "Sanitized®",
+            "caption": "Hygiene & antimicrobial",
+            "link": ""
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "value": "REACH",
+            "caption": "Chemical compliance",
+            "link": ""
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "value": "Vegan",
+            "caption": "Animal-free materials",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "name": "Certifications",
+      "settings": {
+        "subheading": "Certified & compliant",
+        "title": "",
+        "accent_color": "#111111",
+        "show_dividers": true,
+        "alternate_bg_color": false
+      }
+    },
+    "testimonials_mcFFbf": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_RwqUh3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "The Vila Foz Hotel & Spa",
+            "text": "<p>The Vila Foz Hotel & Spa won three of the World Luxury Hotel Awards, namely the Best Luxury Architecture Design in Southern Europe and the Best Interior Design Spa in Portugal.  Nini Andrade Silva top interior designer, chose our Portus BLT for the sun loungers' pillows, making the space not only comfortable but beautiful.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/savoy-palace-nini-andrade-silva",
+            "image1": "shopify://shop_images/1villa-foz-hotel-fabrics-spa.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_VXYA8F": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "Official McDonald's Supplier",
+            "text": "<p>Monteiro Fabrics Sets the Stage for a Greener Future at McDonald's Worldwide Convention 2024</p>",
+            "button_label": "Know more",
+            "link": "shopify://blogs/news/monteiro-fabrics-mcdonalds",
+            "image1": "shopify://shop_images/MCDONALDS_FABRICS_SUPPLIER.png",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_PcfKzA": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "Savoy Palace Hotel by Nini Andrade",
+            "text": "<p>Named by Forbes the number one Hotel to visit in Madeira, the Savoy Palace is synonymous with luxury and high-end tourism, so it’s an honour to be a small part of that experience. The design was meticulously thought by Nini Andrade, who chose our fabrics to complement the Palace’s amazing architecture.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/savoy-palace-nini-andrade-silva",
+            "image1": "shopify://shop_images/1Savoy-Palace-Hotel--fabrics.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "testimonial_AHXGHe": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "Canteen by PF Architecture studio",
+            "text": "<p>Monteiro Fabrics Canteen project at ArchDaily \"An exciting project in its challenge and goals\" designed by Pedro Ferreira Architecture Studio to create a comfortable and efficient space that respected the industrial character of the building.</p>",
+            "button_label": "VIEW PROJECT",
+            "link": "shopify://blogs/news/cantina-project",
+            "image1": "shopify://shop_images/1canteen-fabrics--arch-daily1.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_RwqUh3",
+        "testimonial_VXYA8F",
+        "testimonial_PcfKzA",
+        "testimonial_AHXGHe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p {text-align: left;}",
+        "h3 {text-align: left;}"
+      ],
+      "settings": {
+        "title": "Trusted on demanding projects",
+        "button_style": "primary",
+        "alternate_bg_color": false
+      }
+    },
+    "rich_text_QkqKy6": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 100;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Official Resellers",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "official_resellers_GHkbxE": {
+      "type": "official-resellers",
+      "disabled": true,
+      "name": "Official Resellers",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#111111",
+        "muted_color": "#6b6b6b",
+        "card_background": "#ffffff",
+        "card_border": "#e5e5e5",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "featured_blog_KyLGUM": {
+      "type": "featured-blog",
+      "custom_css": [],
+      "settings": {
+        "title": "Insights",
+        "blog": "news",
+        "post_limit": 4,
+        "show_view_all": true,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": false,
+        "height": "full",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    },
+    "f0c81e51-497e-40a8-8f53-d2f12e3fd450": {
+      "type": "rich-text",
+      "custom_css": [],
+      "settings": {
+        "subheading": "Do you have a project?",
+        "title": "Let's engineer your solution.",
+        "title_size": 54,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us the application and the standards you need to hit — we'll recommend the fabric and send samples. Prefer to browse first? <a href=\"/collections/coated-fabrics\">Request free samples</a>.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    },
+    "performance_fabrics_feature": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Monteiro Performance Fabrics",
+        "title": "Certified technical fabrics for the toughest specifications",
+        "title_size": 30,
+        "title_width": 40,
+        "text": "<p>When a project turns on fire ratings, hygiene, abrasion or chemical compliance, our Performance Fabrics line brings the certifications and test data together in one place — Crib 5 &amp; Crib 7, DIN 4102 B1, antiviral and antibacterial hygiene, 400,000-rub durability and REACH compliance.</p>",
+        "button_label": "Explore Performance Fabrics",
+        "button_link": "shopify://pages/performance-fabrics",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/LAB-FABRICS-1.jpg",
+        "image_width": 85,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_imXeV4",
+    "value_props_diff",
+    "chance_2_feature",
+    "collection_list_xBGz4B",
+    "performance_tech_main",
+    "performance_fabrics_feature",
+    "439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e",
+    "sustainability_rt",
+    "value_props_certs",
+    "testimonials_mcFFbf",
+    "rich_text_QkqKy6",
+    "official_resellers_GHkbxE",
+    "featured_blog_KyLGUM",
+    "f0c81e51-497e-40a8-8f53-d2f12e3fd450"
+  ]
+}

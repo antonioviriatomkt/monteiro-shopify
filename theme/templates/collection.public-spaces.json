@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Public spaces &amp; contract upholstery",
+        "title": "Public Space Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's public space upholstery fabrics are heavy-duty contract coated fabrics for high-traffic public and commercial interiors. Every fabric in the collection is abrasion-resistant, flame-retardant, stain- and scratch-resistant, and easy to clean — REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Heavy-duty abrasion resistant"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Colour-fast and light resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for high-traffic public interiors",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, rated for intensive public-space use"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Scratch & stain resistance",
+            "value": "High; non-absorbent surface"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean; resists everyday soiling"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Flame retardancy",
+            "value": "Meets contract upholstery fire-safety standards"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Light & colour fastness",
+            "value": "Colour-fast, resists fading"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Care",
+            "value": "No solvents or abrasive cleaners required"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for public and contract spaces",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for high-traffic public spaces?",
+            "answer": "<p>Public-space upholstery has to take constant use without showing wear. A suitable fabric needs heavy-duty abrasion resistance, a surface that resists scratches and stains, easy cleaning between users and compliance with contract fire-safety standards. Monteiro's public space fabrics are heavy-duty coated fabrics that meet all of these demands while remaining REACH-compliant.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How abrasion- and scratch-resistant are these fabrics?",
+            "answer": "<p>They are coated fabrics rated for intensive, contract-grade use, so they stand up to the repeated rubbing and contact typical of busy public seating. The non-absorbent surface also resists scratches and surface marking, helping the upholstery keep its appearance over years of service.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they meet fire-safety standards for contract projects?",
+            "answer": "<p>Yes. The fabrics are flame-retardant and meet contract upholstery fire-safety standards required for public and commercial interiors. Ask our team for the specific certificates and test reports your project requires.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they easy to clean in busy environments?",
+            "answer": "<p>Yes. The coated surface is wipe-clean and resists everyday soiling, so seating can be cleaned quickly between users without solvents or abrasive cleaners. This makes maintenance simple in high-turnover public settings.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are specified for stadiums and arenas, transit and waiting areas, auditoriums, cinemas, libraries and civic buildings — anywhere upholstery faces heavy daily use and needs to stay hard-wearing and easy to maintain.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Public-space fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Public Space Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Public Space Upholstery Fabrics",
+        "cp_description": "Heavy-duty contract coated upholstery fabrics for high-traffic public and commercial interiors. Abrasion-, scratch- and stain-resistant, flame-retardant and easy to clean. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/public-spaces"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a contract upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your public-space project and we'll recommend the right heavy-duty fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

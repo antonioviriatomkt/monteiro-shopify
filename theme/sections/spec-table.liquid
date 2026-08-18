@@ -1,0 +1,106 @@
+{% comment %}
+  Technical specification table — presents a fabric's measurable properties as a
+  clean, crawlable property/value list (<dl>). Built for collection / sector
+  landing pages so that performance facts live in real HTML text (not images),
+  making them extractable by search engines and AI answer engines. Reusable for
+  any sector. Optional intro and closing note/CTA.
+{% endcomment %}
+
+<div class="section-spec-table" data-section-type="spec-table" data-cc-animate
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #st-{{ section.id }} .st-head { max-width: 760px; margin: 0 auto 40px; text-align: {{ section.settings.align }}; }
+    #st-{{ section.id }} .st-eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; opacity: 0.7; margin-bottom: 12px; }
+    #st-{{ section.id }} .st-title { font-size: 30px; font-weight: 400; line-height: 1.25; margin: 0; color: {{ section.settings.text_color }}; }
+    #st-{{ section.id }} .st-intro { margin-top: 16px; line-height: 1.6; opacity: 0.92; }
+    #st-{{ section.id }} .st-intro p { margin: 0; }
+    #st-{{ section.id }} .st-grid { max-width: 880px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
+    #st-{{ section.id }} .st-row { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 58%); gap: 16px; padding: 16px 0; border-top: 1px solid {{ section.settings.line_color }}; align-items: baseline; }
+    #st-{{ section.id }} dt { margin: 0; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.7; }
+    #st-{{ section.id }} dd { margin: 0; line-height: 1.45; }
+    #st-{{ section.id }} .st-note { max-width: 880px; margin: 28px auto 0; font-size: 14px; line-height: 1.6; opacity: 0.7; text-align: {{ section.settings.align }}; }
+    #st-{{ section.id }} .st-note p { margin: 0; }
+    #st-{{ section.id }} .st-cta { text-align: center; margin-top: 40px; }
+    @media (max-width: 749px) {
+      #st-{{ section.id }} .st-grid { grid-template-columns: 1fr; gap: 0; }
+      #st-{{ section.id }} .st-title { font-size: 24px; }
+    }
+  {% endstyle %}
+
+  <div id="st-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank or section.settings.intro != blank %}
+      <div class="st-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="st-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="st-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.intro != blank %}<div class="st-intro rte">{{ section.settings.intro }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    <dl class="st-grid" data-cc-animate>
+      {% for block in section.blocks %}
+        <div class="st-row" {{ block.shopify_attributes }}>
+          <dt>{{ block.settings.label | escape }}</dt>
+          <dd>{{ block.settings.value | escape }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+
+    {% if section.settings.note != blank %}
+      <div class="st-note rte" data-cc-animate>{{ section.settings.note }}</div>
+    {% endif %}
+
+    {% if section.settings.cta_label != blank %}
+      <div class="st-cta" data-cc-animate>
+        <a class="button{% if section.settings.cta_style == 'alt' %} alt{% endif %}" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Technical specifications",
+    "class": "section-spec-table",
+    "max_blocks": 18,
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Technical specifications" },
+      { "type": "text", "id": "title", "label": "Heading", "default": "Engineered for healthcare environments" },
+      { "type": "richtext", "id": "intro", "label": "Intro text" },
+      {
+        "type": "select", "id": "align", "label": "Heading alignment", "default": "center",
+        "options": [ { "value": "left", "label": "Left" }, { "value": "center", "label": "Center" } ]
+      },
+      { "type": "richtext", "id": "note", "label": "Footnote (e.g. certification caveat)" },
+      { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#FFFFFF" },
+      { "type": "color", "id": "text_color", "label": "Text colour", "default": "#111111" },
+      { "type": "color", "id": "line_color", "label": "Divider colour", "default": "#E4E4E4" },
+      { "type": "text", "id": "cta_label", "label": "CTA label" },
+      { "type": "url", "id": "cta_link", "label": "CTA link" },
+      {
+        "type": "select", "id": "cta_style", "label": "CTA style", "default": "primary",
+        "options": [ { "value": "primary", "label": "Primary (solid)" }, { "value": "alt", "label": "Alt (outline)" } ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "spec",
+        "name": "Specification",
+        "settings": [
+          { "type": "text", "id": "label", "label": "Property", "default": "Property" },
+          { "type": "text", "id": "value", "label": "Value", "default": "Value" }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Technical specifications",
+        "blocks": [
+          { "type": "spec", "settings": { "label": "Material", "value": "Coated fabric" } },
+          { "type": "spec", "settings": { "label": "Antimicrobial", "value": "Yes" } },
+          { "type": "spec", "settings": { "label": "Cleanability", "value": "Wipe-clean" } },
+          { "type": "spec", "settings": { "label": "Origin", "value": "Made in Portugal" } }
+        ]
+      }
+    ]
+  }
+{% endschema %}

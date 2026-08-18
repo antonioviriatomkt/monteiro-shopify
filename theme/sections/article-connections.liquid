@@ -1,0 +1,170 @@
+{% comment %}
+  Article connections — below-article bands that link a post outward:
+  1. Related fabrics (products): article metafield custom.related_products →
+     else tag→collection map → else default collection.
+  2. Continue reading: articles sharing a tag → filled with most-recent.
+  3. CTA.
+  Image-less related articles get a branded title-card fallback.
+{% endcomment %}
+
+{%- assign accent = section.settings.accent -%}
+<div class="section-article-connections" data-section-type="article-connections"
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #ac-{{ section.id }} .ac-band { margin: 0 auto; }
+    #ac-{{ section.id }} .ac-band + .ac-band { margin-top: 56px; }
+    #ac-{{ section.id }} .ac-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 24px; border-bottom: 1px solid {{ section.settings.line_color }}; padding-bottom: 14px; }
+    #ac-{{ section.id }} .ac-h { font-size: 22px; font-weight: 500; margin: 0; }
+    #ac-{{ section.id }} .ac-all { font-size: 14px; font-weight: 600; color: {{ accent }}; text-decoration: none; white-space: nowrap; }
+    #ac-{{ section.id }} .ac-all:hover { text-decoration: underline; }
+    #ac-{{ section.id }} .ac-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+    #ac-{{ section.id }} .ac-grid.ac-posts { grid-template-columns: repeat(3, 1fr); }
+    #ac-{{ section.id }} .ac-card { display: block; color: inherit; text-decoration: none; }
+    #ac-{{ section.id }} .ac-thumb { position: relative; width: 100%; padding-top: 75%; overflow: hidden; background: {{ section.settings.card_bg }}; border: 1px solid {{ section.settings.line_color }}; }
+    #ac-{{ section.id }} .ac-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+    #ac-{{ section.id }} .ac-card:hover .ac-thumb img { transform: scale(1.04); }
+    #ac-{{ section.id }} .ac-ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 18px; background: {{ accent }}; color: #fff; font-size: 15px; line-height: 1.3; }
+    #ac-{{ section.id }} .ac-name { margin: 12px 0 0; font-size: 15px; line-height: 1.35; font-weight: 500; }
+    #ac-{{ section.id }} .ac-card:hover .ac-name { color: {{ accent }}; }
+    #ac-{{ section.id }} .ac-meta { margin: 10px 0 0; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.6; }
+    #ac-{{ section.id }} .ac-cta { text-align: center; border: 1px solid {{ section.settings.line_color }}; background: {{ section.settings.card_bg }}; padding: 40px 24px; }
+    #ac-{{ section.id }} .ac-cta h3 { font-size: 26px; font-weight: 400; margin: 0 0 10px; }
+    #ac-{{ section.id }} .ac-cta p { margin: 0 auto 22px; max-width: 560px; opacity: 0.82; line-height: 1.6; }
+    #ac-{{ section.id }} .ac-btn { display: inline-block; padding: 14px 32px; background: {{ accent }}; color: #fff; text-decoration: none; font-weight: 600; letter-spacing: 0.02em; }
+    #ac-{{ section.id }} .ac-btn:hover { opacity: 0.9; }
+    @media (max-width: 900px) { #ac-{{ section.id }} .ac-grid, #ac-{{ section.id }} .ac-grid.ac-posts { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { #ac-{{ section.id }} .ac-grid, #ac-{{ section.id }} .ac-grid.ac-posts { grid-template-columns: 1fr 1fr; gap: 14px; } #ac-{{ section.id }} .ac-h { font-size: 19px; } }
+  {% endstyle %}
+
+  <div id="ac-{{ section.id }}" class="wide-container half-gutter section-spacing">
+
+    {%- comment -%} ===== 1. RELATED FABRICS ===== {%- endcomment -%}
+    {%- assign rel_products = article.metafields.custom.related_products.value -%}
+    {%- assign source_url = '' -%}
+    {%- if rel_products == blank or rel_products.size == 0 -%}
+      {%- assign map_lines = section.settings.tag_map | newline_to_br | split: '<br />' -%}
+      {%- assign chosen_handle = '' -%}
+      {%- for tag in article.tags -%}
+        {%- assign dtag = tag | downcase | strip -%}
+        {%- for line in map_lines -%}
+          {%- assign pair = line | split: '=>' -%}
+          {%- if pair.size == 2 -%}
+            {%- assign ltag = pair[0] | downcase | strip -%}
+            {%- if dtag == ltag and chosen_handle == '' -%}{%- assign chosen_handle = pair[1] | strip -%}{%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {%- if chosen_handle == '' -%}{%- assign chosen_handle = section.settings.default_collection -%}{%- endif -%}
+      {%- assign src_coll = collections[chosen_handle] -%}
+      {%- if src_coll != empty -%}{%- assign rel_products = src_coll.products -%}{%- assign source_url = src_coll.url -%}{%- endif -%}
+    {%- endif -%}
+
+    {%- if rel_products != blank and rel_products.size > 0 -%}
+      <div class="ac-band" data-cc-animate>
+        <div class="ac-head">
+          <h2 class="ac-h">{{ section.settings.products_title | escape }}</h2>
+          {%- if source_url != blank -%}<a class="ac-all" href="{{ source_url }}">{{ section.settings.products_all_label | escape }} →</a>{%- endif -%}
+        </div>
+        <div class="ac-grid">
+          {%- for product in rel_products limit: section.settings.max_products -%}
+            <a class="ac-card" href="{{ product.url }}">
+              <div class="ac-thumb">
+                {%- if product.featured_image -%}
+                  <img src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" loading="lazy">
+                {%- else -%}
+                  <span class="ac-ph">{{ product.title | escape }}</span>
+                {%- endif -%}
+              </div>
+              <p class="ac-name">{{ product.title | escape }}</p>
+            </a>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} ===== 2. CONTINUE READING ===== {%- endcomment -%}
+    {%- assign max_a = section.settings.max_articles -%}
+    {%- assign shown = 0 -%}
+    {%- assign shown_ids = ',' -%}
+    {%- capture posts_html -%}
+      {%- comment -%} Pass 1: shared tag {%- endcomment -%}
+      {%- for a in blog.articles -%}
+        {%- if a.id != article.id and shown < max_a -%}
+          {%- assign share = false -%}
+          {%- for t in a.tags -%}{%- if article.tags contains t -%}{%- assign share = true -%}{%- endif -%}{%- endfor -%}
+          {%- if share -%}
+            {%- assign shown = shown | plus: 1 -%}
+            {%- assign shown_ids = shown_ids | append: a.id | append: ',' -%}
+            {%- render 'ac-post-card', a: a, accent: accent -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- comment -%} Pass 2: fill with most recent {%- endcomment -%}
+      {%- for a in blog.articles -%}
+        {%- assign key = a.id | prepend: ',' | append: ',' -%}
+        {%- if a.id != article.id and shown < max_a -%}
+          {%- unless shown_ids contains key -%}
+            {%- assign shown = shown | plus: 1 -%}
+            {%- assign shown_ids = shown_ids | append: a.id | append: ',' -%}
+            {%- render 'ac-post-card', a: a, accent: accent -%}
+          {%- endunless -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {%- if shown > 0 -%}
+      <div class="ac-band" data-cc-animate>
+        <div class="ac-head">
+          <h2 class="ac-h">{{ section.settings.articles_title | escape }}</h2>
+          <a class="ac-all" href="{{ blog.url }}">{{ section.settings.articles_all_label | escape }} →</a>
+        </div>
+        <div class="ac-grid ac-posts">{{ posts_html }}</div>
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} ===== 3. CTA ===== {%- endcomment -%}
+    {%- if section.settings.cta_title != blank or section.settings.cta_label != blank -%}
+      <div class="ac-band" data-cc-animate>
+        <div class="ac-cta">
+          {%- if section.settings.cta_title != blank -%}<h3>{{ section.settings.cta_title | escape }}</h3>{%- endif -%}
+          {%- if section.settings.cta_text != blank -%}<p>{{ section.settings.cta_text }}</p>{%- endif -%}
+          {%- if section.settings.cta_label != blank and section.settings.cta_link != blank -%}
+            <a class="ac-btn" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Article connections",
+    "class": "section-article-connections-wrap",
+    "settings": [
+      { "type": "header", "content": "Related fabrics" },
+      { "type": "text", "id": "products_title", "label": "Heading", "default": "Related fabrics" },
+      { "type": "text", "id": "products_all_label", "label": "View-all label", "default": "View collection" },
+      { "type": "range", "id": "max_products", "min": 2, "max": 8, "step": 1, "label": "Max products", "default": 4 },
+      { "type": "textarea", "id": "tag_map", "label": "Tag → collection map (one per line: Tag => collection-handle)", "default": "Hospitality => hospitality-fabrics\nHealthcare => healthcare\nHygiene => healthcare\nFire safety => medical\nCertification => medical\nMaterials => chance\nSustainability => outdoor\nProjects => contract" },
+      { "type": "text", "id": "default_collection", "label": "Default collection (fallback handle)", "default": "chance" },
+      { "type": "header", "content": "Continue reading" },
+      { "type": "text", "id": "articles_title", "label": "Heading", "default": "Continue reading" },
+      { "type": "text", "id": "articles_all_label", "label": "View-all label", "default": "All articles" },
+      { "type": "range", "id": "max_articles", "min": 2, "max": 6, "step": 1, "label": "Max articles", "default": 3 },
+      { "type": "header", "content": "CTA" },
+      { "type": "text", "id": "cta_title", "label": "CTA heading", "default": "Need help specifying a fabric?" },
+      { "type": "richtext", "id": "cta_text", "label": "CTA text", "default": "<p>Tell us about your project and our team will recommend the right fabric and send samples.</p>" },
+      { "type": "text", "id": "cta_label", "label": "CTA button label", "default": "Get in touch" },
+      { "type": "url", "id": "cta_link", "label": "CTA button link" },
+      { "type": "header", "content": "Colours" },
+      { "type": "color", "id": "bg_color", "label": "Background", "default": "#FFFFFF" },
+      { "type": "color", "id": "text_color", "label": "Text", "default": "#111111" },
+      { "type": "color", "id": "card_bg", "label": "Card background", "default": "#FAFAF8" },
+      { "type": "color", "id": "line_color", "label": "Lines / borders", "default": "#E6E6E2" },
+      { "type": "color", "id": "accent", "label": "Accent", "default": "#2F519B" }
+    ],
+    "presets": [ { "name": "Article connections" } ]
+  }
+{% endschema %}

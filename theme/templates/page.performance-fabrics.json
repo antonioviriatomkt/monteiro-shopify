@@ -1,0 +1,737 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/fabricante_cadeiras_estadio_xxx2.png",
+        "height": "fixed",
+        "height_desktop": 650,
+        "height_mobile": 750,
+        "subheading": "Monteiro Performance Fabrics",
+        "title": "Engineering fabrics for demanding environments",
+        "title_size": 58,
+        "title_width": 28,
+        "heading_h1": true,
+        "text": "<p>Certified for fire safety, hygiene and durability — engineered for environments where the specification, not the swatch, decides.</p>",
+        "enlarge_text": false,
+        "button_label": "Get in touch",
+        "button_link": "shopify://pages/contact",
+        "button_2_label": "",
+        "button_2_link": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "story": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "The discipline behind the fabric",
+        "title": "Specified on requirements, not aesthetics",
+        "title_size": 38,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Monteiro Performance Fabrics is the technical division of Monteiro Fabrics — coated and engineered textiles backed by 60 years of expertise, developed for buyers who specify on certification, durability, compliance and operational risk.</p><p>Every fabric is the product of in-house <strong>technical development</strong>, tested for <strong>durability</strong> and <strong>safety</strong>, and built for <strong>regulatory compliance</strong>, <strong>longevity</strong> and <strong>hygiene</strong> — without compromising on sustainability. Where a surface will be disinfected thousands of times, sit under constant load, or has to pass a fire-safety audit, this is the material that holds up.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "capacity": {
+      "type": "grade-cards",
+      "blocks": {
+        "k4": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Experience",
+            "title": "60 years",
+            "stat": "of expertise",
+            "text": "Six decades of expertise in performance and technical fabrics.",
+            "accent": "#2f519b",
+            "cta_label": "",
+            "cta_link": ""
+          }
+        },
+        "k1": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Production capacity",
+            "title": "6M metres",
+            "stat": "per year",
+            "text": "Industrial-scale capacity to supply specification projects on schedule.",
+            "accent": "#2f519b",
+            "cta_label": "",
+            "cta_link": ""
+          }
+        },
+        "k2": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Origin",
+            "title": "Made in Portugal",
+            "stat": "EU-manufactured",
+            "text": "Developed and produced in-house under European regulatory standards.",
+            "accent": "#2f519b",
+            "cta_label": "",
+            "cta_link": ""
+          }
+        },
+        "k3": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Engineering",
+            "title": "In-house R&D",
+            "stat": "technical development",
+            "text": "Fabrics formulated, tested and certified by our own technical team.",
+            "accent": "#2f519b",
+            "cta_label": "",
+            "cta_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "k4",
+        "k1",
+        "k2",
+        "k3"
+      ],
+      "settings": {
+        "eyebrow": "Capacity",
+        "title": "Built to supply, built to last",
+        "intro": "",
+        "columns": 4,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "card_bg": "#fafaf8",
+        "line_color": "#e6e6e2"
+      }
+    },
+    "tech": {
+      "type": "performance-tech",
+      "blocks": {
+        "t1": {
+          "type": "feature",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Anti-microbial"
+          }
+        },
+        "t2": {
+          "type": "feature",
+          "settings": {
+            "icon": "flame-retardant",
+            "label": "Flame retardant"
+          }
+        },
+        "t3": {
+          "type": "feature",
+          "settings": {
+            "icon": "ink-stain",
+            "label": "Ink & stain resistant"
+          }
+        },
+        "t4": {
+          "type": "feature",
+          "settings": {
+            "icon": "abrasion-resistant",
+            "label": "Abrasion resistant"
+          }
+        },
+        "t5": {
+          "type": "feature",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        },
+        "t6": {
+          "type": "feature",
+          "settings": {
+            "icon": "vegan",
+            "label": "Vegan"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6"
+      ],
+      "settings": {
+        "eyebrow": "Engineered for performance",
+        "title": "The technology built into every metre",
+        "bg_color": "#2f519b",
+        "text_color": "#ffffff",
+        "cta_label": "Find the right fabric for your application",
+        "cta_link": "shopify://pages/contact"
+      }
+    },
+    "cert_icons": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "i1": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Crib 5 / Crib 7 / B1 fire-rated"
+          }
+        },
+        "i2": {
+          "type": "icon",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Antiviral & antibacterial"
+          }
+        },
+        "i3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Bleach & alcohol cleanable"
+          }
+        },
+        "i4": {
+          "type": "icon",
+          "settings": {
+            "icon": "water-repellent",
+            "label": "Waterproof"
+          }
+        },
+        "i5": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "High Martindale abrasion"
+          }
+        },
+        "i6": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH & OEKO-TEX"
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "disabled": true,
+      "settings": {
+        "eyebrow": "Certifications at a glance",
+        "title": "Independently tested. Audit-ready.",
+        "body": "",
+        "body_position": "above",
+        "columns": 6,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "certs": {
+      "type": "spec-table",
+      "blocks": {
+        "c1": {
+          "type": "spec",
+          "settings": {
+            "label": "Crib 5",
+            "value": "Severe-hazard flammability — BS 5852 Crib 5 (our Crib 5 grade, Portus; also Flora, Peel and the heavy contract grades)"
+          }
+        },
+        "c2": {
+          "type": "spec",
+          "settings": {
+            "label": "Crib 7",
+            "value": "Highest-hazard flammability rating for extreme-risk seating — BS 5852 Crib 7 (our Crib 7 / B1 grade, Prosoft)"
+          }
+        },
+        "c3": {
+          "type": "spec",
+          "settings": {
+            "label": "B1",
+            "value": "Flame-retardant classification — DIN 4102-1 Class B1 (our Crib 7 / B1 grade, Prosoft)"
+          }
+        },
+        "c4": {
+          "type": "spec",
+          "settings": {
+            "label": "Waterproof",
+            "value": "Impermeable, fluid-proof surface — does not absorb spills or bodily fluids"
+          }
+        },
+        "c5": {
+          "type": "spec",
+          "settings": {
+            "label": "Antiviral",
+            "value": "Inhibits viral activity on the surface — ISO 18184 (Mediflex)"
+          }
+        },
+        "c6": {
+          "type": "spec",
+          "settings": {
+            "label": "Antibacterial",
+            "value": "Inhibits bacterial and fungal growth — Sanitized® treatment (antibacterial tested to JIS Z 2801; antifungal to ISO 846 A)"
+          }
+        },
+        "c7": {
+          "type": "spec",
+          "settings": {
+            "label": "Bleach cleanable",
+            "value": "Withstands diluted sodium-hypochlorite (bleach) cleaning without degrading"
+          }
+        },
+        "c8": {
+          "type": "spec",
+          "settings": {
+            "label": "Alcohol resistant",
+            "value": "Compatible with alcohol-based disinfectants used in clinical protocols"
+          }
+        },
+        "c9": {
+          "type": "spec",
+          "settings": {
+            "label": "Martindale",
+            "value": "400,000 rubs abrasion resistance — ISO 5470-2"
+          }
+        },
+        "c10": {
+          "type": "spec",
+          "settings": {
+            "label": "REACH",
+            "value": "EU REACH compliant — no Substances of Very High Concern above thresholds"
+          }
+        },
+        "c11": {
+          "type": "spec",
+          "settings": {
+            "label": "OEKO-TEX",
+            "value": "OEKO-TEX Standard 100 — tested for harmful substances"
+          }
+        },
+        "c12": {
+          "type": "spec",
+          "settings": {
+            "label": "PFAS Free",
+            "value": "Free of intentionally-added PFAS [TO CONFIRM — applies where stated]"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8",
+        "c9",
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "settings": {
+        "eyebrow": "Certifications",
+        "title": "The certifications that decide the spec",
+        "intro": "<p>Certifications vary by fabric grade — the table below shows the standards our performance range is tested against. Ask our technical team for the certificate that applies to your specification.</p>",
+        "align": "center",
+        "note": "<p>Ask our team for the specific certificates and test reports your project requires.</p>",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request certificates & test reports",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "image_with_text_UFhpiP": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Quality & testing",
+        "title": "Tested inside and out",
+        "title_size": 38,
+        "title_width": 12,
+        "text": "<p>Our products stand testimony to our unwavering commitment to quality. From durability to comfort, we prioritize every aspect to ensure you receive a product that not only looks beautiful but also lasts with proper maintenance and cleaning. We provide assurance in the form of a warranty, believing in the longevity and timeless appeal of our offerings.</p><p>To further validate our commitment, our products undergo rigorous testing, both internally within our state-of-the-art laboratory and externally in certified third-party laboratories. This ensures that our products consistently meet the expected quality benchmarks.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/LAB-FABRICS-1.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "sectors": {
+      "type": "grade-cards",
+      "blocks": {
+        "s1": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Healthcare & medical",
+            "stat": "",
+            "text": "Hospital, clinic and patient seating that is disinfected daily.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/healthcare"
+          }
+        },
+        "s2": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Public spaces",
+            "stat": "",
+            "text": "High-traffic contract seating built for constant public use.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/public-spaces"
+          }
+        },
+        "s3": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Stadiums",
+            "stat": "",
+            "text": "Weather- and wear-resistant seating for arenas and venues.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/public-spaces"
+          }
+        },
+        "s4": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Public transportation",
+            "stat": "",
+            "text": "Fire-rated, hard-wearing fabrics for transit interiors.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/mass-transportation"
+          }
+        },
+        "s5": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Safety equipment",
+            "stat": "",
+            "text": "Technical fabrics for protective and safety applications.",
+            "accent": "#2f519b",
+            "cta_label": "Talk to us",
+            "cta_link": "shopify://pages/contact"
+          }
+        },
+        "s6": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Gym equipment",
+            "stat": "",
+            "text": "Sweat-, abrasion- and stain-resistant fabrics for fitness seating.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/fitness-1"
+          }
+        },
+        "s7": {
+          "type": "grade",
+          "settings": {
+            "eyebrow": "Sector",
+            "title": "Medical vehicles",
+            "stat": "",
+            "text": "Hygienic, fluid-proof surfaces for ambulances and medical transport.",
+            "accent": "#2f519b",
+            "cta_label": "View fabrics",
+            "cta_link": "shopify://collections/medical"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "settings": {
+        "eyebrow": "Applications",
+        "title": "Engineered for the environments that test fabric hardest",
+        "intro": "",
+        "columns": 4,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "card_bg": "#fafaf8",
+        "line_color": "#e6e6e2"
+      }
+    },
+    "cases": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Case studies",
+        "title": "Specified, installed, still performing",
+        "title_size": 34,
+        "title_width": 26,
+        "heading_h1": false,
+        "text": "<p><strong>Emergency vehicles.</strong> Ambulance and emergency-vehicle seating for a Portuguese fleet manufacturer, in a tailormade Beta fabric with bespoke printed and plain colourways.</p><p><strong>Pilot &amp; passenger seating.</strong> Seats for a Norwegian seating specialist working in demanding transport applications.</p><p><strong>Motorcycle helmets.</strong> Technical lining fabric for a motorcycle-helmet manufacturer.</p><p><strong>Gym &amp; fitness.</strong> Sweat- and abrasion-resistant upholstery for a Danish fitness brand.</p><p><strong>Office &amp; industrial seating.</strong> Flexible task and industrial chairs for a Danish manufacturer, in a tailormade Essentials fabric.</p><p><em>Client names withheld. Reference projects available on request.</em></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "resources": {
+      "type": "tech-resources",
+      "blocks": {
+        "r0": {
+          "type": "resource",
+          "settings": {
+            "kind": "white-paper",
+            "tag": "White paper",
+            "title": "The Complete Guide to Healthcare Upholstery Fabrics",
+            "excerpt": "A specification guide for healthcare procurement and furniture teams: what to demand on hygiene, fire safety, abrasion and compliance — and how to read a fabric data sheet.",
+            "meta": "Complete guide · 15 min read",
+            "link": "/blogs/technical-hub/complete-guide-to-healthcare-upholstery-fabrics",
+            "cta_label": "Read the guide"
+          }
+        },
+        "r1": {
+          "type": "resource",
+          "settings": {
+            "kind": "guide",
+            "tag": "Fire safety",
+            "title": "Crib 5 vs Crib 7: which flammability rating do you need?",
+            "excerpt": "How the BS 5852 ignition tests differ, and how to match the right crib rating to your environment's level of risk.",
+            "meta": "6 min read",
+            "link": "/blogs/technical-hub/crib-5-vs-crib-7",
+            "cta_label": "Read article"
+          }
+        },
+        "r2": {
+          "type": "resource",
+          "settings": {
+            "kind": "article",
+            "tag": "Healthcare",
+            "title": "How to choose fabrics for healthcare environments",
+            "excerpt": "The hygiene, durability and compliance criteria that should drive every healthcare upholstery specification.",
+            "meta": "7 min read",
+            "link": "/blogs/technical-hub/choosing-fabrics-for-healthcare",
+            "cta_label": "Read article"
+          }
+        },
+        "r3": {
+          "type": "resource",
+          "settings": {
+            "kind": "article",
+            "tag": "Healthcare",
+            "title": "Upholstery requirements for healthcare furniture",
+            "excerpt": "From patient seating to examination couches — the standards healthcare furniture fabrics must meet.",
+            "meta": "5 min read",
+            "link": "/blogs/technical-hub/healthcare-furniture-requirements",
+            "cta_label": "Read article"
+          }
+        },
+        "r4": {
+          "type": "resource",
+          "settings": {
+            "kind": "guide",
+            "tag": "Hygiene",
+            "title": "Bleach cleaning: what to look for in a fabric",
+            "excerpt": "Why some coated fabrics survive repeated disinfection and others crack — and how to spot the difference.",
+            "meta": "4 min read",
+            "link": "/blogs/technical-hub/bleach-cleaning-fabric-guide",
+            "cta_label": "Read article"
+          }
+        },
+        "r5": {
+          "type": "resource",
+          "settings": {
+            "kind": "article",
+            "tag": "Certification",
+            "title": "Understanding B1 certification",
+            "excerpt": "What the DIN 4102-1 Class B1 flame-retardancy rating means and where it is required.",
+            "meta": "5 min read",
+            "link": "/blogs/technical-hub/understanding-b1-certification",
+            "cta_label": "Read article"
+          }
+        }
+      },
+      "block_order": [
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "eyebrow": "Technical Hub",
+        "title": "Technical resources",
+        "intro": "<p>Specification guidance, certification explainers and white papers for the teams who choose fabric on the data sheet.</p>",
+        "columns": 3,
+        "all_label": "Browse all technical articles",
+        "all_link": "/blogs/technical-hub",
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "card_bg": "#fafaf8",
+        "line_color": "#e6e6e2",
+        "accent": "#2f519b",
+        "emit_itemlist": true,
+        "list_name": "Monteiro Technical Hub"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the difference between Crib 5 and Crib 7?",
+            "answer": "<p>Crib 5 and Crib 7 are flammability ratings from the BS 5852 ignition-source test. The higher the crib number, the more severe the ignition source the fabric resists. Crib 5 covers severe-hazard contract environments; Crib 7 covers the highest-hazard applications. In our range, the Crib 5 grade (Portus) carries Crib 5 and the Crib 7 / B1 grade (Prosoft) carries Crib 7.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "What does B1 certification mean?",
+            "answer": "<p>B1 is a flame-retardancy classification under the German standard DIN 4102-1. A B1-rated material is classed as flame-retardant (not easily ignitable) and is widely specified for public buildings and transport interiors. In our range, the Crib 7 / B1 grade (Prosoft) holds DIN 4102-1 B1.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Can these fabrics be cleaned with bleach and alcohol?",
+            "answer": "<p>Yes. The coated surface is engineered to withstand diluted sodium-hypochlorite (bleach) solutions and alcohol-based disinfectants used in clinical and public-hygiene cleaning protocols, without cracking or losing colour. Avoid abrasive pads and undiluted solvents.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Monteiro Performance Fabrics PFAS-free?",
+            "answer": "<p>Where stated, our fabrics are free of intentionally-added PFAS. [TO CONFIRM which lines carry a PFAS-free declaration and the basis for it.]</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "What Martindale abrasion rating do the fabrics achieve?",
+            "answer": "<p>Abrasion resistance is measured in Martindale rubs under ISO 5470-2, the coated-fabric method. Our performance grades reach 400,000 Martindale rubs — contract / heavy-duty grade.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I get the certificates and test reports for a project?",
+            "answer": "<p>Yes. Tell us the application and the standards your specification calls for, and our technical team will supply the relevant certificates, test reports and samples.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Performance fabrics — answered",
+        "title": "Technical FAQ",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Performance Fabrics",
+        "emit_collectionpage": false,
+        "cp_name": "",
+        "cp_description": "",
+        "cp_url": ""
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Talk to the technical team",
+        "title_size": 36,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Tell us your application and the standards you need to meet. We'll recommend the right fabric, supply the certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Get in touch",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story",
+    "capacity",
+    "tech",
+    "cert_icons",
+    "certs",
+    "image_with_text_UFhpiP",
+    "sectors",
+    "cases",
+    "resources",
+    "faq",
+    "cta"
+  ]
+}

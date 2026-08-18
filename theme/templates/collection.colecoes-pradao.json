@@ -1,0 +1,63 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": true,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": false,
+        "show_filter_counts": true,
+        "show_filter_deadends": true,
+        "ajax_products": true,
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": true,
+        "show_featured_in_sort": false
+      }
+    },
+    "cta_band": {
+      "type": "rich-text",
+      "name": "Closing CTA",
+      "custom_css": [],
+      "settings": {
+        "subheading": "Need help choosing?",
+        "title": "Let's find your fabric.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our specialists will recommend the right fabric for your project and send samples. <a href=\"/pages/fabrics-by-industry\" title=\"Our Sectors\">Explore all sectors</a>.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cta_band"
+  ]
+}

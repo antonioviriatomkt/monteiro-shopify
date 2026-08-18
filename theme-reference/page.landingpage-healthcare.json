@@ -1,0 +1,274 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_Q6edNW": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/MR_Electra_Deep_OR.webp",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "rich_text_4htnHx": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "{{ page.title }}",
+        "title_size": 42,
+        "title_width": 40,
+        "heading_h1": false,
+        "text": "{{ page.content }}",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "landing_cta_dWhU8N": {
+      "type": "landing-cta",
+      "name": "Landing CTAs",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "quote_label": "Speak with our specialists",
+        "quote_anchor": "#shopify-section-template--28780393529721__1779536703c5fc5849",
+        "phone_label": "+351 228 338 640",
+        "background": "#ffffff",
+        "text_color": "#111111",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "image_with_text_collection_8baCqa": {
+      "type": "image-with-text-collection",
+      "name": "Collection media",
+      "settings": {
+        "subheading": "",
+        "title": "Built for demanding medical spaces",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>18 different collections to choose from. 10-year warranty. </p><p>Our team can help you find the right fabric for your healthcare project, whether you’re specifying for hospitals, clinics, dental practices, or care environments. We’ll recommend the best option based on your application, cleaning requirements, design goals, and performance needs, and we can also help you request samples from the most suitable collections.</p>",
+        "tags": "",
+        "button_label": "",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Medical__Mediflex.pdf?v=1774030659",
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "button_label_3": "Get in touch",
+        "button_link_3": "#shopify-section-template--28780393529721__1779536703c5fc5849",
+        "button_style_3": "primary",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_04_58_50_PM.png",
+        "color_count": 0,
+        "image_width": 66,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_collection_8chkwk": {
+      "type": "image-with-text-collection",
+      "name": "Collection media",
+      "settings": {
+        "subheading": "HIGH PERFORMANCE",
+        "title": "MEDIFLEX",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Engineered specifically for the demanding hygiene and durability standards of clinical environments. As a certified medical grade fabric, it delivers antifungal, antibacterial, and antiviral protection — actively preventing microbial growth, unpleasant odours, and surface degradation.</p>",
+        "tags": "Anti-viral, Anti-bacterial, Anti-fungal, biocompatible",
+        "button_label": "download pdf",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Medical__Mediflex.pdf?v=1774030659",
+        "button_label_2": "DOWNLOAD TECHNICAL FILE",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "button_label_3": "",
+        "button_link_3": "#",
+        "button_style_3": "primary",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/banner_medical_v6.png",
+        "color_count": 0,
+        "image_width": 66,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_collection_PEFDLf": {
+      "type": "image-with-text-collection",
+      "name": "Collection media",
+      "settings": {
+        "subheading": "UPSCALE LOOK",
+        "title": "ELECTRA",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Permanently antistatic fabric designed to enhance safety by preventing electric shocks and protecting sensitive medical equipment. Conductive properties are stable and independent of humidity. Specifically developed for healthcare environments, its surface is treated to inhibit microbial growth and resist staining from bodily fluids. </p>",
+        "tags": "Bi-elastic, weldable, anti-microbial, anti-fungal, esd protective, biocompatible",
+        "button_label": "download pdf",
+        "button_link": "",
+        "button_label_2": "DOWNLOAD TECHNICAL FILE",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "button_label_3": "",
+        "button_link_3": "#",
+        "button_style_3": "primary",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Electra_Mogno_9275_40476d91-dca1-4f5b-bb51-87f6a506fcd6.webp",
+        "image_width": 66,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_collection_yUNgjx": {
+      "type": "image-with-text-collection",
+      "name": "Collection media",
+      "settings": {
+        "subheading": "Refined textures with a natural leather feel",
+        "title": "Natural Leather Feel",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Some healthcare projects require more than technical performance alone. They also call for upholstery surfaces with a softer visual language, more depth in texture, and a natural leather-inspired feel that helps medical spaces look warmer, calmer, and more considered without compromising hygiene and durability.</p><p>Within Monteiro Fabrics’ healthcare offer, several collections bring this more refined aesthetic to clinical environments. They combine healthcare-ready performance with textured surfaces, soft touch, and colour palettes that support more welcoming interiors across clinics, care spaces, consultation rooms, and other patient-facing environments.</p>",
+        "tags": "",
+        "button_label": "View collections",
+        "button_link": "https://www.monteirofabrics.com/collections/healthcare?filter.p.m.custom.applicability=&filter.p.m.custom.abrasion_resistance=&filter.p.m.custom.flammability2=&filter.p.m.custom.antibacterial1=&filter.p.m.custom.colour_fastness_to_light=&filter.p.m.custom.resitencia_ao_alchool=&filter.v.option.color=&filter.p.m.custom.engraving1=Medium+leather&filter.p.m.custom.metalized_colour1=&sort_by=best-selling",
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_2": "secondary",
+        "button_label_3": "",
+        "button_link_3": "#",
+        "button_style_3": "primary",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/PORTUS_17333.jpg",
+        "image_width": 66,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_Nzi6Br": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Need something specific? We create it.",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Not every healthcare project fits a standard solution. When the application demands something more specific, Monteiro Fabrics works closely with clients to develop tailor-made upholstery solutions aligned with technical, aesthetic, and performance requirements.</p><p>From material selection to end-use demands, our team helps turn project needs into practical fabric solutions. Whether the priority is hygiene, comfort, durability, antistatic performance, or a particular visual direction, we support the process with close service, sampling, and product guidance from the start.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "1779536703c5fc5849": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_9BRBET": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1001730",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_9BRBET"
+      ],
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "custom_liquid_NUPpwP": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid/HTML",
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": "<!-- Mediflex modal -->\n<div id=\"modal-tf-mediflex\" class=\"mf-modal\" hidden role=\"dialog\" aria-labelledby=\"modal-tf-mediflex-title\">\n  <div class=\"mf-modal__overlay\" data-mf-close-modal></div>\n  <div class=\"mf-modal__content\">\n    <button type=\"button\" class=\"mf-modal__close\" data-mf-close-modal aria-label=\"Close\">×</button>\n    <h3 id=\"modal-tf-mediflex-title\">Mediflex — Technical File</h3>\n    <p>Enter your details and we'll send the PDF to your inbox.</p>\n    <div class=\"sender-form-field\" data-sender-form-id=\"eXDvAg\"></div>\n  </div>\n</div>\n\n<!-- Electra modal -->\n<div id=\"modal-tf-electra\" class=\"mf-modal\" hidden role=\"dialog\" aria-labelledby=\"modal-tf-electra-title\">\n  <div class=\"mf-modal__overlay\" data-mf-close-modal></div>\n  <div class=\"mf-modal__content\">\n    <button type=\"button\" class=\"mf-modal__close\" data-mf-close-modal aria-label=\"Close\">×</button>\n    <h3 id=\"modal-tf-electra-title\">Electra — Technical File</h3>\n    <p>Enter your details and we'll send the PDF to your inbox.</p>\n    <div class=\"sender-form-field\" data-sender-form-id=b2kPAz></div>\n  </div>\n</div>\n\n<!-- Modal styling -->\n<style>\n  .mf-modal[hidden]{display:none}\n  .mf-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}\n  .mf-modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,0.6);cursor:pointer}\n  .mf-modal__content{position:relative;background:#fff;border-radius:8px;max-width:480px;width:100%;max-height:90vh;overflow-y:auto;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}\n  .mf-modal__close{position:absolute;top:12px;right:12px;background:transparent;border:0;font-size:28px;line-height:1;cursor:pointer;color:#666;padding:4px 12px}\n  .mf-modal__close:hover{color:#000}\n  .mf-modal__content h3{margin:0 0 8px;font-size:20px}\n  .mf-modal__content p{margin:0 0 20px;color:#555;font-size:14px}\n  body.mf-modal-open{overflow:hidden}\n</style>\n\n<!-- Controller: intercepts existing \"DOWNLOAD TECHNICAL FILE\" buttons, routes by section heading -->\n<script>\n(function(){\n  function init(){\n    var ctas = Array.from(document.querySelectorAll('a, button, .button-custom, [role=\"button\"]')).filter(function(el){\n      return el.textContent.trim().toUpperCase() === 'DOWNLOAD TECHNICAL FILE';\n    });\n\n    ctas.forEach(function(btn){\n      // Find the nearest ancestor that contains a heading naming the collection\n      var node = btn;\n      var collection = null;\n      while (node && node !== document.body){\n        var heading = node.querySelector && node.querySelector('h1,h2,h3,h4');\n        if (heading){\n          var txt = heading.textContent.toUpperCase();\n          if (txt.indexOf('MEDIFLEX') !== -1){ collection = 'mediflex'; break; }\n          if (txt.indexOf('ELECTRA') !== -1){ collection = 'electra'; break; }\n        }\n        node = node.parentElement;\n      }\n      if (!collection) return; // safeguard\n\n      // Mark the button for GTM + intercept the click\n      btn.setAttribute('data-cta', 'download_tf_' + collection);\n      btn.setAttribute('data-mf-open-modal', 'tf-' + collection);\n\n      btn.addEventListener('click', function(e){\n        e.preventDefault();\n        var modal = document.getElementById('modal-tf-' + collection);\n        if (modal){\n          modal.hidden = false;\n          document.body.classList.add('mf-modal-open');\n        }\n      });\n    });\n\n    // Generic close handlers (overlay or × button)\n    document.addEventListener('click', function(e){\n      var closer = e.target.closest('[data-mf-close-modal]');\n      if (closer){\n        var modal = closer.closest('.mf-modal');\n        if (modal){\n          modal.hidden = true;\n          document.body.classList.remove('mf-modal-open');\n        }\n      }\n    });\n\n    // ESC key closes\n    document.addEventListener('keydown', function(e){\n      if (e.key === 'Escape'){\n        document.querySelectorAll('.mf-modal:not([hidden])').forEach(function(m){ m.hidden = true; });\n        document.body.classList.remove('mf-modal-open');\n      }\n    });\n  }\n\n  if (document.readyState === 'loading'){\n    document.addEventListener('DOMContentLoaded', init);\n  } else {\n    init();\n  }\n})();\n</script>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_Q6edNW",
+    "rich_text_4htnHx",
+    "landing_cta_dWhU8N",
+    "image_with_text_collection_8baCqa",
+    "image_with_text_collection_8chkwk",
+    "image_with_text_collection_PEFDLf",
+    "image_with_text_collection_yUNgjx",
+    "rich_text_Nzi6Br",
+    "1779536703c5fc5849",
+    "custom_liquid_NUPpwP"
+  ]
+}

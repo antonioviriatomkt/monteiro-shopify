@@ -1,0 +1,218 @@
+{% comment %}
+  Fabric spec / credential icon strip — light band that presents a fabric's
+  certifications & performance credentials as a clean titled-icon row (each SVG
+  already bakes in its own label). Companion to the homepage performance-tech
+  band, but light-themed for use on interior collection pages. Optional eyebrow,
+  heading and intro copy sit above the icons.
+{% endcomment %}
+
+<div class="section-spec-icons" data-section-type="spec-icons" data-cc-animate
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #si-{{ section.id }} .si-head { text-align: center; max-width: 760px; margin: 0 auto 44px; }
+    #si-{{ section.id }} .si-eyebrow { letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; opacity: 0.7; margin-bottom: 12px; }
+    #si-{{ section.id }} .si-title { font-size: 30px; font-weight: 400; line-height: 1.25; margin: 0; color: {{ section.settings.text_color }}; }
+    #si-{{ section.id }} .si-body { margin-top: 16px; line-height: 1.6; }
+    #si-{{ section.id }} .si-body p { margin: 0; }
+    #si-{{ section.id }} .si-grid { display: grid; grid-template-columns: repeat({{ section.settings.columns }}, minmax(0, 1fr)); gap: 32px 16px; align-items: start; max-width: {{ section.settings.columns | times: 184 }}px; margin: 0 auto; }
+    #si-{{ section.id }} .si-item { text-align: center; }
+    #si-{{ section.id }} .si-item img { display: block; width: 100%; max-width: 150px; margin: 0 auto; }
+    #si-{{ section.id }} .si-cta { text-align: center; margin-top: 44px; }
+    @media (max-width: 749px) {
+      #si-{{ section.id }} .si-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; max-width: 360px; }
+      #si-{{ section.id }} .si-title { font-size: 24px; }
+    }
+  {% endstyle %}
+
+  <div id="si-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank or section.settings.body != blank %}
+      <div class="si-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="si-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="si-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.body != blank and section.settings.body_position == "above" %}<div class="si-body rte">{{ section.settings.body }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    <div class="si-grid">
+      {% for block in section.blocks %}
+        {%- case block.settings.icon -%}
+          {%- when 'reach' -%}{%- assign icon_file = 'spec-reach.svg' -%}
+          {%- when 'vegan' -%}{%- assign icon_file = 'spec-vegan.svg' -%}
+          {%- when 'abrasion' -%}{%- assign icon_file = 'spec-abrasion.svg' -%}
+          {%- when 'flame' -%}{%- assign icon_file = 'spec-flame.svg' -%}
+          {%- when 'long-lasting' -%}{%- assign icon_file = 'spec-long-lasting.svg' -%}
+          {%- when 'anti-microbial' -%}{%- assign icon_file = 'spec-anti-microbial.svg' -%}
+          {%- when 'easy-clean' -%}{%- assign icon_file = 'spec-easy-clean.svg' -%}
+          {%- when 'organic-cotton' -%}{%- assign icon_file = 'spec-organic-cotton.svg' -%}
+          {%- when 'phtalate-free' -%}{%- assign icon_file = 'spec-phtalate-free.svg' -%}
+          {%- when 'residential' -%}{%- assign icon_file = 'spec-residential.svg' -%}
+          {%- when 'office' -%}{%- assign icon_file = 'spec-office.svg' -%}
+          {%- when 'hospitality' -%}{%- assign icon_file = 'spec-hospitality.svg' -%}
+          {%- when 'restaurant' -%}{%- assign icon_file = 'spec-restaurant.svg' -%}
+          {%- when 'recreational' -%}{%- assign icon_file = 'spec-recreational.svg' -%}
+          {%- when 'retail' -%}{%- assign icon_file = 'spec-retail.svg' -%}
+          {%- when 'stationary' -%}{%- assign icon_file = 'spec-stationary.svg' -%}
+          {%- when 'plant-based' -%}{%- assign icon_file = 'spec-plant-based.svg' -%}
+          {%- when 'water-base' -%}{%- assign icon_file = 'spec-water-base.svg' -%}
+          {%- when 'light-resistant' -%}{%- assign icon_file = 'spec-light-resistant.svg' -%}
+          {%- when 'non-irritant' -%}{%- assign icon_file = 'spec-non-irritant.svg' -%}
+          {%- when 'bielastic' -%}{%- assign icon_file = 'spec-bielastic.svg' -%}
+          {%- when 'esd-protective' -%}{%- assign icon_file = 'spec-esd-protective.svg' -%}
+          {%- when 'weldable' -%}{%- assign icon_file = 'spec-weldable.svg' -%}
+          {%- when 'water-repellent' -%}{%- assign icon_file = 'spec-water-repellent.svg' -%}
+          {%- else -%}{%- assign icon_file = 'spec-reach.svg' -%}
+        {%- endcase -%}
+        <div class="si-item" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.08 | append: 's' }}">
+          <img src="{{ icon_file | asset_url }}" alt="{{ block.settings.label | escape }}" loading="lazy" width="150" height="150">
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.body != blank and section.settings.body_position == "below" %}
+      <div class="si-body rte" style="text-align:center; max-width:760px; margin:40px auto 0;" data-cc-animate>{{ section.settings.body }}</div>
+    {% endif %}
+
+    {% if section.settings.cta_label != blank %}
+      <div class="si-cta" data-cc-animate>
+        <a class="button{% if section.settings.cta_style == 'alt' %} alt{% endif %}" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Fabric spec icons",
+    "class": "section-spec-icons-wrap",
+    "max_blocks": 12,
+    "settings": [
+      {
+        "type": "text",
+        "id": "eyebrow",
+        "label": "Eyebrow",
+        "default": "Manufactured with responsibility. Compliant by design."
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Soft, durable and easy to care for"
+      },
+      {
+        "type": "richtext",
+        "id": "body",
+        "label": "Intro text"
+      },
+      {
+        "type": "select",
+        "id": "body_position",
+        "label": "Intro text position",
+        "default": "above",
+        "options": [
+          { "value": "above", "label": "Above icons" },
+          { "value": "below", "label": "Below icons" }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "columns",
+        "label": "Icons per row (desktop)",
+        "min": 2,
+        "max": 6,
+        "step": 1,
+        "default": 5,
+        "info": "Icons wrap to a new row beyond this count."
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background colour",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text colour",
+        "default": "#111111"
+      },
+      {
+        "type": "text",
+        "id": "cta_label",
+        "label": "CTA label"
+      },
+      {
+        "type": "url",
+        "id": "cta_link",
+        "label": "CTA link"
+      },
+      {
+        "type": "select",
+        "id": "cta_style",
+        "label": "CTA style",
+        "default": "primary",
+        "options": [
+          { "value": "primary", "label": "Primary (solid)" },
+          { "value": "alt", "label": "Alt (outline)" }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon",
+        "name": "Credential",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "reach",
+            "options": [
+              { "value": "reach", "label": "REACH compliant" },
+              { "value": "vegan", "label": "Vegan" },
+              { "value": "abrasion", "label": "Abrasion resistant" },
+              { "value": "flame", "label": "Flame retardant" },
+              { "value": "long-lasting", "label": "Long lasting" },
+              { "value": "anti-microbial", "label": "Anti-microbial & anti-fungal" },
+              { "value": "easy-clean", "label": "Easy clean" },
+              { "value": "organic-cotton", "label": "Organic cotton" },
+              { "value": "phtalate-free", "label": "Phthalate free" },
+              { "value": "residential", "label": "Residential" },
+              { "value": "office", "label": "Office" },
+              { "value": "hospitality", "label": "Hospitality" },
+              { "value": "restaurant", "label": "Restaurant" },
+              { "value": "recreational", "label": "Recreational vehicles" },
+              { "value": "retail", "label": "Retail" },
+              { "value": "stationary", "label": "Stationary" },
+              { "value": "plant-based", "label": "Plant based" },
+              { "value": "water-base", "label": "Water base" },
+              { "value": "light-resistant", "label": "Light resistant" },
+              { "value": "non-irritant", "label": "Non-irritant" },
+              { "value": "bielastic", "label": "Bi-elastic" },
+              { "value": "esd-protective", "label": "ESD protective" },
+              { "value": "weldable", "label": "Weldable" },
+              { "value": "water-repellent", "label": "Water repellent" }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Accessible label (alt text)",
+            "default": "REACH compliant"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fabric spec icons",
+        "blocks": [
+          { "type": "icon", "settings": { "icon": "reach", "label": "REACH compliant" } },
+          { "type": "icon", "settings": { "icon": "vegan", "label": "Vegan" } },
+          { "type": "icon", "settings": { "icon": "abrasion", "label": "Abrasion resistant" } },
+          { "type": "icon", "settings": { "icon": "flame", "label": "Flame retardant" } },
+          { "type": "icon", "settings": { "icon": "long-lasting", "label": "Long lasting" } }
+        ]
+      }
+    ]
+  }
+{% endschema %}

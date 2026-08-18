@@ -1,0 +1,139 @@
+{% comment %}
+  Performance technology strip — brand-colour band of technical capabilities.
+  Uses the supplied TDS icon tiles (theme/assets/perf-*.svg) which already
+  include both the icon and its title. Section heading sits above in white.
+{% endcomment %}
+
+<div class="section-performance-tech" data-section-type="performance-tech" data-cc-animate
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #pt-{{ section.id }} .pt-head { text-align: center; margin-bottom: 40px; }
+    #pt-{{ section.id }} .pt-eyebrow { letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; color: {{ section.settings.text_color }}; opacity: 0.8; margin-bottom: 10px; }
+    #pt-{{ section.id }} .pt-title { font-size: 30px; font-weight: 400; line-height: 1.2; margin: 0; color: {{ section.settings.text_color }}; }
+    #pt-{{ section.id }} .pt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; align-items: start; }
+    #pt-{{ section.id }} .pt-item { text-align: center; }
+    #pt-{{ section.id }} .pt-item img { display: block; width: 100%; max-width: 168px; margin: 0 auto; border-radius: 0; }
+    #pt-{{ section.id }} .pt-cta { text-align: center; margin-top: 44px; }
+    #pt-{{ section.id }} .pt-cta a { display: inline-block; padding: 16px 32px; border: 1px solid {{ section.settings.text_color }}; color: {{ section.settings.text_color }}; text-decoration: none; letter-spacing: 0.04em; transition: background-color .3s, color .3s; }
+    #pt-{{ section.id }} .pt-cta a:hover { background: {{ section.settings.text_color }}; color: {{ section.settings.bg_color }}; }
+    @media (max-width: 600px) { #pt-{{ section.id }} .pt-grid { grid-template-columns: repeat(2, 1fr); } #pt-{{ section.id }} .pt-title { font-size: 24px; } }
+  {% endstyle %}
+
+  <div id="pt-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank %}
+      <div class="pt-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="pt-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="pt-title">{{ section.settings.title | escape }}</h2>{% endif %}
+      </div>
+    {% endif %}
+
+    <div class="pt-grid">
+      {% for block in section.blocks %}
+        {%- case block.settings.icon -%}
+          {%- when 'anti-microbial' -%}{%- assign icon_file = 'perf-anti-microbial.svg' -%}
+          {%- when 'flame-retardant' -%}{%- assign icon_file = 'perf-flame-retardant.svg' -%}
+          {%- when 'ink-stain' -%}{%- assign icon_file = 'perf-ink-stain.svg' -%}
+          {%- when 'abrasion-resistant' -%}{%- assign icon_file = 'perf-abrasion-resistant.svg' -%}
+          {%- when 'long-lasting' -%}{%- assign icon_file = 'perf-long-lasting.svg' -%}
+          {%- when 'vegan' -%}{%- assign icon_file = 'perf-vegan.svg' -%}
+          {%- else -%}{%- assign icon_file = 'perf-anti-microbial.svg' -%}
+        {%- endcase -%}
+        <div class="pt-item" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.08 | append: 's' }}">
+          <img src="{{ icon_file | asset_url }}" alt="{{ block.settings.label | escape }}" loading="lazy" width="168" height="168">
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.cta_label != blank %}
+      <div class="pt-cta" data-cc-animate>
+        <a href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Performance technology",
+    "class": "section-performance-tech-wrap",
+    "max_blocks": 6,
+    "settings": [
+      {
+        "type": "text",
+        "id": "eyebrow",
+        "label": "Eyebrow",
+        "default": "Engineered for performance"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "The technology built into every metre"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background colour",
+        "default": "#2F519B"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text colour",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "text",
+        "id": "cta_label",
+        "label": "CTA label",
+        "default": "Find the right fabric for your application"
+      },
+      {
+        "type": "url",
+        "id": "cta_link",
+        "label": "CTA link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "feature",
+        "name": "Capability",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "anti-microbial",
+            "options": [
+              { "value": "anti-microbial", "label": "Anti-microbial" },
+              { "value": "flame-retardant", "label": "Flame retardant" },
+              { "value": "ink-stain", "label": "Ink & stain resistant" },
+              { "value": "abrasion-resistant", "label": "Abrasion resistant" },
+              { "value": "long-lasting", "label": "Long lasting" },
+              { "value": "vegan", "label": "Vegan" }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Accessible label (alt text)",
+            "default": "Anti-microbial"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Performance technology",
+        "blocks": [
+          { "type": "feature", "settings": { "icon": "anti-microbial", "label": "Anti-microbial" } },
+          { "type": "feature", "settings": { "icon": "flame-retardant", "label": "Flame retardant" } },
+          { "type": "feature", "settings": { "icon": "ink-stain", "label": "Ink & stain resistant" } },
+          { "type": "feature", "settings": { "icon": "abrasion-resistant", "label": "Abrasion resistant" } },
+          { "type": "feature", "settings": { "icon": "long-lasting", "label": "Long lasting" } },
+          { "type": "feature", "settings": { "icon": "vegan", "label": "Vegan" } }
+        ]
+      }
+    ]
+  }
+{% endschema %}

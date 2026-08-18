@@ -1,0 +1,581 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "cf7a7800-afca-4f38-b93a-8097c6e0d3e2": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/V7 Peel.mp4",
+        "video_external": "",
+        "subheading": "65% Organic Components",
+        "title": "PEEL",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Fabrics made from chestnuts.</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Meaning of",
+        "title": "65% PURE NATURE",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>This means that we are certified by a USA Entity that 65% of this fabric is organic. </p><p>Corresponding to vegetable oils, organic cotton and chestnut waste. </p>",
+        "image_width": 120,
+        "button_label": "DOWNLOAD THE CATALOGUE",
+        "button_link": "https://www.dropbox.com/scl/fi/59fuhyyxe0z0p1yewtirk/NaTrue_PEEL_v2.pdf?rlkey=hyr1vscsetr94w8s5log4mhwh&dl=0",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "ea93776c-6d7e-403f-9f26-d6fcedacff00": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "peel COLLECTION",
+        "title": "Portugal - World Reference In Chestnut Harvest",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>During chestnut processing, several by products are generated, like chestnut wood, flowers, leaves, shells, barks, and burs. With local partners, we've collected these otherwise wasted scraps turning it into a fashionable material. </p>",
+        "button_label": "Download the TECHNICAL FILE",
+        "button_link": "https://stats.sender.net/forms/egjnjd/view",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "secondary",
+        "image": "shopify://shop_images/Slide_16_9_-_14_922efe61-3376-445d-9906-c578049c0d63.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "A range of 8 colours",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Featuring a range of 8 colours available from stock our customers can create innovative products without having to choose between cost, performance, aesthetics, or sustainability.</p>",
+        "image_width": 480,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "b9db9e33-c196-46a6-bb7b-00a895a85b89": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-0": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-2": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-3": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-4": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-0",
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-1",
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-2",
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-3",
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-4",
+        "template--19044945756463__b9db9e33-c196-46a6-bb7b-00a895a85b89-16847749101008bd67-5"
+      ],
+      "settings": {
+        "product": "peel-collection",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "top",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "process_timeline": {
+      "type": "process-timeline",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/628e4d14ec25adf1b7ae68ea_Group_4.png",
+            "title": "Chestnuts are harvested"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/628e4d140b28b99ae91b8be3_Group_5.png",
+            "title": "Fruit is peeled"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/628e4d14599fc2163993c43d_Group_6.png",
+            "title": "Waste is collected"
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/site.png",
+            "title": "Leftovers are milled into a fine powder"
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Group_9.png",
+            "title": "Chestnut residues are mixed with paste"
+          }
+        },
+        "step_6": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Group_10.png",
+            "title": "The manufacturing process follows"
+          }
+        },
+        "step_7": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Group_11.png",
+            "title": "A fantastic upholstery fabric is born"
+          }
+        },
+        "step_8": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/Group_12.png",
+            "title": "Ready to ship all over the world"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6",
+        "step_7",
+        "step_8"
+      ],
+      "name": "Process timeline",
+      "settings": {
+        "eyebrow": "From chestnut to fabric",
+        "title": "How Peel is made",
+        "accent_color": "#2f519b",
+        "text_color": "#111111",
+        "bg_color": "#ffffff"
+      }
+    },
+    "575afe37-da34-4806-8703-c9cb32105543": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Sustainable Performance",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>As a crop by-product, <strong>no additional water or land is required.‍ </strong>We've managed to produce a technologically viable product ready to be produced on a large scale, <strong>without compromising on performance</strong>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "link",
+        "video_shopify": "shopify://files/videos/628e611ea39ce26b4cd05bc5_Processo 2-1-transcode.mp4",
+        "image_width": 78,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "96186325-e209-4c72-b2c0-cc5c79e49b44": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "All Requirements Covered",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>All technical requirements for upholstery end use are covered, <strong>achieving the high durability </strong>properties traditionally recognized for this product range and reaching 400.000 martindale rubs.<strong>‍‍</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "link",
+        "video_shopify": "shopify://files/videos/628e61251b1b6349764971d4_Processo 3-1-transcode.mp4",
+        "image_width": 78,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "5b1e88bb-e41f-488d-8add-4464ccff8465": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/Slide_16_9_-_10_9b1279ef-f073-49ec-9d36-b47292e54cbd.jpg",
+        "height": "fixed",
+        "height_desktop": 550,
+        "height_mobile": 200,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "spec_icons": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "ap_res": {
+          "type": "icon",
+          "settings": {
+            "icon": "residential",
+            "label": "Residential"
+          }
+        },
+        "ap_off": {
+          "type": "icon",
+          "settings": {
+            "icon": "office",
+            "label": "Office"
+          }
+        },
+        "ap_hos": {
+          "type": "icon",
+          "settings": {
+            "icon": "hospitality",
+            "label": "Hospitality"
+          }
+        },
+        "ap_rest": {
+          "type": "icon",
+          "settings": {
+            "icon": "restaurant",
+            "label": "Restaurant"
+          }
+        },
+        "ap_rv": {
+          "type": "icon",
+          "settings": {
+            "icon": "recreational",
+            "label": "Recreational vehicles"
+          }
+        },
+        "cr_veg": {
+          "type": "icon",
+          "settings": {
+            "icon": "vegan",
+            "label": "100% vegan"
+          }
+        },
+        "cr_long": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        },
+        "cr_cot": {
+          "type": "icon",
+          "settings": {
+            "icon": "organic-cotton",
+            "label": "Organic cotton"
+          }
+        },
+        "cr_pht": {
+          "type": "icon",
+          "settings": {
+            "icon": "phtalate-free",
+            "label": "Phthalate free"
+          }
+        },
+        "cr_rea": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH compliant"
+          }
+        }
+      },
+      "block_order": [
+        "ap_res",
+        "ap_off",
+        "ap_hos",
+        "ap_rest",
+        "ap_rv",
+        "cr_veg",
+        "cr_long",
+        "cr_cot",
+        "cr_pht",
+        "cr_rea"
+      ],
+      "name": "Fabric spec icons",
+      "settings": {
+        "eyebrow": "Proven applications · certified credentials",
+        "title": "Naturally sustainable, built for contract interiors",
+        "body": "<p>Made with 65% organic components — vegetable oils, organic cotton and chestnut waste — and proven across the spaces that demand the most.</p>",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers4.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers6.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Slide_16_9_-_10_40cc0585-2023-410a-b8b2-f78ca731cfe2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Slide_16_9_-_11_3185f010-927d-4f15-b92c-6a4a41564443.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-portugal.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "rich_text_NjUFiY": {
+      "type": "rich-text",
+      "name": "Closing CTA",
+      "settings": {
+        "subheading": "Bring Peel to your project",
+        "title": "Let's talk sustainable upholstery.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Specify Peel with confidence — order free samples, or talk to a specialist about your project.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cf7a7800-afca-4f38-b93a-8097c6e0d3e2",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "ea93776c-6d7e-403f-9f26-d6fcedacff00",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "b9db9e33-c196-46a6-bb7b-00a895a85b89",
+    "process_timeline",
+    "575afe37-da34-4806-8703-c9cb32105543",
+    "96186325-e209-4c72-b2c0-cc5c79e49b44",
+    "5b1e88bb-e41f-488d-8add-4464ccff8465",
+    "spec_icons",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "rich_text_NjUFiY"
+  ]
+}

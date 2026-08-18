@@ -1,0 +1,177 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_wh4y7Y": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/banner_sector_v1.png",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "Quality",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "rich_text_YBRyqj": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>At Monteiro Fabrics, quality is at the core of everything we do. We are committed to upholding the highest standards in quality, environmental responsibility, and continuous improvement through our Integrated Quality and Environment Management System. Our systems adhere to the esteemed ISO 9001:2015 and ISO 14001:2015 standards, reflecting our dedication to ensuring quality, environmental protection, and ongoing enhancements. Download all our guides, manual and certificates.</p><p><strong>Certificates</strong></p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/BPA-93-1.PDF?v=1772211075\" target=\"_blank\" title=\"Monteiro Fabrics Sanitized® Seal of Confidence\">Sanitized® Seal of Confidence</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Certificados_ISO14001_EN.pdf?v=1772211073\" target=\"_blank\" title=\"Monteiro Fabric's ISO14001 Certificate English\">ISO14001 (EN)</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Certificados_ISO9001_EN.pdf?v=1772211073\" target=\"_blank\" title=\"Monteiro Fabrics's ISO9001 Certificate English\">ISO9001 (EN)</a></p><p><strong>Management Policy</strong></p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Politica_de_Gestao.pdf?v=1773156164\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Politica_de_Gestao.pdf?v=1773156164\">Management Policy 2025 (PT)</a></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_JnhCWN": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 24px;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We prioritize environmental and human well-being by diligently adhering to the REACH regulation. Our vigilance in considering and addressing the risks associated with specific chemical substances showcases our dedication to responsible manufacturing.</p><p></p><p>Additionally, we proudly declare that our products carry the Animal Free label, reflecting our ethical stance and dedication to animal welfare. We believe in providing you with products that are not only of superior quality but also aligned with values that matter.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/certificaions-monteiro-fabrics.jpg",
+        "image_width": 50,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_XBYzcd": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 24px;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Quality control is meticulously maintained at every stage, from the selection of raw materials to the manufacturing process and the final product. We leave no stone unturned in ensuring that our products meet the highest standards of excellence.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/stock_service_coated_fabrics_manufactures_europe.jpg",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_gAkaUb": {
+      "type": "image-with-text",
+      "custom_css": [
+        "p {font-size: 24px;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Our products stand testimony to our unwavering commitment to quality. From durability to comfort, we prioritize every aspect to ensure you receive a product that not only looks beautiful but also lasts with proper maintenance and cleaning. We provide assurance in the form of a warranty, believing in the longevity and timeless appeal of our offerings.</p><p><strong>To further validate our commitment, our products undergo rigorous testing, both internally within our state-of-the-art laboratory and externally in certified third-party laboratories. This ensures that our products consistently meet the expected quality benchmarks.</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/M_R161.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_XLYqeQ": {
+      "type": "rich-text",
+      "custom_css": [
+        "p {font-size: 24px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<h4><strong>At Monteiro Fabrics, we go the extra mile to deliver quality you can trust. Your satisfaction is our ultimate goal, and we strive to exceed your expectations in every aspect of our service.</strong></h4>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_wh4y7Y",
+    "rich_text_YBRyqj",
+    "image_with_text_JnhCWN",
+    "image_with_text_XBYzcd",
+    "image_with_text_gAkaUb",
+    "rich_text_XLYqeQ"
+  ]
+}

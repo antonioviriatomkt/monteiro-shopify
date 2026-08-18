@@ -1,0 +1,525 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/monteiro-fabrics1_2127dc0c-6824-49e9-ac1d-fb6ff5edfb52.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "Design, Innovation, Sustainability, Service.",
+        "title": "MISSION, VISION AND VALUES",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "image_with_text_overlay_CHCBwc": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/monteiro-fabrics1_2127dc0c-6824-49e9-ac1d-fb6ff5edfb52.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "MISSION, VISION AND VALUES",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "65934332-69d8-41e9-8ff2-9423580ebf9e": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p><strong>The purpose of Monteiro Fabrics </strong>is to produce and sell coated fabrics with a focus on excellence, following the motto of doing more and doing it better. We strive to offer a product that has an impact on our customers' business, inspires them, contributes decisively to their success, and makes them see MF as an everyday partner and facilitator.</p><p>There are four key traits ingrained in our DNA that set us apart in all our work: Design, Innovation, Sustainability, Service. We prioritize creativity, constantly seeking innovative solutions in both our products and services. We maintain a proactive attitude towards the market, tailoring our approach to each individual client and the society we are a part of. Throughout all of this, we remain committed to protecting the environment and utilizing the resources the world provides us.</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 230,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "aae62571-b845-4b8b-bd0f-d42a1ccb8b33": {
+      "type": "testimonials",
+      "blocks": {
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "MISSION",
+            "text": "<p>To produce coated fabrics of excellence that are innovative, safe, and sustainable, with a strong focus on the customer, our people, and respect for the environment.</p>",
+            "button_label": "",
+            "link": "",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "left"
+          }
+        },
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "VISION",
+            "text": "<p>To be the European reference in the production of coated technical fabrics, with a strong focus on quality, service, functional innovation, and environmental responsibility.</p>",
+            "button_label": "",
+            "link": "",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 5,
+            "title": "Testimonial header",
+            "text": "<p>Use this text to elaborate on what your happy customers are saying. Use this section without the stars for unique text with image layouts.</p>",
+            "button_label": "",
+            "link": "",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-1",
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-0",
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-2"
+      ],
+      "settings": {
+        "title": "",
+        "button_style": "primary",
+        "alternate_bg_color": false
+      }
+    },
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "eye",
+            "title": "FOCUS ON THE CUSTOMER",
+            "text": "<p>We place the customer at the heart of all our decisions, striving to understand their needs and anticipate expectations. The relationship of trust we build is the foundation of our sustainable growth.</p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "heart",
+            "title": "CARING FOR OUR PEOPLE",
+            "text": "<p>We believe our success begins with our people. We foster an environment in which every employee feels valued, respected, and supported in their personal and professional development.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "silhouette",
+            "title": "WE ARE A TEAM",
+            "text": "<p>We work collaboratively, sharing responsibilities and successes. It is through the union of skills, ideas, and perspectives that we find the best solutions.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "MAKING THINGS HAPPEN",
+            "text": "<p>We take a proactive, results-oriented approach. We make commitments, face challenges, and deliver—always with rigor and a strong sense of responsibility.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "lock",
+            "title": "SAFETY ABOVE ALL AND RESPECT FOR THE ENVIRONMENT",
+            "text": "<p>Ensuring the safety of our employees and the communities in which we operate is a non-negotiable priority. We act with environmental responsibility, adopting practices that protect the planet and promote a more sustainable future.</p>",
+            "open": false
+          }
+        },
+        "7222d503-becf-4db5-8afa-37735ed86910": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "icon": "chat_bubble",
+            "title": "Contact us",
+            "text": "<p>We would greatly appreciate hearing from you and assisting you with any inquiries regarding our fabrics and solutions. <strong>Contact us here.</strong></p>",
+            "open": false
+          }
+        },
+        "a96029a2-7aa9-4e36-930e-e7a84ab9995a": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "7222d503-becf-4db5-8afa-37735ed86910",
+        "a96029a2-7aa9-4e36-930e-e7a84ab9995a"
+      ],
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "VALUES",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "accordions_egCUpF": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_78MQ9m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"https://www.monteirofabrics.com/pages/press\" target=\"_blank\" title=\"Press Kit\"> here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_T69GDx": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "accordion_nYkphr": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_a7thEJ": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "accordion_NiLdmQ": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide a lab dip for your approval or a pilot sample.</p>",
+            "open": false
+          }
+        },
+        "accordion_acPwxq": {
+          "type": "accordion",
+          "settings": {
+            "icon": "chat_bubble",
+            "title": "Contact us",
+            "text": "<p>We would greatly appreciate hearing from you and assisting you with any inquiries regarding our fabrics and solutions. <strong>Contact us here.</strong></p>",
+            "open": false
+          }
+        },
+        "accordion_UfJygU": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_78MQ9m",
+        "accordion_T69GDx",
+        "accordion_nYkphr",
+        "accordion_a7thEJ",
+        "accordion_NiLdmQ",
+        "accordion_acPwxq",
+        "accordion_UfJygU"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Our Goal",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our goal is to be among the top companies in the upholstery industry, the preferred brand for customers working with these materials. We are focused on anticipating and exceeding expectations, with an obsession for service and providing an exceptional customer experience.</p><p>We aspire to be recognized as an excellent company to work for, one that unleashes the full potential of its employees, attracts and retains talent, and builds a winning team. We want people to feel that they are part of something \"spectacular\" inspiring, and where it makes perfect sense to give their best while embracing the values of Monteiro Fabrics.</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 180,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    },
+    "bf7e5b96-09e9-4bf7-9225-b13d7bda530f": {
+      "type": "collection-list",
+      "blocks": {
+        "5be0b3cf-fd53-49d4-ba56-cc670401c2c5": {
+          "type": "collection",
+          "settings": {
+            "collection": "hospitality-fabrics"
+          }
+        },
+        "234d75a7-f1af-4b34-82c0-596d0acb68c8": {
+          "type": "collection",
+          "settings": {
+            "collection": "automotive"
+          }
+        },
+        "02ae5dfa-9050-4d5a-8866-ef9f43f37045": {
+          "type": "collection",
+          "settings": {
+            "collection": "office-fabrics-upholstery"
+          }
+        },
+        "ae6143b2-5458-4f48-ab62-5e8027bec2d2": {
+          "type": "collection",
+          "settings": {
+            "collection": "marine-interior"
+          }
+        },
+        "87caaf57-3ff1-4388-892a-8af4454923af": {
+          "type": "collection",
+          "settings": {
+            "collection": "healthcare"
+          }
+        },
+        "6e63ee0f-383c-4546-847c-4a3f5d421903": {
+          "type": "collection",
+          "settings": {
+            "collection": "recreational-vehicles"
+          }
+        },
+        "94f0465a-53d4-4772-85f3-bf61577fa55d": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor"
+          }
+        },
+        "c7deb76a-79cd-476c-9f51-585a3e575761": {
+          "type": "collection",
+          "settings": {
+            "collection": "public-spaces"
+          }
+        },
+        "a2d6cf62-245e-4ab2-9ab1-9c9801f31965": {
+          "type": "collection",
+          "settings": {
+            "collection": "restaurants-fabrics"
+          }
+        },
+        "10ee3a9f-2c28-478e-92dc-f98b20929a33": {
+          "type": "collection",
+          "settings": {
+            "collection": "retail"
+          }
+        },
+        "bd672009-6c22-47c6-a4b7-f338872136db": {
+          "type": "collection",
+          "settings": {
+            "collection": "fashion"
+          }
+        },
+        "441f9817-0c94-4452-931a-a5084b1c9e15": {
+          "type": "collection",
+          "settings": {
+            "collection": "aviation"
+          }
+        },
+        "aed32177-75a0-4ebf-94c4-d0af8aa9fe08": {
+          "type": "collection",
+          "settings": {
+            "collection": "mass-transportation"
+          }
+        },
+        "0f9e4487-e7be-4e2f-bdd4-d6711797d613": {
+          "type": "collection",
+          "settings": {
+            "collection": "motorcycle"
+          }
+        },
+        "f14dc6b9-c200-4857-ab98-a6506880298d": {
+          "type": "collection",
+          "settings": {
+            "collection": "fitness-1",
+            "image": "shopify://shop_images/gym-exercise-bench.jpg"
+          }
+        },
+        "57d32a76-a392-4255-9400-361786ad88c9": {
+          "type": "collection",
+          "settings": {
+            "collection": "residential-1"
+          }
+        },
+        "494b90e0-cbcd-436c-9ae5-0cef2b1e91de": {
+          "type": "collection",
+          "settings": {
+            "collection": "coated-fabrics",
+            "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "5be0b3cf-fd53-49d4-ba56-cc670401c2c5",
+        "234d75a7-f1af-4b34-82c0-596d0acb68c8",
+        "02ae5dfa-9050-4d5a-8866-ef9f43f37045",
+        "ae6143b2-5458-4f48-ab62-5e8027bec2d2",
+        "87caaf57-3ff1-4388-892a-8af4454923af",
+        "6e63ee0f-383c-4546-847c-4a3f5d421903",
+        "94f0465a-53d4-4772-85f3-bf61577fa55d",
+        "c7deb76a-79cd-476c-9f51-585a3e575761",
+        "a2d6cf62-245e-4ab2-9ab1-9c9801f31965",
+        "10ee3a9f-2c28-478e-92dc-f98b20929a33",
+        "bd672009-6c22-47c6-a4b7-f338872136db",
+        "441f9817-0c94-4452-931a-a5084b1c9e15",
+        "aed32177-75a0-4ebf-94c4-d0af8aa9fe08",
+        "0f9e4487-e7be-4e2f-bdd4-d6711797d613",
+        "f14dc6b9-c200-4857-ab98-a6506880298d",
+        "57d32a76-a392-4255-9400-361786ad88c9",
+        "494b90e0-cbcd-436c-9ae5-0cef2b1e91de"
+      ],
+      "custom_css": [
+        ".title {font-size: 1.5rem; font-weight: 100;}"
+      ],
+      "settings": {
+        "title": "Fabrics solutions by applicability:",
+        "layout": "carousel",
+        "grid": 4,
+        "grid_mobile": "1",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "12df712b-3900-4652-84d8-14805913ecc6": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "image_with_text_overlay_CHCBwc",
+    "65934332-69d8-41e9-8ff2-9423580ebf9e",
+    "aae62571-b845-4b8b-bd0f-d42a1ccb8b33",
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0",
+    "accordions_egCUpF",
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0",
+    "bf7e5b96-09e9-4bf7-9225-b13d7bda530f",
+    "12df712b-3900-4652-84d8-14805913ecc6"
+  ]
+}

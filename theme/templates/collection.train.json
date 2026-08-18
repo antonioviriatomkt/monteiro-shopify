@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Rail & railway interiors",
+        "title": "Train Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's train fabrics are engineered for railway and mass-transit interiors — passenger seating, panels and high-traffic transport upholstery. Built to be fire-rated, hard-wearing and easy to clean, and to meet the compliance demands of rail environments. Made in Portugal.</p><p>Browse the collection below, or speak to a specialist for specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "none",
+        "filter_mode_mobile": "none",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Fire-rated for rail"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "water-repellent",
+            "label": "Water repellent"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH compliant"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for rail interiors",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Applications",
+            "value": "Train and railway seating, panels and transit interiors"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Technical coated fabric"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Fire performance",
+            "value": "Meets rail fire-safety requirements — EN 45545-2"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Heavy-duty, high Martindale"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Cleanability",
+            "value": "Wipe-clean; compatible with standard transit-cleaning protocols"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Fluid barrier",
+            "value": "Waterproof, non-absorbent surface"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Stain resistance",
+            "value": "High"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for railway environments",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for train interiors?",
+            "answer": "<p>Rail upholstery must meet strict fire-safety standards, withstand very high passenger traffic and repeated cleaning, and resist wear and staining over a long service life. Monteiro's train fabrics are fire-rated, hard-wearing coated fabrics that are easy to clean and REACH-compliant.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Do the fabrics meet rail fire-safety standards?",
+            "answer": "<p>They are engineered to meet rail fire-safety requirements such as EN 45545-2. Ask our team for the specific classification and test reports your project requires. </p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are train fabrics used?",
+            "answer": "<p>They are specified for passenger seating, headrests, panels and other high-traffic surfaces in trains, trams, metros and other railway and mass-transit vehicles.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "How durable are the fabrics?",
+            "answer": "<p>They are heavy-duty, contract-grade fabrics with high abrasion resistance, built to hold up to constant boarding, wear and cleaning across years of service. [TO CONFIRM abrasion values]</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "How are train fabrics cleaned?",
+            "answer": "<p>The coated surface is wipe-clean and compatible with standard transit-cleaning protocols, resisting fluids and staining. Avoid abrasive pads and undiluted solvents.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples of the train collection?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Train fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Train Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Train Fabrics",
+        "cp_description": "Fire-rated, hard-wearing fabrics for train and railway interiors — passenger seating, panels and transit upholstery. Easy-clean, stain-resistant and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/train"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a rail fabric specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and we'll recommend the right fire-rated fabric, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Get in touch",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

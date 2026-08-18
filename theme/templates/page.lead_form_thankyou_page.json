@@ -1,0 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_MmAfwV": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/CHANCE-5297.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "Thank you for your message.",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>We'll get back to you shortly</p>",
+        "enlarge_text": true,
+        "button_label": "Go Back",
+        "image_link": "shopify://pages/techtextil-2026",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_MmAfwV"
+  ]
+}

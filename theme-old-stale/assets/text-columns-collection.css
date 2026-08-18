@@ -1,0 +1,109 @@
+/* Scoped under .tc-collection so the original sections are unaffected.
+   Shared by both "Collection columns" and "Collection media" sections. */
+
+.tc-collection .text-column__image,
+.tc-collection .image-with-text__image {
+  position: relative;
+}
+
+/* "Collection media" — pull the text closer to the image by ~20%
+   (theme default horizontal padding is 70px on tablet+; bring it to 56px). */
+@media (min-width: 768px) {
+  .tc-collection.image-with-text .image-with-text__text__wrap.padded-block,
+  .tc-collection.image-with-text .image-with-text__text__wrap.padded-block-y {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+/* "Collection media" — make the button row a flex row so a second button
+   sits next to the first with breathing room, respecting alignment. */
+.tc-collection.image-with-text .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.tc-collection.image-with-text .image-with-text__text.align-center .button-row { justify-content: center; }
+.tc-collection.image-with-text .image-with-text__text.align-right  .button-row { justify-content: flex-end; }
+
+/* "Collection columns" — allow 4 blocks to render as 1 row of 4 on desktop.
+   Theme default for columns-4 is 50% (2x2 grid). Override to 25% from 1100px
+   up; let theme rules handle 2x2 below that and stacked on mobile. */
+@media (min-width: 1100px) {
+  .tc-collection .flexible-layout--variable-columns.flexible-layout--columns-4 .column {
+    width: 25%;
+    max-width: 25%;
+  }
+}
+
+/* Color-count badge — bottom-right of image */
+.tc-collection .tc-color-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #464654;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.tc-collection .tc-color-badge__icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.tc-collection .tc-color-badge__count {
+  display: inline-block;
+}
+
+/* Tags row — sits between body text and the button */
+.tc-collection .tc-tags {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tc-collection .tc-tags.align-center { justify-content: center; }
+.tc-collection .tc-tags.align-right  { justify-content: flex-end; }
+
+.tc-collection .tc-tags__item {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid currentColor;
+  border-radius: 0;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .tc-collection .tc-color-badge {
+    bottom: 8px;
+    right: 8px;
+    padding: 5px 8px;
+    font-size: 0.75rem;
+  }
+  .tc-collection .tc-tags { margin: 12px 0 14px; }
+  .tc-collection .tc-tags__item {
+    font-size: 0.625rem;
+    padding: 3px 8px;
+  }
+}

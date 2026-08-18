@@ -1,0 +1,264 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/V3d Chance.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "236 Colours. One Iconic Texture.",
+        "title": "CHANCE",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>Europe's Most Colourful Coated Fabric Collection</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "shades": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "A RANGE OF",
+        "title": "236 SHADES",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>From soft, muted neutrals to vibrant jewel tones and daring statement colours, Chance gives interior designers, upholsterers, and manufacturers an unrivalled spectrum to work with. The collection is built around a single, signature engraving: an iconic texture that brings depth and quiet elegance to any seat, panel, or surface it covers. Whether you are designing a boutique hotel lounge, a contemporary office space, or a custom residential piece, Chance delivers the creative freedom to go bold — with a <strong>glamorous fabric</strong> quality that elevates any interior.</p>",
+        "image_width": 120,
+        "button_label": "Explore the collection",
+        "button_link": "shopify://collections/chance",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "img_hospitality": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Built for Hospitality. Made for Contract Interiors.",
+        "title": "The Hospitality Upholstery Fabric Trusted by Designers Across Europe",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>Chance is one of the most specified <strong>hospitality fabrics</strong> in Europe, chosen by architects and interior designers for environments where aesthetics and durability are equally non-negotiable. As a premium <strong>PVC upholstery fabric</strong>, it is engineered to handle the intensive use typical of <strong>restaurant</strong> seating, hotel lobbies, bar counters, and high-traffic public areas. Its robust PVC coating delivers outstanding abrasion resistance, ensuring upholstered pieces retain their appearance through years of daily use — making it a dependable long-term investment for any commercial interior. From independent restaurants to international hotel chains, <strong>hospitality upholstery</strong> professionals consistently turn to Chance when both style and substance are required.</p>",
+        "button_label": "Order free samples",
+        "button_link": "shopify://collections/chance",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/CHANCE-5297.jpg",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "img_clean": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Wipe Clean in Seconds. Look Flawless for Years.",
+        "title": "Easy-to-Clean Upholstery Fabric for High-Traffic Environments",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>One of Chance's most valued practical qualities is how effortlessly it is maintained. As a <strong>coated PVC fabric material</strong>, its surface repels spills and stains effectively — cleaning requires nothing more than a damp cloth and a mild soapy water solution, with no specialist products needed. This makes Chance one of the most practical <strong>easy-to-clean fabrics</strong> available for commercial environments: ideal for <strong>restaurant fabric</strong> applications, <strong>hotel upholstery</strong>, and any space that sees heavy daily use. The coated surface also resists scratches and fluids, preserving the finish of upholstered pieces far longer than textile alternatives.</p>",
+        "button_label": "Order free samples",
+        "button_link": "shopify://collections/chance",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/sofa-2_edited_v2.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "img_compliant": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Manufactured with Responsibility. Compliant by Design.",
+        "title": "A Safe, EU-Compliant PVC Upholstery Fabric from Portugal",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>Chance is manufactured free from harmful substances and fully compliant with EU REACH Regulation (EC) No 1907/2006 — the European framework governing the safe use of chemicals in consumer and contract materials. This assures specifiers, furniture manufacturers, and end users that every metre of Chance meets rigorous health and environmental standards. Produced by Monteiro Fabrics in Portugal, Chance combines decades of technical manufacturing expertise with the creative depth demanded by today's design market — and is 100% vegan (LAV VVV+), the highest Animal Free rating.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "icon_reach": { "type": "icon", "settings": { "icon": "reach", "label": "REACH compliant" } },
+        "icon_vegan": { "type": "icon", "settings": { "icon": "vegan", "label": "100% vegan (VVV+)" } },
+        "icon_abrasion": { "type": "icon", "settings": { "icon": "abrasion", "label": "Abrasion resistant" } },
+        "icon_flame": { "type": "icon", "settings": { "icon": "flame", "label": "Flame retardant" } },
+        "icon_long": { "type": "icon", "settings": { "icon": "long-lasting", "label": "10-year warranty" } }
+      },
+      "block_order": ["icon_reach", "icon_vegan", "icon_abrasion", "icon_flame", "icon_long"],
+      "settings": {
+        "eyebrow": "Built to last",
+        "title": "One build standard, endless colour",
+        "body": "<p>Every roll of CHANCE carries the same core standards — &ge;400,000 Martindale abrasion resistance, 100% vegan (LAV VVV+), full EU REACH compliance and a 10-year warranty. Made in Portugal by Monteiro Fabrics.</p>",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "shop": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Order free samples",
+        "collection": "chance",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "gallery": {
+      "type": "gallery",
+      "blocks": {
+        "gi1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture11.jpg",
+            "enlarge_image": false, "subheading": "", "title": "", "title_width": 12, "heading_h1": false,
+            "button_label": "", "link": "shopify://collections/chance", "text_alignment": "position--left position--bottom"
+          }
+        },
+        "gi2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture7.jpg",
+            "enlarge_image": false, "subheading": "", "title": "", "title_width": 12, "heading_h1": false,
+            "button_label": "", "link": "shopify://collections/chance", "text_alignment": "position--left position--bottom"
+          }
+        },
+        "gi3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture5.jpg",
+            "enlarge_image": false, "subheading": "", "title": "", "title_width": 12, "heading_h1": false,
+            "button_label": "", "link": "shopify://collections/chance", "text_alignment": "position--left position--bottom"
+          }
+        },
+        "gi4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture12.jpg",
+            "enlarge_image": false, "subheading": "", "title": "", "title_width": 12, "heading_h1": false,
+            "button_label": "", "link": "shopify://collections/chance", "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": ["gi1", "gi2", "gi3", "gi4"],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": { "type": "faq", "settings": { "question": "What is CHANCE?", "answer": "<p>CHANCE is Monteiro Fabrics' signature coated upholstery fabric, known for its iconic engraving and an unrivalled palette of 236 colours. Supple, durable and low-maintenance, it's specified across hospitality, healthcare, marine and contract interiors.</p>" } },
+        "q2": { "type": "faq", "settings": { "question": "How many colours does CHANCE come in?", "answer": "<p>236 shades — from soft neutrals to vibrant jewel tones and bold statements — the broadest palette in our range, available from stock.</p>" } },
+        "q3": { "type": "faq", "settings": { "question": "How durable is CHANCE?", "answer": "<p>&ge;400,000 Martindale abrasion cycles (ISO 5470-2) and a 10-year warranty. It cleans with a damp cloth and mild soapy water, resisting scratches and fluids through years of daily use.</p>" } },
+        "q4": { "type": "faq", "settings": { "question": "Is CHANCE sustainable?", "answer": "<p>It's 100% vegan (LAV VVV+, the highest Animal Free rating) and fully EU REACH compliant, with a 10-year warranty that extends its life cycle. Made in Portugal.</p>" } },
+        "q5": { "type": "faq", "settings": { "question": "What is CHANCE used for?", "answer": "<p>Restaurant and hotel seating, healthcare and patient furniture, marine interiors, offices and high-traffic public areas — anywhere durability, comfort and colour matter.</p>" } },
+        "q6": { "type": "faq", "settings": { "question": "Can I order samples?", "answer": "<p>Yes — request free samples and our specialists will help match the right colour to your project.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "eyebrow": "CHANCE — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "CHANCE",
+        "emit_collectionpage": true,
+        "cp_name": "CHANCE",
+        "cp_description": "CHANCE — Monteiro Fabrics' signature coated upholstery fabric with an iconic engraving in 236 colours. Supple, durable (400,000 Martindale) and low-maintenance, 100% vegan and REACH compliant. Made in Portugal.",
+        "cp_url": "https://www.monteirofabrics.com/pages/chance-collection"
+      }
+    },
+    "cta_close": {
+      "type": "rich-text",
+      "name": "Closing CTA",
+      "settings": {
+        "subheading": "Bring CHANCE to your project",
+        "title": "Let's find your colour.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and our specialists will recommend the right CHANCE, share the certificates you need and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": ["hero", "shades", "img_hospitality", "img_clean", "img_compliant", "credentials", "shop", "gallery", "faq", "cta_close"]
+}

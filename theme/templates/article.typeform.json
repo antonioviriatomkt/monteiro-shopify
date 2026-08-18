@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "featured_image": "narrow",
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "blog_show_social": false
+      }
+    },
+    "slideshow_dWFwFD": {
+      "type": "slideshow",
+      "blocks": {
+        "image_T3Vfxa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cilindre_wide_range.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 4,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "image_T3Vfxa"
+      ],
+      "disabled": true,
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "rich_text_9tWgbA": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "VISTA 160",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>A new range with 1.60 meters wide.<br/><br/>Same performance. Same service. Wider impact.</p>",
+        "image": "shopify://shop_images/WIDE_160_FABRICS_PRODUCERS.png",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_ccAiyn": {
+      "type": "image-with-text",
+      "disabled": true,
+      "name": "Media with text",
+      "settings": {
+        "subheading": "We’ve expanded — literally.",
+        "title": "1.60 meters wide",
+        "title_size": 60,
+        "title_width": 20,
+        "text": "<p></p><p>At Monteiro Fabrics, innovation is a shared journey. </p><h3><strong>Our newest high-precision embossing cylinders will broaden our width offer, allowing the development of a targeted selection of coated fabrics 1.60-meter wide— a meaningful addition to our core 1.40-meter width.</strong>.</h3><p>This means better material yield, less waste, and more creative freedom for upholstery professionals worldwide.</p><p></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/cilindre_wide_range.png",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_Q9A4h9": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "We’ve expanded — literally.",
+        "title": "1.60 meters wide",
+        "title_size": 60,
+        "title_width": 20,
+        "text": "<p></p><p>At Monteiro Fabrics, innovation is a shared journey. </p><h3><strong>Our newest high-precision embossing cylinders will broaden our width offer, allowing the development of a targeted selection of coated fabrics 1.60-meter wide— a meaningful addition to our core 1.40-meter width.</strong>.</h3><p>This means better material yield, less waste, and more creative freedom for upholstery professionals worldwide.</p><p></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/wide_160_fabrics.png",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_bFCje9": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "Growing together",
+        "title": "Help us choose the 4 essential colors from our Chance collection",
+        "title_size": 38,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>We believe in growing together — and that’s why your opinion matters. As we take this next step, we want you to be part of it. </p><p>Help us choose the <strong>4 essential colors from our Chance collection</strong> that should lead this new wider range, proudly marked with our <strong>VISTA 160</strong> seal. </p><p></p><p>Your input will guide us in making the right decisions.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "custom_liquid_A46VbM": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid/HTML",
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": "<div data-tf-live=\"01JZ5JZJPW0C9W1J01MXX9ZCS6\"></div><script src=\"//embed.typeform.com/next/embed.js\"></script>"
+      }
+    },
+    "175257573324a368ee": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_t4Crj3": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "560180",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_t4Crj3"
+      ],
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "featured_blog_BVMMUb": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "News",
+        "blog": "news",
+        "post_limit": 4,
+        "show_view_all": true,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": false,
+        "height": "full",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_dWFwFD",
+    "rich_text_9tWgbA",
+    "image_with_text_ccAiyn",
+    "image_with_text_Q9A4h9",
+    "rich_text_bFCje9",
+    "custom_liquid_A46VbM",
+    "175257573324a368ee",
+    "featured_blog_BVMMUb"
+  ]
+}

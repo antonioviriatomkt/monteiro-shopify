@@ -1,0 +1,12 @@
+{%- comment -%} Article card for the "Continue reading" band. Params: a (article), accent {%- endcomment -%}
+<a class="ac-card" href="{{ a.url }}">
+  <div class="ac-thumb">
+    {%- if a.image -%}
+      <img src="{{ a.image | img_url: '600x' }}" alt="{{ a.image.alt | default: a.title | escape }}" loading="lazy">
+    {%- else -%}
+      <span class="ac-ph">{{ a.title | escape }}</span>
+    {%- endif -%}
+  </div>
+  {%- if a.published_at -%}<p class="ac-meta">{{ a.published_at | date: '%b %d, %Y' }}</p>{%- endif -%}
+  <p class="ac-name">{{ a.title | escape }}</p>
+</a>

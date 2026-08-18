@@ -1,0 +1,328 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "The original · CHANCE 2.0",
+        "title": "CHANCE Classic",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>CHANCE Classic is the original — the iconic engraving in an updated palette of 236 shades, the broadest in the family and the only grade available from stock. Supple, long-lasting and low-maintenance, for upholstery across hospitality, healthcare, office, retail and beyond.</p>",
+        "image_width": 120,
+        "button_label": "Explore all CHANCE 2.0 grades",
+        "button_link": "shopify://pages/chance-collection",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "none",
+        "filter_mode_mobile": "none",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "reach",
+            "label": "REACH compliant"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "vegan",
+            "label": "100% vegan (VVV+)"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Abrasion resistant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Flame retardant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "10-year warranty"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Why CHANCE Classic",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "DOWNLOAD CATALOGUE",
+        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_JUN2026_Ipad_bx.pdf?v=1782924961",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Composition",
+            "value": "PVC 87% · PES 8% · CO 5%"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Weight",
+            "value": "660 g/m² ±5%"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Thickness",
+            "value": "0.90–1.10 mm"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion",
+            "value": "≥400,000 Martindale (ISO 5470-2)"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Temperature resistance",
+            "value": "−40 to +80 ºC"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Colour range",
+            "value": "236 shades · available from stock"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Antibacterial & antifungal",
+            "value": "Yes (Sanitized)"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Fire resistance",
+            "value": "NF P 92-507 (M2) · EN 1021-1+2 · FAR 25.853 · IMO FTP Part 8 · NFPA 260 · Cal. TB 117 and more"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Animal-free",
+            "value": "100% vegan (LAV VVV+)"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Compliance",
+            "value": "EU REACH · 10-year warranty"
+          }
+        },
+        "s11": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "CHANCE Classic — specifications",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What is CHANCE Classic?",
+            "answer": "<p>CHANCE Classic is the original CHANCE — the iconic engraving in 236 shades, the broadest palette in the CHANCE 2.0 family and the only grade available from stock. A supple, long-lasting, low-maintenance coated fabric for broad contract use.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "How many colours does it come in?",
+            "answer": "<p>236 shades, from soft muted neutrals to vibrant jewel tones and bold statement colours — and it is available from stock.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "How durable is CHANCE Classic?",
+            "answer": "<p>≥400,000 Martindale abrasion resistance (ISO 5470-2) with a 10-year warranty. Metallic colours are rated to 150,000 cycles.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "How is it cleaned?",
+            "answer": "<p>Wipe clean with a damp cloth and mild soapy water; the surface also resists alcohol (70%) and diluted bleach. No specialist products needed.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it sustainable and compliant?",
+            "answer": "<p>Yes — 100% vegan (LAV VVV+), fully EU REACH compliant and antibacterial/antifungal (Sanitized). Made in Portugal.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples and our specialists will help you choose the right CHANCE grade for your project.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "CHANCE Classic — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "CHANCE 2.0",
+        "crumb_home_url": "https://www.monteirofabrics.com/pages/chance-collection",
+        "crumb_current": "CHANCE Classic",
+        "emit_collectionpage": true,
+        "cp_name": "CHANCE Classic",
+        "cp_description": "CHANCE Classic — the original CHANCE engraving in 236 shades, available from stock. Supple, durable, low-maintenance coated fabric for broad contract use. Made in Portugal.",
+        "cp_url": "https://www.monteirofabrics.com/collections/chance"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Bring CHANCE Classic to your project",
+        "title": "Let's talk colour.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Order free samples, or talk to a specialist about specifying CHANCE Classic.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

@@ -1,0 +1,312 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Fashion &amp; accessories",
+        "title": "Coated Fabrics for Fashion",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's coated fabrics for fashion are a vegan leather alternative for bags, footwear, apparel and accessories. Every fabric in the collection is soft-touch, flexible, colour-fast and durable — animal-free, phthalate-free, REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "vegan",
+            "label": "Vegan, animal-free"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "bielastic",
+            "label": "Flexible and bi-elastic"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Colour-fast and light resistant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Durable and long lasting"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy to clean"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "A vegan leather alternative",
+        "body": "",
+        "body_position": "above",
+        "columns": 5,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric (vegan leather alternative)"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Feel",
+            "value": "Soft-touch, supple hand"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Flexibility",
+            "value": "Flexible and bi-elastic, easy to work"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Colour fastness",
+            "value": "Colour-fast, resists fading"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Durability",
+            "value": "Hard-wearing for everyday use"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Animal-free",
+            "value": "Vegan, no animal materials"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Phthalates",
+            "value": "Phthalate-free"
+          }
+        },
+        "s8": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for fashion and accessories",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What are coated fabrics for fashion?",
+            "answer": "<p>Coated fabrics for fashion are textiles finished with a soft-touch, flexible surface that performs as a vegan leather alternative. Monteiro's fabrics are animal-free, colour-fast and durable — suited to bags, footwear, apparel and accessories — and are phthalate-free, REACH-compliant and made in Portugal.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these a vegan leather alternative?",
+            "answer": "<p>Yes. The collection is fully animal-free and offers the look and feel of leather without any animal materials, making it a practical vegan leather alternative for fashion and accessories.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Are the fabrics soft and flexible enough for bags and footwear?",
+            "answer": "<p>Yes — the fabrics have a soft-touch hand and are flexible and bi-elastic, so they drape, fold and stitch easily. That makes them well suited to handbags, small leather goods and footwear, as well as apparel and accessories.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Are they durable and colour-fast?",
+            "answer": "<p>Yes. The collection is hard-wearing for everyday use and colour-fast, resisting fading and light exposure so finished products keep their appearance over time. Ask our team about the right quality for your application.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "What are they used for?",
+            "answer": "<p>They are used for handbags and small leather goods, footwear, apparel, belts and straps, and accessories — anywhere a soft, flexible, durable vegan leather alternative is needed.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right coated fabric to your collection.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Fashion fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Coated Fabrics for Fashion",
+        "emit_collectionpage": true,
+        "cp_name": "Coated Fabrics for Fashion",
+        "cp_description": "Soft-touch, flexible coated fabrics — a vegan leather alternative — for bags, footwear, apparel and accessories. Colour-fast, durable and animal-free. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/fashion"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a fashion materials specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your collection and we'll recommend the right coated fabric and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}
