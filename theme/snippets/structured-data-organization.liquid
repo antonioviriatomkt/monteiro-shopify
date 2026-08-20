@@ -1,0 +1,112 @@
+{%- comment -%}
+  Global entity node — Organization + WebSite, emitted on every page.
+
+  This is the node that lets a search engine (and an LLM) resolve that the website, the LinkedIn
+  page, the Instagram account and third-party mentions are all THE SAME COMPANY. Every other
+  structured-data node in the theme should reference these two @ids instead of redeclaring them.
+
+  Rendered from layout/theme.liquid on every page.
+  Task: WORK/Clients/Monteiro-Fabrics/tasks/schema-organization-website-global.md
+
+  Every optional field is emitted only when its value is present, so a partially-filled version of
+  this file stays valid — it just gets thinner. No placeholder can ever reach the page.
+
+  SOURCES (2026-08-20) — do not change these without a source:
+    - sameAs URLs: confirmed by António.
+    - Address, phones and email: read verbatim off the live /pages/contact and /pages/about-us.
+      Porto is the legal seat and carries `address`; Oberhaching is a sales presence, so it is
+      modelled as a second contactPoint with areaServed DE — NOT as a second address, which would
+      imply a second legal entity.
+    - Logo: settings.logo, a real PNG in shop_images (not a favicon).
+      ⏳ Still worth Ivana confirming it is the institutional mark and not a layout-specific lockup.
+{%- endcomment -%}
+
+{%- liquid
+  assign mf_linkedin  = 'https://www.linkedin.com/company/monteiro-fabrics'
+  assign mf_instagram = 'https://www.instagram.com/monteirofabrics/'
+
+  assign mf_email     = 'hello@monteirofabrics.com'
+  assign mf_telephone = '+351228338640'
+  assign mf_tel_de    = '+491714101578'
+
+  assign mf_street   = 'Circunvalação, 9020'
+  assign mf_pobox    = 'Apartado 52511'
+  assign mf_locality = 'Porto'
+  assign mf_postcode = '4202-351'
+  assign mf_country  = 'PT'
+
+  assign mf_org_id  = shop.url | append: '/#organization'
+  assign mf_site_id = shop.url | append: '/#website'
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ mf_org_id | json }},
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | json }},
+      {%- if settings.logo != blank %}
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+        },
+      {%- endif %}
+      {%- if mf_street != blank or mf_locality != blank %}
+        "address": {
+          "@type": "PostalAddress",
+          {%- if mf_street != blank %}"streetAddress": {{ mf_street | json }},{% endif %}
+          {%- if mf_pobox != blank %}"postOfficeBoxNumber": {{ mf_pobox | json }},{% endif %}
+          {%- if mf_locality != blank %}"addressLocality": {{ mf_locality | json }},{% endif %}
+          {%- if mf_postcode != blank %}"postalCode": {{ mf_postcode | json }},{% endif %}
+          "addressCountry": {{ mf_country | json }}
+        },
+      {%- endif %}
+      {%- if mf_telephone != blank or mf_tel_de != blank %}
+        "contactPoint": [
+          {%- if mf_telephone != blank %}
+            {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "telephone": {{ mf_telephone | json }},
+              {%- if mf_email != blank %}"email": {{ mf_email | json }},{% endif %}
+              "availableLanguage": ["en", "pt", "fr", "de", "es"]
+            }{% if mf_tel_de != blank %},{% endif %}
+          {%- endif %}
+          {%- if mf_tel_de != blank %}
+            {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "telephone": {{ mf_tel_de | json }},
+              {%- if mf_email != blank %}"email": {{ mf_email | json }},{% endif %}
+              "areaServed": "DE",
+              "availableLanguage": ["de", "en"]
+            }
+          {%- endif %}
+        ],
+      {%- endif %}
+      {%- assign mf_same_as = '' -%}
+      {%- if mf_linkedin != blank %}{% assign mf_same_as = mf_same_as | append: mf_linkedin | append: ',' %}{% endif %}
+      {%- if mf_instagram != blank %}{% assign mf_same_as = mf_same_as | append: mf_instagram | append: ',' %}{% endif %}
+      {%- if mf_same_as != blank %}
+        {%- assign mf_same_as_list = mf_same_as | split: ',' %}
+        "sameAs": [
+          {%- for mf_profile in mf_same_as_list -%}
+            {{ mf_profile | json }}{% unless forloop.last %},{% endunless %}
+          {%- endfor -%}
+        ],
+      {%- endif %}
+      "description": {{ shop.description | default: shop.name | strip_html | json }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ mf_site_id | json }},
+      "url": {{ shop.url | json }},
+      "name": {{ shop.name | json }},
+      "publisher": { "@id": {{ mf_org_id | json }} }
+    }
+  ]
+}
+</script>
