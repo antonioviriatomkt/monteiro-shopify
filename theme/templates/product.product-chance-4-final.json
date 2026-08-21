@@ -116,7 +116,7 @@
           "settings": {
             "icon": "eye",
             "title": "Specifications",
-            "content": "<p>Type: {{ product.metafields.custom.type.value }}</p><p>Engraving: {{ product.metafields.custom.engraving1.value }}</p><p>Abrasian Resistance: {{ product.metafields.custom.abrasion_resistance.value }}</p><p>Alcohol Resistance: {{ product.metafields.custom.resitencia_ao_alchool.value }}</p><p>Antibacterial: {{ product.metafields.custom.antibacterial1.value }}</p><p>Colour fastness to light: {{ product.metafields.custom.colour_fastness_to_light.value }}</p><p>Metalized colour: {{ product.metafields.custom.metalized_colour1.value }}</p><p>Flammability: </p>{{ product.metafields.custom.flammability2 | metafield_tag }}",
+            "content": "<p>Type: {{ product.metafields.custom.type.value }}</p><p>Engraving: {{ product.metafields.custom.engraving1.value }}</p><p>Abrasion Resistance: {{ product.metafields.custom.abrasion_resistance.value }}</p><p>Alcohol Resistance: {{ product.metafields.custom.resitencia_ao_alchool.value }}</p><p>Antibacterial: {{ product.metafields.custom.antibacterial1.value }}</p><p>Colour fastness to light: {{ product.metafields.custom.colour_fastness_to_light.value }}</p><p>Metalized colour: {{ product.metafields.custom.metalized_colour1.value }}</p><p>Flammability: </p>{{ product.metafields.custom.flammability2 | metafield_tag }}",
             "page": "",
             "open": false
           }

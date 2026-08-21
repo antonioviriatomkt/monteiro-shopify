@@ -1,6 +1,107 @@
+{%- comment -%}
+  Product node — Product + Offer, rendered from sections/main-product.liquid and
+  sections/featured-product.liquid.
+
+  Task: WORK/Clients/Monteiro-Fabrics/tasks/schema-product-additional-property.md
+
+  WHAT THIS FILE IS FOR
+  The buyer questions that matter here are SPEC questions — "coated upholstery fabric, Crib 5,
+  400.000 Martindale, bleach-cleanable". Those numbers used to exist on the page only as prose, so
+  the Product node said the product exists and nothing about what distinguishes it. The
+  `additionalProperty` array below is that missing half.
+
+  SOURCES — every value is read straight off `product.metafields.custom.*`. Nothing is computed,
+  defaulted or inferred, so a product with thin metafields simply emits fewer properties. The two
+  constants that are NOT metafields:
+    - "Martindale cycles" / "ISO 5470-2" on abrasion — the method is stated identically on every
+      datasheet in `APP/mf-knowledge/products/collections/` and in the live product descriptions.
+    - the `@id` references, which point at snippets/structured-data-organization.liquid.
+
+  ⚠️ NEVER add a property whose value is not certified or on a datasheet. An empty metafield, or the
+  literal "-" placeholder (ELECTRA uses it for colour fastness), emits no line at all — a missing
+  property is honest, a guessed one is not.
+
+  ⚠️ KNOWN DATA DEFECT, MUST BE FIXED BEFORE THIS SHIPS (2026-08-21):
+  `custom.abrasion_resistance` was checked on all 26 active products against the catalogue linked
+  from each product page (plus the print catalogues in
+  WORK/Clients/Monteiro-Fabrics/reference/knowledge/product-catalogues/). Nineteen are right.
+  These are not:
+    - LIMA and MANTA            → metafield ≥400.000, catalogue ≥150.000
+    - PURE CONVERTIBLE          → metafield ≥400.000, catalogue 150.000
+    - PURE MOVE [3/3]           → metafield ≥200.000, catalogue 150.000 (the BLT bi-elastic group).
+                                  200.000 appears in NO document.
+    - LAGUNA                    → the two official catalogues disagree with each other:
+                                  print MAI2025 (DC 062.01) says 400.000, the web catalogue linked
+                                  from the live product page says ≥150.000. Same weight, thickness
+                                  and composition in both. Unresolvable without the technical team.
+    - PURE MOVE [2/3]           → the page mixes article groups: ARATA/NASCAR/PHILIP PES are
+                                  400.000 but FRANK PES is 150.000. One figure per page cannot be
+                                  right for this page.
+    - CHANCE [1/7], [5/7], [6/7] → the AGO2026 catalogue footnotes "*metallic colours: lower
+                                  abrasion resistance (150.000 cycles)"; these are the pages that
+                                  carry metallic shades. The Essentials_Chance.pdf currently linked
+                                  from the product pages has no such footnote.
+  The fix belongs in the metafield, not here — it also feeds the visible spec block. Until it is
+  corrected, this snippet publishes a wrong certified number, machine-readably, on those products.
+
+  Offer carries no price — see WORK/Clients/Monteiro-Fabrics/decisions/2026-08-20-offer-sem-preco.md
+  Every variant is priced 0.00 because the cart is a free-sample mechanism, not a shop; emitting
+  that zero told every machine reader the fabrics are free. Price is quote-only, so the honest node
+  keeps url + availability + seller and says nothing about price.
+{%- endcomment -%}
+
+{%- liquid
+  assign mf_org_id = shop.url | append: '/#organization'
+
+  assign mf_rs = '~~'
+  assign mf_fs = '||'
+  assign mf_props = ''
+
+  assign mf_v = product.metafields.custom.type.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Material' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.engraving1.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Engraving' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.abrasion_resistance.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Abrasion resistance' | append: mf_fs | append: mf_v | append: mf_fs | append: 'Martindale cycles' | append: mf_fs | append: 'ISO 5470-2' | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.resitencia_ao_alchool.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Alcohol resistance' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.colour_fastness_to_light.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Colour fastness to light' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.antibacterial1.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Antibacterial' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+
+  assign mf_v = product.metafields.custom.metalized_colour1.value | strip
+  if mf_v != blank and mf_v != '-'
+    assign mf_props = mf_props | append: 'Metalized colours' | append: mf_fs | append: mf_v | append: mf_rs
+  endif
+-%}
+{%- comment -%} flammability2 is a list metafield — one PropertyValue per certification. {%- endcomment -%}
+{%- for mf_cert in product.metafields.custom.flammability2.value -%}
+  {%- assign mf_v = mf_cert | strip -%}
+  {%- if mf_v != blank and mf_v != '-' -%}
+    {%- assign mf_props = mf_props | append: 'Fire certification' | append: mf_fs | append: mf_v | append: mf_rs -%}
+  {%- endif -%}
+{%- endfor -%}
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org/",
+  "@context": "https://schema.org",
   "@type": "Product",
   "name": {{ product.title | json }},
   "url": {{ shop.url | append: product.url | json }},
@@ -14,13 +115,39 @@
   {%- if current_variant.sku != blank -%}
     "sku": {{ current_variant.sku | json }},
   {%- endif -%}
-  "brand": {
-    "@type": "Brand",
-    "name": {{ product.vendor | json }}
-  },
+  {%- comment -%}
+    product.vendor holds a marketing tagline ("Knitted look. Timeless shades."), not a brand name,
+    so it must not be used here. The brand is the company, declared once in the Organization node.
+  {%- endcomment -%}
+  "brand": { "@id": {{ mf_org_id | json }} },
   {% if current_variant.barcode != blank %}
     "mpn": {{ current_variant.barcode | json }},
   {% endif %}
+  {%- if mf_props != blank -%}
+    {%- assign mf_records = mf_props | split: mf_rs -%}
+    {%- comment -%}
+      The comma is written BEFORE each entry, counted off mf_emitted, rather than off forloop.last.
+      A record that fails the size check is skipped, so forloop.last cannot be trusted to mark the
+      last thing actually emitted — that is how you get a trailing comma and an unparseable node.
+    {%- endcomment -%}
+    "additionalProperty": [
+      {%- assign mf_emitted = 0 -%}
+      {%- for mf_record in mf_records -%}
+        {%- assign mf_field = mf_record | split: mf_fs -%}
+        {%- if mf_field.size >= 2 -%}
+          {%- if mf_emitted > 0 %},{% endif %}
+          {
+            "@type": "PropertyValue",
+            "name": {{ mf_field[0] | json }},
+            "value": {{ mf_field[1] | json }}
+            {%- if mf_field.size >= 3 -%}, "unitText": {{ mf_field[2] | json }}{%- endif -%}
+            {%- if mf_field.size >= 4 -%}, "measurementTechnique": {{ mf_field[3] | json }}{%- endif -%}
+          }
+          {%- assign mf_emitted = mf_emitted | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    ],
+  {%- endif -%}
   "offers": [
     {%- for variant in product.variants -%}
       {
@@ -28,14 +155,9 @@
         {%- if variant.sku != blank -%}
           "sku": {{ variant.sku | json }},
         {%- endif -%}
-        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-        "price" : {{ variant.price | divided_by: 100.00 | json }},
-        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "availability" : "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
         "url" : {{ shop.url | append: variant.url | json }},
-        "seller": {
-          "@type": "Organization",
-          "name": {{ shop.name | json }}
-        }
+        "seller": { "@id": {{ mf_org_id | json }} }
       }{% unless forloop.last %},{% endunless %}
     {%- endfor -%}
   ]
