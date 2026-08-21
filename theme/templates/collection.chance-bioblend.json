@@ -32,27 +32,39 @@
       }
     },
     "qualify": {
-      "type": "value-props",
+      "type": "text-columns-with-images",
       "blocks": {
         "v1": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "value": "Made to order",
-            "caption": "every metre is produced for a specific project — nothing sits in a warehouse"
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Made to order",
+            "text": "<p>Every metre is produced for a specific project rather than held in stock. Nothing sits in a warehouse waiting to be discounted or written off.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "v2": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "value": "Your colour",
-            "caption": "developed to your reference, not chosen from a stock range"
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Your colour",
+            "text": "<p>Colour is developed to your reference rather than chosen from a stock range, within the iconic CHANCE engraving shared across the whole family.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "v3": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "value": "Per specification",
-            "caption": "minimum order and lead time are confirmed once we know your project"
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Per specification",
+            "text": "<p>Minimum order and lead time depend on the project. Tell us the sector, the quantity and the colour you need, and we will confirm both.</p>",
+            "button_label": "",
+            "link": ""
           }
         }
       },
@@ -62,11 +74,12 @@
         "v3"
       ],
       "settings": {
-        "subheading": "How CHANCE Bioblend works",
         "title": "Specified, not stocked.",
-        "accent_color": "#111111",
-        "show_dividers": true,
-        "alternate_bg_color": false
+        "text_alignment": "left",
+        "button_style": "primary",
+        "media_shape": "natural",
+        "alternate_bg_color": false,
+        "full_width": false
       }
     },
     "credentials": {
