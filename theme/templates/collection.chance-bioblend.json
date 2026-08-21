@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 20,
         "heading_h1": true,
-        "text": "<p>CHANCE Bioblend is the sustainable grade — a coated fabric made with 65% biobased content that incorporates natural by-products from chestnut processing. It turns agricultural waste into a high-performance material: durable, fire-resistant and available in contemporary colours.</p>",
+        "text": "<p>CHANCE Bioblend is the sustainable grade — a coated fabric made with 65% biobased content that incorporates natural by-products from chestnut processing. It turns agricultural waste into a high-performance material: durable, fire-resistant and made to order in the colour your project needs.</p>",
         "image_width": 120,
         "button_label": "Explore all CHANCE 2.0 grades",
         "button_link": "shopify://pages/chance-collection",
@@ -128,7 +128,7 @@
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "cta_label": "DOWNLOAD CATALOGUE",
-        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_JUN2026_Ipad_bx.pdf?v=1782924961",
+        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_AGO2026_Ipad_bx.pdf?v=1787072645",
         "cta_style": "primary"
       }
     },
@@ -260,7 +260,7 @@
           "type": "faq",
           "settings": {
             "question": "Where is CHANCE Bioblend used?",
-            "answer": "<p>Hospitality, office, restaurants, residential and retail interiors, as well as handbags and luggage.</p>"
+            "answer": "<p>Hospitality, office, restaurant, residential and retail interiors, as well as recreational vehicles.</p>"
           }
         },
         "q5": {
@@ -273,8 +273,15 @@
         "q6": {
           "type": "faq",
           "settings": {
-            "question": "Can I order samples?",
-            "answer": "<p>Yes — request free samples and our specialists will help match the right CHANCE grade to your project.</p>"
+            "question": "Can I order samples of CHANCE Bioblend?",
+            "answer": "<p>CHANCE Bioblend is produced to order rather than held in stock, so it is not part of our free sampling service. To evaluate it for a project, speak to a specialist — we will advise on colour development, minimum order and lead time for your specification.</p>"
+          }
+        },
+        "q7": {
+          "type": "faq",
+          "settings": {
+            "question": "What colours does CHANCE Bioblend come in?",
+            "answer": "<p>Colour is developed to your specification rather than selected from a stock range. Our specialists work with you on the colour for your project, within the iconic CHANCE engraving shared across the whole family.</p>"
           }
         }
       },
@@ -284,7 +291,8 @@
         "q3",
         "q4",
         "q5",
-        "q6"
+        "q6",
+        "q7"
       ],
       "settings": {
         "eyebrow": "CHANCE Bioblend — answered",
@@ -300,7 +308,7 @@
         "crumb_current": "CHANCE Bioblend",
         "emit_collectionpage": true,
         "cp_name": "CHANCE Bioblend",
-        "cp_description": "CHANCE Bioblend — the sustainable grade of CHANCE 2.0. 65% biobased coated fabric made with chestnut by-products; durable and fire-resistant. Made in Portugal.",
+        "cp_description": "CHANCE Bioblend — the sustainable grade of CHANCE 2.0. 65% biobased coated fabric made with chestnut by-products; durable and fire-resistant. Made to order in Portugal.",
         "cp_url": "https://www.monteirofabrics.com/collections/chance-bioblend"
       }
     },
@@ -312,7 +320,7 @@
         "title_size": 44,
         "title_width": 12,
         "heading_h1": false,
-        "text": "<p>Order free samples, or talk to a specialist about a more sustainable specification.</p>",
+        "text": "<p>CHANCE Bioblend is made to order. Talk to a specialist about colour development, minimum order and lead time for your project.</p>",
         "image_width": 120,
         "button_label": "Speak to a specialist",
         "button_link": "shopify://pages/contact",
