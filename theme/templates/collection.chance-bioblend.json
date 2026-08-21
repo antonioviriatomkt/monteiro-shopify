@@ -31,6 +31,44 @@
         "color_text": ""
       }
     },
+    "qualify": {
+      "type": "value-props",
+      "blocks": {
+        "v1": {
+          "type": "item",
+          "settings": {
+            "value": "Made to order",
+            "caption": "every metre is produced for a specific project — nothing sits in a warehouse"
+          }
+        },
+        "v2": {
+          "type": "item",
+          "settings": {
+            "value": "Your colour",
+            "caption": "developed to your reference, not chosen from a stock range"
+          }
+        },
+        "v3": {
+          "type": "item",
+          "settings": {
+            "value": "Per specification",
+            "caption": "minimum order and lead time are confirmed once we know your project"
+          }
+        }
+      },
+      "block_order": [
+        "v1",
+        "v2",
+        "v3"
+      ],
+      "settings": {
+        "subheading": "How CHANCE Bioblend works",
+        "title": "Specified, not stocked.",
+        "accent_color": "#111111",
+        "show_dividers": true,
+        "alternate_bg_color": false
+      }
+    },
     "credentials": {
       "type": "fabric-spec-icons",
       "blocks": {
@@ -270,34 +308,34 @@
         "cp_url": "https://www.monteirofabrics.com/collections/chance-bioblend"
       }
     },
-    "cta": {
-      "type": "rich-text",
+    "enquiry": {
+      "type": "contact-block",
       "settings": {
-        "subheading": "Bring CHANCE Bioblend to your project",
-        "title": "Design with less waste.",
-        "title_size": 44,
-        "title_width": 12,
-        "heading_h1": false,
-        "text": "<p>CHANCE Bioblend is made to order. Talk to a specialist about colour development, minimum order and lead time for your project.</p>",
-        "image_width": 120,
-        "button_label": "Speak to a specialist",
-        "button_link": "shopify://pages/contact",
-        "button_style": "primary",
-        "text_alignment": "center",
-        "enlarge_text": false,
-        "full_width": false,
-        "no_padding_bottom": false,
-        "color_scheme": "custom",
-        "color_bg": "#f5f5f5",
-        "color_text": ""
+        "eyebrow": "Specify CHANCE Bioblend",
+        "title": "Tell us about your project.",
+        "intro": "<p>Because Bioblend is made to order, the answers depend on your specification. Tell us the sector, the quantity you expect and any colour reference you are working to — we will come back with the colour route, the minimum order and the lead time for your project.</p>",
+        "submit_label": "Send project details",
+        "sector_options": "Hospitality\nOffice\nRestaurants\nResidential\nRetail\nRecreational vehicles\nOther",
+        "success_message": "Thanks — we have your project details. Our specialists will come back to you with the colour route, minimum order and lead time.",
+        "side_title": "Prefer to reach us directly?",
+        "email": "info@monteirofabrics.com",
+        "phone": "+351 228 338 640",
+        "hours": "Mon–Fri, 9:00–18:00 (WET)",
+        "side_note": "<p>Ask for the technical data sheet, or for the CHANCE 2.0 catalogue covering all six grades.</p>",
+        "bg_color": "#FFFFFF",
+        "text_color": "#111111",
+        "field_bg": "#FAFAF8",
+        "line_color": "#D9D9D4",
+        "accent": "#2F519B"
       }
     }
   },
   "order": [
     "intro",
+    "qualify",
     "credentials",
     "specs",
     "faq",
-    "cta"
+    "enquiry"
   ]
 }
