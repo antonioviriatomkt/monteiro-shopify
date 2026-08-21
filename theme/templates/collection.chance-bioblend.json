@@ -31,48 +31,6 @@
         "color_text": ""
       }
     },
-    "product": {
-      "type": "featured-product",
-      "blocks": {
-        "b_price": {
-          "type": "price",
-          "disabled": true,
-          "settings": {
-            "show_tax_and_shipping": false
-          }
-        },
-        "b_variant": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_style": "underlined",
-            "show_realtime_availability": true
-          }
-        },
-        "b_buy": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "enable_payment_button": false,
-            "show_gift_card_recipient": false
-          }
-        }
-      },
-      "block_order": [
-        "b_price",
-        "b_variant",
-        "b_buy"
-      ],
-      "settings": {
-        "product": "peel-collection",
-        "show_backorder_text": true,
-        "slide_nav_style": "arrows",
-        "media_crop": "center",
-        "enable_zoom": true,
-        "zoom_cursor": "plus-light",
-        "enable_video_looping": false,
-        "highlight_selected_media": true
-      }
-    },
     "credentials": {
       "type": "fabric-spec-icons",
       "blocks": {
@@ -337,7 +295,6 @@
   },
   "order": [
     "intro",
-    "product",
     "credentials",
     "specs",
     "faq",
