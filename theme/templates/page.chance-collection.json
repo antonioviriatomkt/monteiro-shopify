@@ -61,7 +61,7 @@
           "settings": {
             "eyebrow": "The original",
             "title": "CHANCE CLASSIC",
-            "stat": "236 colours · from stock",
+            "stat": "Broad contract use · no specialist requirement",
             "text": "The iconic engraving in an unrivalled spectrum of colour — supple, long-lasting and low-maintenance, for broad contract use.",
             "accent": "#111111",
             "cta_label": "Explore Classic",
@@ -140,7 +140,7 @@
       "settings": {
         "eyebrow": "Choose your grade",
         "title": "Same engraving. Pick the performance.",
-        "intro": "",
+        "intro": "<p>All six grades carry the same 235-colour CHANCE palette — choose by performance, not by colour.</p>",
         "columns": 3,
         "bg_color": "#fafaf8",
         "text_color": "#111111",
@@ -211,18 +211,18 @@
       "type": "custom-liquid",
       "settings": {
         "no_margins": false,
-        "custom_liquid": "<div class=\"c2-compare\"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style><h2>Compare the six grades</h2><p class=\"c2-sub\">Same engraving, same &#8805;400,000 Martindale durability &mdash; choose by requirement.</p><div class=\"c2-wrap\"><table><thead><tr><th>&nbsp;</th><th>Classic</th><th>Mediflex</th><th>Outdoor</th><th>Bioblend</th><th>Crib 7 / B1</th><th>Crib 5</th></tr></thead><tbody><tr><th>Best for</th><td>Broad contract &amp; colour</td><td>Healthcare</td><td>Outdoor &amp; marine</td><td>Sustainable projects</td><td>Stadiums &amp; venues</td><td>Hospitality</td></tr><tr><th>Signature</th><td>236 colours &middot; from stock</td><td>Bi-elastic; soft touch</td><td>Weather &amp; mould resistance</td><td>65% biobased (chestnut)</td><td>Top fire spec</td><td>Crib 5 fire</td></tr><tr><th>Top fire</th><td>M2 + broad list</td><td>EN 1021 &middot; IMO &middot; TB117</td><td>IMO &middot; TB117</td><td>Crib 5 &middot; M2</td><td>Crib 7 &middot; B1 &middot; M1</td><td>Crib 5 (BS 5852)</td></tr><tr><th>Antimicrobial</th><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes + antiviral</td><td class=\"c2-y\">Yes</td><td>&mdash;</td><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes</td></tr><tr><th>Biobased</th><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td class=\"c2-y\">65%</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table></div><p class=\"c2-foot\">All grades: the iconic CHANCE engraving &middot; &#8805;400,000 Martindale &middot; 100% vegan (VVV+) &middot; REACH &middot; 10-year warranty.</p></div>"
+        "custom_liquid": "<div class=\"c2-compare\"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style><h2>Compare the six grades</h2><p class=\"c2-sub\">Same engraving, same &#8805;400,000 Martindale durability &mdash; choose by requirement.</p><div class=\"c2-wrap\"><table><thead><tr><th>&nbsp;</th><th>Classic</th><th>Mediflex</th><th>Outdoor</th><th>Bioblend</th><th>Crib 7 / B1</th><th>Crib 5</th></tr></thead><tbody><tr><th>Best for</th><td>Broad contract use</td><td>Healthcare</td><td>Outdoor &amp; marine</td><td>Sustainable projects</td><td>Stadiums &amp; venues</td><td>Hospitality</td></tr><tr><th>Signature</th><td>The original engraving</td><td>Bi-elastic; soft touch</td><td>Weather &amp; mould resistance</td><td>65% biobased (chestnut)</td><td>Top fire spec</td><td>Crib 5 fire</td></tr><tr><th>Top fire</th><td>M2 + broad list</td><td>EN 1021 &middot; IMO &middot; TB117</td><td>IMO &middot; TB117</td><td>Crib 5 &middot; M2</td><td>Crib 7 &middot; B1 &middot; M1</td><td>Crib 5 (BS 5852)</td></tr><tr><th>Antimicrobial</th><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes + antiviral</td><td class=\"c2-y\">Yes</td><td>&mdash;</td><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes</td></tr><tr><th>Biobased</th><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td class=\"c2-y\">65%</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table></div><p class=\"c2-foot\">All grades: the iconic CHANCE engraving &middot; the same 235 colours &middot; &#8805;400,000 Martindale &middot; 100% vegan (VVV+) &middot; REACH &middot; 10-year warranty.</p></div>"
       }
     },
     "colour": {
       "type": "rich-text",
       "settings": {
-        "subheading": "CHANCE CLASSIC",
-        "title": "236 colours, one iconic texture",
+        "subheading": "THE CHANCE PALETTE",
+        "title": "235 colours, one iconic texture",
         "title_size": 36,
         "title_width": 18,
         "heading_h1": false,
-        "text": "<p>The original CHANCE — an unrivalled spectrum of colour, from soft muted neutrals to vibrant jewel tones and bold statement shades, available from stock. The broadest palette in the family.</p>",
+        "text": "<p>An unrivalled spectrum of colour, from soft muted neutrals to vibrant jewel tones and bold statement shades — and the same 235 shades in every grade. The grade you choose for fire, hygiene or weather never limits the colour you can specify.</p>",
         "image_width": 120,
         "button_label": "Explore CHANCE Classic",
         "button_link": "shopify://collections/chance",
@@ -250,21 +250,21 @@
           "type": "faq",
           "settings": {
             "question": "What's the difference between the six grades?",
-            "answer": "<p>They share the CHANCE engraving, &ge;400,000 Martindale abrasion resistance, a 10-year warranty and vegan / REACH credentials. They differ by specialism: Classic (236 colours, from stock), Mediflex (healthcare — antimicrobial and antiviral, bi-elastic), Outdoor (weather and marine), Bioblend (65% biobased), Crib 7 / B1 (top fire for public venues) and Crib 5 (Crib 5 hospitality fire).</p>"
+            "answer": "<p>They share the CHANCE engraving, &ge;400,000 Martindale abrasion resistance, a 10-year warranty, vegan / REACH credentials and the same 235-colour palette. They differ by specialism: Classic (the original, for broad contract use), Mediflex (healthcare — antimicrobial and antiviral, bi-elastic), Outdoor (weather and marine), Bioblend (65% biobased), Crib 7 / B1 (top fire for public venues) and Crib 5 (Crib 5 hospitality fire).</p>"
           }
         },
         "q3": {
           "type": "faq",
           "settings": {
             "question": "Which grade should I choose?",
-            "answer": "<p>By requirement: the widest colour choice and stock availability — Classic; healthcare and intensive disinfection — Mediflex; outdoor or marine exposure — Outdoor; a sustainability story — Bioblend; the highest fire rating for stadiums and public venues — Crib 7 / B1; hospitality where Crib 5 is required — Crib 5.</p>"
+            "answer": "<p>By requirement: broad contract use with no specialist constraint — Classic; healthcare and intensive disinfection — Mediflex; outdoor or marine exposure — Outdoor; a sustainability story — Bioblend; the highest fire rating for stadiums and public venues — Crib 7 / B1; hospitality where Crib 5 is required — Crib 5.</p>"
           }
         },
         "q4": {
           "type": "faq",
           "settings": {
             "question": "Do all six grades come in the same colours?",
-            "answer": "<p>CHANCE Classic offers the full 236-shade palette and is available from stock. The other grades have their own colour ranges tuned to their use — ask our team to match a colour across grades for a project.</p>"
+            "answer": "<p>Yes. All six grades share the same 235-colour CHANCE palette, so you can change grade between spaces in a project without changing colour. Ask our team about availability for a specific colour and grade.</p>"
           }
         },
         "q5": {
