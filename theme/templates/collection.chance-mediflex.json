@@ -55,7 +55,7 @@
         "b_buy"
       ],
       "settings": {
-        "product": "mediflex-collection",
+        "product": "chance-mediflex",
         "show_backorder_text": true,
         "slide_nav_style": "arrows",
         "media_crop": "center",
