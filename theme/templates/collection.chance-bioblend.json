@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 20,
         "heading_h1": true,
-        "text": "<p>CHANCE Bioblend is the sustainable grade — a coated fabric made with 65% biobased content that incorporates natural by-products from chestnut processing. It turns agricultural waste into a high-performance material: durable, fire-resistant and made to order in the colour your project needs.</p>",
+        "text": "<p>CHANCE Bioblend is the sustainable grade — a coated fabric made with 65% biobased content that incorporates natural by-products from chestnut processing. It turns agricultural waste into a high-performance material: durable, fire-resistant and available in contemporary colours.</p>",
         "image_width": 120,
         "button_label": "Explore all CHANCE 2.0 grades",
         "button_link": "shopify://pages/chance-collection",
@@ -31,55 +31,46 @@
         "color_text": ""
       }
     },
-    "qualify": {
-      "type": "text-columns-with-images",
+    "product": {
+      "type": "featured-product",
       "blocks": {
-        "v1": {
-          "type": "text_block",
+        "b_price": {
+          "type": "price",
+          "disabled": true,
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "Made to order",
-            "text": "<p>Every metre is produced for a specific project rather than held in stock. Nothing sits in a warehouse waiting to be discounted or written off.</p>",
-            "button_label": "",
-            "link": ""
+            "show_tax_and_shipping": false
           }
         },
-        "v2": {
-          "type": "text_block",
+        "b_variant": {
+          "type": "variant_picker",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "Your colour",
-            "text": "<p>Colour is developed to your reference rather than chosen from a stock range, within the iconic CHANCE engraving shared across the whole family.</p>",
-            "button_label": "",
-            "link": ""
+            "variant_style": "underlined",
+            "show_realtime_availability": true
           }
         },
-        "v3": {
-          "type": "text_block",
+        "b_buy": {
+          "type": "buy_buttons",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "Per specification",
-            "text": "<p>Minimum order and lead time depend on the project. Tell us the sector, the quantity and the colour you need, and we will confirm both.</p>",
-            "button_label": "",
-            "link": ""
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
           }
         }
       },
       "block_order": [
-        "v1",
-        "v2",
-        "v3"
+        "b_price",
+        "b_variant",
+        "b_buy"
       ],
       "settings": {
-        "title": "Specified, not stocked.",
-        "text_alignment": "left",
-        "button_style": "primary",
-        "media_shape": "natural",
-        "alternate_bg_color": false,
-        "full_width": false
+        "product": "chance-bioblend",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
       }
     },
     "credentials": {
@@ -282,15 +273,8 @@
         "q6": {
           "type": "faq",
           "settings": {
-            "question": "Can I order samples of CHANCE Bioblend?",
-            "answer": "<p>CHANCE Bioblend is produced to order rather than held in stock, so it is not part of our free sampling service. To evaluate it for a project, speak to a specialist — we will advise on colour development, minimum order and lead time for your specification.</p>"
-          }
-        },
-        "q7": {
-          "type": "faq",
-          "settings": {
-            "question": "What colours does CHANCE Bioblend come in?",
-            "answer": "<p>Colour is developed to your specification rather than selected from a stock range. Our specialists work with you on the colour for your project, within the iconic CHANCE engraving shared across the whole family.</p>"
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples and our specialists will help match the right CHANCE grade to your project.</p>"
           }
         }
       },
@@ -300,8 +284,7 @@
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7"
+        "q6"
       ],
       "settings": {
         "eyebrow": "CHANCE Bioblend — answered",
@@ -317,38 +300,39 @@
         "crumb_current": "CHANCE Bioblend",
         "emit_collectionpage": true,
         "cp_name": "CHANCE Bioblend",
-        "cp_description": "CHANCE Bioblend — the sustainable grade of CHANCE 2.0. 65% biobased coated fabric made with chestnut by-products; durable and fire-resistant. Made to order in Portugal.",
+        "cp_description": "CHANCE Bioblend — the sustainable grade of CHANCE 2.0. 65% biobased coated fabric made with chestnut by-products; durable and fire-resistant. Made in Portugal.",
         "cp_url": "https://www.monteirofabrics.com/collections/chance-bioblend"
       }
     },
-    "enquiry": {
-      "type": "contact-block",
+    "cta": {
+      "type": "rich-text",
       "settings": {
-        "eyebrow": "Specify CHANCE Bioblend",
-        "title": "Tell us about your project.",
-        "intro": "<p>Because Bioblend is made to order, the answers depend on your specification. Tell us the sector, the quantity you expect and any colour reference you are working to — we will come back with the colour route, the minimum order and the lead time for your project.</p>",
-        "submit_label": "Send project details",
-        "sector_options": "Hospitality\nOffice\nRestaurants\nResidential\nRetail\nRecreational vehicles\nOther",
-        "success_message": "Thanks — we have your project details. Our specialists will come back to you with the colour route, minimum order and lead time.",
-        "side_title": "Prefer to reach us directly?",
-        "email": "info@monteirofabrics.com",
-        "phone": "+351 228 338 640",
-        "hours": "Mon–Fri, 9:00–18:00 (WET)",
-        "side_note": "<p>Ask for the technical data sheet, or for the CHANCE 2.0 catalogue covering all six grades.</p>",
-        "bg_color": "#FFFFFF",
-        "text_color": "#111111",
-        "field_bg": "#FAFAF8",
-        "line_color": "#D9D9D4",
-        "accent": "#2F519B"
+        "subheading": "Bring CHANCE Bioblend to your project",
+        "title": "Design with less waste.",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Order free samples, or talk to a specialist about a more sustainable specification.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
       }
     }
   },
   "order": [
     "intro",
-    "qualify",
+    "product",
     "credentials",
     "specs",
     "faq",
-    "enquiry"
+    "cta"
   ]
 }
