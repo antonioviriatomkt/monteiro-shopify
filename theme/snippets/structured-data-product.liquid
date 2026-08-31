@@ -46,8 +46,19 @@
 
   Offer carries no price — see WORK/Clients/Monteiro-Fabrics/decisions/2026-08-20-offer-sem-preco.md
   Every variant is priced 0.00 because the cart is a free-sample mechanism, not a shop; emitting
-  that zero told every machine reader the fabrics are free. Price is quote-only, so the honest node
-  keeps url + availability + seller and says nothing about price.
+  that zero told every machine reader the fabrics are free. Price is quote-only.
+
+  Offer carries no availability either — same decision note, dated amendment of 2026-08-31.
+  This used to emit InStock/OutOfStock from `variant.available`. That flag is true whenever
+  inventory is not tracked, and the whole store runs tracked:false — so the conditional had exactly
+  one outcome and InStock was never an assertion anyone made about stock, only an artefact of not
+  tracking it. The client fact of 2026-08-27 is that the assigned salesperson handles stock case by
+  case; nobody verifies fabric stock here. And this Offer is for the FABRIC — the free sample is
+  deliberately not modelled as a 0-euro Offer of it — so InStock was a machine-readable claim about
+  fabric stock that nothing supported. Same reasoning that removed the price.
+
+  What remains is what is true: url + seller. Expect Search Console to report two missing fields on
+  Product (price and availability). That is the accepted cost, not a regression.
 {%- endcomment -%}
 
 {%- liquid
@@ -155,7 +166,6 @@
         {%- if variant.sku != blank -%}
           "sku": {{ variant.sku | json }},
         {%- endif -%}
-        "availability" : "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
         "url" : {{ shop.url | append: variant.url | json }},
         "seller": { "@id": {{ mf_org_id | json }} }
       }{% unless forloop.last %},{% endunless %}
