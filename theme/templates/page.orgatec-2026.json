@@ -114,24 +114,45 @@
       }
     },
     "sectors": {
-      "type": "accordions",
+      "type": "sector-tabs",
       "blocks": {
         "office": {
-          "type": "accordion",
+          "type": "sector",
           "settings": {
-            "icon": "briefcase",
             "title": "Office & contract furniture",
-            "open": true,
-            "text": "<p><strong>Task and conference seating, soft seating, contract furniture.</strong> Heavy PVC-coated qualities with abrasion resistance up to 400.000 Martindale, Sanitized® antimicrobial finishes, flame-retardant certifications and a 10-year warranty on stock-service materials.</p><ul><li><strong>PU Office</strong> — <a href=\"/products/furna-collection\">Furna</a>, <a href=\"/products/mara-collection\">Mara</a>, <a href=\"/products/portus-collection\">Portus</a>, <a href=\"/products/elefante-collection\">Elefante</a>: sleek, durable office fabrics for stylish and comfortable workspaces.</li><li><strong>PVC Fabric Look</strong> — <a href=\"/products/straw-collection\">Straw</a>, <a href=\"/products/glam-collection\">Glam</a>, <a href=\"/products/jazz-collection\">Jazz</a>: textile soul, durable heart, elegant feel and PVC high performance.</li><li><strong>CHANCE 2.0 Classic</strong> — 236 colours, one iconic texture. Preview at the stand; samples follow with the launch of our new website.</li></ul><p><a href=\"/collections/office-fabrics-upholstery\">All office upholstery fabrics</a></p>"
+            "eyebrow": "Office & contract furniture",
+            "claim": "Task and conference seating, soft seating, contract furniture.",
+            "text": "<p>Heavy PVC-coated qualities with abrasion resistance up to 400.000 Martindale, Sanitized® antimicrobial finishes, flame-retardant certifications and a 10-year warranty on stock-service materials.</p>",
+            "list_label": "On the stand",
+            "products": [
+              "furna-collection",
+              "mara-collection",
+              "portus-collection",
+              "elefante-collection",
+              "glam-collection",
+              "jazz-collection",
+              "straw-collection"
+            ],
+            "note": "<p><strong>CHANCE 2.0 Classic</strong> — 236 colours, one iconic texture. Preview at the stand; samples follow with the launch of our new website.</p>",
+            "link_label": "All office upholstery fabrics",
+            "link_url": "/collections/office-fabrics-upholstery"
           }
         },
         "healthcare": {
-          "type": "accordion",
+          "type": "sector",
           "settings": {
-            "icon": "heart",
             "title": "Healthcare",
-            "open": false,
-            "text": "<p><strong>Clinics, care homes, medical equipment and patient seating.</strong> Easy-to-clean coated fabrics with antibacterial, antifungal and antiviral coatings, alcohol and bleach resistance, and biocompatibility to ISO 10993.</p><ul><li><strong>Chance Mediflex</strong> — <a href=\"/products/mediflex-collection\">Mediflex</a>: easy-to-clean finishing on a multilayer PVC coating, bielastic and non skin-irritant.</li><li><strong>Electra</strong> — <a href=\"/products/electra-collection\">Electra</a>: permanently antistatic, ESD-protective upholstery with a conductive network, for intensive care units, imaging rooms and operating theatres.</li></ul><p><a href=\"/collections/healthcare\">All healthcare upholstery fabrics</a></p>"
+            "eyebrow": "Healthcare",
+            "claim": "Clinics, care homes, medical equipment and patient seating.",
+            "text": "<p>Easy-to-clean coated fabrics with antibacterial, antifungal and antiviral coatings, alcohol and bleach resistance, and biocompatibility to ISO 10993.</p>",
+            "list_label": "On the stand",
+            "products": [
+              "mediflex-collection",
+              "electra-collection"
+            ],
+            "note": "<p><strong>Chance Mediflex</strong> joins the CHANCE 2.0 family with the launch of our new website; today it is sold as Mediflex.</p>",
+            "link_label": "All healthcare upholstery fabrics",
+            "link_url": "/collections/healthcare"
           }
         }
       },
@@ -141,8 +162,12 @@
       ],
       "settings": {
         "title": "Sectors we specify for",
+        "link_label": "All coated fabrics",
+        "link_url": "/collections/coated-fabrics",
+        "sample_label": "Add free sample",
         "alternate_bg_color": false,
-        "view_all_page": "/collections/coated-fabrics"
+        "padding_top": 70,
+        "padding_bottom": 70
       }
     },
     "office_products": {
