@@ -1,3 +1,9 @@
+/*
+ * ------------------------------------------------------------
+ * ORGATEC 2026 landing page (v2, 10/09/2026) — /pages/orgatec-2026
+ * Single self-contained section; phase switch in the theme editor.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,7 +12,8 @@
         "phase": "pre",
         "hall": "Hall 10.2",
         "stand": "Stand Q059",
-        "show_body": false
+        "show_meeting_form": true,
+        "show_faq": true
       }
     }
   },
