@@ -118,45 +118,6 @@
         "color_scheme": "standard"
       }
     },
-    "sectors": {
-      "type": "sector-tabs",
-      "blocks": {
-        "office": {
-          "type": "sector",
-          "settings": {
-            "title": "Office & contract furniture",
-            "eyebrow": "Office & contract furniture",
-            "claim": "Built for task seating, conference, soft seating and reception.",
-            "text": "<p>Heavy PVC-coated qualities with abrasion resistance up to 400.000 Martindale, Sanitized® antimicrobial finishes, flame-retardant certifications and a 10-year warranty on stock-service materials. Matt textures for task chairs; fabric-look qualities for soft seating and reception.</p>",
-            "list_label": "On the stand · free samples",
-            "products": [
-              "furna-collection",
-              "mara-collection",
-              "portus-collection",
-              "elefante-collection",
-              "glam-collection",
-              "jazz-collection",
-              "straw-collection"
-            ],
-            "note": "<p><strong>CHANCE 2.0 Classic</strong> — 236 colours, one iconic texture, for programmes that need a wide, consistent palette. Preview at the stand; samples follow with the launch of our new website.</p>",
-            "link_label": "All office upholstery fabrics",
-            "link_url": "/collections/office-fabrics-upholstery"
-          }
-        }
-      },
-      "block_order": [
-        "office"
-      ],
-      "settings": {
-        "title": "What we bring for office",
-        "link_label": "All office upholstery fabrics",
-        "link_url": "/collections/office-fabrics-upholstery",
-        "sample_label": "Add free sample",
-        "alternate_bg_color": false,
-        "padding_top": 70,
-        "padding_bottom": 70
-      }
-    },
     "chance": {
       "type": "image-with-text",
       "settings": {
@@ -354,6 +315,147 @@
         "alternate_bg_color": true,
         "full_width": false
       }
+    },
+    "sheets": {
+      "type": "collection-sheets",
+      "blocks": {
+        "furna": {
+          "type": "sheet",
+          "settings": {
+            "product": "furna-collection",
+            "best_for": "Task chairs · Conference",
+            "weight": "760 g/m²",
+            "composition": "PVC 83% · CO 17%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "34 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · DIN 4102 B2 · NF P 92-507 M2",
+            "hygiene": "Sanitized® antimicrobial finish · alcohol and bleach resistant",
+            "warranty": "10 years on stock-service materials",
+            "badges": "100% vegan · Animal Free VVV+ · REACH compliant · Light resistant · Phthalate free · Flame retardant"
+          }
+        },
+        "mara": {
+          "type": "sheet",
+          "settings": {
+            "product": "mara-collection",
+            "best_for": "Heavy-duty seating · Reception",
+            "weight": "920 g/m²",
+            "composition": "PVC 76% · CO 24%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "48 colours",
+            "fire": "EN 1021-1+2 · ten standards in total, see the technical sheet",
+            "hygiene": "Sanitized® antimicrobial finish · alcohol and bleach resistant",
+            "warranty": "10 years on stock-service materials",
+            "badges": "100% vegan · Animal Free VVV+ · REACH compliant · Flame retardant"
+          }
+        },
+        "portus": {
+          "type": "sheet",
+          "settings": {
+            "product": "portus-collection",
+            "best_for": "Contract seating · Crib 5 briefs",
+            "weight": "760 g/m²",
+            "composition": "PVC 83% · CO 17%",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "—",
+            "fire": "BS 5852 Crib 5 · DIN 4102 B2 · EN 1021-1+2",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "10 years on stock-service materials",
+            "badges": "100% vegan · Animal Free VVV+ · REACH compliant · Flame retardant",
+            "note": "<p>Becomes <strong>Chance Crib 5</strong> with the CHANCE 2.0 launch — same quality, new name.</p>"
+          }
+        },
+        "elefante": {
+          "type": "sheet",
+          "settings": {
+            "product": "elefante-collection",
+            "best_for": "Task chairs · Lounge",
+            "weight": "760 g/m²",
+            "composition": "PVC 83% · CO 17%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "14 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · DIN 4102 B2 · NF P 92-507 M2",
+            "hygiene": "Sanitized® antimicrobial finish · alcohol and bleach resistant",
+            "warranty": "10 years on stock-service materials",
+            "badges": "100% vegan · Animal Free VVV+ · REACH compliant · Light resistant · Phthalate free · Flame retardant"
+          }
+        },
+        "glam": {
+          "type": "sheet",
+          "settings": {
+            "product": "glam-collection",
+            "best_for": "Soft seating · Reception",
+            "weight": "660 g/m²",
+            "composition": "PVC 87% · PES 8% · CO 5%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "42 colours",
+            "fire": "EN 1021-1+2 · EN 597-1+2 · NF P 92-507 M2",
+            "hygiene": "Sanitized® antimicrobial finish · alcohol resistant",
+            "warranty": "10 years on stock-service materials",
+            "badges": "100% vegan · Animal Free VVV+ · REACH compliant · Light resistant · Flame retardant"
+          }
+        },
+        "jazz": {
+          "type": "sheet",
+          "settings": {
+            "product": "jazz-collection",
+            "best_for": "Soft seating · Textile look",
+            "weight": "660 g/m²",
+            "composition": "PVC 87% · PES 8% · CO 5%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "ISO 5470-2",
+            "colours": "16 colours",
+            "fire": "EN 1021-1+2 · EN 597-1+2 · NF P 92-507 M2",
+            "hygiene": "Sanitized® antimicrobial finish · alcohol and bleach resistant",
+            "warranty": "10 years on stock-service materials",
+            "badges": "Animal Free VVV+ · Textile look"
+          }
+        },
+        "straw": {
+          "type": "sheet",
+          "settings": {
+            "product": "straw-collection",
+            "best_for": "Reception · Light-use seating",
+            "weight": "660 g/m²",
+            "composition": "PVC 70% · CO 30%",
+            "abrasion": "50.000 Martindale",
+            "abrasion_note": "ISO 5470-2 · light use",
+            "colours": "11 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · NF P 92-507 M2",
+            "hygiene": "Bacterial and fungal resistant · alcohol and bleach resistant",
+            "warranty": "",
+            "badges": "Fabric look · Light resistant · Easy clean",
+            "note": "<p>Predominantly handmade process: a higher colour variation between production batches is inherent and enhances the individuality of each piece.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "furna",
+        "mara",
+        "portus",
+        "elefante",
+        "glam",
+        "jazz",
+        "straw"
+      ],
+      "settings": {
+        "title": "What we bring for office",
+        "link_label": "All office upholstery fabrics",
+        "link_url": "/collections/office-fabrics-upholstery",
+        "intro": "<p>Seven office collections on the stand, with the figures specifiers ask for first. Every one is available as a free sample today.</p>",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "<p>Figures from the current web catalogues; abrasion to ISO 5470-2. The complete list of fire standards and test reports is on each product page. <strong>CHANCE 2.0 Classic</strong> (236 colours, one iconic texture) is previewed at the stand; samples follow with the launch of our new website.</p>",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
     }
   },
   "order": [
@@ -361,7 +463,7 @@
     "cta_bar",
     "proof",
     "intro",
-    "sectors",
+    "sheets",
     "why",
     "chance",
     "biobased",
