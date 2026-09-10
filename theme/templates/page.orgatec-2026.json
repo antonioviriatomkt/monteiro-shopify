@@ -47,57 +47,51 @@
       }
     },
     "proof": {
-      "type": "text-columns-with-images",
+      "type": "proof-strip",
       "blocks": {
         "since": {
-          "type": "text_block",
+          "type": "item",
           "settings": {
-            "enable_image": false,
+            "icon": "award",
             "title": "Coated fabrics since 1967",
-            "text": "<p>Family-owned manufacturer, fourth generation.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "<p>Family-owned manufacturer, fourth generation.</p>"
           }
         },
         "portugal": {
-          "type": "text_block",
+          "type": "item",
           "settings": {
-            "enable_image": false,
+            "icon": "map_pin",
             "title": "Made in Portugal",
-            "text": "<p>Own facilities, European-only supplier base.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "<p>Own facilities, European-only supplier base.</p>"
           }
         },
         "iso": {
-          "type": "text_block",
+          "type": "item",
           "settings": {
-            "enable_image": false,
+            "icon": "shield",
             "title": "ISO 9001 & ISO 14001",
-            "text": "<p>Certified quality and environmental management.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "<p>Certified quality and environmental management.</p>"
           }
         },
         "warranty": {
-          "type": "text_block",
+          "type": "item",
           "settings": {
-            "enable_image": false,
+            "icon": "calendar",
             "title": "10-year warranty",
-            "text": "<p>The longest on the market, on stock-service materials.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "<p>The longest on the market, on stock-service materials.</p>"
           }
         }
       },
-      "block_order": ["since", "portugal", "iso", "warranty"],
+      "block_order": [
+        "since",
+        "portugal",
+        "iso",
+        "warranty"
+      ],
       "settings": {
-        "title": "",
-        "text_alignment": "left",
-        "button_style": "link",
-        "media_shape": "natural",
-        "alternate_bg_color": true,
-        "full_width": false
+        "alignment": "left",
+        "alternate_bg_color": false,
+        "padding": 24
       }
     },
     "intro": {
@@ -141,7 +135,10 @@
           }
         }
       },
-      "block_order": ["office", "healthcare"],
+      "block_order": [
+        "office",
+        "healthcare"
+      ],
       "settings": {
         "title": "Sectors we specify for",
         "alternate_bg_color": false,
@@ -151,15 +148,58 @@
     "office_products": {
       "type": "product-list",
       "blocks": {
-        "furna": { "type": "product", "settings": { "product": "furna-collection" } },
-        "mara": { "type": "product", "settings": { "product": "mara-collection" } },
-        "portus": { "type": "product", "settings": { "product": "portus-collection" } },
-        "elefante": { "type": "product", "settings": { "product": "elefante-collection" } },
-        "glam": { "type": "product", "settings": { "product": "glam-collection" } },
-        "jazz": { "type": "product", "settings": { "product": "jazz-collection" } },
-        "straw": { "type": "product", "settings": { "product": "straw-collection" } }
+        "furna": {
+          "type": "product",
+          "settings": {
+            "product": "furna-collection"
+          }
+        },
+        "mara": {
+          "type": "product",
+          "settings": {
+            "product": "mara-collection"
+          }
+        },
+        "portus": {
+          "type": "product",
+          "settings": {
+            "product": "portus-collection"
+          }
+        },
+        "elefante": {
+          "type": "product",
+          "settings": {
+            "product": "elefante-collection"
+          }
+        },
+        "glam": {
+          "type": "product",
+          "settings": {
+            "product": "glam-collection"
+          }
+        },
+        "jazz": {
+          "type": "product",
+          "settings": {
+            "product": "jazz-collection"
+          }
+        },
+        "straw": {
+          "type": "product",
+          "settings": {
+            "product": "straw-collection"
+          }
+        }
       },
-      "block_order": ["furna", "mara", "portus", "elefante", "glam", "jazz", "straw"],
+      "block_order": [
+        "furna",
+        "mara",
+        "portus",
+        "elefante",
+        "glam",
+        "jazz",
+        "straw"
+      ],
       "settings": {
         "title": "Office & contract furniture — on the stand",
         "layout": "rows",
@@ -172,10 +212,23 @@
     "healthcare_products": {
       "type": "product-list",
       "blocks": {
-        "mediflex": { "type": "product", "settings": { "product": "mediflex-collection" } },
-        "electra": { "type": "product", "settings": { "product": "electra-collection" } }
+        "mediflex": {
+          "type": "product",
+          "settings": {
+            "product": "mediflex-collection"
+          }
+        },
+        "electra": {
+          "type": "product",
+          "settings": {
+            "product": "electra-collection"
+          }
+        }
       },
-      "block_order": ["mediflex", "electra"],
+      "block_order": [
+        "mediflex",
+        "electra"
+      ],
       "settings": {
         "title": "Healthcare — on the stand",
         "layout": "rows",
@@ -230,7 +283,10 @@
           }
         }
       },
-      "block_order": ["bioblend", "origin"],
+      "block_order": [
+        "bioblend",
+        "origin"
+      ],
       "settings": {
         "title": "Biobased options for both sectors",
         "text_alignment": "left",
@@ -318,7 +374,11 @@
           }
         }
       },
-      "block_order": ["when", "where", "stand"],
+      "block_order": [
+        "when",
+        "where",
+        "stand"
+      ],
       "settings": {
         "title": "Practical",
         "text_alignment": "left",
