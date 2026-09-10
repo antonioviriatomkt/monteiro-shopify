@@ -456,6 +456,166 @@
         "padding_top": 70,
         "padding_bottom": 70
       }
+    },
+    "certs": {
+      "type": "media-text-ctas",
+      "blocks": {
+        "iso": {
+          "type": "item",
+          "settings": {
+            "label": "ISO 9001 & ISO 14001",
+            "detail": "Quality and environmental management, TÜV Rheinland certified"
+          }
+        },
+        "sanitized": {
+          "type": "item",
+          "settings": {
+            "label": "Sanitized® antimicrobial finish",
+            "detail": "Bacterial and fungal resistance on the contract qualities"
+          }
+        },
+        "fire": {
+          "type": "item",
+          "settings": {
+            "label": "EN 1021-1+2 · BS 5852 Crib 5 · DIN 4102 B2",
+            "detail": "Fire standards on the office contract qualities"
+          }
+        },
+        "nfp": {
+          "type": "item",
+          "settings": {
+            "label": "NF P 92-507 M2",
+            "detail": "French classification, all office collections"
+          }
+        },
+        "animal": {
+          "type": "item",
+          "settings": {
+            "label": "Animal Free VVV+ (LAV)",
+            "detail": "100% vegan, highest level"
+          }
+        },
+        "reach": {
+          "type": "item",
+          "settings": {
+            "label": "REACH compliant · phthalate free",
+            "detail": "European chemical compliance"
+          }
+        },
+        "warranty": {
+          "type": "item",
+          "settings": {
+            "label": "10-year warranty",
+            "detail": "The longest on the market, on stock-service materials"
+          }
+        },
+        "portugal": {
+          "type": "item",
+          "settings": {
+            "label": "Made in Portugal",
+            "detail": "Own facilities, European-only supplier base"
+          }
+        }
+      },
+      "block_order": [
+        "iso",
+        "sanitized",
+        "fire",
+        "nfp",
+        "animal",
+        "reach",
+        "warranty",
+        "portugal"
+      ],
+      "settings": {
+        "eyebrow": "Certifications",
+        "title": "Certified where it counts.",
+        "title_size": 34,
+        "text": "<p>Office programmes are specified against standards, not adjectives. Our coated fabrics are tested in-house and by certified third-party laboratories, and the certificates travel with every collection.</p>",
+        "btn1_label": "See the collections",
+        "btn1_link": "#shopify-section-template--30179559145849__sheets",
+        "btn1_cta": "orgatec_collections_scroll",
+        "btn2_label": "Contact us",
+        "btn2_link": "#shopify-section-template--30179559145849__meeting_intro",
+        "btn2_cta": "orgatec_meeting_scroll",
+        "image_position": "right",
+        "media_ratio": "4/3",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 40
+      }
+    },
+    "tech": {
+      "type": "media-text-ctas",
+      "blocks": {
+        "abrasion": {
+          "type": "item",
+          "settings": {
+            "label": "Up to 400.000 Martindale",
+            "detail": "Abrasion to ISO 5470-2"
+          }
+        },
+        "weight": {
+          "type": "item",
+          "settings": {
+            "label": "660–920 g/m²",
+            "detail": "PVC-coated on cotton or polyester-cotton backings"
+          }
+        },
+        "width": {
+          "type": "item",
+          "settings": {
+            "label": "1.37–1.40 m width",
+            "detail": "Rolls of ± 25–35 m"
+          }
+        },
+        "clean": {
+          "type": "item",
+          "settings": {
+            "label": "Alcohol and bleach resistant",
+            "detail": "Easy-clean surfaces for daily use"
+          }
+        },
+        "light": {
+          "type": "item",
+          "settings": {
+            "label": "Light resistant",
+            "detail": "Colour fastness for daylit workplaces"
+          }
+        },
+        "stock": {
+          "type": "item",
+          "settings": {
+            "label": "Stock service from one roll",
+            "detail": "Ready colours for programmes and small series"
+          }
+        }
+      },
+      "block_order": [
+        "abrasion",
+        "weight",
+        "width",
+        "clean",
+        "light",
+        "stock"
+      ],
+      "settings": {
+        "eyebrow": "Technical information",
+        "title": "The figures behind the fabrics.",
+        "title_size": 34,
+        "text": "<p>Heavy-duty matt qualities for task and conference seating, lighter fabric-look qualities for soft seating and reception. Each collection page carries the full technical sheet, colour range and test reports.</p>",
+        "btn1_label": "See the collections",
+        "btn1_link": "#shopify-section-template--30179559145849__sheets",
+        "btn1_cta": "orgatec_collections_scroll",
+        "btn2_label": "Contact us",
+        "btn2_link": "#shopify-section-template--30179559145849__meeting_intro",
+        "btn2_cta": "orgatec_meeting_scroll",
+        "image_position": "left",
+        "media_ratio": "4/3",
+        "alternate_bg_color": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -463,6 +623,8 @@
     "cta_bar",
     "proof",
     "intro",
+    "certs",
+    "tech",
     "sheets",
     "why",
     "chance",
