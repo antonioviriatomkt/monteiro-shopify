@@ -20,6 +20,7 @@
   assign contact_url = base | append: '/pages/contact'
   assign chance_url = base | append: '/pages/chance-collection'
   assign phase = section.settings.phase | default: 'pre'
+  assign show_body = section.settings.show_body
   assign hall = section.settings.hall | default: 'Hall 10.2'
   assign stand = section.settings.stand | default: 'Stand Q059'
   assign lp_url = shop.url | append: '/pages/' | append: page.handle
@@ -371,7 +372,7 @@
         <p class="o26-lead">{{ s_lead }}</p>
         <div class="o26-actions">
           <a class="o26-btn" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="hero">{{ s_cta_samples }}</a>
-          {%- if phase != 'post' -%}
+          {%- if phase != 'post' and show_body -%}
             <a class="o26-btn o26-btn--ghost" href="#meeting" data-cta="orgatec_meeting_scroll" data-cta-slot="hero">{{ s_cta_meeting }}</a>
           {%- else -%}
             <a class="o26-btn o26-btn--ghost" href="{{ contact_url }}" data-cta="orgatec_contact" data-cta-slot="hero">{{ s_cta_contact }}</a>
@@ -389,6 +390,7 @@
     </div>
   </section>
 
+  {%- if show_body -%}
   {%- comment -%} Facts {%- endcomment -%}
   <section class="o26-facts">
     <div class="o26-wrap">
@@ -671,6 +673,7 @@
       </div>
     </div>
   </section>
+  {%- endif -%}
 
 </div>
 
@@ -744,6 +747,13 @@
   "tag": "section",
   "class": "section--orgatec-2026",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_body",
+      "label": "Show the page body below the hero",
+      "info": "Facts, collection cards, samples band, meeting form and practical info. Off = event bar + hero only.",
+      "default": false
+    },
     {
       "type": "select",
       "id": "phase",

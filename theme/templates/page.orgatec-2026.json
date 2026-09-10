@@ -5,9 +5,12 @@
       "settings": {
         "phase": "pre",
         "hall": "Hall 10.2",
-        "stand": "Stand Q059"
+        "stand": "Stand Q059",
+        "show_body": false
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
