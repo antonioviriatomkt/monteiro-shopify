@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "orgatec-2026",
+      "settings": {
+        "phase": "pre",
+        "hall": "Hall 10.2",
+        "stand": "Stand Q059"
+      }
+    }
+  },
+  "order": ["main"]
+}

@@ -1,0 +1,782 @@
+{%- comment -%}
+  ORGATEC 2026 landing page — one self-contained section.
+  Campaign: MONTEIRO_GG_LEADS_ORGATEC_09-26 (Google Ads, DACH).
+  Bilingual by locale (DE / EN fallback), own CSS, native contact form
+  for stand meetings, .ics download, Event JSON-LD, pre/live/post phase.
+  Copy for the collection cards is transcribed from the stand panels (09/2026).
+{%- endcomment -%}
+
+{%- liquid
+  assign de = false
+  if request.locale.iso_code == 'de'
+    assign de = true
+  endif
+
+  assign base = routes.root_url
+  if base == '/'
+    assign base = ''
+  endif
+  assign samples_url = base | append: '/pages/free-samples'
+  assign contact_url = base | append: '/pages/contact'
+  assign chance_url = base | append: '/pages/chance-collection'
+  assign phase = section.settings.phase | default: 'pre'
+  assign hall = section.settings.hall | default: 'Hall 10.2'
+  assign stand = section.settings.stand | default: 'Stand Q059'
+  assign lp_url = shop.url | append: '/pages/' | append: page.handle
+
+  if de
+    assign s_bar_dates = '27.–30. Oktober 2026'
+    assign s_bar_venue = 'Koelnmesse, Köln'
+    assign s_hall = hall | replace: 'Hall', 'Halle'
+    assign s_eyebrow = 'ORGATEC 2026 · Köln'
+    assign s_h1_pre = 'Besuchen Sie Monteiro Fabrics auf der ORGATEC 2026'
+    assign s_h1_live = 'Diese Woche auf der ORGATEC: Monteiro Fabrics, Halle 10.2, Stand Q059'
+    assign s_h1_post = 'Danke für Ihren Besuch auf der ORGATEC 2026'
+    assign s_lead_pre = 'Beschichtete Möbelstoffe aus Portugal, seit 1967. Sehen Sie CHANCE 2.0, ELECTRA, STRAW, ORIGIN und unsere Bürokollektionen in Köln – oder bestellen Sie schon jetzt kostenlose Muster.'
+    assign s_lead_live = 'Wir sind bis Freitag, 18:00 Uhr, in Halle 10.2 am Stand Q059. Kommen Sie vorbei – oder bestellen Sie kostenlose Muster für nach der Messe.'
+    assign s_lead_post = 'Sie konnten nicht nach Köln kommen oder möchten ein Material noch einmal in der Hand halten? Bestellen Sie kostenlose Muster unserer Kollektionen.'
+    assign s_cta_samples = 'Kostenlose Muster bestellen'
+    assign s_cta_samples_sub = 'Versand vor der Messe'
+    assign s_cta_meeting = 'Termin am Stand vereinbaren'
+    assign s_cta_contact = 'Kontakt aufnehmen'
+    assign s_fact_1_k = 'Seit 1967'
+    assign s_fact_1_v = 'Spezialist für beschichtete Möbelstoffe'
+    assign s_fact_2_k = 'Made in Portugal'
+    assign s_fact_2_v = 'Eigene Produktion in Porto'
+    assign s_fact_3_k = 'ISO 9001 & 14001'
+    assign s_fact_3_v = 'Zertifiziertes Unternehmen'
+    assign s_fact_4_k = '10 Jahre Garantie'
+    assign s_fact_4_v = 'Auf Lagerservice-Materialien'
+    assign s_bring_eyebrow = 'Am Stand'
+    assign s_bring_h2 = 'Was wir nach Köln mitbringen'
+    assign s_bring_lead = 'Sechs Kollektionen für Büro, Objekt, Healthcare und öffentliche Bereiche. Jede können Sie vorab als kostenloses Muster bestellen.'
+    assign s_explore = 'Kollektion ansehen'
+    assign s_samples = 'Muster bestellen'
+    assign s_grades = 'Sechs Qualitäten'
+    assign s_chance_tag = '236 Farben, eine ikonische Struktur'
+    assign s_chance_desc = 'Ein unerreichtes Farbspektrum bei beschichteten Möbelstoffen. Geschmeidig, langlebig und pflegeleicht.'
+    assign s_chance_chips = '100 % vegan|Langlebig|Phthalatfrei|Lichtecht|Abriebfest|REACH-konform'
+    assign s_mediflex_sector = 'Healthcare'
+    assign s_mediflex_desc = 'Pflegeleichte Oberfläche, mehrlagige PVC-Beschichtung mit antimykotischer, antibakterieller und antiviraler Ausrüstung.'
+    assign s_mediflex_chips = 'Bielastisch|Leicht zu reinigen|Nicht hautreizend|Antimikrobiell & antiviral'
+    assign s_crib_sector = 'Stadien & Auditorien'
+    assign s_crib_desc = 'Außergewöhnliche Haltbarkeit für stark frequentierte öffentliche Bereiche.'
+    assign s_crib_chips = 'DIN 4102 B1|NF P 92-507 M1|BS 5852 Crib 7|Schweißbar|Schwer entflammbar'
+    assign s_bioblend_sector = 'Biobasiert'
+    assign s_bioblend_desc = 'Biobasierter Polsterstoff mit natürlichen Nebenprodukten: 65 % pflanzenbasierte Materialien mit Kastanienresten, 35 % PVC.'
+    assign s_bioblend_chips = 'Pflanzenbasiert|Bio-Baumwolle|Abriebfest|Phthalatfrei|Schwer entflammbar'
+    assign s_electra_sector = 'Healthcare'
+    assign s_electra_tag = 'Antistatisch muss nicht schwarz sein'
+    assign s_electra_desc = 'Langlebiger, bielastischer und antistatischer Polsterstoff mit erweiterter Farbpalette für Healthcare-Umgebungen.'
+    assign s_electra_chips = 'ESD-Schutz|Bielastisch|Leicht zu reinigen|Nicht hautreizend|Antimikrobiell & antiviral'
+    assign s_straw_tag = 'Sieht aus wie Stoff, leistet wie ein Profi'
+    assign s_straw_desc = 'Textile Optik mit der Leistung eines beschichteten Möbelstoffs.'
+    assign s_straw_chips = 'Lichtecht|Leicht zu reinigen'
+    assign s_origin_tag = 'Wasserbasiert · Pflanzenbasiert'
+    assign s_origin_desc = 'Hergestellt aus einer wasserbasierten Formulierung und biobasierten Reststoffen auf einer Naturfaserbasis: 53 % Naturfasern, 28 % Polyurethan, 19 % pflanzenbasierte Materialien aus Zuckerrohr-, Ölpflanzen- und Olivenverarbeitung.'
+    assign s_origin_chips = 'Pflanzenbasiert|Wasserbasis'
+    assign s_office_sector = 'Büro'
+    assign s_office_tag = 'PU Office'
+    assign s_office_desc = 'Elegante, strapazierfähige Bürostoffe für stilvolle und komfortable Arbeitsplätze.'
+    assign s_office_chips = 'Abriebfest|Schwer entflammbar'
+    assign s_fabric_tag = 'PVC Fabric Look'
+    assign s_fabric_desc = 'Textile Seele, robuster Kern, elegante Haptik und die Leistung von PVC.'
+    assign s_fabric_chips = 'Textiloptik|PVC-Leistung'
+    assign s_band_h2 = 'Muster jetzt bestellen – auf Ihrem Schreibtisch, bevor die Messe beginnt.'
+    assign s_band_p = 'Kostenlos, direkt aus unserem Lager in Porto. So vergleichen Sie in Köln bereits mit dem Material in der Hand.'
+    assign s_meeting_eyebrow = 'Am Stand Q059'
+    assign s_meeting_h2 = 'Termin am Stand vereinbaren'
+    assign s_meeting_p = 'Nennen Sie uns Ihren Wunschtag, und unser Team hält Ihnen Zeit frei. Bringen Sie Ihr Projekt mit – wir bringen die Muster.'
+    assign s_f_name = 'Name'
+    assign s_f_company = 'Unternehmen'
+    assign s_f_email = 'E-Mail'
+    assign s_f_phone = 'Telefon (optional)'
+    assign s_f_day = 'Wunschtag'
+    assign s_f_day_any = 'Egal, ich bin flexibel'
+    assign s_f_msg = 'Woran arbeiten Sie? (optional)'
+    assign s_f_send = 'Terminanfrage senden'
+    assign s_f_privacy = 'Wir verwenden Ihre Angaben nur, um diesen Termin zu bestätigen.'
+    assign s_f_ok_h = 'Vielen Dank – Ihre Anfrage ist bei uns.'
+    assign s_f_ok_p = 'Wir bestätigen Ihren Termin innerhalb von zwei Werktagen per E-Mail. Bis dahin: Muster können Sie jetzt schon bestellen.'
+    assign s_f_err = 'Bitte prüfen Sie die markierten Felder.'
+    assign s_info_eyebrow = 'Praktisches'
+    assign s_info_h2 = 'ORGATEC 2026 auf einen Blick'
+    assign s_info_when_k = 'Wann'
+    assign s_info_when_v = '27.–30. Oktober 2026 · täglich 09:00–18:00 Uhr'
+    assign s_info_where_k = 'Wo'
+    assign s_info_where_v = 'Koelnmesse · Messeplatz 1 · 50679 Köln'
+    assign s_info_stand_k = 'Stand'
+    assign s_info_stand_v = 'Halle 10.2 · Stand Q059 · Contract Solutions'
+    assign s_info_cal = 'Zum Kalender hinzufügen'
+    assign s_info_plan = 'Hallenplan auf orgatec.com'
+    assign s_post_h2 = 'ORGATEC verpasst?'
+    assign s_post_p = 'Alle Kollektionen vom Stand können Sie als kostenloses Muster bestellen – oder Sie schreiben uns, und wir stellen Ihnen eine Auswahl zusammen.'
+    assign s_meta_title = 'Monteiro Fabrics auf der ORGATEC 2026 – Halle 10.2, Stand Q059'
+  else
+    assign s_bar_dates = '27–30 October 2026'
+    assign s_bar_venue = 'Koelnmesse, Cologne'
+    assign s_hall = hall
+    assign s_eyebrow = 'ORGATEC 2026 · Cologne'
+    assign s_h1_pre = 'Meet Monteiro Fabrics at ORGATEC 2026'
+    assign s_h1_live = 'This week at ORGATEC: Monteiro Fabrics, Hall 10.2, Stand Q059'
+    assign s_h1_post = 'Thank you for visiting us at ORGATEC 2026'
+    assign s_lead_pre = 'Coated upholstery fabrics made in Portugal since 1967. See CHANCE 2.0, ELECTRA, STRAW, ORIGIN and our office ranges in Cologne — or order free samples before the fair.'
+    assign s_lead_live = 'We are in Hall 10.2 at Stand Q059 until Friday, 18:00. Drop by — or order free samples for after the fair.'
+    assign s_lead_post = 'Could not make it to Cologne, or want a material back in your hands? Order free samples of any collection from the stand.'
+    assign s_cta_samples = 'Order free samples'
+    assign s_cta_samples_sub = 'Shipped before the fair'
+    assign s_cta_meeting = 'Book a meeting at the stand'
+    assign s_cta_contact = 'Get in touch'
+    assign s_fact_1_k = 'Since 1967'
+    assign s_fact_1_v = 'Specialists in coated fabrics'
+    assign s_fact_2_k = 'Made in Portugal'
+    assign s_fact_2_v = 'Our own plant in Porto'
+    assign s_fact_3_k = 'ISO 9001 & 14001'
+    assign s_fact_3_v = 'Certified company'
+    assign s_fact_4_k = '10-year warranty'
+    assign s_fact_4_v = 'On stock-service materials'
+    assign s_bring_eyebrow = 'On the stand'
+    assign s_bring_h2 = 'What we are bringing to Cologne'
+    assign s_bring_lead = 'Six collections for office, contract, healthcare and public venues. Every one of them can be ordered as a free sample today.'
+    assign s_explore = 'Explore the collection'
+    assign s_samples = 'Order samples'
+    assign s_grades = 'Six grades'
+    assign s_chance_tag = '236 colours, one iconic texture'
+    assign s_chance_desc = 'An unrivalled colour spectrum in coated fabrics. Supple, long lasting and low-maintenance.'
+    assign s_chance_chips = '100% vegan|Long lasting|Phthalate free|Light resistant|Abrasion resistant|REACH compliant'
+    assign s_mediflex_sector = 'Healthcare'
+    assign s_mediflex_desc = 'Easy-to-clean finishing over a multilayer PVC coating with antifungal, antibacterial and antiviral protection.'
+    assign s_mediflex_chips = 'Bielastic|Easy clean|Non skin-irritant|Antimicrobial & antiviral'
+    assign s_crib_sector = 'Stadiums & auditoriums'
+    assign s_crib_desc = 'Exceptional durability for high-traffic public venues.'
+    assign s_crib_chips = 'DIN 4102 B1|NF P 92-507 M1|BS 5852 Crib 7|Weldable|Flame retardant'
+    assign s_bioblend_sector = 'Bio-based'
+    assign s_bioblend_desc = 'Bio-based upholstery incorporating natural by-products: 65% plant-based materials with chestnut residues, 35% PVC.'
+    assign s_bioblend_chips = 'Plant based|Organic cotton|Abrasion resistant|Phthalate free|Flame retardant'
+    assign s_electra_sector = 'Healthcare'
+    assign s_electra_tag = 'Antistatic does not have to be black'
+    assign s_electra_desc = 'Durable, bielastic and antistatic upholstery with an extended colour palette for healthcare environments.'
+    assign s_electra_chips = 'ESD protective|Bielastic|Easy clean|Non skin-irritant|Antimicrobial & antiviral'
+    assign s_straw_tag = 'Looks like fabric, performs like a pro'
+    assign s_straw_desc = 'A textile look with the performance of a coated upholstery fabric.'
+    assign s_straw_chips = 'Light resistant|Easy clean'
+    assign s_origin_tag = 'Water-based · Plant-based'
+    assign s_origin_desc = 'Produced from a water-based formulation and bio-based waste combined with a natural fibre base: 53% natural fibres, 28% polyurethane, 19% plant-based materials from sugar-crop, oil-crop and olive-processing residues.'
+    assign s_origin_chips = 'Plant based|Water base'
+    assign s_office_sector = 'Office'
+    assign s_office_tag = 'PU Office'
+    assign s_office_desc = 'Sleek, durable office fabrics for stylish and comfortable workspaces.'
+    assign s_office_chips = 'Abrasion resistant|Flame retardant'
+    assign s_fabric_tag = 'PVC Fabric Look'
+    assign s_fabric_desc = 'Textile soul, durable heart, elegant feel and PVC high performance.'
+    assign s_fabric_chips = 'Textile look|PVC performance'
+    assign s_band_h2 = 'Order samples now — on your desk before the fair opens.'
+    assign s_band_p = 'Free of charge, straight from our warehouse in Porto. Arrive in Cologne already comparing with the material in hand.'
+    assign s_meeting_eyebrow = 'At Stand Q059'
+    assign s_meeting_h2 = 'Book a meeting at the stand'
+    assign s_meeting_p = 'Tell us your preferred day and our team will keep the time for you. Bring your project — we will bring the samples.'
+    assign s_f_name = 'Name'
+    assign s_f_company = 'Company'
+    assign s_f_email = 'Email'
+    assign s_f_phone = 'Phone (optional)'
+    assign s_f_day = 'Preferred day'
+    assign s_f_day_any = 'Any day, I am flexible'
+    assign s_f_msg = 'What are you working on? (optional)'
+    assign s_f_send = 'Send meeting request'
+    assign s_f_privacy = 'We only use your details to confirm this meeting.'
+    assign s_f_ok_h = 'Thank you — your request is with us.'
+    assign s_f_ok_p = 'We will confirm your meeting by email within two working days. In the meantime, samples can be ordered right away.'
+    assign s_f_err = 'Please check the highlighted fields.'
+    assign s_info_eyebrow = 'Practical'
+    assign s_info_h2 = 'ORGATEC 2026 at a glance'
+    assign s_info_when_k = 'When'
+    assign s_info_when_v = '27–30 October 2026 · daily 09:00–18:00'
+    assign s_info_where_k = 'Where'
+    assign s_info_where_v = 'Koelnmesse · Messeplatz 1 · 50679 Cologne, Germany'
+    assign s_info_stand_k = 'Stand'
+    assign s_info_stand_v = 'Hall 10.2 · Stand Q059 · Contract Solutions'
+    assign s_info_cal = 'Add to calendar'
+    assign s_info_plan = 'Hall plan on orgatec.com'
+    assign s_post_h2 = 'Missed ORGATEC?'
+    assign s_post_p = 'Every collection from the stand can be ordered as a free sample — or write to us and we will put a selection together for you.'
+    assign s_meta_title = 'Monteiro Fabrics at ORGATEC 2026 — Hall 10.2, Stand Q059'
+  endif
+
+  case phase
+    when 'live'
+      assign s_h1 = s_h1_live
+      assign s_lead = s_lead_live
+    when 'post'
+      assign s_h1 = s_h1_post
+      assign s_lead = s_lead_post
+    else
+      assign s_h1 = s_h1_pre
+      assign s_lead = s_lead_pre
+  endcase
+
+-%}
+
+{%- capture chance_mosaic -%}
+  {%- assign mosaic = '#c8b8a6,#e8d9c4,#f2e6d2,#d9c6a8,#c9a86a,#e0b64a,#f0c94b,#f5d76e,#e7a53a,#d97b2c,#c9542b,#b8332b,#8f2a2a,#6e1f2c,#a44a5c,#d98aa0,#e9b4c1,#b57fa6,#7a4f8c,#4c3a7a,#2e3f7a,#2f519b,#3f6fb0,#5c8fc4,#8bb6d8,#b9d3e6,#6fa9a3,#3d8a86,#2f6f6b,#255b52,#3f7a4a,#6c9a52,#9bb85f,#c9d47c,#e2e6a3,#8a8a7a,#5e6062,#3b3d3f,#232526,#151617,#d5d0c8,#bdb6ac,#9d948a,#7d746b,#5f574f,#8c7358,#a98a6b,#c7a98a' | split: ',' -%}
+  <div class="o26-mosaic" aria-hidden="true">
+    {%- for c in mosaic -%}<i style="background:{{ c }}"></i>{%- endfor -%}
+  </div>
+{%- endcapture -%}
+
+<style>
+  .o26 { --sand:#CFBFAE; --sand-ink:#2E2620; --mist:#B4C2C2; --mist-ink:#1F2A2A; --sage:#7E8B71; --taupe:#877A6D; --ink:#161616; --paper:#FFFFFF; --line:rgba(0,0,0,.12); --track:.12em; color:var(--ink); font-family:inherit; }
+  .o26 *, .o26 *::before, .o26 *::after { box-sizing:border-box; }
+  .o26 a { color:inherit; }
+  .o26 .o26-wrap { max-width:1180px; margin:0 auto; padding:0 24px; }
+  .o26 .o26-eyebrow { display:block; font-size:12px; letter-spacing:.2em; text-transform:uppercase; opacity:.7; margin:0 0 14px; }
+  .o26 .o26-display { font-weight:300; text-transform:uppercase; letter-spacing:var(--track); line-height:1.05; margin:0; text-align:left; color:inherit; }
+  .o26 .o26-eyebrow, .o26 p, .o26 dl, .o26 ul { text-align:left; }
+  .o26 h1.o26-display { font-size:clamp(30px,4.6vw,58px); }
+  .o26 h2.o26-display { font-size:clamp(26px,3.4vw,42px); }
+  .o26 h3.o26-display { font-size:clamp(22px,2.6vw,32px); }
+  .o26 .o26-lead { font-size:clamp(16px,1.5vw,19px); line-height:1.55; max-width:62ch; margin:20px 0 0; }
+  .o26 .o26-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:16px 26px; border:1px solid var(--ink); background:var(--ink); color:#fff; text-decoration:none; font-size:14px; letter-spacing:.08em; text-transform:uppercase; line-height:1.2; transition:transform .25s, background .25s, color .25s; cursor:pointer; -webkit-appearance:none; border-radius:0; font-family:inherit; }
+  .o26 .o26-btn:hover { transform:translateY(-2px); }
+  .o26 .o26-btn--ghost { background:transparent; color:var(--ink); }
+  .o26 .o26-btn--light { background:#fff; color:var(--ink); border-color:#fff; }
+  .o26 .o26-btn--ghost-light { background:transparent; color:#fff; border-color:rgba(255,255,255,.7); }
+  .o26 .o26-btn small { display:block; font-size:11px; letter-spacing:.06em; text-transform:none; opacity:.75; }
+  .o26 .o26-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
+
+  /* Event bar */
+  .o26-bar { background:var(--ink); color:#fff; font-size:13px; letter-spacing:.06em; }
+  .o26-bar .o26-wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 28px; min-height:48px; padding-top:10px; padding-bottom:10px; }
+  .o26-bar strong { font-weight:600; letter-spacing:.1em; text-transform:uppercase; }
+  .o26-bar span + span::before { content:""; display:inline-block; width:1px; height:12px; background:rgba(255,255,255,.35); margin-right:28px; vertical-align:-1px; }
+  @media (max-width:640px){ .o26-bar span + span::before { display:none; } .o26-bar .o26-wrap { gap:4px 16px; font-size:12px; } }
+
+  /* Hero */
+  .o26-hero { background:var(--sand); color:var(--sand-ink); overflow:hidden; }
+  .o26-hero .o26-wrap { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:48px; align-items:center; min-height:560px; padding-top:72px; padding-bottom:72px; }
+  .o26-hero .o26-btn { background:var(--sand-ink); border-color:var(--sand-ink); }
+  .o26-hero .o26-btn--ghost { background:transparent; color:var(--sand-ink); }
+  .o26-hero__media { position:relative; min-height:360px; }
+  .o26-hero__media img { width:100%; height:100%; object-fit:cover; display:block; min-height:360px; }
+  .o26-hero__stand { position:absolute; left:0; bottom:0; background:rgba(255,255,255,.92); color:var(--sand-ink); padding:16px 22px; font-size:13px; letter-spacing:.14em; text-transform:uppercase; }
+  .o26-hero__stand b { display:block; font-size:22px; font-weight:300; letter-spacing:.1em; margin-top:2px; }
+  .o26-mosaic { display:grid; grid-template-columns:repeat(8,1fr); gap:4px; width:100%; aspect-ratio:8/6; }
+  .o26-mosaic i { display:block; aspect-ratio:1; }
+  @media (max-width:860px){ .o26-hero .o26-wrap { grid-template-columns:1fr; min-height:0; padding-top:48px; padding-bottom:48px; } .o26-hero__media { min-height:0; } .o26-hero__media img { min-height:240px; max-height:360px; } }
+
+  /* Facts */
+  .o26-facts { border-bottom:1px solid var(--line); }
+  .o26-facts .o26-wrap { display:grid; grid-template-columns:repeat(4,1fr); }
+  .o26-facts div { padding:26px 20px 26px 0; }
+  .o26-facts div + div { border-left:1px solid var(--line); padding-left:20px; }
+  .o26-facts b { display:block; font-weight:400; font-size:20px; letter-spacing:.04em; }
+  .o26-facts span { display:block; font-size:13px; opacity:.7; margin-top:4px; }
+  @media (max-width:760px){ .o26-facts .o26-wrap { grid-template-columns:1fr 1fr; } .o26-facts div:nth-child(3) { border-left:0; padding-left:0; } .o26-facts div:nth-child(n+3) { border-top:1px solid var(--line); } }
+
+  /* Collections */
+  .o26-bring { padding:80px 0 40px; }
+  .o26-bring .o26-lead { margin-top:16px; }
+  .o26-grid { display:grid; grid-template-columns:repeat(12,1fr); gap:16px; margin-top:40px; }
+  .o26-card { position:relative; display:flex; flex-direction:column; padding:30px; min-height:420px; color:#fff; overflow:hidden; }
+  .o26-card--sand { background:var(--sand); color:var(--sand-ink); }
+  .o26-card--mist { background:var(--mist); color:var(--mist-ink); }
+  .o26-card--sage { background:var(--sage); }
+  .o26-card--taupe { background:var(--taupe); }
+  .o26-card--12 { grid-column:span 12; }
+  .o26-card--6 { grid-column:span 6; }
+  .o26-card--4 { grid-column:span 4; }
+  .o26-card__sector { align-self:flex-start; font-size:11px; letter-spacing:.18em; text-transform:uppercase; padding:8px 12px; border:1px solid currentColor; opacity:.85; margin-bottom:22px; }
+  .o26-card__tag { font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:.8; margin:0 0 10px; }
+  .o26-card__desc { margin:14px 0 0; max-width:48ch; line-height:1.5; font-size:15px; }
+  .o26-card__chips { display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0; padding:0; list-style:none; }
+  .o26-card__chips li { font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; padding:7px 9px; border:1px solid currentColor; opacity:.85; }
+  .o26-card__links { margin-top:auto; padding-top:26px; display:flex; flex-wrap:wrap; gap:8px 22px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
+  .o26-card__links a { text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
+  .o26-card__links a:hover { opacity:.7; }
+  .o26-card__swatch { position:absolute; right:0; top:0; width:38%; max-width:260px; aspect-ratio:1; overflow:hidden; }
+  .o26-card__swatch img { width:100%; height:100%; object-fit:cover; display:block; }
+  .o26-card--has-swatch .o26-card__sector, .o26-card--has-swatch .o26-card__tag, .o26-card--has-swatch h3, .o26-card--has-swatch .o26-card__desc { max-width:60%; }
+  .o26-card__swatches { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin:22px 0 0; }
+  .o26-card__swatches a { display:block; position:relative; aspect-ratio:1; overflow:hidden; text-decoration:none; }
+  .o26-card__swatches img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
+  .o26-card__swatches a:hover img { transform:scale(1.05); }
+  .o26-card__swatches span { position:absolute; left:0; right:0; bottom:0; padding:6px 8px; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:linear-gradient(transparent, rgba(0,0,0,.55)); }
+  .o26-card__swatches--2x2 { grid-template-columns:1fr 1fr; margin:0; max-width:420px; margin-left:auto; align-self:center; width:100%; }
+  .o26-chance { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:32px; }
+  .o26-chance .o26-mosaic { max-width:420px; margin-left:auto; }
+  .o26-chance__grades { display:flex; flex-wrap:wrap; gap:6px 18px; margin:22px 0 0; padding:0; list-style:none; font-size:13px; letter-spacing:.16em; text-transform:uppercase; }
+  .o26-chance__grades li::before { content:"—"; opacity:.5; margin-right:8px; }
+  @media (max-width:980px){ .o26-card--6, .o26-card--4 { grid-column:span 6; } .o26-chance { grid-template-columns:1fr; } .o26-chance .o26-mosaic { max-width:100%; } }
+  @media (max-width:640px){ .o26-card--6, .o26-card--4 { grid-column:span 12; } .o26-card { min-height:0; padding:24px; } .o26-card--has-swatch .o26-card__sector, .o26-card--has-swatch .o26-card__tag, .o26-card--has-swatch h3, .o26-card--has-swatch .o26-card__desc { max-width:100%; } .o26-card__swatch { position:static; width:100%; max-width:100%; aspect-ratio:16/7; margin:-24px -24px 20px; width:calc(100% + 48px); } }
+
+  /* Band */
+  .o26-band { background:var(--ink); color:#fff; padding:72px 0; }
+  .o26-band .o26-wrap { display:grid; grid-template-columns:minmax(0,1.3fr) auto; gap:32px; align-items:center; }
+  .o26-band p { opacity:.75; max-width:56ch; margin:14px 0 0; line-height:1.55; }
+  @media (max-width:860px){ .o26-band .o26-wrap { grid-template-columns:1fr; } }
+
+  /* Meeting form */
+  .o26-meeting { padding:88px 0; background:var(--paper); }
+  .o26-meeting .o26-wrap { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:start; }
+  .o26-form { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .o26-form .o26-field--full { grid-column:span 2; }
+  .o26-form label { display:block; font-size:11px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:6px; opacity:.75; }
+  .o26-form input, .o26-form select, .o26-form textarea { width:100%; border:1px solid var(--line); border-radius:0; background:#fff; padding:14px; font:inherit; font-size:15px; color:var(--ink); -webkit-appearance:none; }
+  .o26-form input:focus, .o26-form select:focus, .o26-form textarea:focus { outline:none; border-color:var(--ink); }
+  .o26-form textarea { min-height:110px; resize:vertical; }
+  .o26-form .o26-field--error input { border-color:#B8332B; }
+  .o26-form .o26-form__errors { grid-column:span 2; color:#B8332B; font-size:14px; }
+  .o26-form .o26-form__foot { grid-column:span 2; display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin-top:6px; }
+  .o26-form .o26-form__foot small { font-size:12px; opacity:.6; }
+  .o26-ok { border:1px solid var(--line); padding:32px; }
+  .o26-ok p { margin:12px 0 0; line-height:1.55; }
+  @media (max-width:860px){ .o26-meeting .o26-wrap { grid-template-columns:1fr; gap:32px; } .o26-meeting { padding:56px 0; } }
+  @media (max-width:520px){ .o26-form { grid-template-columns:1fr; } .o26-form .o26-field--full, .o26-form .o26-form__errors, .o26-form .o26-form__foot { grid-column:span 1; } }
+
+  /* Info */
+  .o26-info { background:var(--mist); color:var(--mist-ink); padding:72px 0; }
+  .o26-info dl { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:32px 0 0; }
+  .o26-info dt { font-size:11px; letter-spacing:.18em; text-transform:uppercase; opacity:.7; }
+  .o26-info dd { margin:8px 0 0; font-size:17px; line-height:1.45; }
+  .o26-info .o26-actions { margin-top:36px; }
+  .o26-info .o26-btn { background:var(--mist-ink); border-color:var(--mist-ink); }
+  .o26-info .o26-btn--ghost { background:transparent; color:var(--mist-ink); }
+  @media (max-width:760px){ .o26-info dl { grid-template-columns:1fr; gap:18px; } }
+
+  /* Post-fair */
+  .o26-post { padding:80px 0; text-align:center; }
+  .o26-post .o26-lead { margin-left:auto; margin-right:auto; }
+  .o26-post .o26-actions { justify-content:center; }
+
+  @media (prefers-reduced-motion: reduce){ .o26 .o26-btn, .o26 .o26-card__swatches img { transition:none; } }
+</style>
+
+<div class="o26" id="orgatec-2026">
+
+  {%- comment -%} Event bar {%- endcomment -%}
+  <div class="o26-bar">
+    <div class="o26-wrap">
+      <span><strong>ORGATEC 2026</strong></span>
+      <span>{{ s_bar_dates }}</span>
+      <span>{{ s_bar_venue }}</span>
+      <span><strong>{{ s_hall }} · {{ stand }}</strong></span>
+    </div>
+  </div>
+
+  {%- comment -%} Hero {%- endcomment -%}
+  <section class="o26-hero">
+    <div class="o26-wrap">
+      <div>
+        <span class="o26-eyebrow">{{ s_eyebrow }}</span>
+        <h1 class="o26-display">{{ s_h1 }}</h1>
+        <p class="o26-lead">{{ s_lead }}</p>
+        <div class="o26-actions">
+          <a class="o26-btn" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="hero">{{ s_cta_samples }}</a>
+          {%- if phase != 'post' -%}
+            <a class="o26-btn o26-btn--ghost" href="#meeting" data-cta="orgatec_meeting_scroll" data-cta-slot="hero">{{ s_cta_meeting }}</a>
+          {%- else -%}
+            <a class="o26-btn o26-btn--ghost" href="{{ contact_url }}" data-cta="orgatec_contact" data-cta-slot="hero">{{ s_cta_contact }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="o26-hero__media">
+        {%- if section.settings.hero_image != blank -%}
+          {{ section.settings.hero_image | image_url: width: 1400 | image_tag: loading: 'eager', widths: '600, 900, 1400', sizes: '(max-width: 860px) 100vw, 45vw', alt: section.settings.hero_image.alt | default: 'Monteiro Fabrics at ORGATEC 2026' }}
+        {%- else -%}
+          {{ chance_mosaic }}
+        {%- endif -%}
+        <div class="o26-hero__stand">{{ s_hall }}<b>{{ stand }}</b></div>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} Facts {%- endcomment -%}
+  <section class="o26-facts">
+    <div class="o26-wrap">
+      <div><b>{{ s_fact_1_k }}</b><span>{{ s_fact_1_v }}</span></div>
+      <div><b>{{ s_fact_2_k }}</b><span>{{ s_fact_2_v }}</span></div>
+      <div><b>{{ s_fact_3_k }}</b><span>{{ s_fact_3_v }}</span></div>
+      <div><b>{{ s_fact_4_k }}</b><span>{{ s_fact_4_v }}</span></div>
+    </div>
+  </section>
+
+  {%- comment -%} Collections {%- endcomment -%}
+  <section class="o26-bring" id="collections">
+    <div class="o26-wrap">
+      <span class="o26-eyebrow">{{ s_bring_eyebrow }}</span>
+      <h2 class="o26-display">{{ s_bring_h2 }}</h2>
+      <p class="o26-lead">{{ s_bring_lead }}</p>
+
+      <div class="o26-grid">
+
+        {%- comment -%} CHANCE 2.0 family {%- endcomment -%}
+        <article class="o26-card o26-card--sand o26-card--12">
+          <div class="o26-chance">
+            <div>
+              <p class="o26-card__tag">{{ s_chance_tag }}</p>
+              <h3 class="o26-display">Chance 2.0</h3>
+              <p class="o26-card__desc">{{ s_chance_desc }}</p>
+              <ul class="o26-chance__grades" aria-label="{{ s_grades }}">
+                <li>Classic</li><li>Mediflex</li><li>Bioblend</li><li>Crib 5</li><li>Crib 7 | B1</li><li>Outdoor</li>
+              </ul>
+              <ul class="o26-card__chips">{%- assign chips = s_chance_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+              <div class="o26-card__links">
+                <a href="{{ chance_url }}" data-cta="orgatec_explore" data-collection="chance">{{ s_explore }}</a>
+                <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="chance">{{ s_samples }}</a>
+              </div>
+            </div>
+            <div>{{ chance_mosaic }}</div>
+          </div>
+        </article>
+
+        {%- comment -%} CHANCE sub-grades {%- endcomment -%}
+        <article class="o26-card o26-card--mist o26-card--4 o26-card--has-swatch">
+          {%- if all_products['mediflex-collection'].featured_image -%}
+            <div class="o26-card__swatch">{{ all_products['mediflex-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'CHANCE MEDIFLEX' }}</div>
+          {%- endif -%}
+          <span class="o26-card__sector">{{ s_mediflex_sector }}</span>
+          <h3 class="o26-display">Chance<br>Mediflex</h3>
+          <p class="o26-card__desc">{{ s_mediflex_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_mediflex_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ base }}/products/mediflex-collection" data-cta="orgatec_explore" data-collection="mediflex">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="mediflex">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        <article class="o26-card o26-card--taupe o26-card--4">
+          <span class="o26-card__sector">{{ s_crib_sector }}</span>
+          <h3 class="o26-display">Chance<br>Crib 7 | B1</h3>
+          <p class="o26-card__desc">{{ s_crib_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_crib_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ chance_url }}" data-cta="orgatec_explore" data-collection="crib7-b1">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="crib7">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        <article class="o26-card o26-card--sage o26-card--4">
+          <span class="o26-card__sector">{{ s_bioblend_sector }}</span>
+          <h3 class="o26-display">Chance<br>Bioblend</h3>
+          <p class="o26-card__desc">{{ s_bioblend_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_bioblend_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="bioblend">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        {%- comment -%} ELECTRA {%- endcomment -%}
+        <article class="o26-card o26-card--mist o26-card--6 o26-card--has-swatch">
+          {%- if all_products['electra-collection'].featured_image -%}
+            <div class="o26-card__swatch">{{ all_products['electra-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'ELECTRA' }}</div>
+          {%- endif -%}
+          <span class="o26-card__sector">{{ s_electra_sector }}</span>
+          <p class="o26-card__tag">{{ s_electra_tag }}</p>
+          <h3 class="o26-display">Electra</h3>
+          <p class="o26-card__desc">{{ s_electra_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_electra_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ base }}/products/electra-collection" data-cta="orgatec_explore" data-collection="electra">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="electra">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        {%- comment -%} STRAW {%- endcomment -%}
+        <article class="o26-card o26-card--taupe o26-card--6 o26-card--has-swatch">
+          {%- if all_products['straw-collection'].featured_image -%}
+            <div class="o26-card__swatch">{{ all_products['straw-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'STRAW' }}</div>
+          {%- endif -%}
+          <p class="o26-card__tag">{{ s_straw_tag }}</p>
+          <h3 class="o26-display">Straw</h3>
+          <p class="o26-card__desc">{{ s_straw_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_straw_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ base }}/products/straw-collection" data-cta="orgatec_explore" data-collection="straw">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="straw">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        {%- comment -%} ORIGIN {%- endcomment -%}
+        <article class="o26-card o26-card--sage o26-card--6 o26-card--has-swatch">
+          {%- if all_products['origin-collection'].featured_image -%}
+            <div class="o26-card__swatch">{{ all_products['origin-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'ORIGIN' }}</div>
+          {%- endif -%}
+          <p class="o26-card__tag">{{ s_origin_tag }}</p>
+          <h3 class="o26-display">Origin</h3>
+          <p class="o26-card__desc">{{ s_origin_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_origin_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ base }}/pages/origin-sustainable-fabrics" data-cta="orgatec_explore" data-collection="origin">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="origin">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        {%- comment -%} PU OFFICE {%- endcomment -%}
+        <article class="o26-card o26-card--taupe o26-card--6">
+          <span class="o26-card__sector">{{ s_office_sector }}</span>
+          <p class="o26-card__tag">{{ s_office_tag }}</p>
+          <h3 class="o26-display">Furna · Mara<br>Portus · Elefante</h3>
+          <p class="o26-card__desc">{{ s_office_desc }}</p>
+          <div class="o26-card__swatches">
+            {%- assign office = 'furna,mara,portus,elefante' | split: ',' -%}
+            {%- for h in office -%}
+              {%- assign ph = h | append: '-collection' -%}
+              {%- assign prod = all_products[ph] -%}
+              {%- if prod.featured_image -%}
+                <a href="{{ base }}/products/{{ ph }}" data-cta="orgatec_explore" data-collection="{{ h }}">{{ prod.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', alt: prod.title }}<span>{{ h | upcase }}</span></a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <ul class="o26-card__chips">{%- assign chips = s_office_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ base }}/collections/office-fabrics-upholstery" data-cta="orgatec_explore" data-collection="office">{{ s_explore }}</a>
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="office">{{ s_samples }}</a>
+          </div>
+        </article>
+
+        {%- comment -%} PVC FABRIC LOOK {%- endcomment -%}
+        <article class="o26-card o26-card--sand o26-card--12">
+          <div class="o26-chance">
+          <div>
+          <p class="o26-card__tag">{{ s_fabric_tag }}</p>
+          <h3 class="o26-display">Straw · Siesta<br>Glam · Jazz</h3>
+          <p class="o26-card__desc">{{ s_fabric_desc }}</p>
+          <ul class="o26-card__chips">{%- assign chips = s_fabric_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
+          <div class="o26-card__links">
+            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="fabric-look">{{ s_samples }}</a>
+          </div>
+          </div>
+          <div class="o26-card__swatches o26-card__swatches--2x2">
+            {%- assign fabric = 'straw,siesta,glam,jazz' | split: ',' -%}
+            {%- for h in fabric -%}
+              {%- assign ph = h | append: '-collection' -%}
+              {%- assign prod = all_products[ph] -%}
+              {%- if prod.featured_image -%}
+                <a href="{{ base }}/products/{{ ph }}" data-cta="orgatec_explore" data-collection="{{ h }}">{{ prod.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', alt: prod.title }}<span>{{ h | upcase }}</span></a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} Samples band {%- endcomment -%}
+  <section class="o26-band">
+    <div class="o26-wrap">
+      <div>
+        {%- if phase == 'post' -%}
+          <h2 class="o26-display">{{ s_post_h2 }}</h2>
+          <p>{{ s_post_p }}</p>
+        {%- else -%}
+          <h2 class="o26-display">{{ s_band_h2 }}</h2>
+          <p>{{ s_band_p }}</p>
+        {%- endif -%}
+      </div>
+      <div>
+        <a class="o26-btn o26-btn--light" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="band">{{ s_cta_samples }}</a>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} Meeting form (hidden after the fair) {%- endcomment -%}
+  {%- if phase != 'post' -%}
+  <section class="o26-meeting" id="meeting">
+    <div class="o26-wrap">
+      <div>
+        <span class="o26-eyebrow">{{ s_meeting_eyebrow }}</span>
+        <h2 class="o26-display">{{ s_meeting_h2 }}</h2>
+        <p class="o26-lead">{{ s_meeting_p }}</p>
+      </div>
+      <div>
+        {%- form 'contact', id: 'orgatec-meeting-form', class: 'o26-form', data-form: 'orgatec_meeting' -%}
+          {%- if form.posted_successfully? -%}
+            <div class="o26-ok o26-field--full" data-form-success="orgatec_meeting">
+              <h3 class="o26-display">{{ s_f_ok_h }}</h3>
+              <p>{{ s_f_ok_p }}</p>
+              <div class="o26-actions"><a class="o26-btn" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="form-success">{{ s_cta_samples }}</a></div>
+            </div>
+          {%- else -%}
+            {%- if form.errors -%}
+              <div class="o26-form__errors" role="alert">{{ s_f_err }}
+                <ul>{%- for field in form.errors -%}<li>{{ form.errors.translated_fields[field] | capitalize }} – {{ form.errors.messages[field] }}</li>{%- endfor -%}</ul>
+              </div>
+            {%- endif -%}
+            <input type="hidden" name="contact[Request]" value="ORGATEC 2026 – stand meeting ({{ s_hall }}, {{ stand }})">
+            <input type="hidden" name="contact[Page]" value="{{ request.path }}">
+            <input type="hidden" name="contact[Locale]" value="{{ request.locale.iso_code }}">
+            <input type="hidden" name="contact[utm_source]" value="" data-utm="utm_source">
+            <input type="hidden" name="contact[utm_medium]" value="" data-utm="utm_medium">
+            <input type="hidden" name="contact[utm_campaign]" value="" data-utm="utm_campaign">
+            <input type="hidden" name="contact[utm_content]" value="" data-utm="utm_content">
+            <input type="hidden" name="contact[utm_term]" value="" data-utm="utm_term">
+            <input type="hidden" name="contact[gclid]" value="" data-utm="gclid">
+            <div class="o26-field{% if form.errors contains 'name' %} o26-field--error{% endif %}">
+              <label for="o26-name">{{ s_f_name }}</label>
+              <input id="o26-name" type="text" name="contact[name]" required autocomplete="name" value="{{ form.name }}">
+            </div>
+            <div class="o26-field">
+              <label for="o26-company">{{ s_f_company }}</label>
+              <input id="o26-company" type="text" name="contact[Company]" required autocomplete="organization">
+            </div>
+            <div class="o26-field{% if form.errors contains 'email' %} o26-field--error{% endif %}">
+              <label for="o26-email">{{ s_f_email }}</label>
+              <input id="o26-email" type="email" name="contact[email]" required autocomplete="email" value="{{ form.email }}">
+            </div>
+            <div class="o26-field">
+              <label for="o26-phone">{{ s_f_phone }}</label>
+              <input id="o26-phone" type="tel" name="contact[Phone]" autocomplete="tel">
+            </div>
+            <div class="o26-field o26-field--full">
+              <label for="o26-day">{{ s_f_day }}</label>
+              <select id="o26-day" name="contact[Preferred day]">
+                <option value="{{ s_f_day_any }}">{{ s_f_day_any }}</option>
+                <option value="27.10.2026">{% if de %}Dienstag, 27. Oktober{% else %}Tuesday, 27 October{% endif %}</option>
+                <option value="28.10.2026">{% if de %}Mittwoch, 28. Oktober{% else %}Wednesday, 28 October{% endif %}</option>
+                <option value="29.10.2026">{% if de %}Donnerstag, 29. Oktober{% else %}Thursday, 29 October{% endif %}</option>
+                <option value="30.10.2026">{% if de %}Freitag, 30. Oktober{% else %}Friday, 30 October{% endif %}</option>
+              </select>
+            </div>
+            <div class="o26-field o26-field--full">
+              <label for="o26-msg">{{ s_f_msg }}</label>
+              <textarea id="o26-msg" name="contact[body]">{{ form.body }}</textarea>
+            </div>
+            <div class="o26-form__foot">
+              <button type="submit" class="o26-btn" data-cta="orgatec_meeting_submit">{{ s_f_send }}</button>
+              <small>{{ s_f_privacy }}</small>
+            </div>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- comment -%} Practical info {%- endcomment -%}
+  <section class="o26-info" id="info">
+    <div class="o26-wrap">
+      <span class="o26-eyebrow">{{ s_info_eyebrow }}</span>
+      <h2 class="o26-display">{{ s_info_h2 }}</h2>
+      <dl>
+        <div><dt>{{ s_info_when_k }}</dt><dd>{{ s_info_when_v }}</dd></div>
+        <div><dt>{{ s_info_where_k }}</dt><dd>{{ s_info_where_v }}</dd></div>
+        <div><dt>{{ s_info_stand_k }}</dt><dd>{{ s_info_stand_v }}</dd></div>
+      </dl>
+      <div class="o26-actions">
+        {%- if phase != 'post' -%}
+          <a class="o26-btn" href="#" id="o26-ics" data-cta="orgatec_calendar" download="orgatec-2026-monteiro-fabrics.ics">{{ s_info_cal }}</a>
+        {%- endif -%}
+        <a class="o26-btn o26-btn--ghost" href="https://www.orgatec.com/orgatec-exhibitors/hall-plan/" target="_blank" rel="noopener" data-cta="orgatec_hallplan">{{ s_info_plan }}</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ s_meta_title | json }},
+  "description": {{ s_lead_pre | json }},
+  "startDate": "2026-10-27T09:00:00+01:00",
+  "endDate": "2026-10-30T18:00:00+01:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "url": {{ lp_url | json }},
+  "location": {
+    "@type": "Place",
+    "name": "Koelnmesse — Hall 10.2, Stand Q059",
+    "address": { "@type": "PostalAddress", "streetAddress": "Messeplatz 1", "addressLocality": "Köln", "postalCode": "50679", "addressCountry": "DE" }
+  },
+  "organizer": { "@type": "Organization", "name": "Monteiro Fabrics", "url": "https://www.monteirofabrics.com" },
+  "performer": { "@type": "Organization", "name": "Monteiro Fabrics" }
+}
+</script>
+
+<script>
+  (function () {
+    var root = document.getElementById('orgatec-2026');
+    if (!root) return;
+
+    // 1. Carry inbound campaign parameters into the meeting form (and keep them for the session).
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid'];
+    var params = new URLSearchParams(window.location.search);
+    var store = {};
+    try { store = JSON.parse(sessionStorage.getItem('o26_attr') || '{}'); } catch (e) {}
+    keys.forEach(function (k) { if (params.get(k)) store[k] = params.get(k); });
+    try { sessionStorage.setItem('o26_attr', JSON.stringify(store)); } catch (e) {}
+    root.querySelectorAll('[data-utm]').forEach(function (el) {
+      var k = el.getAttribute('data-utm');
+      if (store[k]) el.value = store[k];
+    });
+
+    // 2. After a successful post, bring the confirmation into view.
+    var ok = root.querySelector('[data-form-success]');
+    if (ok) { ok.scrollIntoView({ block: 'center' }); }
+
+    // 3. Add-to-calendar: build the .ics on the client, no hosted file needed.
+    var ics = document.getElementById('o26-ics');
+    if (ics) {
+      var lines = [
+        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Monteiro Fabrics//ORGATEC 2026//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        'UID:orgatec-2026-q059@monteirofabrics.com',
+        'DTSTAMP:20260910T120000Z',
+        'DTSTART:20261027T080000Z',
+        'DTEND:20261030T170000Z',
+        'SUMMARY:ORGATEC 2026 – Monteiro Fabrics (Hall 10.2\\, Stand Q059)',
+        'LOCATION:Koelnmesse\\, Messeplatz 1\\, 50679 Köln – Hall 10.2\\, Stand Q059',
+        'DESCRIPTION:Visit Monteiro Fabrics at ORGATEC 2026\\, Hall 10.2\\, Stand Q059. {{ lp_url }}',
+        'URL:{{ lp_url }}',
+        'END:VEVENT', 'END:VCALENDAR'
+      ];
+      var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
+      ics.href = URL.createObjectURL(blob);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "ORGATEC 2026 landing",
+  "tag": "section",
+  "class": "section--orgatec-2026",
+  "settings": [
+    {
+      "type": "select",
+      "id": "phase",
+      "label": "Campaign phase",
+      "info": "Switches the hero copy and hides the meeting form after the fair.",
+      "options": [
+        { "value": "pre", "label": "Before the fair (until 26/10)" },
+        { "value": "live", "label": "During the fair (27–30/10)" },
+        { "value": "post", "label": "After the fair (from 31/10)" }
+      ],
+      "default": "pre"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image",
+      "info": "Leave empty to show the CHANCE colour mosaic."
+    },
+    {
+      "type": "text",
+      "id": "hall",
+      "label": "Hall",
+      "default": "Hall 10.2"
+    },
+    {
+      "type": "text",
+      "id": "stand",
+      "label": "Stand",
+      "default": "Stand Q059"
+    }
+  ],
+  "presets": [
+    { "name": "ORGATEC 2026 landing" }
+  ]
+}
+{% endschema %}
