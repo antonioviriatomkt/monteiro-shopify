@@ -1,23 +1,347 @@
 /*
  * ------------------------------------------------------------
- * ORGATEC 2026 landing page (v2, 10/09/2026) — /pages/orgatec-2026
- * Single self-contained section; phase switch in the theme editor.
+ * ORGATEC 2026 landing page — v3 (sector-led), 10/09/2026
+ * /pages/orgatec-2026 · composed only from the live theme's own
+ * sections, editable in the theme editor. Images left empty on
+ * purpose (theme placeholders) until Ivana's visuals arrive.
+ * Anchor for the meeting form: #shopify-section-template--30179559145849__meeting_intro
  * ------------------------------------------------------------
  */
 {
   "sections": {
-    "main": {
-      "type": "orgatec-2026",
+    "hero": {
+      "type": "image-with-text-overlay",
       "settings": {
-        "phase": "pre",
-        "hall": "Hall 10.2",
-        "stand": "Stand Q059",
-        "show_meeting_form": true,
-        "show_faq": true
+        "height": "fixed",
+        "height_desktop": 550,
+        "height_mobile": 450,
+        "subheading": "ORGATEC 2026 · 27–30 October · Cologne · Hall 10.2 · Stand Q059",
+        "title": "Coated upholstery fabrics for office and healthcare",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>Made in Portugal since 1967. See the collections at Stand Q059, or order free samples now.</p>",
+        "enlarge_text": true,
+        "button_label": "Order free samples",
+        "image_link": "/pages/free-samples",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "cta_bar": {
+      "type": "landing-cta",
+      "settings": {
+        "heading": "",
+        "subheading": "Hall 10.2 · Stand Q059 · 27–30 October, 09:00–18:00",
+        "alignment": "center",
+        "quote_label": "Book a stand meeting",
+        "quote_anchor": "#shopify-section-template--30179559145849__meeting_intro",
+        "data_cta": "orgatec_meeting_scroll",
+        "phone_label": "+351 228 338 640",
+        "background": "#ffffff",
+        "text_color": "#111111",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "proof": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "since": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "Coated fabrics since 1967",
+            "text": "<p>Family-owned manufacturer, fourth generation.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "portugal": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "Made in Portugal",
+            "text": "<p>Own facilities, European-only supplier base.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "iso": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "ISO 9001 & ISO 14001",
+            "text": "<p>Certified quality and environmental management.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "warranty": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "10-year warranty",
+            "text": "<p>The longest on the market, on stock-service materials.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["since", "portugal", "iso", "warranty"],
+      "settings": {
+        "title": "",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
+      }
+    },
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "What we bring to Cologne",
+        "title": "The sectors we specify for.",
+        "title_size": 48,
+        "title_width": 14,
+        "heading_h1": false,
+        "text": "<p>ORGATEC is where office and contract interiors are specified. We are bringing coated upholstery fabrics for the two sectors that matter most in Hall 10.2: <strong>office and contract furniture</strong>, and <strong>healthcare</strong>. Open a sector below to see the collections on the stand. Most of them you can sample today, free of charge.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard"
+      }
+    },
+    "sectors": {
+      "type": "accordions",
+      "blocks": {
+        "office": {
+          "type": "accordion",
+          "settings": {
+            "icon": "briefcase",
+            "title": "Office & contract furniture",
+            "open": true,
+            "text": "<p><strong>Task and conference seating, soft seating, contract furniture.</strong> Heavy PVC-coated qualities with abrasion resistance up to 400.000 Martindale, Sanitized® antimicrobial finishes, flame-retardant certifications and a 10-year warranty on stock-service materials.</p><ul><li><strong>PU Office</strong> — <a href=\"/products/furna-collection\">Furna</a>, <a href=\"/products/mara-collection\">Mara</a>, <a href=\"/products/portus-collection\">Portus</a>, <a href=\"/products/elefante-collection\">Elefante</a>: sleek, durable office fabrics for stylish and comfortable workspaces.</li><li><strong>PVC Fabric Look</strong> — <a href=\"/products/straw-collection\">Straw</a>, <a href=\"/products/glam-collection\">Glam</a>, <a href=\"/products/jazz-collection\">Jazz</a>: textile soul, durable heart, elegant feel and PVC high performance.</li><li><strong>CHANCE 2.0 Classic</strong> — 236 colours, one iconic texture. Preview at the stand; samples follow with the launch of our new website.</li></ul><p><a href=\"/collections/office-fabrics-upholstery\">All office upholstery fabrics</a></p>"
+          }
+        },
+        "healthcare": {
+          "type": "accordion",
+          "settings": {
+            "icon": "heart",
+            "title": "Healthcare",
+            "open": false,
+            "text": "<p><strong>Clinics, care homes, medical equipment and patient seating.</strong> Easy-to-clean coated fabrics with antibacterial, antifungal and antiviral coatings, alcohol and bleach resistance, and biocompatibility to ISO 10993.</p><ul><li><strong>Chance Mediflex</strong> — <a href=\"/products/mediflex-collection\">Mediflex</a>: easy-to-clean finishing on a multilayer PVC coating, bielastic and non skin-irritant.</li><li><strong>Electra</strong> — <a href=\"/products/electra-collection\">Electra</a>: permanently antistatic, ESD-protective upholstery with a conductive network, for intensive care units, imaging rooms and operating theatres.</li></ul><p><a href=\"/collections/healthcare\">All healthcare upholstery fabrics</a></p>"
+          }
+        }
+      },
+      "block_order": ["office", "healthcare"],
+      "settings": {
+        "title": "Sectors we specify for",
+        "alternate_bg_color": false,
+        "view_all_page": "/collections/coated-fabrics"
+      }
+    },
+    "office_products": {
+      "type": "product-list",
+      "blocks": {
+        "furna": { "type": "product", "settings": { "product": "furna-collection" } },
+        "mara": { "type": "product", "settings": { "product": "mara-collection" } },
+        "portus": { "type": "product", "settings": { "product": "portus-collection" } },
+        "elefante": { "type": "product", "settings": { "product": "elefante-collection" } },
+        "glam": { "type": "product", "settings": { "product": "glam-collection" } },
+        "jazz": { "type": "product", "settings": { "product": "jazz-collection" } },
+        "straw": { "type": "product", "settings": { "product": "straw-collection" } }
+      },
+      "block_order": ["furna", "mara", "portus", "elefante", "glam", "jazz", "straw"],
+      "settings": {
+        "title": "Office & contract furniture — on the stand",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "healthcare_products": {
+      "type": "product-list",
+      "blocks": {
+        "mediflex": { "type": "product", "settings": { "product": "mediflex-collection" } },
+        "electra": { "type": "product", "settings": { "product": "electra-collection" } }
+      },
+      "block_order": ["mediflex", "electra"],
+      "settings": {
+        "title": "Healthcare — on the stand",
+        "layout": "rows",
+        "grid": 2,
+        "grid_mobile": "2",
+        "show_view_all": false,
+        "alternate_bg_color": false
+      }
+    },
+    "chance": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Stand preview · launching with our new website",
+        "title": "CHANCE 2.0",
+        "title_size": 40,
+        "title_width": 12,
+        "text": "<p><strong>236 colours, one iconic texture.</strong> An unrivalled colour spectrum in coated fabrics: supple, long lasting and low-maintenance, in six grades — Classic, Mediflex, Bioblend, Crib 5, Crib 7 | B1 and Outdoor.</p><p>Samples of CHANCE 2.0 follow with the launch. See the complete palette and all six grades at Stand Q059.</p>",
+        "button_label": "Book a meeting to see it",
+        "button_link": "#shopify-section-template--30179559145849__meeting_intro",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "alt"
+      }
+    },
+    "biobased": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "bioblend": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 700,
+            "title": "Chance Bioblend",
+            "text": "<p>Biobased upholstery incorporating natural by-products: 35% PVC and 65% plant-based materials, including chestnut residues. Organic cotton, phthalate free, flame retardant.</p><p>Preview at the stand. Samples follow with the CHANCE 2.0 launch.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "origin": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 700,
+            "title": "Origin",
+            "text": "<p>Produced from a water-based formulation and bio-based waste combined with a natural fibre base: 53% natural fibres, 28% polyurethane, 19% plant-based materials.</p>",
+            "button_label": "Add free sample",
+            "link": "/products/origin-collection"
+          }
+        }
+      },
+      "block_order": ["bioblend", "origin"],
+      "settings": {
+        "title": "Biobased options for both sectors",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "square",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "band": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Before the fair",
+        "title": "Order your samples before Cologne.",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Free samples are sent within a few days. Bring them to Stand Q059 and we'll match colours, go through specifications and plan your project together.</p>",
+        "button_label": "Order free samples",
+        "button_link": "/pages/free-samples",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt"
+      }
+    },
+    "meeting_intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Meeting",
+        "title": "Book a meeting at Stand Q059",
+        "title_size": 42,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Tell us about your project and when you'll be in Cologne. We'll confirm a time at the stand by email. You can also write to <a href=\"mailto:hello@monteirofabrics.com\">hello@monteirofabrics.com</a>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard"
+      }
+    },
+    "meeting": {
+      "type": "main-contact",
+      "settings": {
+        "show_title": false
+      }
+    },
+    "practical": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "when": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "When",
+            "text": "<p>27–30 October 2026<br>09:00–18:00</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "where": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "Where",
+            "text": "<p>Koelnmesse, Cologne<br>Hall 10.2, Contract Solutions</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "stand": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "title": "Stand",
+            "text": "<p>Q059</p>",
+            "button_label": "Exhibitor listing on orgatec.com",
+            "link": "https://www.orgatec.com/orgatec-exhibitors/list-of-exhibitors/"
+          }
+        }
+      },
+      "block_order": ["when", "where", "stand"],
+      "settings": {
+        "title": "Practical",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
       }
     }
   },
   "order": [
-    "main"
+    "hero",
+    "cta_bar",
+    "proof",
+    "intro",
+    "sectors",
+    "office_products",
+    "healthcare_products",
+    "chance",
+    "biobased",
+    "band",
+    "meeting_intro",
+    "meeting",
+    "practical"
   ]
 }
