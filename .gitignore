@@ -8,6 +8,8 @@
 .env.local
 
 # --- noise ---
+.claude/settings.local.json
+.claude/launch.json
 node_modules/
 .DS_Store
 .~lock.*#
