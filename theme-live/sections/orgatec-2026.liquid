@@ -1,792 +1,665 @@
 {%- comment -%}
-  ORGATEC 2026 landing page — one self-contained section.
-  Campaign: MONTEIRO_GG_LEADS_ORGATEC_09-26 (Google Ads, DACH).
-  Bilingual by locale (DE / EN fallback), own CSS, native contact form
-  for stand meetings, .ics download, Event JSON-LD, pre/live/post phase.
-  Copy for the collection cards is transcribed from the stand panels (09/2026).
+  ORGATEC 2026 landing page — v2 (10/09/2026). Self-contained: markup + scoped CSS + JS + Event JSON-LD.
+  Lives on the live theme (Showcase 7.0) at templates/page.orgatec-2026.json → /pages/orgatec-2026 (DE: /de/pages/orgatec-2026).
+  Design tokens = the live theme's own: Source Sans Pro · #111 text · #464654 headings/buttons · #f5f5f5 alt bg ·
+  #dbdbdb rules · .button (uppercase 13px / .13em / 18px 30px / square). Uses the theme's .button class directly.
+  Copy: EN default, DE when request.locale is de (formal Sie; "beschichtete Möbelstoffe", never "Kunstleder").
+  CHANCE 2.0 is promoted only — no sample CTA until it launches with the new website.
+  Phases (section setting): pre (default) · live (27/10) · post (31/10: form hidden, hero/band swap to "Missed ORGATEC?").
+  Tracking hooks: data-cta / data-cta-slot / data-collection on every CTA · form id orgatec-meeting-form ·
+  success = ?contact_posted=true + [data-form-success="orgatec_meeting"] · hidden utm_* + gclid fields.
+  Generated from Clients/Monteiro-Fabrics/prototypes/orgatec-2026/index.html by build_liquid.py — edit the prototype, regenerate.
 {%- endcomment -%}
-
 {%- liquid
-  assign de = false
+  assign og_de = false
   if request.locale.iso_code == 'de'
-    assign de = true
+    assign og_de = true
   endif
-
-  assign base = routes.root_url
-  if base == '/'
-    assign base = ''
+  assign og_root = routes.root_url
+  if og_root == '/'
+    assign og_root = ''
   endif
-  assign samples_url = base | append: '/pages/free-samples'
-  assign contact_url = base | append: '/pages/contact'
-  assign chance_url = base | append: '/pages/chance-collection'
-  assign phase = section.settings.phase | default: 'pre'
-  assign show_body = section.settings.show_body
-  assign hall = section.settings.hall | default: 'Hall 10.2'
-  assign stand = section.settings.stand | default: 'Stand Q059'
-  assign lp_url = shop.url | append: '/pages/' | append: page.handle
+  assign og_phase = section.settings.phase | default: 'pre'
+  assign og_hall = section.settings.hall | default: 'Hall 10.2'
+  assign og_stand = section.settings.stand | default: 'Stand Q059'
+  assign og_hall_de = og_hall | replace: 'Hall', 'Halle'
+  assign og_stand_de = og_stand
 
-  if de
-    assign s_bar_dates = '27.–30. Oktober 2026'
-    assign s_bar_venue = 'Koelnmesse, Köln'
-    assign s_hall = hall | replace: 'Hall', 'Halle'
-    assign s_eyebrow = 'ORGATEC 2026 · Köln'
-    assign s_h1_pre = 'Besuchen Sie Monteiro Fabrics auf der ORGATEC 2026'
-    assign s_h1_live = 'Diese Woche auf der ORGATEC: Monteiro Fabrics, Halle 10.2, Stand Q059'
-    assign s_h1_post = 'Danke für Ihren Besuch auf der ORGATEC 2026'
-    assign s_lead_pre = 'Beschichtete Möbelstoffe aus Portugal, seit 1967. Sehen Sie CHANCE 2.0, ELECTRA, STRAW, ORIGIN und unsere Bürokollektionen in Köln – oder bestellen Sie schon jetzt kostenlose Muster.'
-    assign s_lead_live = 'Wir sind bis Freitag, 18:00 Uhr, in Halle 10.2 am Stand Q059. Kommen Sie vorbei – oder bestellen Sie kostenlose Muster für nach der Messe.'
-    assign s_lead_post = 'Sie konnten nicht nach Köln kommen oder möchten ein Material noch einmal in der Hand halten? Bestellen Sie kostenlose Muster unserer Kollektionen.'
-    assign s_cta_samples = 'Kostenlose Muster bestellen'
-    assign s_cta_samples_sub = 'Versand vor der Messe'
-    assign s_cta_meeting = 'Termin am Stand vereinbaren'
-    assign s_cta_contact = 'Kontakt aufnehmen'
-    assign s_fact_1_k = 'Seit 1967'
-    assign s_fact_1_v = 'Spezialist für beschichtete Möbelstoffe'
-    assign s_fact_2_k = 'Made in Portugal'
-    assign s_fact_2_v = 'Eigene Produktion in Porto'
-    assign s_fact_3_k = 'ISO 9001 & 14001'
-    assign s_fact_3_v = 'Zertifiziertes Unternehmen'
-    assign s_fact_4_k = '10 Jahre Garantie'
-    assign s_fact_4_v = 'Auf Lagerservice-Materialien'
-    assign s_bring_eyebrow = 'Am Stand'
-    assign s_bring_h2 = 'Was wir nach Köln mitbringen'
-    assign s_bring_lead = 'Sechs Kollektionen für Büro, Objekt, Healthcare und öffentliche Bereiche. Jede können Sie vorab als kostenloses Muster bestellen.'
-    assign s_explore = 'Kollektion ansehen'
-    assign s_samples = 'Muster bestellen'
-    assign s_grades = 'Sechs Qualitäten'
-    assign s_chance_tag = '236 Farben, eine ikonische Struktur'
-    assign s_chance_desc = 'Ein unerreichtes Farbspektrum bei beschichteten Möbelstoffen. Geschmeidig, langlebig und pflegeleicht.'
-    assign s_chance_chips = '100 % vegan|Langlebig|Phthalatfrei|Lichtecht|Abriebfest|REACH-konform'
-    assign s_mediflex_sector = 'Healthcare'
-    assign s_mediflex_desc = 'Pflegeleichte Oberfläche, mehrlagige PVC-Beschichtung mit antimykotischer, antibakterieller und antiviraler Ausrüstung.'
-    assign s_mediflex_chips = 'Bielastisch|Leicht zu reinigen|Nicht hautreizend|Antimikrobiell & antiviral'
-    assign s_crib_sector = 'Stadien & Auditorien'
-    assign s_crib_desc = 'Außergewöhnliche Haltbarkeit für stark frequentierte öffentliche Bereiche.'
-    assign s_crib_chips = 'DIN 4102 B1|NF P 92-507 M1|BS 5852 Crib 7|Schweißbar|Schwer entflammbar'
-    assign s_bioblend_sector = 'Biobasiert'
-    assign s_bioblend_desc = 'Biobasierter Polsterstoff mit natürlichen Nebenprodukten: 65 % pflanzenbasierte Materialien mit Kastanienresten, 35 % PVC.'
-    assign s_bioblend_chips = 'Pflanzenbasiert|Bio-Baumwolle|Abriebfest|Phthalatfrei|Schwer entflammbar'
-    assign s_electra_sector = 'Healthcare'
-    assign s_electra_tag = 'Antistatisch muss nicht schwarz sein'
-    assign s_electra_desc = 'Langlebiger, bielastischer und antistatischer Polsterstoff mit erweiterter Farbpalette für Healthcare-Umgebungen.'
-    assign s_electra_chips = 'ESD-Schutz|Bielastisch|Leicht zu reinigen|Nicht hautreizend|Antimikrobiell & antiviral'
-    assign s_straw_tag = 'Sieht aus wie Stoff, leistet wie ein Profi'
-    assign s_straw_desc = 'Textile Optik mit der Leistung eines beschichteten Möbelstoffs.'
-    assign s_straw_chips = 'Lichtecht|Leicht zu reinigen'
-    assign s_origin_tag = 'Wasserbasiert · Pflanzenbasiert'
-    assign s_origin_desc = 'Hergestellt aus einer wasserbasierten Formulierung und biobasierten Reststoffen auf einer Naturfaserbasis: 53 % Naturfasern, 28 % Polyurethan, 19 % pflanzenbasierte Materialien aus Zuckerrohr-, Ölpflanzen- und Olivenverarbeitung.'
-    assign s_origin_chips = 'Pflanzenbasiert|Wasserbasis'
-    assign s_office_sector = 'Büro'
-    assign s_office_tag = 'PU Office'
-    assign s_office_desc = 'Elegante, strapazierfähige Bürostoffe für stilvolle und komfortable Arbeitsplätze.'
-    assign s_office_chips = 'Abriebfest|Schwer entflammbar'
-    assign s_fabric_tag = 'PVC Fabric Look'
-    assign s_fabric_desc = 'Textile Seele, robuster Kern, elegante Haptik und die Leistung von PVC.'
-    assign s_fabric_chips = 'Textiloptik|PVC-Leistung'
-    assign s_band_h2 = 'Muster jetzt bestellen – auf Ihrem Schreibtisch, bevor die Messe beginnt.'
-    assign s_band_p = 'Kostenlos, direkt aus unserem Lager in Porto. So vergleichen Sie in Köln bereits mit dem Material in der Hand.'
-    assign s_meeting_eyebrow = 'Am Stand Q059'
-    assign s_meeting_h2 = 'Termin am Stand vereinbaren'
-    assign s_meeting_p = 'Nennen Sie uns Ihren Wunschtag, und unser Team hält Ihnen Zeit frei. Bringen Sie Ihr Projekt mit – wir bringen die Muster.'
-    assign s_f_name = 'Name'
-    assign s_f_company = 'Unternehmen'
-    assign s_f_email = 'E-Mail'
-    assign s_f_phone = 'Telefon (optional)'
-    assign s_f_day = 'Wunschtag'
-    assign s_f_day_any = 'Egal, ich bin flexibel'
-    assign s_f_msg = 'Woran arbeiten Sie? (optional)'
-    assign s_f_send = 'Terminanfrage senden'
-    assign s_f_privacy = 'Wir verwenden Ihre Angaben nur, um diesen Termin zu bestätigen.'
-    assign s_f_ok_h = 'Vielen Dank – Ihre Anfrage ist bei uns.'
-    assign s_f_ok_p = 'Wir bestätigen Ihren Termin innerhalb von zwei Werktagen per E-Mail. Bis dahin: Muster können Sie jetzt schon bestellen.'
-    assign s_f_err = 'Bitte prüfen Sie die markierten Felder.'
-    assign s_info_eyebrow = 'Praktisches'
-    assign s_info_h2 = 'ORGATEC 2026 auf einen Blick'
-    assign s_info_when_k = 'Wann'
-    assign s_info_when_v = '27.–30. Oktober 2026 · täglich 09:00–18:00 Uhr'
-    assign s_info_where_k = 'Wo'
-    assign s_info_where_v = 'Koelnmesse · Messeplatz 1 · 50679 Köln'
-    assign s_info_stand_k = 'Stand'
-    assign s_info_stand_v = 'Halle 10.2 · Stand Q059 · Contract Solutions'
-    assign s_info_cal = 'Zum Kalender hinzufügen'
-    assign s_info_plan = 'Hallenplan auf orgatec.com'
-    assign s_post_h2 = 'ORGATEC verpasst?'
-    assign s_post_p = 'Alle Kollektionen vom Stand können Sie als kostenloses Muster bestellen – oder Sie schreiben uns, und wir stellen Ihnen eine Auswahl zusammen.'
-    assign s_meta_title = 'Monteiro Fabrics auf der ORGATEC 2026 – Halle 10.2, Stand Q059'
-  else
-    assign s_bar_dates = '27–30 October 2026'
-    assign s_bar_venue = 'Koelnmesse, Cologne'
-    assign s_hall = hall
-    assign s_eyebrow = 'ORGATEC 2026 · Cologne'
-    assign s_h1_pre = 'Meet Monteiro Fabrics at ORGATEC 2026'
-    assign s_h1_live = 'This week at ORGATEC: Monteiro Fabrics, Hall 10.2, Stand Q059'
-    assign s_h1_post = 'Thank you for visiting us at ORGATEC 2026'
-    assign s_lead_pre = 'Coated upholstery fabrics made in Portugal since 1967. See CHANCE 2.0, ELECTRA, STRAW, ORIGIN and our office ranges in Cologne — or order free samples before the fair.'
-    assign s_lead_live = 'We are in Hall 10.2 at Stand Q059 until Friday, 18:00. Drop by — or order free samples for after the fair.'
-    assign s_lead_post = 'Could not make it to Cologne, or want a material back in your hands? Order free samples of any collection from the stand.'
-    assign s_cta_samples = 'Order free samples'
-    assign s_cta_samples_sub = 'Shipped before the fair'
-    assign s_cta_meeting = 'Book a meeting at the stand'
-    assign s_cta_contact = 'Get in touch'
-    assign s_fact_1_k = 'Since 1967'
-    assign s_fact_1_v = 'Specialists in coated fabrics'
-    assign s_fact_2_k = 'Made in Portugal'
-    assign s_fact_2_v = 'Our own plant in Porto'
-    assign s_fact_3_k = 'ISO 9001 & 14001'
-    assign s_fact_3_v = 'Certified company'
-    assign s_fact_4_k = '10-year warranty'
-    assign s_fact_4_v = 'On stock-service materials'
-    assign s_bring_eyebrow = 'On the stand'
-    assign s_bring_h2 = 'What we are bringing to Cologne'
-    assign s_bring_lead = 'Six collections for office, contract, healthcare and public venues. Every one of them can be ordered as a free sample today.'
-    assign s_explore = 'Explore the collection'
-    assign s_samples = 'Order samples'
-    assign s_grades = 'Six grades'
-    assign s_chance_tag = '236 colours, one iconic texture'
-    assign s_chance_desc = 'An unrivalled colour spectrum in coated fabrics. Supple, long lasting and low-maintenance.'
-    assign s_chance_chips = '100% vegan|Long lasting|Phthalate free|Light resistant|Abrasion resistant|REACH compliant'
-    assign s_mediflex_sector = 'Healthcare'
-    assign s_mediflex_desc = 'Easy-to-clean finishing over a multilayer PVC coating with antifungal, antibacterial and antiviral protection.'
-    assign s_mediflex_chips = 'Bielastic|Easy clean|Non skin-irritant|Antimicrobial & antiviral'
-    assign s_crib_sector = 'Stadiums & auditoriums'
-    assign s_crib_desc = 'Exceptional durability for high-traffic public venues.'
-    assign s_crib_chips = 'DIN 4102 B1|NF P 92-507 M1|BS 5852 Crib 7|Weldable|Flame retardant'
-    assign s_bioblend_sector = 'Bio-based'
-    assign s_bioblend_desc = 'Bio-based upholstery incorporating natural by-products: 65% plant-based materials with chestnut residues, 35% PVC.'
-    assign s_bioblend_chips = 'Plant based|Organic cotton|Abrasion resistant|Phthalate free|Flame retardant'
-    assign s_electra_sector = 'Healthcare'
-    assign s_electra_tag = 'Antistatic does not have to be black'
-    assign s_electra_desc = 'Durable, bielastic and antistatic upholstery with an extended colour palette for healthcare environments.'
-    assign s_electra_chips = 'ESD protective|Bielastic|Easy clean|Non skin-irritant|Antimicrobial & antiviral'
-    assign s_straw_tag = 'Looks like fabric, performs like a pro'
-    assign s_straw_desc = 'A textile look with the performance of a coated upholstery fabric.'
-    assign s_straw_chips = 'Light resistant|Easy clean'
-    assign s_origin_tag = 'Water-based · Plant-based'
-    assign s_origin_desc = 'Produced from a water-based formulation and bio-based waste combined with a natural fibre base: 53% natural fibres, 28% polyurethane, 19% plant-based materials from sugar-crop, oil-crop and olive-processing residues.'
-    assign s_origin_chips = 'Plant based|Water base'
-    assign s_office_sector = 'Office'
-    assign s_office_tag = 'PU Office'
-    assign s_office_desc = 'Sleek, durable office fabrics for stylish and comfortable workspaces.'
-    assign s_office_chips = 'Abrasion resistant|Flame retardant'
-    assign s_fabric_tag = 'PVC Fabric Look'
-    assign s_fabric_desc = 'Textile soul, durable heart, elegant feel and PVC high performance.'
-    assign s_fabric_chips = 'Textile look|PVC performance'
-    assign s_band_h2 = 'Order samples now — on your desk before the fair opens.'
-    assign s_band_p = 'Free of charge, straight from our warehouse in Porto. Arrive in Cologne already comparing with the material in hand.'
-    assign s_meeting_eyebrow = 'At Stand Q059'
-    assign s_meeting_h2 = 'Book a meeting at the stand'
-    assign s_meeting_p = 'Tell us your preferred day and our team will keep the time for you. Bring your project — we will bring the samples.'
-    assign s_f_name = 'Name'
-    assign s_f_company = 'Company'
-    assign s_f_email = 'Email'
-    assign s_f_phone = 'Phone (optional)'
-    assign s_f_day = 'Preferred day'
-    assign s_f_day_any = 'Any day, I am flexible'
-    assign s_f_msg = 'What are you working on? (optional)'
-    assign s_f_send = 'Send meeting request'
-    assign s_f_privacy = 'We only use your details to confirm this meeting.'
-    assign s_f_ok_h = 'Thank you — your request is with us.'
-    assign s_f_ok_p = 'We will confirm your meeting by email within two working days. In the meantime, samples can be ordered right away.'
-    assign s_f_err = 'Please check the highlighted fields.'
-    assign s_info_eyebrow = 'Practical'
-    assign s_info_h2 = 'ORGATEC 2026 at a glance'
-    assign s_info_when_k = 'When'
-    assign s_info_when_v = '27–30 October 2026 · daily 09:00–18:00'
-    assign s_info_where_k = 'Where'
-    assign s_info_where_v = 'Koelnmesse · Messeplatz 1 · 50679 Cologne, Germany'
-    assign s_info_stand_k = 'Stand'
-    assign s_info_stand_v = 'Hall 10.2 · Stand Q059 · Contract Solutions'
-    assign s_info_cal = 'Add to calendar'
-    assign s_info_plan = 'Hall plan on orgatec.com'
-    assign s_post_h2 = 'Missed ORGATEC?'
-    assign s_post_p = 'Every collection from the stand can be ordered as a free sample — or write to us and we will put a selection together for you.'
-    assign s_meta_title = 'Monteiro Fabrics at ORGATEC 2026 — Hall 10.2, Stand Q059'
-  endif
-
-  case phase
-    when 'live'
-      assign s_h1 = s_h1_live
-      assign s_lead = s_lead_live
-    when 'post'
-      assign s_h1 = s_h1_post
-      assign s_lead = s_lead_post
+  if og_phase == 'live'
+    if og_de
+      assign og_hero_title = 'Diese Woche auf der ORGATEC – Halle 10.2, Stand Q059'
+      assign og_hero_lead = '27.–30. Oktober, Koelnmesse. Besuchen Sie uns am Stand – oder bestellen Sie kostenlose Muster direkt ins Büro.'
+      assign og_band_eyebrow = 'Diese Woche in Köln'
+      assign og_band_title = 'Bestellen Sie Ihre Muster – oder holen Sie sie am Stand ab.'
     else
-      assign s_h1 = s_h1_pre
-      assign s_lead = s_lead_pre
-  endcase
-
+      assign og_hero_title = "We're at ORGATEC this week – Hall 10.2, Stand Q059"
+      assign og_hero_lead = '27–30 October, Koelnmesse. Come and see the collections, or order free samples straight to your office.'
+      assign og_band_eyebrow = 'This week in Cologne'
+      assign og_band_title = 'Order your samples, or pick them up at the stand.'
+    endif
+  elsif og_phase == 'post'
+    if og_de
+      assign og_hero_title = 'ORGATEC verpasst? Bestellen Sie kostenlose Muster.'
+      assign og_hero_lead = 'Vielen Dank für Ihren Besuch in Köln. Die Kollektionen vom Stand können Sie jetzt als kostenlose Muster bestellen.'
+      assign og_band_eyebrow = 'Nach der Messe'
+      assign og_band_title = 'Bestellen Sie die Muster, die Sie in Köln gesehen haben.'
+    else
+      assign og_hero_title = 'Missed ORGATEC? Order free samples.'
+      assign og_hero_lead = 'Thank you for visiting us in Cologne. The collections from the stand are available as free samples now.'
+      assign og_band_eyebrow = 'After the fair'
+      assign og_band_title = 'Order the samples you saw in Cologne.'
+    endif
+  else
+    if og_de
+      assign og_hero_title = 'Beschichtete Möbelstoffe, live auf der ORGATEC 2026'
+      assign og_hero_lead = 'Halle 10.2, Stand Q059 · 27.–30. Oktober. Bestellen Sie jetzt kostenlose Muster und erleben Sie die Kollektionen in Köln.'
+      assign og_band_eyebrow = 'Vor der Messe'
+      assign og_band_title = 'Bestellen Sie Ihre Muster vor Köln.'
+    else
+      assign og_hero_title = 'Coated upholstery fabrics, live at ORGATEC 2026'
+      assign og_hero_lead = 'Hall 10.2, Stand Q059 · 27–30 October. Order free samples now and see the full collections in Cologne.'
+      assign og_band_eyebrow = 'Before the fair'
+      assign og_band_title = 'Order your samples before Cologne.'
+    endif
+  endif
 -%}
-
-{%- capture chance_mosaic -%}
-  {%- assign mosaic = '#c8b8a6,#e8d9c4,#f2e6d2,#d9c6a8,#c9a86a,#e0b64a,#f0c94b,#f5d76e,#e7a53a,#d97b2c,#c9542b,#b8332b,#8f2a2a,#6e1f2c,#a44a5c,#d98aa0,#e9b4c1,#b57fa6,#7a4f8c,#4c3a7a,#2e3f7a,#2f519b,#3f6fb0,#5c8fc4,#8bb6d8,#b9d3e6,#6fa9a3,#3d8a86,#2f6f6b,#255b52,#3f7a4a,#6c9a52,#9bb85f,#c9d47c,#e2e6a3,#8a8a7a,#5e6062,#3b3d3f,#232526,#151617,#d5d0c8,#bdb6ac,#9d948a,#7d746b,#5f574f,#8c7358,#a98a6b,#c7a98a' | split: ',' -%}
-  <div class="o26-mosaic" aria-hidden="true">
-    {%- for c in mosaic -%}<i style="background:{{ c }}"></i>{%- endfor -%}
-  </div>
-{%- endcapture -%}
-
 <style>
-  .o26 { --sand:#CFBFAE; --sand-ink:#2E2620; --mist:#B4C2C2; --mist-ink:#1F2A2A; --sage:#7E8B71; --taupe:#877A6D; --ink:#161616; --paper:#FFFFFF; --line:rgba(0,0,0,.12); --track:.12em; color:var(--ink); font-family:inherit; }
-  .o26 *, .o26 *::before, .o26 *::after { box-sizing:border-box; }
-  .o26 a { color:inherit; }
-  .o26 .o26-wrap { max-width:1180px; margin:0 auto; padding:0 24px; }
-  .o26 .o26-eyebrow { display:block; font-size:12px; letter-spacing:.2em; text-transform:uppercase; opacity:.7; margin:0 0 14px; }
-  .o26 .o26-display { font-weight:300; text-transform:uppercase; letter-spacing:var(--track); line-height:1.05; margin:0; text-align:left; color:inherit; }
-  .o26 .o26-eyebrow, .o26 p, .o26 dl, .o26 ul { text-align:left; }
-  .o26 h1.o26-display { font-size:clamp(30px,4.6vw,58px); }
-  .o26 h2.o26-display { font-size:clamp(26px,3.4vw,42px); }
-  .o26 h3.o26-display { font-size:clamp(22px,2.6vw,32px); }
-  .o26 .o26-lead { font-size:clamp(16px,1.5vw,19px); line-height:1.55; max-width:62ch; margin:20px 0 0; }
-  .o26 .o26-btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:16px 26px; border:1px solid var(--ink); background:var(--ink); color:#fff; text-decoration:none; font-size:14px; letter-spacing:.08em; text-transform:uppercase; line-height:1.2; transition:transform .25s, background .25s, color .25s; cursor:pointer; -webkit-appearance:none; border-radius:0; font-family:inherit; }
-  .o26 .o26-btn:hover { transform:translateY(-2px); }
-  .o26 .o26-btn--ghost { background:transparent; color:var(--ink); }
-  .o26 .o26-btn--light { background:#fff; color:var(--ink); border-color:#fff; }
-  .o26 .o26-btn--ghost-light { background:transparent; color:#fff; border-color:rgba(255,255,255,.7); }
-  .o26 .o26-btn small { display:block; font-size:11px; letter-spacing:.06em; text-transform:none; opacity:.75; }
-  .o26 .o26-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
+/* ============================================================
+   ORGATEC 2026 — section styles (scoped, house tokens)
+   Tokens from the live theme: Source Sans Pro · text #111 ·
+   heading/button #464654 · alt bg #f5f5f5 · rule #dbdbdb ·
+   buttons uppercase 13px / .13em / 18px 30px / square
+   ============================================================ */
+.orgatec{font-family:"Source Sans Pro",sans-serif;color:#111;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.orgatec *,.orgatec *:before,.orgatec *:after{box-sizing:border-box}
+.orgatec h1,.orgatec h2,.orgatec h3,.orgatec h4{font-family:inherit;color:inherit!important;text-align:inherit!important;margin:0;font-style:normal}
+.orgatec .og-hero h1,.orgatec .og-band h2,.orgatec .og-faq .og-h2{text-align:center!important}
+.orgatec p{margin:0}
+.orgatec a{color:inherit}
+.orgatec img{max-width:100%;display:block}
+.og-wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.og-section{padding:100px 0}
+.og-section--tight{padding:70px 0}
+.og-alt{background:#f5f5f5}
+.og-eyebrow{display:block;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#464654;margin-bottom:14px}
+.og-h2{font-size:48px;font-weight:300;line-height:1.08;letter-spacing:-.01em}
+.og-h3{font-size:28px;font-weight:600;line-height:1.2}
+.og-lead{font-size:20px;line-height:1.5;color:#111}
+.og-muted{color:#464654}
+.og-rule{display:block;width:40px;height:2px;background:currentColor;margin:22px 0}
+.og-rule--center{margin-left:auto;margin-right:auto}
+.og-heading-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:44px}
+.og-heading-row .og-h2{max-width:720px}
+.og-textlink{font-size:14px;font-weight:600;text-decoration:none;color:#111;border-bottom:1px solid #111;padding-bottom:2px;white-space:nowrap}
+.og-textlink:hover{opacity:.7}
+.og-arrowlink{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#464654;text-decoration:none}
+.og-arrowlink:after{content:"";width:18px;height:1px;background:currentColor;transition:width .2s}
+.og-arrowlink:hover:after{width:28px}
+.orgatec .button{font-family:inherit;text-decoration:none;cursor:pointer}
+.orgatec .button.og-ghost{background:transparent;color:#fff;border-color:#fff}
+.orgatec .button.og-ghost:hover{background:#fff;color:#464654}
+.orgatec .button.og-onlight{background:#fff;color:#464654;border-color:#fff}
+.orgatec .button.og-onlight:hover{background:transparent;color:#fff}
+.og-btnrow{display:flex;gap:14px;flex-wrap:wrap}
+.og-btnrow--center{justify-content:center}
+.og-chips{display:flex;flex-wrap:wrap;gap:8px}
+.og-chip{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#464654;border:1px solid #dbdbdb;padding:5px 10px;line-height:1.2;background:#fff}
+.og-chip--solid{background:#464654;color:#fff;border-color:#464654}
+.og-placeholder{position:relative;overflow:hidden;background:#e9e7e2}
+.og-placeholder:after{content:attr(data-label);position:absolute;left:10px;bottom:8px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.45);font-weight:600}
+.og-placeholder--dark:after{color:rgba(255,255,255,.55)}
+.og-card__img img,.og-sector .og-placeholder img,.og-card__products a i img,.og-hero__media img{width:100%;height:100%;object-fit:cover;display:block}
 
-  /* Event bar */
-  .o26-bar { background:var(--ink); color:#fff; font-size:13px; letter-spacing:.06em; }
-  .o26-bar .o26-wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 28px; min-height:48px; padding-top:10px; padding-bottom:10px; }
-  .o26-bar strong { font-weight:600; letter-spacing:.1em; text-transform:uppercase; }
-  .o26-bar span + span::before { content:""; display:inline-block; width:1px; height:12px; background:rgba(255,255,255,.35); margin-right:28px; vertical-align:-1px; }
-  @media (max-width:640px){ .o26-bar span + span::before { display:none; } .o26-bar .o26-wrap { gap:4px 16px; font-size:12px; } }
+/* event bar */
+.og-eventbar{background:#464654;color:#fff}
+.og-eventbar .og-wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:46px}
+.og-eventbar__meta{display:flex;flex-wrap:wrap;gap:0 10px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.og-eventbar__meta span+span:before{content:"·";margin-right:10px;opacity:.6}
+.og-eventbar__meta strong{font-weight:600}
+.og-eventbar a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:1px;white-space:nowrap}
+.og-eventbar a:hover{border-color:#fff}
 
-  /* Hero */
-  .o26-hero { background:var(--sand); color:var(--sand-ink); overflow:hidden; }
-  .o26-hero .o26-wrap { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:48px; align-items:center; min-height:560px; padding-top:72px; padding-bottom:72px; }
-  .o26-hero .o26-btn { background:var(--sand-ink); border-color:var(--sand-ink); }
-  .o26-hero .o26-btn--ghost { background:transparent; color:var(--sand-ink); }
-  .o26-hero__media { position:relative; min-height:360px; }
-  .o26-hero__media img { width:100%; height:100%; object-fit:cover; display:block; min-height:360px; }
-  .o26-hero__stand { position:absolute; left:0; bottom:0; background:rgba(255,255,255,.92); color:var(--sand-ink); padding:16px 22px; font-size:13px; letter-spacing:.14em; text-transform:uppercase; }
-  .o26-hero__stand b { display:block; font-size:22px; font-weight:300; letter-spacing:.1em; margin-top:2px; }
-  .o26-mosaic { display:grid; grid-template-columns:repeat(8,1fr); gap:4px; width:100%; aspect-ratio:8/6; }
-  .o26-mosaic i { display:block; aspect-ratio:1; }
-  @media (max-width:860px){ .o26-hero .o26-wrap { grid-template-columns:1fr; min-height:0; padding-top:48px; padding-bottom:48px; } .o26-hero__media { min-height:0; } .o26-hero__media img { min-height:240px; max-height:360px; } }
+/* hero */
+.og-hero{position:relative;min-height:660px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#3b3b48;overflow:hidden}
+.og-hero__media{position:absolute;inset:0;background:linear-gradient(135deg,#5b5b6d 0%,#2f2f3b 55%,#1e1e27 100%)}
+.og-hero__media:after{content:attr(data-label);position:absolute;left:24px;bottom:18px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);font-weight:600}
+.og-hero__media img{width:100%;height:100%;object-fit:cover}
+.og-hero__shade{position:absolute;inset:0;background:rgba(0,0,0,.38)}
+.og-hero__content{position:relative;max-width:820px;padding:120px 20px}
+.og-hero .og-eyebrow{color:rgba(255,255,255,.85);margin-bottom:18px}
+.og-hero h1{font-size:60px;font-weight:600;line-height:1.12;letter-spacing:-.005em;text-align:center}
+.og-hero .og-rule{margin:24px auto}
+.og-hero .og-lead{font-size:24px;line-height:1.5;color:#fff;max-width:680px;margin:0 auto 34px}
+.og-hero__fine{margin-top:36px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 
-  /* Facts */
-  .o26-facts { border-bottom:1px solid var(--line); }
-  .o26-facts .o26-wrap { display:grid; grid-template-columns:repeat(4,1fr); }
-  .o26-facts div { padding:26px 20px 26px 0; }
-  .o26-facts div + div { border-left:1px solid var(--line); padding-left:20px; }
-  .o26-facts b { display:block; font-weight:400; font-size:20px; letter-spacing:.04em; }
-  .o26-facts span { display:block; font-size:13px; opacity:.7; margin-top:4px; }
-  @media (max-width:760px){ .o26-facts .o26-wrap { grid-template-columns:1fr 1fr; } .o26-facts div:nth-child(3) { border-left:0; padding-left:0; } .o26-facts div:nth-child(n+3) { border-top:1px solid var(--line); } }
+/* proof strip */
+.og-proof{border-bottom:1px solid #dbdbdb}
+.og-proof__grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.og-proof__item{display:flex;gap:14px;align-items:flex-start;padding:30px 24px 30px 0}
+.og-proof__item+.og-proof__item{border-left:1px solid #dbdbdb;padding-left:24px}
+.og-proof__item svg{width:22px;height:22px;flex:none;stroke:#464654;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.og-proof__item b{display:block;font-weight:600;font-size:16px;line-height:1.3}
+.og-proof__item small{display:block;font-size:14px;color:#464654;margin-top:2px}
 
-  /* Collections */
-  .o26-bring { padding:80px 0 40px; }
-  .o26-bring .o26-lead { margin-top:16px; }
-  .o26-grid { display:grid; grid-template-columns:repeat(12,1fr); gap:16px; margin-top:40px; }
-  .o26-card { position:relative; display:flex; flex-direction:column; padding:30px; min-height:420px; color:#fff; overflow:hidden; }
-  .o26-card--sand { background:var(--sand); color:var(--sand-ink); }
-  .o26-card--mist { background:var(--mist); color:var(--mist-ink); }
-  .o26-card--sage { background:var(--sage); }
-  .o26-card--taupe { background:var(--taupe); }
-  .o26-card--12 { grid-column:span 12; }
-  .o26-card--6 { grid-column:span 6; }
-  .o26-card--4 { grid-column:span 4; }
-  .o26-card__sector { align-self:flex-start; font-size:11px; letter-spacing:.18em; text-transform:uppercase; padding:8px 12px; border:1px solid currentColor; opacity:.85; margin-bottom:22px; }
-  .o26-card__tag { font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:.8; margin:0 0 10px; }
-  .o26-card__desc { margin:14px 0 0; max-width:48ch; line-height:1.5; font-size:15px; }
-  .o26-card__chips { display:flex; flex-wrap:wrap; gap:6px; margin:18px 0 0; padding:0; list-style:none; }
-  .o26-card__chips li { font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; padding:7px 9px; border:1px solid currentColor; opacity:.85; }
-  .o26-card__links { margin-top:auto; padding-top:26px; display:flex; flex-wrap:wrap; gap:8px 22px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
-  .o26-card__links a { text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:2px; }
-  .o26-card__links a:hover { opacity:.7; }
-  .o26-card__swatch { position:absolute; right:0; top:0; width:38%; max-width:260px; aspect-ratio:1; overflow:hidden; }
-  .o26-card__swatch img { width:100%; height:100%; object-fit:cover; display:block; }
-  .o26-card--has-swatch .o26-card__sector, .o26-card--has-swatch .o26-card__tag, .o26-card--has-swatch h3, .o26-card--has-swatch .o26-card__desc { max-width:60%; }
-  .o26-card__swatches { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin:22px 0 0; }
-  .o26-card__swatches a { display:block; position:relative; aspect-ratio:1; overflow:hidden; text-decoration:none; }
-  .o26-card__swatches img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
-  .o26-card__swatches a:hover img { transform:scale(1.05); }
-  .o26-card__swatches span { position:absolute; left:0; right:0; bottom:0; padding:6px 8px; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:#fff; background:linear-gradient(transparent, rgba(0,0,0,.55)); }
-  .o26-card__swatches--2x2 { grid-template-columns:1fr 1fr; margin:0; max-width:420px; margin-left:auto; align-self:center; width:100%; }
-  .o26-chance { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:32px; }
-  .o26-chance .o26-mosaic { max-width:420px; margin-left:auto; }
-  .o26-chance__grades { display:flex; flex-wrap:wrap; gap:6px 18px; margin:22px 0 0; padding:0; list-style:none; font-size:13px; letter-spacing:.16em; text-transform:uppercase; }
-  .o26-chance__grades li::before { content:"—"; opacity:.5; margin-right:8px; }
-  @media (max-width:980px){ .o26-card--6, .o26-card--4 { grid-column:span 6; } .o26-chance { grid-template-columns:1fr; } .o26-chance .o26-mosaic { max-width:100%; } }
-  @media (max-width:640px){ .o26-card--6, .o26-card--4 { grid-column:span 12; } .o26-card { min-height:0; padding:24px; } .o26-card--has-swatch .o26-card__sector, .o26-card--has-swatch .o26-card__tag, .o26-card--has-swatch h3, .o26-card--has-swatch .o26-card__desc { max-width:100%; } .o26-card__swatch { position:static; width:100%; max-width:100%; aspect-ratio:16/7; margin:-24px -24px 20px; width:calc(100% + 48px); } }
+/* intro */
+.og-intro .og-lead{max-width:760px}
 
-  /* Band */
-  .o26-band { background:var(--ink); color:#fff; padding:72px 0; }
-  .o26-band .o26-wrap { display:grid; grid-template-columns:minmax(0,1.3fr) auto; gap:32px; align-items:center; }
-  .o26-band p { opacity:.75; max-width:56ch; margin:14px 0 0; line-height:1.55; }
-  @media (max-width:860px){ .o26-band .o26-wrap { grid-template-columns:1fr; } }
+/* CHANCE 2.0 feature */
+.og-chance{display:grid;grid-template-columns:5fr 7fr;gap:60px;align-items:center}
+.og-mosaic{aspect-ratio:1/1;display:grid;grid-template-columns:repeat(8,1fr);gap:3px;background:#fff;padding:3px}
+.og-mosaic i{display:block}
+.og-chance__title{font-size:44px;font-weight:600;line-height:1;letter-spacing:.01em}
+.og-chance__claim{font-size:26px;font-weight:300;line-height:1.3;margin:14px 0 16px}
+.og-chance__text{font-size:17px;color:#111;max-width:560px}
+.og-chance__label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#464654;font-weight:600;margin:26px 0 10px}
+.og-chance__note{font-size:14px;color:#464654;margin-top:26px;padding-left:14px;border-left:2px solid #464654;max-width:520px}
+.og-chance .og-btnrow{margin-top:26px}
+.og-grades{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.og-grade{background:#fff;border:1px solid #dbdbdb;padding:28px 26px 30px}
+.og-grade .og-eyebrow{margin-bottom:10px;font-size:11px}
+.og-grade h4{font-size:20px;font-weight:600;margin-bottom:10px}
+.og-grade p{font-size:15px;color:#111;margin-bottom:18px;min-height:0}
+.og-grade .og-chip{background:#fff}
 
-  /* Meeting form */
-  .o26-meeting { padding:88px 0; background:var(--paper); }
-  .o26-meeting .o26-wrap { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:56px; align-items:start; }
-  .o26-form { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .o26-form .o26-field--full { grid-column:span 2; }
-  .o26-form label { display:block; font-size:11px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:6px; opacity:.75; }
-  .o26-form input, .o26-form select, .o26-form textarea { width:100%; border:1px solid var(--line); border-radius:0; background:#fff; padding:14px; font:inherit; font-size:15px; color:var(--ink); -webkit-appearance:none; }
-  .o26-form input:focus, .o26-form select:focus, .o26-form textarea:focus { outline:none; border-color:var(--ink); }
-  .o26-form textarea { min-height:110px; resize:vertical; }
-  .o26-form .o26-field--error input { border-color:#B8332B; }
-  .o26-form .o26-form__errors { grid-column:span 2; color:#B8332B; font-size:14px; }
-  .o26-form .o26-form__foot { grid-column:span 2; display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin-top:6px; }
-  .o26-form .o26-form__foot small { font-size:12px; opacity:.6; }
-  .o26-ok { border:1px solid var(--line); padding:32px; }
-  .o26-ok p { margin:12px 0 0; line-height:1.55; }
-  @media (max-width:860px){ .o26-meeting .o26-wrap { grid-template-columns:1fr; gap:32px; } .o26-meeting { padding:56px 0; } }
-  @media (max-width:520px){ .o26-form { grid-template-columns:1fr; } .o26-form .o26-field--full, .o26-form .o26-form__errors, .o26-form .o26-form__foot { grid-column:span 1; } }
+/* sample collections */
+.og-samples__head{max-width:760px;margin-bottom:44px}
+.og-samples__head .og-h3{font-size:32px;font-weight:300}
+.og-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px}
+.og-card{display:flex;flex-direction:column}
+.og-card--wide{grid-column:span 1}
+.og-card__img{aspect-ratio:1/1;background:#e9e7e2}
+.og-card__img.og-placeholder--a{background:linear-gradient(160deg,#dcd6cc,#c9c1b3)}
+.og-card__img.og-placeholder--b{background:linear-gradient(160deg,#c5b8a6,#a89880)}
+.og-card__img.og-placeholder--c{background:linear-gradient(160deg,#e3ded4,#cfc7b8)}
+.og-card__img.og-placeholder--d{background:linear-gradient(160deg,#b9c0c6,#8f979e)}
+.og-card__img.og-placeholder--e{background:linear-gradient(160deg,#d9cdbd,#b39c7f)}
+.og-card__swatches{display:flex;gap:6px;align-items:center;margin:12px 0 10px}
+.og-card__swatches i{width:30px;height:30px;display:block;border:1px solid rgba(0,0,0,.08)}
+.og-card__sector{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#464654;font-weight:600;margin:12px 0 6px}
+.og-card__title{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;line-height:1.3}
+.og-card__claim{font-size:16px;color:#111;margin:8px 0 14px;flex:1}
+.og-card .og-chips{margin-bottom:18px}
+.og-card__products{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 4px}
+.og-card__products a{text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#111}
+.og-card__products a i{display:block;aspect-ratio:1/1;margin-bottom:8px;border:1px solid rgba(0,0,0,.08);background:#d8d2c7}
+.og-card__products a span{display:block}
+.og-card__products a small{display:block;font-weight:400;letter-spacing:0;text-transform:none;color:#464654;font-size:12px}
+.og-card__products a:hover span{text-decoration:underline}
+.og-cards--groups{grid-template-columns:repeat(2,1fr);margin-top:48px;padding-top:48px;border-top:1px solid #dbdbdb}
+.og-cards--groups .og-card{display:grid;grid-template-columns:1fr;gap:0}
 
-  /* Info */
-  .o26-info { background:var(--mist); color:var(--mist-ink); padding:72px 0; }
-  .o26-info dl { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:32px 0 0; }
-  .o26-info dt { font-size:11px; letter-spacing:.18em; text-transform:uppercase; opacity:.7; }
-  .o26-info dd { margin:8px 0 0; font-size:17px; line-height:1.45; }
-  .o26-info .o26-actions { margin-top:36px; }
-  .o26-info .o26-btn { background:var(--mist-ink); border-color:var(--mist-ink); }
-  .o26-info .o26-btn--ghost { background:transparent; color:var(--mist-ink); }
-  @media (max-width:760px){ .o26-info dl { grid-template-columns:1fr; gap:18px; } }
+/* sectors */
+.og-sectors{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.og-sector{position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;overflow:hidden}
+.og-sector .og-placeholder{position:absolute;inset:0}
+.og-sector:nth-child(1) .og-placeholder{background:linear-gradient(160deg,#6f7a8a,#3c4452)}
+.og-sector:nth-child(2) .og-placeholder{background:linear-gradient(160deg,#7fa9a6,#3f6664)}
+.og-sector:nth-child(3) .og-placeholder{background:linear-gradient(160deg,#9b8570,#4f4237)}
+.og-sector:nth-child(4) .og-placeholder{background:linear-gradient(160deg,#8b8f96,#3e4147)}
+.og-sector:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.28);transition:background .3s;z-index:1}
+.og-sector:hover:before{background:rgba(0,0,0,.42)}
+.og-sector span{position:relative;z-index:2;font-size:22px;font-weight:400;text-align:center;padding:0 16px;text-shadow:0 1px 8px rgba(0,0,0,.25)}
 
-  /* Post-fair */
-  .o26-post { padding:80px 0; text-align:center; }
-  .o26-post .o26-lead { margin-left:auto; margin-right:auto; }
-  .o26-post .o26-actions { justify-content:center; }
+/* CTA band (rich-text style) */
+.og-band{text-align:center}
+.og-band__inner{max-width:720px;margin:0 auto}
+.og-band h2{font-size:54px;font-weight:600;line-height:1.15;letter-spacing:-.01em;text-align:center}
+.og-band p{font-size:17px;margin:0 auto 30px;max-width:600px}
+.og-band .og-textlink{display:inline-block;margin-top:22px}
 
-  @media (prefers-reduced-motion: reduce){ .o26 .o26-btn, .o26 .o26-card__swatches img { transition:none; } }
+/* meeting */
+.og-meeting{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.og-meeting__copy .og-h2{margin-bottom:22px}
+.og-meeting__copy p{font-size:17px;max-width:440px}
+.og-direct{margin-top:36px;padding-top:26px;border-top:1px solid #dbdbdb;font-size:15px;color:#464654}
+.og-direct b{display:block;color:#111;font-weight:600;margin-bottom:8px}
+.og-direct a{text-decoration:none;color:#111;display:inline-block;border-bottom:1px solid #dbdbdb}
+.og-direct a+a{margin-left:18px}
+.og-form{display:grid;grid-template-columns:1fr 1fr;gap:26px 28px}
+.og-field{display:flex;flex-direction:column}
+.og-field--full{grid-column:1/-1}
+.og-field label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#464654;font-weight:600;margin-bottom:2px}
+.og-field label i{font-style:normal;color:#E32C2B}
+.orgatec .og-field input,.orgatec .og-field select,.orgatec .og-field textarea{font-family:inherit;font-size:16px;color:#111;background:transparent;border:0;border-bottom:1px solid #464654;border-radius:0;padding:12px 0;width:100%;outline:none;-webkit-appearance:none;appearance:none;box-shadow:none;height:auto;margin:0}
+.orgatec .og-field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23464654' stroke-width='1.5'/></svg>");background-repeat:no-repeat;background-position:right 2px center;padding-right:24px;cursor:pointer}
+.orgatec .og-field textarea{min-height:96px;resize:vertical}
+.orgatec .og-field input:focus,.orgatec .og-field select:focus,.orgatec .og-field textarea:focus{border-bottom-color:#111;box-shadow:0 1px 0 #111}
+.orgatec .og-field input::placeholder,.orgatec .og-field textarea::placeholder{color:#8a8a8a}
+.og-form__actions{grid-column:1/-1;display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:6px}
+.og-form__consent{font-size:13px;color:#464654;max-width:380px}
+.og-form__success{grid-column:1/-1;background:#f5f5f5;padding:24px;font-size:16px;display:none}
+
+/* practical */
+.og-practical{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-top:44px;border-top:1px solid #dbdbdb}
+.og-practical b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#464654;font-weight:600;margin-bottom:10px}
+.og-practical p{font-size:20px;font-weight:300;line-height:1.35}
+.og-practical__links{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px}
+
+/* FAQ (house accordion) */
+.og-faq{max-width:850px;margin:0 auto}
+.og-faq .og-h2{text-align:center;margin-bottom:34px}
+.og-faq details{border-bottom:1px solid #ddd}
+.og-faq details:first-of-type{border-top:1px solid #ddd}
+.og-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font-size:16px;font-weight:500}
+.og-faq summary::-webkit-details-marker{display:none}
+.og-faq summary:after{content:"+";font-size:22px;font-weight:300;line-height:1;color:#464654;flex:none}
+.og-faq details[open] summary:after{content:"–"}
+.og-faq .og-faq__a{padding:0 40px 22px 0;font-size:16px;color:#111;max-width:720px}
+
+/* responsive */
+@media(max-width:1023px){
+  .og-chance{grid-template-columns:1fr;gap:40px}
+  .og-mosaic{max-width:420px}
+  .og-grades{grid-template-columns:1fr}
+  .og-cards{grid-template-columns:repeat(2,1fr)}
+  .og-meeting{grid-template-columns:1fr;gap:44px}
+  .og-proof__grid{grid-template-columns:repeat(2,1fr)}
+  .og-proof__item:nth-child(3){border-left:0;padding-left:0}
+  .og-proof__item{border-top:1px solid #dbdbdb;padding:22px 20px 22px 0}
+  .og-proof__item:nth-child(-n+2){border-top:0}
+  .og-sectors{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:767px){
+  .og-section{padding:56px 0}
+  .og-section--tight{padding:44px 0}
+  .og-h2{font-size:36px}
+  .og-heading-row{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:30px}
+  .og-eventbar .og-wrap{flex-direction:column;align-items:flex-start;gap:6px;padding-top:12px;padding-bottom:12px}
+  .og-eventbar__meta{font-size:12px;display:grid;grid-template-columns:1fr 1fr;gap:4px 14px}
+  .og-eventbar__meta span+span:before{content:none;margin:0}
+  .og-hero{min-height:560px}
+  .og-hero__content{padding:80px 20px}
+  .og-hero h1{font-size:38px}
+  .og-hero .og-lead{font-size:19px}
+  .og-hero .button{width:100%;text-align:center}
+  .og-hero__fine{margin-top:30px}
+  .og-proof__grid{grid-template-columns:1fr}
+  .og-proof__item{border-left:0!important;padding-left:0!important;border-top:1px solid #dbdbdb;padding:18px 0}
+  .og-proof__item:first-child{border-top:0}
+  .og-chance__title{font-size:36px}
+  .og-chance__claim{font-size:22px}
+  .og-cards,.og-cards--groups{grid-template-columns:1fr}
+  .og-samples__head .og-h3{font-size:26px}
+  .og-band h2{font-size:34px}
+  .og-form{grid-template-columns:1fr}
+  .og-practical{grid-template-columns:1fr;gap:26px}
+  .og-sector span{font-size:18px}
+}
 </style>
 
-<div class="o26" id="orgatec-2026">
+<section class="orgatec" id="orgatec-2026" data-phase="{{ og_phase }}" data-section-id="{{ section.id }}">
 
-  {%- comment -%} Event bar {%- endcomment -%}
-  <div class="o26-bar">
-    <div class="o26-wrap">
-      <span><strong>ORGATEC 2026</strong></span>
-      <span>{{ s_bar_dates }}</span>
-      <span>{{ s_bar_venue }}</span>
-      <span><strong>{{ s_hall }} · {{ stand }}</strong></span>
+  <!-- 1 · Event bar -->
+  <div class="og-eventbar">
+    <div class="og-wrap">
+      <div class="og-eventbar__meta">
+        <span><strong>ORGATEC 2026</strong></span>
+        <span>{% if og_de %}27.–30. Oktober{% else %}27–30 October{% endif %}</span>
+        <span>{% if og_de %}Koelnmesse, Köln{% else %}Koelnmesse, Cologne{% endif %}</span>
+        <span>{% if og_de %}{{ og_hall_de }} · {{ og_stand_de }}{% else %}{{ og_hall }} · {{ og_stand }}{% endif %}</span>
+      </div>
+      <a href="#" class="og-ics" data-cta="orgatec_calendar">{% if og_de %}Zum Kalender hinzufügen{% else %}Add to calendar{% endif %}</a>
     </div>
   </div>
 
-  {%- comment -%} Hero {%- endcomment -%}
-  <section class="o26-hero">
-    <div class="o26-wrap">
-      <div>
-        <span class="o26-eyebrow">{{ s_eyebrow }}</span>
-        <h1 class="o26-display">{{ s_h1 }}</h1>
-        <p class="o26-lead">{{ s_lead }}</p>
-        <div class="o26-actions">
-          <a class="o26-btn" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="hero">{{ s_cta_samples }}</a>
-          {%- if phase != 'post' and show_body -%}
-            <a class="o26-btn o26-btn--ghost" href="#meeting" data-cta="orgatec_meeting_scroll" data-cta-slot="hero">{{ s_cta_meeting }}</a>
-          {%- else -%}
-            <a class="o26-btn o26-btn--ghost" href="{{ contact_url }}" data-cta="orgatec_contact" data-cta-slot="hero">{{ s_cta_contact }}</a>
-          {%- endif -%}
+  <!-- 2 · Hero -->
+  <div class="og-hero">
+    <div class="og-hero__media"{% unless section.settings.hero_image %} data-label="Hero image · to come from Ivana"{% endunless %}>
+      {%- if section.settings.hero_image -%}
+        {{ section.settings.hero_image | image_url: width: 2200 | image_tag: loading: 'eager', widths: '800, 1200, 1600, 2200', sizes: '100vw', alt: section.settings.hero_image.alt | default: 'ORGATEC 2026 – Monteiro Fabrics' }}
+      {%- endif -%}
+    </div>
+    <div class="og-hero__shade"></div>
+    <div class="og-hero__content">
+      <span class="og-eyebrow">{% if og_de %}Monteiro Fabrics auf der ORGATEC 2026{% else %}Monteiro Fabrics at ORGATEC 2026{% endif %}</span>
+      <h1>{{ og_hero_title }}</h1>
+      <span class="og-rule"></span>
+      <p class="og-lead">{{ og_hero_lead }}</p>
+      <div class="og-btnrow og-btnrow--center">
+        <a class="button og-onlight" href="#samples" data-cta="orgatec_samples" data-cta-slot="hero">{% if og_de %}Muster vorab bestellen{% else %}Order free samples{% endif %}</a>
+        {% if og_phase == "post" %}<a class="button og-ghost" href="{{ og_root }}/pages/contact" data-cta="orgatec_contact">{% if og_de %}Kontakt aufnehmen{% else %}Get in touch{% endif %}</a>{% else %}<a class="button og-ghost" href="#meeting" data-cta="orgatec_meeting_scroll">{% if og_de %}Termin am Stand vereinbaren{% else %}Book a stand meeting{% endif %}</a>{% endif %}
+      </div>
+      <p class="og-hero__fine">{% if og_de %}Made in Portugal · Beschichtete Stoffe seit 1967{% else %}Made in Portugal · Coated fabrics since 1967{% endif %}</p>
+    </div>
+  </div>
+
+  <!-- 3 · Proof strip -->
+  <div class="og-proof">
+    <div class="og-wrap">
+      <div class="og-proof__grid">
+        <div class="og-proof__item"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></svg><div><b>{% if og_de %}Beschichtete Stoffe seit 1967{% else %}Coated fabrics since 1967{% endif %}</b><small>{% if og_de %}Familienunternehmen in vierter Generation{% else %}Family-owned, fourth generation{% endif %}</small></div></div>
+        <div class="og-proof__item"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-5.5-6.5-11a6.5 6.5 0 0 1 13 0c0 5.5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.2"/></svg><div><b>Made in Portugal</b><small>{% if og_de %}Eigene Produktion, europäische Lieferanten{% else %}Own facilities, European suppliers{% endif %}</small></div></div>
+        <div class="og-proof__item"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><div><b>ISO 9001 &amp; ISO 14001</b><small>{% if og_de %}Zertifiziert für Qualität und Umwelt{% else %}Certified quality and environment{% endif %}</small></div></div>
+        <div class="og-proof__item"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg><div><b>{% if og_de %}10 Jahre Garantie{% else %}10-year warranty{% endif %}</b><small>{% if og_de %}Auf Lagerservice-Materialien{% else %}On stock-service materials{% endif %}</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 · Intro -->
+  <div class="og-section og-intro">
+    <div class="og-wrap">
+      <div class="og-heading-row">
+        <h2 class="og-h2">{% if og_de %}Das zeigen wir in Köln{% else %}What we're bringing to Cologne{% endif %}</h2>
+        <a class="og-textlink" href="{{ og_root }}/pages/free-samples" data-cta="orgatec_samples_info">{% if og_de %}So funktionieren die Gratismuster{% else %}How free samples work{% endif %}</a>
+      </div>
+      <p class="og-lead">{% if og_de %}Acht Wände, ein Stand: die CHANCE 2.0-Familie, Polsterstoffe für Healthcare, brandzertifizierte Qualitäten für öffentliche Bereiche, biobasierte Materialien sowie unsere Büro- und Textiloptik-Kollektionen. Alles hier Gezeigte ist am Stand – und das meiste können Sie schon heute als Muster bestellen.{% else %}Eight panels, one stand: the CHANCE 2.0 family, fabrics for healthcare, fire-certified qualities for public venues, biobased materials, and our office and fabric-look ranges. Everything below will be on the stand, and most of it you can sample today.{% endif %}</p>
+    </div>
+  </div>
+
+  <!-- 5 · CHANCE 2.0 (promote only · no samples until launch) -->
+  <div class="og-section og-alt" id="chance">
+    <div class="og-wrap">
+      <div class="og-chance">
+        <div class="og-mosaic" aria-hidden="true"></div>
+        <div>
+          <span class="og-eyebrow">{% if og_de %}Vorschau am Stand · Launch mit unserer neuen Website{% else %}Stand preview · Launching with our new website{% endif %}</span>
+          <h3 class="og-chance__title">CHANCE 2.0</h3>
+          <p class="og-chance__claim">{% if og_de %}236 Farben, eine ikonische Struktur.{% else %}236 colours, one iconic texture.{% endif %}</p>
+          <p class="og-chance__text">{% if og_de %}Ein einzigartiges Farbspektrum bei beschichteten Möbelstoffen. Geschmeidig, langlebig und pflegeleicht – in sechs Qualitäten für jedes Projekt.{% else %}An unrivalled colour spectrum in coated fabrics. Supple, long lasting and low-maintenance, in six grades for every kind of project.{% endif %}</p>
+          <span class="og-chance__label">{% if og_de %}Sechs Qualitäten{% else %}Six grades{% endif %}</span>
+          <div class="og-chips">
+            <span class="og-chip og-chip--solid">Classic</span><span class="og-chip og-chip--solid">Mediflex</span><span class="og-chip og-chip--solid">Bioblend</span><span class="og-chip og-chip--solid">Crib 5</span><span class="og-chip og-chip--solid">Crib 7 | B1</span><span class="og-chip og-chip--solid">Outdoor</span>
+          </div>
+          <span class="og-chance__label">{% if og_de %}Eigenschaften{% else %}Properties{% endif %}</span>
+          <div class="og-chips">
+            <span class="og-chip">{% if og_de %}100 % vegan{% else %}100% vegan{% endif %}</span><span class="og-chip">{% if og_de %}Langlebig{% else %}Long lasting{% endif %}</span><span class="og-chip">{% if og_de %}Phthalatfrei{% else %}Phthalate free{% endif %}</span><span class="og-chip">{% if og_de %}Lichtbeständig{% else %}Light resistant{% endif %}</span><span class="og-chip">{% if og_de %}Abriebfest{% else %}Abrasion resistant{% endif %}</span><span class="og-chip">{% if og_de %}REACH-konform{% else %}REACH compliant{% endif %}</span>
+          </div>
+          <p class="og-chance__note">{% if og_de %}Muster von CHANCE 2.0 folgen mit dem Launch. Die komplette Palette und alle sechs Qualitäten sehen Sie am Stand Q059.{% else %}CHANCE 2.0 samples follow with the launch. See the complete palette and all six grades at Stand Q059.{% endif %}</p>
+          <div class="og-btnrow">
+            <a class="button" href="#meeting" data-cta="orgatec_meeting_scroll" data-cta-slot="chance">{% if og_de %}Termin für CHANCE 2.0 vereinbaren{% else %}Book a meeting to see CHANCE 2.0{% endif %}</a>
+          </div>
         </div>
       </div>
-      <div class="o26-hero__media">
-        {%- if section.settings.hero_image != blank -%}
-          {{ section.settings.hero_image | image_url: width: 1400 | image_tag: loading: 'eager', widths: '600, 900, 1400', sizes: '(max-width: 860px) 100vw, 45vw', alt: section.settings.hero_image.alt | default: 'Monteiro Fabrics at ORGATEC 2026' }}
-        {%- else -%}
-          {{ chance_mosaic }}
-        {%- endif -%}
-        <div class="o26-hero__stand">{{ s_hall }}<b>{{ stand }}</b></div>
+
+      <div class="og-grades">
+        <div class="og-grade">
+          <span class="og-eyebrow">Healthcare</span>
+          <h4>Chance Mediflex</h4>
+          <p>{% if og_de %}Pflegeleichte Ausrüstung auf mehrschichtiger PVC-Beschichtung: antimykotisch, antibakteriell und antiviral. Bielastisch und nicht hautreizend.{% else %}Easy-to-clean finishing on a multilayer PVC coating: antifungal, antibacterial and antiviral. Bielastic and non skin-irritant.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Bielastisch{% else %}Bielastic{% endif %}</span><span class="og-chip">{% if og_de %}Leicht zu reinigen{% else %}Easy clean{% endif %}</span><span class="og-chip">{% if og_de %}Antimikrobiell &amp; antiviral{% else %}Antimicrobial &amp; antiviral{% endif %}</span></div>
+        </div>
+        <div class="og-grade">
+          <span class="og-eyebrow">{% if og_de %}Stadien &amp; Auditorien{% else %}Stadiums &amp; auditoriums{% endif %}</span>
+          <h4>Chance Crib 7 | B1</h4>
+          <p>{% if og_de %}Außergewöhnlich strapazierfähig für stark frequentierte öffentliche Bereiche – geprüft nach DIN 4102 B1, NF P 92-507 M1 und BS 5852 Crib 7.{% else %}Exceptional durability for high-traffic public venues, certified to DIN 4102 B1, NF P 92-507 M1 and BS 5852 Crib 7.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Schwer entflammbar{% else %}Flame retardant{% endif %}</span><span class="og-chip">{% if og_de %}Verschweißbar{% else %}Weldable{% endif %}</span><span class="og-chip">{% if og_de %}Antimikrobiell &amp; antiviral{% else %}Antimicrobial &amp; antiviral{% endif %}</span></div>
+        </div>
+        <div class="og-grade">
+          <span class="og-eyebrow">{% if og_de %}Biobasiert{% else %}Biobased{% endif %}</span>
+          <h4>Chance Bioblend</h4>
+          <p>{% if og_de %}Biobasierter Möbelstoff mit natürlichen Nebenprodukten: 35 % PVC und 65 % pflanzenbasierte Materialien, darunter Rückstände aus der Kastanienverarbeitung.{% else %}Biobased upholstery incorporating natural by-products: 35% PVC and 65% plant-based materials, including chestnut residues.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Pflanzenbasiert{% else %}Plant based{% endif %}</span><span class="og-chip">{% if og_de %}Bio-Baumwolle{% else %}Organic cotton{% endif %}</span><span class="og-chip">{% if og_de %}Phthalatfrei{% else %}Phthalate free{% endif %}</span></div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  {%- if show_body -%}
-  {%- comment -%} Facts {%- endcomment -%}
-  <section class="o26-facts">
-    <div class="o26-wrap">
-      <div><b>{{ s_fact_1_k }}</b><span>{{ s_fact_1_v }}</span></div>
-      <div><b>{{ s_fact_2_k }}</b><span>{{ s_fact_2_v }}</span></div>
-      <div><b>{{ s_fact_3_k }}</b><span>{{ s_fact_3_v }}</span></div>
-      <div><b>{{ s_fact_4_k }}</b><span>{{ s_fact_4_v }}</span></div>
-    </div>
-  </section>
+  <!-- 6 · Collections you can sample today -->
+  <div class="og-section" id="samples">
+    <div class="og-wrap">
+      <div class="og-samples__head">
+        <span class="og-eyebrow">{% if og_de %}Schon heute als Gratismuster erhältlich{% else %}Available as free samples today{% endif %}</span>
+        <h3 class="og-h3">{% if og_de %}Bestellen Sie jetzt Muster dieser Kollektionen und bringen Sie sie mit an den Stand.{% else %}Order samples of these collections now and bring them to the stand.{% endif %}</h3>
+      </div>
 
-  {%- comment -%} Collections {%- endcomment -%}
-  <section class="o26-bring" id="collections">
-    <div class="o26-wrap">
-      <span class="o26-eyebrow">{{ s_bring_eyebrow }}</span>
-      <h2 class="o26-display">{{ s_bring_h2 }}</h2>
-      <p class="o26-lead">{{ s_bring_lead }}</p>
+      <div class="og-cards">
+        <!-- ELECTRA -->
+        <article class="og-card">
+          {%- assign og_p = all_products["electra-collection"] -%}<div class="og-card__img og-placeholder og-placeholder--d"{% unless og_p.featured_image %} data-label="Swatch · Electra"{% endunless %}>{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 900 | image_tag: loading: "lazy", widths: "400, 600, 900", sizes: "(min-width: 1024px) 360px, (min-width: 768px) 45vw, 90vw", alt: og_p.title }}{% endif %}</div>
+          <div class="og-card__swatches"><i style="background:#c9d3d8"></i><i style="background:#6f7d86"></i><i style="background:#2f3a42"></i></div>
+          <span class="og-card__sector">Healthcare</span>
+          <h4 class="og-card__title">Electra</h4>
+          <p class="og-card__claim">{% if og_de %}Strapazierfähiger, bielastischer und antistatischer Möbelstoff für Healthcare-Umgebungen.{% else %}Durable, bielastic and antistatic upholstery for healthcare environments.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}ESD-Schutz{% else %}ESD protective{% endif %}</span><span class="og-chip">{% if og_de %}Leitfähiges Netz{% else %}Conductive network{% endif %}</span><span class="og-chip">{% if og_de %}Leicht zu reinigen{% else %}Easy clean{% endif %}</span></div>
+          <a class="og-arrowlink" href="{{ og_root }}/products/electra-collection" data-cta="orgatec_samples" data-cta-slot="electra">{% if og_de %}Gratismuster bestellen{% else %}Add free sample{% endif %}</a>
+        </article>
+        <!-- STRAW -->
+        <article class="og-card">
+          {%- assign og_p = all_products["straw-collection"] -%}<div class="og-card__img og-placeholder og-placeholder--a"{% unless og_p.featured_image %} data-label="Swatch · Straw"{% endunless %}>{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 900 | image_tag: loading: "lazy", widths: "400, 600, 900", sizes: "(min-width: 1024px) 360px, (min-width: 768px) 45vw, 90vw", alt: og_p.title }}{% endif %}</div>
+          <div class="og-card__swatches"><i style="background:#cdbfa3"></i><i style="background:#8a7a5e"></i><i style="background:#4b4b45"></i></div>
+          <span class="og-card__sector">{% if og_de %}Textiloptik{% else %}Fabric look{% endif %}</span>
+          <h4 class="og-card__title">Straw</h4>
+          <p class="og-card__claim">{% if og_de %}Sieht aus wie Textil, leistet wie ein Profi.{% else %}Looks like fabric, performs like a pro.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Lichtbeständig{% else %}Light resistant{% endif %}</span><span class="og-chip">{% if og_de %}Leicht zu reinigen{% else %}Easy clean{% endif %}</span></div>
+          <a class="og-arrowlink" href="{{ og_root }}/products/straw-collection" data-cta="orgatec_samples" data-cta-slot="straw">{% if og_de %}Gratismuster bestellen{% else %}Add free sample{% endif %}</a>
+        </article>
+        <!-- ORIGIN -->
+        <article class="og-card">
+          {%- assign og_p = all_products["origin-collection"] -%}<div class="og-card__img og-placeholder og-placeholder--c"{% unless og_p.featured_image %} data-label="Swatch · Origin"{% endunless %}>{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 900 | image_tag: loading: "lazy", widths: "400, 600, 900", sizes: "(min-width: 1024px) 360px, (min-width: 768px) 45vw, 90vw", alt: og_p.title }}{% endif %}</div>
+          <div class="og-card__swatches"><i style="background:#e0d9cc"></i><i style="background:#a9a08e"></i><i style="background:#5f5a4f"></i></div>
+          <span class="og-card__sector">{% if og_de %}Naturfasern{% else %}Natural fibres{% endif %}</span>
+          <h4 class="og-card__title">Origin</h4>
+          <p class="og-card__claim">{% if og_de %}Hergestellt aus einer wasserbasierten Formulierung und biobasierten Reststoffen auf Naturfaserbasis.{% else %}Produced from a water-based formulation and bio-based waste on a natural fibre base.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Pflanzenbasiert{% else %}Plant based{% endif %}</span><span class="og-chip">{% if og_de %}Wasserbasiert{% else %}Water base{% endif %}</span><span class="og-chip">{% if og_de %}53 % Naturfasern{% else %}53% natural fibres{% endif %}</span></div>
+          <a class="og-arrowlink" href="{{ og_root }}/products/origin-collection" data-cta="orgatec_samples" data-cta-slot="origin">{% if og_de %}Gratismuster bestellen{% else %}Add free sample{% endif %}</a>
+        </article>
+      </div>
 
-      <div class="o26-grid">
-
-        {%- comment -%} CHANCE 2.0 family {%- endcomment -%}
-        <article class="o26-card o26-card--sand o26-card--12">
-          <div class="o26-chance">
-            <div>
-              <p class="o26-card__tag">{{ s_chance_tag }}</p>
-              <h3 class="o26-display">Chance 2.0</h3>
-              <p class="o26-card__desc">{{ s_chance_desc }}</p>
-              <ul class="o26-chance__grades" aria-label="{{ s_grades }}">
-                <li>Classic</li><li>Mediflex</li><li>Bioblend</li><li>Crib 5</li><li>Crib 7 | B1</li><li>Outdoor</li>
-              </ul>
-              <ul class="o26-card__chips">{%- assign chips = s_chance_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-              <div class="o26-card__links">
-                <a href="{{ chance_url }}" data-cta="orgatec_explore" data-collection="chance">{{ s_explore }}</a>
-                <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="chance">{{ s_samples }}</a>
-              </div>
-            </div>
-            <div>{{ chance_mosaic }}</div>
+      <div class="og-cards og-cards--groups">
+        <!-- PU OFFICE -->
+        <article class="og-card">
+          <span class="og-card__sector">{% if og_de %}Büro{% else %}Office{% endif %}</span>
+          <h4 class="og-card__title">PU Office</h4>
+          <p class="og-card__claim">{% if og_de %}Elegante, strapazierfähige Bürostoffe für stilvolle und komfortable Arbeitswelten.{% else %}Sleek, durable office fabrics for stylish and comfortable workspaces.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Abriebfest{% else %}Abrasion resistant{% endif %}</span><span class="og-chip">{% if og_de %}Schwer entflammbar{% else %}Flame retardant{% endif %}</span></div>
+          <div class="og-card__products">
+            <a href="{{ og_root }}/products/furna-collection" data-cta="orgatec_samples" data-cta-slot="furna">{%- assign og_p = all_products["furna-collection"] -%}<i style="background:linear-gradient(160deg,#b8b0a4,#7d7469)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Furna</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/mara-collection" data-cta="orgatec_samples" data-cta-slot="mara">{%- assign og_p = all_products["mara-collection"] -%}<i style="background:linear-gradient(160deg,#a7b0b9,#5f6873)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Mara</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/portus-collection" data-cta="orgatec_samples" data-cta-slot="portus">{%- assign og_p = all_products["portus-collection"] -%}<i style="background:linear-gradient(160deg,#c4b39d,#8c7a62)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Portus</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/elefante-collection" data-cta="orgatec_samples" data-cta-slot="elefante">{%- assign og_p = all_products["elefante-collection"] -%}<i style="background:linear-gradient(160deg,#8f8f95,#3e3e45)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Elefante</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
           </div>
         </article>
-
-        {%- comment -%} CHANCE sub-grades {%- endcomment -%}
-        <article class="o26-card o26-card--mist o26-card--4 o26-card--has-swatch">
-          {%- if all_products['mediflex-collection'].featured_image -%}
-            <div class="o26-card__swatch">{{ all_products['mediflex-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'CHANCE MEDIFLEX' }}</div>
-          {%- endif -%}
-          <span class="o26-card__sector">{{ s_mediflex_sector }}</span>
-          <h3 class="o26-display">Chance<br>Mediflex</h3>
-          <p class="o26-card__desc">{{ s_mediflex_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_mediflex_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ base }}/products/mediflex-collection" data-cta="orgatec_explore" data-collection="mediflex">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="mediflex">{{ s_samples }}</a>
+        <!-- PVC FABRIC LOOK -->
+        <article class="og-card">
+          <span class="og-card__sector">{% if og_de %}Textiloptik, PVC-Leistung{% else %}Textile look, PVC performance{% endif %}</span>
+          <h4 class="og-card__title">PVC Fabric Look</h4>
+          <p class="og-card__claim">{% if og_de %}Textile Seele, robuster Kern, elegante Haptik – und die Leistung von PVC.{% else %}Textile soul, durable heart, elegant feel and PVC high performance.{% endif %}</p>
+          <div class="og-chips"><span class="og-chip">{% if og_de %}Textiloptik{% else %}Fabric look{% endif %}</span><span class="og-chip">{% if og_de %}Hohe Leistung{% else %}High performance{% endif %}</span></div>
+          <div class="og-card__products">
+            <a href="{{ og_root }}/products/straw-collection" data-cta="orgatec_samples" data-cta-slot="straw-2">{%- assign og_p = all_products["straw-collection"] -%}<i style="background:linear-gradient(160deg,#d3c7ae,#9a8b6c)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Straw</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/siesta-collection" data-cta="orgatec_samples" data-cta-slot="siesta">{%- assign og_p = all_products["siesta-collection"] -%}<i style="background:linear-gradient(160deg,#c9cfc4,#7f877a)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Siesta</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/glam-collection" data-cta="orgatec_samples" data-cta-slot="glam">{%- assign og_p = all_products["glam-collection"] -%}<i style="background:linear-gradient(160deg,#d9c9b6,#a58a6a)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Glam</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
+            <a href="{{ og_root }}/products/jazz-collection" data-cta="orgatec_samples" data-cta-slot="jazz">{%- assign og_p = all_products["jazz-collection"] -%}<i style="background:linear-gradient(160deg,#b9b4c4,#6b6580)">{% if og_p.featured_image %}{{ og_p.featured_image | image_url: width: 400 | image_tag: loading: "lazy", alt: og_p.title }}{% endif %}</i><span>Jazz</span><small>{% if og_de %}Gratismuster{% else %}Add free sample{% endif %}</small></a>
           </div>
         </article>
-
-        <article class="o26-card o26-card--taupe o26-card--4">
-          <span class="o26-card__sector">{{ s_crib_sector }}</span>
-          <h3 class="o26-display">Chance<br>Crib 7 | B1</h3>
-          <p class="o26-card__desc">{{ s_crib_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_crib_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ chance_url }}" data-cta="orgatec_explore" data-collection="crib7-b1">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="crib7">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        <article class="o26-card o26-card--sage o26-card--4">
-          <span class="o26-card__sector">{{ s_bioblend_sector }}</span>
-          <h3 class="o26-display">Chance<br>Bioblend</h3>
-          <p class="o26-card__desc">{{ s_bioblend_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_bioblend_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="bioblend">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        {%- comment -%} ELECTRA {%- endcomment -%}
-        <article class="o26-card o26-card--mist o26-card--6 o26-card--has-swatch">
-          {%- if all_products['electra-collection'].featured_image -%}
-            <div class="o26-card__swatch">{{ all_products['electra-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'ELECTRA' }}</div>
-          {%- endif -%}
-          <span class="o26-card__sector">{{ s_electra_sector }}</span>
-          <p class="o26-card__tag">{{ s_electra_tag }}</p>
-          <h3 class="o26-display">Electra</h3>
-          <p class="o26-card__desc">{{ s_electra_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_electra_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ base }}/products/electra-collection" data-cta="orgatec_explore" data-collection="electra">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="electra">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        {%- comment -%} STRAW {%- endcomment -%}
-        <article class="o26-card o26-card--taupe o26-card--6 o26-card--has-swatch">
-          {%- if all_products['straw-collection'].featured_image -%}
-            <div class="o26-card__swatch">{{ all_products['straw-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'STRAW' }}</div>
-          {%- endif -%}
-          <p class="o26-card__tag">{{ s_straw_tag }}</p>
-          <h3 class="o26-display">Straw</h3>
-          <p class="o26-card__desc">{{ s_straw_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_straw_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ base }}/products/straw-collection" data-cta="orgatec_explore" data-collection="straw">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="straw">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        {%- comment -%} ORIGIN {%- endcomment -%}
-        <article class="o26-card o26-card--sage o26-card--6 o26-card--has-swatch">
-          {%- if all_products['origin-collection'].featured_image -%}
-            <div class="o26-card__swatch">{{ all_products['origin-collection'].featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: 'ORIGIN' }}</div>
-          {%- endif -%}
-          <p class="o26-card__tag">{{ s_origin_tag }}</p>
-          <h3 class="o26-display">Origin</h3>
-          <p class="o26-card__desc">{{ s_origin_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_origin_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ base }}/pages/origin-sustainable-fabrics" data-cta="orgatec_explore" data-collection="origin">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="origin">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        {%- comment -%} PU OFFICE {%- endcomment -%}
-        <article class="o26-card o26-card--taupe o26-card--6">
-          <span class="o26-card__sector">{{ s_office_sector }}</span>
-          <p class="o26-card__tag">{{ s_office_tag }}</p>
-          <h3 class="o26-display">Furna · Mara<br>Portus · Elefante</h3>
-          <p class="o26-card__desc">{{ s_office_desc }}</p>
-          <div class="o26-card__swatches">
-            {%- assign office = 'furna,mara,portus,elefante' | split: ',' -%}
-            {%- for h in office -%}
-              {%- assign ph = h | append: '-collection' -%}
-              {%- assign prod = all_products[ph] -%}
-              {%- if prod.featured_image -%}
-                <a href="{{ base }}/products/{{ ph }}" data-cta="orgatec_explore" data-collection="{{ h }}">{{ prod.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', alt: prod.title }}<span>{{ h | upcase }}</span></a>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-          <ul class="o26-card__chips">{%- assign chips = s_office_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ base }}/collections/office-fabrics-upholstery" data-cta="orgatec_explore" data-collection="office">{{ s_explore }}</a>
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="office">{{ s_samples }}</a>
-          </div>
-        </article>
-
-        {%- comment -%} PVC FABRIC LOOK {%- endcomment -%}
-        <article class="o26-card o26-card--sand o26-card--12">
-          <div class="o26-chance">
-          <div>
-          <p class="o26-card__tag">{{ s_fabric_tag }}</p>
-          <h3 class="o26-display">Straw · Siesta<br>Glam · Jazz</h3>
-          <p class="o26-card__desc">{{ s_fabric_desc }}</p>
-          <ul class="o26-card__chips">{%- assign chips = s_fabric_chips | split: '|' -%}{%- for c in chips -%}<li>{{ c }}</li>{%- endfor -%}</ul>
-          <div class="o26-card__links">
-            <a href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="fabric-look">{{ s_samples }}</a>
-          </div>
-          </div>
-          <div class="o26-card__swatches o26-card__swatches--2x2">
-            {%- assign fabric = 'straw,siesta,glam,jazz' | split: ',' -%}
-            {%- for h in fabric -%}
-              {%- assign ph = h | append: '-collection' -%}
-              {%- assign prod = all_products[ph] -%}
-              {%- if prod.featured_image -%}
-                <a href="{{ base }}/products/{{ ph }}" data-cta="orgatec_explore" data-collection="{{ h }}">{{ prod.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', alt: prod.title }}<span>{{ h | upcase }}</span></a>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-          </div>
-        </article>
-
       </div>
     </div>
-  </section>
+  </div>
 
-  {%- comment -%} Samples band {%- endcomment -%}
-  <section class="o26-band">
-    <div class="o26-wrap">
-      <div>
-        {%- if phase == 'post' -%}
-          <h2 class="o26-display">{{ s_post_h2 }}</h2>
-          <p>{{ s_post_p }}</p>
-        {%- else -%}
-          <h2 class="o26-display">{{ s_band_h2 }}</h2>
-          <p>{{ s_band_p }}</p>
-        {%- endif -%}
+  <!-- 7 · Sectors (DACH angle: office first) -->
+  <div class="og-section og-section--tight" style="padding-top:0">
+    <div class="og-wrap">
+      <div class="og-heading-row">
+        <h2 class="og-h2">{% if og_de %}Stoffe für Ihre Branche{% else %}Fabrics for your sector{% endif %}</h2>
+        <a class="og-textlink" href="{{ og_root }}/collections/coated-fabrics" data-cta="orgatec_explore" data-collection="coated-fabrics">{% if og_de %}Alle beschichteten Möbelstoffe{% else %}All coated fabrics{% endif %}</a>
       </div>
-      <div>
-        <a class="o26-btn o26-btn--light" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="band">{{ s_cta_samples }}</a>
+      <div class="og-sectors">
+        <a class="og-sector" href="{{ og_root }}/collections/office-fabrics-upholstery" data-cta="orgatec_explore" data-collection="office-fabrics-upholstery"><div class="og-placeholder og-placeholder--dark"{% unless section.settings.sector_image_office %} data-label="Sector image · office"{% endunless %}>{% if section.settings.sector_image_office %}{{ section.settings.sector_image_office | image_url: width: 800 | image_tag: loading: "lazy", alt: "" }}{% endif %}</div><span>{% if og_de %}Büro{% else %}Office{% endif %}</span></a>
+        <a class="og-sector" href="{{ og_root }}/collections/healthcare" data-cta="orgatec_explore" data-collection="healthcare"><div class="og-placeholder og-placeholder--dark"{% unless section.settings.sector_image_healthcare %} data-label="Sector image · healthcare"{% endunless %}>{% if section.settings.sector_image_healthcare %}{{ section.settings.sector_image_healthcare | image_url: width: 800 | image_tag: loading: "lazy", alt: "" }}{% endif %}</div><span>Healthcare</span></a>
+        <a class="og-sector" href="{{ og_root }}/collections/hospitality-fabrics" data-cta="orgatec_explore" data-collection="hospitality-fabrics"><div class="og-placeholder og-placeholder--dark"{% unless section.settings.sector_image_hospitality %} data-label="Sector image · hospitality"{% endunless %}>{% if section.settings.sector_image_hospitality %}{{ section.settings.sector_image_hospitality | image_url: width: 800 | image_tag: loading: "lazy", alt: "" }}{% endif %}</div><span>{% if og_de %}Hotellerie &amp; Gastronomie{% else %}Hospitality{% endif %}</span></a>
+        <a class="og-sector" href="{{ og_root }}/collections/public-spaces" data-cta="orgatec_explore" data-collection="public-spaces"><div class="og-placeholder og-placeholder--dark"{% unless section.settings.sector_image_public %} data-label="Sector image · public spaces"{% endunless %}>{% if section.settings.sector_image_public %}{{ section.settings.sector_image_public | image_url: width: 800 | image_tag: loading: "lazy", alt: "" }}{% endif %}</div><span>{% if og_de %}Öffentliche Bereiche{% else %}Public spaces{% endif %}</span></a>
       </div>
     </div>
-  </section>
+  </div>
 
-  {%- comment -%} Meeting form (hidden after the fair) {%- endcomment -%}
-  {%- if phase != 'post' -%}
-  <section class="o26-meeting" id="meeting">
-    <div class="o26-wrap">
-      <div>
-        <span class="o26-eyebrow">{{ s_meeting_eyebrow }}</span>
-        <h2 class="o26-display">{{ s_meeting_h2 }}</h2>
-        <p class="o26-lead">{{ s_meeting_p }}</p>
+  <!-- 8 · CTA band -->
+  <div class="og-section og-alt og-band">
+    <div class="og-wrap">
+      <div class="og-band__inner">
+        <span class="og-eyebrow">{{ og_band_eyebrow }}</span>
+        <h2>{{ og_band_title }}</h2>
+        <span class="og-rule og-rule--center"></span>
+        <p>{% if og_de %}Kostenlose Muster werden innerhalb weniger Tage versandt. Bringen Sie sie mit an den Stand Q059 – wir stimmen Farben ab, gehen Spezifikationen durch und planen Ihr Projekt gemeinsam.{% else %}Free samples are sent within a few days. Bring them to Stand Q059 and we'll match colours, go through specifications and plan your project together.{% endif %}</p>
+        <a class="button" href="#samples" data-cta="orgatec_samples" data-cta-slot="band">{% if og_de %}Kostenlose Muster bestellen{% else %}Order free samples{% endif %}</a>
+        <br>
+        <a class="og-textlink" href="{{ og_root }}/pages/free-samples" data-cta="orgatec_samples_info">{% if og_de %}So funktionieren die Gratismuster{% else %}How do free samples work?{% endif %}</a>
       </div>
-      <div>
-        {%- form 'contact', id: 'orgatec-meeting-form', class: 'o26-form', data-form: 'orgatec_meeting' -%}
+    </div>
+  </div>
+
+  <!-- 9 · Meeting form (secondary conversion) -->
+  {% unless og_phase == "post" or section.settings.show_meeting_form == false %}
+  <div class="og-section" id="meeting">
+    <div class="og-wrap">
+      <div class="og-meeting">
+        <div class="og-meeting__copy">
+          <span class="og-eyebrow">{% if og_de %}Termin{% else %}Meeting{% endif %}</span>
+          <h2 class="og-h2">{% if og_de %}Termin am Stand Q059 vereinbaren{% else %}Book a meeting at Stand Q059{% endif %}</h2>
+          <p>{% if og_de %}Erzählen Sie uns von Ihrem Projekt und wann Sie in Köln sind. Wir bestätigen Ihnen den Termin am Stand per E-Mail.{% else %}Tell us about your project and when you'll be in Cologne. We'll confirm a time at the stand by email.{% endif %}</p>
+          <div class="og-direct">
+            <b>{% if og_de %}Lieber direkt schreiben?{% else %}Prefer to write directly?{% endif %}</b>
+            <a href="mailto:hello@monteirofabrics.com" data-cta="orgatec_contact">hello@monteirofabrics.com</a>
+            <a href="tel:+351228338640" data-cta="orgatec_contact">+351 228 338 640</a>
+          </div>
+        </div>
+
+        {% form 'contact', id: 'orgatec-meeting-form', class: 'og-form', data-form: 'orgatec_meeting' %}
           {%- if form.posted_successfully? -%}
-            <div class="o26-ok o26-field--full" data-form-success="orgatec_meeting">
-              <h3 class="o26-display">{{ s_f_ok_h }}</h3>
-              <p>{{ s_f_ok_p }}</p>
-              <div class="o26-actions"><a class="o26-btn" href="{{ samples_url }}" data-cta="orgatec_samples" data-cta-slot="form-success">{{ s_cta_samples }}</a></div>
-            </div>
+          <div class="og-form__success" data-form-success="orgatec_meeting" style="display:block">{% if og_de %}Vielen Dank. Wir bestätigen Ihren Termin am Stand Q059 per E-Mail.{% else %}Thank you. We'll confirm your meeting at Stand Q059 by email.{% endif %}</div>
           {%- else -%}
-            {%- if form.errors -%}
-              <div class="o26-form__errors" role="alert">{{ s_f_err }}
-                <ul>{%- for field in form.errors -%}<li>{{ form.errors.translated_fields[field] | capitalize }} – {{ form.errors.messages[field] }}</li>{%- endfor -%}</ul>
-              </div>
-            {%- endif -%}
-            <input type="hidden" name="contact[Request]" value="ORGATEC 2026 – stand meeting ({{ s_hall }}, {{ stand }})">
-            <input type="hidden" name="contact[Page]" value="{{ request.path }}">
-            <input type="hidden" name="contact[Locale]" value="{{ request.locale.iso_code }}">
-            <input type="hidden" name="contact[utm_source]" value="" data-utm="utm_source">
-            <input type="hidden" name="contact[utm_medium]" value="" data-utm="utm_medium">
-            <input type="hidden" name="contact[utm_campaign]" value="" data-utm="utm_campaign">
-            <input type="hidden" name="contact[utm_content]" value="" data-utm="utm_content">
-            <input type="hidden" name="contact[utm_term]" value="" data-utm="utm_term">
-            <input type="hidden" name="contact[gclid]" value="" data-utm="gclid">
-            <div class="o26-field{% if form.errors contains 'name' %} o26-field--error{% endif %}">
-              <label for="o26-name">{{ s_f_name }}</label>
-              <input id="o26-name" type="text" name="contact[name]" required autocomplete="name" value="{{ form.name }}">
-            </div>
-            <div class="o26-field">
-              <label for="o26-company">{{ s_f_company }}</label>
-              <input id="o26-company" type="text" name="contact[Company]" required autocomplete="organization">
-            </div>
-            <div class="o26-field{% if form.errors contains 'email' %} o26-field--error{% endif %}">
-              <label for="o26-email">{{ s_f_email }}</label>
-              <input id="o26-email" type="email" name="contact[email]" required autocomplete="email" value="{{ form.email }}">
-            </div>
-            <div class="o26-field">
-              <label for="o26-phone">{{ s_f_phone }}</label>
-              <input id="o26-phone" type="tel" name="contact[Phone]" autocomplete="tel">
-            </div>
-            <div class="o26-field o26-field--full">
-              <label for="o26-day">{{ s_f_day }}</label>
-              <select id="o26-day" name="contact[Preferred day]">
-                <option value="{{ s_f_day_any }}">{{ s_f_day_any }}</option>
-                <option value="27.10.2026">{% if de %}Dienstag, 27. Oktober{% else %}Tuesday, 27 October{% endif %}</option>
-                <option value="28.10.2026">{% if de %}Mittwoch, 28. Oktober{% else %}Wednesday, 28 October{% endif %}</option>
-                <option value="29.10.2026">{% if de %}Donnerstag, 29. Oktober{% else %}Thursday, 29 October{% endif %}</option>
-                <option value="30.10.2026">{% if de %}Freitag, 30. Oktober{% else %}Friday, 30 October{% endif %}</option>
-              </select>
-            </div>
-            <div class="o26-field o26-field--full">
-              <label for="o26-msg">{{ s_f_msg }}</label>
-              <textarea id="o26-msg" name="contact[body]">{{ form.body }}</textarea>
-            </div>
-            <div class="o26-form__foot">
-              <button type="submit" class="o26-btn" data-cta="orgatec_meeting_submit">{{ s_f_send }}</button>
-              <small>{{ s_f_privacy }}</small>
-            </div>
+          {%- if form.errors -%}<div class="og-form__success" style="display:block">{{ form.errors | default_errors }}</div>{%- endif -%}
+          <input type="hidden" name="contact[Request]" value="ORGATEC 2026 – stand meeting">
+          <input type="hidden" name="contact[Page]" value="{{ request.path }}">
+          <input type="hidden" name="contact[Locale]" value="{{ request.locale.iso_code }}">
+          <input type="hidden" name="contact[utm_source]" value="">
+          <input type="hidden" name="contact[utm_medium]" value="">
+          <input type="hidden" name="contact[utm_campaign]" value="">
+          <input type="hidden" name="contact[utm_content]" value="">
+          <input type="hidden" name="contact[utm_term]" value="">
+          <input type="hidden" name="contact[gclid]" value="">
+
+          <div class="og-field"><label for="og-name"><span>Name</span> <i>*</i></label><input id="og-name" name="contact[name]" type="text" required autocomplete="name" value="{{ form.name }}"></div>
+          <div class="og-field"><label for="og-company"><span>{% if og_de %}Unternehmen{% else %}Company{% endif %}</span> <i>*</i></label><input id="og-company" name="contact[Company]" type="text" required autocomplete="organization" value="{{ form.Company }}"></div>
+          <div class="og-field"><label for="og-email"><span>{% if og_de %}E-Mail{% else %}Email{% endif %}</span> <i>*</i></label><input id="og-email" name="contact[email]" type="email" required autocomplete="email" value="{{ form.email }}"></div>
+          <div class="og-field"><label for="og-phone">{% if og_de %}Telefon{% else %}Phone{% endif %}</label><input id="og-phone" name="contact[Phone]" type="tel" autocomplete="tel" value="{{ form.Phone }}"></div>
+          <div class="og-field"><label for="og-day">{% if og_de %}Wunschtag{% else %}Preferred day{% endif %}</label>
+            <select id="og-day" name="contact[Preferred day]">
+              <option value="">{% if og_de %}Flexibel{% else %}Flexible{% endif %}</option>
+              <option value="2026-10-27">{% if og_de %}Dienstag, 27. Oktober{% else %}Tuesday 27 October{% endif %}</option>
+              <option value="2026-10-28">{% if og_de %}Mittwoch, 28. Oktober{% else %}Wednesday 28 October{% endif %}</option>
+              <option value="2026-10-29">{% if og_de %}Donnerstag, 29. Oktober{% else %}Thursday 29 October{% endif %}</option>
+              <option value="2026-10-30">{% if og_de %}Freitag, 30. Oktober{% else %}Friday 30 October{% endif %}</option>
+            </select></div>
+          <div class="og-field"><label for="og-sector">{% if og_de %}Branche{% else %}Sector{% endif %}</label>
+            <select id="og-sector" name="contact[Sector]">
+              <option value="">{% if og_de %}Bitte wählen{% else %}Select{% endif %}</option>
+              <option value="Office furniture">{% if og_de %}Büromöbel{% else %}Office furniture{% endif %}</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Hospitality">{% if og_de %}Hotellerie &amp; Gastronomie{% else %}Hospitality{% endif %}</option>
+              <option value="Public spaces & transport">{% if og_de %}Öffentliche Bereiche &amp; Verkehr{% else %}Public spaces &amp; transport{% endif %}</option>
+              <option value="Architecture & interior design">{% if og_de %}Architektur &amp; Innenarchitektur{% else %}Architecture &amp; interior design{% endif %}</option>
+              <option value="Other">{% if og_de %}Sonstiges{% else %}Other{% endif %}</option>
+            </select></div>
+          <div class="og-field og-field--full"><label for="og-message">{% if og_de %}Ihr Projekt{% else %}Your project{% endif %}</label><textarea id="og-message" name="contact[body]" rows="3" placeholder="{% if og_de %}Kollektionen, die Sie sehen möchten, Mengen, Zeitplan …{% else %}Collections you'd like to see, quantities, timing…{% endif %}"></textarea></div>
+          <div class="og-form__actions">
+            <button type="submit" class="button" data-cta="orgatec_meeting_submit">{% if og_de %}Termin anfragen{% else %}Request a meeting{% endif %}</button>
+            <span class="og-form__consent">{% if og_de %}Wir verwenden Ihre Angaben ausschließlich zur Beantwortung Ihrer Anfrage.{% else %}We use your details only to respond to your request.{% endif %}</span>
+          </div>
           {%- endif -%}
-        {%- endform -%}
+        {% endform %}
       </div>
     </div>
-  </section>
-  {%- endif -%}
+  </div>
 
-  {%- comment -%} Practical info {%- endcomment -%}
-  <section class="o26-info" id="info">
-    <div class="o26-wrap">
-      <span class="o26-eyebrow">{{ s_info_eyebrow }}</span>
-      <h2 class="o26-display">{{ s_info_h2 }}</h2>
-      <dl>
-        <div><dt>{{ s_info_when_k }}</dt><dd>{{ s_info_when_v }}</dd></div>
-        <div><dt>{{ s_info_where_k }}</dt><dd>{{ s_info_where_v }}</dd></div>
-        <div><dt>{{ s_info_stand_k }}</dt><dd>{{ s_info_stand_v }}</dd></div>
-      </dl>
-      <div class="o26-actions">
-        {%- if phase != 'post' -%}
-          <a class="o26-btn" href="#" id="o26-ics" data-cta="orgatec_calendar" download="orgatec-2026-monteiro-fabrics.ics">{{ s_info_cal }}</a>
-        {%- endif -%}
-        <a class="o26-btn o26-btn--ghost" href="https://www.orgatec.com/orgatec-exhibitors/hall-plan/" target="_blank" rel="noopener" data-cta="orgatec_hallplan">{{ s_info_plan }}</a>
+  {% endunless %}
+
+  <!-- 10 · Practical -->
+  <div class="og-section og-section--tight" style="padding-top:0">
+    <div class="og-wrap">
+      <div class="og-practical">
+        <div><b>{% if og_de %}Wann{% else %}When{% endif %}</b><p>{% if og_de %}27.–30. Oktober 2026<br>09:00–18:00 Uhr{% else %}27–30 October 2026<br>09:00–18:00{% endif %}</p></div>
+        <div><b>{% if og_de %}Wo{% else %}Where{% endif %}</b><p>{% if og_de %}Koelnmesse, Köln<br>Halle 10.2{% else %}Koelnmesse, Cologne<br>Hall 10.2{% endif %}</p></div>
+        <div><b>Stand</b><p>Q059<br>Contract Solutions</p></div>
+      </div>
+      <div class="og-practical__links">
+        <a class="og-arrowlink og-ics" href="#" data-cta="orgatec_calendar">{% if og_de %}Zum Kalender hinzufügen{% else %}Add to calendar{% endif %}</a>
+        <a class="og-arrowlink" href="https://www.orgatec.com/orgatec-exhibitors/list-of-exhibitors/" target="_blank" rel="noopener" data-cta="orgatec_hallplan">{% if og_de %}Ausstellereintrag auf orgatec.com{% else %}Exhibitor listing on orgatec.com{% endif %}</a>
       </div>
     </div>
-  </section>
-  {%- endif -%}
+  </div>
 
-</div>
+  <!-- 11 · FAQ (house accordion) -->
+  {% if section.settings.show_faq %}
+  <div class="og-section og-alt">
+    <div class="og-wrap">
+      <div class="og-faq">
+        <h2 class="og-h2">{% if og_de %}Gut zu wissen{% else %}Good to know{% endif %}</h2>
+        <details><summary>{% if og_de %}Wie funktionieren die Gratismuster?{% else %}How do free samples work?{% endif %}</summary><div class="og-faq__a">{% if og_de %}Öffnen Sie die Kollektionsseite, wählen Sie Ihre Farben und legen Sie sie in den Warenkorb. Gehen Sie zur Kasse, geben Sie Kontakt und Lieferadresse an – wir senden Ihnen die Muster innerhalb weniger Tage. Kostenlos.{% else %}Open the collection page, choose the colours you like and add them to the cart. Go to checkout, add your contact and delivery address, and we'll send the samples within a few days. Free of charge.{% endif %}</div></details>
+        <details><summary>{% if og_de %}Kann ich CHANCE 2.0 schon vor dem Launch sehen?{% else %}Can I see CHANCE 2.0 before it launches?{% endif %}</summary><div class="og-faq__a">{% if og_de %}Ja. Die komplette Palette mit 236 Farben und alle sechs Qualitäten sind am Stand. Muster von CHANCE 2.0 folgen mit dem Launch unserer neuen Website. Vereinbaren Sie einen Termin, und wir führen Sie durch die Kollektion.{% else %}Yes. The complete 236-colour palette and all six grades are on the stand. Samples of CHANCE 2.0 follow with the launch of our new website. Book a meeting and we'll walk you through the collection.{% endif %}</div></details>
+        <details><summary>{% if og_de %}Wo genau ist der Stand?{% else %}Where exactly is the stand?{% endif %}</summary><div class="og-faq__a">{% if og_de %}Halle 10.2, Stand Q059, im Bereich Contract Solutions der Koelnmesse. Speichern Sie die Termine im Kalender – wir sehen uns dort.{% else %}Hall 10.2, Stand Q059, in the Contract Solutions area of Koelnmesse. Add the dates to your calendar and we'll see you there.{% endif %}</div></details>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</section>
+
+<script>
+/* CHANCE 2.0 colour mosaic — decorative, CSS only (no asset needed) */
+(function(){
+  const m=document.querySelector(".og-mosaic"); if(!m) return;
+  const cols=["#f2ede4","#e6dccb","#d9c7a7","#c9a97a","#b8864f","#8f5a2b","#c53a2e","#e0603f","#ef8f4a","#f3b64c","#e8d24a","#b7bd4a","#7fa24b","#4f8b52","#2f6f5a","#2f7d7a","#3b8fa8","#3f6fb0","#2f519b","#4a4a8c","#6f4c8c","#9a5b8f","#c76a9b","#e39ab1","#d7b7b0","#b98b7f","#8c6b62","#5e4a45","#3a3230","#1f1d1c","#4b4b52","#6f7078","#9a9ba3","#c4c5cb","#e2e2e5","#f4f4f5","#b5c9c1","#8fa9a0","#6b8a83","#d8c9a0","#aa9a6b","#7b6f47","#e7c7b4","#c99a8a","#a17567","#d3d9a8","#a7b47c","#7c8d52","#5a6b3a","#f0d9d1","#e0b8ad","#b98d84","#c8cfd8","#8f9db0","#5d6e88","#3d4d66","#efe6d0","#d6c9ad","#b3a486","#8b7c5f","#6d604a","#e8e0f0","#c8b8dc","#a691c3"];
+  let i=0; for(let n=0;n<64;n++){ const el=document.createElement("i"); el.style.background=cols[n%cols.length]; m.appendChild(el); }
+})();
+/* Add to calendar (.ics) — measured as a click; on Shopify the download works, in a sandboxed preview it may be inert */
+(function(){
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Monteiro Fabrics//ORGATEC 2026//EN","BEGIN:VEVENT","UID:orgatec-2026-monteiro-fabrics@monteirofabrics.com","DTSTAMP:20260910T090000Z","DTSTART;TZID=Europe/Berlin:20261027T090000","DTEND;TZID=Europe/Berlin:20261030T180000","SUMMARY:ORGATEC 2026 – Monteiro Fabrics\\, Hall 10.2\\, Stand Q059","LOCATION:Koelnmesse\\, Messeplatz 1\\, 50679 Köln","DESCRIPTION:Coated upholstery fabrics by Monteiro Fabrics. Hall 10.2\\, Stand Q059. https://www.monteirofabrics.com/pages/orgatec-2026","URL:https://www.monteirofabrics.com/pages/orgatec-2026","END:VEVENT","END:VCALENDAR"].join("\r\n");
+  document.querySelectorAll(".og-ics").forEach(a=>{
+    a.addEventListener("click",e=>{ e.preventDefault(); const b=new Blob([ics],{type:"text/calendar;charset=utf-8"}); const u=URL.createObjectURL(b); const l=document.createElement("a"); l.href=u; l.download="orgatec-2026-monteiro-fabrics.ics"; document.body.appendChild(l); l.click(); l.remove(); setTimeout(()=>URL.revokeObjectURL(u),2000); });
+  });
+})();
+/* UTM + gclid → hidden fields (kept for the session) */
+(function(){
+  const keys=["utm_source","utm_medium","utm_campaign","utm_content","utm_term","gclid"]; const p=new URLSearchParams(location.search);
+  keys.forEach(k=>{ let v=p.get(k); try{ if(v) sessionStorage.setItem("og_"+k,v); else v=sessionStorage.getItem("og_"+k); }catch(e){} const f=document.querySelector('input[name="contact['+k+']"]'); if(f&&v) f.value=v; });
+  const pg=document.querySelector('input[name="contact[Page]"]'); if(pg) pg.value=location.pathname;
+})();
+
+/* after a native contact-form post Shopify reloads with ?contact_posted=true → bring the confirmation into view */
+(function(){ if(location.search.indexOf("contact_posted=true")>-1){ var el=document.querySelector('[data-form-success="orgatec_meeting"]')||document.getElementById("meeting"); if(el){ setTimeout(function(){ el.scrollIntoView({behavior:"smooth",block:"center"}); },150); } } })();
+</script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": {{ s_meta_title | json }},
-  "description": {{ s_lead_pre | json }},
+  "name": "ORGATEC 2026 – Monteiro Fabrics, {{ og_hall }}, {{ og_stand }}",
   "startDate": "2026-10-27T09:00:00+01:00",
   "endDate": "2026-10-30T18:00:00+01:00",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "url": {{ lp_url | json }},
-  "location": {
-    "@type": "Place",
-    "name": "Koelnmesse — Hall 10.2, Stand Q059",
-    "address": { "@type": "PostalAddress", "streetAddress": "Messeplatz 1", "addressLocality": "Köln", "postalCode": "50679", "addressCountry": "DE" }
-  },
+  "location": { "@type": "Place", "name": "Koelnmesse", "address": { "@type": "PostalAddress", "streetAddress": "Messeplatz 1", "postalCode": "50679", "addressLocality": "Köln", "addressCountry": "DE" } },
   "organizer": { "@type": "Organization", "name": "Monteiro Fabrics", "url": "https://www.monteirofabrics.com" },
-  "performer": { "@type": "Organization", "name": "Monteiro Fabrics" }
+  "description": "{% if og_de %}Beschichtete Möbelstoffe von Monteiro Fabrics auf der ORGATEC 2026 in Köln, {{ og_hall_de }}, {{ og_stand_de }}.{% else %}Coated upholstery fabrics by Monteiro Fabrics at ORGATEC 2026 in Cologne, {{ og_hall }}, {{ og_stand }}.{% endif %}",
+  "url": "{{ shop.url }}{{ request.path }}"
 }
-</script>
-
-<script>
-  (function () {
-    var root = document.getElementById('orgatec-2026');
-    if (!root) return;
-
-    // 1. Carry inbound campaign parameters into the meeting form (and keep them for the session).
-    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid'];
-    var params = new URLSearchParams(window.location.search);
-    var store = {};
-    try { store = JSON.parse(sessionStorage.getItem('o26_attr') || '{}'); } catch (e) {}
-    keys.forEach(function (k) { if (params.get(k)) store[k] = params.get(k); });
-    try { sessionStorage.setItem('o26_attr', JSON.stringify(store)); } catch (e) {}
-    root.querySelectorAll('[data-utm]').forEach(function (el) {
-      var k = el.getAttribute('data-utm');
-      if (store[k]) el.value = store[k];
-    });
-
-    // 2. After a successful post, bring the confirmation into view.
-    var ok = root.querySelector('[data-form-success]');
-    if (ok) { ok.scrollIntoView({ block: 'center' }); }
-
-    // 3. Add-to-calendar: build the .ics on the client, no hosted file needed.
-    var ics = document.getElementById('o26-ics');
-    if (ics) {
-      var lines = [
-        'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Monteiro Fabrics//ORGATEC 2026//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
-        'BEGIN:VEVENT',
-        'UID:orgatec-2026-q059@monteirofabrics.com',
-        'DTSTAMP:20260910T120000Z',
-        'DTSTART:20261027T080000Z',
-        'DTEND:20261030T170000Z',
-        'SUMMARY:ORGATEC 2026 – Monteiro Fabrics (Hall 10.2\\, Stand Q059)',
-        'LOCATION:Koelnmesse\\, Messeplatz 1\\, 50679 Köln – Hall 10.2\\, Stand Q059',
-        'DESCRIPTION:Visit Monteiro Fabrics at ORGATEC 2026\\, Hall 10.2\\, Stand Q059. {{ lp_url }}',
-        'URL:{{ lp_url }}',
-        'END:VEVENT', 'END:VCALENDAR'
-      ];
-      var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
-      ics.href = URL.createObjectURL(blob);
-    }
-  })();
 </script>
 
 {% schema %}
 {
-  "name": "ORGATEC 2026 landing",
+  "name": "ORGATEC 2026 landing page",
   "tag": "section",
-  "class": "section--orgatec-2026",
+  "class": "section-orgatec-2026",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "show_body",
-      "label": "Show the page body below the hero",
-      "info": "Facts, collection cards, samples band, meeting form and practical info. Off = event bar + hero only.",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "phase",
-      "label": "Campaign phase",
-      "info": "Switches the hero copy and hides the meeting form after the fair.",
+    { "type": "select", "id": "phase", "label": "Phase", "default": "pre",
       "options": [
-        { "value": "pre", "label": "Before the fair (until 26/10)" },
-        { "value": "live", "label": "During the fair (27–30/10)" },
-        { "value": "post", "label": "After the fair (from 31/10)" }
+        { "value": "pre", "label": "Before the fair (default)" },
+        { "value": "live", "label": "During the fair (27–30 Oct)" },
+        { "value": "post", "label": "After the fair (form hidden, 'Missed ORGATEC?')" }
       ],
-      "default": "pre"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Hero image",
-      "info": "Leave empty to show the CHANCE colour mosaic."
-    },
-    {
-      "type": "text",
-      "id": "hall",
-      "label": "Hall",
-      "default": "Hall 10.2"
-    },
-    {
-      "type": "text",
-      "id": "stand",
-      "label": "Stand",
-      "default": "Stand Q059"
-    }
+      "info": "Switch to 'live' on 27/10 and 'post' on 31/10." },
+    { "type": "image_picker", "id": "hero_image", "label": "Hero image (1920×1080 or larger)", "info": "Empty = neutral placeholder." },
+    { "type": "text", "id": "hall", "label": "Hall", "default": "Hall 10.2" },
+    { "type": "text", "id": "stand", "label": "Stand", "default": "Stand Q059" },
+    { "type": "header", "content": "Sector tiles" },
+    { "type": "image_picker", "id": "sector_image_office", "label": "Office" },
+    { "type": "image_picker", "id": "sector_image_healthcare", "label": "Healthcare" },
+    { "type": "image_picker", "id": "sector_image_hospitality", "label": "Hospitality" },
+    { "type": "image_picker", "id": "sector_image_public", "label": "Public spaces" },
+    { "type": "header", "content": "Blocks" },
+    { "type": "checkbox", "id": "show_meeting_form", "label": "Show the stand-meeting form", "default": true },
+    { "type": "checkbox", "id": "show_faq", "label": "Show 'Good to know'", "default": true }
   ],
-  "presets": [
-    { "name": "ORGATEC 2026 landing" }
-  ]
+  "presets": [ { "name": "ORGATEC 2026 landing page" } ]
 }
 {% endschema %}
