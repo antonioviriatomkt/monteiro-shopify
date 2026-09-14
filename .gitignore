@@ -1,6 +1,7 @@
 # --- secrets / credentials — never commit ---
 .oauth-state.json
 .shopify-token.json
+.shopify-theme-token
 .install-url.txt
 .sender-token
 .env
