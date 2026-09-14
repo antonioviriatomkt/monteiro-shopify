@@ -42,6 +42,18 @@ been cut to `read_orders` while the file still advertised `write_themes`, so scr
 with a different "Access denied" each time. `scripts/lib.mjs` now takes `SHOPIFY_ADMIN_TOKEN` from
 the environment and fails on line one when it is absent.
 
+## Git remote
+
+`origin` → **https://github.com/antonioviriatomkt/monteiro-shopify** (private). The working copy
+still lives in a OneDrive-synced folder, so the sync client and git can still collide — **push after
+every session**, so the history exists somewhere the sync client cannot corrupt.
+
+Auth is a fine-grained PAT in `.github-token` (gitignored), scoped to this one repo with Contents:
+read/write. It is wired in as a credential helper, so the token is **not** in `.git/config` and a
+plain `git push` works. **The PAT expires ~2026-12-13** — when a push suddenly fails with a 403,
+that is why; generate a new one at github.com/settings/personal-access-tokens and overwrite the file.
+The token cannot change repository settings by design, only contents.
+
 ## Scripts
 
 `scripts/*.mjs` are Admin-API helpers (metafields, leads, reports). The **theme deploy/pull ones

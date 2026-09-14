@@ -52,6 +52,12 @@ The theme deploy/pull scripts (`deploy-files`, `deploy-section`, `deploy-landing
 `deploy-thank-you-template`) are **superseded by `bin/mf`**. `MF_THEME_DIR` picks the mirror for the
 rest; it defaults to `theme-sandbox`.
 
+## Git
+
+`origin` is **github.com/antonioviriatomkt/monteiro-shopify** (private). The working copy sits in a
+OneDrive-synced folder, where git and the sync client have collided before (a stuck
+`.git/index.lock`) — **push after every session** so the history is not one folder away from gone.
+
 ## Credentials
 
 Never committed, never in a token file checked into the tree:
@@ -60,6 +66,7 @@ Never committed, never in a token file checked into the tree:
 |---|---|---|
 | `.shopify-theme-token` | Shopify Theme Access password | `bin/mf` |
 | `.sender-token` | Sender API JWT | `scripts/sender-*.mjs` |
+| `.github-token` | Fine-grained PAT, this repo only, Contents: read/write | `git push` (wired as a credential helper, so it stays out of `.git/config`) |
 
 `.shopify-token.json` and `oauth.mjs` were **removed 2026-09-14**. The custom app behind that token
 had been reduced to `read_orders` while the file still advertised `write_themes`, so it
