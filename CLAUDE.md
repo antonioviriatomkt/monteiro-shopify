@@ -14,12 +14,12 @@ vault: `OneDrive-Viriato&Viriato,SA/WORK/Clients/Monteiro-Fabrics/`.
 A local file is **not** the state of the theme. Always:
 
 ```bash
-bin/mf check live        # pulls to a temp dir, diffs, changes nothing
-bin/mf pull  live        # then commit, then edit
-bin/mf push  live sections/foo.liquid   # named files only, never a whole theme
+bash bash bin/mf check live        # pulls to a temp dir, diffs, changes nothing
+bash bash bin/mf pull  live        # then commit, then edit
+bash bash bin/mf push  live sections/foo.liquid   # named files only, never a whole theme
 ```
 
-`bin/mf push` re-pulls first and refuses if the remote moved under a file you have no local
+`bash bin/mf push` re-pulls first and refuses if the remote moved under a file you have no local
 commits for. Do not reach past it with `MF_FORCE=1` without reading the diff.
 
 ## One credential per job
