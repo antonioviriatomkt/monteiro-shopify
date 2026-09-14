@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": false,
+        "show_filter_counts": true,
+        "show_filter_deadends": true,
+        "ajax_products": true,
+        "filter_mode": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": false,
+        "enable_sorting": true,
+        "show_featured_in_sort": false
+      }
+    },
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257"
+  ]
+}

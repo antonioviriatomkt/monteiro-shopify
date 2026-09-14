@@ -1,0 +1,633 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916": {
+      "type": "background-video",
+      "settings": {
+        "video_external": "",
+        "subheading": "COLLECTION",
+        "title": "MEDIFLEX",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Easy to clean, antifungal, antibacterial and antiviral</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "slideshow_zUxRaT": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DX8ELQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery_fabrics_for_dentist_chair.png",
+            "slide_link": "",
+            "subheading": "COLLECTION",
+            "title": "ELECTRA",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>Tailored for demanding healthcare upholstery</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "image_DX8ELQ"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Compatible with alcohol-based cleaning solutions and bleach",
+        "title": "High-performance Fabrics",
+        "title_size": 52,
+        "title_width": 34,
+        "heading_h1": false,
+        "text": "<p>Discover the <strong>Electra collection</strong> from Monteiro Fabrics, a groundbreaking antistatic healthcare upholstery line that blends cutting-edge safety with heartfelt design for healthcare heroes. Feel the quiet confidence of spaces where every detail protects—patients, staff, and equipment alike.</p>",
+        "image_width": 120,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_ELECTRA_JUN2026_Ipad.pdf?v=1782828908",
+        "button_style": "secondary",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "ELECTRA",
+        "title": "Why was this collection created?",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Medical facilities—such as intensive care units, imaging rooms, and operating theatres—require careful design to prevent electrostatic buildup. Uncontrolled static discharge can cause mild electric shocks to patients and healthcare professionals, interfere with sensitive medical equipment, and pose risks to both people and devices.</p><p></p><p><strong>ELECTRA</strong> was engineered specifically to meet this challenge. </p><p>Using state-of-the-art chemical functionalization for conductivity, this innovative upholstery fabric safely channels static electricity away, preventing electric shocks. It combines safety with comfort and hygiene —allowing medical professionals and patients to sit or lie down with confidence.</p>",
+        "button_label": "ORDER FREE SAMPLES",
+        "button_link": "shopify://products/electra-collection",
+        "text_alignment": "left",
+        "text_width": 62,
+        "button_style": "primary",
+        "image": "shopify://shop_images/electra_chair6.png",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_Dnqd84": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "Key Features",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p><strong>ELECTRA</strong> is a permanently antistatic fabric designed to enhance safety by preventing electric shocks and protecting sensitive medical equipment.</p><p>Conductive properties are stable and independent of humidity. Specifically developed for healthcare environments, its surface is treated to <strong>inhibit microbial growth and resist staining from bodily fluids.</strong></p><p><strong>Antistatic fabrics</strong> are easier to clean and disinfect, supporting a more hygienic and safer environment.Their resistance to dust and particle accumulation helps keep surfaces <strong>cleaner for longer</strong>, reducing the need for frequent maintenance.<br/><br/></p>",
+        "button_label": "DOWNLOAD TECHNICAL FILE",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/TF_Electra.pdf?v=1774377653",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/anti-microbial-and-anti-fungal-fabrics-electra.png",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Healthcare-Upholstery4a.jpg",
+        "height": "natural",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "image_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "rich_text_6d4M7D": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Design & Colors",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Break free from black-only antistatic norms with Electra's sophisticated palette of deep, muted tones that elevate clinical environments emotionally and visually.​<br/>This collection inspires serene, professional spaces where safety meets refined aesthetics, fostering trust and tranquility.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELECTRA_BLACK_2190.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Black",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELECTRA_DARK_GREY_2192.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Dark Grey",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELECTRA_GREY_2191.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Grey",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELECTRAPEWTER_2193.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "Pewter",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_g6jHGH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Electra_Fir_9269.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "new color",
+            "title": "Fir",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_74KBpc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Electra_Navy_9274.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "new color",
+            "title": "Navy",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_XMrLA4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Electra_Mogno_9275.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "new color",
+            "title": "Mogno",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_EjDC9x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Electra_Umber_9264.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "new color",
+            "title": "Umber",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_Jzg3Xe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Electra_Deep_9265.webp",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "new color",
+            "title": "Deep",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "FREE SAMPLE",
+            "link": "shopify://products/electra-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "image_g6jHGH",
+        "image_74KBpc",
+        "image_XMrLA4",
+        "image_EjDC9x",
+        "image_Jzg3Xe"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "image_with_text_rGPpGp": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "Bi-elastic comfort and weldable precision",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>The <strong>bi-directional elasticity</strong> of ELECTRA gently follows every curve of the body and every contour of the furniture, enhancing seating and lying comfort while making complex upholstery shapes easier to achieve. This flexibility reduces tension on seams and stress points, helping pieces look smooth, supportive, and inviting even after intensive use.</p><p>At the same time, its thermoplastic coating unlocks weldable precision: adjacent materials can be securely joined through heat welding, simplifying the assembly process, improving seam durability, and ensuring a clean, clinical finish with fewer potential points of failure. For healthcare teams and manufacturers, this means faster, more reliable fabrication—and for patients, it means safer, more comfortable surfaces they can truly trust.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/bielastic-coated-fabrics1.png",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Biocompatibility",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>ELCTRA seamlessly and safely interacts with living tissues, without triggering adverse reactions or toxic effects on cells, as demonstrated by its non-irritating and non-cytotoxic characteristics in accordance with <strong>ISO standards: ISO 10993-5 and ISO 10993-10</strong>. This ensures a dependable and comfortable experience in healthcare environments, where patient well-being is paramount.<br/></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "link",
+        "image": "shopify://shop_images/dentist-chair-upholstery-fabrics.jpg",
+        "image_width": 83,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "96186325-e209-4c72-b2c0-cc5c79e49b44": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Upholstery for intensive care units, imaging rooms, and operating theatres — electrostatic protection",
+        "title_size": 40,
+        "title_width": 12,
+        "text": "<p>Unlike standard options ELECTRA comes <strong>not only in black but also in distinctive grey shades </strong>for design flexibility.<br/><strong>‍‍</strong></p>",
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_ELECTRA_JUN2026_Ipad.pdf?v=1782828908",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/ChatGPT_Image_4_08_2025_09_49_35.png",
+        "image_width": 82,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "custom",
+        "color_bg": "#fcf4ee",
+        "color_text": ""
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and<br/>cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/Healthcare-Upholstery.png",
+        "image_width": 530,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "37b70038-bd52-4106-9b44-d747725f3175": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Image-Arrow-PNG2.png",
+            "image_width": 120,
+            "url": "https://www.monteirofabrics.com/products/chance-collection-ii"
+          }
+        },
+        "128ff2f2-a237-4166-aa67-e331396f69dd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Show more 204 colors",
+            "text_style": "body"
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1",
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4",
+        "128ff2f2-a237-4166-aa67-e331396f69dd",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "electra-collection",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "top",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": true,
+        "highlight_selected_media": true
+      }
+    },
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. </p><p>Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/anti-microbial_and_anti-fungal_fabrics.png",
+        "image_width": 250,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 100,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "image_with_text_4HqE7g": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "HEALTHCARE FABRICS",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Looking for a more versatile healthcare solution? </p><p>Discover our <em>Mediflex</em> collection — phthalate-free, light-resistant, and abrasion resistant ≥ 400,000 cycles. <br/></p>",
+        "button_label": "See Mediflex Collection",
+        "button_link": "shopify://pages/mediflex",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "video_shopify": "shopify://files/videos/Healthcare-Upholstery- Mediflex.mp4",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Other Healthcare Fabrics",
+        "collection": "medical",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916",
+    "slideshow_zUxRaT",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7",
+    "image_with_text_Dnqd84",
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2",
+    "rich_text_6d4M7D",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "image_with_text_rGPpGp",
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8",
+    "96186325-e209-4c72-b2c0-cc5c79e49b44",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "37b70038-bd52-4106-9b44-d747725f3175",
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79",
+    "image_with_text_4HqE7g",
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d"
+  ]
+}

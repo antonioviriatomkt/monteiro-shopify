@@ -1,0 +1,309 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_h1": true
+          }
+        },
+        "b3d841f7-a0d1-4d8e-a175-5d9bd9b124a2": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "129535c5-49b2-4c3f-ba9d-0d9954eda38a": {
+          "type": "trust_icons",
+          "disabled": true,
+          "settings": {
+            "icon_size": 50,
+            "show_icon1": true,
+            "text1": "<p>Ready in 48 hours</p>",
+            "icon1": "truck",
+            "show_icon2": true,
+            "text2": "<p>Animal Free</p>",
+            "icon2": "leaf",
+            "show_icon3": true,
+            "text3": "<p>10 Year Warranty</p>",
+            "icon3": "award",
+            "show_icon4": true,
+            "text4": "<p>Long-lasting</p>",
+            "icon4": "heart"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_style": "dropdown",
+            "show_realtime_availability": true,
+            "show_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "0b467d9b-d6d4-448a-996f-fe59555c5237": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "display": "accordion_closed",
+            "icon": "ruler"
+          }
+        },
+        "9a2bbd10-5b71-4521-aad2-74b584e238db": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "icon": "box",
+            "title": "Ready in 48 Hours",
+            "content": "<p>Add the content to appear when the content is expanded</p>",
+            "page": "stock-service",
+            "open": false
+          }
+        },
+        "576ba7df-0998-4b68-9e81-5574bd4ab35e": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Heimtextil Frankfurt",
+            "content": "<p>9-12 January 2024</p><p>Hall 4.0  C50</p><p>Complete the checkout process so that we can confirm your meeting intention.</p><p>Book now</p>",
+            "page": "",
+            "open": true
+          }
+        },
+        "e932a0b1-432a-404c-90c4-6acd6ce405c1": {
+          "type": "reviews_accordion",
+          "disabled": true,
+          "settings": {
+            "icon": "award",
+            "open": true
+          }
+        },
+        "vendor_and_type": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": false,
+            "show_type": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "inventory_level": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "show_inventory_indicator_bar": true,
+            "col_indicator_below": "#dd9a1a",
+            "col_indicator_above": "#108043"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "enable_mobile_sticky_cart": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "6bf79323-75ad-4ff2-96f6-f5c9470a69ea": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_line": true,
+            "spacing_above": "small",
+            "spacing_below": "small"
+          }
+        },
+        "352ebb81-0d14-487b-99a4-e4fb3eab4cd9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block",
+            "text_style": "subtitle"
+          }
+        },
+        "4859b70a-7d87-4d13-8d3f-29f2b3e8486f": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "text": "Download technical file",
+            "url": "",
+            "text_style": "link",
+            "open_new_window": true
+          }
+        },
+        "0fff318c-6dc4-4697-9e14-49cbdf690359": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 8,
+            "show_vendor": false,
+            "hide_swatches": false
+          }
+        },
+        "2dcccceb-181e-41ad-93ce-526ee0186569": {
+          "type": "tabs",
+          "disabled": true,
+          "settings": {
+            "show_product_description": true,
+            "show_product_reviews": true,
+            "tab_2_page": "",
+            "tab_2_title": "",
+            "tab_2_content": "",
+            "tab_3_page": "",
+            "tab_3_title": "",
+            "tab_3_content": "",
+            "tab_4_page": "",
+            "tab_4_title": "",
+            "tab_4_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "b3d841f7-a0d1-4d8e-a175-5d9bd9b124a2",
+        "129535c5-49b2-4c3f-ba9d-0d9954eda38a",
+        "variant_picker",
+        "0b467d9b-d6d4-448a-996f-fe59555c5237",
+        "9a2bbd10-5b71-4521-aad2-74b584e238db",
+        "576ba7df-0998-4b68-9e81-5574bd4ab35e",
+        "e932a0b1-432a-404c-90c4-6acd6ce405c1",
+        "vendor_and_type",
+        "price",
+        "rating",
+        "inventory_level",
+        "buy_buttons",
+        "6bf79323-75ad-4ff2-96f6-f5c9470a69ea",
+        "352ebb81-0d14-487b-99a4-e4fb3eab4cd9",
+        "4859b70a-7d87-4d13-8d3f-29f2b3e8486f",
+        "0fff318c-6dc4-4697-9e14-49cbdf690359",
+        "2dcccceb-181e-41ad-93ce-526ee0186569"
+      ],
+      "settings": {
+        "media_style": "one-column",
+        "sticky_behaviour": "none",
+        "full_width": false,
+        "show_backorder_text": false,
+        "slide_nav_style": "dots",
+        "media_crop": "center",
+        "enable_zoom": false,
+        "zoom_cursor": "plus-light",
+        "show_thumbnails": true,
+        "enable_video_looping": false,
+        "scroll_to_variant_media": true,
+        "highlight_selected_media": true,
+        "variant_media_grouping": false,
+        "variant_media_grouping_option": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "You may also like",
+        "hide_swatches": false,
+        "show_vendor": false,
+        "grid": 3
+      }
+    },
+    "1e6fc166-4c9b-459c-83c5-6659854441c2": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Media with text",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Use this text to share information about your store. Describe products, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "98777840-e74b-45ee-8feb-2e17bdeb8c2f": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "SINCE 1967",
+        "title": "Manufacturers of coated fabrics",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our unique experience and know how, along with the combination of traditional manufacturing with updated technology, enables us to be present in demanding markets around the world. </p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "9120e8d5-560d-4f1f-86d2-322a4b224907": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "All Coated fabrics",
+        "collection": "coated-fabrics",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1e6fc166-4c9b-459c-83c5-6659854441c2",
+    "98777840-e74b-45ee-8feb-2e17bdeb8c2f",
+    "9120e8d5-560d-4f1f-86d2-322a4b224907"
+  ]
+}

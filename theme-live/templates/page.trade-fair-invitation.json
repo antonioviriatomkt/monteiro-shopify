@@ -1,0 +1,368 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "0f381630-0258-4047-a808-5e56a1673116": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/v3.png",
+        "height": "natural",
+        "height_desktop": 400,
+        "height_mobile": 300,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "3c7a8511-7f74-4639-85e2-2488f38ee9a4": {
+      "type": "rich-text",
+      "custom_css": [
+        ".sectio {padding-top: 100px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p><strong>Your Exclusive Invitation to Orgatec 2024 with Monteiro Fabrics!</strong></p>",
+        "image_width": 130,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "image_with_text_HLH6Dm": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Hall 10.2 N-067",
+        "title_size": 42,
+        "title_width": 16,
+        "text": "<p>At Orgatec, you’ll have the opportunity to explore our latest fabric collections, innovative designs, and sustainable solutions tailored to enhance your workspace.</p><p>We look forward to seeing you there!</p>",
+        "button_label": "TICKET CODE INSTRUCTIONS",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/ticket_code_instructions_2.pdf?v=1727167758",
+        "text_alignment": "center",
+        "text_width": 56,
+        "button_style": "auto",
+        "image": "shopify://shop_images/HALL-10-ORGATEC--MONTEIRO-FABRICS_17ac6f17-a372-4743-ac0a-d3c86f665477.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_ecnHNX": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 4,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "Know how to download",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bcbb4a7a-a2c2-4bfe-be75-38ca6d75c779": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "STOCK SERVICE",
+        "title": "Ready in 48 hours",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Monteiro Fabrics offers the best service with 1-piece minimums delivered by a fast, reliable, and organized team. With more than 1 million meters always in stock, ready to be shipped within 48 hours of our order, our Stock Service is a unique combination of product, service, quality, and reliability.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "right",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-6_a6236486-5612-4b72-a5fa-c535d4ece9a4.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "#f6f6f6",
+        "color_text": ""
+      }
+    },
+    "image_with_text_overlay_EdTLty": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/orgatec_v2.png",
+        "height": "full",
+        "height_desktop": 350,
+        "height_mobile": 250,
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 4,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "https://www.orgatec.com/orgatec-exhibitors/hall-plan/",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "6c32a779-98eb-4121-a503-79e25a3e06a7": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "heading": "Monteiro Fabrics",
+        "address": "<p>Circunvalação, 9020, Apartado 52511<br/>4202-351 Porto - Portugal</p><p>+351 228 338 640</p>",
+        "button": "Directions",
+        "text_alignment": "left",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": "",
+        "map_address": "R. de António Augusto Félix 1, 4465-275 São Mamede de Infesta, Portugal",
+        "api_key": "",
+        "map_style": "silver",
+        "image": "shopify://shop_images/mapa-monteiro-ribas1.jpg"
+      }
+    },
+    "a52ba89c-5057-464d-85eb-4e9b67a1eaee": {
+      "type": "rich-text",
+      "custom_css": [],
+      "settings": {
+        "subheading": "or Contact us",
+        "title": "By email",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Please feel free to reach out if you have any questions or need assistance with your registration. Please email us to <strong>hello@monteirofabrics.com</strong> and we will get back to you as soon as possible </p>",
+        "image": "shopify://shop_images/pngtree-email-icon-png-image_1757854.jpg",
+        "image_width": 80,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_efGV7D": {
+      "type": "gallery",
+      "blocks": {
+        "image_xDNeTP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/coated-fabrics-home-decor2_3da44404-d8bf-4940-916e-d85b2d9babd2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Sustainability",
+            "title": "PEEL",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View Collection",
+            "link": "shopify://pages/peel-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_VgUteK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chair-3_3f2d3bf2-3944-4e54-bc6b-f35fecf457b1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "228 COLORS",
+            "title": "CHANCE",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "VIEW COLLECTION",
+            "link": "shopify://pages/chance-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_idJfjz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC8271.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "OUTDOOR FABRICS",
+            "title": "PATIO & SIESTA",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "VIEW COLLECTION",
+            "link": "shopify://pages/siesta-outdoor-upholstery",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_xDNeTP",
+        "image_VgUteK",
+        "image_idJfjz"
+      ],
+      "settings": {
+        "title": "Collections",
+        "grid": 3,
+        "desktop_image_height": 560,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "b4595812-23d7-4659-bf60-5e1a742ce25b": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Order your free samples",
+        "collection": "all-products",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "accordions_eAW7Nx": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_3XdLyG": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": " Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"https://www.monteirofabrics.com/pages/press\" target=\"_blank\" title=\"Press Kit\"> here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_MkwiPe": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "accordion_byFKJp": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": " Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_qTmkRU": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_eNEyfE": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": " Colour matching",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_pCYV7h": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": " Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_3XdLyG",
+        "accordion_MkwiPe",
+        "accordion_byFKJp",
+        "accordion_qTmkRU",
+        "accordion_eNEyfE",
+        "accordion_pCYV7h"
+      ],
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    }
+  },
+  "order": [
+    "0f381630-0258-4047-a808-5e56a1673116",
+    "3c7a8511-7f74-4639-85e2-2488f38ee9a4",
+    "main",
+    "image_with_text_HLH6Dm",
+    "rich_text_ecnHNX",
+    "bcbb4a7a-a2c2-4bfe-be75-38ca6d75c779",
+    "image_with_text_overlay_EdTLty",
+    "6c32a779-98eb-4121-a503-79e25a3e06a7",
+    "a52ba89c-5057-464d-85eb-4e9b67a1eaee",
+    "gallery_efGV7D",
+    "b4595812-23d7-4659-bf60-5e1a742ce25b",
+    "accordions_eAW7Nx"
+  ]
+}

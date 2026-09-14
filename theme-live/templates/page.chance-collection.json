@@ -1,0 +1,445 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/V3d Chance.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "228 Colours. One Iconic Texture.",
+        "title": "CHANCE",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>Europe's Most Colourful Coated Fabric Collection</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Monteiro-Fabrics-CHANCE-BANNER.jpg",
+        "height": "full",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "Collection",
+        "title": "CHANCE",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>The World needs colour and Monteiro Fabrics has 228 in one collection!</p>",
+        "enlarge_text": true,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "image_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "A RANGE OF",
+        "title": "228 SHADES",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>From soft, muted neutrals to vibrant jewel tones and daring statement colours, Chance gives interior designers, upholsterers, and manufacturers an unrivalled spectrum to work with. The collection is built around a single, signature engraving: an iconic texture that brings depth and quiet elegance to any seat, panel, or surface it covers. Whether you are designing a boutique hotel lounge, a contemporary office space, or a custom residential piece, Chance delivers the creative freedom to go bold — with a <strong>glamorous fabric</strong> quality that elevates any interior.</p>",
+        "image_width": 120,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "575afe37-da34-4806-8703-c9cb32105543": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Built for Hospitality. Made for Contract Interiors.",
+        "title": "The Hospitality Upholstery Fabric Trusted by Designers Across Europe",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>Chance is one of the most specified <strong>hospitality fabrics</strong> in Europe, chosen by architects and interior designers for environments where aesthetics and durability are equally non-negotiable. As a premium <strong>PVC upholstery fabric</strong>, it is engineered to handle the intensive use typical of <strong>restaurant</strong> seating, hotel lobbies, bar counters, and high-traffic public areas. Its robust PVC coating delivers outstanding abrasion resistance, ensuring upholstered pieces retain their appearance through years of daily use — making it a dependable long-term investment for any commercial interior. From independent restaurants to international hotel chains, <strong>hospitality upholstery</strong> professionals consistently turn to Chance when both style and substance are required.</p>",
+        "button_label": "ORDER FREE SAMPLES",
+        "button_link": "shopify://products/chance-collection-1",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/CHANCE-5297.jpg",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_3t8Gbn": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Wipe Clean in Seconds. Look Flawless for Years.",
+        "title": "Easy-to-Clean Upholstery Fabric for High-Traffic Environments",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>One of Chance's most valued practical qualities is how effortlessly it is maintained. As a <strong>coated PVC fabric material</strong>, its surface repels spills and stains effectively — cleaning requires nothing more than a damp cloth and a mild soapy water solution, with no specialist products needed. This makes Chance one of the most practical <strong>easy-to-clean fabrics</strong> available for commercial environments: ideal for <strong>restaurant fabric</strong> applications, <strong>hotel upholstery</strong>, and any space that sees heavy daily use. The coated surface also resists scratches and fluids, preserving the finish of upholstered pieces far longer than textile alternatives. For facility managers and specifiers balancing visual standards with maintenance practicality, Chance removes the compromise entirely.</p>",
+        "button_label": "DOWNLOAD TECHNICAL FILE",
+        "button_link": "https://stats.sender.net/forms/b2mEva/view",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/sofa-2_edited_v2.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_jG3Q67": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Manufactured with Responsibility. Compliant by Design.",
+        "title": "A Safe, EU-Compliant PVC Upholstery Fabric from Portugal",
+        "title_size": 26,
+        "title_width": 40,
+        "text": "<p>Chance is manufactured free from harmful substances and fully compliant with EU REACH Regulation (EC) No 1907/2006 — the European framework governing the safe use of chemicals in consumer and contract materials. This certification assures specifiers, furniture manufacturers, and end users that every metre of Chance meets rigorous health and environmental standards, regardless of application. Produced by Monteiro Fabrics in Portugal, Chance is a <strong>coated fabric</strong> that combines decades of technical manufacturing expertise with the creative depth demanded by today's design market. For B2B buyers sourcing <strong>PVC upholstery</strong> from European suppliers, Chance offers the confidence of regulatory compliance alongside a product portfolio built on genuine craftsmanship and performance.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Instagram_post_-_95.png",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "ea952254-6a3c-46c7-85e9-4b30d1d791d7": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-0": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-2": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-3": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-4": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-0",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-1",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-2",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-3",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-4",
+        "template--19138112651567__ea952254-6a3c-46c7-85e9-4b30d1d791d7-16848615509bff729a-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "beta-teste",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "3cdfb8c2-fb5d-4a4b-a072-7c7b6c5aa4d7": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "",
+        "collection": "chance",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 4,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Order free samples",
+        "collection": "chance",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture11.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/collections/coated-fabrics/products/chance-collection-vii",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chair1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/chance.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/collections/coated-fabrics/products/chance-collection-iii",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture5.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/collections/coated-fabrics/products/chance-collection-vii",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-manufacturers1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture12.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "https://www.monteirofabrics.com/collections/coated-fabrics/products/chance-collection-iv",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 100,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "5b1e88bb-e41f-488d-8add-4464ccff8465": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/CHANCE-5269.jpg",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916",
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "575afe37-da34-4806-8703-c9cb32105543",
+    "image_with_text_3t8Gbn",
+    "image_with_text_jG3Q67",
+    "ea952254-6a3c-46c7-85e9-4b30d1d791d7",
+    "3cdfb8c2-fb5d-4a4b-a072-7c7b6c5aa4d7",
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79",
+    "5b1e88bb-e41f-488d-8add-4464ccff8465"
+  ]
+}

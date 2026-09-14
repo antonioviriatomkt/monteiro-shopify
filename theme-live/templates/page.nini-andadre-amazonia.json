@@ -1,0 +1,949 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "H1.line-1 {font-size: 50px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-42.jpg",
+        "height": "fixed",
+        "height_desktop": 650,
+        "height_mobile": 600,
+        "subheading": "By Nini Andrade Silva for Monteiro Fabrics",
+        "title": "Amazónia Collection",
+        "title_size": 46,
+        "title_width": 32,
+        "heading_h1": true,
+        "text": "<p><br/>Inspired by Nature, Crafted for Tomorrow<br/><br/></p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "background_video_pgQ97C": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/amazonia catalogue.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "By Nini Andrade Silva for Monteiro Fabrics",
+        "title": "Amazónia Collection",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p><br/>Inspired by Nature, Crafted for Tomorrow<br/><br/></p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "824869db-d95d-4e64-8e87-3a2785848477": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Internationally acclaimed interior designer <a href=\"https://www.niniandradesilva.com/en/\" target=\"_blank\" title=\"https://www.niniandradesilva.com/en/\"><strong>Nini Andrade Silva</strong></a> journeyed deep into the heart of the Amazon rainforest to create the inspiring narrative behind the new <em>Amazónia</em> collection, designed exclusively for Monteiro Fabrics. </p><p>Her design excellence has been recognized worldwide — most recently with the <a href=\"/blogs/news/savoy-palace-nini-andrade-silva\" target=\"_blank\" title=\"Savoy Palace, Nini Andrade Silva\"><strong>Savoy Palace Hotel in Madeira</strong>, which won the [World Travel Award for Europe’s Leading Luxury Hotel</a>] in 2024, a project that proudly featured Monteiro Fabrics’ coated fabrics.</p><p>Rooted in the vital essence of the Amazon, this collection is more than a showcase of exceptional design and aesthetics — it is a pledge to environmental responsibility and ecological awareness.</p>",
+        "image": "shopify://shop_images/nini-andrade-amazonia-collection.png",
+        "image_width": 170,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_hA8gpn": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Nini Andrade Silva",
+        "title": "\"I draw inspiration from the landscape, the wind, and the land, delving into history and engaging with locals to uncover the true essence and roots of each place.\"",
+        "title_size": 28,
+        "title_width": 20,
+        "text": "<p>Born in Funchal, Madeira, <a href=\"https://www.niniandradesilva.com/en/\" target=\"_blank\" title=\"https://www.niniandradesilva.com/en/\">Nini Andrade Silva</a> has elevated the legacy of Portuguese design onto the global stage, earning her place among the most prestigious names in international interior design. Her vision and talent have shaped iconic projects across the world, blending cultural authenticity with timeless sophistication.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Nini-Andrade-fabrics.jpg",
+        "image_width": 66,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_dMFmYr": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "AMAZONIA COLLECTION",
+        "title": "By Nini Andrade Silva for Monteiro Fabrics",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>At Monteiro Fabrics, our four generations of craftsmanship, combined with cutting-edge manufacturing technology, create the perfect synergy for this unique collaboration. Together, we have co-created fabrics that merge <strong>design excellence, functional performance, and a deep respect for nature</strong>.<br/><br/></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_zAccfi": {
+      "type": "gallery",
+      "blocks": {
+        "image_mJnDUV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-32.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "shopify://products/electra-collection-copy",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_aGCKX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-25_35337803-878a-4606-a6db-3ba41484f446.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "shopify://products/electra-collection-copy",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_MzHdgA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-26.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_P3TkXf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-24.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "shopify://products/electra-collection-copy",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_f8tcUQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-35.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_QMMNPC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-20.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_hk9zxj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-21.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_qRgbEV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-22.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_mJnDUV",
+        "image_aGCKX8",
+        "image_MzHdgA",
+        "image_P3TkXf",
+        "image_f8tcUQ",
+        "image_QMMNPC",
+        "image_hk9zxj",
+        "image_qRgbEV"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": true
+      }
+    },
+    "image_with_text_KHFnQn": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<h2><strong>Inspired by the Earth’s Beating Heart</strong></h2><p>The Amazon rainforest — a vital force for our planet — inspired every detail of this collection. Each tone, texture, and finish pays tribute to the vibrant life it shelters: the iridescent feathers of exotic birds, the vivid petals of tropical flowers, the lush green of dense vegetation, and the rich, grounding hues of the forest floor.</p><p>This palette captures the Amazon’s rhythm — a harmony of colours and sensations that breathe life into interiors, infusing them with the energy and authenticity of nature’s most diverse ecosystem.</p>",
+        "button_label": "",
+        "button_link": "shopify://products/electra-collection-copy",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/13-9-_MG_1039.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_UQJi6f": {
+      "type": "gallery",
+      "blocks": {
+        "image_rDax4P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-13.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_GLFkeN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-A28.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_TR3y7n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-14.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_rkLLpT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-16_4fafdd5f-2c47-4324-a03b-6cfed25eba47.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_jRMyRC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_E6F8aY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-15.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_irpPYK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-11.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_iJJaCk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_Livro-AMAZONIA_JUL2025-v18_B-_1_-10_294dcae8-7f5c-433e-85aa-04363b304582.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_rDax4P",
+        "image_GLFkeN",
+        "image_TR3y7n",
+        "image_rkLLpT",
+        "image_jRMyRC",
+        "image_E6F8aY",
+        "image_irpPYK",
+        "image_iJJaCk"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": true
+      }
+    },
+    "image_with_text_hLhpG3": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<h2><strong>A Celebration of Beauty and Responsibility</strong></h2><p></p><p>The Amazónia collection is more than a range of coated fabrics — <strong>it is a creative homage to one of the world’s most extraordinary natural treasures.</strong> Inspired by the Amazon rainforest, its designs serve as a gentle reminder of the beauty and richness that nature offers and the importance of preserving it.</p><p>Each metre of fabric carries an invitation — to imagine, to be inspired, and to create spaces that celebrate both exceptional design and the wonders that shape our planet.</p><p><strong>Celebrate design. Honour what inspires.</strong></p>",
+        "button_label": "Download Catalogue",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/AMAZONIA_Catalogue.pdf?v=1779958797",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/153-IMG_7424.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "testimonials_eV9YhE": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_qqgNkr": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "CHANCE SPROUD",
+            "text": "<p>Sprout was the fabric selected from our <a href=\"https://www.monteirofabrics.com/pages/chance-collection\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/chance-collection\">Chance Collection</a> for the Luna interior design McDonald's projects. This collection boasts fabrics with an <strong>abrasion resistance of ≥ 400,000 Martindale cycles </strong>(ISO 5470-2). Chance Sprout adds exceptional durability along with a unique touch of elegance, pleasant texture, and a fun aesthetic, perfectly complementing the iconic design of the McDonald's brand.</p>",
+            "button_label": "View Chance SPROUT",
+            "link": "shopify://products/chance-collection-vii",
+            "image1": "shopify://shop_images/3LUNA.jpg",
+            "image1_caption": "",
+            "image2": "shopify://shop_images/CHANCEsprout.jpg",
+            "image2_caption": "CHANCE SPROUT",
+            "layout": "right"
+          }
+        },
+        "testimonial_hBXxyL": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "CHANCE SPROUD",
+            "text": "<p>Sprout was the fabric selected from our <a href=\"https://www.monteirofabrics.com/pages/chance-collection\" target=\"_blank\" title=\"https://www.monteirofabrics.com/pages/chance-collection\">Chance Collection</a> for the Luna interior design McDonald's projects. This collection boasts fabrics with an <strong>abrasion resistance of ≥ 400,000 Martindale cycles </strong>(ISO 5470-2). Chance Sprout adds exceptional durability along with a unique touch of elegance, pleasant texture, and a fun aesthetic, perfectly complementing the iconic design of the McDonald's brand.</p>",
+            "button_label": "View Chance SPROUT",
+            "link": "shopify://products/chance-collection-vii",
+            "image1": "shopify://shop_images/3LUNA.jpg",
+            "image1_caption": "",
+            "image2": "shopify://shop_images/CHANCEsprout.jpg",
+            "image2_caption": "CHANCE SPROUT",
+            "layout": "right"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_qqgNkr",
+        "testimonial_hBXxyL"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "McDonalds Restaurants",
+        "button_style": "primary",
+        "alternate_bg_color": true
+      }
+    },
+    "rich_text_XraMNt": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "ask your free samples and catalogue",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>This collaboration was born from Nini’s desire to bring the bright and eccentric colours of her experiences and travels into her interior design projects. She found in Monteiro Fabrics — with its innovation and expertise in colour and sustainability — the perfect partner to bring this vision to life.</p>",
+        "image": "shopify://shop_images/nini-andrade-amazonia-collection.png",
+        "image_width": 260,
+        "button_label": "VIEW COLLECTION",
+        "button_link": "https://www.monteirofabrics.com/products/amazonia-collection?_pos=1&_sid=db4d5400b&_ss=r",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "featured_product_ec3NeP": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_and_type_mkFznW": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "title_bHdzgh": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_pG6Rx6": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "rating_f6VXnF": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_i4UUYA": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "buy_buttons_yxiMtx": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor_and_type_mkFznW",
+        "title_bHdzgh",
+        "price_pG6Rx6",
+        "rating_f6VXnF",
+        "variant_picker_i4UUYA",
+        "buy_buttons_yxiMtx"
+      ],
+      "settings": {
+        "product": "amazonia-collection",
+        "show_backorder_text": false,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": false,
+        "highlight_selected_media": true
+      }
+    },
+    "gallery_NqFzdP": {
+      "type": "gallery",
+      "blocks": {
+        "image_kYdAxb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54766886018_1c40a04505_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_9njXdD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54766640631_3c0ef561b9_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_DNqmXP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54767360809_0d5ba16667_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_VKPMC8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54770187764_fe7ceba061_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_iehARP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54773877301_e736bdccdc_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_Nk3yEG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54769946811_a2c20bb58a_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_iBnfmx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/54774111653_657dde6a54_o.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_T6MQwW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Imagem_WhatsApp_2025-09-08_as_11.19.04_66290b78.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_kYdAxb",
+        "image_9njXdD",
+        "image_DNqmXP",
+        "image_VKPMC8",
+        "image_iehARP",
+        "image_Nk3yEG",
+        "image_iBnfmx",
+        "image_T6MQwW"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "title": "Paris Design Week 2025",
+        "grid": 4,
+        "desktop_image_height": 430,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "rich_text_8TzbtM": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "ASK YOUR SAMPLES",
+        "title_size": 36,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our premium upholstery solutions, trusted by top franchises, feature certified, eco-friendly fabrics designed for durability and style. We also offer a McDonald's kit with all fabrics for their projects. Contact us for details and request your samples today.</p>",
+        "image": "shopify://shop_images/MCDONALDS-FABRICS_15704251-7d19-4045-9598-51d455abdd80.jpg",
+        "image_width": 700,
+        "button_label": "CONTACT US",
+        "button_link": "shopify://pages/contact",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_tU4Bkb": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "ASK YOUR FREE SAMPLES",
+        "title_size": 36,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our premium upholstery solutions for chairs and benches are trusted by leading restaurant franchises. We offer certified, eco-friendly, and sustainable fabrics designed for durability and style. Request your samples today.</p>",
+        "image_width": 590,
+        "button_label": "View all fabrics for restaurants projects",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "featured_collection_NAEnJC": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Restaurants fabrics",
+        "collection": "restaurants-fabrics",
+        "layout": "rows",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"/pages/press\" target=\"_blank\" title=\"Press Kit\"> here. </a></p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide a lab dip for your approval or a pilot sample.</p>",
+            "open": false
+          }
+        },
+        "4b3fa574-4ac5-48fd-a6bf-2f7d25d80ebd": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        },
+        "accordion_tkzqTC": {
+          "type": "accordion",
+          "settings": {
+            "icon": "chat_bubble",
+            "title": "Let's work together!",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. <a href=\"https://www.monteirofabrics.com/pages/contact\" title=\"https://www.monteirofabrics.com/pages/contact\">Contact us here. </a></p>",
+            "open": true
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "4b3fa574-4ac5-48fd-a6bf-2f7d25d80ebd",
+        "accordion_tkzqTC"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "DO YOU HAVE A PROJECT?",
+        "title": "Let's work together!",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions.</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 120,
+        "button_label": "contact us",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "background_video_pgQ97C",
+    "824869db-d95d-4e64-8e87-3a2785848477",
+    "image_with_text_hA8gpn",
+    "rich_text_dMFmYr",
+    "gallery_zAccfi",
+    "image_with_text_KHFnQn",
+    "gallery_UQJi6f",
+    "image_with_text_hLhpG3",
+    "testimonials_eV9YhE",
+    "rich_text_XraMNt",
+    "featured_product_ec3NeP",
+    "gallery_NqFzdP",
+    "rich_text_8TzbtM",
+    "rich_text_tU4Bkb",
+    "featured_collection_NAEnJC",
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0",
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315"
+  ]
+}

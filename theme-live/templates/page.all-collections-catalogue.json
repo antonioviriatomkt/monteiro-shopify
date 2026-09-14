@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "0c30cd08-9803-4fdb-a5aa-29e33dc98364": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-5.jpg",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 200,
+        "subheading": "",
+        "title": "All Collections",
+        "title_size": 32,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "cd4968bd-27d0-499c-8f9d-38854d87233c": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19045087150383__cd4968bd-27d0-499c-8f9d-38854d87233c-1683911912e82f3ee4-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "chance"
+          }
+        },
+        "template--19045087150383__cd4968bd-27d0-499c-8f9d-38854d87233c-1683911912e82f3ee4-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "peel"
+          }
+        },
+        "7b3d0a69-901e-4ba3-a96e-13741f9a2fad": {
+          "type": "collection",
+          "settings": {
+            "collection": "delta"
+          }
+        },
+        "b1066ec6-9f55-4ff9-9517-66e0d7848312": {
+          "type": "collection",
+          "settings": {
+            "collection": "garbe"
+          }
+        },
+        "4bfbba27-30dc-42fa-ac5a-2d98d8091bcb": {
+          "type": "collection",
+          "settings": {
+            "collection": "laguna"
+          }
+        },
+        "bcc9cab2-3e00-43b9-a86b-e1a46522deb6": {
+          "type": "collection",
+          "settings": {
+            "collection": "lima"
+          }
+        },
+        "568ca4b5-0ef2-448b-adcf-09c0df049855": {
+          "type": "collection",
+          "settings": {
+            "collection": "beta"
+          }
+        },
+        "9c0c643d-ec05-4a5b-8893-9ff1cda10aed": {
+          "type": "collection",
+          "settings": {
+            "collection": "furna"
+          }
+        },
+        "19eb233b-1364-46ef-b644-1ce0e2b47171": {
+          "type": "collection",
+          "settings": {
+            "collection": "paiva"
+          }
+        },
+        "82c37ac7-ef35-44c1-8b1d-e76b0451dcb0": {
+          "type": "collection",
+          "settings": {
+            "collection": "portus"
+          }
+        },
+        "abf5c4cb-5c27-4ff2-a876-de95cbf8cb2c": {
+          "type": "collection",
+          "settings": {
+            "collection": "portus-blt"
+          }
+        },
+        "710d7896-efe5-4fb8-bc9d-5587821e6c85": {
+          "type": "collection",
+          "settings": {
+            "collection": "regata"
+          }
+        },
+        "f7418793-cf8f-4fa6-9cb6-7682a3b920c4": {
+          "type": "collection",
+          "settings": {
+            "collection": "twill"
+          }
+        },
+        "673652fe-96c2-4bd0-b4de-d416189162b5": {
+          "type": "collection",
+          "settings": {
+            "collection": "villa"
+          }
+        },
+        "4239acdc-bc20-492e-ba89-f6eb1763adae": {
+          "type": "collection",
+          "settings": {
+            "collection": "villa-nabuck"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__cd4968bd-27d0-499c-8f9d-38854d87233c-1683911912e82f3ee4-0",
+        "template--19045087150383__cd4968bd-27d0-499c-8f9d-38854d87233c-1683911912e82f3ee4-1",
+        "7b3d0a69-901e-4ba3-a96e-13741f9a2fad",
+        "b1066ec6-9f55-4ff9-9517-66e0d7848312",
+        "4bfbba27-30dc-42fa-ac5a-2d98d8091bcb",
+        "bcc9cab2-3e00-43b9-a86b-e1a46522deb6",
+        "568ca4b5-0ef2-448b-adcf-09c0df049855",
+        "9c0c643d-ec05-4a5b-8893-9ff1cda10aed",
+        "19eb233b-1364-46ef-b644-1ce0e2b47171",
+        "82c37ac7-ef35-44c1-8b1d-e76b0451dcb0",
+        "abf5c4cb-5c27-4ff2-a876-de95cbf8cb2c",
+        "710d7896-efe5-4fb8-bc9d-5587821e6c85",
+        "f7418793-cf8f-4fa6-9cb6-7682a3b920c4",
+        "673652fe-96c2-4bd0-b4de-d416189162b5",
+        "4239acdc-bc20-492e-ba89-f6eb1763adae"
+      ],
+      "settings": {
+        "title": "",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "9326e453-5270-43ad-9592-4e8ff8ec196b": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/pexels-pixabay-276583_1.png",
+            "image_width": 700,
+            "title": "Industry",
+            "text": "<p>Contract, Mobility, Outdoor, Shoes, Fashion Accessories, and Sustainable</p>",
+            "button_label": "View all",
+            "link": "shopify://pages/fabrics-by-industry"
+          }
+        },
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/monteiro_fabrics_laguna_collection_2.jpg",
+            "image_width": 700,
+            "title": "Applicability",
+            "text": "<p>Automotive, Aviation, Fashion, Fitness, Healthcare, Hospitality, Marine Interior, Mass Transportation, Motorcycle, Office, Residential and Train</p>",
+            "button_label": "view",
+            "link": "shopify://pages/by-application"
+          }
+        },
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_width": 700,
+            "title": "Column",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-0",
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-1",
+        "template--19045297848623__9326e453-5270-43ad-9592-4e8ff8ec196b-168391411504d3c5ba-2"
+      ],
+      "settings": {
+        "title": "OR CHOOSE YOUR FABRICS BY:",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "media_shape": "natural",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0c30cd08-9803-4fdb-a5aa-29e33dc98364",
+    "cd4968bd-27d0-499c-8f9d-38854d87233c",
+    "9326e453-5270-43ad-9592-4e8ff8ec196b"
+  ]
+}

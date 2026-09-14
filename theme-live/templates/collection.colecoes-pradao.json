@@ -1,0 +1,217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1ec3340b-f4d3-473f-a47c-f362476f3bd6": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/all-fabric-solutions.png",
+        "height": "fixed",
+        "height_desktop": 200,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "COATED FABRICS",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>Order your free samples</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "57309e1c-2c9e-4202-9dd9-791ccc352c7f": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Order free samples",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 70,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": false,
+        "show_filter_counts": true,
+        "show_filter_deadends": true,
+        "ajax_products": true,
+        "filter_mode": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": true,
+        "show_featured_in_sort": false
+      }
+    },
+    "e63d0c59-f6e6-4ded-867f-4d15598e1112": {
+      "type": "scrolling-banner",
+      "disabled": true,
+      "settings": {
+        "text": "Order your free samples",
+        "link": "",
+        "text_size": 36,
+        "line_height": 1.2,
+        "speed": 1.5,
+        "direction": "left",
+        "font": "base",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "alt",
+        "color_bg": "#d7d8d9",
+        "color_text": "#ffffff"
+      }
+    },
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collection list",
+        "layout": "carousel",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "c4994681-7894-4cf7-8415-b4aa6e38432f": {
+      "type": "gallery",
+      "blocks": {
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Monteiro-Fabrics-CHANCE-BANNER-2.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "The largest catalogue 228 colors",
+            "title": "Chance collection",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View Collection",
+            "link": "shopify://pages/chance-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-1": {
+          "type": "image",
+          "settings": {
+            "video_external": "https://youtu.be/YRfmxxDgp0Q",
+            "enlarge_image": false,
+            "subheading": "Made from chestnut waste",
+            "title": "Peel Collection",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View Collection",
+            "link": "shopify://pages/peel-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-0",
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-1",
+        "template--19044945166639__c4994681-7894-4cf7-8415-b4aa6e38432f-168494933035dbc486-2"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 300,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    }
+  },
+  "order": [
+    "1ec3340b-f4d3-473f-a47c-f362476f3bd6",
+    "57309e1c-2c9e-4202-9dd9-791ccc352c7f",
+    "main",
+    "e63d0c59-f6e6-4ded-867f-4d15598e1112",
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257",
+    "c4994681-7894-4cf7-8415-b4aa6e38432f"
+  ]
+}

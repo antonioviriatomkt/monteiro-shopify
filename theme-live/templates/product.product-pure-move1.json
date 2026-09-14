@@ -1,0 +1,317 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "b9c19dd0-6590-4865-b600-f4d35d6bf8f0": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "{{ product.metafields.custom.foto_de_capa_produto.value }}",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 500,
+        "subheading": "",
+        "title": "",
+        "title_size": 28,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>{{ product.title }}</p>",
+        "enlarge_text": true,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "image_link": "{{ product.metafields.custom.download_catalogue_url.value }}",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_h1": true
+          }
+        },
+        "b3d841f7-a0d1-4d8e-a175-5d9bd9b124a2": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "352ebb81-0d14-487b-99a4-e4fb3eab4cd9": {
+          "type": "text",
+          "settings": {
+            "text": "Choose the color and add it to the cart.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true,
+            "show_size_chart": false,
+            "size_chart_variant": "",
+            "size_chart_page": ""
+          }
+        },
+        "8865a2ae-d558-4024-9d20-6614b94046a2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image-Arrow-PNG2.png",
+            "image_width": 80,
+            "url": "{{ product.metafields.custom.url_chance_next_colors.value }}"
+          }
+        },
+        "a67b1027-095e-4daa-bc56-fae6ded9358a": {
+          "type": "text",
+          "settings": {
+            "text": "Show more {{ product.metafields.custom.n_de_cores_chance_.value }} colors",
+            "text_style": "uppercase"
+          }
+        },
+        "f36eedaf-2fb2-45f7-8be8-f6289eb8179d": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "text": "SHOW MORE {{ product.metafields.custom.n_de_cores_chance_.value }} COLORS",
+            "url": "{{ product.metafields.custom.url_chance_next_colors.value }}",
+            "text_style": "link",
+            "open_new_window": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_pickup_availability": false,
+            "enable_mobile_sticky_cart": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "ad15c1a3-13bf-4001-a436-ce3e03165cc2": {
+          "type": "link",
+          "settings": {
+            "text": "Go to your cart to finalize your order",
+            "url": "https://www.monteirofabrics.com/cart",
+            "text_style": "button_primary",
+            "open_new_window": false
+          }
+        },
+        "21ae4d8c-e700-4a5e-88e6-9e00479da877": {
+          "type": "trust_icons",
+          "settings": {
+            "icon_size": 50,
+            "show_icon1": true,
+            "text1": "<p>Ready in 48 hours</p>",
+            "icon1": "truck",
+            "image1": "shopify://shop_images/48h-_1_-1www.png",
+            "show_icon2": true,
+            "text2": "<p>100% Vegan</p>",
+            "icon2": "leaf",
+            "image2": "shopify://shop_images/1100vegan-white.png",
+            "show_icon3": true,
+            "text3": "<p>10 Year Warranty</p>",
+            "icon3": "award",
+            "image3": "shopify://shop_images/10-year-warranty2.png",
+            "show_icon4": true,
+            "text4": "<p>Long-lasting</p>",
+            "icon4": "heart",
+            "image4": "shopify://shop_images/1Long-lasting-whitea.png"
+          }
+        },
+        "0b467d9b-d6d4-448a-996f-fe59555c5237": {
+          "type": "description",
+          "settings": {
+            "display": "accordion_closed",
+            "icon": "ruler"
+          }
+        },
+        "b340c155-cbef-4068-810a-cc7e51b81ba8": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "icon": "eye",
+            "title": "Specifications",
+            "content": "<p>Type: {{ product.metafields.custom.type.value }}</p><p>Engraving: {{ product.metafields.custom.engraving1.value }}</p><p>Abrasian Resistance: {{ product.metafields.custom.abrasion_resistance.value }}</p><p>Alcohol Resistance: {{ product.metafields.custom.resitencia_ao_alchool.value }}</p><p>Antibacterial: {{ product.metafields.custom.antibacterial1.value }}</p><p>Colour fastness to light: {{ product.metafields.custom.colour_fastness_to_light.value }}</p><p>Metalized colour: {{ product.metafields.custom.metalized_colour1.value }}</p><p>Flammability: </p>{{ product.metafields.custom.flammability2 | metafield_tag }}",
+            "page": "",
+            "open": false
+          }
+        },
+        "547c6067-bdeb-45ec-b91e-8d6690353bbc": {
+          "type": "accordion",
+          "settings": {
+            "icon": "lock",
+            "title": "Application",
+            "content": "",
+            "page": "{{ product.metafields.custom.pagica_icons.value }}",
+            "open": false
+          }
+        },
+        "9a2bbd10-5b71-4521-aad2-74b584e238db": {
+          "type": "accordion",
+          "settings": {
+            "icon": "truck",
+            "title": "Ready in 48 Hours",
+            "content": "<p>The best service with 1 piece minimums delivered by a fast, reliable, and organized team, ready to be shipped within 48 hours. Contact us <a href=\"/pages/contact\" title=\"Contact us\">here.</a></p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "de7f8209-c4f9-4476-9263-55d9766920b0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Care & Clean",
+            "content": "<p>Easy to clean with mild detergent and a damp cloth.</p>",
+            "page": "",
+            "open": false
+          }
+        },
+        "vendor_and_type": {
+          "type": "vendor_and_type",
+          "settings": {
+            "show_vendor": false,
+            "show_type": false
+          }
+        },
+        "66ef777d-83f7-4c78-bb8a-fa6d74fb7a5f": {
+          "type": "link",
+          "settings": {
+            "text": "Download Technical File",
+            "url": "{{ product.metafields.custom.download_file2.value }}",
+            "text_style": "link",
+            "open_new_window": false
+          }
+        },
+        "7d577812-3820-4a0d-a267-0de9840043ec": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<a href=\"{{ product.metafields.custom.download_file2.value.url }}\">Download Technical File</a>"
+          }
+        },
+        "0fff318c-6dc4-4697-9e14-49cbdf690359": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Check also this collection",
+            "enable_carousel": true,
+            "max_products": 8,
+            "show_vendor": false,
+            "hide_swatches": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "b3d841f7-a0d1-4d8e-a175-5d9bd9b124a2",
+        "352ebb81-0d14-487b-99a4-e4fb3eab4cd9",
+        "variant_picker",
+        "8865a2ae-d558-4024-9d20-6614b94046a2",
+        "a67b1027-095e-4daa-bc56-fae6ded9358a",
+        "f36eedaf-2fb2-45f7-8be8-f6289eb8179d",
+        "buy_buttons",
+        "ad15c1a3-13bf-4001-a436-ce3e03165cc2",
+        "21ae4d8c-e700-4a5e-88e6-9e00479da877",
+        "0b467d9b-d6d4-448a-996f-fe59555c5237",
+        "b340c155-cbef-4068-810a-cc7e51b81ba8",
+        "547c6067-bdeb-45ec-b91e-8d6690353bbc",
+        "9a2bbd10-5b71-4521-aad2-74b584e238db",
+        "de7f8209-c4f9-4476-9263-55d9766920b0",
+        "vendor_and_type",
+        "66ef777d-83f7-4c78-bb8a-fa6d74fb7a5f",
+        "7d577812-3820-4a0d-a267-0de9840043ec",
+        "0fff318c-6dc4-4697-9e14-49cbdf690359"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.product-area__details__header {padding-top: 0px; margin-top: -120px; }}",
+        ".product-area__link {width: 100%; text-align: center;}",
+        ".theme-gallery {position: sticky; top: 0;}"
+      ],
+      "settings": {
+        "media_style": "collage",
+        "sticky_behaviour": "none",
+        "full_width": false,
+        "show_backorder_text": false,
+        "slide_nav_style": "arrows",
+        "media_crop": "center",
+        "enable_zoom": true,
+        "zoom_cursor": "standard",
+        "show_thumbnails": true,
+        "enable_video_looping": true,
+        "scroll_to_variant_media": false,
+        "highlight_selected_media": true,
+        "variant_media_grouping": true,
+        "variant_media_grouping_option": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "title": "Other Collections",
+        "hide_swatches": false,
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "25cefac8-fc2f-4f2e-925b-8c0816fc017d": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "{{ product.title }}",
+        "title": "",
+        "title_size": 72,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>{{ product.metafields.custom.descri_o_da_cole_o | metafield_tag }}</p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 150,
+        "button_label": "VIEW CATALOGUE",
+        "button_link": "{{ product.metafields.custom.download_catalogue_url.value }}",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "f288016c-44d3-46a8-9ff5-9ba6c8c518c1": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "Other Collections",
+        "collection": "chance",
+        "layout": "carousel",
+        "show_vendor": true,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "b9c19dd0-6590-4865-b600-f4d35d6bf8f0",
+    "main",
+    "product-recommendations",
+    "25cefac8-fc2f-4f2e-925b-8c0816fc017d",
+    "f288016c-44d3-46a8-9ff5-9ba6c8c518c1"
+  ]
+}

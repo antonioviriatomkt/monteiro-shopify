@@ -1,0 +1,214 @@
+{%- comment -%}
+  Collection sheets — "what we bring", catalogue style. One row per collection: large swatch (from the
+  product), name + tagline (product vendor field), "best for", a four-figure spec strip (weight ·
+  composition · abrasion · colours), certification lines (fire · hygiene · warranty), badge chips, and
+  the CTAs (Add free sample → product page · technical details). Figures are typed per block from the
+  verified catalogue data — the section never reads product metafields. House tokens of Showcase 7.0.
+  Built 10/09/2026 for the ORGATEC 2026 page; reusable.
+{%- endcomment -%}
+{%- assign sid = section.id -%}
+<style>
+  #sheets-{{ sid }}{ --cs-text:#111; --cs-muted:#464654; --cs-rule:#dbdbdb; --cs-alt:#f5f5f5; color:var(--cs-text); padding:{{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px; {% if section.settings.alternate_bg_color %}background:var(--cs-alt);{% endif %} }
+  #sheets-{{ sid }} .cs-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:32px; margin-bottom:18px; }
+  #sheets-{{ sid }} .cs-head h2{ font-size:48px; font-weight:300; line-height:1.08; letter-spacing:-.01em; margin:0; text-align:left; color:var(--cs-text); max-width:760px; }
+  #sheets-{{ sid }} .cs-head a{ font-size:14px; font-weight:600; color:var(--cs-text); text-decoration:none; border-bottom:1px solid var(--cs-text); padding-bottom:2px; white-space:nowrap; }
+  #sheets-{{ sid }} .cs-intro{ font-size:18px; line-height:1.5; max-width:720px; margin:0 0 40px; color:var(--cs-text); }
+  #sheets-{{ sid }} .cs-intro p{ margin:0; }
+  #sheets-{{ sid }} .cs-row{ display:grid; grid-template-columns:300px minmax(0,1fr); gap:44px; padding:40px 0; border-top:1px solid var(--cs-rule); }
+  #sheets-{{ sid }} .cs-row:last-child{ border-bottom:1px solid var(--cs-rule); }
+  #sheets-{{ sid }} .cs-media{ display:block; aspect-ratio:1/1; background:#e9e7e2; overflow:hidden; position:relative; }
+  #sheets-{{ sid }} .cs-media img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s; }
+  #sheets-{{ sid }} .cs-media:hover img{ transform:scale(1.04); }
+  #sheets-{{ sid }} .cs-media .placeholder-svg{ width:100%; height:100%; display:block; fill:#c4c4c4; background:#e9e7e2; }
+  #sheets-{{ sid }} .cs-swatches{ display:flex; gap:6px; align-items:center; margin-top:10px; }
+  #sheets-{{ sid }} .cs-swatches i{ width:28px; height:28px; display:block; border:0; background-size:cover; background-position:center; }
+  #sheets-{{ sid }} .cs-swatches small{ font-size:12px; color:var(--cs-muted); margin-left:4px; }
+  #sheets-{{ sid }} .cs-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:24px; }
+  #sheets-{{ sid }} .cs-name{ font-size:22px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; line-height:1.2; margin:0; text-align:left; color:var(--cs-text); }
+  #sheets-{{ sid }} .cs-name a{ color:inherit; text-decoration:none; }
+  #sheets-{{ sid }} .cs-name a:hover{ text-decoration:underline; }
+  #sheets-{{ sid }} .cs-tagline{ display:block; font-size:16px; color:var(--cs-muted); margin-top:4px; }
+  #sheets-{{ sid }} .cs-best{ display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+  #sheets-{{ sid }} .cs-best span{ font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--cs-muted); border:1px solid var(--cs-rule); padding:5px 9px; line-height:1.2; white-space:nowrap; background:#fff; }
+  #sheets-{{ sid }} .cs-stats{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:0; margin:26px 0 22px; border-top:1px solid var(--cs-rule); border-bottom:1px solid var(--cs-rule); }
+  #sheets-{{ sid }} .cs-stat{ padding:14px 18px 14px 0; min-width:0; }
+  #sheets-{{ sid }} .cs-stat + .cs-stat{ border-left:1px solid var(--cs-rule); padding-left:18px; }
+  #sheets-{{ sid }} .cs-stat b{ display:block; font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--cs-muted); margin-bottom:6px; }
+  #sheets-{{ sid }} .cs-stat span{ display:block; font-size:20px; font-weight:300; line-height:1.2; color:var(--cs-text); font-variant-numeric:tabular-nums; overflow-wrap:anywhere; }
+  #sheets-{{ sid }} .cs-stat span em{ font-style:normal; font-size:13px; color:var(--cs-muted); display:block; margin-top:2px; font-weight:400; }
+  #sheets-{{ sid }} .cs-certs{ display:grid; grid-template-columns:120px minmax(0,1fr); gap:6px 18px; font-size:14px; line-height:1.45; }
+  #sheets-{{ sid }} .cs-certs b{ font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--cs-muted); padding-top:3px; }
+  #sheets-{{ sid }} .cs-certs span{ color:var(--cs-text); }
+  #sheets-{{ sid }} .cs-badges{ display:flex; flex-wrap:wrap; gap:6px; margin-top:16px; }
+  #sheets-{{ sid }} .cs-badges span{ font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--cs-muted); background:var(--cs-alt); padding:5px 9px; line-height:1.2; }
+  #sheets-{{ sid }} .cs-note{ margin-top:14px; font-size:13px; color:var(--cs-muted); }
+  #sheets-{{ sid }} .cs-note p{ margin:0; }
+  #sheets-{{ sid }} .cs-actions{ display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-top:24px; }
+  #sheets-{{ sid }} .cs-actions .button{ padding:14px 24px; }
+  #sheets-{{ sid }} .cs-actions a.cs-link{ display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; color:var(--cs-muted); text-decoration:none; }
+  #sheets-{{ sid }} .cs-actions a.cs-link:after{ content:""; width:16px; height:1px; background:currentColor; transition:width .2s; }
+  #sheets-{{ sid }} .cs-actions a.cs-link:hover{ color:var(--cs-text); }
+  #sheets-{{ sid }} .cs-actions a.cs-link:hover:after{ width:26px; }
+  #sheets-{{ sid }} .cs-foot{ margin-top:36px; font-size:13px; color:var(--cs-muted); max-width:760px; }
+  @media (max-width:1023px){
+    #sheets-{{ sid }} .cs-row{ grid-template-columns:220px minmax(0,1fr); gap:28px; }
+    #sheets-{{ sid }} .cs-stats{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+    #sheets-{{ sid }} .cs-stat:nth-child(3){ border-left:0; padding-left:0; }
+    #sheets-{{ sid }} .cs-stat:nth-child(n+3){ border-top:1px solid var(--cs-rule); }
+  }
+  @media (max-width:767px){
+    #sheets-{{ sid }} .cs-head{ flex-direction:column; align-items:flex-start; gap:12px; }
+    #sheets-{{ sid }} .cs-head h2{ font-size:36px; }
+    #sheets-{{ sid }} .cs-row{ grid-template-columns:1fr; gap:18px; padding:28px 0; }
+    #sheets-{{ sid }} .cs-media{ aspect-ratio:4/3; }
+    #sheets-{{ sid }} .cs-top{ flex-direction:column; gap:10px; }
+    #sheets-{{ sid }} .cs-best{ justify-content:flex-start; }
+    #sheets-{{ sid }} .cs-certs{ grid-template-columns:1fr; gap:2px 0; }
+    #sheets-{{ sid }} .cs-certs b{ margin-top:8px; }
+    #sheets-{{ sid }} .cs-actions .button{ width:100%; text-align:center; }
+  }
+</style>
+
+<div id="sheets-{{ sid }}" class="collection-sheets" data-section-id="{{ sid }}">
+  <div class="container container--large">
+    {%- if section.settings.title != blank or section.settings.link_label != blank -%}
+      <div class="cs-head">
+        {%- if section.settings.title != blank -%}<h2>{{ section.settings.title | escape }}</h2>{%- endif -%}
+        {%- if section.settings.link_label != blank and section.settings.link_url != blank -%}
+          <a href="{{ section.settings.link_url }}" data-cta="orgatec_explore" data-collection="all">{{ section.settings.link_label | escape }}</a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+    {%- if section.settings.intro != blank -%}<div class="cs-intro">{{ section.settings.intro }}</div>{%- endif -%}
+
+    {%- for block in section.blocks -%}
+      {%- assign product = block.settings.product -%}
+      {%- if product == blank -%}{%- continue -%}{%- endif -%}
+      {%- assign name = block.settings.name | default: product.title | remove: ' COLLECTION' | remove: ' Collection' -%}
+      <article class="cs-row" {{ block.shopify_attributes }}>
+        <div>
+          <a class="cs-media" href="{{ product.url }}" data-cta="sheet_image" data-collection="{{ product.handle }}" aria-label="{{ name | escape }}">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 1024px) 300px, (min-width: 768px) 220px, 100vw', alt: name }}
+            {%- elsif product.featured_image -%}
+              {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 1024px) 300px, (min-width: 768px) 220px, 100vw', alt: name }}
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </a>
+          {%- if section.settings.show_swatches -%}
+            {%- assign shown = 0 -%}
+            <div class="cs-swatches" aria-hidden="true">
+              {%- for v in product.variants -%}
+                {%- if v.image and shown < 5 and v.image != product.featured_image -%}
+                  <i style="background-image:url('{{ v.image | image_url: width: 80 }}')"></i>
+                  {%- assign shown = shown | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div>
+          <div class="cs-top">
+            <div>
+              <h3 class="cs-name"><a href="{{ product.url }}" data-cta="sheet_title" data-collection="{{ product.handle }}">{{ name | escape }}</a></h3>
+              {%- assign tagline = block.settings.tagline | default: product.vendor -%}
+              {%- if tagline != blank and tagline != shop.name -%}<span class="cs-tagline">{{ tagline | escape }}</span>{%- endif -%}
+            </div>
+            {%- if block.settings.best_for != blank -%}
+              <div class="cs-best">
+                {%- assign bests = block.settings.best_for | split: '·' -%}
+                {%- for b in bests -%}<span>{{ b | strip | escape }}</span>{%- endfor -%}
+              </div>
+            {%- endif -%}
+          </div>
+
+          <div class="cs-stats">
+            <div class="cs-stat"><b>{{ section.settings.label_weight | default: 'Weight' | escape }}</b><span>{{ block.settings.weight | default: '—' | escape }}</span></div>
+            <div class="cs-stat"><b>{{ section.settings.label_composition | default: 'Composition' | escape }}</b><span>{{ block.settings.composition | default: '—' | escape }}</span></div>
+            <div class="cs-stat"><b>{{ section.settings.label_abrasion | default: 'Abrasion' | escape }}</b><span>{{ block.settings.abrasion | default: '—' | escape }}{% if block.settings.abrasion_note != blank %}<em>{{ block.settings.abrasion_note | escape }}</em>{% endif %}</span></div>
+            <div class="cs-stat"><b>{{ section.settings.label_colours | default: 'Colours' | escape }}</b><span>{{ block.settings.colours | default: '—' | escape }}</span></div>
+          </div>
+
+          <div class="cs-certs">
+            {%- if block.settings.fire != blank -%}<b>{{ section.settings.label_fire | default: 'Fire' | escape }}</b><span>{{ block.settings.fire | escape }}</span>{%- endif -%}
+            {%- if block.settings.hygiene != blank -%}<b>{{ section.settings.label_hygiene | default: 'Hygiene' | escape }}</b><span>{{ block.settings.hygiene | escape }}</span>{%- endif -%}
+            {%- if block.settings.warranty != blank -%}<b>{{ section.settings.label_warranty | default: 'Warranty' | escape }}</b><span>{{ block.settings.warranty | escape }}</span>{%- endif -%}
+          </div>
+
+          {%- if block.settings.badges != blank -%}
+            <div class="cs-badges">
+              {%- assign badges = block.settings.badges | split: '·' -%}
+              {%- for b in badges -%}<span>{{ b | strip | escape }}</span>{%- endfor -%}
+            </div>
+          {%- endif -%}
+          {%- if block.settings.note != blank -%}<div class="cs-note">{{ block.settings.note }}</div>{%- endif -%}
+
+          <div class="cs-actions">
+            <a class="button" href="{{ product.url }}" data-cta="orgatec_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
+            <a class="cs-link" href="{{ product.url }}" data-cta="sheet_details" data-collection="{{ product.handle }}">{{ section.settings.details_label | default: 'Full technical sheet' | escape }}</a>
+          </div>
+        </div>
+      </article>
+    {%- endfor -%}
+
+    {%- if section.settings.footnote != blank -%}<div class="cs-foot">{{ section.settings.footnote }}</div>{%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection sheets",
+  "tag": "section",
+  "class": "section-collection-sheets",
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "What we bring for office" },
+    { "type": "text", "id": "link_label", "label": "Heading link label", "default": "All office upholstery fabrics" },
+    { "type": "url", "id": "link_url", "label": "Heading link" },
+    { "type": "richtext", "id": "intro", "label": "Intro" },
+    { "type": "checkbox", "id": "show_swatches", "label": "Show colour swatches under the image", "default": true },
+    { "type": "text", "id": "sample_label", "label": "Sample button label", "default": "Add free sample" },
+    { "type": "text", "id": "details_label", "label": "Details link label", "default": "Full technical sheet" },
+    { "type": "richtext", "id": "footnote", "label": "Footnote" },
+    { "type": "header", "content": "Labels (translate here)" },
+    { "type": "text", "id": "label_weight", "label": "Weight", "default": "Weight" },
+    { "type": "text", "id": "label_composition", "label": "Composition", "default": "Composition" },
+    { "type": "text", "id": "label_abrasion", "label": "Abrasion", "default": "Abrasion" },
+    { "type": "text", "id": "label_colours", "label": "Colours", "default": "Colours" },
+    { "type": "text", "id": "label_fire", "label": "Fire", "default": "Fire" },
+    { "type": "text", "id": "label_hygiene", "label": "Hygiene", "default": "Hygiene" },
+    { "type": "text", "id": "label_warranty", "label": "Warranty", "default": "Warranty" },
+    { "type": "header", "content": "Layout" },
+    { "type": "checkbox", "id": "alternate_bg_color", "label": "Use alternate section color", "default": false },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 120, "step": 10, "default": 70, "unit": "px" },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 120, "step": 10, "default": 70, "unit": "px" }
+  ],
+  "blocks": [
+    {
+      "type": "sheet",
+      "name": "Collection",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product (collection)" },
+        { "type": "image_picker", "id": "image", "label": "Image (optional — product image by default)" },
+        { "type": "text", "id": "name", "label": "Name override" },
+        { "type": "text", "id": "tagline", "label": "Tagline override (product vendor field by default)" },
+        { "type": "text", "id": "best_for", "label": "Best for (separate with ·)", "default": "Task chairs · Conference" },
+        { "type": "header", "content": "Figures — type verified catalogue values" },
+        { "type": "text", "id": "weight", "label": "Weight", "default": "760 g/m²" },
+        { "type": "text", "id": "composition", "label": "Composition", "default": "PVC 83% · CO 17%" },
+        { "type": "text", "id": "abrasion", "label": "Abrasion", "default": "400.000 Martindale" },
+        { "type": "text", "id": "abrasion_note", "label": "Abrasion note", "default": "ISO 5470-2" },
+        { "type": "text", "id": "colours", "label": "Colours", "default": "34 colours" },
+        { "type": "text", "id": "fire", "label": "Fire certifications" },
+        { "type": "text", "id": "hygiene", "label": "Hygiene / cleaning" },
+        { "type": "text", "id": "warranty", "label": "Warranty" },
+        { "type": "text", "id": "badges", "label": "Badges (separate with ·)" },
+        { "type": "richtext", "id": "note", "label": "Note" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Collection sheets", "blocks": [ { "type": "sheet" }, { "type": "sheet" }, { "type": "sheet" } ] } ]
+}
+{% endschema %}

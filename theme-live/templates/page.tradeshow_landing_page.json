@@ -1,0 +1,462 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_liquid_9KKCYt": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid/HTML",
+      "settings": {
+        "no_margins": true,
+        "custom_liquid": "<div style=\"background:#111111;color:#ffffff;padding:14px 24px;text-align:center;\"><div style=\"max-width:900px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:32px;flex-wrap:wrap;\"><span style=\"font-size:13px;letter-spacing:1.5px;text-transform:uppercase;opacity:0.55;white-space:nowrap;\">Techtextil Frankfurt 2026</span><span style=\"opacity:0.3;\">|</span><span style=\"font-size:14px;font-weight:500;white-space:nowrap;\">&#128197; April 21–24, 2026</span><span style=\"opacity:0.3;\">|</span><span style=\"font-size:14px;font-weight:500;white-space:nowrap;\">&#128205; Messe Frankfurt, Germany</span><span style=\"opacity:0.3;\">|</span><span style=\"font-size:14px;font-weight:600;white-space:nowrap;\">Hall 11.0 &middot; Stand A51</span></div></div>"
+      }
+    },
+    "slideshow_Apg8Eb": {
+      "type": "slideshow",
+      "blocks": {
+        "image_M8bz98": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_banner-Tech26.jpg",
+            "mobile_image": "shopify://shop_images/MR_banner-Tech26-mobile.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "image_NMECec": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_banner-ELECTRA_8333ebfa-3971-4a0f-91f6-dbfc599b7226.jpg",
+            "mobile_image": "shopify://shop_images/MR_banner-ELECTRA-mobile.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "image_iGwUGm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MR_banner-MEDIFLEX.jpg",
+            "mobile_image": "shopify://shop_images/MR_banner-MEDIFLEX-mobile.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "image_M8bz98",
+        "image_NMECec",
+        "image_iGwUGm"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 6
+      }
+    },
+    "rich_text_JpbWDH": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "From Portugal to Frankfurt",
+        "title": "Performance fabrics at Techtextil 26'",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Monteiro Fabrics is exhibiting at Techtextil Frankfurt, 21–24 April 2026 — and this is your chance to see our high-performance coated fabrics up close. From antimicrobial healthcare upholstery and antistatic solutions to bio-based sustainable collections and flame-retardant contract fabrics, we bring over 55 years of Portuguese manufacturing expertise to every metre. All our fabrics are Made in Portugal, backed by a 10-year warranty. <strong>Visit us at Hall 11.0 · Stand A51 </strong>to explore the full range, request samples, and speak directly with our technical team.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "17750394781d4b7463": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "image_with_text_overlay_Kn6yHT": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/Healthcare-Upholstery-Fabrics-2.jpg",
+        "height": "fixed",
+        "height_desktop": 350,
+        "height_mobile": 400,
+        "subheading": "FABRIC THAT CARES",
+        "title": "MEDIFLEX",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "177504102727f06076": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "image_with_text_BeNLWF": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Antimicrobial Healthcare Upholstery",
+        "title": "MEDIFLEX",
+        "title_size": 42,
+        "title_width": 12,
+        "text": "<p>Engineered for the most demanding clinical environments, MEDIFLEX combines antifungal, antibacterial, and antiviral surface protection with a soft touch and refined aesthetics. Compatible with alcohol- and bleach-based disinfection protocols, biocompatible to ISO 10993-5 and ISO 10993-10, and backed by a <strong>10-year performance warranty</strong>. Ideal for hospitals, care homes, and medical furniture manufacturers.</p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Medical__Mediflex.pdf?v=1774030658\" target=\"_blank\" title=\"Mediflex Catalogue\"><strong>Download Catalogue</strong></a></p>",
+        "button_label": "ORDER free SAMPLES",
+        "button_link": "shopify://products/mediflex-collection",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MR_banner_MEDIFLEX.png",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_Yeg6Ui": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "Antistatic doesn't have to be black",
+        "title": "ELECTRA",
+        "title_size": 42,
+        "title_width": 12,
+        "text": "<p>ELECTRA is a permanently antistatic coated fabric developed for ICUs, imaging rooms, and operating theatres. Its antistatic performance is stable and humidity-independent, it resists microbial growth, and — unlike conventional antistatic fabrics — it's available in a sophisticated palette, from timeless greys to five additional deep tones. Heat-weldable and bi-elastic for ease of manufacturing. </p><p><a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_ELECTRA_JUL2025_Ipad_v2.pdf?v=1774030697\" target=\"_blank\" title=\"Electra Catalogue\"><strong>Download Catalogue</strong></a></p>",
+        "button_label": "order free samples",
+        "button_link": "shopify://products/electra-collection",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MR_banner_ELECTRA.png",
+        "image_width": 80,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "text_columns_with_images_nXmzc8": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "text_block_94kmkN": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PEELSalt_65895.jpg",
+            "image_width": 700,
+            "title": "PEEL — 65% Bio-Based Upholstery",
+            "text": "<p>Made with chestnut by-products, vegetable oils, and biobased cotton, PEEL delivers a certified 65% biobased content without compromising on performance. Abrasion resistance up to 400,000 Martindale cycles, high fire resistance, and 8 contemporary stock colours — proof that circular design and industrial durability can coexist. </p><p><a href=\"/products/peel-collection\" target=\"_blank\" title=\"PEEL COLLECTION\">Order free samples</a></p>",
+            "button_label": "",
+            "link": "shopify://products/peel-collection"
+          }
+        },
+        "text_block_qHc8Dr": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/PROSOFT-100782.jpg",
+            "image_width": 700,
+            "title": "PROSOFT — High-Traffic Seating for Stadiums & Auditoriums",
+            "text": "<p>Built for venues where durability is non-negotiable. PROSOFT meets BS 5852 Crib 7 and NF P 92-507 M1 fire standards, offers outstanding abrasion resistance, and features an easy-clean surface for fast turnaround between events. Phthalate-free and fully weldable.</p><p><a href=\"/products/prosoft-collection\" target=\"_blank\" title=\"PROSOFT COLLECTION\">Order free samples</a></p>",
+            "button_label": "",
+            "link": "shopify://products/prosoft-collection"
+          }
+        },
+        "text_block_VWC4Mt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MARINA_OCEAN.jpg",
+            "image_width": 700,
+            "title": "OCEAN — Performance Fabric for Outdoor Upholstery",
+            "text": "<p>Engineered for extreme outdoor conditions, OCEAN exceeds 400,000 Martindale cycles, resists mould, UV degradation, stains, and fluids — and stays looking sharp over years of intensive use. Phthalate-free and easy to maintain. </p><p><a href=\"/products/ocean-collection\" target=\"_blank\" title=\"OCEAN COLLECTION\">Order free samples</a></p>",
+            "button_label": "",
+            "link": "shopify://products/ocean-collection"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_94kmkN",
+        "text_block_qHc8Dr",
+        "text_block_VWC4Mt"
+      ],
+      "name": "Text columns with media",
+      "settings": {
+        "title": "We're also bringing",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "media_shape": "natural",
+        "alternate_bg_color": false,
+        "full_width": true
+      }
+    },
+    "177313191515978d9c": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_TRxtBm": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "894541",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_TRxtBm"
+      ],
+      "disabled": true,
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "image_with_text_9LrT9A": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "See you in Frankfurt!",
+        "title_size": 42,
+        "title_width": 12,
+        "text": "<p>We are delighted to invite you to join Monteiro Fabrics at <strong>Techtextil 2026</strong>, the leading trade fair for modern working environments, taking place from <strong>April 21st to 24th</strong> in Frankfurt, Germany.</p><p>Come and meet our technical team at <strong>Hall 11.0, Stand A51</strong>— bring your project brief, request samples on the spot, or simply explore what's new. We'd love to help you find the right fabric for your next challenge.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Francisco_Marques_-_Monteiro_Fabrics-_Sales_Manager_2.jpg",
+        "image_width": 40,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "1775042530f2e31200": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_da88fe4_icdbK8": {
+          "type": "ai_gen_block_da88fe4",
+          "settings": {
+            "heading": "Sign up for our newsletter",
+            "text": "<p>Keep informed about our latest news, ongoing projects, and emerging trends in the industry. </p>",
+            "email_placeholder": "Enter e-mail",
+            "button_text": "Subscribe",
+            "success_message": "Thanks for subscribing.",
+            "layout": "row",
+            "text_alignment": "center",
+            "max_width": 800,
+            "form_width": 600,
+            "field_gap": 10,
+            "background_color": "#ffffff",
+            "heading_color": "#111111",
+            "text_color": "#464654",
+            "input_background": "#ffffff",
+            "input_text_color": "#111111",
+            "input_placeholder_color": "#464654",
+            "input_border_color": "#cccccc",
+            "input_focus_color": "#464654",
+            "button_background": "#464654",
+            "button_hover_background": "#111111",
+            "button_text_color": "#ffffff",
+            "success_color": "#008060",
+            "error_color": "#d82c0d",
+            "heading_size": 32,
+            "text_size": 16,
+            "input_font_size": 16,
+            "button_font_size": 16,
+            "padding_vertical": 60,
+            "padding_horizontal": 20,
+            "heading_spacing": 15,
+            "text_spacing": 25,
+            "border_radius": 0,
+            "input_border_radius": 0,
+            "button_border_radius": 0,
+            "input_border_width": 1,
+            "input_padding": 12,
+            "button_padding": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_da88fe4_icdbK8"
+      ],
+      "settings": {}
+    },
+    "accordions_Fie4jC": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_Fbb6Qy": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": " Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"https://www.monteirofabrics.com/pages/press\" target=\"_blank\" title=\"Press Kit\"> here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_tndWqd": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        },
+        "accordion_6Q84G7": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "accordion_MzTkXz": {
+          "type": "accordion",
+          "settings": {
+            "icon": "leaf",
+            "title": "Sustainable options",
+            "text": "<p>Bio-based, circular, and phthalate-free.</p>",
+            "open": false
+          }
+        },
+        "accordion_BMP7MD": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Stock availability",
+            "text": "<p>Fast delivery from our warehouse.</p>",
+            "open": false
+          }
+        },
+        "accordion_kjkDh3": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10-year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Fbb6Qy",
+        "accordion_tndWqd",
+        "accordion_6Q84G7",
+        "accordion_MzTkXz",
+        "accordion_BMP7MD",
+        "accordion_kjkDh3"
+      ],
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "custom_liquid_HNe8kt": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid/HTML",
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Event\",\n  \"name\": \"Monteiro Fabrics at Techtextil 2026\",\n  \"description\": \"Visit Monteiro Fabrics at Techtextil Frankfurt 2026. Discover MEDIFLEX, ELECTRA, PEEL, PROSOFT and OCEAN — high-performance coated fabrics Made in Portugal.\",\n  \"startDate\": \"2026-04-21\",\n  \"endDate\": \"2026-04-24\",\n  \"eventStatus\": \"https://schema.org/EventScheduled\",\n  \"eventAttendanceMode\": \"https://schema.org/OfflineEventAttendanceMode\",\n  \"location\": {\n    \"@type\": \"Place\",\n    \"name\": \"Messe Frankfurt — Hall 11.0, Stand A51\",\n    \"address\": {\n      \"@type\": \"PostalAddress\",\n      \"streetAddress\": \"Ludwig-Erhard-Anlage 1\",\n      \"addressLocality\": \"Frankfurt am Main\",\n      \"postalCode\": \"60327\",\n      \"addressCountry\": \"DE\"\n    }\n  },\n  \"organizer\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Monteiro Fabrics\",\n    \"url\": \"https://www.monteirofabrics.com\"\n  }\n}\n</script>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_9KKCYt",
+    "slideshow_Apg8Eb",
+    "rich_text_JpbWDH",
+    "17750394781d4b7463",
+    "image_with_text_overlay_Kn6yHT",
+    "177504102727f06076",
+    "image_with_text_BeNLWF",
+    "image_with_text_Yeg6Ui",
+    "text_columns_with_images_nXmzc8",
+    "177313191515978d9c",
+    "image_with_text_9LrT9A",
+    "1775042530f2e31200",
+    "accordions_Fie4jC",
+    "custom_liquid_HNe8kt"
+  ]
+}

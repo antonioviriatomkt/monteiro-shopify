@@ -1,0 +1,244 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "314d08b9-d056-4162-a2a4-72b2afe2d594": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-4_921ebdc2-1343-4e15-b5e5-5c2efaac4750.jpg",
+        "height": "full",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "chance & peel",
+        "title": "HIGHLIGHTED COLLECTIONS",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "16ce8e06-c630-4265-8766-d450965d43c0": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-3.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 300,
+        "subheading": "",
+        "title": "HIGHLIGHTED COLLECTIONS",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "eb460013-9dc9-406b-a729-120dc8696c6d": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Introducing Monteiro Fabrics' latest collections: Chance and Peel.",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "7234c37e-251d-424f-aa07-7fb518831ac2": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "228 COLORS",
+        "title": "CHANCE COLLECTION",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>CHANCE boasts an astonishing 228 fabric colors, making it on of the world's largest colour catalogue.  Explore a spectrum of vibrant or subtle hues to bring your design vision to life.</p>",
+        "button_label": "KNOW CHANCE collection",
+        "button_link": "shopify://pages/chance-collection",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Instagram_post_-_115SS_4b921772-91aa-4103-a6d8-c6adef851dde.png",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bf73e056-1621-4d37-8978-c4b15c4084a8": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "SUSTAINABLE",
+        "title": "PEEL COLLECTION",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Peel showcases sustainability, utilizing <strong>65% chestnut waste </strong>to create beautiful textiles. Made from Portuguese chestnuts, the manufacturing process needs no additional water or land. </p><p>A collection that combines innovation, ethical values, and a commitment to eco-conscious practices. allowing our customers to have the best materials without compromising cost, performance, aesthetics or sustainability. 🌿</p>",
+        "button_label": "KNOW PEEL COLLECTION",
+        "button_link": "shopify://pages/peel-collection",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Slide_16_9_-_10_8b526b2e-ed42-4fa7-a376-758d2e68a906.jpg",
+        "video_shopify": "shopify://files/videos/peel collection - monteiro fabrics video.mp4",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "4a3b08ae-5c8b-484c-9828-ae4a634e01ef": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "VIEW ALL",
+        "button_link": "shopify://collections/all-products",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "f2531418-764e-46ae-86e9-edebb57e19cd": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/decor-fabrics-furniture6_5187c244-f62c-49d3-84a3-0cc766c859bd.jpg",
+            "image_width": 700,
+            "title": "Patio Collection",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/decor-fabrics-furniture3_307170ba-e6c9-40b5-a441-87e4507eaac9.jpg",
+            "image_width": 700,
+            "title": "Siesta Collection",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/decor-fabrics-furniture11.jpg",
+            "image_width": 700,
+            "title": "Mediflex Collection",
+            "text": "",
+            "button_label": "",
+            "link": "shopify://pages/mediflex"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-0",
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-1",
+        "template--19045087150383__f2531418-764e-46ae-86e9-edebb57e19cd-1686325444ad5ba9bd-2"
+      ],
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "& Others",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
+      }
+    },
+    "15c7dcfe-6002-410e-be72-4b677b6a146d": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "Order your free samples",
+        "collection": "all-products",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "314d08b9-d056-4162-a2a4-72b2afe2d594",
+    "16ce8e06-c630-4265-8766-d450965d43c0",
+    "eb460013-9dc9-406b-a729-120dc8696c6d",
+    "7234c37e-251d-424f-aa07-7fb518831ac2",
+    "bf73e056-1621-4d37-8978-c4b15c4084a8",
+    "4a3b08ae-5c8b-484c-9828-ae4a634e01ef",
+    "f2531418-764e-46ae-86e9-edebb57e19cd",
+    "15c7dcfe-6002-410e-be72-4b677b6a146d"
+  ]
+}

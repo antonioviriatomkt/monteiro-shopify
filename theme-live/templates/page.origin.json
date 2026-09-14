@@ -1,0 +1,485 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Almofadas (1).mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "COLLECTION",
+        "title": "ORIGIN",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Discover how this collection transforms nature’s waste into high-performance fabrics that blend stunning design and vibrant colors using olive pits and natural fibers.</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "ORIGIN COLLECTION",
+        "title": "PRODUCED FROM A WATER-BASED FORMULATION AND BIO-BASED WASTE COMBINED WITH A NATURAL FIBER BASE",
+        "title_size": 54,
+        "title_width": 18,
+        "heading_h1": false,
+        "text": "<p>This coating is then combined with a cotton base, leading to a sustainable product without<br/>compromising its quality and performance. As Portugal is one of the world’s largest producers of<br/>olive oil, olive pits are an abundant by-product.<br/></p>",
+        "image_width": 60,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/scl/fi/kg05sqz3ni19i1aasoaiw/MONTEIRO-RIBAS_Cat-Web-ORIGIN-v2.pdf?rlkey=fk0ibujisq3yagqru9ijtmwe7&st=1i0zntbz&dl=0",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/olive_tree_fabrics.jpg",
+        "height": "natural",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "96186325-e209-4c72-b2c0-cc5c79e49b44": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Composition",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>72% of vegetal components, based on sugar production residues, waste from olive processing and cotton<strong>‍‍</strong></p>",
+        "button_label": "DOWNLOAD TECHNICAL FILE",
+        "button_link": "https://stats.sender.net/forms/dyP8rW/view",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/sustainable_process_for_fabrics.png",
+        "image_width": 82,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "custom",
+        "color_bg": "#d7d8d9",
+        "color_text": ""
+      }
+    },
+    "03bd8852-575d-4536-80f2-37ced6ee8855": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Based on a circular economy model, and instead of eliminating millions of tons of<br/>olive pits every year, Monteiro Fabrics recycles these wastes, transforming them into<br/>soft, durable fabrics, perfect for upholstery.</p>",
+        "image": "shopify://shop_images/PLANT-BASED-FABRICS1.png",
+        "image_width": 600,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Raw Materials",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Using local raw materials, the climate change impact category is substantially reduced.<br/>Monteiro Fabrics research proved that the versatility and biological nature of this<br/>by-product makes its use surprising in the design of the ORIGIN Collection.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "left",
+        "text_width": 40,
+        "button_style": "link",
+        "image": "shopify://shop_images/nature_coated_fabrics.jpg",
+        "image_width": 83,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Numbers never lie:",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>This product has 72% bio-based carbon in its composition. </p><p>This value, obtained after testing according to ASTM D 6866, reveals the amount of carbon from natural sources (plants) versus carbon from synthetic sources (petrochemicals).</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "right",
+        "text_width": 40,
+        "button_style": "link",
+        "image": "shopify://shop_images/nature_coated_fabrics1.jpg",
+        "image_width": 79,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/origin-collection-monteiro-fabrics1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable_upholstery_fabrics_798c008c-0cc7-4ed5-8ccf-d577640282a1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SUSTAINABLE-UPHOLSTERY-FABRICS-WHITE2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SUSTAINABLE-UPHOLSTERY-FABRICS-OLIVES.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SUSTAINABLE-UPHOLSTERY-FABRICS-WHITE_3d9eeb7e-0f11-42c0-b96f-7d9d87a37d31.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "e8086891-3791-493f-bb81-beb4d237e01c"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 590,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "2236cf0a-dde3-47ef-bdd9-d9735cb1d980": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>With a pleasant and smooth touch, ORIGIN responds to our real concerns with<br/>sustainability and the responsible use of natural resources.</p>",
+        "image": "shopify://shop_images/origin_application_fabrics.png",
+        "image_width": 700,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "video_RLjUyc": {
+      "type": "video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Monteiro fabrics origin collection.mp4",
+        "video_external": "",
+        "subheading": "",
+        "video_title": "ORIGIN",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "overlay_style_tint": true
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and<br/>cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/Healthcare-Upholstery.png",
+        "image_width": 530,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "37b70038-bd52-4106-9b44-d747725f3175": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Image-Arrow-PNG2.png",
+            "image_width": 120,
+            "url": "https://www.monteirofabrics.com/products/chance-collection-ii"
+          }
+        },
+        "128ff2f2-a237-4166-aa67-e331396f69dd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Show more 204 colors",
+            "text_style": "body"
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1",
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4",
+        "128ff2f2-a237-4166-aa67-e331396f69dd",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "origin-collection",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "top",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": true,
+        "highlight_selected_media": true
+      }
+    },
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. </p><p>Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/anti-microbial_and_anti-fungal_fabrics.png",
+        "image_width": 250,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 100,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "b7839318-a0c6-4f6c-91c0-584b4fdfc2e2",
+    "96186325-e209-4c72-b2c0-cc5c79e49b44",
+    "03bd8852-575d-4536-80f2-37ced6ee8855",
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7",
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "2236cf0a-dde3-47ef-bdd9-d9735cb1d980",
+    "video_RLjUyc",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "37b70038-bd52-4106-9b44-d747725f3175",
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79"
+  ]
+}

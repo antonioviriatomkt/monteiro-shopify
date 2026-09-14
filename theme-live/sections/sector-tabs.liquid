@@ -1,0 +1,186 @@
+{%- comment -%}
+  Sector tabs — "the sectors we specify for, and the collections we bring". Built 10/09/2026 for the
+  ORGATEC 2026 page; reusable. One tab per sector block: image (theme placeholder when empty), claim,
+  text, the products we bring (swatch + title + tagline from the product's vendor field + "Add free
+  sample" to the product page), an optional preview note (for collections without samples yet) and a
+  link to the sector collection. House tokens of Showcase 7.0; no external assets.
+{%- endcomment -%}
+{%- assign sid = section.id -%}
+<style>
+  #sector-tabs-{{ sid }}{ --st-text:#111; --st-muted:#464654; --st-rule:#dbdbdb; --st-alt:#f5f5f5; color:var(--st-text); padding:{{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px; {% if section.settings.alternate_bg_color %}background:var(--st-alt);{% endif %} }
+  #sector-tabs-{{ sid }} .st-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:32px; margin-bottom:32px; }
+  #sector-tabs-{{ sid }} .st-head h2{ font-size:48px; font-weight:300; line-height:1.08; letter-spacing:-.01em; margin:0; text-align:left; color:var(--st-text); max-width:720px; }
+  #sector-tabs-{{ sid }} .st-head a{ font-size:14px; font-weight:600; color:var(--st-text); text-decoration:none; border-bottom:1px solid var(--st-text); padding-bottom:2px; white-space:nowrap; }
+  #sector-tabs-{{ sid }} .st-tabs{ display:flex; gap:0; border-bottom:1px solid var(--st-rule); overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; margin-bottom:44px; }
+  #sector-tabs-{{ sid }} .st-tabs::-webkit-scrollbar{ display:none; }
+  #sector-tabs-{{ sid }} .st-tab{ appearance:none; background:none; border:0; border-bottom:2px solid transparent; margin-bottom:-1px; padding:14px 0; margin-right:36px; font:inherit; font-size:13px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; color:var(--st-muted); cursor:pointer; white-space:nowrap; transition:color .2s, border-color .2s; }
+  #sector-tabs-{{ sid }} .st-tab:hover{ color:var(--st-text); }
+  #sector-tabs-{{ sid }} .st-tab[aria-selected="true"]{ color:var(--st-text); border-bottom-color:var(--st-text); }
+  #sector-tabs-{{ sid }} .st-tab:focus-visible{ outline:2px solid var(--st-muted); outline-offset:4px; }
+  #sector-tabs-{{ sid }} .st-panel{ display:grid; grid-template-columns:5fr 7fr; gap:56px; align-items:start; }
+  #sector-tabs-{{ sid }} .st-panel[hidden]{ display:none; }
+  #sector-tabs-{{ sid }} .st-media{ position:relative; aspect-ratio:4/5; background:#e9e7e2; overflow:hidden; }
+  #sector-tabs-{{ sid }} .st-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+  #sector-tabs-{{ sid }} .st-media .placeholder-svg{ width:100%; height:100%; display:block; fill:#c4c4c4; background:#e9e7e2; }
+  #sector-tabs-{{ sid }} .st-eyebrow{ display:block; font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--st-muted); margin-bottom:12px; }
+  #sector-tabs-{{ sid }} .st-claim{ font-size:26px; font-weight:600; line-height:1.25; margin:0 0 14px; text-align:left; color:var(--st-text); }
+  #sector-tabs-{{ sid }} .st-text{ font-size:16px; line-height:1.5; color:var(--st-text); max-width:560px; }
+  #sector-tabs-{{ sid }} .st-text p{ margin:0 0 10px; }
+  #sector-tabs-{{ sid }} .st-label{ display:block; font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--st-muted); margin:30px 0 4px; }
+  #sector-tabs-{{ sid }} .st-list{ list-style:none; margin:0; padding:0; }
+  #sector-tabs-{{ sid }} .st-row{ display:grid; grid-template-columns:56px 1fr auto; gap:18px; align-items:center; padding:14px 0; border-bottom:1px solid var(--st-rule); }
+  #sector-tabs-{{ sid }} .st-row:first-child{ border-top:1px solid var(--st-rule); }
+  #sector-tabs-{{ sid }} .st-swatch{ width:56px; height:56px; display:block; background:#e9e7e2; overflow:hidden; border:1px solid rgba(0,0,0,.06); }
+  #sector-tabs-{{ sid }} .st-swatch img{ width:100%; height:100%; object-fit:cover; display:block; }
+  #sector-tabs-{{ sid }} .st-name{ display:block; font-size:14px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--st-text); text-decoration:none; }
+  #sector-tabs-{{ sid }} .st-name:hover{ text-decoration:underline; }
+  #sector-tabs-{{ sid }} .st-tagline{ display:block; font-size:14px; color:var(--st-muted); margin-top:2px; }
+  #sector-tabs-{{ sid }} .st-sample{ font-size:12px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; color:var(--st-muted); text-decoration:none; white-space:nowrap; display:inline-flex; align-items:center; gap:8px; }
+  #sector-tabs-{{ sid }} .st-sample:after{ content:""; width:16px; height:1px; background:currentColor; transition:width .2s; }
+  #sector-tabs-{{ sid }} .st-sample:hover{ color:var(--st-text); }
+  #sector-tabs-{{ sid }} .st-sample:hover:after{ width:26px; }
+  #sector-tabs-{{ sid }} .st-note{ margin:16px 0 0; padding-left:14px; border-left:2px solid var(--st-muted); font-size:14px; color:var(--st-muted); max-width:520px; }
+  #sector-tabs-{{ sid }} .st-note p{ margin:0; }
+  #sector-tabs-{{ sid }} .st-more{ display:inline-block; margin-top:26px; font-size:14px; font-weight:600; color:var(--st-text); text-decoration:none; border-bottom:1px solid var(--st-text); padding-bottom:2px; }
+  #sector-tabs-{{ sid }} .st-more:hover{ opacity:.7; }
+  @media (max-width:1023px){
+    #sector-tabs-{{ sid }} .st-panel{ grid-template-columns:1fr; gap:32px; }
+    #sector-tabs-{{ sid }} .st-media{ aspect-ratio:16/9; }
+  }
+  @media (max-width:767px){
+    #sector-tabs-{{ sid }} .st-head{ flex-direction:column; align-items:flex-start; gap:12px; margin-bottom:22px; }
+    #sector-tabs-{{ sid }} .st-head h2{ font-size:36px; }
+    #sector-tabs-{{ sid }} .st-tabs{ margin-bottom:28px; }
+    #sector-tabs-{{ sid }} .st-tab{ margin-right:24px; }
+    #sector-tabs-{{ sid }} .st-claim{ font-size:22px; }
+    #sector-tabs-{{ sid }} .st-row{ grid-template-columns:48px 1fr; }
+    #sector-tabs-{{ sid }} .st-swatch{ width:48px; height:48px; }
+    #sector-tabs-{{ sid }} .st-sample{ grid-column:2; justify-self:start; margin-top:-4px; }
+  }
+</style>
+
+<div id="sector-tabs-{{ sid }}" class="sector-tabs" data-section-id="{{ sid }}">
+  <div class="container container--large">
+    {%- if section.settings.title != blank or section.settings.link_label != blank -%}
+      <div class="st-head">
+        {%- if section.settings.title != blank -%}<h2>{{ section.settings.title | escape }}</h2>{%- endif -%}
+        {%- if section.settings.link_label != blank and section.settings.link_url != blank -%}
+          <a href="{{ section.settings.link_url }}" data-cta="sector_tabs_all">{{ section.settings.link_label | escape }}</a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 1 -%}
+    <div class="st-tabs" role="tablist" aria-label="{{ section.settings.title | escape }}">
+      {%- for block in section.blocks -%}
+        <button class="st-tab" role="tab" type="button" id="st-tab-{{ sid }}-{{ forloop.index }}" aria-controls="st-panel-{{ sid }}-{{ forloop.index }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" {% unless forloop.first %}tabindex="-1"{% endunless %} data-cta="sector_tab" data-sector="{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</button>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- for block in section.blocks -%}
+      {%- assign sector_handle = block.settings.title | handleize -%}
+      <div class="st-panel" role="tabpanel" id="st-panel-{{ sid }}-{{ forloop.index }}" aria-labelledby="st-tab-{{ sid }}-{{ forloop.index }}" {% unless forloop.first %}hidden{% endunless %}>
+        <div class="st-media">
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '600, 900, 1200', sizes: '(min-width: 1024px) 480px, 100vw', alt: block.settings.image.alt | default: block.settings.title }}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        <div class="st-body">
+          {%- if block.settings.eyebrow != blank -%}<span class="st-eyebrow">{{ block.settings.eyebrow | escape }}</span>{%- endif -%}
+          {%- if block.settings.claim != blank -%}<h3 class="st-claim">{{ block.settings.claim | escape }}</h3>{%- endif -%}
+          {%- if block.settings.text != blank -%}<div class="st-text">{{ block.settings.text }}</div>{%- endif -%}
+
+          {%- if block.settings.products.count > 0 -%}
+            <span class="st-label">{{ block.settings.list_label | default: 'On the stand' | escape }}</span>
+            <ul class="st-list">
+              {%- for product in block.settings.products -%}
+                <li class="st-row">
+                  <a class="st-swatch" href="{{ product.url }}" aria-hidden="true" tabindex="-1">
+                    {%- if product.featured_image -%}{{ product.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}{%- endif -%}
+                  </a>
+                  <div>
+                    <a class="st-name" href="{{ product.url }}" data-cta="sector_product" data-collection="{{ product.handle }}">{{ product.title | remove: ' COLLECTION' | remove: ' Collection' | escape }}</a>
+                    {%- if product.vendor != blank and product.vendor != shop.name -%}<span class="st-tagline">{{ product.vendor | escape }}</span>{%- endif -%}
+                  </div>
+                  <a class="st-sample" href="{{ product.url }}" data-cta="orgatec_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+
+          {%- if block.settings.note != blank -%}<div class="st-note">{{ block.settings.note }}</div>{%- endif -%}
+          {%- if block.settings.link_label != blank and block.settings.link_url != blank -%}
+            <a class="st-more" href="{{ block.settings.link_url }}" data-cta="orgatec_explore" data-collection="{{ sector_handle }}">{{ block.settings.link_label | escape }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  (function(){
+    var root = document.getElementById('sector-tabs-{{ sid }}'); if(!root) return;
+    var tabs = Array.prototype.slice.call(root.querySelectorAll('.st-tab'));
+    var panels = Array.prototype.slice.call(root.querySelectorAll('.st-panel'));
+    function activate(i){
+      tabs.forEach(function(t, j){ var on = j === i; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; });
+      panels.forEach(function(p, j){ if (j === i) p.removeAttribute('hidden'); else p.setAttribute('hidden', ''); });
+    }
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ activate(i); });
+      t.addEventListener('keydown', function(e){
+        var n = null;
+        if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+        if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+        if (e.key === 'Home') n = 0;
+        if (e.key === 'End') n = tabs.length - 1;
+        if (n !== null){ e.preventDefault(); activate(n); tabs[n].focus(); }
+      });
+    });
+    /* theme editor: open the tab whose block is selected */
+    document.addEventListener('shopify:block:select', function(e){
+      var idx = tabs.indexOf(e.target); if (idx > -1) activate(idx);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Sector tabs",
+  "tag": "section",
+  "class": "section-sector-tabs",
+  "max_blocks": 6,
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Sectors we specify for" },
+    { "type": "text", "id": "link_label", "label": "Heading link label", "default": "All coated fabrics" },
+    { "type": "url", "id": "link_url", "label": "Heading link" },
+    { "type": "text", "id": "sample_label", "label": "Sample link label", "default": "Add free sample" },
+    { "type": "checkbox", "id": "alternate_bg_color", "label": "Use alternate section color", "default": false },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 120, "step": 10, "default": 70, "unit": "px" },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 120, "step": 10, "default": 70, "unit": "px" }
+  ],
+  "blocks": [
+    {
+      "type": "sector",
+      "name": "Sector",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Tab label", "default": "Office" },
+        { "type": "image_picker", "id": "image", "label": "Image", "info": "Portrait 4:5 works best. Empty = placeholder." },
+        { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Sector" },
+        { "type": "text", "id": "claim", "label": "Claim", "default": "Task and conference seating, soft seating, contract furniture." },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "text", "id": "list_label", "label": "List label", "default": "On the stand" },
+        { "type": "product_list", "id": "products", "label": "Collections we bring", "limit": 8 },
+        { "type": "richtext", "id": "note", "label": "Note (e.g. a collection without samples yet)" },
+        { "type": "text", "id": "link_label", "label": "Sector link label", "default": "All office upholstery fabrics" },
+        { "type": "url", "id": "link_url", "label": "Sector link" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Sector tabs", "blocks": [ { "type": "sector" }, { "type": "sector", "settings": { "title": "Healthcare" } } ] } ]
+}
+{% endschema %}

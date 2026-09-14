@@ -1,0 +1,560 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "wrapper": "div.template-faq",
+  "sections": {
+    "rich_text_jLkgMi": {
+      "type": "rich-text",
+      "custom_css": [
+        "h1 {font-family: \"Kometpro-regular\", sans-serif;}",
+        "p {font-family: \"Kometpro-regular\", sans-serif;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "{{ page.title }}",
+        "title_size": 48,
+        "title_width": 40,
+        "heading_h1": true,
+        "text": "<p>To get help as quickly as possible, start by browsing our Frequently Asked Questions. If your query isn’t covered, our customer service team is available through the enquiry form or via call <a href=\"/pages/contact\" target=\"_blank\" title=\"Contact us\">here.</a></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-faq",
+      "custom_css": [
+        "#faq-search__input {font-family: \"kometpro-regular\", sans-serif;}"
+      ],
+      "settings": {
+        "show_title": false,
+        "show_content": false,
+        "text_alignment": "left",
+        "show_search": true,
+        "show_sidebar": true,
+        "sidebar_title": "Quick links",
+        "search_placeholder": "Search FAQs"
+      }
+    },
+    "16336816691fb51b7b": {
+      "type": "accordions",
+      "blocks": {
+        "16336816691fb51b7b-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How can I place an order?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "16336816691fb51b7b-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I order directly online?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "16336816691fb51b7b-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request a proforma invoice?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "accordion_QTidCM": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Is there a minimum order quantity?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_7NWhUi": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What payment methods do you accept?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_LWcx6U": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I make an order for a project or contract installation?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "16336816691fb51b7b-0",
+        "16336816691fb51b7b-2",
+        "16336816691fb51b7b-1",
+        "accordion_QTidCM",
+        "accordion_7NWhUi",
+        "accordion_LWcx6U"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "settings": {
+        "title": "Orders and purchasing",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "1633681707d0a1c902": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_qytQpM": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request fabric samples?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_TgTbHE": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How do I ask for a physical catalogue?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_rCryNi": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are samples available for all collections?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Is there a limit to the number of samples I can request?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How long does sample delivery take?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "1633681707d0a1c902-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request samples for a specific project or mood board?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qytQpM",
+        "accordion_TgTbHE",
+        "accordion_rCryNi",
+        "1633681707d0a1c902-0",
+        "1633681707d0a1c902-1",
+        "1633681707d0a1c902-2"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "settings": {
+        "title": "Samples and catalogue requests",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "1633684277a52541f1": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_DgXT7R": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Which fabrics are available from stock?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_Py8EyH": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How quickly are stock items shipped?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "1633684277a52541f1-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What happens if a fabric is out of stock?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "1633684277a52541f1-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I check availability before placing an order?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        },
+        "cc3ff187-0164-4771-94eb-f1ca2d23b5d8": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do lead times vary by collection?",
+            "text": "<p>Add the content to appear when the accordion is opened</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_DgXT7R",
+        "accordion_Py8EyH",
+        "1633684277a52541f1-0",
+        "1633684277a52541f1-1",
+        "cc3ff187-0164-4771-94eb-f1ca2d23b5d8"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "settings": {
+        "title": "Stock and lead times",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_HcGz4d": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_UnyNYP": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where can I find technical specifications?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_V4LRjU": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What is the width of each fabric?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_KXyYBg": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How do I check abrasion resistance, fire resistance, or other performance data?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_e8P9wt": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are the fabrics suitable for contract use?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_W6UEUT": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where can I find cleaning and maintenance instructions?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_UnyNYP",
+        "accordion_V4LRjU",
+        "accordion_KXyYBg",
+        "accordion_e8P9wt",
+        "accordion_W6UEUT"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Technical information",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_8VXhUa": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_MenLBg": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What sustainability features do your fabrics have?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_fEr4ip": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you offer bio-based or recycled collections?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_KePbhj": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are your fabrics certified?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_bkr7Ur": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Are your products free from animal-derived materials?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_C6NyLA": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you provide information about REACH or other compliance standards?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_MenLBg",
+        "accordion_fEr4ip",
+        "accordion_KePbhj",
+        "accordion_bkr7Ur",
+        "accordion_C6NyLA"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Sustainability and compliance",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_XUMAae": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_7QYgAR": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you work with trade customers and professionals?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_GHmaNQ": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How can I contact your sales team?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_mqik8m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I request support for a specification project?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_L3bYeV": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Do you assist with custom or tailored fabric needs?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_VEEP7m": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I receive updates on new collections and launches?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_7QYgAR",
+        "accordion_GHmaNQ",
+        "accordion_mqik8m",
+        "accordion_L3bYeV",
+        "accordion_VEEP7m"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Account and trade support",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "accordions_meTmdJ": {
+      "type": "accordions",
+      "blocks": {
+        "accordion_qydWta": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Where do you deliver?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_NwyqyX": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How are orders shipped?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_Dn8w9W": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "Can I track my order?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_KNMDAy": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "What should I do if I need help after placing an order?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        },
+        "accordion_8wprXh": {
+          "type": "accordion",
+          "settings": {
+            "icon": "none",
+            "title": "How do I care for and clean the fabrics?",
+            "text": "<p>Add the content to appear when the content is expanded</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qydWta",
+        "accordion_NwyqyX",
+        "accordion_Dn8w9W",
+        "accordion_KNMDAy",
+        "accordion_8wprXh"
+      ],
+      "custom_css": [
+        ".h2 {font-family: Kometpro-light; font-weight: 300; text-align: center; padding-right: 0px;}",
+        ".cc-accordion-item__title {font-family: kometpro-regular;}",
+        "p {font-family: kometpro-regular;}"
+      ],
+      "name": "Expandable content",
+      "settings": {
+        "title": "Delivery and aftercare",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_jLkgMi",
+    "main",
+    "16336816691fb51b7b",
+    "1633681707d0a1c902",
+    "1633684277a52541f1",
+    "accordions_HcGz4d",
+    "accordions_8VXhUa",
+    "accordions_XUMAae",
+    "accordions_meTmdJ"
+  ]
+}

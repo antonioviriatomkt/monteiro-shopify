@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c32cbc25-b125-4db8-a112-46391f1b48e9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/pv-64.jpg",
+        "height": "fixed",
+        "height_desktop": 550,
+        "height_mobile": 400,
+        "subheading": "blog",
+        "title": "NEWS & EVENTS",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "0094ceb3-3312-4107-808b-477653287222": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Frame-18_69045de8-c699-4a77-82eb-389b1a1e6abd.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "NEWS",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "blog_layout": "collage",
+        "blog_posts_per_page": 10,
+        "blog_posts_per_row_mobile": "2",
+        "blog_show_title": false,
+        "blog_show_filter": true,
+        "blog_show_rss_link": false
+      }
+    },
+    "87ee8823-ed3b-4018-8949-8e8c746e5a84": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--18726128484655__2e02e436-976f-49e5-950a-237a320b5435-1681822234926d8e7a-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/instagram-1080x1080.jpg",
+            "video_shopify": "shopify://files/videos/Linea pelle portugal manufacturers.mp4",
+            "image_width": 700,
+            "title": "Lineapelle Milano",
+            "text": "<p>19-21 September 2023</p><p>Pad. 9 L28</p>",
+            "button_label": "Schedule a meeting",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "b7bc2790-b6a5-4c23-8695-4afe5cb5b94d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/heimtextil-monteiro-fabrics12.png",
+            "image_width": 700,
+            "title": "Heimtextil Frankfurt",
+            "text": "<p>9-12 January 2024</p><p>Hall 4.0  C50</p>",
+            "button_label": "SCHEDULE A MEETING",
+            "link": "shopify://pages/contact"
+          }
+        },
+        "2b97ccc1-6b5d-41c3-93f2-95622a9a58ad": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/eduiphotel-2024--monteiro.png",
+            "image_width": 700,
+            "title": "Equiphotel Paris",
+            "text": "<p>3-7 November 2024</p><p>Pav. 7.3-H093</p>",
+            "button_label": "Schedule a Metting",
+            "link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "template--18726128484655__2e02e436-976f-49e5-950a-237a320b5435-1681822234926d8e7a-1",
+        "b7bc2790-b6a5-4c23-8695-4afe5cb5b94d",
+        "2b97ccc1-6b5d-41c3-93f2-95622a9a58ad"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "MEET US AT THE NEXT TRADE FAIR",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "media_shape": "square",
+        "alternate_bg_color": true,
+        "full_width": true
+      }
+    },
+    "a598c52c-7054-4611-b38a-c9eedb9f79c8": {
+      "type": "newsletter",
+      "settings": {
+        "subheading": "",
+        "title": "Subscribe to our newsletter",
+        "text": "<p>Join the Monteiro family and stay updated on industry trends, educational articles, trade shows, and new projects. Be ahead of the curve. Sign up now!</p>",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "c32cbc25-b125-4db8-a112-46391f1b48e9",
+    "0094ceb3-3312-4107-808b-477653287222",
+    "main",
+    "87ee8823-ed3b-4018-8949-8e8c746e5a84",
+    "a598c52c-7054-4611-b38a-c9eedb9f79c8"
+  ]
+}

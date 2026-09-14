@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "image_BNjwBk": {
+          "type": "image",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BNjwBk"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "layout": "columns",
+        "grid": 3,
+        "collections_per_page": 24,
+        "display_type": "all"
+      }
+    },
+    "rich_text_yBVLeU": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "MONTEIRO FABRICS",
+        "title": "COLLECTIONS",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>View our latest launched collection here and explore each item to discover editorial photos, the applicability of each fabric, and technical information.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "gallery_8bBNf9": {
+      "type": "gallery",
+      "blocks": {
+        "image_akB6r7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Coated-fabrics-pvc-textile.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Collection",
+            "title": "STRAW",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/straw",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_N49D9M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/amazonia-coated-fabrics.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Collection",
+            "title": "AMAZONIA BY NINI ANDRADE SILVA",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/amazonia-collection-coated-fabrics-by-nini-andrade-silva",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_WaGbX9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable_upholstery_fabrics_798c008c-0cc7-4ed5-8ccf-d577640282a1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Collection",
+            "title": "ORIGIN",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/origin-sustainable-fabrics",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_GXg67h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery_fabrics_for_dentist_chair_and_hospital_operathing_table.png",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Collection",
+            "title": "ELECTRA",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/electra-medical-upholstery",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_z84Tgz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Monteiro-Fabrics-Healthcare-5_67a6b7bd-0261-4c77-a4ca-fdcee7ab4722.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "COLLECTION",
+            "title": "MEDIFLEX",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/mediflex",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_7KfpVw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture1_e2a8e351-1c87-4bbf-9703-cbe3b7dbbef3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "COLLECTION",
+            "title": "PEEL",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "Views",
+            "link": "shopify://pages/peel-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_6MTQn9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture4_75a7216a-4e27-4ac2-8341-a5ad0b8898e7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "COLLECTION",
+            "title": "CHANCE",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "VIEW",
+            "link": "shopify://pages/chance-collection",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_VK84np": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fabrics-inspiration_2f6bec6b-f237-4a84-b8d5-6fea3a600c8e.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "COLLECTIONS",
+            "title": "SIESTA & PATIO",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/siesta-outdoor-upholstery",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "image_gwnhrg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture7ws.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "ALL",
+            "title": "EDITORIALS",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "View",
+            "link": "shopify://pages/editorial",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_akB6r7",
+        "image_N49D9M",
+        "image_WaGbX9",
+        "image_GXg67h",
+        "image_z84Tgz",
+        "image_7KfpVw",
+        "image_6MTQn9",
+        "image_VK84np",
+        "image_gwnhrg"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 2,
+        "desktop_image_height": 510,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": false,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "image_with_text_overlay_6Wtg7W": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "Image with text overlay",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Pair text with an image to draw attention to an important detail of your brand or product line.</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_yBVLeU",
+    "gallery_8bBNf9",
+    "image_with_text_overlay_6Wtg7W"
+  ]
+}

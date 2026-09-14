@@ -1,0 +1,277 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "0f381630-0258-4047-a808-5e56a1673116": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/decor-fabrics-furniture12.jpg",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "can we be your next partner?",
+        "title": "CONTACT US",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "3c7a8511-7f74-4639-85e2-2488f38ee9a4": {
+      "type": "rich-text",
+      "custom_css": [
+        ".sectio {padding-top: 100px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<h2>We would greatly appreciate hearing from you and assisting you with any inquiries regarding our fabrics and solutions.</h2>",
+        "image": "shopify://shop_images/logo-png-1.png",
+        "image_width": 130,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-contact",
+      "disabled": true,
+      "settings": {
+        "show_title": true
+      }
+    },
+    "1736183251d6c3b850": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_PGapdj": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "278222",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_PGapdj"
+      ],
+      "settings": {
+        "skip_container": false
+      }
+    },
+    "bcbb4a7a-a2c2-4bfe-be75-38ca6d75c779": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Contact us",
+        "title": "BY EMAIL",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Whether you need a quotation request,  orders, or a project in mind, we are here to help. Please email us to <strong>hello@monteirofabrics.com</strong> and we will get back to you as soon as possible.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Monteiro_fabrics_customer_care_team.jpg",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "6c32a779-98eb-4121-a503-79e25a3e06a7": {
+      "type": "map",
+      "settings": {
+        "heading": "Monteiro Fabrics",
+        "address": "<p><strong>Portugal</strong></p><p>Circunvalação, 9020, Apartado<br/>52511 </p><p>4202-351 Porto</p><p>+351 228 338 640 </p><p>(Call to the national fixed network)</p><p> </p><p> </p><p><strong>Germany</strong></p><p>Grünwalder Weg 32, </p><p>82041 Oberhaching</p><p>+49 171 4101578</p>",
+        "button": "",
+        "text_alignment": "center",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": "",
+        "map_address": "R. de António Augusto Félix 1, 4465-275 São Mamede de Infesta, Portugal",
+        "api_key": "",
+        "map_style": "silver",
+        "image": "shopify://shop_images/monteiro-fabrics1_e7e495ae-8bf7-41e7-8d15-cc3b3023ced0.jpg"
+      }
+    },
+    "a52ba89c-5057-464d-85eb-4e9b67a1eaee": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "subheading": "Contact us",
+        "title": "By email",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Whether you need a quotation request,  orders, or a project in mind, we are here to help. Please email us to <strong>hello@monteirofabrics.com</strong> and we will get back to you as soon as possible </p>",
+        "image": "shopify://shop_images/pngtree-email-icon-png-image_1757854.jpg",
+        "image_width": 80,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bd6667a4-490e-4390-94d6-86d05b4ae03a": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"/pages/press\" target=\"_blank\" title=\"Press Kit\"> here. </a></p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more here.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide taylormade digital printed material</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "239a9d01-da10-495c-9200-2119cd566da5": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "mobile_image": "shopify://shop_images/monteiro-fabrics-certifications4.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "0f381630-0258-4047-a808-5e56a1673116",
+    "3c7a8511-7f74-4639-85e2-2488f38ee9a4",
+    "main",
+    "1736183251d6c3b850",
+    "bcbb4a7a-a2c2-4bfe-be75-38ca6d75c779",
+    "6c32a779-98eb-4121-a503-79e25a3e06a7",
+    "a52ba89c-5057-464d-85eb-4e9b67a1eaee",
+    "bd6667a4-490e-4390-94d6-86d05b4ae03a",
+    "239a9d01-da10-495c-9200-2119cd566da5"
+  ]
+}

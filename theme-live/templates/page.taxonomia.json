@@ -1,0 +1,178 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_Dpmhez": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        ".line-1 {font-family: kometpro-extralight; font-weight: 100;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/banner_medical_v6.png",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "{{ page.title }}",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "rich_text_trRPgK": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-weight: 100;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<h2>{{ page.metafields.custom.legenda.value }}</h2>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_Fgnj9X": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: KometPro-Regular;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "Healthcare fabrics engineered for hygiene and comfort",
+        "title_size": 42,
+        "title_width": 40,
+        "text": "<p>We develop coated healthcare fabrics and healthcare upholstery specifically for demanding clinical environments, where hygiene, safety and long-term performance are non‑negotiable. Across the portfolio, materials are designed to resist microbial growth, bodily fluids, lotions and everyday staining, while remaining soft and comfortable for patients and visitors. Selected collections, such as <a href=\"/products/mediflex-collection\" target=\"_blank\" title=\"MEDIFLEX COLLECTION\"><strong>MEDIFLEX</strong></a>, combine antifungal, antibacterial and antiviral properties with compatibility with alcohol- and bleach-based cleaning protocols, supporting rigorous infection-control routines in hospitals and clinics.</p>",
+        "button_label": "Our healthcare fabrics",
+        "button_link": "shopify://collections/healthcare",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Healthcare-Upholstery-Fabrics-1a.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_tFPDJf": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-family: KometPro-Regular;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "Certified performance and safety for healthcare interiors",
+        "title_size": 42,
+        "title_width": 40,
+        "text": "<p>Our healthcare fabrics are tested and certified to meet stringent fire, durability and cleanability requirements found in hospitals, care homes and other healthcare facilities. Depending on the collection, technical performance includes high abrasion resistance up to 400,000 Martindale cycles, strong resistance to alcohol and bleach, and excellent lightfastness for long-term use. Fire performance is validated against key standards such as FMVSS 302, EN 1021-1+2, NFP 92-503 (M2), BS 5852 Crib 5, and, for high-occupancy venues like auditoriums, BS 5852 Crib 7 and NF P 92-507 M1.</p><p></p><p>Phthalate-free formulations in ranges such as <a href=\"/products/prosoft-collection\" target=\"_blank\" title=\"PROSOFT COLLECTION\"><strong>PROSOFT</strong></a> and <a href=\"/products/ocean-collection\" target=\"_blank\" title=\"OCEAN COLLECTION\"><strong>OCEAN</strong></a> add an extra layer of reassurance for sensitive environments, while resistance to scratches, stains and fluids supports fast, efficient maintenance between patients or events. This combination of tested fire resistance, durability and easy cleaning ensures that Monteiro healthcare coated fabrics help specifiers meet both regulatory requirements and everyday operational demands.</p>",
+        "button_label": "Certifications",
+        "button_link": "shopify://pages/quality",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/Healthcare-Upholstery3.jpg",
+        "image_width": 51,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "featured_collection_pDGKyA": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "title": "Our healthcare collections",
+        "collection": "healthcare",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    },
+    "rich_text_UrCJ36": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-family: KometPro-Regular;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Need a bespoke solution?",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our team can develop custom healthcare upholstery fabrics to exact requirements - covering fabric composition, weight, texture, flame retardancy, disinfection compatibility and finishing treatments. Colour matching is available using state-of-the-art technology, including lab dip approval and pilot samples, so every detail aligns with your project before production begins. All tailormade fabrics are manufactured in Portugal to the same standards as the stock range, and backed by the same 10-year warranty.</p>",
+        "image_width": 120,
+        "button_label": "GET IN TOUCH",
+        "button_link": "shopify://pages/contact",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "1772906507073ac29a": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "image_with_text_overlay_Dpmhez",
+    "rich_text_trRPgK",
+    "image_with_text_Fgnj9X",
+    "image_with_text_tFPDJf",
+    "featured_collection_pDGKyA",
+    "rich_text_UrCJ36",
+    "1772906507073ac29a",
+    "main"
+  ]
+}

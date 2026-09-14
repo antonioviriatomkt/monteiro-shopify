@@ -1,0 +1,1226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1b1f649a-d66e-4aa4-a992-6ce703ebdef3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fabrics-inspiration.jpg",
+            "slide_link": "",
+            "subheading": "EDITORIALS",
+            "title": "Looking for inspiration?",
+            "title_size": 60,
+            "title_width": 16,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Slideshow",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Slideshow",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-1",
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-2",
+        "template--21789823762735__1b1f649a-d66e-4aa4-a992-6ce703ebdef3-image-3"
+      ],
+      "settings": {
+        "height": "full",
+        "height_desktop": 1000,
+        "height_mobile": 740,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "e4e53c43-4f07-409a-8188-ed1ce097147d": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "CHANCE COLLECTION",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Of our iconic texture in an unmatched color spectrum.<br/></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "633defd6-3fdb-44c4-a48f-d9a0f2a89be3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/interior-design-fabrics.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture5_f0996718-552f-4c15-b7bd-f93f5227e024.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chair1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "27195938-7f86-4419-91a3-bdf5f40f95ba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Upholstery-fabrics.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/architecture-project-fabrics.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/architecture-project-fabrics2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture54.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "31661a3c-36fc-40c6-9f1c-16803b1841e0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chair3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "27d8ff71-ccba-4ffa-8368-d2ec0b7984de": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PILLOW-INTERIOR-DESIGN-FABRICS.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture11_bb1262fd-9b53-4e84-9e85-a5f8735fcb1a.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "29b86687-4a4a-47a8-8d0c-87e20aaaf659": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PILLOW-INTERIOR-DESIGN-FABRICS1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "cd811322-7c3a-4cf9-8b09-025e50d3cd7b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/interior-design-fabrics-pillows.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "633defd6-3fdb-44c4-a48f-d9a0f2a89be3",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "27195938-7f86-4419-91a3-bdf5f40f95ba",
+        "9c7be5fd-76a6-432d-be8b-32d5207e5d05",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2",
+        "31661a3c-36fc-40c6-9f1c-16803b1841e0",
+        "27d8ff71-ccba-4ffa-8368-d2ec0b7984de",
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "29b86687-4a4a-47a8-8d0c-87e20aaaf659",
+        "cd811322-7c3a-4cf9-8b09-025e50d3cd7b"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 660,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "A  range of 228 shades",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Upholstery solutions </p>",
+        "image_width": 480,
+        "button_label": "mORE ABOUT CHANCE COLLECTION",
+        "button_link": "shopify://pages/chance-collection",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "a07e8445-bec5-4920-a9cb-c32a9feb7453": {
+      "type": "gallery",
+      "blocks": {
+        "ee765b8e-5116-49e0-9ac8-a99233d1391f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "0d7352e5-26ce-4a72-86e8-aa4edad6958f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e71a543b-b6fb-470e-8a1d-8d0c8f88f0b0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-4.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9257f114-0d99-4015-af55-ccf937df3fd8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f6d20608-f683-4a8c-bd69-df7580e2bb4f": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "2c9a4fdd-a8e8-4106-a405-43be1e5a50b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chair-3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "7d491bbc-4eca-43e7-84c3-4674b5abe3d2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-5.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "77e49fd2-09f8-4e22-b8e1-9a2ad4ea368b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-8.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "dc6f97e9-652e-47a2-9312-37d8d4223bac": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e378b4fb-c552-4046-a6ae-2c5cef8be000": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "4d0d0f79-1ab3-44dd-b221-d93d725230fe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-6.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "ee765b8e-5116-49e0-9ac8-a99233d1391f",
+        "0d7352e5-26ce-4a72-86e8-aa4edad6958f",
+        "e71a543b-b6fb-470e-8a1d-8d0c8f88f0b0",
+        "9257f114-0d99-4015-af55-ccf937df3fd8",
+        "f6d20608-f683-4a8c-bd69-df7580e2bb4f",
+        "2c9a4fdd-a8e8-4106-a405-43be1e5a50b5",
+        "7d491bbc-4eca-43e7-84c3-4674b5abe3d2",
+        "77e49fd2-09f8-4e22-b8e1-9a2ad4ea368b",
+        "dc6f97e9-652e-47a2-9312-37d8d4223bac",
+        "e378b4fb-c552-4046-a6ae-2c5cef8be000",
+        "4d0d0f79-1ab3-44dd-b221-d93d725230fe"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 400,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "PEEL COLLECTION",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Sustainable fabrics made from chestnuts.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "https://www.dropbox.com/s/aumpc2c22cxm906/Natrue_Peel.pdf?dl=0",
+        "button_style": "link",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "8c353d39-a100-44c0-adec-cb362cf6ef51": {
+      "type": "gallery",
+      "blocks": {
+        "29279b4e-5cc5-48a8-baec-6cb748c71ac4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/sustainable-coated-fabrics-manufacturers1_e8dd8d1a-4c58-4cca-a3f0-45c6f154afee.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "29eacf25-deb9-4898-a203-cf469ac7bf32": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chairs.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "d4f47eaf-87c3-429d-a0f9-e30762245f35": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-chairs2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "432e4a25-283c-4bc1-90fc-901fad0dc764": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-upholstery1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "af780bae-6a3e-4c8d-b390-16a615ddee98": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-upholstery2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "0ec45ef4-beb1-44a8-a368-941ffde4a2e4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-8.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "0a7f9b08-0e0c-407e-aad0-23ff48bb4d08": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture1_2ab77a52-73b8-493f-b4ab-1cd82cc34375.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "3b30b182-46e7-4030-b9b6-d8495d73df58": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture10_595a2117-75d5-40e1-9c20-f667999bd2c7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "42f4f104-cf85-45e1-b6d5-0d09433e9d13": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1a3ceba5-e1ca-4cf9-a5b1-b03d0254b35d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "429b0269-2067-4ef9-9ea5-b79895ef0042": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-6.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "29279b4e-5cc5-48a8-baec-6cb748c71ac4",
+        "29eacf25-deb9-4898-a203-cf469ac7bf32",
+        "d4f47eaf-87c3-429d-a0f9-e30762245f35",
+        "432e4a25-283c-4bc1-90fc-901fad0dc764",
+        "af780bae-6a3e-4c8d-b390-16a615ddee98",
+        "0ec45ef4-beb1-44a8-a368-941ffde4a2e4",
+        "0a7f9b08-0e0c-407e-aad0-23ff48bb4d08",
+        "3b30b182-46e7-4030-b9b6-d8495d73df58",
+        "42f4f104-cf85-45e1-b6d5-0d09433e9d13",
+        "1a3ceba5-e1ca-4cf9-a5b1-b03d0254b35d",
+        "429b0269-2067-4ef9-9ea5-b79895ef0042"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 580,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "74c451a2-92dd-4e06-8243-0e04847e356a": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "A range of 8 colours",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Upholstery solutions </p>",
+        "image_width": 480,
+        "button_label": "MORE ABOUT PEEL",
+        "button_link": "shopify://pages/peel-collection",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "3a534d94-68d3-4826-accc-17b1e058c67e": {
+      "type": "gallery",
+      "blocks": {
+        "65d5baf6-dde1-41f2-858d-191da33e455e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainable-fabrics-upholstery3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "124c5ee0-5432-4287-84c1-7dc33dfc56a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/coated-fabrics-home-decor.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "8c11fce3-f74b-4c11-8dc4-6597fa89eee3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/coated-fabrics-home-decor3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e085e975-f48f-4d41-b074-8e4f1a2d836f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/coated-fabrics-home-decor2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "ef6c1f09-aaf4-4b83-91e3-b7b63c973a9c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-8.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "769eef3c-08af-44af-a853-11f349a8cb7d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture1_2ab77a52-73b8-493f-b4ab-1cd82cc34375.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "9513c560-d3fc-4561-9040-2bea7a97cc1a": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture10_595a2117-75d5-40e1-9c20-f667999bd2c7.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "b483742c-577d-4968-ab76-c196455edb01": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "2dcac592-b6f0-4f18-a5f7-896585a67e18": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f7085451-e4f9-47bf-8fd0-b92ca91537f4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/upholstery-fabrics-6.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "65d5baf6-dde1-41f2-858d-191da33e455e",
+        "124c5ee0-5432-4287-84c1-7dc33dfc56a6",
+        "8c11fce3-f74b-4c11-8dc4-6597fa89eee3",
+        "e085e975-f48f-4d41-b074-8e4f1a2d836f",
+        "ef6c1f09-aaf4-4b83-91e3-b7b63c973a9c",
+        "769eef3c-08af-44af-a853-11f349a8cb7d",
+        "9513c560-d3fc-4561-9040-2bea7a97cc1a",
+        "b483742c-577d-4968-ab76-c196455edb01",
+        "2dcac592-b6f0-4f18-a5f7-896585a67e18",
+        "f7085451-e4f9-47bf-8fd0-b92ca91537f4"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 4,
+        "desktop_image_height": 660,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "de9294a1-72d5-4d46-8808-a11417134352": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "PATIO & SIESTA",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "https://www.dropbox.com/s/aumpc2c22cxm906/Natrue_Peel.pdf?dl=0",
+        "button_style": "link",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "d69fe626-c365-438c-ae2a-bda3797d7a14": {
+      "type": "gallery",
+      "blocks": {
+        "e76e50f8-7ed9-4859-ab20-cee8e342d7b7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-4.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "50e72ca4-694a-4d1e-a154-db0f8a93f762": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Monteiro-Fabrics---Coated-Fabrics-_31.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e0302639-8f59-4d6f-aa91-e807af30547d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-5_1c24a9d5-e3ae-416d-8154-5400796ad0f0.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "53537397-661e-45b0-92a9-1710b435e74f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-6.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "4b8b8da4-370b-41a5-b10f-74fc592d21f6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-9.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "5bf2fbb2-8e95-4917-bf93-72146114c82a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture3_fbe248bb-182c-432c-8154-c738853b795b.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "cef0c9b5-8bd6-472d-8236-c0b502f86b86": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture6_53095897-8e7e-49c5-bdc6-83a9e93c6a47.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "af4a2c26-6317-4cf4-8275-e6a9fe219aa6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "7bfa3901-08ee-45b1-a7f7-823e61faf4e9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OUTDOOR-FABRICS-1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "0c6b10e4-7634-4620-9406-38de90f91c79": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/decor-fabrics-furniture6_53095897-8e7e-49c5-bdc6-83a9e93c6a47.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "Shop this",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "e76e50f8-7ed9-4859-ab20-cee8e342d7b7",
+        "50e72ca4-694a-4d1e-a154-db0f8a93f762",
+        "e0302639-8f59-4d6f-aa91-e807af30547d",
+        "53537397-661e-45b0-92a9-1710b435e74f",
+        "4b8b8da4-370b-41a5-b10f-74fc592d21f6",
+        "5bf2fbb2-8e95-4917-bf93-72146114c82a",
+        "cef0c9b5-8bd6-472d-8236-c0b502f86b86",
+        "af4a2c26-6317-4cf4-8275-e6a9fe219aa6",
+        "7bfa3901-08ee-45b1-a7f7-823e61faf4e9",
+        "0c6b10e4-7634-4620-9406-38de90f91c79"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 660,
+        "mobile_image_height": 370,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": false,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Monteiro-Fabrics-peel-_Tchnical_Specifications-2.png",
+        "height": "natural",
+        "height_desktop": 1000,
+        "height_mobile": 150,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1b1f649a-d66e-4aa4-a992-6ce703ebdef3",
+    "e4e53c43-4f07-409a-8188-ed1ce097147d",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "a07e8445-bec5-4920-a9cb-c32a9feb7453",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "8c353d39-a100-44c0-adec-cb362cf6ef51",
+    "74c451a2-92dd-4e06-8243-0e04847e356a",
+    "3a534d94-68d3-4826-accc-17b1e058c67e",
+    "de9294a1-72d5-4d46-8808-a11417134352",
+    "d69fe626-c365-438c-ae2a-bda3797d7a14",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79"
+  ]
+}

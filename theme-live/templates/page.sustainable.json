@@ -1,0 +1,458 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/industrial-fabrics-green-and-black.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "A lifetime commitment",
+        "title": "SUSTAINABILITY",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "65934332-69d8-41e9-8ff2-9423580ebf9e": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 20,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>In Monteiro Fabrics we take responsibility for resource sustainability.</p>",
+        "image_width": 230,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "2b4c7b14-f99b-439f-bd00-4dacb45acc62": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/M_R015.jpg",
+            "image_width": 700,
+            "title": "RESPONSIBLE CARE",
+            "text": "<p>Our people are our most important asset, our heart: it's their enthusiasm, dedication and technical skills that bring us to the front line of service and innovation.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/green-plants-background.jpg",
+            "image_width": 700,
+            "title": "ENVIRONMENT",
+            "text": "<p>As a fully integrated company, with all production steps on our premises, we are continuously searching to minimize our environmental impact. Focusing on cleaner and more efficient manufacturing processes, we installed a fume filtration central, more efficient lighting and insulation systems, closed circuit heating systems as well as a waste management program.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/LAB-FABRICS-1.jpg",
+            "image_width": 700,
+            "title": "ECONOMIC AND QUALITY",
+            "text": "<p>We truly believe that sustainability is a vehicle for economic growth as well as a guarantee of business continuity. All the care we take through the supply chain together with a quality management system (certified by ISO 9001), will bring satisfaction to our shareholders, employees and community.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "61e3d80e-6e10-4c61-97f8-0052ad32a8c1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MONTEIRO-FABRICS-1-SITE-TEST-6.jpg",
+            "image_width": 700,
+            "title": "SCOPE & MANAGEMENT POLICY",
+            "text": "<p>Scope: Development, production and commercialization of coated fabrics. Please contact us <a href=\"https://www.monteirofabrics.com/pages/contact\" title=\"https://www.monteirofabrics.com/pages/contact\"><strong>here</strong></a> to know more about our Management Policy.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "b7aafd48-7c11-432d-b238-3226339f13c8": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/MANTA_-_02597.jpg",
+            "image_width": 700,
+            "title": "CERTIFICATES",
+            "text": "<p>Our management system is ISO 9001:2015 and ISO 14001:2015 certified by TÜVRheinland. Please see <a href=\"https://www.dropbox.com/scl/fo/2m7af4k6n9yb6p7idjwrh/h?rlkey=lsaaoflew8bmz9s2xf0jurcwm&st=e119qzui&dl=0\" title=\"https://www.dropbox.com/scl/fo/2m7af4k6n9yb6p7idjwrh/h?rlkey=lsaaoflew8bmz9s2xf0jurcwm&st=e119qzui&dl=0\">here </a>our Certificates  9001:2015 and 14001:2015</p>",
+            "button_label": "",
+            "link": "https://www.dropbox.com/scl/fo/2m7af4k6n9yb6p7idjwrh/h?rlkey=lsaaoflew8bmz9s2xf0jurcwm&st=e119qzui&dl=0"
+          }
+        },
+        "text_block_P7rccX": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/bioshoes4all.jpg",
+            "image_width": 700,
+            "title": "Bioshoes4all",
+            "text": "<p>Integrated Project – Innovation and Training of the footwear sector for a sustainable bioeconomy. Monteiro Fabrics is one of the 70 co-promoters of this project, sharing the vision of a transition from the footwear industry to sustainable bioeconomy. Check out the <a href=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/ficha_projeto_bioshoe4all.pdf?v=1763214717\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0711/9801/5791/files/ficha_projeto_bioshoe4all.pdf?v=1763214717\">Project file here.</a></p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-0",
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-1",
+        "template--19231659491631__2b4c7b14-f99b-439f-bd00-4dacb45acc62-1685100059e8d966a7-2",
+        "61e3d80e-6e10-4c61-97f8-0052ad32a8c1",
+        "b7aafd48-7c11-432d-b238-3226339f13c8",
+        "text_block_P7rccX"
+      ],
+      "settings": {
+        "title": "We take responsibility for resource sustainability",
+        "text_alignment": "left",
+        "button_style": "primary",
+        "media_shape": "portrait",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "aae62571-b845-4b8b-bd0f-d42a1ccb8b33": {
+      "type": "testimonials",
+      "blocks": {
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "RESPONSIBLE CARE",
+            "text": "<p>Our people are our most important asset, our heart: it's their enthusiasm, dedication and technical skills that bring us to the front line of service and innovation</p>",
+            "button_label": "",
+            "link": "",
+            "image1": "shopify://shop_images/monteiro_fabrics_13_dcff7682-1373-416b-b06c-14bf078cbcb5.jpg",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "left"
+          }
+        },
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 0,
+            "title": "VISION",
+            "text": "<p>Improving everyday life with high performance coated fabrics: Design, Innovation, Sustainability, Service.</p>",
+            "button_label": "",
+            "link": "",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "right"
+          }
+        },
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 5,
+            "title": "Testimonial header",
+            "text": "<p>Use this text to elaborate on what your happy customers are saying. Use this section without the stars for unique text with image layouts.</p>",
+            "button_label": "",
+            "link": "",
+            "image1_caption": "",
+            "image2_caption": "",
+            "layout": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-1",
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-0",
+        "template--19220441760047__aae62571-b845-4b8b-bd0f-d42a1ccb8b33-1685026302bcb90f6b-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "button_style": "primary",
+        "alternate_bg_color": false
+      }
+    },
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Our Goal",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our goal is to be among the top companies in the upholstery industry, the preferred brand for customers working with these materials. We are focused on anticipating and exceeding expectations, with an obsession for service and providing an exceptional customer experience.</p><p>We aspire to be recognized as an excellent company to work for, one that unleashes the full potential of its employees, attracts and retains talent, and builds a winning team. We want people to feel that they are part of something \"spectacular\" inspiring, and where it makes perfect sense to give their best while embracing the values of Monteiro Fabrics.</p>",
+        "image_width": 60,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    },
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. </p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more here.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide taylormade digital printed material</p>",
+            "open": false
+          }
+        },
+        "7222d503-becf-4db5-8afa-37735ed86910": {
+          "type": "accordion",
+          "settings": {
+            "icon": "chat_bubble",
+            "title": "Contact us",
+            "text": "<p>We would greatly appreciate hearing from you and assisting you with any inquiries regarding our fabrics and solutions. <strong>Contact us here.</strong></p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "7222d503-becf-4db5-8afa-37735ed86910"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": false,
+        "view_all_page": ""
+      }
+    },
+    "becf6fec-52a9-422e-b99e-38a7efff5187": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/monteiro-fabrics-certifications2.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-0",
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-1",
+        "template--19044945592623__d4f171b6-e2a5-4b5e-84e1-9bec92106c19-1684947879556e2ed6-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "0d5a2d90-22b7-4ed9-aeef-4361b558cc0a": {
+      "type": "featured-blog",
+      "custom_css": [
+        ".h2 {border-bottom: 1px solid black;}"
+      ],
+      "settings": {
+        "title": "Articles",
+        "blog": "sustainability",
+        "post_limit": 4,
+        "show_view_all": true,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "layout": "carousel",
+        "blog_first_post_big": false,
+        "alternate_bg_color": true,
+        "height": "fixed",
+        "height_desktop": 620,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "slide_transition": "slide"
+      }
+    },
+    "12df712b-3900-4652-84d8-14805913ecc6": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "65934332-69d8-41e9-8ff2-9423580ebf9e",
+    "2b4c7b14-f99b-439f-bd00-4dacb45acc62",
+    "aae62571-b845-4b8b-bd0f-d42a1ccb8b33",
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0",
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0",
+    "becf6fec-52a9-422e-b99e-38a7efff5187",
+    "0d5a2d90-22b7-4ed9-aeef-4361b558cc0a",
+    "12df712b-3900-4652-84d8-14805913ecc6"
+  ]
+}

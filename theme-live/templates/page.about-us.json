@@ -1,0 +1,580 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "H1.line-1 {font-size: 60px;}",
+        "p {font-size: 20px;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-10.jpg",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "subheading": "manufacture of coated fabric SINCE 1967",
+        "title": "ABOUT US",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p>MADE IN PORTUGAL</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "f110418b-cebb-4bf1-9886-e1f4233510f3": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-4.jpg",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 300,
+        "subheading": "",
+        "title": "ABOUT US",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "18fc7a53-bc73-4207-b1fe-a3571edcc6e0": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Since 1967",
+        "title": "Manufacturers of coated fabrics",
+        "title_size": 68,
+        "title_width": 12,
+        "heading_h1": true,
+        "text": "<p><strong>Identity </strong></p><p>Our unique experience and know how, along with the combination of traditional manufacturing with updated technology, enables us to be present in demanding markets around the world. Going on our fourth generation as a family business, we develop fabrics with outstanding design, function and performance.</p>",
+        "image": "shopify://shop_images/logo-png-1.png",
+        "image_width": 150,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_alignment": "center",
+        "enlarge_text": true,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Identity",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our unique experience and know how, along with the combination of traditional manufacturing with updated technology, enables us to be present in demanding markets around the world. Going on our fourth generation as a family business, we develop fabrics with outstanding design, function and performance.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "0023332c-6cb9-45a0-98e7-e42b1ad2027a": {
+      "type": "video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Monteiro fabrics 2025- low res.mp4",
+        "video_external": "",
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-6_ec3cf059-f758-47be-8ead-ca83060607d7.jpg",
+        "subheading": "see how far we’ve come — and how far we’re going",
+        "video_title": "",
+        "title_size": 60,
+        "title_width": 14,
+        "heading_h1": false,
+        "text": "<p>Take 2 minutes to understand why some of the world’s leading brands trust Monteiro Fabrics</p>",
+        "enlarge_text": false,
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": false,
+        "overlay_style_tint": true
+      }
+    },
+    "f69eb353-f0a0-4732-bde7-bcff354aba64": {
+      "type": "gallery",
+      "blocks": {
+        "1601554848772-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_1.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "The Monteiro Ribas group is a family owned group founded in 1917",
+            "title": "1917",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601560664254": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/History1.jpg",
+            "video_external": "",
+            "enlarge_image": true,
+            "subheading": "It started as a tannery which became a market leader in the 1950's.",
+            "title": "1950",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601554848772-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_12.jpg",
+            "video_external": "",
+            "enlarge_image": true,
+            "subheading": "In the 1960's the group started diversifying and expanding its range.",
+            "title": "1960",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "1601554848772-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_13.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "The production of PU coated fabrics began.",
+            "title": "1970",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "1601554848772-0",
+        "1601560664254",
+        "1601554848772-2",
+        "1601554848772-1"
+      ],
+      "settings": {
+        "title": "A lifetime company",
+        "grid": 4,
+        "desktop_image_height": 600,
+        "mobile_image_height": 440,
+        "title_size": 40,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": true,
+        "alternate_bg_color": false
+      }
+    },
+    "2c7e5c8d-a98b-4838-ad32-00827389aa37": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "History",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>The Monteiro Ribas group is a family owned group founded in 1917. It started as a tannery which became a market leader in the 1950's. In the 1960's the group started diversifying and expanding its range. The production of vinyl coated fabrics began, along with other products, and the first PU coated fabric was launched in the 1970's.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_1_SITE_TEST-14_02a36445-9bc7-4360-a281-62904846db5d.jpg",
+        "image_width": 100,
+        "image_position": "left",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "91e75fce-6d55-49b1-9af7-cbc43213c320": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Worldwide",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We are here, around the globe, with a strong global network, we try to be strategically positioned in various countries, spanning across continents. With a commitment to quality, innovation, and customer satisfaction, we want to continue to expand, forging new partnerships and establishing a strong brand presence in every corner of the world 🌏</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/monteiro_ribas.png",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "fc280108-51ab-4960-8469-98e161b0a6fb": {
+      "type": "scrolling-banner",
+      "disabled": true,
+      "settings": {
+        "text": "Your scrolling text here",
+        "link": "",
+        "text_size": 16,
+        "line_height": 1.5,
+        "speed": 14,
+        "direction": "left",
+        "font": "heading",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "custom",
+        "color_bg": "#1c4469",
+        "color_text": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "5ba7287d-466b-4e37-a795-bc25bc495133": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Sonia_Claro_Monteiro_fabrics_CEO-_1.jpg",
+            "image_width": 700,
+            "title": "Sónia Claro",
+            "text": "<p>CEO</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Francisco_Marques_-_Monteiro_Fabrics-_Sales_Manager_2.jpg",
+            "image_width": 700,
+            "title": "Francisco Marques",
+            "text": "<p>Commercial Director</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Oliver_Thiemann_-_Monteiro_Fabrics_-_Business_Director_German_2.jpg",
+            "image_width": 700,
+            "title": "Oliver Thiemann",
+            "text": "<p>Business Director German Branch DACH and Middle East</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "860549cb-9266-4ce4-b7aa-6977c99af7d7": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Thomas_Barnstorf-_Monteiro_fabrics-_Sales_Manager-Scandinavian_2.jpg",
+            "image_width": 350,
+            "title": "Thomas Barnstorf",
+            "text": "<p>Area Sales Manager, Scandinavian and Baltics</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "a5212c1b-7afe-47b6-a346-90f65327051c": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Nicolas_Soldermannaro-_Monteiro_fabrics1.jpg",
+            "image_width": 350,
+            "title": "Nicolas Soldermann",
+            "text": "<p>Area Sales Manager, France</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_RjXc6F": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Stefan-Siegl---Monteiro-Fabrics2.jpg",
+            "image_width": 350,
+            "title": "Stefan Siegl",
+            "text": "<p>Sales Manager, German Branch</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-0",
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-2",
+        "template--19044945821999__5ba7287d-466b-4e37-a795-bc25bc495133-16847606087e6975c9-1",
+        "860549cb-9266-4ce4-b7aa-6977c99af7d7",
+        "a5212c1b-7afe-47b6-a346-90f65327051c",
+        "text_block_RjXc6F"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our Team",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "media_shape": "natural",
+        "alternate_bg_color": false,
+        "full_width": false
+      }
+    },
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0": {
+      "type": "accordions",
+      "blocks": {
+        "5284320f-2015-4065-bb46-1d6075e0bf59": {
+          "type": "accordion",
+          "settings": {
+            "icon": "award",
+            "title": "Certified Company",
+            "text": "<p>ISO 9001 & ISO 14001 Certified Organization. See all our certificates<a href=\"/pages/press\" target=\"_blank\" title=\"Press Kit\"> here. </a></p>",
+            "open": false
+          }
+        },
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da": {
+          "type": "accordion",
+          "settings": {
+            "icon": "calendar",
+            "title": "10 Year Warranty",
+            "text": "<p>Monteiro Fabrics with the longest guarantee on the market. This feature applies to all our stock service materials and on current brand products that carry a 10-year Warranty logo.</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0": {
+          "type": "accordion",
+          "settings": {
+            "icon": "scissors",
+            "title": "Tailormade Solutions",
+            "text": "<p>Our bespoke capacity provides answers to specific design and technical requirements, guaranteeing functional and aesthetic solutions. Know more <a href=\"https://www.monteirofabrics.com/pages/tailormade\" target=\"_blank\" title=\"Tailormade\">here.</a></p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1": {
+          "type": "accordion",
+          "settings": {
+            "icon": "check_mark",
+            "title": "Worry Free",
+            "text": "<p>Our customers have described us as a Worry-free company. We strive to make the ordering process as seamless as possible, ensuring that our customers receive their orders promptly and without any unnecessary complications or hassles. Easy peasy!</p>",
+            "open": false
+          }
+        },
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2": {
+          "type": "accordion",
+          "settings": {
+            "icon": "dryer",
+            "title": "Colour matching",
+            "text": "<p>With our state of the art colour-matching technology, we can match the colour of your sample. We can also provide a lab dip for your approval or a pilot sample.</p>",
+            "open": false
+          }
+        },
+        "51c874e6-105d-4076-871f-58e7232cf38e": {
+          "type": "accordion",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal",
+            "text": "<p>We manufacture all of our fabrics in Portugal, utilizing our own state-of-the-art facilities. Our supplier selection process is rigorous, exclusively partnering with European providers to ensure top-notch quality.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "5284320f-2015-4065-bb46-1d6075e0bf59",
+        "bbdd1cd0-3090-4663-8b34-ffd8a60ee2da",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-0",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-1",
+        "template--18726128484655__439b45b3-5b3c-4ab1-8c3f-c8bb1b21e89e-1681821953b414edf0-2",
+        "51c874e6-105d-4076-871f-58e7232cf38e"
+      ],
+      "custom_css": [
+        ".h2 {text-align: center; padding-right: 0px;}"
+      ],
+      "settings": {
+        "title": "What makes us the ideal choice for your project?",
+        "alternate_bg_color": true,
+        "view_all_page": ""
+      }
+    },
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "DO YOU HAVE A PROJECT?",
+        "title": "Let's work together!",
+        "title_size": 44,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>We deliver the best fabric solutions for your projects. </p>",
+        "image": "shopify://shop_images/logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png",
+        "image_width": 120,
+        "button_label": "contact us",
+        "button_link": "shopify://pages/contact",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "custom",
+        "color_bg": "#f5f5f5",
+        "color_text": ""
+      }
+    },
+    "155cce6b-d483-42f4-b786-074fa832f1fc": {
+      "type": "map",
+      "settings": {
+        "heading": "Monteiro Fabrics",
+        "address": "<p><strong>Portugal</strong></p><p>Circunvalação, 9020, Apartado<br/>52511 </p><p>4202-351 Porto</p><p>+351 228 338 640</p><p> </p><p> </p><p><strong>Germany</strong></p><p>Grünwalder Weg 32, </p><p>82041 Oberhaching</p><p>+49 171 4101578</p>",
+        "button": "",
+        "text_alignment": "center",
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": "",
+        "map_address": "R. de António Augusto Félix 1, 4465-275 São Mamede de Infesta, Portugal",
+        "api_key": "",
+        "map_style": "silver",
+        "image": "shopify://shop_images/monteiro-fabrics1_e7e495ae-8bf7-41e7-8d15-cc3b3023ced0.jpg"
+      }
+    },
+    "91c3a1fb-52b2-4cc1-b898-e8bafa8aedea": {
+      "type": "slideshow",
+      "blocks": {
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/teste_imagem.png",
+            "mobile_image": "shopify://shop_images/monteiro-fabrics-certifications4.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "804bf713-ba89-4ee3-bb72-45b9f1e73f67": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
+        "3d7a69d2-73ba-4964-99db-026e39e08757": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "subheading": "Subheading",
+            "title": "Two line\nslide heading",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>and optional subtext</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        }
+      },
+      "block_order": [
+        "98f2326d-fd4f-4fab-9dd2-88fb428b3083",
+        "804bf713-ba89-4ee3-bb72-45b9f1e73f67",
+        "3d7a69d2-73ba-4964-99db-026e39e08757"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 200,
+        "height_mobile": 500,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false,
+        "slide_transition": "slide",
+        "slide_navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    }
+  },
+  "order": [
+    "6cb0c1ba-c1e0-4a0e-83b2-e4d0c761edd9",
+    "f110418b-cebb-4bf1-9886-e1f4233510f3",
+    "18fc7a53-bc73-4207-b1fe-a3571edcc6e0",
+    "c2e52f58-8ed9-40bb-b498-dc1dcb196fe0",
+    "0023332c-6cb9-45a0-98e7-e42b1ad2027a",
+    "f69eb353-f0a0-4732-bde7-bcff354aba64",
+    "2c7e5c8d-a98b-4838-ad32-00827389aa37",
+    "91e75fce-6d55-49b1-9af7-cbc43213c320",
+    "fc280108-51ab-4960-8469-98e161b0a6fb",
+    "main",
+    "5ba7287d-466b-4e37-a795-bc25bc495133",
+    "3397b495-a7d9-4a75-9551-fdf2f92d48e0",
+    "997139cb-bcb3-46e9-bfaa-4d8f4b12b315",
+    "155cce6b-d483-42f4-b786-074fa832f1fc",
+    "91c3a1fb-52b2-4cc1-b898-e8bafa8aedea"
+  ]
+}

@@ -1,0 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_UW4Kcw": {
+      "type": "rich-text",
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p><strong>A quick note before you check out</strong></p><p>Our free sample program is exclusively available to businesses. Please use your <strong>company or professional email </strong>at checkout — orders placed with personal addresses (Gmail, Yahoo, Hotmail, etc.) are automatically cancelled.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": true,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "cart_show_title": true,
+        "cart_terms_show": true,
+        "cart_terms_page": "shopify://pages/terms-and-conditions",
+        "continue_shopping_page": "shopify://collections/coated-fabrics",
+        "cart_note_show": true,
+        "show_tax_and_shipping": false,
+        "show_additional_checkout_buttons": false,
+        "show_backorder_text": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_UW4Kcw",
+    "main"
+  ]
+}

@@ -1,0 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_3Yxtxh": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/banner_sector_v1.png",
+        "height": "fixed",
+        "height_desktop": 450,
+        "height_mobile": 400,
+        "subheading": "",
+        "title": "Terms and Conditions",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "rich_text_thAt3W": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<h5><strong>GENERAL</strong></h5><ol><li>These General Terms and Conditions of Supply shall apply exclusively to all current and future transactions unless otherwise agreed in writing. </li></ol><h5><strong>OFFERS AND ORDERS</strong></h5><ol><li>Our offers are non-binding. All related documents such as illustrations, drawings, weights, and dimensions are approximate unless expressly designated as binding.<br/></li><li>Orders must be submitted and confirmed in writing. Social media platforms are not accepted as valid ordering channels.<br/></li><li>Following our written acknowledgement of the order, the Buyer must object to the confirmation within 48 business hours; otherwise, the order will be deemed accepted and binding. After this period, order cancellation is no longer possible.<br/></li><li>We reserve all property and intellectual property rights for all submitted documents, which must not be made accessible to third parties.<br/></li><li>Custom and Special Orders, custom-dyed, printed, coated, engraved or otherwise modified Goods are final and non-cancellable. These Goods are non-returnable unless defective. Lead times will be communicated at the time of order confirmation and may vary.<br/></li><li>Minimum order quantities may apply and vary depending on the product or color. Orders below MOQ may be subject to a surcharge or may be declined at the Supplier’s discretion.</li></ol><h5><strong>PRICES AND PAYMENT</strong></h5><ol><li>Prices are quoted ex-works, exclusive of VAT, duties, and any applicable taxes. No prepayment discount applies.<br/></li><li>Payment terms are subject to credit insurance approval and negotiation. In the case of payment default, we may charge default interest of 10% p.a. above the base rate and reserve the right to demand advance payment or collateral.<br/></li><li>The Supplier does not accept any offset by the Buyer unless the Buyer's counterclaims are either undisputed or confirmed by a final, binding court judgment.</li></ol><h5><strong>DELIVERY</strong></h5><ol><li>Delivery times are indicative. Delays do not entitle the Buyer to cancel the order or claim compensation unless otherwise agreed in writing.<br/></li><li>The Buyer shall accept partial deliveries if reasonable. Refusal or failure to take delivery entitles us to full payment.<br/></li><li>Delivery delays caused by force majeure, labor disputes, or supply chain issues entitle us to extend delivery timelines. We will inform the Buyer of such events promptly.<br/></li><li>Delivery shall be deemed completed when the goods are dispatched or handed to a carrier.</li></ol><h5><strong>PASSAGE OF RISK, PACKAGING, INSURANCE</strong></h5><ol><li>Risk transfers to the Buyer upon dispatch of goods. If requested, transportation insurance will be arranged at the Buyer’s expense.<br/></li><li>The Buyer is responsible for proper disposal of packaging materials except for reusable packaging, which may be returned.</li></ol><h5><strong>QUANTITIES AND TOLERANCES </strong></h5><ol><li>Orders are delivered in rolls with the following specifications: standard width 140 cm (±3 cm), standard length 35 linear meters (± 5 lm), though roll length may vary for certain product collections, and average roll weight of 25–30 kg. Each roll is packed in plastic film.<br/></li><li>Slight color variations between batches are possible and within tolerance. Using multiple batches for one project is not recommended.</li></ol><h5><strong><br/>INSPECTION AND RETURNS</strong></h5><ol><li>The Buyer should inspect goods immediately upon receipt. Any faults or damage must be reported immediately in writing.<br/></li><li>Damages in transit must be noted with reservations on the transportation documents, namely CMR, B/L, AWB, or other consignment notes where applicable, and reported to us and the carrier immediately. Failure to do so voids claims.<br/></li><li>All goods are marked with any defects identified during the Supplier’s inspection prior to dispatch. Compensation for such defects is provided through a proportional length allowance, determined according to guidelines available upon request.<br/></li><li>Returns are not accepted without the Supplier’s prior written consent or when the rolls have been partially cut for consumption or damaged.<br/></li><li>The Buyer must store the Goods in appropriate environmental conditions. The Supplier shall not be held liable for damages or alterations resulting from poor storage (e.g. exposure to moisture, UV, heat, or contamination).</li></ol><h5><strong>SPECIFICATIONS AND WARRANTY</strong></h5><ol><li>We guarantee that goods conform to the relevant technical datasheets and tolerances. Care instructions and product guarantees will be provided.<br/></li><li>Defects must be reported within ten (10) days of discovery, detailing the nature and date of the defect. Failure to notify within this period waives the Buyer’s rights.<br/></li></ol><h5><strong>LIABILITY AND CLAIMS</strong></h5><ol><li>The Supplier shall only be liable for damages caused by defective products under the conditions expressly established in Article 913 and following of the Portuguese Civil Code.</li><li>The Supplier shall not be liable for indirect, incidental, or consequential damages, except where such liability cannot be excluded under applicable mandatory legal provisions.</li><li>Defect Notification and RemedyThe Buyer must notify us of any non-minor defects within the agreed period. If confirmed, we will, at our discretion, supply a replacement.</li></ol><h6>Extent of Liability</h6><ol><li>In cases of gross negligence, damages are also limited to foreseeable, typical losses, unless life, health, or liberty are affected.</li></ol><h6>Exclusions of Liability</h6><ol><li>We are not liable for indirect or consequential losses, such as damage to third-party goods, unless caused by: Intent or gross negligence, Injury to life, body, or health, or breach of essential obligations with foreseeable damage.</li></ol><h6>Scope of Application</h6><ol><li>These liability rules apply to all claims—whether for damages, replacement, indemnification, or reimbursement—arising from defects, contractual breaches, or tort.</li></ol><h6>Employee and Agent Liability</h6><ol><li>Any limitations of liability also apply to our employees, representatives, and agents.</li></ol><h5><strong>RETENTION OF TITLE</strong></h5><ol><li>We retain ownership of delivered goods until full payment is received for all current and future claims.</li></ol><h5><strong>EXCLUSIVITY AND PRODUCT DISCONTINUATION</strong></h5><ol><li>We reserve the right to discontinue product collections.<br/></li><li>Any product exclusivity is conditional upon achieving a specified annual purchase volume; otherwise, exclusivity may be revoked.</li></ol><h5><strong>FINAL PROVISIONS</strong></h5><ol><li>These Terms and any disputes arising out of the transaction shall be governed by the laws of the country of the supplier, without regard to its conflict-of-law provisions.<br/></li><li>Place of performance and jurisdiction shall be the supplier’s registered office unless otherwise agreed.<br/></li></ol><p></p><p></p><p><em>Last updated July 2022</em><br/></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "rich_text_j6QAyq": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Terms and Conditions for Free Samples",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Monteiro Fabrics is pleased to offer free samples to support professional and commercial projects. Please read the following terms carefully before submitting your request.</p><h5><strong>Eligibility</strong></h5><p>Free samples are available exclusively for B2B (business-to-business) purposes.<br/>To process your request, it is mandatory to include your <strong>company name</strong>. Requests without a valid business name may not be fulfilled.</p><h5><strong>Delivery Time</strong></h5><p>Samples are shipped from our facilities in Portugal and can take between <strong>7 to 22 working days</strong> for delivery, depending on your location and local customs handling.</p><p>If you have not received your samples within 22 days, please contact us at 📧 <a><strong>marketing@monteirofabrics. com </strong></a>for assistance.</p><h5><strong>Returns</strong></h5><p>Please note that samples are provided <strong>free of charge</strong> and are therefore <strong>non-returnable</strong>. We do not accept returns or exchanges of samples under any circumstances.</p><h5><strong>Limitations</strong></h5><p>We reserve the right to limit the number of free samples provided per request or per customer, based on availability and project relevance.</p><h5><strong>Use of Samples</strong></h5><p>Samples are provided for reference only. While we aim to ensure accuracy in colour, texture and finish, <strong>minor variations</strong> may occur between the sample and final production, depending on batch and production timing. We do not recommend using samples as final production material.</p><h3><strong>Requesting Quotes or Projects</strong></h3><p>Whether you’re looking for a quotation, stock order, or tailor-made project, our team is <a href=\"https://www.monteirofabrics.com/pages/stock-service-1\">here to assist</a>.<br/>Please contact us at 📧 <a><strong>hello@monteirofabrics. com</strong></a> with your requirements.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "left",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_3Yxtxh",
+    "rich_text_thAt3W",
+    "rich_text_j6QAyq"
+  ]
+}

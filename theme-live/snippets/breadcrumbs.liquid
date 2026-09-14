@@ -1,0 +1,58 @@
+{% unless template == 'index' or template == 'cart' or template == '404' %}
+  <nav class="mf-breadcrumbs" aria-label="Breadcrumb">
+    <ol class="mf-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+
+      <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a class="mf-breadcrumbs__link" itemprop="item" href="/">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+
+      {% if template contains 'collection' and collection %}
+        <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="mf-breadcrumbs__current" itemprop="name">{{ collection.title }}</span>
+          <meta itemprop="position" content="2">
+        </li>
+
+      {% elsif template contains 'product' and product %}
+        {% if collection %}
+          <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="mf-breadcrumbs__link" itemprop="item" href="{{ collection.url }}">
+              <span itemprop="name">{{ collection.title }}</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+          <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="mf-breadcrumbs__current" itemprop="name">{{ product.title }}</span>
+            <meta itemprop="position" content="3">
+          </li>
+        {% else %}
+          <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="mf-breadcrumbs__current" itemprop="name">{{ product.title }}</span>
+            <meta itemprop="position" content="2">
+          </li>
+        {% endif %}
+
+      {% elsif template == 'article' %}
+        <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a class="mf-breadcrumbs__link" itemprop="item" href="{{ blog.url }}">
+            <span itemprop="name">{{ blog.title }}</span>
+          </a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="mf-breadcrumbs__current" itemprop="name">{{ article.title }}</span>
+          <meta itemprop="position" content="3">
+        </li>
+
+      {% elsif template contains 'page' and page %}
+        <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="mf-breadcrumbs__current" itemprop="name">{{ page.title }}</span>
+          <meta itemprop="position" content="2">
+        </li>
+      {% endif %}
+
+    </ol>
+  </nav>
+{% endunless %}

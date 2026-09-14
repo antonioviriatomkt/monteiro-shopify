@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "b29749e8-08f7-445f-a65b-7fb02df25924": {
+      "type": "scrolling-banner",
+      "disabled": true,
+      "settings": {
+        "text": "Add to cart your free samples and get to know our products",
+        "link": "",
+        "text_size": 16,
+        "line_height": 1.1,
+        "speed": 8,
+        "direction": "left",
+        "font": "heading",
+        "space_x": true,
+        "stencil_all_text": false,
+        "stencil_text": "",
+        "overlay_style_tint": false,
+        "color_scheme": "custom",
+        "color_bg": "#1c4469",
+        "color_text": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": true,
+        "show_collection_image": true,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 18,
+        "enable_infinite_scroll": true,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode": "none",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "beta"
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-0",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-1",
+        "template--18726128451887__07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257-1682089698e33bd050-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collection list",
+        "layout": "rows",
+        "grid": 3,
+        "grid_mobile": "2",
+        "show_view_all": true,
+        "alternate_bg_color": false
+      }
+    },
+    "3c11335c-6b13-485a-aa8b-5caa8c8761e1": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": ""
+      }
+    },
+    "38e29a98-4ef4-4331-b728-cf644d4d7917": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Highlighted collections",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Use this text to share information about your store. Describe products, share announcements, or welcome customers to your store.</p>",
+        "button_label": "View here",
+        "button_link": "shopify://pages/by-application",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "b29749e8-08f7-445f-a65b-7fb02df25924",
+    "main",
+    "07e64c3e-f0ab-4f3d-ae90-be0ceb1e5257",
+    "3c11335c-6b13-485a-aa8b-5caa8c8761e1",
+    "38e29a98-4ef4-4331-b728-cf644d4d7917"
+  ]
+}

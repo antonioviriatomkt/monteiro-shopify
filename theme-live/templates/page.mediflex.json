@@ -1,0 +1,482 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Healthcare-Upholstery- Mediflex.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "subheading": "COLLECTION",
+        "title": "MEDIFLEX",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Easy to clean, antifungal, antibacterial and antiviral</p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style_tint": true
+      }
+    },
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "COMPATIBLE WITH ALCOHOL AND BLEACH CLEANING SOLUTIONS FOR HIGHLY EFFECTIVE DISINFECTION",
+        "title": "MEDIFLEX",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>MEDIFLEX maintains its exceptional quality, even in the face of various healthcare challenges.<br/>It exhibits remarkable resistance to bodily fluids, lotions and creams.<br/></p>",
+        "image_width": 120,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/scl/fi/ff7skxr99azb5hl67nyqj/Medical_-Mediflex.pdf?rlkey=b5i8jxv42at23qpwwt2zlwbgl&st=676tylw8&dl=0",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "03bd8852-575d-4536-80f2-37ced6ee8855": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>In warm and humid settings, bacteria, viruses, dust mites, and mold flourish and proliferate, causing harm to surfaces and shortening their lifespan. To address this issue, MEDIFLEX incorporates an integrated hygiene feature that provides a solution. It effectively protects the surfaces, ensuring they remain free from unpleasant odors and unwantedguests. Say goodbye to worries and embrace acleaner, fresher living environment with MEDIFLEX.</p>",
+        "image": "shopify://shop_images/anti-microbial-and-anti-fungal-fabrics3.png",
+        "image_width": 600,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "BIOCOMPATIBILITY",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>MEDIFLEX seamlessly and safely interacts with living tissues, without triggering adverse reactions or toxic effects on cells, as demonstrated by its non-irritating and non-cytotoxic characteristics in accordance with ISO standards: ISO 10993-5and ISO 10993-10. This ensures a dependable and comfortable experience in healthcare environments, where patient well-being is paramount.</p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "link",
+        "image": "shopify://shop_images/Healthcare-Upholstery-Fabrics-1a.jpg",
+        "image_width": 83,
+        "image_position": "left",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "10 YEAR WARRANTY",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>MEDIFLEX is renowned for its remarkable longevity, exemplifying true quality. With its robust and durable nature, it surpasses the demands of the medical field, making constant replacements unnecessary. To further instill confidence in its reliability, MEDIFLEX comes with a remarkable 10-year warranty, ensuring peace of mind for its users.<br/></p>",
+        "button_label": "",
+        "button_link": "",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "link",
+        "image": "shopify://shop_images/coated-fabrics-for-medical-upholstery.jpg",
+        "image_width": 83,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "e2356296-1abb-42a0-a35f-8b864655eb14": {
+      "type": "gallery",
+      "blocks": {
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Healthcare-Upholstery2.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "e8086891-3791-493f-bb81-beb4d237e01c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Healthcare-Upholstery-Fabrics-4_d86d1c98-937b-42a0-9fdc-bb5a205ea30d.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Healthcare-Upholstery.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "fd1ef588-278d-484f-834c-fb22bb934038": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Healthcare-Upholstery-Fabrics-2_bcda2d0a-5ca2-437c-8716-f387f74debb5.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        },
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Healthcare-Upholstery3.jpg",
+            "video_external": "",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "title_width": 12,
+            "heading_h1": false,
+            "button_label": "",
+            "link": "",
+            "text_alignment": "position--left position--bottom"
+          }
+        }
+      },
+      "block_order": [
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-0",
+        "e8086891-3791-493f-bb81-beb4d237e01c",
+        "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-1",
+        "fd1ef588-278d-484f-834c-fb22bb934038",
+        "f0d58174-9d27-4bb0-95b2-5e4d632b9615"
+      ],
+      "settings": {
+        "title": "",
+        "grid": 3,
+        "desktop_image_height": 370,
+        "mobile_image_height": 400,
+        "title_size": 44,
+        "enable_margin": true,
+        "full_width": true,
+        "enable_carousel": true,
+        "overlay_style_tint": false,
+        "alternate_bg_color": false
+      }
+    },
+    "2236cf0a-dde3-47ef-bdd9-d9735cb1d980": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>Our textiles are crafted without <strong>harmful phthalates</strong>, ensuring a safer and more eco-friendly choice for you and the planet. MEDIFLEX follows almost any  shape: <strong>organically flowing or curved soft shapes</strong>.</p>",
+        "image": "shopify://shop_images/BI-ELASTIC-COATED-FABRICS.png",
+        "image_width": 320,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "96186325-e209-4c72-b2c0-cc5c79e49b44": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "",
+        "title": "Easy to clean",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. </p><p>Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and cleanliness go hand in hand.<strong>‍‍</strong></p>",
+        "button_label": "DOWNLOAD MEDIFLEX CATALOGUE",
+        "button_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/Medical__Mediflex_dd567ada-8856-45c2-91a9-d3002a738c31.pdf?v=1780502694",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/Healthcare-Upholsteryw.png",
+        "image_width": 82,
+        "image_position": "right",
+        "media_size": "contain",
+        "color_scheme": "custom",
+        "color_bg": "#d7d8d9",
+        "color_text": ""
+      }
+    },
+    "824537ab-e16b-43ad-829c-8d00f7a9f716": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 48,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and<br/>cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/Healthcare-Upholstery.png",
+        "image_width": 530,
+        "button_label": "DOWNLOAD CATALOGUE",
+        "button_link": "",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "37b70038-bd52-4106-9b44-d747725f3175": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1": {
+          "type": "vendor_and_type",
+          "disabled": true,
+          "settings": {
+            "show_vendor": true,
+            "show_type": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": false
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_style": "underlined",
+            "show_realtime_availability": true
+          }
+        },
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Image-Arrow-PNG2.png",
+            "image_width": 120,
+            "url": "https://www.monteirofabrics.com/products/chance-collection-ii"
+          }
+        },
+        "128ff2f2-a237-4166-aa67-e331396f69dd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Show more 204 colors",
+            "text_style": "body"
+          }
+        },
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-title-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-price-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-rating-1",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-variant_picker-1",
+        "4e378544-6efb-4d09-a74f-0a13d99bfdb4",
+        "128ff2f2-a237-4166-aa67-e331396f69dd",
+        "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "mediflex-collection",
+        "show_backorder_text": true,
+        "slide_nav_style": "arrows",
+        "media_crop": "top",
+        "enable_zoom": true,
+        "zoom_cursor": "plus-light",
+        "enable_video_looping": true,
+        "highlight_selected_media": true
+      }
+    },
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "title_size": 56,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "<p>These features ensure a hygienic surface, offering convenience and confidence to healthcare professionals and patients alike. </p><p>Enjoy the simplicity of maintaining a clean environment with MEDIFLEX, where safety and cleanliness go hand in hand.</p>",
+        "image": "shopify://shop_images/anti-microbial_and_anti-fungal_fabrics.png",
+        "image_width": 250,
+        "button_label": "Download The catalogue",
+        "button_link": "https://www.dropbox.com/sh/1lt1zuiqffkjlpa/AADlD6eDOaKFY9RF700u6XNDa?dl=0&preview=Essentials_Chance.pdf",
+        "button_style": "secondary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/chance-vegan-coated-fabrics-1_efefd1ba-5112-4134-ac94-a2871ac295e7.png",
+        "height": "fixed",
+        "height_desktop": 700,
+        "height_mobile": 100,
+        "subheading": "",
+        "title": "",
+        "title_size": 60,
+        "title_width": 12,
+        "heading_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label": "",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": false
+      }
+    },
+    "image_with_text_RikFHh": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "",
+        "title": "HEALTHCARE FABRICS",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>Need fabrics for high-demand environments? Discover our <em>Electra</em> collection — a permanently antistatic fabric that prevents electric shocks, protects sensitive medical equipment, and delivers advanced resistance for ICUs, imaging rooms, and operating theatres.<br/></p>",
+        "button_label": "View Electra Collection",
+        "button_link": "shopify://pages/electra-medical-upholstery",
+        "text_alignment": "center",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/fabrics_upholstery_healthcare_chair.png",
+        "image_width": 100,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Other Healthcare Fabrics",
+        "collection": "medical",
+        "layout": "carousel",
+        "show_vendor": false,
+        "grid": 3,
+        "rows": 2,
+        "grid_mobile": "2",
+        "hide_swatches": false,
+        "alternate_bg_color": false,
+        "show_view_all": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bcb833f9-8a31-4b0c-959a-500e6d4e4916",
+    "a66c0bd4-4514-49a1-8069-49ef32fc6c6f",
+    "03bd8852-575d-4536-80f2-37ced6ee8855",
+    "4e68093b-95cb-4e22-9c0b-8a1da58c78e7",
+    "7ac6aad9-7211-4cdf-948d-944d479ad3c8",
+    "e2356296-1abb-42a0-a35f-8b864655eb14",
+    "2236cf0a-dde3-47ef-bdd9-d9735cb1d980",
+    "96186325-e209-4c72-b2c0-cc5c79e49b44",
+    "824537ab-e16b-43ad-829c-8d00f7a9f716",
+    "37b70038-bd52-4106-9b44-d747725f3175",
+    "389fe6eb-422b-4e46-88b4-1b44d11ee0a7",
+    "aaf00dc3-3c35-40fa-a6c8-f822e9f9cc79",
+    "image_with_text_RikFHh",
+    "bf6d7cb5-7996-4b87-be15-ba49179fc31d"
+  ]
+}
