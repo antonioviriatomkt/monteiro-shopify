@@ -2,6 +2,7 @@
 .oauth-state.json
 .shopify-token.json
 .shopify-theme-token
+.github-token
 .install-url.txt
 .sender-token
 .env
