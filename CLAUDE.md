@@ -44,7 +44,9 @@ the environment and fails on line one when it is absent.
 
 ## Git remote
 
-`origin` → **https://github.com/antonioviriatomkt/monteiro-shopify** (private). The working copy
+`origin` → **https://github.com/antonioviriatomkt/monteiro-shopify** — **public, by decision
+(2026-09-14)**. Assume anything committed here is world-readable: no client credentials, no lead or
+customer exports, no personal data. `data/` and `assets-source/` are already excluded. The working copy
 still lives in a OneDrive-synced folder, so the sync client and git can still collide — **push after
 every session**, so the history exists somewhere the sync client cannot corrupt.
 

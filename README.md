@@ -54,7 +54,8 @@ rest; it defaults to `theme-sandbox`.
 
 ## Git
 
-`origin` is **github.com/antonioviriatomkt/monteiro-shopify** (private). The working copy sits in a
+`origin` is **github.com/antonioviriatomkt/monteiro-shopify** — **public**. Anything committed here
+is world-readable; keep credentials, lead exports and customer data out of it. The working copy sits in a
 OneDrive-synced folder, where git and the sync client have collided before (a stuck
 `.git/index.lock`) — **push after every session** so the history is not one folder away from gone.
 
