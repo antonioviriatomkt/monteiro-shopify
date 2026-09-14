@@ -35,6 +35,22 @@
     "slideshow_kiqFBp": {
       "type": "slideshow",
       "blocks": {
+        "image_FTqtDg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LP-hero.jpg",
+            "slide_link": "",
+            "subheading": "ORGATEC 2026 · 27–30 October · Cologne · Hall 10.2 · Stand Q059",
+            "title": "Meet us at ORGATEC 2026",
+            "title_size": 60,
+            "title_width": 12,
+            "heading_h1": false,
+            "text": "<p>Task seating, conference, soft seating and reception. Made in Portugal since 1967. See the collections at Stand Q059, or order free samples now.</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "overlay_position": "position--hcenter position--vcenter"
+          }
+        },
         "image_83e6aE": {
           "type": "image",
           "settings": {
@@ -101,6 +117,7 @@
         }
       },
       "block_order": [
+        "image_FTqtDg",
         "image_83e6aE",
         "image_FYGQez",
         "image_eAKDXL",
@@ -141,6 +158,29 @@
         "button_style": "auto",
         "image": "shopify://shop_images/banners_mobile_v23.jpg",
         "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "image_with_text_KqNLqa": {
+      "type": "image-with-text",
+      "name": "Media with text",
+      "settings": {
+        "subheading": "WHAT WE BRING TO COLOGNE",
+        "title": "Fabrics for office furniture at ORGATEC 2026",
+        "title_size": 28,
+        "title_width": 12,
+        "text": "<p>We are bringing coated upholstery fabrics for <strong>task and conference seating, soft seating and reception</strong>: matt, textured and fabric-look qualities that hold up in daily use, clean easily and stay consistent across a programme. You can order free samples of every collection below today.</p>",
+        "button_label": "LEARN MORE",
+        "button_link": "http://monteirofabrics.com/pages/orgatec-2026",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "auto",
+        "image": "shopify://shop_images/orgatec_24_011_019.jpg",
+        "image_width": 100,
         "image_position": "right",
         "media_size": "cover",
         "color_scheme": "standard",
@@ -751,6 +791,7 @@
     "75eb2073-bc09-4c25-af24-e141a0670b50",
     "slideshow_kiqFBp",
     "image_with_text_kVUVFa",
+    "image_with_text_KqNLqa",
     "featured_collection_p4BUPW",
     "dcbe2216-ecba-4a42-b985-ca9da3380166",
     "3eb7b4c1-35a2-41f9-b5ce-1a32dbc45f52",
