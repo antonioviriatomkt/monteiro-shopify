@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# mf — the only sanctioned way to move Monteiro theme files.
+#
+#   bin/mf list
+#   bin/mf check  live|sandbox              pull to a temp dir, diff against local, change nothing
+#   bin/mf pull   live|sandbox              overwrite the local mirror from Shopify
+#   bin/mf push   live|sandbox <file>...    push only the named files (paths relative to the mirror)
+#
+# push refuses if the remote copy of a file changed since the local mirror was
+# taken — that is the whole point. Read CLAUDE.md before overriding with MF_FORCE=1.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+LIVE_ID=162670182703      # Showcase 7.0  (MAIN)
+SBX_ID=195386114425       # CLAUDE_MF_JUNE_PROPOSTA
+STORE=monteiro-fabrics.myshopify.com
+CLI="npx --yes @shopify/cli@3"
+
+[ -f .shopify-theme-token ] || { echo "Missing .shopify-theme-token (Theme Access password)." >&2; exit 1; }
+export SHOPIFY_CLI_THEME_TOKEN="$(cat .shopify-theme-token)"
+export SHOPIFY_FLAG_STORE="$STORE"
+export SHOPIFY_FLAG_FORCE=1
+
+target() {
+  case "${1:-}" in
+    live)    ID=$LIVE_ID; DIR=theme-live;    EXTRA="--allow-live" ;;
+    sandbox) ID=$SBX_ID;  DIR=theme-sandbox; EXTRA="" ;;
+    *) echo "Target must be 'live' or 'sandbox'." >&2; exit 1 ;;
+  esac
+}
+
+cmd="${1:-}"; shift || true
+case "$cmd" in
+  list) $CLI theme list ;;
+
+  pull) target "${1:-}"; $CLI theme pull --theme "$ID" --path "$DIR"
+        echo "Pulled $DIR from $ID. Commit now, before editing." ;;
+
+  check|diff)
+        target "${1:-}"; TMP=$(mktemp -d)
+        $CLI theme pull --theme "$ID" --path "$TMP" >/dev/null 2>&1
+        echo "### $DIR (local) vs theme $ID (remote) ###"
+        diff -rq "$DIR" "$TMP" | sed "s|$TMP|REMOTE|g" || true
+        echo "### end — nothing was changed ###"; rm -rf "$TMP" ;;
+
+  push) target "${1:-}"; shift
+        [ $# -gt 0 ] || { echo "Name the files to push. 'mf push' never pushes a whole theme." >&2; exit 1; }
+        TMP=$(mktemp -d); $CLI theme pull --theme "$ID" --path "$TMP" >/dev/null 2>&1
+        stale=0
+        for f in "$@"; do
+          [ -f "$DIR/$f" ] || { echo "Not in $DIR: $f" >&2; exit 1; }
+          if [ -f "$TMP/$f" ] && ! diff -q "$DIR/$f" "$TMP/$f" >/dev/null; then
+            if git diff --quiet HEAD -- "$DIR/$f"; then
+              echo "STALE  $f — the remote changed and your local copy has no commits of its own."; stale=1
+            else
+              echo "ahead  $f — local has uncommitted/committed edits; remote also differs. Review the diff."
+            fi
+          fi
+        done
+        rm -rf "$TMP"
+        if [ "$stale" = 1 ] && [ "${MF_FORCE:-0}" != 1 ]; then
+          echo "Refusing to push: run 'bin/mf check ${DIR#theme-}' first." >&2; exit 1
+        fi
+        only=(); for f in "$@"; do only+=(--only "$f"); done
+        $CLI theme push --theme "$ID" --path "$DIR" --nodelete $EXTRA "${only[@]}" ;;
+
+  *) sed -n '2,12p' "$0"; exit 1 ;;
+esac

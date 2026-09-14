@@ -5,22 +5,34 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-const TOKEN_FILE = new URL('../.shopify-token.json', import.meta.url);
+// CREDENTIALS — read the root CLAUDE.md before changing this.
+// The old custom-app token (.shopify-token.json) was retired 2026-09-14: its app
+// had been reduced to read_orders while the file still advertised write_themes,
+// so every script failed late with a different "Access denied".
+// Admin-API work now needs an explicit token in the environment; theme files do
+// NOT come through here at all -- use `bin/mf` (Shopify CLI + Theme Access).
+const SHOP = process.env.SHOPIFY_SHOP || 'monteiro-fabrics.myshopify.com';
 
 export const API_VERSION = '2025-01';
-export const THEME_DIR = fileURLToPath(new URL('../theme/', import.meta.url));
+// theme-sandbox/ mirrors 195386114425; theme-live/ mirrors 162670182703 (MAIN).
+export const THEME_DIR = fileURLToPath(new URL('../' + (process.env.MF_THEME_DIR || 'theme-sandbox') + '/', import.meta.url));
 const STATE_DIR = fileURLToPath(new URL('../.deploy-state/', import.meta.url));
 
 // Text-bodied theme files we track for drift detection / pulling.
 export const TEXT_EXTS = new Set(['.json', '.liquid', '.js', '.css', '.scss', '.svg', '.md', '.txt', '.html']);
 
 export function loadCreds() {
-  if (!fs.existsSync(TOKEN_FILE)) {
-    throw new Error('.shopify-token.json not found — run `node oauth.mjs` first.');
+  const accessToken = process.env.SHOPIFY_ADMIN_TOKEN;
+  if (!accessToken) {
+    throw new Error(
+      'No SHOPIFY_ADMIN_TOKEN in the environment.\n' +
+      '  Theme files      -> do not use this script. Use  bin/mf pull|push live|sandbox\n' +
+      '  Metafields, products, media, articles, translations -> use the Shopify MCP connector\n' +
+      '  Redirects, theme publish, unpublishing a collection -> Shopify Admin, by hand\n' +
+      'See CLAUDE.md at the root of this repo.'
+    );
   }
-  const { shop, access_token } = JSON.parse(fs.readFileSync(TOKEN_FILE, 'utf8'));
-  if (!shop || !access_token) throw new Error('Token file is missing fields.');
-  return { shop, accessToken: access_token };
+  return { shop: SHOP, accessToken };
 }
 
 export async function graphql(query, variables = {}) {
