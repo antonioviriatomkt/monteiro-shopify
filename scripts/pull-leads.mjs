@@ -22,8 +22,15 @@ const FREE = new Set([
 
 function canalFor(title) {
   const t = title.trim();
-  if (/down\s*tf|down\s*ft/i.test(t)) {
-    const coll = t.replace(/\s*down\s*(tf|ft).*/i, '').trim();
+  // Umbrella group every technical-file download lands in, whatever the collection
+  // or the language variant of the collection group. Kept as a fallback so a lead
+  // is never dropped when its collection-specific group is missing or oddly named.
+  if (/^download\s+technical\s+file/i.test(t)) {
+    return { kind: 'tfgen', label: 'TF Download' };
+  }
+  // Collection groups: "OCEAN DOWN TF", "Origin down FT", "ELECTRA down pt" (PT variant).
+  if (/down\s*(tf|ft|pt)\b/i.test(t)) {
+    const coll = t.replace(/\s*down\s*(tf|ft|pt).*/i, '').trim();
     return { kind: 'tf', label: `TF Download: ${coll.charAt(0).toUpperCase()}${coll.slice(1).toLowerCase()}` };
   }
   if (/^contact form/i.test(t)) return { kind: 'contact', label: 'Contact form (Shopify customer create)' };
@@ -31,7 +38,8 @@ function canalFor(title) {
   return null;
 }
 // canal priority for a lead present in multiple groups
-const RANK = { tf: 3, contact: 2, shopify: 1 };
+// (named collection beats the umbrella TF group, which beats the form groups)
+const RANK = { tf: 4, tfgen: 3, contact: 2, shopify: 1 };
 
 function col(sub, name) {
   const c = (sub.columns || []).find(c => (c.title||'').toLowerCase() === name.toLowerCase() && c.value);
