@@ -340,7 +340,7 @@
           "type": "spec",
           "settings": {
             "label": "PFAS Free",
-            "value": "Free of intentionally-added PFAS [TO CONFIRM — applies where stated]"
+            "value": "Free of intentionally-added PFAS"
           }
         }
       },
