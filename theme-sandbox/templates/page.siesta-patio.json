@@ -23,7 +23,7 @@
         "title": "PATIO & SIESTA",
         "title_size": 60,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>Coated fabrics for outdoor upholstery</p>",
         "enlarge_text": false,
         "button_label": "",

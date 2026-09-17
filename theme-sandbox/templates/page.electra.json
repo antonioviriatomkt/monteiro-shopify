@@ -26,7 +26,7 @@
             "title": "ELECTRA",
             "title_size": 60,
             "title_width": 12,
-            "heading_h1": false,
+            "heading_h1": true,
             "text": "<p>ESD-protective upholstery for ICUs, imaging suites and operating theatres.</p>",
             "enlarge_text": true,
             "button_label": "",

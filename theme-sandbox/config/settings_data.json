@@ -139,7 +139,7 @@
           "desktop_logo_width": 155,
           "mobile_logo_width": 140,
           "use_alt_logo_when_active": false,
-          "logo_h1": true,
+          "logo_h1": false,
           "show_announcement": false,
           "announcement_home_only": false,
           "announcement_text": "Add to the shopping cart the samples you want, we will send them to you free of charge.",

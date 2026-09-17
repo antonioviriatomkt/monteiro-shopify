@@ -53,8 +53,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <meta name="theme-color" content="{{ settings.col_btn_bg }}">
 
+  {% comment %} T7 (2026-09-17): the T4 SEO titles already end in '| Monteiro'; appending shop.name again gave '| Monteiro – Monteiro Fabrics' on every page. Suffix only when the brand is absent. {% endcomment %}
   <title>
-    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains 'Monteiro' %} &ndash; {{ shop.name }}{% endunless %}
   </title>
 
   {% render 'social-meta-tags' %}

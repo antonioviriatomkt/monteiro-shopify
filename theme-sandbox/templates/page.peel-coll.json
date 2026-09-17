@@ -23,7 +23,7 @@
         "title": "PEEL",
         "title_size": 60,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>Fabrics made from chestnuts.</p>",
         "enlarge_text": false,
         "button_label": "",

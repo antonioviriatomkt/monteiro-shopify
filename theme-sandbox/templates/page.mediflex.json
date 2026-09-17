@@ -23,7 +23,7 @@
         "title": "MEDIFLEX",
         "title_size": 60,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>Easy to clean, antifungal, antibacterial and antiviral</p>",
         "enlarge_text": false,
         "button_label": "",

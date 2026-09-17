@@ -39,7 +39,7 @@
         "title": "{{ product.title }}",
         "title_size": 48,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>{{ product.metafields.custom.descri_o_da_cole_o | metafield_tag }}</p>",
         "image_width": 120,
         "button_label": "",

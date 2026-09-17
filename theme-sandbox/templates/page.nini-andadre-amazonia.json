@@ -24,7 +24,7 @@
         "title": "Amazónia",
         "title_size": 64,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>Inspired by Nature, Crafted for Tomorrow</p>",
         "enlarge_text": false,
         "button_label": "",

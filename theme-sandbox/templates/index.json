@@ -18,11 +18,11 @@
         "height_desktop": 700,
         "height_mobile": 500,
         "subheading": "Over 100 years of Industrial Legacy",
-        "title": "Strategic partner for demanding coated fabric solutions.",
+        "title": "Coated upholstery fabrics, made in Portugal since 1967",
         "title_size": 50,
         "title_width": 40,
         "heading_h1": true,
-        "text": "<p>Monteiro Fabrics is a leading European manufacturer of high-performance, design-driven coated upholstery fabrics, with over 300 clients in more than 30 countries.</p>",
+        "text": "<p>Strategic partner for demanding coated fabric solutions.</p><p>Monteiro Fabrics is a leading European manufacturer of high-performance, design-driven coated upholstery fabrics, with over 300 clients in more than 30 countries.</p>",
         "enlarge_text": false,
         "button_label": "Speak to our specialists",
         "button_link": "shopify://pages/contact",
@@ -49,7 +49,7 @@
         "vp2": {
           "type": "item",
           "settings": {
-            "value": "236",
+            "value": "235",
             "caption": "colours available",
             "link": ""
           }
@@ -99,7 +99,7 @@
       "type": "image-with-text",
       "settings": {
         "subheading": "Our flagship, reimagined",
-        "title": "CHANCE 2.0 — one engraving, six performance grades, 236 colours",
+        "title": "CHANCE 2.0 — one engraving, six performance grades, 235 colours",
         "title_size": 30,
         "title_width": 40,
         "text": "<p>The iconic CHANCE engraving now comes in six grades — Classic, Mediflex, Outdoor, Bioblend, Crib 7/B1 and Crib 5 — so you keep the signature look and choose the fire, hygiene, sustainability or weather performance each project needs.</p>",

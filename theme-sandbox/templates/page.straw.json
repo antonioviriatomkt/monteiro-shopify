@@ -24,7 +24,7 @@
         "title": "STRAW",
         "title_size": 60,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "<p>Generation-Proof | Built to Last</p>",
         "enlarge_text": true,
         "button_label": "",

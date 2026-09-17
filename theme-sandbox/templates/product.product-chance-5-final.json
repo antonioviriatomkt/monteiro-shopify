@@ -20,7 +20,7 @@
         "title": "{{ product.title }}",
         "title_size": 28,
         "title_width": 12,
-        "heading_h1": false,
+        "heading_h1": true,
         "text": "",
         "enlarge_text": false,
         "button_label": "",
