@@ -2,23 +2,14 @@
 // Usage: node scripts/pull-leads.mjs <startISO> <endISO>
 // Dates inclusive, compared on subscriber "created" (account local time as stored).
 import { paginate } from './sender-lib.mjs';
+import { professionalDomain } from './leads-lib.mjs';
 
 const start = process.argv[2] || '2026-06-01';
 const end = process.argv[3] || '2026-06-08';
 const startD = new Date(start + 'T00:00:00');
 const endD = new Date(end + 'T23:59:59');
 
-const FREE = new Set([
-  'gmail.com','googlemail.com','hotmail.com','hotmail.fr','hotmail.co.uk','hotmail.de','hotmail.it','hotmail.es',
-  'outlook.com','outlook.fr','outlook.de','live.com','live.fr','live.nl','msn.com',
-  'yahoo.com','yahoo.fr','yahoo.co.uk','yahoo.de','yahoo.es','yahoo.it','ymail.com',
-  'icloud.com','me.com','mac.com','aol.com','gmx.com','gmx.de','gmx.net','gmx.at','gmx.ch','gmx.fr',
-  'web.de','t-online.de','centrum.cz','seznam.cz','email.cz','proton.me','protonmail.com','pm.me',
-  'mail.com','yandex.com','yandex.ru','qq.com','163.com','126.com','naver.com','sina.com',
-  'free.fr','orange.fr','wanadoo.fr','sfr.fr','laposte.net','neuf.fr','bbox.fr','numericable.fr',
-  'sapo.pt','netcabo.pt','clix.pt','iol.pt','bluewin.ch','sunrise.ch','telenet.be','skynet.be',
-  'libero.it','virgilio.it','alice.it','tin.it','tiscali.it','terra.es','telefonica.net',
-]);
+// The free-email blocklist lives in leads-lib.mjs, shared with filter-orders.mjs.
 
 function canalFor(title) {
   const t = title.trim();
@@ -67,9 +58,8 @@ for (const g of relevant) {
     const created = new Date((s.created || '').replace(' ', 'T'));
     if (isNaN(created) || created < startD || created > endD) continue;
     const email = (s.email || '').toLowerCase();
-    if (!email.includes('@')) continue;
-    const domain = email.split('@')[1];
-    if (FREE.has(domain)) continue; // professional emails only
+    const domain = professionalDomain(email); // professional emails only
+    if (!domain) continue;
     const cur = byEmail.get(email);
     if (!cur) {
       byEmail.set(email, {

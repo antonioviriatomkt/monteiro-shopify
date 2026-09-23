@@ -58,6 +58,29 @@ The token cannot change repository settings by design, only contents.
 
 ## Scripts
 
+### B2B lead jobs
+
+Two scheduled tasks feed the Notion `<MONTH> LEADS` pages: `daily-b2b-leads-to-notion` (06:00)
+and `weekly-b2b-leads-email` (Mon 08:00). Both draw from **two** sources, and both matter:
+
+| Source | How | Script |
+|---|---|---|
+| Sender groups (fichas técnicas, contact form, Shopify form) | `.sender-token` | `scripts/pull-leads.mjs <start> <end>` |
+| Shopify sample orders (€0.00) | Shopify MCP connector → JSON on stdin | `scripts/filter-orders.mjs <start> <end>` |
+
+`scripts/leads-lib.mjs` holds the single free-email blocklist both paths use — change it there,
+never in one script alone.
+
+**Sample-order customers usually have no marketing opt-in, so they never appear in Sender.** A
+Sender-only pull silently misses them; that is how `#mf1501` (Van der Valk Design) went unrecorded
+until the 22 Sep 2026 reconciliation. `filter-orders.mjs` does not fetch — there is no Admin API
+token here — the job pulls orders with the connector and pipes them in. It drops non-zero-total
+orders, anything tagged `auto-cancel-personal-email`, and personal domains, reporting each in
+`skipped`.
+
+No dedupe by domain: one company legitimately appears several times (different contacts, several
+orders, or a TF download *and* a sample order). Only exact re-entries of one event are skipped.
+
 `scripts/*.mjs` are Admin-API helpers (metafields, leads, reports). The **theme deploy/pull ones
 are superseded by `bin/mf`** — `deploy-files.mjs`, `deploy-section.mjs`, `deploy-landing-cta.mjs`,
 `pull-files.mjs`, `deploy-thank-you-template.mjs`. `MF_THEME_DIR` selects the mirror for the rest
