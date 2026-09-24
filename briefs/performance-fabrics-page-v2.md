@@ -504,6 +504,7 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 | Tech Hub | Bleach cleaning guide | `/blogs/technical-hub/bleach-cleaning-fabric-guide` | 200 |
 | Tech Hub | Understanding B1 | `/blogs/technical-hub/understanding-b1-certification` | 200 |
 | Tech Hub | Browse all technical articles | `/blogs/technical-hub` | 200 |
+| Certs table / FAQ (text mention) | Flora | `/products/flora-collection` | 200. It can be linked from the certs intro or from a sector card if wanted. |
 | *Deferred* | Grade names in the certs table and FAQ (Portus, Prosoft, Mediflex, Peel) | `/collections/chance-crib-5` · `chance-crib-7-b1` · `chance-mediflex` · `chance-bioblend` | **404 on live**. Link them at launch; the spec table and FAQ answers can't hold links anyway (plain text / JSON). |
 | **Inbound (recommended)** | "Performance Fabrics" | from `/collections/healthcare`, `/collections/medical`, `/collections/mass-transportation`, `/collections/fitness-1`, `/collections/public-spaces`, and the Crib 5 vs 7 / B1 articles | Out of scope for this pass. List for the sector-page pass. |
 
@@ -527,7 +528,7 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 1. ✅ **Martindale, resolved 24/09: keep a footnote.** The spec table row is marked `*`, and the footnote reads *"Metallic colours are rated at 150,000 Martindale rubs."* The source is the CHANCE-grade metafields (`≥ 400.000 (metallic colours: 150.000)`, 31/08). ⚠️ **Concept gap:** the concept note doesn't have this caveat. Add it there when the concept is next revised.
 2. ✅ **Feature icons, resolved 24/09.** The six icons stay range-level and general (antibacterial & antiviral unqualified). Each sector card lists only the features that apply to it (§4). The grade tie for antiviral stays in the certs table and the FAQ.
 3. **Which grades carry bleach, alcohol, waterproof, antibacterial, OEKO-TEX and REACH?** The concept gives these at range level with "certifications vary by grade". The copy says exactly that and nothing stronger. A per-grade matrix would allow stronger answers.
-4. **Flora** is named as Crib 5, but it has no product/collection handle in the naming map and no link target.
+4. ✅ **Flora, resolved 24/09:** it is a real collection (confirmed by António). Its live page is `/products/flora-collection` (200). The naming map doesn't have it yet, so that register has a gap.
 5. **Peel = Chance Bioblend.** The concept names Peel under Crib 5. Please confirm it applies to the Bioblend grade, since the copy uses the concept's name "Peel".
 6. **Sector link targets.** Two pairs share a collection: Medical + Medical transport → `/collections/medical`, and Contract + Sports & arenas → `/collections/public-spaces`. Transportation could go to `/collections/train` instead. Is that OK, or should one card in each pair go to contact?
 7. **Case studies.** If they are wanted back, they need a source and a decision. They were not in the SET2026 v2 catalogue.
