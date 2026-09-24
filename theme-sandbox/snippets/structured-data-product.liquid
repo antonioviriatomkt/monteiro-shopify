@@ -21,28 +21,13 @@
   literal "-" placeholder (ELECTRA uses it for colour fastness), emits no line at all — a missing
   property is honest, a guessed one is not.
 
-  ⚠️ KNOWN DATA DEFECT, MUST BE FIXED BEFORE THIS SHIPS (2026-08-21):
-  `custom.abrasion_resistance` was checked on all 26 active products against the catalogue linked
-  from each product page (plus the print catalogues in
-  WORK/Clients/Monteiro-Fabrics/reference/knowledge/product-catalogues/). Nineteen are right.
-  These are not:
-    - LIMA and MANTA            → metafield ≥400.000, catalogue ≥150.000
-    - PURE CONVERTIBLE          → metafield ≥400.000, catalogue 150.000
-    - PURE MOVE [3/3]           → metafield ≥200.000, catalogue 150.000 (the BLT bi-elastic group).
-                                  200.000 appears in NO document.
-    - LAGUNA                    → the two official catalogues disagree with each other:
-                                  print MAI2025 (DC 062.01) says 400.000, the web catalogue linked
-                                  from the live product page says ≥150.000. Same weight, thickness
-                                  and composition in both. Unresolvable without the technical team.
-    - PURE MOVE [2/3]           → the page mixes article groups: ARATA/NASCAR/PHILIP PES are
-                                  400.000 but FRANK PES is 150.000. One figure per page cannot be
-                                  right for this page.
-    - CHANCE [1/7], [5/7], [6/7] → the AGO2026 catalogue footnotes "*metallic colours: lower
-                                  abrasion resistance (150.000 cycles)"; these are the pages that
-                                  carry metallic shades. The Essentials_Chance.pdf currently linked
-                                  from the product pages has no such footnote.
-  The fix belongs in the metafield, not here — it also feeds the visible spec block. Until it is
-  corrected, this snippet publishes a wrong certified number, machine-readably, on those products.
+  ABRASION — data defect found 2026-08-21, RESOLVED IN THE METAFIELDS 2026-09-17; cleared to emit
+  (António, 2026-09-24). `custom.abrasion_resistance` now matches the catalogue on every active
+  product. Mixed pages carry the exception inside the value itself, via choices added to the
+  metafield definition: CHANCE [1/7] [5/7] [6/7] → "≥ 400.000 (metallic colours: 150.000)",
+  PURE MOVE [2/3] → "≥ 400.000 (FRANK PES BLACK: 150.000)". LAGUNA follows the Essentials
+  ED.01 V1 catalogue (≥ 150.000). History: WORK/Clients/Monteiro-Fabrics/tasks/corrigir-metafields-abrasao.md
+  The fix belongs in the metafield, never here — it also feeds the visible spec block.
 
   Offer carries no price — see WORK/Clients/Monteiro-Fabrics/decisions/2026-08-20-offer-sem-preco.md
   Every variant is priced 0.00 because the cart is a free-sample mechanism, not a shop; emitting
