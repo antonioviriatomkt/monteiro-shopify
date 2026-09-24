@@ -58,7 +58,7 @@
           "type": "feature",
           "settings": {
             "icon": "anti-microbial",
-            "label": "Antibacterial and antiviral (antiviral: Mediflex grade)"
+            "label": "Antibacterial and antiviral"
           }
         },
         "t2": {
@@ -123,7 +123,7 @@
             "eyebrow": "Sector",
             "title": "Healthcare",
             "stat": "",
-            "text": "Hospital furniture, patient seating, clinics, waiting areas and care environments. Engineered for: Daily disinfection · fluid exposure · intensive use · flame performance.",
+            "text": "Hospital furniture, patient seating, clinics, waiting areas and care environments. Engineered for: Daily disinfection · fluid exposure · intensive use · flame performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View healthcare fabrics",
             "cta_link": "shopify://collections/healthcare"
@@ -135,7 +135,7 @@
             "eyebrow": "Sector",
             "title": "Medical",
             "stat": "",
-            "text": "Medical equipment, treatment equipment, specialist seating and examination environments. Engineered for: Aggressive cleaning · chemical exposure · skin contact · regulatory requirements.",
+            "text": "Medical equipment, treatment equipment, specialist seating and examination environments. Engineered for: Aggressive cleaning · chemical exposure · skin contact · regulatory requirements. Features: antibacterial & antiviral.",
             "accent": "#2f519b",
             "cta_label": "View medical fabrics",
             "cta_link": "shopify://collections/medical"
@@ -147,7 +147,7 @@
             "eyebrow": "Sector",
             "title": "Medical transport",
             "stat": "",
-            "text": "Ambulances, medical transport interiors and patient transport seating. Engineered for: Fluid-proof surfaces · frequent disinfection · heavy use · fire performance.",
+            "text": "Ambulances, medical transport interiors and patient transport seating. Engineered for: Fluid-proof surfaces · frequent disinfection · heavy use · fire performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View medical fabrics",
             "cta_link": "shopify://collections/medical"
@@ -159,7 +159,7 @@
             "eyebrow": "Sector",
             "title": "Transportation & mobility",
             "stat": "",
-            "text": "Train interiors, mass transportation and passenger seating. Engineered for: High abrasion · fire safety · continuous passenger turnover · long service cycles.",
+            "text": "Train interiors, mass transportation and passenger seating. Engineered for: High abrasion · fire safety · continuous passenger turnover · long service cycles. Features: flame retardant · abrasion resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View transport fabrics",
             "cta_link": "shopify://collections/mass-transportation"
@@ -171,7 +171,7 @@
             "eyebrow": "Sector",
             "title": "Contract & public spaces",
             "stat": "",
-            "text": "High-traffic seating, public facilities and commercial interiors. Engineered for: Constant public use · heavy abrasion · stain resistance · fire performance.",
+            "text": "High-traffic seating, public facilities and commercial interiors. Engineered for: Constant public use · heavy abrasion · stain resistance · fire performance. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View public-space fabrics",
             "cta_link": "shopify://collections/public-spaces"
@@ -183,7 +183,7 @@
             "eyebrow": "Sector",
             "title": "Fitness",
             "stat": "",
-            "text": "Fitness equipment, gym seating and training environments. Engineered for: Sweat · body oils · repetitive friction · intensive cleaning.",
+            "text": "Fitness equipment, gym seating and training environments. Engineered for: Sweat · body oils · repetitive friction · intensive cleaning. Features: abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View fitness fabrics",
             "cta_link": "shopify://collections/fitness-1"
@@ -195,7 +195,7 @@
             "eyebrow": "Sector",
             "title": "Sports & arenas",
             "stat": "",
-            "text": "Stadium seating, arenas, venues and event spaces. Engineered for: Weather exposure · high traffic · stain resistance · long-term durability.",
+            "text": "Stadium seating, arenas, venues and event spaces. Engineered for: Weather exposure · high traffic · stain resistance · long-term durability. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View arena fabrics",
             "cta_link": "shopify://collections/public-spaces"
@@ -207,7 +207,7 @@
             "eyebrow": "Sector",
             "title": "Safety & protection",
             "stat": "",
-            "text": "Protective equipment and safety applications. Engineered for: Mechanical resistance · durability · regulatory compliance · application-specific requirements.",
+            "text": "Protective equipment and safety applications. Engineered for: Mechanical resistance · durability · regulatory compliance · application-specific requirements. Features: long lasting.",
             "accent": "#2f519b",
             "cta_label": "Talk to the technical team",
             "cta_link": "shopify://pages/contact"
@@ -298,7 +298,7 @@
           "type": "spec",
           "settings": {
             "label": "Martindale",
-            "value": "400,000 rubs abrasion resistance — ISO 5470-2"
+            "value": "400,000 rubs abrasion resistance — ISO 5470-2*"
           }
         },
         "c10": {
@@ -334,7 +334,7 @@
         "title": "The certifications that decide the spec",
         "intro": "<p>Certifications vary by fabric grade. The table shows the standards the performance range is tested against. Ask the technical team for the certificate that applies to your specification.</p>",
         "align": "center",
-        "note": "<p>A rating tied to a named grade applies to that grade only.</p>",
+        "note": "<p>A rating tied to a named grade applies to that grade only.</p><p>*Metallic colours are rated at 150,000 Martindale rubs.</p>",
         "bg_color": "#fafaf8",
         "text_color": "#111111",
         "line_color": "#e0e0dc",

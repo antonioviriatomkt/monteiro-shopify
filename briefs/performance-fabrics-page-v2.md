@@ -70,26 +70,27 @@ Both are removed in v2. If the redesign were published today, both would go live
 ### 3 · Feature strip: `performance-tech` (existing, key `tech`)
 - **Purpose:** a scannable feature summary (the concept's six feature icons).
 - **Eyebrow:** Engineered for performance · **H2:** Built into every metre
-- **Icons (alt text):** Antibacterial and antiviral (antiviral: Mediflex grade) · Flame retardant · Ink and stain resistant · Abrasion resistant · Long lasting · 100% vegan
+- **Icons (alt text):** Antibacterial and antiviral · Flame retardant · Ink and stain resistant · Abrasion resistant · Long lasting · 100% vegan
 - **CTA:** Find the right fabric for your application → `/pages/contact`
-- ⚠️ The icons are SVG assets. If `perf-anti-microbial.svg` has "antiviral" printed on it, the image itself states a range-wide claim. See (f).
+- These six are the **range-level** icons, shown without qualifiers (decided by António, 24/09). The sector cards (§4) then list only the features that apply to each sector. The grade tie for antiviral (Mediflex) stays in the certifications table and the FAQ.
 
 ### 4 · The 8 sectors: `grade-cards` (existing, key `sectors`, 8 blocks = `max_blocks`)
 - **Purpose:** route each specifier to their sector, and feed the sector `ItemList`.
 - **Eyebrow:** Eight sectors · **H2:** Engineered for the environments that test fabric hardest
 - **Intro:** Each application sets its own conditions: disinfection, fluid exposure, fire performance, abrasion, weather. We engineer the fabric around them.
-- **Card text pattern:** `<applications>. Engineered for: <4 conditions>.` The four conditions are chosen from the concept's lists, and none are invented.
+- **Card text pattern:** `<applications>. Engineered for: <4 conditions>. Features: <icons that apply>.` The conditions are chosen from the concept's lists. Each sector's features are the icons that match its conditions: hygiene or disinfection → antibacterial & antiviral; fire → flame retardant; abrasion → abrasion resistant; stain → ink & stain resistant; durability or long service → long lasting. 100% vegan is range-level only.
+- `grade-cards` has no icon slot, so the features are a **text line**. Showing them as icons per card would need a small addition to the section (an icon checklist per block). Say if you want it.
 
-| # | H3 | Applications | Engineered for | Link · CTA |
-|---|---|---|---|---|
-| 1 | **Healthcare** | Hospital furniture, patient seating, clinics, waiting areas and care environments. | Daily disinfection · fluid exposure · intensive use · flame performance | `/collections/healthcare` · "View healthcare fabrics" |
-| 2 | **Medical** | Medical equipment, treatment equipment, specialist seating and examination environments. | Aggressive cleaning · chemical exposure · skin contact · regulatory requirements | `/collections/medical` · "View medical fabrics" |
-| 3 | **Medical transport** | Ambulances, medical transport interiors and patient transport seating. | Fluid-proof surfaces · frequent disinfection · heavy use · fire performance | `/collections/medical` · "View medical fabrics" |
-| 4 | **Transportation & mobility** | Train interiors, mass transportation and passenger seating. | High abrasion · fire safety · continuous passenger turnover · long service cycles | `/collections/mass-transportation` · "View transport fabrics" |
-| 5 | **Contract & public spaces** | High-traffic seating, public facilities and commercial interiors. | Constant public use · heavy abrasion · stain resistance · fire performance | `/collections/public-spaces` · "View public-space fabrics" |
-| 6 | **Fitness** | Fitness equipment, gym seating and training environments. | Sweat · body oils · repetitive friction · intensive cleaning | `/collections/fitness-1` · "View fitness fabrics" |
-| 7 | **Sports & arenas** | Stadium seating, arenas, venues and event spaces. | Weather exposure · high traffic · stain resistance · long-term durability | `/collections/public-spaces` · "View arena fabrics" |
-| 8 | **Safety & protection** | Protective equipment and safety applications. | Mechanical resistance · durability · regulatory compliance · application-specific requirements | `/pages/contact` (no sector collection) · "Talk to the technical team" |
+| # | H3 | Applications | Engineered for | Features | Link · CTA |
+|---|---|---|---|---|---|
+| 1 | **Healthcare** | Hospital furniture, patient seating, clinics, waiting areas and care environments. | Daily disinfection · fluid exposure · intensive use · flame performance | Antibacterial & antiviral · flame retardant · abrasion resistant | `/collections/healthcare` · "View healthcare fabrics" |
+| 2 | **Medical** | Medical equipment, treatment equipment, specialist seating and examination environments. | Aggressive cleaning · chemical exposure · skin contact · regulatory requirements | Antibacterial & antiviral | `/collections/medical` · "View medical fabrics" |
+| 3 | **Medical transport** | Ambulances, medical transport interiors and patient transport seating. | Fluid-proof surfaces · frequent disinfection · heavy use · fire performance | Antibacterial & antiviral · flame retardant · abrasion resistant | `/collections/medical` · "View medical fabrics" |
+| 4 | **Transportation & mobility** | Train interiors, mass transportation and passenger seating. | High abrasion · fire safety · continuous passenger turnover · long service cycles | Flame retardant · abrasion resistant · long lasting | `/collections/mass-transportation` · "View transport fabrics" |
+| 5 | **Contract & public spaces** | High-traffic seating, public facilities and commercial interiors. | Constant public use · heavy abrasion · stain resistance · fire performance | Flame retardant · abrasion resistant · ink & stain resistant · long lasting | `/collections/public-spaces` · "View public-space fabrics" |
+| 6 | **Fitness** | Fitness equipment, gym seating and training environments. | Sweat · body oils · repetitive friction · intensive cleaning | Abrasion resistant | `/collections/fitness-1` · "View fitness fabrics" |
+| 7 | **Sports & arenas** | Stadium seating, arenas, venues and event spaces. | Weather exposure · high traffic · stain resistance · long-term durability | Flame retardant · abrasion resistant · ink & stain resistant · long lasting | `/collections/public-spaces` · "View arena fabrics" |
+| 8 | **Safety & protection** | Protective equipment and safety applications. | Mechanical resistance · durability · regulatory compliance · application-specific requirements | Long lasting | `/pages/contact` (no sector collection) · "Talk to the technical team" |
 
 ### 5 · Certifications: `spec-table` (existing, key `certs`)
 - **Purpose:** the grade-tied certification table, which is the page's core evidence.
@@ -106,11 +107,11 @@ Both are removed in v2. If the redesign were published today, both would go live
 | Bleach cleanable | Withstands diluted sodium-hypochlorite (bleach) cleaning without degrading |
 | Alcohol resistant | Compatible with alcohol-based disinfectants used in clinical protocols |
 | Waterproof | Impermeable, fluid-proof surface — does not absorb spills or bodily fluids |
-| Martindale | 400,000 rubs abrasion resistance — ISO 5470-2 |
+| Martindale | 400,000 rubs abrasion resistance — ISO 5470-2* |
 | OEKO-TEX | OEKO-TEX Standard 100 — tested for harmful substances |
 | REACH | EU REACH compliant — no Substances of Very High Concern above thresholds |
 
-- **Footnote:** A rating tied to a named grade applies to that grade only.
+- **Footnote:** A rating tied to a named grade applies to that grade only. / *Metallic colours are rated at 150,000 Martindale rubs.* (The Martindale row carries the `*`. Kept by António, 24/09.)
 - **CTA:** Request certificates & test reports → `/pages/contact` (unchanged)
 - PFAS is **omitted**. See (f).
 
@@ -146,7 +147,7 @@ Both are removed in v2. If the redesign were published today, both would go live
 
 ### 11 · FAQ: `faq-schema` (existing, key `faq`, 10 blocks)
 - **Eyebrow:** Performance fabrics — answered · **H2:** Technical FAQ
-- Every answer is answer-first: the first sentence stands alone as the citable answer. Martindale and PFAS are deliberately **not** in the FAQ (see (f)).
+- Every answer is answer-first: the first sentence stands alone as the citable answer. PFAS is deliberately **not** in the FAQ (see (f)). Martindale is also left out: the 400,000 figure needs its metallic-colours footnote, and a FAQ answer (and so the JSON-LD) can't carry one cleanly.
 
 **Q1. What are Monteiro Performance Fabrics?**  
 Monteiro Performance Fabrics are the coated and engineered textiles of Monteiro Fabrics' technical division, developed for buyers who specify on certification, durability, compliance and operational risk. They are backed by 60 years of expertise, developed in-house, tested for durability and safety, and made in Portugal.
@@ -523,8 +524,8 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 
 **Open questions for António:**
 
-1. **Martindale 400,000 vs metallic colours.** The concept says "400,000 rubs — ISO 5470-2". The 31/08 sanitation task recorded that the **6 metallic colours are 150,000** on all six CHANCE grades. The metafields now say `≥ 400.000 (metallic colours: 150.000)`. The v2 spec table keeps the concept row word for word, and **Martindale is kept out of the FAQ/JSON-LD** so it can't become a machine-readable absolute. Should the table carry a metallic-colours footnote? That would be the concept's gap to fix, not this page's.
-2. **"Antibacterial & antiviral" feature icon.** The concept lists it as a range-level icon, but antiviral is Mediflex-only. The alt text now ties it to Mediflex. If the SVG has "antiviral" printed on it, should the icon be swapped for a plain "antibacterial" one?
+1. ✅ **Martindale, resolved 24/09: keep a footnote.** The spec table row is marked `*`, and the footnote reads *"Metallic colours are rated at 150,000 Martindale rubs."* The source is the CHANCE-grade metafields (`≥ 400.000 (metallic colours: 150.000)`, 31/08). ⚠️ **Concept gap:** the concept note doesn't have this caveat. Add it there when the concept is next revised.
+2. ✅ **Feature icons, resolved 24/09.** The six icons stay range-level and general (antibacterial & antiviral unqualified). Each sector card lists only the features that apply to it (§4). The grade tie for antiviral stays in the certs table and the FAQ.
 3. **Which grades carry bleach, alcohol, waterproof, antibacterial, OEKO-TEX and REACH?** The concept gives these at range level with "certifications vary by grade". The copy says exactly that and nothing stronger. A per-grade matrix would allow stronger answers.
 4. **Flora** is named as Crib 5, but it has no product/collection handle in the naming map and no link target.
 5. **Peel = Chance Bioblend.** The concept names Peel under Crib 5. Please confirm it applies to the Bioblend grade, since the copy uses the concept's name "Peel".
