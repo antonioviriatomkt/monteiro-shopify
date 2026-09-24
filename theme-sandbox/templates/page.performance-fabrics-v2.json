@@ -437,66 +437,53 @@
       }
     },
     "custom": {
-      "type": "text-columns-with-images",
+      "type": "split-list",
       "blocks": {
-        "b1": {
-          "type": "text_block",
+        "i1": {
+          "type": "item",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
             "title": "Requirement analysis",
-            "text": "<p>Understanding the application and its technical demands.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "Understanding the application and its technical demands."
           }
         },
-        "b2": {
-          "type": "text_block",
+        "i2": {
+          "type": "item",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
             "title": "Material development",
-            "text": "<p>Engineering the construction around the required performance.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "Engineering the construction around the required performance."
           }
         },
-        "b3": {
-          "type": "text_block",
+        "i3": {
+          "type": "item",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
             "title": "Testing & validation",
-            "text": "<p>Testing performance against the relevant requirements and standards.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "Testing performance against the relevant requirements and standards."
           }
         },
-        "b4": {
-          "type": "text_block",
+        "i4": {
+          "type": "item",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
             "title": "Industrial production",
-            "text": "<p>Scaling the validated solution for consistent supply.</p>",
-            "button_label": "",
-            "link": ""
+            "text": "Scaling the validated solution for consistent supply."
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4"
+        "i1",
+        "i2",
+        "i3",
+        "i4"
       ],
       "settings": {
+        "eyebrow": "Custom development",
         "title": "Not in the spec? We engineer the solution.",
-        "text_alignment": "left",
-        "button_style": "link",
-        "media_shape": "natural",
-        "alternate_bg_color": false,
-        "full_width": false
+        "intro": "<p>When standard performance is not enough, the technical team works with you to develop a fabric around the specific requirements of your application.</p>",
+        "cta_label": "Tell us your requirement",
+        "cta_link": "shopify://pages/contact",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "accent": "#2f519b"
       }
     },
     "credentials": {

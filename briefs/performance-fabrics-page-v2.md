@@ -135,9 +135,14 @@ Both are removed in v2. If the redesign were published today, both would go live
   5. **Produce.** *We deliver at industrial scale.* We combine technical development with the industrial capability that specification projects require. **Closing stat: 6M metres / Annual production capacity.**
 - `sections/process-steps.liquid`: plain-text settings (no richtext), `<ol>` markup, headings forced `text-align:left; color:inherit`, max 6 steps. It's reusable on other pages (e.g. Peel). Replaces the first draft's `text-columns-with-images`, which laid out as a ragged 3 + 2.
 
-### 8 · Not in the spec?: `text-columns-with-images` (existing, key `custom`)
-- **H2:** Not in the spec? We engineer the solution.
-- **H3 columns:** Requirement analysis (understanding the application and its technical demands) · Material development (engineering the construction around the required performance) · Testing & validation (testing performance against the relevant requirements and standards) · Industrial production (scaling the validated solution for consistent supply).
+### 8 · Not in the spec?: `split-list` (**new section**, key `custom`), revised 24/09
+- **Purpose:** turn the custom-development offer into a lead route. It is the only section besides the CTA with its own button.
+- **Layout:** on desktop, two columns. On the left, a statement that stays in place while you scroll: eyebrow, H2, intro and a blue button. On the right, a ruled list of four capabilities, each with a blue arrow, an H3 name and a one-line description; a blue line runs across on hover. On mobile the columns stack. The background is warm light (`#fafaf8`), a contrast to the blue process band above.
+- **Eyebrow:** Custom development · **H2:** Not in the spec? We engineer the solution.
+- **Intro:** When standard performance is not enough, the technical team works with you to develop a fabric around the specific requirements of your application.
+- **Button:** Tell us your requirement → `/pages/contact`
+- **Items (H3 · text):** Requirement analysis (understanding the application and its technical demands) · Material development (engineering the construction around the required performance) · Testing & validation (testing performance against the relevant requirements and standards) · Industrial production (scaling the validated solution for consistent supply).
+- `sections/split-list.liquid`: generic, with plain-text blocks and max 8 items. It's reusable for any "statement + list" pattern.
 
 ### 9 · Credentials: `grade-cards` (existing, key `credentials`, reusing the old `capacity` styling)
 - **Eyebrow:** Credentials · **H2:** Made, certified and guaranteed in Portugal
@@ -185,7 +190,7 @@ Contact the technical team with your application and the standards your specific
 - **Text:** Tell us the application and the standards you need to meet. We will recommend the grade, supply the certificate that applies to your specification and send samples.
 - **Button:** Contact the technical team → `/pages/contact`
 
-**Length:** about 1,550 visible words (v1: 1,242). One new section type: `process-steps` (§7).
+**Length:** about 1,550 visible words (v1: 1,242). Two new section types: `process-steps` (§7) and `split-list` (§8).
 
 ---
 
@@ -491,7 +496,7 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 
 | From (section) | Anchor | Target | Status 24/09 |
 |---|---|---|---|
-| Hero, feature strip, certs, CTA | Talk to / Contact the technical team · Request certificates & test reports | `/pages/contact` | 200 |
+| Hero, feature strip, certs, custom development, CTA | Talk to / Contact the technical team · Request certificates & test reports | `/pages/contact` | 200 |
 | Sectors: Healthcare | View healthcare fabrics | `/collections/healthcare` | 200 (watchlist page) |
 | Sectors: Medical · Medical transport | View medical fabrics | `/collections/medical` | 200 (both cards; no ambulance-specific collection) |
 | Sectors: Transportation & mobility | View transport fabrics | `/collections/mass-transportation` | 200 (`/collections/train` is the alternative) |
@@ -573,7 +578,7 @@ Both changes should be validated in the preview on one sector page and on this p
 | certs | `eyebrow`, `title`, `intro`, `note`, `cta_label`, blocks c1–c11 `label`, `value` |
 | quality | `subheading`, `title`, `text` |
 | process | `eyebrow`, `title`, `intro`, blocks p1–p5 `title`, `lead`, `text`, `stat`, `stat_label` |
-| custom | `title`, blocks b1–b4 `title`, `text` |
+| custom | `eyebrow`, `title`, `intro`, `cta_label`, blocks i1–i4 `title`, `text` |
 | credentials | `eyebrow`, `title`, blocks k1–k4 `eyebrow`, `title`, `stat`, `text` |
 | resources | `eyebrow`, `title`, `intro`, `all_label`, blocks r0–r5 `tag`, `title`, `excerpt`, `meta`, `cta_label` |
 | faq | `eyebrow`, `title`, `crumb_home`, `crumb_current`, blocks q1–q10 `question`, `answer` (translating these also localises the FAQPage JSON-LD) |

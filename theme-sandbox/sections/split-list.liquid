@@ -1,0 +1,86 @@
+{% comment %}
+  Split list — editorial two-column layout. Left: eyebrow, heading, intro, CTA (sticky on desktop).
+  Right: a ruled list of items (H3 name + one-line description).
+  Built 2026-09-24 for /pages/performance-fabrics v2 ("Not in the spec? We engineer the solution.").
+  Blocks: item { title, text }. Plain text only.
+{% endcomment %}
+
+{%- assign items = section.blocks | where: "type", "item" -%}
+<div class="section-split-list" data-section-type="split-list"
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #sl-{{ section.id }} .sl-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
+    #sl-{{ section.id }} .sl-head { position: sticky; top: 120px; }
+    #sl-{{ section.id }} .sl-eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; color: {{ section.settings.accent }}; font-weight: 600; margin-bottom: 16px; }
+    #sl-{{ section.id }} .sl-title { font-size: 44px; font-weight: 300; line-height: 1.12; margin: 0; text-align: left; color: inherit; }
+    #sl-{{ section.id }} .sl-intro { margin-top: 22px; font-size: 18px; line-height: 1.6; opacity: 0.85; }
+    #sl-{{ section.id }} .sl-intro p { margin: 0 0 12px; }
+    #sl-{{ section.id }} .sl-cta { display: inline-block; margin-top: 28px; padding: 15px 30px; background: {{ section.settings.accent }}; color: #fff; text-decoration: none; letter-spacing: 0.03em; transition: opacity .2s; }
+    #sl-{{ section.id }} .sl-cta:hover { opacity: 0.85; }
+    #sl-{{ section.id }} .sl-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid {{ section.settings.line_color }}; }
+    #sl-{{ section.id }} .sl-item { display: grid; grid-template-columns: 2fr 3fr; gap: 32px; padding: 34px 0; border-bottom: 1px solid {{ section.settings.line_color }}; position: relative; }
+    #sl-{{ section.id }} .sl-item::before { content: ""; position: absolute; left: 0; top: -1px; width: 0; height: 2px; background: {{ section.settings.accent }}; transition: width .4s ease; }
+    #sl-{{ section.id }} .sl-item:hover::before { width: 100%; }
+    #sl-{{ section.id }} .sl-name { display: flex; gap: 12px; font-size: 24px; font-weight: 400; line-height: 1.25; margin: 0; text-align: left; color: inherit; }
+    #sl-{{ section.id }} .sl-text { margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.85; align-self: center; }
+    #sl-{{ section.id }} .sl-arrow { color: {{ section.settings.accent }}; flex: none; }
+    @media (max-width: 1000px) {
+      #sl-{{ section.id }} .sl-grid { grid-template-columns: 1fr; gap: 40px; }
+      #sl-{{ section.id }} .sl-head { position: static; }
+      #sl-{{ section.id }} .sl-title { font-size: 34px; }
+      #sl-{{ section.id }} .sl-item { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
+      #sl-{{ section.id }} .sl-name { font-size: 21px; }
+    }
+  {% endstyle %}
+
+  <div id="sl-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    <div class="sl-grid">
+      <div class="sl-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="sl-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="sl-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.intro != blank %}<div class="sl-intro">{{ section.settings.intro }}</div>{% endif %}
+        {% if section.settings.cta_label != blank and section.settings.cta_link != blank %}<a class="sl-cta" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>{% endif %}
+      </div>
+      <ol class="sl-list">
+        {% for block in items %}
+          <li class="sl-item" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.1 | append: 's' }}">
+            {% if block.settings.title != blank %}<h3 class="sl-name"><span class="sl-arrow" aria-hidden="true">→</span>{{ block.settings.title | escape }}</h3>{% endif %}
+            {% if block.settings.text != blank %}<p class="sl-text">{{ block.settings.text | escape }}</p>{% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Split list",
+    "class": "section-split-list-wrap",
+    "max_blocks": 8,
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+      { "type": "text", "id": "title", "label": "Heading", "default": "Heading" },
+      { "type": "richtext", "id": "intro", "label": "Intro text" },
+      { "type": "text", "id": "cta_label", "label": "Button label" },
+      { "type": "url", "id": "cta_link", "label": "Button link" },
+      { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#FAFAF8" },
+      { "type": "color", "id": "text_color", "label": "Text colour", "default": "#111111" },
+      { "type": "color", "id": "line_color", "label": "Divider colour", "default": "#E0E0DC" },
+      { "type": "color", "id": "accent", "label": "Accent colour", "default": "#2F519B" }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          { "type": "text", "id": "title", "label": "Name", "default": "Item" },
+          { "type": "textarea", "id": "text", "label": "Description" }
+        ]
+      }
+    ],
+    "presets": [
+      { "name": "Split list", "blocks": [ { "type": "item" }, { "type": "item" }, { "type": "item" } ] }
+    ]
+  }
+{% endschema %}
