@@ -1,0 +1,103 @@
+{% comment %}
+  Process steps — a numbered, connected sequence (timeline) with an optional closing stat.
+  Desktop: one row, numerals above a connecting line with a dot per step.
+  Mobile: vertical, line down the left.
+  Built 2026-09-24 for /pages/performance-fabrics v2 ("From requirement to production").
+  Blocks: step { title, lead, text, stat, stat_label }. Plain text only (no richtext), so no <p> wrapping is needed.
+{% endcomment %}
+
+{%- assign steps = section.blocks | where: "type", "step" -%}
+<div class="section-process-steps" data-section-type="process-steps"
+     style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+  {% style %}
+    #ps-{{ section.id }} .ps-head { max-width: 760px; margin: 0 0 56px; }
+    #ps-{{ section.id }} .ps-eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; opacity: 0.75; margin-bottom: 14px; }
+    #ps-{{ section.id }} .ps-title { font-size: 44px; font-weight: 300; line-height: 1.15; margin: 0; text-align: left; color: inherit; }
+    #ps-{{ section.id }} .ps-intro { margin-top: 18px; font-size: 18px; line-height: 1.6; opacity: 0.9; }
+    #ps-{{ section.id }} .ps-intro p { margin: 0; }
+    #ps-{{ section.id }} .ps-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat({{ steps.size }}, 1fr); gap: 0 32px; counter-reset: ps; }
+    #ps-{{ section.id }} .ps-step { position: relative; }
+    #ps-{{ section.id }} .ps-num { display: block; font-size: 64px; font-weight: 300; line-height: 1; letter-spacing: -0.01em; margin-bottom: 22px; font-variant-numeric: tabular-nums; }
+    #ps-{{ section.id }} .ps-rail { display: block; position: relative; height: 11px; margin-bottom: 26px; }
+    #ps-{{ section.id }} .ps-rail::before { content: ""; position: absolute; top: 5px; left: 0; right: -32px; height: 1px; background: {{ section.settings.line_color }}; }
+    #ps-{{ section.id }} .ps-step:last-child .ps-rail::before { right: 0; }
+    #ps-{{ section.id }} .ps-rail::after { content: ""; position: absolute; top: 0; left: 0; width: 11px; height: 11px; border-radius: 50%; background: {{ section.settings.text_color }}; }
+    #ps-{{ section.id }} .ps-name { font-size: 22px; font-weight: 400; line-height: 1.25; margin: 0 0 12px; text-align: left; color: inherit; }
+    #ps-{{ section.id }} .ps-lead { font-weight: 600; margin: 0 0 8px; line-height: 1.5; }
+    #ps-{{ section.id }} .ps-text { margin: 0; line-height: 1.6; opacity: 0.88; font-size: 15px; }
+    #ps-{{ section.id }} .ps-stat { margin-top: 28px; padding-top: 18px; border-top: 1px solid {{ section.settings.line_color }}; }
+    #ps-{{ section.id }} .ps-stat-value { display: block; font-size: 48px; font-weight: 300; line-height: 1; }
+    #ps-{{ section.id }} .ps-stat-label { display: block; margin-top: 8px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.8; }
+    @media (max-width: 1000px) {
+      #ps-{{ section.id }} .ps-title { font-size: 34px; }
+      #ps-{{ section.id }} .ps-list { grid-template-columns: 1fr; gap: 0; }
+      #ps-{{ section.id }} .ps-step { padding: 0 0 40px 44px; }
+      #ps-{{ section.id }} .ps-step:last-child { padding-bottom: 0; }
+      #ps-{{ section.id }} .ps-rail { position: absolute; left: 0; top: 0; bottom: 0; height: auto; width: 11px; margin: 0; }
+      #ps-{{ section.id }} .ps-rail::before { top: 6px; bottom: 0; left: 5px; right: auto; width: 1px; height: auto; }
+      #ps-{{ section.id }} .ps-step:last-child .ps-rail::before { display: none; }
+      #ps-{{ section.id }} .ps-rail::after { top: 6px; }
+      #ps-{{ section.id }} .ps-num { font-size: 40px; margin-bottom: 12px; }
+    }
+  {% endstyle %}
+
+  <div id="ps-{{ section.id }}" class="wide-container half-gutter section-spacing">
+    {% if section.settings.eyebrow != blank or section.settings.title != blank or section.settings.intro != blank %}
+      <div class="ps-head" data-cc-animate>
+        {% if section.settings.eyebrow != blank %}<div class="ps-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        {% if section.settings.title != blank %}<h2 class="ps-title">{{ section.settings.title | escape }}</h2>{% endif %}
+        {% if section.settings.intro != blank %}<div class="ps-intro">{{ section.settings.intro }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    <ol class="ps-list">
+      {% for block in steps %}
+        <li class="ps-step" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.1 | append: 's' }}">
+          <span class="ps-num" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+          <span class="ps-rail" aria-hidden="true"></span>
+          {% if block.settings.title != blank %}<h3 class="ps-name">{{ block.settings.title | escape }}</h3>{% endif %}
+          {% if block.settings.lead != blank %}<p class="ps-lead">{{ block.settings.lead | escape }}</p>{% endif %}
+          {% if block.settings.text != blank %}<p class="ps-text">{{ block.settings.text | escape }}</p>{% endif %}
+          {% if block.settings.stat != blank %}
+            <div class="ps-stat">
+              <span class="ps-stat-value">{{ block.settings.stat | escape }}</span>
+              {% if block.settings.stat_label != blank %}<span class="ps-stat-label">{{ block.settings.stat_label | escape }}</span>{% endif %}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Process steps",
+    "class": "section-process-steps-wrap",
+    "max_blocks": 6,
+    "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+      { "type": "text", "id": "title", "label": "Heading", "default": "From requirement to production" },
+      { "type": "richtext", "id": "intro", "label": "Intro text" },
+      { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#2F519B" },
+      { "type": "color", "id": "text_color", "label": "Text colour", "default": "#FFFFFF" },
+      { "type": "color", "id": "line_color", "label": "Line colour", "default": "#8195C3" }
+    ],
+    "blocks": [
+      {
+        "type": "step",
+        "name": "Step",
+        "settings": [
+          { "type": "text", "id": "title", "label": "Step name", "default": "Step" },
+          { "type": "text", "id": "lead", "label": "Lead sentence (bold)" },
+          { "type": "textarea", "id": "text", "label": "Text" },
+          { "type": "text", "id": "stat", "label": "Closing stat (optional)" },
+          { "type": "text", "id": "stat_label", "label": "Stat label" }
+        ]
+      }
+    ],
+    "presets": [
+      { "name": "Process steps", "blocks": [ { "type": "step" }, { "type": "step" }, { "type": "step" } ] }
+    ]
+  }
+{% endschema %}

@@ -367,78 +367,73 @@
       }
     },
     "process": {
-      "type": "text-columns-with-images",
+      "type": "process-steps",
       "blocks": {
-        "b1": {
-          "type": "text_block",
+        "p1": {
+          "type": "step",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "1 · Understand",
-            "text": "<p><strong>We start with the application.</strong> We identify the environment, usage conditions and technical requirements behind each project.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Understand",
+            "lead": "We start with the application.",
+            "text": "We identify the environment, usage conditions and technical requirements behind each project.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "b2": {
-          "type": "text_block",
+        "p2": {
+          "type": "step",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "2 · Engineer",
-            "text": "<p><strong>We develop around the specification.</strong> The technical team develops fabric constructions and performance solutions to match the application's requirements.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Engineer",
+            "lead": "We develop around the specification.",
+            "text": "The technical team develops fabric constructions and performance solutions to match the application's requirements.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "b3": {
-          "type": "text_block",
+        "p3": {
+          "type": "step",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "3 · Test",
-            "text": "<p><strong>We test performance inside and out.</strong> Rigorous testing in the internal laboratory and, when required, in certified third-party laboratories.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Test",
+            "lead": "We test performance inside and out.",
+            "text": "Rigorous testing in the internal laboratory and, when required, in certified third-party laboratories.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "b4": {
-          "type": "text_block",
+        "p4": {
+          "type": "step",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "4 · Validate",
-            "text": "<p><strong>We certify against the relevant standards.</strong> Performance is validated against the standards that apply to each fabric grade and specification.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Validate",
+            "lead": "We certify against the relevant standards.",
+            "text": "Performance is validated against the standards that apply to each fabric grade and specification.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "b5": {
-          "type": "text_block",
+        "p5": {
+          "type": "step",
           "settings": {
-            "enable_image": false,
-            "image_width": 700,
-            "title": "5 · Produce",
-            "text": "<p><strong>We deliver at industrial scale.</strong> With 6 million metres of annual production capacity, we combine technical development with the industrial capability that specification projects require.</p>",
-            "button_label": "",
-            "link": ""
+            "title": "Produce",
+            "lead": "We deliver at industrial scale.",
+            "text": "We combine technical development with the industrial capability that specification projects require.",
+            "stat": "6M metres",
+            "stat_label": "Annual production capacity"
           }
         }
       },
       "block_order": [
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5"
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
       ],
       "settings": {
+        "eyebrow": "The process",
         "title": "From requirement to production",
-        "text_alignment": "left",
-        "button_style": "link",
-        "media_shape": "natural",
-        "alternate_bg_color": true,
-        "full_width": false
+        "intro": "<p>Technical expertise is not a claim. It is a process.</p>",
+        "bg_color": "#2f519b",
+        "text_color": "#ffffff",
+        "line_color": "#8195c3"
       }
     },
     "custom": {

@@ -123,16 +123,17 @@ Both are removed in v2. If the redesign were published today, both would go live
   > Every product is tested internally, in Monteiro's own laboratory, and externally, in certified third-party laboratories, so it consistently meets the expected quality benchmarks.
 - Image unchanged (`LAB-FABRICS-1.jpg`).
 
-### 7 · The process: `text-columns-with-images` (existing, **new on this page**, key `process`, `enable_image: false`)
-- **Purpose:** the concept's "technical expertise is a process" argument, and the only place 6M m/yr appears.
-- **H2:** From requirement to production · `alternate_bg_color: true`
-- **H3 columns:**
+### 7 · The process: `process-steps` (**new section**, key `process`), revised 24/09
+- **Purpose:** the concept's "technical expertise is a process" argument, shown as a numbered, connected sequence on the brand-blue band, ending on the production-capacity stat.
+- **Eyebrow:** The process · **H2:** From requirement to production · **Intro:** Technical expertise is not a claim. It is a process. *(concept tagline)*
+- **Layout:** on desktop, one row of five, with large light numerals 01–05 above a thin line and a dot per step. On mobile, the steps stack vertically with the line down the left. The background is `#2f519b` with white text.
+- **Steps (H3 · bold lead · text):**
   1. **Understand.** *We start with the application.* We identify the environment, usage conditions and technical requirements behind each project.
   2. **Engineer.** *We develop around the specification.* The technical team develops fabric constructions and performance solutions to match the application's requirements.
   3. **Test.** *We test performance inside and out.* Rigorous testing in the internal laboratory and, when required, in certified third-party laboratories.
   4. **Validate.** *We certify against the relevant standards.* Performance is validated against the standards that apply to each fabric grade and specification.
-  5. **Produce.** *We deliver at industrial scale.* With 6 million metres of annual production capacity, we combine technical development with the industrial capability that specification projects require.
-- Why not `process-timeline`: it is image-led with no body text (see website-technical-facts).
+  5. **Produce.** *We deliver at industrial scale.* We combine technical development with the industrial capability that specification projects require. **Closing stat: 6M metres / Annual production capacity.**
+- `sections/process-steps.liquid`: plain-text settings (no richtext), `<ol>` markup, headings forced `text-align:left; color:inherit`, max 6 steps. It's reusable on other pages (e.g. Peel). Replaces the first draft's `text-columns-with-images`, which laid out as a ragged 3 + 2.
 
 ### 8 · Not in the spec?: `text-columns-with-images` (existing, key `custom`)
 - **H2:** Not in the spec? We engineer the solution.
@@ -184,7 +185,7 @@ Contact the technical team with your application and the standards your specific
 - **Text:** Tell us the application and the standards you need to meet. We will recommend the grade, supply the certificate that applies to your specification and send samples.
 - **Button:** Contact the technical team → `/pages/contact`
 
-**Length:** about 1,550 visible words (v1: 1,242). No new section types are needed.
+**Length:** about 1,550 visible words (v1: 1,242). One new section type: `process-steps` (§7).
 
 ---
 
@@ -571,7 +572,7 @@ Both changes should be validated in the preview on one sector page and on this p
 | sectors | `eyebrow`, `title`, `intro`, blocks s1–s8 `eyebrow`, `title`, `text`, `cta_label` |
 | certs | `eyebrow`, `title`, `intro`, `note`, `cta_label`, blocks c1–c11 `label`, `value` |
 | quality | `subheading`, `title`, `text` |
-| process | `title`, blocks b1–b5 `title`, `text` |
+| process | `eyebrow`, `title`, `intro`, blocks p1–p5 `title`, `lead`, `text`, `stat`, `stat_label` |
 | custom | `title`, blocks b1–b4 `title`, `text` |
 | credentials | `eyebrow`, `title`, blocks k1–k4 `eyebrow`, `title`, `stat`, `text` |
 | resources | `eyebrow`, `title`, `intro`, `all_label`, blocks r0–r5 `tag`, `title`, `excerpt`, `meta`, `cta_label` |
