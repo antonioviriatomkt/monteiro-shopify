@@ -88,13 +88,16 @@ are superseded by `bin/mf`** — `deploy-files.mjs`, `deploy-section.mjs`, `depl
 
 ## Known state
 
-- **The four ORGATEC sections exist on LIVE only** — `collection-sheets`, `media-text-ctas`,
-  `proof-strip`, `sector-tabs`, plus `templates/page.orgatec-2026.json`. They are **not** on the
-  redesign sandbox, contrary to earlier notes. **Publishing the sandbox today breaks the ORGATEC
-  landing page**, which has ad spend behind it. Mirror them before any publish.
-- `theme-live/sections/orgatec-2026.liquid` and `templates/page.orgatec-2026.json` carry **unpushed
-  v4 edits** (Electra + Laguna added, disabled Portus dropped, composition/weight claims corrected,
-  "Seven … on the stand" → "Eight"). They change technical claims — sign off before pushing.
+- **The ORGATEC LP is mirrored to the sandbox (2026-09-24, `f823399`).** `collection-sheets`,
+  `media-text-ctas`, `proof-strip`, `sector-tabs`, `landing-cta` (+ `assets/landing-cta.css`) and
+  `templates/page.orgatec-2026.json` are on both themes; the sandbox preview's server HTML is
+  identical to live apart from the asset path and the Forms app-block id. Publishing the sandbox no
+  longer breaks the LP — **but the LP keeps being edited in the live theme editor** (images, widths,
+  the Forms block), so run `bin/mf check live` and re-copy the template to the sandbox right before
+  any publish.
+- Nothing ORGATEC is pending on live: the v4/v5 copy (Electra + Laguna, Portus dropped, "Eight") has
+  been live since 2026-09-14. The v1 `sections/orgatec-2026.liquid` is no longer referenced by any
+  template on either theme — deletion is an open item in the vault, not done.
 - `theme-sandbox/` is a clean mirror except three older local-ahead templates:
   `list-collections.json`, `page.siesta-patio.json`, `page.trade-fair-invitation.json`
   (the sandbox still uses the old `siesta-outdoor-upholstery` page handle).
@@ -103,6 +106,8 @@ are superseded by `bin/mf`** — `deploy-files.mjs`, `deploy-section.mjs`, `depl
 
 ## Gotchas that have cost time
 
+- `bin/mf pull` overwrites **committed local-ahead** files too (e.g. the three sandbox templates
+  above). After a pull, `git checkout --` whatever you did not mean to refresh, then commit.
 - Shopify JSON templates are **JSONC** — strip the leading `/* … */` before `json.load`.
 - `assets/styles.css.liquid` is the source; Shopify serves it as `styles.css`. A local `styles.css`
   is an artifact — it was deleted 2026-09-14, do not recreate it.
