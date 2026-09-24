@@ -137,12 +137,13 @@ Both are removed in v2. If the redesign were published today, both would go live
 
 ### 8 · Not in the spec?: `split-list` (**new section**, key `custom`), revised 24/09
 - **Purpose:** turn the custom-development offer into a lead route. It is the only section besides the CTA with its own button.
-- **Layout:** on desktop, two columns. On the left, a statement that stays in place while you scroll: eyebrow, H2, intro and a blue button. On the right, a ruled list of four capabilities, each with a blue arrow, an H3 name and a one-line description; a blue line runs across on hover. On mobile the columns stack. The background is warm light (`#fafaf8`), a contrast to the blue process band above.
+- **Layout (`layout: centered`, revised after review 24/09):** a narrow, centred composition (max 960px), so it doesn't repeat the full-width rhythm of the blue process band above. The head is centred: eyebrow, H2, intro. Below it, the four items sit in a 2 × 2 grid, each under a hairline with a small static blue square marker. The button is centred underneath. On mobile the grid collapses to one column. The background is warm light (`#fafaf8`).
+- **Items are deliberately not interactive:** no arrows and no hover states. António flagged that the first version's rows looked clickable. The button is the only action.
 - **Eyebrow:** Custom development · **H2:** Not in the spec? We engineer the solution.
 - **Intro:** When standard performance is not enough, the technical team works with you to develop a fabric around the specific requirements of your application.
 - **Button:** Tell us your requirement → `/pages/contact`
 - **Items (H3 · text):** Requirement analysis (understanding the application and its technical demands) · Material development (engineering the construction around the required performance) · Testing & validation (testing performance against the relevant requirements and standards) · Industrial production (scaling the validated solution for consistent supply).
-- `sections/split-list.liquid`: generic, with plain-text blocks and max 8 items. It's reusable for any "statement + list" pattern.
+- `sections/split-list.liquid`: generic, with plain-text blocks and max 8 items. It has two layouts: `centered` (used here) and `split` (heading left, list right).
 
 ### 9 · Credentials: `grade-cards` (existing, key `credentials`, reusing the old `capacity` styling)
 - **Eyebrow:** Credentials · **H2:** Made, certified and guaranteed in Portugal

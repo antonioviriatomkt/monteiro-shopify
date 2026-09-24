@@ -1,54 +1,77 @@
 {% comment %}
-  Split list — editorial two-column layout. Left: eyebrow, heading, intro, CTA (sticky on desktop).
-  Right: a ruled list of items (H3 name + one-line description).
+  Split list — a heading + intro + non-interactive list of items, with an optional CTA.
+  Layouts:
+    centered (default) — narrow, centred column; items in a 2-column grid with a small static marker; CTA below.
+    split              — heading/intro/CTA on the left (sticky), ruled list on the right.
+  Items are deliberately NOT styled as links (no arrows, no hover states) — they are descriptions.
   Built 2026-09-24 for /pages/performance-fabrics v2 ("Not in the spec? We engineer the solution.").
   Blocks: item { title, text }. Plain text only.
 {% endcomment %}
 
 {%- assign items = section.blocks | where: "type", "item" -%}
+{%- assign layout = section.settings.layout | default: 'centered' -%}
 <div class="section-split-list" data-section-type="split-list"
      style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
   {% style %}
-    #sl-{{ section.id }} .sl-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
-    #sl-{{ section.id }} .sl-head { position: sticky; top: 120px; }
     #sl-{{ section.id }} .sl-eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; color: {{ section.settings.accent }}; font-weight: 600; margin-bottom: 16px; }
-    #sl-{{ section.id }} .sl-title { font-size: 44px; font-weight: 300; line-height: 1.12; margin: 0; text-align: left; color: inherit; }
-    #sl-{{ section.id }} .sl-intro { margin-top: 22px; font-size: 18px; line-height: 1.6; opacity: 0.85; }
+    #sl-{{ section.id }} .sl-title { font-size: 42px; font-weight: 300; line-height: 1.15; margin: 0; color: inherit; }
+    #sl-{{ section.id }} .sl-intro { margin-top: 20px; font-size: 18px; line-height: 1.6; opacity: 0.85; }
     #sl-{{ section.id }} .sl-intro p { margin: 0 0 12px; }
-    #sl-{{ section.id }} .sl-cta { display: inline-block; margin-top: 28px; padding: 15px 30px; background: {{ section.settings.accent }}; color: #fff; text-decoration: none; letter-spacing: 0.03em; transition: opacity .2s; }
+    #sl-{{ section.id }} .sl-list { list-style: none; margin: 0; padding: 0; }
+    #sl-{{ section.id }} .sl-name { font-size: 21px; font-weight: 400; line-height: 1.3; margin: 0 0 8px; text-align: left; color: inherit; }
+    #sl-{{ section.id }} .sl-text { margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.8; }
+    #sl-{{ section.id }} .sl-cta { display: inline-block; padding: 15px 30px; background: {{ section.settings.accent }}; color: #fff; text-decoration: none; letter-spacing: 0.03em; transition: opacity .2s; }
     #sl-{{ section.id }} .sl-cta:hover { opacity: 0.85; }
-    #sl-{{ section.id }} .sl-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid {{ section.settings.line_color }}; }
-    #sl-{{ section.id }} .sl-item { display: grid; grid-template-columns: 2fr 3fr; gap: 32px; padding: 34px 0; border-bottom: 1px solid {{ section.settings.line_color }}; position: relative; }
-    #sl-{{ section.id }} .sl-item::before { content: ""; position: absolute; left: 0; top: -1px; width: 0; height: 2px; background: {{ section.settings.accent }}; transition: width .4s ease; }
-    #sl-{{ section.id }} .sl-item:hover::before { width: 100%; }
-    #sl-{{ section.id }} .sl-name { display: flex; gap: 12px; font-size: 24px; font-weight: 400; line-height: 1.25; margin: 0; text-align: left; color: inherit; }
-    #sl-{{ section.id }} .sl-text { margin: 0; font-size: 16px; line-height: 1.6; opacity: 0.85; align-self: center; }
-    #sl-{{ section.id }} .sl-arrow { color: {{ section.settings.accent }}; flex: none; }
-    @media (max-width: 1000px) {
-      #sl-{{ section.id }} .sl-grid { grid-template-columns: 1fr; gap: 40px; }
-      #sl-{{ section.id }} .sl-head { position: static; }
-      #sl-{{ section.id }} .sl-title { font-size: 34px; }
-      #sl-{{ section.id }} .sl-item { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
-      #sl-{{ section.id }} .sl-name { font-size: 21px; }
+
+    /* centered */
+    #sl-{{ section.id }}.sl--centered .sl-inner { max-width: 960px; margin: 0 auto; }
+    #sl-{{ section.id }}.sl--centered .sl-head { max-width: 680px; margin: 0 auto 56px; text-align: center; }
+    #sl-{{ section.id }}.sl--centered .sl-title { text-align: center; }
+    #sl-{{ section.id }}.sl--centered .sl-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 64px; }
+    #sl-{{ section.id }}.sl--centered .sl-item { padding: 28px 0 28px 26px; border-top: 1px solid {{ section.settings.line_color }}; position: relative; }
+    #sl-{{ section.id }}.sl--centered .sl-item::before { content: ""; position: absolute; left: 0; top: 38px; width: 8px; height: 8px; background: {{ section.settings.accent }}; }
+    #sl-{{ section.id }}.sl--centered .sl-foot { text-align: center; margin-top: 48px; }
+
+    /* split */
+    #sl-{{ section.id }}.sl--split .sl-inner { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
+    #sl-{{ section.id }}.sl--split .sl-head { position: sticky; top: 120px; }
+    #sl-{{ section.id }}.sl--split .sl-title { text-align: left; }
+    #sl-{{ section.id }}.sl--split .sl-list { border-top: 1px solid {{ section.settings.line_color }}; }
+    #sl-{{ section.id }}.sl--split .sl-item { padding: 28px 0; border-bottom: 1px solid {{ section.settings.line_color }}; }
+    #sl-{{ section.id }}.sl--split .sl-foot { margin-top: 28px; }
+
+    @media (max-width: 900px) {
+      #sl-{{ section.id }} .sl-title { font-size: 32px; }
+      #sl-{{ section.id }}.sl--centered .sl-list { grid-template-columns: 1fr; }
+      #sl-{{ section.id }}.sl--centered .sl-head { margin-bottom: 36px; }
+      #sl-{{ section.id }}.sl--split .sl-inner { grid-template-columns: 1fr; gap: 36px; }
+      #sl-{{ section.id }}.sl--split .sl-head { position: static; }
     }
   {% endstyle %}
 
-  <div id="sl-{{ section.id }}" class="wide-container half-gutter section-spacing">
-    <div class="sl-grid">
+  <div id="sl-{{ section.id }}" class="sl--{{ layout }} wide-container half-gutter section-spacing">
+    <div class="sl-inner">
       <div class="sl-head" data-cc-animate>
         {% if section.settings.eyebrow != blank %}<div class="sl-eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
         {% if section.settings.title != blank %}<h2 class="sl-title">{{ section.settings.title | escape }}</h2>{% endif %}
         {% if section.settings.intro != blank %}<div class="sl-intro">{{ section.settings.intro }}</div>{% endif %}
-        {% if section.settings.cta_label != blank and section.settings.cta_link != blank %}<a class="sl-cta" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a>{% endif %}
+        {% if layout == 'split' and section.settings.cta_label != blank and section.settings.cta_link != blank %}
+          <div class="sl-foot"><a class="sl-cta" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a></div>
+        {% endif %}
       </div>
-      <ol class="sl-list">
-        {% for block in items %}
-          <li class="sl-item" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.1 | append: 's' }}">
-            {% if block.settings.title != blank %}<h3 class="sl-name"><span class="sl-arrow" aria-hidden="true">→</span>{{ block.settings.title | escape }}</h3>{% endif %}
-            {% if block.settings.text != blank %}<p class="sl-text">{{ block.settings.text | escape }}</p>{% endif %}
-          </li>
-        {% endfor %}
-      </ol>
+      <div>
+        <ul class="sl-list">
+          {% for block in items %}
+            <li class="sl-item" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index0 | times: 0.08 | append: 's' }}">
+              {% if block.settings.title != blank %}<h3 class="sl-name">{{ block.settings.title | escape }}</h3>{% endif %}
+              {% if block.settings.text != blank %}<p class="sl-text">{{ block.settings.text | escape }}</p>{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% if layout == 'centered' and section.settings.cta_label != blank and section.settings.cta_link != blank %}
+          <div class="sl-foot" data-cc-animate><a class="sl-cta" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label | escape }}</a></div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
@@ -59,6 +82,10 @@
     "class": "section-split-list-wrap",
     "max_blocks": 8,
     "settings": [
+      { "type": "select", "id": "layout", "label": "Layout", "default": "centered", "options": [
+        { "value": "centered", "label": "Centred, two-column list" },
+        { "value": "split", "label": "Heading left, list right" }
+      ] },
       { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
       { "type": "text", "id": "title", "label": "Heading", "default": "Heading" },
       { "type": "richtext", "id": "intro", "label": "Intro text" },

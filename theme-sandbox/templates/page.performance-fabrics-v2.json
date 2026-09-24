@@ -475,6 +475,7 @@
         "i4"
       ],
       "settings": {
+        "layout": "centered",
         "eyebrow": "Custom development",
         "title": "Not in the spec? We engineer the solution.",
         "intro": "<p>When standard performance is not enough, the technical team works with you to develop a fabric around the specific requirements of your application.</p>",
