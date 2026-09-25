@@ -1,0 +1,82 @@
+{% comment %}
+  Grade comparison table — one column per grade, one block per row. Replaces the
+  Custom Liquid/HTML table on page.chance-collection so every string lives in a text
+  setting and is exposed to translationsRegister. Markup and CSS mirror the original
+  .c2-compare block exactly. Cells are plain text (| escape); tick "highlight" to render
+  a cell in the accent style (was td.c2-y).
+{% endcomment %}
+
+<div class="{% unless section.settings.no_margins %}section-spacing container{% endunless %}" data-section-type="grade-compare" data-cc-animate>
+  <div class="c2-compare"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style>
+    {%- if section.settings.title != blank -%}<h2>{{ section.settings.title | escape }}</h2>{%- endif -%}
+    {%- if section.settings.subheading != blank -%}<p class="c2-sub">{{ section.settings.subheading | escape }}</p>{%- endif -%}
+    <div class="c2-wrap"><table><thead><tr><th>&nbsp;</th>
+      {%- for i in (1..6) -%}
+        {%- assign col_key = 'col_' | append: i -%}
+        {%- if section.settings[col_key] != blank -%}<th>{{ section.settings[col_key] | escape }}</th>{%- endif -%}
+      {%- endfor -%}
+    </tr></thead><tbody>
+      {%- for block in section.blocks -%}
+        <tr {{ block.shopify_attributes }}><th>{{ block.settings.label | escape }}</th>
+          {%- for i in (1..6) -%}
+            {%- assign col_key = 'col_' | append: i -%}
+            {%- if section.settings[col_key] != blank -%}
+              {%- assign cell_key = 'c' | append: i -%}
+              {%- assign hl_key = 'c' | append: i | append: '_hl' -%}
+              <td{% if block.settings[hl_key] %} class="c2-y"{% endif %}>{{ block.settings[cell_key] | default: '—' | escape }}</td>
+            {%- endif -%}
+          {%- endfor -%}
+        </tr>
+      {%- endfor -%}
+    </tbody></table></div>
+    {%- if section.settings.footnote != blank -%}<p class="c2-foot">{{ section.settings.footnote | escape }}</p>{%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Grade comparison table",
+    "class": "section--custom-html",
+    "max_blocks": 8,
+    "settings": [
+      { "type": "text", "id": "title", "label": "Heading", "default": "Compare the grades" },
+      { "type": "text", "id": "subheading", "label": "Subheading" },
+      { "type": "header", "content": "Column headings (grades)" },
+      { "type": "text", "id": "col_1", "label": "Column 1" },
+      { "type": "text", "id": "col_2", "label": "Column 2" },
+      { "type": "text", "id": "col_3", "label": "Column 3" },
+      { "type": "text", "id": "col_4", "label": "Column 4" },
+      { "type": "text", "id": "col_5", "label": "Column 5" },
+      { "type": "text", "id": "col_6", "label": "Column 6" },
+      { "type": "text", "id": "footnote", "label": "Footnote" },
+      { "type": "checkbox", "id": "no_margins", "label": "No section spacing", "default": false }
+    ],
+    "blocks": [
+      {
+        "type": "row",
+        "name": "Row",
+        "settings": [
+          { "type": "text", "id": "label", "label": "Row label" },
+          { "type": "text", "id": "c1", "label": "Column 1" },
+          { "type": "checkbox", "id": "c1_hl", "label": "Highlight column 1", "default": false },
+          { "type": "text", "id": "c2", "label": "Column 2" },
+          { "type": "checkbox", "id": "c2_hl", "label": "Highlight column 2", "default": false },
+          { "type": "text", "id": "c3", "label": "Column 3" },
+          { "type": "checkbox", "id": "c3_hl", "label": "Highlight column 3", "default": false },
+          { "type": "text", "id": "c4", "label": "Column 4" },
+          { "type": "checkbox", "id": "c4_hl", "label": "Highlight column 4", "default": false },
+          { "type": "text", "id": "c5", "label": "Column 5" },
+          { "type": "checkbox", "id": "c5_hl", "label": "Highlight column 5", "default": false },
+          { "type": "text", "id": "c6", "label": "Column 6" },
+          { "type": "checkbox", "id": "c6_hl", "label": "Highlight column 6", "default": false }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Grade comparison table",
+        "blocks": [ { "type": "row" }, { "type": "row" } ]
+      }
+    ]
+  }
+{% endschema %}

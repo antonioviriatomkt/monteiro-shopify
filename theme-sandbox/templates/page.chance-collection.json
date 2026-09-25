@@ -208,10 +208,117 @@
       }
     },
     "compare": {
-      "type": "custom-liquid",
+      "type": "grade-compare",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "label": "Best for",
+            "c1": "Broad contract use",
+            "c1_hl": false,
+            "c2": "Healthcare",
+            "c2_hl": false,
+            "c3": "Outdoor & marine",
+            "c3_hl": false,
+            "c4": "Sustainable projects",
+            "c4_hl": false,
+            "c5": "Stadiums & venues",
+            "c5_hl": false,
+            "c6": "Hospitality",
+            "c6_hl": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "label": "Signature",
+            "c1": "The original engraving",
+            "c1_hl": false,
+            "c2": "Bi-elastic; soft touch",
+            "c2_hl": false,
+            "c3": "Weather & mould resistance",
+            "c3_hl": false,
+            "c4": "65% biobased (chestnut)",
+            "c4_hl": false,
+            "c5": "Top fire spec",
+            "c5_hl": false,
+            "c6": "Crib 5 fire",
+            "c6_hl": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "label": "Top fire",
+            "c1": "M2 + broad list",
+            "c1_hl": false,
+            "c2": "EN 1021 · IMO · TB117",
+            "c2_hl": false,
+            "c3": "IMO · TB117",
+            "c3_hl": false,
+            "c4": "Crib 5 · M2",
+            "c4_hl": false,
+            "c5": "Crib 7 · B1 · M1",
+            "c5_hl": false,
+            "c6": "Crib 5 (BS 5852)",
+            "c6_hl": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "label": "Antimicrobial",
+            "c1": "Yes",
+            "c1_hl": true,
+            "c2": "Yes + antiviral",
+            "c2_hl": true,
+            "c3": "Yes",
+            "c3_hl": true,
+            "c4": "—",
+            "c4_hl": false,
+            "c5": "Yes",
+            "c5_hl": true,
+            "c6": "Yes",
+            "c6_hl": true
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "label": "Biobased",
+            "c1": "—",
+            "c1_hl": false,
+            "c2": "—",
+            "c2_hl": false,
+            "c3": "—",
+            "c3_hl": false,
+            "c4": "65%",
+            "c4_hl": true,
+            "c5": "—",
+            "c5_hl": false,
+            "c6": "—",
+            "c6_hl": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
       "settings": {
-        "no_margins": false,
-        "custom_liquid": "<div class=\"c2-compare\"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style><h2>Compare the six grades</h2><p class=\"c2-sub\">Same engraving, same &#8805;400,000 Martindale durability &mdash; choose by requirement.</p><div class=\"c2-wrap\"><table><thead><tr><th>&nbsp;</th><th>Classic</th><th>Mediflex</th><th>Outdoor</th><th>Bioblend</th><th>Crib 7 / B1</th><th>Crib 5</th></tr></thead><tbody><tr><th>Best for</th><td>Broad contract use</td><td>Healthcare</td><td>Outdoor &amp; marine</td><td>Sustainable projects</td><td>Stadiums &amp; venues</td><td>Hospitality</td></tr><tr><th>Signature</th><td>The original engraving</td><td>Bi-elastic; soft touch</td><td>Weather &amp; mould resistance</td><td>65% biobased (chestnut)</td><td>Top fire spec</td><td>Crib 5 fire</td></tr><tr><th>Top fire</th><td>M2 + broad list</td><td>EN 1021 &middot; IMO &middot; TB117</td><td>IMO &middot; TB117</td><td>Crib 5 &middot; M2</td><td>Crib 7 &middot; B1 &middot; M1</td><td>Crib 5 (BS 5852)</td></tr><tr><th>Antimicrobial</th><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes + antiviral</td><td class=\"c2-y\">Yes</td><td>&mdash;</td><td class=\"c2-y\">Yes</td><td class=\"c2-y\">Yes</td></tr><tr><th>Biobased</th><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td class=\"c2-y\">65%</td><td>&mdash;</td><td>&mdash;</td></tr></tbody></table></div><p class=\"c2-foot\">All grades: the iconic CHANCE engraving &middot; the same 235 colours &middot; &#8805;400,000 Martindale &middot; 100% vegan (VVV+) &middot; REACH &middot; 10-year warranty.</p></div>"
+        "title": "Compare the six grades",
+        "subheading": "Same engraving, same ≥400,000 Martindale durability — choose by requirement.",
+        "col_1": "Classic",
+        "col_2": "Mediflex",
+        "col_3": "Outdoor",
+        "col_4": "Bioblend",
+        "col_5": "Crib 7 / B1",
+        "col_6": "Crib 5",
+        "footnote": "All grades: the iconic CHANCE engraving · the same 235 colours · ≥400,000 Martindale · 100% vegan (VVV+) · REACH · 10-year warranty.",
+        "no_margins": false
       }
     },
     "colour": {
