@@ -485,13 +485,13 @@ The sitewide `Organization` (`/#organization`) and `WebSite` (`/#website`) come 
 | Node | Emitted by | Today (v1) | v2 |
 |---|---|---|---|
 | Organization, WebSite | `snippets/structured-data-organization.liquid` (layout) | ✅ | unchanged |
-| BreadcrumbList | `faq-schema` | ✅ (no `@id`, no `item` on the current crumb) | + `@id`, + `item` |
-| WebPage | `faq-schema` (**new option**) | ❌ | ✅ |
-| ItemList (sectors) | `grade-cards` (**new option**) | ❌ | ✅ |
-| FAQPage | `faq-schema` | ✅ (6 Qs, including the PFAS placeholder) | ✅ 10 Qs, + `@id`, `isPartOf` |
+| BreadcrumbList | `faq-schema` | ✅ (no `@id`, no `item` on the current crumb) | + `@id`, + `item` — **implemented 2026-09-25 (`7ed4993`)** |
+| WebPage | `faq-schema` (**new option** `page_node`) | ❌ | ✅ **implemented 2026-09-25 (`7ed4993`)** |
+| ItemList (sectors) | `grade-cards` (**new option** `emit_itemlist`) | ❌ | ✅ **implemented 2026-09-25 (`7ed4993`)** |
+| FAQPage | `faq-schema` | ✅ (6 Qs, including the PFAS placeholder) | ✅ 10 Qs, + `@id`, `isPartOf` — **implemented 2026-09-25 (`7ed4993`)** |
 | ItemList (Technical Hub) | `tech-resources` | ✅ | unchanged |
 
-If the two code changes in (g) are **not** made, the v2 JSON still ships a correct BreadcrumbList, FAQPage and Tech Hub ItemList. Only the WebPage and sector ItemList nodes are lost.
+**Status 2026-09-25:** both code changes in (g) are live on the sandbox (`7ed4993`); the rendered preview matches this section node for node, except that each sector ListItem's `description` is the full card text (applications + "Engineered for" + "Features"), not just the first sentence shown above. Before that, if the two code changes in (g) were **not** made, the v2 JSON still ships a correct BreadcrumbList, FAQPage and Tech Hub ItemList. Only the WebPage and sector ItemList nodes are lost.
 
 ---
 
@@ -555,7 +555,7 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 
 **2. Page metadata (Admin, via the MCP connector, not the theme):** the SEO title and meta description in (c) are page fields, so they change **on live immediately**, independent of the redesign launch. Both suit the live page too, so they can go first.
 
-**3. Optional code change A: `sections/faq-schema.liquid`.** It is additive and backward-compatible for the 19 sector pages:
+**3. Code change A: `sections/faq-schema.liquid`. ✅ Implemented on the sandbox 2026-09-25, commit `7ed4993`** (also: optional `webpage_headline`; answer paragraphs are joined with a space in the JSON-LD). Verified unchanged apart from the intended `@id`/`isPartOf`/`publisher`/`inLanguage`/breadcrumb `item` additions on `/collections/healthcare` and `/pages/chance-collection`. It is additive and backward-compatible for the 19 sector pages:
 - new select `page_node`: `none | CollectionPage | WebPage`, keeping the current `emit_collectionpage` checkbox working (default `CollectionPage`);
 - new `@id`s: `{{ canonical_url }}#webpage`, `#breadcrumb`, `#faq`;
 - `isPartOf` → `{"@id": shop.url/#website}` instead of today's literal inline `WebSite` (which duplicates the global node on 19 pages), plus `publisher` → `/#organization`;
@@ -563,7 +563,7 @@ If the two code changes in (g) are **not** made, the v2 JSON still ships a corre
 - the breadcrumb's last item gains `item`;
 - new text settings `webpage_main_entity` (e.g. `#sectors`).
 
-**4. Optional code change B: `sections/grade-cards.liquid`.** Mirror the `tech-resources` pattern:
+**4. Code change B: `sections/grade-cards.liquid`. ✅ Implemented on the sandbox 2026-09-25, commit `7ed4993`** — `/pages/chance-collection` (emit_itemlist off) emits no new node. Mirror the `tech-resources` pattern:
 - `emit_itemlist` checkbox (default **false**, so the grade pages don't change) + `list_name` + `list_id` (→ `#sectors`);
 - per block, `url` = `shop.url` + the cta_link path, emitted only when the new block checkbox `schema_link` is on, so "Safety & protection" (link = contact) is listed **without** a URL;
 - `description` = block `text`.
