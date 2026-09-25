@@ -1,12 +1,14 @@
 ---
 type: proposal
 client: Monteiro Fabrics
-status: draft
+status: done
 created: 2026-09-24
-note: "Proposal only — nothing pushed to sandbox or live. Review by António."
+note: "Approved by António 2026-09-25 and applied to the sandbox template page.performance-fabrics.json. Goes live with the redesign launch."
 ---
 
 # `/pages/performance-fabrics` — v2 proposal
+
+> ✅ **Approved 2026-09-25 and applied** to `theme-sandbox/templates/page.performance-fabrics.json`. The temporary preview template `page.performance-fabrics-v2.json` has been removed from the sandbox. The "draft" template below is kept as the approved version. **Still open (not done here):** SEO title and meta description (Admin, change live immediately), the optional `faq-schema`/`grade-cards` schema changes in (g), translations (PT/FR/DE/ES/IT), grade links at launch, and the Martindale footnote in the concept.
 
 **Scope.** This is a new version of the Performance Fabrics page for the sandbox theme `CLAUDE_MF_JUNE_PROPOSTA` (`195386114425`).
 **Source of truth.** The vault concept note `Clients/Monteiro-Fabrics/projects/performance-fabrics-concept.md`, rewritten 24/09/2026 from catalogue *PERFORMANCE FABRICS SET2026 v2*. Every claim below comes from that note. Anything that doesn't is listed in (f).
