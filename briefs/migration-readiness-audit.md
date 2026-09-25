@@ -167,7 +167,7 @@ Top pages by clicks/impressions — most persist unchanged through the swap; the
 **T-1 — pre-flight (do NOT publish until these are done):**
 1. Final sandbox pull + diff (drift check).
 2. Verify `mf_june_menu` exists, is populated, and has no links to retiring URLs.
-3. Fix on-page blockers §3: hero CTA, strip `[TO CONFIRM]`, PFAS copy, verify press/tailormade links.
+3. Fix on-page blockers §3: hero CTA, strip `[TO CONFIRM]`, PFAS copy (✅ gone from `/pages/performance-fabrics` since v2, 2026-09-25 — check other templates), verify press/tailormade links.
 4. Repoint all internal links in §2.3.
 5. Resolve Sectors hub URL + assign the correct template with the full tile set (§2.1).
 6. Resolve the CHANCE 2.0 product-URL decision (§2.2) and re-scope its redirects.
@@ -187,6 +187,7 @@ Top pages by clicks/impressions — most persist unchanged through the swap; the
 16. Resubmit `/sitemap.xml` in GSC; request indexing on changed hub/About-Us URLs.
 17. Validate analytics realtime (GTM/GA4/Ads/Clarity).
 18. Spot-check `/pt`, `/fr`, `/de`, `/es` render + hreflang.
+18a. **Performance Fabrics — link the grade names** *(added 2026-09-25)*. As soon as the grade collections are published (`/collections/chance-crib-5`, `chance-crib-7-b1`, `chance-mediflex`, `chance-bioblend`; 404 before launch because the products are UNLISTED), add links from `/pages/performance-fabrics` (the certs table intro/footnote and a line near the FAQ; the `spec-table` values and FAQ answers are plain text or feed the JSON-LD, so they can't hold links) and consider a grade `ItemList`. Also Flora → `/products/flora-collection`. Check that all return 200. Spec: `briefs/performance-fabrics-page-v2.md` (e) and (f) item 9.
 
 **T+1 to T+28 — monitor:**
 19. GSC: watch Coverage for new 404s/redirect errors; watch query→page to confirm each cluster consolidated (Medical vs Healthcare, pillar vs collection, Sectors hub). Track the Mediflex/CHANCE URLs for transition dips. Keep redirects ≥ 12 months.
