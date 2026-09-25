@@ -2,8 +2,9 @@
   FAQ + structured data — an accessible <details> FAQ that doubles as
   machine-readable schema.org markup. The visible Q&A and the JSON-LD are
   generated from the SAME blocks, so they can never drift apart (a Google
-  requirement for FAQ markup). Optionally also emits BreadcrumbList and
-  CollectionPage schema, turning a sector / collection page into a fully
+  requirement for FAQ markup). Optionally also emits BreadcrumbList and a
+  CollectionPage or WebPage node (referencing the sitewide #website / #organization
+  nodes by @id), turning a sector / collection page into a fully
   AI- and search-extractable answer source. Reusable on any page.
 {% endcomment %}
 
@@ -53,6 +54,30 @@
   </div>
 </div>
 
+{%- liquid
+  assign fq_page_node = section.settings.page_node | default: 'CollectionPage'
+  assign fq_node_type = ''
+  if fq_page_node == 'WebPage'
+    assign fq_node_type = 'WebPage'
+  elsif fq_page_node == 'CollectionPage' and section.settings.emit_collectionpage and section.settings.cp_name != blank
+    assign fq_node_type = 'CollectionPage'
+  endif
+  assign fq_url = section.settings.cp_url | default: canonical_url
+  assign fq_webpage_id = canonical_url | append: '#webpage'
+  assign fq_breadcrumb_id = canonical_url | append: '#breadcrumb'
+  assign fq_faq_id = canonical_url | append: '#faq'
+  assign fq_site_id = shop.url | append: '/#website'
+  assign fq_org_id = shop.url | append: '/#organization'
+  assign fq_main_entity_id = ''
+  assign fq_main_entity = section.settings.webpage_main_entity | strip
+  if fq_main_entity != blank
+    if fq_main_entity contains '://'
+      assign fq_main_entity_id = fq_main_entity
+    else
+      assign fq_main_entity_id = fq_main_entity | split: '#' | last | prepend: '#' | prepend: canonical_url
+    endif
+  endif
+-%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,29 +85,48 @@
     {%- if section.settings.emit_breadcrumb -%}
     {
       "@type": "BreadcrumbList",
+      "@id": {{ fq_breadcrumb_id | json }},
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": {{ section.settings.crumb_home | default: "Home" | json }}, "item": {{ section.settings.crumb_home_url | default: "https://www.monteirofabrics.com/" | json }} },
-        { "@type": "ListItem", "position": 2, "name": {{ section.settings.crumb_current | json }} }
+        { "@type": "ListItem", "position": 2, "name": {{ section.settings.crumb_current | json }}, "item": {{ canonical_url | json }} }
       ]
     },
     {%- endif -%}
-    {%- if section.settings.emit_collectionpage and section.settings.cp_name != blank -%}
+    {%- if fq_node_type != blank -%}
     {
-      "@type": "CollectionPage",
-      "name": {{ section.settings.cp_name | json }},
-      "description": {{ section.settings.cp_description | strip_newlines | json }},
-      "url": {{ section.settings.cp_url | json }},
-      "isPartOf": { "@type": "WebSite", "name": "Monteiro Fabrics", "url": "https://www.monteirofabrics.com" }
+      "@type": {{ fq_node_type | json }},
+      "@id": {{ fq_webpage_id | json }},
+      "url": {{ fq_url | json }},
+      "name": {{ section.settings.cp_name | default: page_title | json }},
+      {%- if section.settings.webpage_headline != blank -%}
+      "headline": {{ section.settings.webpage_headline | json }},
+      {%- endif -%}
+      {%- if section.settings.cp_description != blank -%}
+      "description": {{ section.settings.cp_description | strip_html | strip_newlines | json }},
+      {%- endif -%}
+      "inLanguage": {{ request.locale.iso_code | json }},
+      "isPartOf": { "@id": {{ fq_site_id | json }} },
+      "publisher": { "@id": {{ fq_org_id | json }} }
+      {%- if section.settings.emit_breadcrumb -%},
+      "breadcrumb": { "@id": {{ fq_breadcrumb_id | json }} }
+      {%- endif -%}
+      {%- if fq_main_entity_id != blank -%},
+      "mainEntity": { "@id": {{ fq_main_entity_id | json }} }
+      {%- endif %}
     },
     {%- endif -%}
     {
       "@type": "FAQPage",
+      "@id": {{ fq_faq_id | json }},
+      {%- if fq_node_type != blank -%}
+      "isPartOf": { "@id": {{ fq_webpage_id | json }} },
+      {%- endif -%}
       "mainEntity": [
         {%- for block in faqs -%}
         {
           "@type": "Question",
           "name": {{ block.settings.question | json }},
-          "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | strip_newlines | json }} }
+          "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | replace: '</p>', '</p> ' | replace: '<br>', ' ' | strip_html | strip_newlines | strip | json }} }
         }{%- unless forloop.last -%},{%- endunless -%}
         {%- endfor -%}
       ]
@@ -110,10 +154,22 @@
       { "type": "text", "id": "crumb_home", "label": "Breadcrumb — home label", "default": "Home" },
       { "type": "url", "id": "crumb_home_url", "label": "Breadcrumb — home URL" },
       { "type": "text", "id": "crumb_current", "label": "Breadcrumb — current page label", "default": "Healthcare Upholstery Fabrics" },
+      {
+        "type": "select", "id": "page_node", "label": "Page node type",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "CollectionPage", "label": "CollectionPage (lists products)" },
+          { "value": "WebPage", "label": "WebPage" }
+        ],
+        "default": "CollectionPage",
+        "info": "CollectionPage is emitted only while 'Emit CollectionPage schema' is ticked and a page name is set. WebPage is always emitted."
+      },
       { "type": "checkbox", "id": "emit_collectionpage", "label": "Emit CollectionPage schema", "default": true },
       { "type": "text", "id": "cp_name", "label": "Page name", "default": "Healthcare Upholstery Fabrics" },
+      { "type": "text", "id": "webpage_headline", "label": "Page headline (optional)" },
       { "type": "textarea", "id": "cp_description", "label": "Page description (for schema)" },
-      { "type": "url", "id": "cp_url", "label": "Canonical page URL" }
+      { "type": "url", "id": "cp_url", "label": "Canonical page URL", "info": "Leave blank to use this page's own URL in each language." },
+      { "type": "text", "id": "webpage_main_entity", "label": "Main entity @id (optional)", "info": "e.g. #sectors, resolved against this page's URL. Must match an @id emitted on the page (e.g. Grade cards list ID)." }
     ],
     "blocks": [
       {

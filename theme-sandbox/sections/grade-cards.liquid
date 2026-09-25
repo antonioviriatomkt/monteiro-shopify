@@ -54,6 +54,43 @@
   </div>
 </div>
 
+{%- if section.settings.emit_itemlist -%}
+  {%- liquid
+    assign gc_pos = 0
+    assign gc_list_id = section.settings.list_id | strip | split: '#' | last
+  -%}
+  {%- capture gc_items -%}
+    {%- for block in section.blocks -%}
+      {%- if block.settings.title == blank -%}{%- continue -%}{%- endif -%}
+      {%- liquid
+        assign gc_pos = gc_pos | plus: 1
+        assign gc_u = ''
+        if block.settings.schema_link and block.settings.cta_link != blank
+          assign gc_link = block.settings.cta_link | strip
+          assign gc_first = gc_link | slice: 0, 2
+          assign gc_char = gc_link | slice: 0
+          if gc_first == '//'
+            assign gc_u = gc_link | prepend: 'https:'
+          elsif gc_link contains '://'
+            assign gc_u = gc_link
+          elsif gc_char == '/'
+            assign gc_u = shop.url | append: gc_link
+          endif
+        endif
+      -%}
+      {%- if gc_pos > 1 -%},{%- endif -%}
+      {"@type":"ListItem","position":{{ gc_pos }},"name":{{ block.settings.title | json }}
+        {%- if block.settings.text != blank -%},"description":{{ block.settings.text | strip_html | strip_newlines | strip | json }}{%- endif -%}
+        {%- if gc_u != blank -%},"url":{{ gc_u | json }}{%- endif -%}}
+    {%- endfor -%}
+  {%- endcapture -%}
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ItemList"
+      {%- if gc_list_id != blank -%},"@id":{{ canonical_url | append: '#' | append: gc_list_id | json }}{%- endif -%}
+      ,"name":{{ section.settings.list_name | default: section.settings.title | json }},"numberOfItems":{{ gc_pos }},"itemListElement":[{{ gc_items }}]}
+  </script>
+{%- endif -%}
+
 {% schema %}
   {
     "name": "Grade cards",
@@ -67,7 +104,11 @@
       { "type": "color", "id": "bg_color", "label": "Background colour", "default": "#FAFAF8" },
       { "type": "color", "id": "text_color", "label": "Text colour", "default": "#111111" },
       { "type": "color", "id": "card_bg", "label": "Card background", "default": "#FFFFFF" },
-      { "type": "color", "id": "line_color", "label": "Card border", "default": "#E6E6E2" }
+      { "type": "color", "id": "line_color", "label": "Card border", "default": "#E6E6E2" },
+      { "type": "header", "content": "Structured data (SEO / AI)" },
+      { "type": "checkbox", "id": "emit_itemlist", "label": "Emit ItemList schema", "default": false },
+      { "type": "text", "id": "list_name", "label": "List name (schema)", "info": "Defaults to the heading." },
+      { "type": "text", "id": "list_id", "label": "List ID", "info": "e.g. sectors → @id <page URL>#sectors. Reference it from FAQ + schema 'Main entity @id'." }
     ],
     "blocks": [
       {
@@ -80,7 +121,8 @@
           { "type": "textarea", "id": "text", "label": "One-line description" },
           { "type": "color", "id": "accent", "label": "Accent colour" },
           { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Explore" },
-          { "type": "url", "id": "cta_link", "label": "CTA link" }
+          { "type": "url", "id": "cta_link", "label": "CTA link" },
+          { "type": "checkbox", "id": "schema_link", "label": "Include link in ItemList schema", "default": true, "info": "Untick when the CTA goes to a generic page (e.g. contact)." }
         ]
       }
     ],

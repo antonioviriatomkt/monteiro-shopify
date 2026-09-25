@@ -219,7 +219,8 @@
             "text": "Protective equipment and safety applications. Engineered for: Mechanical resistance · durability · regulatory compliance · application-specific requirements. Features: long lasting.",
             "accent": "#2f519b",
             "cta_label": "Talk to the technical team",
-            "cta_link": "shopify://pages/contact"
+            "cta_link": "shopify://pages/contact",
+            "schema_link": false
           }
         }
       },
@@ -241,7 +242,10 @@
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "card_bg": "#fafaf8",
-        "line_color": "#e6e6e2"
+        "line_color": "#e6e6e2",
+        "emit_itemlist": true,
+        "list_name": "Monteiro Performance Fabrics — sectors",
+        "list_id": "sectors"
       }
     },
     "certs": {
@@ -764,9 +768,12 @@
         "crumb_home_url": "https://www.monteirofabrics.com/",
         "crumb_current": "Performance Fabrics",
         "emit_collectionpage": false,
-        "cp_name": "",
-        "cp_description": "",
-        "cp_url": ""
+        "cp_name": "Monteiro Performance Fabrics",
+        "cp_description": "Coated performance fabrics for healthcare, medical, transport, contract, fitness and arenas. Crib 5, Crib 7 and B1 grades. Made in Portugal.",
+        "cp_url": "",
+        "page_node": "WebPage",
+        "webpage_headline": "Performance fabrics engineered for demanding environments",
+        "webpage_main_entity": "#sectors"
       }
     },
     "cta": {
