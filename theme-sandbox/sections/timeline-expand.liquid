@@ -1,0 +1,102 @@
+{%- comment -%}
+  Expanding-panel timeline. Desktop: all cards in one row, equal width; the hovered/focused card
+  grows (flex-grow) and the others shrink. Mobile (<768px): stacked bands, the tapped one grows.
+  Blocks keep the same setting ids as `gallery` (image/title/subheading) so translations carry over.
+{%- endcomment -%}
+<div id="section-id-{{ section.id }}" class="tlx {% if section.settings.alternate_bg_color %}use-alt-bg{% endif %}" data-cc-animate>
+  {% style %}
+    #section-id-{{ section.id }} .tlx__row { display:flex; gap:{{ section.settings.gap }}px; height:{{ section.settings.desktop_height }}px; }
+    #section-id-{{ section.id }} .tlx__card {
+      position:relative; flex:1 1 0; min-width:0; overflow:hidden; cursor:pointer; outline:none;
+      background:#e9e9e9; transition:flex-grow .6s cubic-bezier(.25,.8,.25,1);
+    }
+    #section-id-{{ section.id }} .tlx__img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+      transition:transform .8s cubic-bezier(.25,.8,.25,1); }
+    #section-id-{{ section.id }} .tlx__card::after { content:""; position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(0,0,0,.72) 0%, rgba(0,0,0,.15) 55%, rgba(0,0,0,.05) 100%); }
+    #section-id-{{ section.id }} .tlx__body { position:absolute; left:0; right:0; bottom:0; z-index:1; padding:24px 22px; color:#fff; text-align:left; }
+    #section-id-{{ section.id }} .tlx__year { margin:0; font-size:{{ section.settings.year_size }}px; line-height:1; color:#fff; text-align:left; font-weight:300; }
+    #section-id-{{ section.id }} .tlx__text { margin:12px 0 0; max-width:34em; font-size:15px; line-height:1.45; letter-spacing:.02em;
+      opacity:0; max-height:0; overflow:hidden; transform:translateY(8px); transition:opacity .3s ease, transform .3s ease; white-space:normal; }
+    #section-id-{{ section.id }} .tlx__card:hover .tlx__text, #section-id-{{ section.id }} .tlx__card:focus .tlx__text { max-height:12em; }
+
+    @media (min-width:768px) {
+      #section-id-{{ section.id }} .tlx__row:hover .tlx__card,
+      #section-id-{{ section.id }} .tlx__row:focus-within .tlx__card { flex-grow:.6; }
+      #section-id-{{ section.id }} .tlx__row .tlx__card:hover,
+      #section-id-{{ section.id }} .tlx__row .tlx__card:focus { flex-grow:{{ section.settings.expand_factor }}; }
+      #section-id-{{ section.id }} .tlx__card:hover .tlx__img,
+      #section-id-{{ section.id }} .tlx__card:focus .tlx__img { transform:scale(1.04); }
+      #section-id-{{ section.id }} .tlx__card:hover .tlx__text,
+      #section-id-{{ section.id }} .tlx__card:focus .tlx__text { opacity:1; transform:none; transition-delay:.25s; }
+      #section-id-{{ section.id }} .tlx__card:not(:hover):not(:focus) .tlx__year { font-size:{{ section.settings.year_size | times: 0.75 }}px; }
+      #section-id-{{ section.id }} .tlx__row:hover .tlx__card:not(:hover) .tlx__year,
+      #section-id-{{ section.id }} .tlx__row:focus-within .tlx__card:not(:focus):not(:hover) .tlx__year {
+        writing-mode:vertical-rl; transform:rotate(180deg); font-size:{{ section.settings.year_size | times: 0.5 }}px; }
+      #section-id-{{ section.id }} .tlx__row:hover .tlx__card:not(:hover) .tlx__body { padding:18px 0 18px 10px; }
+    }
+    @media (max-width:767px) {
+      #section-id-{{ section.id }} .tlx__row { flex-direction:column; height:auto; }
+      #section-id-{{ section.id }} .tlx__card { flex:none; height:84px; transition:height .5s cubic-bezier(.25,.8,.25,1); }
+      #section-id-{{ section.id }} .tlx__card:focus { height:320px; }
+      #section-id-{{ section.id }} .tlx__card:focus .tlx__text { opacity:1; transform:none; }
+      #section-id-{{ section.id }} .tlx__body { padding:18px 16px; }
+      #section-id-{{ section.id }} .tlx__year { font-size:{{ section.settings.year_size | times: 0.7 }}px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      #section-id-{{ section.id }} * { transition:none !important; }
+    }
+  {% endstyle %}
+
+  <div class="{% if section.settings.full_width %}wide-container half-gutter{% else %}container{% endif %} section-spacing">
+    {%- if section.settings.title != blank -%}
+      <div class="section-heading section-spacing section-spacing--top-only" data-cc-animate>
+        <h2 class="h2">{{ section.settings.title | escape }}</h2>
+      </div>
+    {%- endif -%}
+
+    <div class="tlx__row" role="list">
+      {%- for block in section.blocks -%}
+        <div class="tlx__card" role="listitem" tabindex="0" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 1400 | image_tag:
+                class: 'tlx__img', loading: 'lazy',
+                widths: '400, 700, 1000, 1400', sizes: '(min-width: 768px) 60vw, 100vw',
+                alt: block.settings.image.alt | default: block.settings.title }}
+          {%- endif -%}
+          <div class="tlx__body">
+            {%- if block.settings.title != blank -%}<h3 class="tlx__year">{{ block.settings.title | escape }}</h3>{%- endif -%}
+            {%- if block.settings.subheading != blank -%}<p class="tlx__text">{{ block.settings.subheading | escape }}</p>{%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Timeline (expanding)",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading" },
+    { "type": "range", "id": "desktop_height", "label": "Desktop height", "min": 300, "max": 800, "step": 20, "unit": "px", "default": 520 },
+    { "type": "range", "id": "expand_factor", "label": "Hovered card size (× others)", "min": 3, "max": 12, "step": 1, "default": 6 },
+    { "type": "range", "id": "gap", "label": "Gap", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 8 },
+    { "type": "range", "id": "year_size", "label": "Year size", "min": 24, "max": 72, "step": 2, "unit": "px", "default": 44 },
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "checkbox", "id": "alternate_bg_color", "label": "Alternate background", "default": false }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Milestone",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Year" },
+        { "type": "text", "id": "subheading", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Timeline (expanding)" } ]
+}
+{% endschema %}

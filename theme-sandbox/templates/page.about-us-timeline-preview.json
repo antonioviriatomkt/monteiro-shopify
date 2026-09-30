@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "anchor_history": {
+      "type": "anchor",
+      "settings": {
+        "anchor_id": "history"
+      }
+    },
+    "gallery_heritage": {
+      "type": "timeline-expand",
+      "settings": {
+        "title": "A lifetime company",
+        "desktop_height": 520,
+        "expand_factor": 6,
+        "gap": 8,
+        "year_size": 44,
+        "full_width": true,
+        "alternate_bg_color": false
+      },
+      "blocks": {
+        "g1917": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_1.jpg",
+            "title": "1917",
+            "subheading": "The Monteiro Ribas group is a family owned group founded in 1917"
+          }
+        },
+        "g1950": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/History1.jpg",
+            "title": "1950",
+            "subheading": "It started as a tannery which became a market leader in the 1950's."
+          }
+        },
+        "g1960": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_12.jpg",
+            "title": "1960",
+            "subheading": "In the 1960's the group started diversifying and expanding its range."
+          }
+        },
+        "g1970": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro_fabrics_13.jpg",
+            "title": "1970",
+            "subheading": "The production of PU coated fabrics began."
+          }
+        },
+        "g1998": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-5.jpg",
+            "title": "1998",
+            "subheading": "The coated-fabrics business unit of Monteiro Ribas achieves ISO 9001 certification."
+          }
+        },
+        "g2013": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LAB-FABRICS-1.jpg",
+            "title": "2013",
+            "subheading": "Our R&D department is created as an autonomous structure."
+          }
+        },
+        "g2019": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/green-plants-background.jpg",
+            "title": "2019",
+            "subheading": "We achieve environmental certification to ISO 14001:2015."
+          }
+        },
+        "g2023": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/monteiro-fabrics-portugal-factory4.jpg",
+            "title": "2023",
+            "subheading": "Monteiro Fabrics opens its office in Germany."
+          }
+        }
+      },
+      "block_order": [
+        "g1917",
+        "g1950",
+        "g1960",
+        "g1970",
+        "g1998",
+        "g2013",
+        "g2019",
+        "g2023"
+      ]
+    }
+  },
+  "order": [
+    "anchor_history",
+    "gallery_heritage"
+  ]
+}
