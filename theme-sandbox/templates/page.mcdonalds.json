@@ -33,6 +33,9 @@
         "text": "",
         "enlarge_text": true,
         "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
         "image_link": "",
         "overlay_position": "position--hcenter position--vcenter",
         "full_width": true,
@@ -253,6 +256,7 @@
         },
         "variant_picker_i4UUYA": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "variant_style": "underlined",
             "show_realtime_availability": true
@@ -276,7 +280,7 @@
         "buy_buttons_yxiMtx"
       ],
       "settings": {
-        "product": "chance-collection-vii",
+        "product": "chance-classic",
         "show_backorder_text": false,
         "slide_nav_style": "arrows",
         "media_crop": "center",
@@ -336,7 +340,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Restaurants fabrics",
-        "collection": "restaurants-fabrics",
+        "collection": "hospitality-fabrics",
         "layout": "rows",
         "show_vendor": false,
         "grid": 3,

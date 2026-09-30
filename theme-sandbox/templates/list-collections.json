@@ -173,7 +173,7 @@
             "title_width": 12,
             "heading_h1": false,
             "button_label": "View collection",
-            "link": "shopify://pages/siesta-patio-outdoor-upholstery",
+            "link": "shopify://pages/siesta-outdoor-upholstery",
             "text_alignment": "position--left position--bottom"
           }
         },
@@ -219,8 +219,8 @@
     },
     "cta_close": {
       "type": "rich-text",
-      "name": "Closing CTA",
       "custom_css": [],
+      "name": "Closing CTA",
       "settings": {
         "subheading": "Do you have a project?",
         "title": "Find your collection.",

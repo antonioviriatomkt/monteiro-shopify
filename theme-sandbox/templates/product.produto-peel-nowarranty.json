@@ -24,6 +24,9 @@
         "text": "<p>{{ product.metafields.custom.descri_o_da_cole_o | metafield_tag }}</p>",
         "enlarge_text": true,
         "button_label": "Download catalogue",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
         "image_link": "{{ product.metafields.custom.download_catalogue_url.value }}",
         "overlay_position": "position--hcenter position--vcenter",
         "full_width": true,
@@ -67,6 +70,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
             "show_tax_and_shipping": false
           }

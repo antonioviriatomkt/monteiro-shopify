@@ -20,10 +20,10 @@
         "video_shopify": "shopify://files/videos/V3 Patio & Siesta.mp4",
         "video_external": "https://www.youtube.com/watch?v=o_GUr0jtLd0",
         "subheading": "COLLECTIONs",
-        "title": "PATIO & SIESTA",
+        "title": "SIESTA",
         "title_size": 60,
         "title_width": 12,
-        "heading_h1": true,
+        "heading_h1": false,
         "text": "<p>Coated fabrics for outdoor upholstery</p>",
         "enlarge_text": false,
         "button_label": "",
@@ -39,12 +39,12 @@
     "a66c0bd4-4514-49a1-8069-49ef32fc6c6f": {
       "type": "rich-text",
       "settings": {
-        "subheading": "SIESTA & PATIO",
+        "subheading": "SIESTA",
         "title": "OUTDOOR SOLUTIONS",
         "title_size": 56,
         "title_width": 12,
         "heading_h1": false,
-        "text": "<p>Discover our exquisite range of coated fabrics, seamlessly blending indoor style with outdoor performance in stylish shades. Explore the versatile <strong>Patio collection</strong>, featuring heavy leather textures and bold, contrasting colors, alongside the gentle hues and textile textures of the <strong>Siesta collection</strong>.</p>",
+        "text": "<p>Discover our exquisite STRAW coated fabrics collection, seamlessly blending indoor style with outdoor performance in stylish shades. </p>",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -60,6 +60,7 @@
     },
     "575afe37-da34-4806-8703-c9cb32105543": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "PATIO COLLECTION",
@@ -159,6 +160,7 @@
         "image_aDdtTh",
         "image_MtrmEd"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "height_desktop": 720,
@@ -170,6 +172,51 @@
         "slide_navigation": "dots",
         "autoplay": true,
         "autoplay_speed": 3
+      }
+    },
+    "spec_icons_outdoor": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "o_easy": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Easy clean"
+          }
+        },
+        "o_water": {
+          "type": "icon",
+          "settings": {
+            "icon": "water-repellent",
+            "label": "Water repellent"
+          }
+        },
+        "o_light": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Light resistant"
+          }
+        }
+      },
+      "block_order": [
+        "o_easy",
+        "o_water",
+        "o_light"
+      ],
+      "disabled": true,
+      "name": "Fabric spec icons — outdoor",
+      "settings": {
+        "eyebrow": "Engineered for outdoors",
+        "title": "Indoor style, outdoor performance",
+        "body": "",
+        "body_position": "above",
+        "columns": 3,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
       }
     },
     "e2356296-1abb-42a0-a35f-8b864655eb14": {
@@ -293,6 +340,7 @@
         "9c7be5fd-76a6-432d-be8b-32d5207e5d05",
         "template--19045087150383__066a5fa6-6db1-4a57-b0b5-d741bda2303a-1683912702cf1f69b0-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "grid": 4,
@@ -376,6 +424,7 @@
         "128ff2f2-a237-4166-aa67-e331396f69dd",
         "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-buy_buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "product": "patio-collection",
         "show_backorder_text": true,
@@ -732,50 +781,6 @@
         "show_view_all": true
       }
     },
-    "spec_icons_outdoor": {
-      "type": "fabric-spec-icons",
-      "name": "Fabric spec icons — outdoor",
-      "blocks": {
-        "o_easy": {
-          "type": "icon",
-          "settings": {
-            "icon": "easy-clean",
-            "label": "Easy clean"
-          }
-        },
-        "o_water": {
-          "type": "icon",
-          "settings": {
-            "icon": "water-repellent",
-            "label": "Water repellent"
-          }
-        },
-        "o_light": {
-          "type": "icon",
-          "settings": {
-            "icon": "light-resistant",
-            "label": "Light resistant"
-          }
-        }
-      },
-      "block_order": [
-        "o_easy",
-        "o_water",
-        "o_light"
-      ],
-      "settings": {
-        "eyebrow": "Engineered for outdoors",
-        "title": "Indoor style, outdoor performance",
-        "body": "",
-        "body_position": "above",
-        "columns": 3,
-        "bg_color": "#FFFFFF",
-        "text_color": "#111111",
-        "cta_label": "",
-        "cta_link": "",
-        "cta_style": "primary"
-      }
-    },
     "cta_close": {
       "type": "rich-text",
       "name": "Closing CTA",
@@ -785,7 +790,7 @@
         "title_size": 44,
         "title_width": 12,
         "heading_h1": false,
-        "text": "<p>Specify Patio or Siesta with confidence — order free samples, or talk to a specialist about your project.</p>",
+        "text": "<p>Specify Siesta with confidence — order free samples, or talk to a specialist about your project.</p>",
         "image_width": 120,
         "button_label": "Speak to a specialist",
         "button_link": "shopify://pages/contact",

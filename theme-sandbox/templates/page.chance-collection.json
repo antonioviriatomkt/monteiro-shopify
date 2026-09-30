@@ -65,7 +65,8 @@
             "text": "The iconic engraving in an unrivalled spectrum of colour — supple, long-lasting and low-maintenance, for broad contract use.",
             "accent": "#111111",
             "cta_label": "Explore Classic",
-            "cta_link": "shopify://collections/chance"
+            "cta_link": "shopify://collections/chance",
+            "schema_link": true
           }
         },
         "g2": {
@@ -77,7 +78,8 @@
             "text": "Built for intensive disinfection — resists alcohol- and bleach-based cleaners while keeping a soft touch, and stretches to complex shapes.",
             "accent": "#2f519b",
             "cta_label": "Explore Mediflex",
-            "cta_link": "shopify://collections/chance-mediflex"
+            "cta_link": "shopify://collections/chance-mediflex",
+            "schema_link": true
           }
         },
         "g3": {
@@ -89,7 +91,8 @@
             "text": "High performance for extreme conditions and intensive use, with excellent light fastness and an easy-clean surface.",
             "accent": "#3fa7c4",
             "cta_label": "Explore Outdoor",
-            "cta_link": "shopify://collections/chance-outdoor"
+            "cta_link": "shopify://collections/chance-outdoor",
+            "schema_link": true
           }
         },
         "g4": {
@@ -101,7 +104,8 @@
             "text": "Circular design meets coated-fabric technology — agricultural by-products turned into a durable, fire-resistant material.",
             "accent": "#6e8b3d",
             "cta_label": "Explore Bioblend",
-            "cta_link": "shopify://collections/chance-bioblend"
+            "cta_link": "shopify://collections/chance-bioblend",
+            "schema_link": true
           }
         },
         "g5": {
@@ -113,7 +117,8 @@
             "text": "For stadiums, auditoriums and high-traffic public spaces — the most stringent fire resistance with lasting seating comfort.",
             "accent": "#8c3b3b",
             "cta_label": "Explore Crib 7 / B1",
-            "cta_link": "shopify://collections/chance-crib-7-b1"
+            "cta_link": "shopify://collections/chance-crib-7-b1",
+            "schema_link": true
           }
         },
         "g6": {
@@ -125,7 +130,8 @@
             "text": "For hospitality where safety is essential — Crib 5 fire resistance with durability, comfort and easy maintenance.",
             "accent": "#b5742e",
             "cta_label": "Explore Crib 5",
-            "cta_link": "shopify://collections/chance-crib-5"
+            "cta_link": "shopify://collections/chance-crib-5",
+            "schema_link": true
           }
         }
       },
@@ -140,12 +146,15 @@
       "settings": {
         "eyebrow": "Choose your grade",
         "title": "Same engraving. Pick the performance.",
-        "intro": "<p>All six grades carry the same 235-colour CHANCE palette — choose by performance, not by colour.</p>",
+        "intro": "<p>All six grades carry the same 236-colour CHANCE palette — choose by performance, not by colour.</p>",
         "columns": 3,
         "bg_color": "#fafaf8",
         "text_color": "#111111",
         "card_bg": "#ffffff",
-        "line_color": "#e6e6e2"
+        "line_color": "#e6e6e2",
+        "emit_itemlist": false,
+        "list_name": "",
+        "list_id": ""
       }
     },
     "credentials": {
@@ -325,11 +334,11 @@
       "type": "rich-text",
       "settings": {
         "subheading": "THE CHANCE PALETTE",
-        "title": "235 colours, one iconic texture",
+        "title": "236 colours, one iconic texture",
         "title_size": 36,
         "title_width": 18,
         "heading_h1": false,
-        "text": "<p>An unrivalled spectrum of colour, from soft muted neutrals to vibrant jewel tones and bold statement shades — and the same 235 shades in every grade. The grade you choose for fire, hygiene or weather never limits the colour you can specify.</p>",
+        "text": "<p>An unrivalled spectrum of colour, from soft muted neutrals to vibrant jewel tones and bold statement shades — and the same 236 shades in every grade. The grade you choose for fire, hygiene or weather never limits the colour you can specify.</p>",
         "image_width": 120,
         "button_label": "Explore CHANCE Classic",
         "button_link": "shopify://collections/chance",
@@ -357,7 +366,7 @@
           "type": "faq",
           "settings": {
             "question": "What's the difference between the six grades?",
-            "answer": "<p>They share the CHANCE engraving, ≥400,000 Martindale abrasion resistance, a 10-year warranty, vegan / REACH credentials and the same 235-colour palette. They differ by specialism: Classic (the original, for broad contract use), Mediflex (healthcare — antimicrobial and antiviral, bi-elastic), Outdoor (weather and marine), Bioblend (65% biobased), Crib 7 / B1 (top fire for public venues) and Crib 5 (Crib 5 hospitality fire).</p>"
+            "answer": "<p>They share the CHANCE engraving, ≥400,000 Martindale abrasion resistance, a 10-year warranty, vegan / REACH credentials and the same 236-colour palette. They differ by specialism: Classic (the original, for broad contract use), Mediflex (healthcare — antimicrobial and antiviral, bi-elastic), Outdoor (weather and marine), Bioblend (65% biobased), Crib 7 / B1 (top fire for public venues) and Crib 5 (Crib 5 hospitality fire).</p>"
           }
         },
         "q3": {
@@ -371,7 +380,7 @@
           "type": "faq",
           "settings": {
             "question": "Do all six grades come in the same colours?",
-            "answer": "<p>Yes. All six grades share the same 235-colour CHANCE palette, so you can change grade between spaces in a project without changing colour. Ask our team about availability for a specific colour and grade.</p>"
+            "answer": "<p>Yes. All six grades share the same 236-colour CHANCE palette, so you can change grade between spaces in a project without changing colour. Ask our team about availability for a specific colour and grade.</p>"
           }
         },
         "q5": {
@@ -409,10 +418,13 @@
         "crumb_home": "Home",
         "crumb_home_url": "https://www.monteirofabrics.com/",
         "crumb_current": "CHANCE 2.0",
+        "page_node": "CollectionPage",
         "emit_collectionpage": true,
         "cp_name": "CHANCE 2.0",
+        "webpage_headline": "",
         "cp_description": "CHANCE 2.0 — one iconic engraving in six performance grades (Classic, Mediflex, Outdoor, Bioblend, Crib 7 / B1, Crib 5). The same look across a project; choose the grade by fire, hygiene, sustainability or weather requirement. Made in Portugal.",
-        "cp_url": "https://www.monteirofabrics.com/pages/chance-collection"
+        "cp_url": "https://www.monteirofabrics.com/pages/chance-collection",
+        "webpage_main_entity": ""
       }
     },
     "cta_close": {
