@@ -1,0 +1,17 @@
+{%- comment -%}
+  Invisible jump target for in-page links (e.g. header dropdown -> /pages/about-us#history).
+  scroll-margin-top clears the sticky header.
+{%- endcomment -%}
+{%- if section.settings.anchor_id != blank -%}
+<div id="{{ section.settings.anchor_id | handleize }}" class="mf-anchor" style="display:block;height:0;scroll-margin-top:110px;" aria-hidden="true"></div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Anchor (jump target)",
+  "settings": [
+    { "type": "text", "id": "anchor_id", "label": "Anchor ID", "info": "Link to it as /pages/<page>#<anchor-id>. Lowercase, hyphens." }
+  ],
+  "presets": [ { "name": "Anchor (jump target)" } ]
+}
+{% endschema %}

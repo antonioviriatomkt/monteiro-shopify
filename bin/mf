@@ -11,8 +11,8 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-LIVE_ID=162670182703      # Showcase 7.0  (MAIN)
-SBX_ID=195386114425       # CLAUDE_MF_JUNE_PROPOSTA
+LIVE_ID=162670182703      # Showcase 7.0  (unpublished 2026-09-30 — rollback)
+SBX_ID=195386114425       # CLAUDE_MF_JUNE_PROPOSTA (MAIN since 2026-09-30)
 STORE=monteiro-fabrics.myshopify.com
 CLI="npx --yes @shopify/cli@3"
 
@@ -24,7 +24,7 @@ export SHOPIFY_FLAG_FORCE=1
 target() {
   case "${1:-}" in
     live)    ID=$LIVE_ID; DIR=theme-live;    EXTRA="--allow-live" ;;
-    sandbox) ID=$SBX_ID;  DIR=theme-sandbox; EXTRA="" ;;
+    sandbox) ID=$SBX_ID;  DIR=theme-sandbox; EXTRA="--allow-live" ;;  # MAIN since 2026-09-30
     *) echo "Target must be 'live' or 'sandbox'." >&2; exit 1 ;;
   esac
 }
