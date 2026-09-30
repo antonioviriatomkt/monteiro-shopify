@@ -48,10 +48,18 @@
       "@id": {{ mf_org_id | json }},
       "name": {{ shop.name | json }},
       "url": {{ shop.url | json }},
-      {%- if settings.logo != blank %}
+      {%- comment -%}
+        Logo = the website (header) logo, confirmed by António 30/09. The header keeps it in its
+        own section settings, which a snippet cannot read, so: global setting -> header logo file
+        -> Shopify brand logo.
+      {%- endcomment -%}
+      {%- assign mf_logo = settings.logo -%}
+      {%- if mf_logo == blank -%}{%- assign mf_logo = images['logo-png-1_e743fc75-1cc8-4fc4-b7a3-889301eae1f4.png'] -%}{%- endif -%}
+      {%- if mf_logo == blank -%}{%- assign mf_logo = shop.brand.logo -%}{%- endif -%}
+      {%- if mf_logo != blank %}
         "logo": {
           "@type": "ImageObject",
-          "url": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+          "url": {{ mf_logo | image_url: width: 600 | prepend: 'https:' | json }}
         },
       {%- endif %}
       {%- if mf_street != blank or mf_locality != blank %}
