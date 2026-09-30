@@ -791,7 +791,7 @@
                   {%- endif -%}
 
                 {%- when 'link' -%}
-                  {%- if block.settings.text != blank -%}
+                  {%- if block.settings.text != blank and block.settings.url != blank -%}
                     <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}
                       {% if block.settings.open_new_window %}target="_blank"{% endif %}
                       class="product-area__link {% if block.settings.text_style == "button_primary" %}button{% elsif block.settings.text_style == "button_secondary" %}button alt{% endif %}">
