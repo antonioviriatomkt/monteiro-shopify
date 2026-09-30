@@ -5,6 +5,7 @@
 {%- endcomment -%}
 <div id="section-id-{{ section.id }}" class="tlx {% if section.settings.alternate_bg_color %}use-alt-bg{% endif %}" data-cc-animate>
   {% style %}
+    #section-id-{{ section.id }} .section-heading { margin-bottom:40px; }
     #section-id-{{ section.id }} .tlx__row { display:flex; gap:{{ section.settings.gap }}px; height:{{ section.settings.desktop_height }}px; }
     #section-id-{{ section.id }} .tlx__card {
       position:relative; flex:1 1 0; min-width:0; overflow:hidden; cursor:pointer; outline:none;
@@ -36,6 +37,7 @@
       #section-id-{{ section.id }} .tlx__row:hover .tlx__card:not(:hover) .tlx__body { padding:18px 0 18px 10px; }
     }
     @media (max-width:767px) {
+      #section-id-{{ section.id }} .section-heading { margin-bottom:24px; }
       #section-id-{{ section.id }} .tlx__row { flex-direction:column; height:auto; }
       #section-id-{{ section.id }} .tlx__card { flex:none; height:84px; transition:height .5s cubic-bezier(.25,.8,.25,1); }
       #section-id-{{ section.id }} .tlx__card:focus { height:320px; }
