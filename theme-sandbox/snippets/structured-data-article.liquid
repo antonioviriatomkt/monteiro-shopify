@@ -1,3 +1,4 @@
+{%- assign mf_org_id = shop.url | append: '/#organization' -%}
 {%- assign article_image = page_image -%}
 {%- if article.image -%}
   {%- assign article_image = article.image -%}
@@ -26,24 +27,8 @@
         "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
         "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
         "dateModified": {{ article.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-        "author": {
-          "@type": "Organization",
-          "name": {{ shop.name | json }},
-          "url": {{ shop.url | json }}
-        },
-        "publisher": {
-          "@type": "Organization",
-          {%- if page_image -%}
-            {%- assign image_size = page_image.width | append: 'x' -%}
-            "logo": {
-              "@type": "ImageObject",
-              "height": {{ page_image.height | json }},
-              "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
-              "width": {{ page_image.width | json }}
-            },
-          {%- endif -%}
-          "name": {{ shop.name | json }}
-        }
+        "author": { "@id": {{ mf_org_id | json }} },
+        "publisher": { "@id": {{ mf_org_id | json }} }
       },
       {
         "@type": "BreadcrumbList",
