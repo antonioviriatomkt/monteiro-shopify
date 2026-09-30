@@ -26,7 +26,7 @@
       "submit": "Procurar",
       "sort_title": "Ordenar por",
       "filtering": {
-        "mobile_close": "Perto",
+        "mobile_close": "Fechar filtros",
         "mobile_reveal": "Refinar",
         "show_results": "Ver [x] resultados",
         "show_results_singular": "Ver [x] resultado",
@@ -38,7 +38,7 @@
       "video_play": "Reproduzir vídeo",
       "previous": "Anterior",
       "next": "Próxima",
-      "close": "Perto",
+      "close": "Fechar",
       "load_more": "Mais",
       "skip_to_content": "Saltar para o conteúdo",
       "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas",
@@ -51,7 +51,7 @@
     "lightbox": {
       "previous": "Anterior",
       "next": "Próximo",
-      "close": "Perto"
+      "close": "Fechar"
     },
     "slider": {
       "images": "Imagens"
@@ -104,7 +104,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Adicionar ao carrinho",
+      "add_to_cart": "Adicionar amostra grátis ao carrinho",
       "view_in_space": "Ver no seu espaço",
       "reviews_link": {
         "one": "Avaliação",
@@ -118,11 +118,11 @@
       "preorder": "Pedido antecipado",
       "view_details": "Mais detalhes",
       "unit_price_separator": " / ",
-      "adding_to_cart": "Adicionando",
-      "added_to_cart": "Adicionado",
+      "adding_to_cart": "A adicionar",
+      "added_to_cart": "Adicionado ao carrinho",
       "popup_was_added": "foi adicionado ao seu carrinho",
       "popup_checkout": "Finalizar pedido",
-      "popup_continue_shopping": "Continue a comprar",
+      "popup_continue_shopping": "Continuar a comprar",
       "backorder": "está esgotado e será enviado assim que estiver em stock",
       "sale": "Em promoção"
     },
@@ -192,7 +192,7 @@
   "layout": {
     "navigation": {
       "back": "Anterior",
-      "home": "Casa",
+      "home": "Início",
       "cart": "Carrinho"
     },
     "cart_summary": {
@@ -215,7 +215,7 @@
     },
     "customer": {
       "account": "Conta",
-      "log_out": "Log out "
+      "log_out": "Terminar sessão"
     }
   },
   "cart": {
