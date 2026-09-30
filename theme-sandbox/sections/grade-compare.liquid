@@ -7,9 +7,27 @@
 {% endcomment %}
 
 <div class="{% unless section.settings.no_margins %}section-spacing container{% endunless %}" data-section-type="grade-compare" data-cc-animate>
-  <div class="c2-compare"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style>
+  <div class="c2-compare"><style>.c2-compare{max-width:1120px;margin:0 auto;padding:56px 20px}.c2-compare h2{font-size:30px;font-weight:400;text-align:center;margin:0 0 10px;color:#111}.c2-compare .c2-sub{text-align:center;color:#111;opacity:.7;margin:0 0 30px}.c2-compare .c2-wrap{overflow-x:auto}.c2-compare table{border-collapse:collapse;width:100%;min-width:780px;font-size:14px;color:#111}.c2-compare th,.c2-compare td{text-align:left;padding:12px 14px;border-bottom:1px solid #E0E0DC;vertical-align:top}.c2-compare thead th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;background:#FAFAF8}.c2-compare tbody th{font-weight:600;white-space:nowrap;background:#fff}.c2-compare td.c2-y{color:#2F519B;font-weight:600}/* T3 30/09: mobile — first column sticky + swipe hint */.c2-compare thead th:first-child,.c2-compare tbody th{position:sticky;left:0;z-index:1;box-shadow:1px 0 0 #E0E0DC}.c2-compare .c2-hint{display:none;text-align:center;font-size:13px;opacity:.7;margin:0 0 10px}@media (max-width:767px){.c2-compare{padding:40px 16px}.c2-compare tbody th{white-space:normal;min-width:110px;max-width:130px}.c2-compare table{min-width:720px}.c2-compare .c2-hint{display:block}.c2-compare .c2-wrap{position:relative;-webkit-overflow-scrolling:touch;background:linear-gradient(to left,rgba(0,0,0,.12),rgba(0,0,0,0) 14px) right/14px 100% no-repeat scroll}}.c2-compare .c2-foot{font-size:13px;color:#111;opacity:.7;margin:18px 0 0;text-align:center}</style>
     {%- if section.settings.title != blank -%}<h2>{{ section.settings.title | escape }}</h2>{%- endif -%}
     {%- if section.settings.subheading != blank -%}<p class="c2-sub">{{ section.settings.subheading | escape }}</p>{%- endif -%}
+    {%- liquid
+      assign c2_loc = request.locale.iso_code | slice: 0, 2
+      case c2_loc
+        when 'pt'
+          assign c2_hint = 'Deslize para comparar os grades →'
+        when 'fr'
+          assign c2_hint = 'Faites défiler pour comparer les grades →'
+        when 'de'
+          assign c2_hint = 'Wischen, um die Qualitäten zu vergleichen →'
+        when 'es'
+          assign c2_hint = 'Desliza para comparar los grados →'
+        when 'it'
+          assign c2_hint = 'Scorri per confrontare i gradi →'
+        else
+          assign c2_hint = 'Swipe to compare the grades →'
+      endcase
+    -%}
+    <p class="c2-hint" aria-hidden="true">{{ c2_hint }}</p>
     <div class="c2-wrap"><table><thead><tr><th>&nbsp;</th>
       {%- for i in (1..6) -%}
         {%- assign col_key = 'col_' | append: i -%}

@@ -37,8 +37,27 @@
 <link rel="preload" href="{{ 'vendor.min.js' | asset_url }}" as="script">
 <link rel="preload" href="{{ 'theme.js' | asset_url }}" as="script">
 
-{%- if canonical_url != blank  -%}
-  <link rel="canonical" href="{{ canonical_url }}" />
+{%- comment -%}
+  T3 (30/09): the 6 CHANCE 2.0 grade products point their canonical at their grade collection,
+  the primary URL (decision 2026-09-30). The product page stays for adding samples to the cart.
+{%- endcomment -%}
+{%- liquid
+  assign mf_canonical = canonical_url
+  if template.name == 'product'
+    assign mf_grade_key = ',' | append: product.handle | append: ','
+    if ',chance-classic,chance-outdoor,chance-mediflex,chance-bioblend,chance-crib-5,chance-crib-7-b1,' contains mf_grade_key
+      assign mf_grade_coll = product.handle
+      if mf_grade_coll == 'chance-classic'
+        assign mf_grade_coll = 'chance'
+      endif
+      if collections[mf_grade_coll].url != blank
+        assign mf_canonical = request.origin | append: collections[mf_grade_coll].url
+      endif
+    endif
+  endif
+-%}
+{%- if mf_canonical != blank  -%}
+  <link rel="canonical" href="{{ mf_canonical }}" />
 {%- endif -%}
 
 {%- if settings.favicon != blank -%}

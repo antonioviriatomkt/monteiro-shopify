@@ -100,7 +100,13 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": {{ product.title | json }},
+  {%- comment -%} T3 (30/09): on a CHANCE grade collection page the Product node belongs to the collection URL (the canonical one). {%- endcomment -%}
+  {%- if template.name == 'collection' and collection.handle != blank -%}
+  "@id": {{ shop.url | append: collection.url | append: '#product' | json }},
+  "url": {{ shop.url | append: collection.url | json }},
+  {%- else -%}
   "url": {{ shop.url | append: product.url | json }},
+  {%- endif -%}
   {%- if product.featured_media.preview_image -%}
     {%- assign image_size = product.featured_media.preview_image.width | append: 'x' -%}
     "image": [

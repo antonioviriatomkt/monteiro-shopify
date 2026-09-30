@@ -464,7 +464,7 @@
                             {% assign show_swatches = true %}
                           {% endif %}
 
-                          <div class="selector-wrapper {% if show_swatches %} cc-swatches option--{{ swatch_option_name_lowercase | handle }} {% if settings.swatch_use_prod_images == true %}cc-swatches-prod-img{% endif %}{% endif %}"
+                          <div class="selector-wrapper {% if show_swatches %} cc-swatches option--{{ swatch_option_name_lowercase | handle }} {% if settings.swatch_use_prod_images == true %}cc-swatches-prod-img{% endif %}{% endif %}{% if show_swatches and option.values.size > 60 %} cc-swatches--many{% assign sc_many = true %}{% endif %}"
                               data-option-name="{{ option.name }}">
                             {% capture size_chart_html %}
                               {%- if block.settings.show_size_chart -%}
@@ -1112,7 +1112,13 @@
   {{ product | json }}
 </script>
 
+
+{% if sc_many %}{% render 'swatch-collapse' %}{% endif %}
+{%- comment -%} T3 (30/09): grade products canonicalise to their collection, which carries the Product node. {%- endcomment -%}
+{%- assign mf_grade_key = ',' | append: product.handle | append: ',' -%}
+{%- unless ',chance-classic,chance-outdoor,chance-mediflex,chance-bioblend,chance-crib-5,chance-crib-7-b1,' contains mf_grade_key -%}
 {% render 'structured-data-product', product: product, current_variant: current_variant %}
+{%- endunless -%}
 
 
 {% schema %}

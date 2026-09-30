@@ -54,7 +54,16 @@
       {% endif %}
 
       {% if section.settings.subheading != blank %}
-        <div class="feature-subheader" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">{{ section.settings.subheading }}</div>
+        <div class="feature-subheader" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.1s">
+          {%- if section.settings.subheading_link != blank -%}
+            {%- comment -%} T3 30/09: the part before " · " links to the sector collection. {%- endcomment -%}
+            {%- assign rt_sub_parts = section.settings.subheading | split: ' · ' -%}
+            <a href="{{ section.settings.subheading_link }}" style="color:inherit;text-decoration:underline;text-underline-offset:3px">{{ rt_sub_parts.first }}</a>
+            {%- for p in rt_sub_parts offset: 1 %} · {{ p }}{% endfor -%}
+          {%- else -%}
+            {{- section.settings.subheading -}}
+          {%- endif -%}
+        </div>
       {% endif %}
 
       {% if section.settings.title != blank %}
@@ -94,6 +103,12 @@
         "type": "text",
         "id": "subheading",
         "label": "Subheading"
+      },
+      {
+        "type": "url",
+        "id": "subheading_link",
+        "label": "Subheading link",
+        "info": "Links the part before \" · \" (e.g. the sector)."
       },
       {
         "type": "text",

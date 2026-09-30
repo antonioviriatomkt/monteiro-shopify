@@ -28,7 +28,8 @@
         "no_padding_bottom": true,
         "color_scheme": "standard",
         "color_bg": "",
-        "color_text": ""
+        "color_text": "",
+        "subheading_link": "shopify://collections/outdoor"
       }
     },
     "product": {
