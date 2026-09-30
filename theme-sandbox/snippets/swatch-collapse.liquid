@@ -2,7 +2,7 @@
   T3 (post-launch audit 30/09): large colour grids (CHANCE 2.0, 236 colours).
   Rendered once per product section. Only acts on .cc-swatches--many (option with > 60 values),
   so every other product is untouched.
-  - grid collapsed to the first 24 swatches (4 rows mobile, ~5 rows desktop) + "Show all" + name search;
+  - grid collapsed to the first 24 swatches (4 rows mobile, ~5 rows desktop) + "Show all" (name search removed 30/09 at António's request);
     hidden swatches are display:none, so their background images are never requested
   - selected colour shown next to the Add button
   - mobile: sticky "Add free sample – {colour}" bar while the real button is off-screen
@@ -14,49 +14,42 @@
     when 'pt'
       assign t_all = 'Ver as [n] cores'
       assign t_less = 'Mostrar menos cores'
-      assign t_search = 'Procurar cor'
-      assign t_none = 'Nenhuma cor com esse nome'
       assign t_sel = 'Cor seleccionada'
     when 'fr'
       assign t_all = 'Voir les [n] coloris'
       assign t_less = 'Afficher moins de coloris'
-      assign t_search = 'Rechercher un coloris'
-      assign t_none = 'Aucun coloris trouvé'
       assign t_sel = 'Coloris sélectionné'
     when 'de'
       assign t_all = 'Alle [n] Farben anzeigen'
       assign t_less = 'Weniger Farben anzeigen'
-      assign t_search = 'Farbe suchen'
-      assign t_none = 'Keine Farbe gefunden'
       assign t_sel = 'Gewählte Farbe'
     when 'es'
       assign t_all = 'Ver los [n] colores'
       assign t_less = 'Mostrar menos colores'
-      assign t_search = 'Buscar color'
-      assign t_none = 'Ningún color con ese nombre'
       assign t_sel = 'Color seleccionado'
     when 'it'
       assign t_all = 'Vedi tutti i [n] colori'
       assign t_less = 'Mostra meno colori'
-      assign t_search = 'Cerca colore'
-      assign t_none = 'Nessun colore trovato'
       assign t_sel = 'Colore selezionato'
     else
       assign t_all = 'Show all [n] colours'
       assign t_less = 'Show fewer colours'
-      assign t_search = 'Search colour'
-      assign t_none = 'No colour matches'
       assign t_sel = 'Selected colour'
   endcase
 -%}
 <style>
-  .cc-swatches--many:not(.is-expanded):not(.is-filtering) .clickyboxes li:nth-child(n+25):not(:has(a.active)) { display: none; }
-  .cc-swatches--many.is-filtering .clickyboxes li.sc-miss { display: none; }
-  .sc-tools { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 4px 0 18px; }
-  .sc-tools input[type=search] { flex: 1 1 180px; max-width: 260px; min-height: 44px; padding: 8px 12px; border: 1px solid #c9c9c4; border-radius: 0; font: inherit; font-size: 15px; }
+  .cc-swatches--many:not(.is-expanded) .clickyboxes li:nth-child(n+25):not(:has(a.active)) { display: none; }
+  .sc-tools { display: flex; align-items: center; margin: 4px 0 0; }
   .sc-toggle { min-height: 44px; padding: 0 4px; background: none; border: 0; font: inherit; font-size: 14px; letter-spacing: .04em; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; color: inherit; }
-  .sc-none { width: 100%; font-size: 14px; opacity: .7; margin: 0; }
-  .sc-selected { margin: 0 0 10px; font-size: 14px; letter-spacing: .03em; }
+  .sc-selected { flex: 0 0 100%; order: -1; margin: 0 0 10px; font-size: 14px; letter-spacing: .03em; }
+  .product-detail__form__options:has(.cc-swatches--many) { padding-bottom: 8px; }
+  .product-detail__form__action:has(.sc-selected) > [type=submit] { flex: 1 1 260px; }
+  @media (min-width: 992px) {
+    /* the theme absolutely positions the qty input here, so the box needs its own height when it wraps */
+    .product-detail__form__action:has(.sc-selected) { row-gap: 10px; }
+    .product-detail__form__action:has(.sc-selected) .quantity-wrapper { min-height: 54px; }
+    .product-detail__form__action .sc-selected { margin-bottom: 0; }
+  }
   .sc-selected strong { font-weight: 600; }
   .sc-bar { display: none; }
   @media (max-width: 767px) {
@@ -71,25 +64,17 @@
 <script>
 (function () {
   if (window.__scInit) return; window.__scInit = true;
-  var T = { all: {{ t_all | json }}, less: {{ t_less | json }}, search: {{ t_search | json }}, none: {{ t_none | json }}, sel: {{ t_sel | json }} };
+  var T = { all: {{ t_all | json }}, less: {{ t_less | json }}, sel: {{ t_sel | json }} };
   function setup(wrap) {
     if (wrap.__sc) return;
     var list = wrap.querySelector('.clickyboxes'); if (!list) return; wrap.__sc = true;
     var lis = [].slice.call(list.children), n = lis.length;
     var area = wrap.closest('.product-area'), labelEl = wrap.querySelector('label');
     var tools = document.createElement('div'); tools.className = 'sc-tools';
-    var input = document.createElement('input'); input.type = 'search'; input.placeholder = T.search; input.setAttribute('aria-label', T.search);
     var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sc-toggle'; btn.setAttribute('aria-expanded', 'false');
-    var none = document.createElement('p'); none.className = 'sc-none'; none.hidden = true; none.textContent = T.none;
     function sync() { var ex = wrap.classList.contains('is-expanded'); btn.textContent = ex ? T.less : T.all.replace('[n]', n); btn.setAttribute('aria-expanded', ex); }
     btn.addEventListener('click', function () { var was = wrap.classList.contains('is-expanded'); wrap.classList.toggle('is-expanded'); sync(); if (was) wrap.scrollIntoView({ block: 'start', behavior: 'smooth' }); });
-    input.addEventListener('input', function () {
-      var q = input.value.trim().toLowerCase(), hits = 0;
-      wrap.classList.toggle('is-filtering', !!q);
-      lis.forEach(function (li) { var a = li.querySelector('a'), v = ((a && a.getAttribute('data-value')) || li.textContent).toLowerCase(); var m = !q || v.indexOf(q) > -1; li.classList.toggle('sc-miss', !m); if (m) hits++; });
-      none.hidden = !q || hits > 0;
-    });
-    tools.appendChild(input); tools.appendChild(btn); tools.appendChild(none);
+    tools.appendChild(btn);
     list.parentNode.insertBefore(tools, list.nextSibling); sync();
     if (!area) return;
     var add = area.querySelector('form [type=submit][name=add]'); if (!add) return;
