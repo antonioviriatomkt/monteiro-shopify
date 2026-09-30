@@ -6,19 +6,28 @@ vault: `OneDrive-Viriato&Viriato,SA/WORK/Clients/Monteiro-Fabrics/`.
 
 ## The two theme mirrors — they are not interchangeable
 
-| Folder | Theme | ID |
-|---|---|---|
-| `theme-live/` | **Showcase 7.0 — MAIN, the published site** | `162670182703` |
-| `theme-sandbox/` | CLAUDE_MF_JUNE_PROPOSTA (redesign, unpublished) | `195386114425` |
+> **Since 2026-09-30 11:22 the redesign is the published site.** The folder names are historical:
+> `theme-sandbox/` now mirrors the **live (MAIN)** theme, and `theme-live/` mirrors the old
+> Showcase 7.0, kept unpublished as the rollback option.
+
+| Folder | Theme | ID | Role |
+|---|---|---|---|
+| `theme-sandbox/` | **CLAUDE_MF_JUNE_PROPOSTA — the redesign** | `195386114425` | **MAIN — the published site** |
+| `theme-live/` | Showcase 7.0 (pre-redesign) | `162670182703` | Unpublished — rollback only, do not edit |
+
+The header is bound to the menu handle **`mf_june_menu`** (`config/settings_data.json`); edit it with
+the Shopify MCP connector. The old `main-menu` belongs to Showcase and is not shown.
 
 A local file is **not** the state of the theme. Always:
 
 ```bash
-bash bin/mf check live        # pulls to a temp dir, diffs, changes nothing
-bash bin/mf pull  live        # then commit, then edit
-bash bin/mf push  live sections/foo.liquid   # named files only, never a whole theme
+bash bin/mf check sandbox        # pulls to a temp dir, diffs, changes nothing
+bash bin/mf pull  sandbox        # then commit, then edit
+bash bin/mf push  sandbox sections/foo.liquid   # named files only, never a whole theme
 ```
 
+Both targets now push with `--allow-live` (`sandbox` = MAIN since 2026-09-30). **Every
+`push sandbox` goes straight to the public site — get António's OK first.**
 `bash bin/mf push` re-pulls first and refuses if the remote moved under a file you have no local
 commits for. Do not reach past it with `MF_FORCE=1` without reading the diff.
 
@@ -34,8 +43,8 @@ commits for. Do not reach past it with `MF_FORCE=1` without reading the diff.
 | **Publishing a theme** | Shopify Admin by hand | the connector (blocked) |
 | **Unpublishing a collection** | Shopify Admin by hand | — |
 
-The MCP connector **cannot write the live theme** — it blocks MAIN by design. That is why
-`bin/mf` exists.
+The MCP connector **cannot write the live theme** (`195386114425` since 2026-09-30) — it blocks MAIN by
+design. That is why `bin/mf` exists. It can still write the unpublished Showcase theme.
 
 **Retired 2026-09-14:** `.shopify-token.json` + `oauth.mjs`. The custom app behind that token had
 been cut to `read_orders` while the file still advertised `write_themes`, so scripts failed late
@@ -87,6 +96,14 @@ are superseded by `bin/mf`** — `deploy-files.mjs`, `deploy-section.mjs`, `depl
 (default `theme-sandbox`).
 
 ## Known state
+
+- **2026-09-30 — redesign published.** `195386114425` is MAIN; Showcase `162670182703` unpublished
+  (rollback). The ORGATEC and other notes below that say "sandbox" / "before publishing" describe the
+  pre-launch situation; the sandbox **is** now the live theme.
+- **About Us (2026-09-30, `8a062da`):** timeline gains 1998 · 2013 · 2019 · 2023 (translated into 5
+  locales), and a new `sections/anchor.liquid` gives in-page jump targets `#history`,
+  `#mission-values`, `#quality-sustainability`, `#innovation`, `#official-resellers`, used by the
+  "About Us" dropdown in `mf_june_menu`.
 
 - **The ORGATEC LP is mirrored to the sandbox (2026-09-24, `f823399`).** `collection-sheets`,
   `media-text-ctas`, `proof-strip`, `sector-tabs`, `landing-cta` (+ `assets/landing-cta.css`) and
