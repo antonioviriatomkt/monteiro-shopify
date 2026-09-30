@@ -5188,8 +5188,9 @@ theme.OptionManager = new function(){
         //Get an object of values for this option all with stock set to false
         let optionAvailability = getAllValuesForOption(i);
 
-        //Get variants which have the parent options
-        let matchingVariants = getMatchingVariants(optionValues);
+        //T4 (30/09): a value is only "unavailable" if no available variant has it at all — picking it
+        //moves the other options (see initProductOptions), so parent options must not strike it through
+        let matchingVariants = productData.variants;
 
         //Check for in stock options within matching variants
         for(let k=0; k<matchingVariants.length; k++){
@@ -5241,6 +5242,27 @@ theme.OptionManager = new function(){
         if(matchCount == selectedOptions.length) {
           variant = v;
           break;
+        }
+      }
+      // T4 (30/09): the combination doesn't exist (e.g. IRON under "Metalized: No", or a colour of
+      // another Style) — keep the value just picked and move the other options to the variant that has it
+      if(!variant) {
+        var $sel = $(this).closest(_.selectors.multiOption).find('select');
+        var changedIdx = $sel.index(this), changedVal = $(this).val(), fallback = false;
+        for(var f=0; f<productData.variants.length; f++) {
+          var fv = productData.variants[f];
+          if(fv.options[changedIdx] == changedVal && (!fallback || (fv.available && !fallback.available))) {
+            fallback = fv;
+            if(fv.available) break;
+          }
+        }
+        if(fallback) {
+          variant = fallback;
+          $sel.each(function(k){
+            if(k !== changedIdx && $(this).val() != fallback.options[k]) {
+              $(this).val(fallback.options[k]).trigger('keyup.clickyboxes');
+            }
+          });
         }
       }
       // trigger change
