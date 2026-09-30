@@ -7,10 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * Performance Fabrics v2 — approved by António 2026-09-25.
- * Proposal: briefs/performance-fabrics-page-v2.md · Source of truth: WORK/Clients/Monteiro-Fabrics/projects/performance-fabrics-concept.md
- */
 {
   "sections": {
     "hero": {
@@ -135,7 +131,8 @@
             "text": "Hospital furniture, patient seating, clinics, waiting areas and care environments. Engineered for: Daily disinfection · fluid exposure · intensive use · flame performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View healthcare fabrics",
-            "cta_link": "shopify://collections/healthcare"
+            "cta_link": "shopify://collections/healthcare",
+            "schema_link": true
           }
         },
         "s2": {
@@ -147,7 +144,8 @@
             "text": "Medical equipment, treatment equipment, specialist seating and examination environments. Engineered for: Aggressive cleaning · chemical exposure · skin contact · regulatory requirements. Features: antibacterial & antiviral.",
             "accent": "#2f519b",
             "cta_label": "View medical fabrics",
-            "cta_link": "shopify://collections/medical"
+            "cta_link": "shopify://collections/medical",
+            "schema_link": true
           }
         },
         "s3": {
@@ -159,7 +157,8 @@
             "text": "Ambulances, medical transport interiors and patient transport seating. Engineered for: Fluid-proof surfaces · frequent disinfection · heavy use · fire performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View medical fabrics",
-            "cta_link": "shopify://collections/medical"
+            "cta_link": "shopify://collections/medical",
+            "schema_link": true
           }
         },
         "s4": {
@@ -171,7 +170,8 @@
             "text": "Train interiors, mass transportation and passenger seating. Engineered for: High abrasion · fire safety · continuous passenger turnover · long service cycles. Features: flame retardant · abrasion resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View transport fabrics",
-            "cta_link": "shopify://collections/mass-transportation"
+            "cta_link": "shopify://collections/mass-transportation",
+            "schema_link": true
           }
         },
         "s5": {
@@ -183,7 +183,8 @@
             "text": "High-traffic seating, public facilities and commercial interiors. Engineered for: Constant public use · heavy abrasion · stain resistance · fire performance. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View public-space fabrics",
-            "cta_link": "shopify://collections/public-spaces"
+            "cta_link": "shopify://collections/public-spaces",
+            "schema_link": true
           }
         },
         "s6": {
@@ -195,7 +196,8 @@
             "text": "Fitness equipment, gym seating and training environments. Engineered for: Sweat · body oils · repetitive friction · intensive cleaning. Features: abrasion resistant.",
             "accent": "#2f519b",
             "cta_label": "View fitness fabrics",
-            "cta_link": "shopify://collections/fitness-1"
+            "cta_link": "shopify://collections/fitness-1",
+            "schema_link": true
           }
         },
         "s7": {
@@ -207,7 +209,8 @@
             "text": "Stadium seating, arenas, venues and event spaces. Engineered for: Weather exposure · high traffic · stain resistance · long-term durability. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
             "accent": "#2f519b",
             "cta_label": "View arena fabrics",
-            "cta_link": "shopify://collections/public-spaces"
+            "cta_link": "shopify://collections/public-spaces",
+            "schema_link": true
           }
         },
         "s8": {
@@ -255,21 +258,21 @@
           "type": "spec",
           "settings": {
             "label": "Crib 5",
-            "value": "Severe-hazard flammability — BS 5852 Crib 5 (Crib 5 grade, Portus; also Flora, Peel and the heavy contract grades)"
+            "value": "Severe-hazard flammability — BS 5852 Crib 5 (CHANCE Crib 5 grade; also Flora, Peel and the heavy contract grades)"
           }
         },
         "c2": {
           "type": "spec",
           "settings": {
             "label": "Crib 7",
-            "value": "Highest-hazard flammability rating for extreme-risk seating — BS 5852 Crib 7 (Crib 7 / B1 grade, Prosoft)"
+            "value": "Highest-hazard flammability rating for extreme-risk seating — BS 5852 Crib 7 (CHANCE Crib 7 / B1 grade)"
           }
         },
         "c3": {
           "type": "spec",
           "settings": {
             "label": "B1",
-            "value": "Flame-retardant classification — DIN 4102-1 Class B1 (Crib 7 / B1 grade, Prosoft)"
+            "value": "Flame-retardant classification — DIN 4102-1 Class B1 (CHANCE Crib 7 / B1 grade)"
           }
         },
         "c4": {
@@ -316,6 +319,7 @@
         },
         "c10": {
           "type": "spec",
+          "disabled": true,
           "settings": {
             "label": "OEKO-TEX",
             "value": "OEKO-TEX Standard 100 — tested for harmful substances"
@@ -347,7 +351,7 @@
         "title": "The certifications that decide the spec",
         "intro": "<p>Certifications vary by fabric grade. The table shows the standards the performance range is tested against. Ask the technical team for the certificate that applies to your specification.</p>",
         "align": "center",
-        "note": "<p>A rating tied to a named grade applies to that grade only.</p><p>*Metallic colours are rated at 150,000 Martindale rubs.</p>",
+        "note": "<p>A rating tied to a named grade applies to that grade only.</p><p>Grade pages: <a href=\"/collections/chance-crib-5\">CHANCE Crib 5</a> · <a href=\"/collections/chance-crib-7-b1\">CHANCE Crib 7 / B1</a> · <a href=\"/products/flora-collection\">Flora</a></p><p>*Metallic colours are rated at 150,000 Martindale rubs.</p>",
         "bg_color": "#fafaf8",
         "text_color": "#111111",
         "line_color": "#e0e0dc",
@@ -440,6 +444,7 @@
         "p4",
         "p5"
       ],
+      "disabled": true,
       "settings": {
         "eyebrow": "The process",
         "title": "From requirement to production",
@@ -512,7 +517,8 @@
             "text": "Over 100 years of industrial legacy.",
             "accent": "#2f519b",
             "cta_label": "",
-            "cta_link": ""
+            "cta_link": "",
+            "schema_link": true
           }
         },
         "k2": {
@@ -524,7 +530,8 @@
             "text": "ISO 9001:2015 and ISO 14001:2015 management-system certification by TÜV Rheinland.",
             "accent": "#2f519b",
             "cta_label": "",
-            "cta_link": ""
+            "cta_link": "",
+            "schema_link": true
           }
         },
         "k3": {
@@ -536,7 +543,8 @@
             "text": "Backed by a 10-year warranty.",
             "accent": "#2f519b",
             "cta_label": "",
-            "cta_link": ""
+            "cta_link": "",
+            "schema_link": true
           }
         },
         "k4": {
@@ -548,7 +556,8 @@
             "text": "No animal-derived materials. Ranked VVV+, the highest level of the Animal Free Fashion ethical rating designed by LAV.",
             "accent": "#2f519b",
             "cta_label": "",
-            "cta_link": ""
+            "cta_link": "",
+            "schema_link": true
           }
         }
       },
@@ -566,7 +575,10 @@
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "card_bg": "#fafaf8",
-        "line_color": "#e6e6e2"
+        "line_color": "#e6e6e2",
+        "emit_itemlist": false,
+        "list_name": "",
+        "list_id": ""
       }
     },
     "resources": {
@@ -683,21 +695,21 @@
           "type": "faq",
           "settings": {
             "question": "Which Monteiro fabric meets BS 5852 Crib 7?",
-            "answer": "<p>The Crib 7 / B1 grade, Prosoft, meets BS 5852 Crib 7.</p><p>Crib 7 is the highest-hazard flammability rating, for extreme-risk seating. The same grade also holds DIN 4102-1 Class B1.</p>"
+            "answer": "<p>The CHANCE Crib 7 / B1 grade meets BS 5852 Crib 7.</p><p>Crib 7 is the highest-hazard flammability rating, for extreme-risk seating. The same grade also holds DIN 4102-1 Class B1.</p>"
           }
         },
         "q3": {
           "type": "faq",
           "settings": {
             "question": "Which Monteiro fabrics meet BS 5852 Crib 5?",
-            "answer": "<p>The Crib 5 grade, Portus, meets BS 5852 Crib 5, as do Flora, Peel and the heavy contract grades.</p><p>Crib 5 is the severe-hazard flammability rating. Ask the technical team for the certificate that applies to the grade you specify.</p>"
+            "answer": "<p>The CHANCE Crib 5 grade meets BS 5852 Crib 5, as do Flora, Peel and the heavy contract grades.</p><p>Crib 5 is the severe-hazard flammability rating. Ask the technical team for the certificate that applies to the grade you specify.</p>"
           }
         },
         "q4": {
           "type": "faq",
           "settings": {
             "question": "What does DIN 4102-1 Class B1 mean for a coated fabric?",
-            "answer": "<p>DIN 4102-1 Class B1 is a flame-retardant classification.</p><p>In the Monteiro performance range it is held by the Crib 7 / B1 grade, Prosoft.</p>"
+            "answer": "<p>DIN 4102-1 Class B1 is a flame-retardant classification.</p><p>In the Monteiro performance range it is held by the CHANCE Crib 7 / B1 grade.</p>"
           }
         },
         "q5": {
@@ -758,7 +770,7 @@
       "settings": {
         "eyebrow": "Performance fabrics — answered",
         "title": "Technical FAQ",
-        "intro": "",
+        "intro": "<p>Grades named in the answers: <a href=\"/collections/chance-crib-5\">CHANCE Crib 5</a>, <a href=\"/collections/chance-crib-7-b1\">CHANCE Crib 7 / B1</a> and <a href=\"/products/flora-collection\">Flora</a>.</p>",
         "open_first": true,
         "bg_color": "#fafaf8",
         "text_color": "#111111",
@@ -767,12 +779,12 @@
         "crumb_home": "Home",
         "crumb_home_url": "https://www.monteirofabrics.com/",
         "crumb_current": "Performance Fabrics",
+        "page_node": "WebPage",
         "emit_collectionpage": false,
         "cp_name": "Monteiro Performance Fabrics",
+        "webpage_headline": "Performance fabrics engineered for demanding environments",
         "cp_description": "Coated performance fabrics for healthcare, medical, transport, contract, fitness and arenas. Crib 5, Crib 7 and B1 grades. Made in Portugal.",
         "cp_url": "",
-        "page_node": "WebPage",
-        "webpage_headline": "Performance fabrics engineered for demanding environments",
         "webpage_main_entity": "#sectors"
       }
     },
