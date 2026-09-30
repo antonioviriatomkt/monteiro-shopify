@@ -527,7 +527,8 @@
         "autoplay": true,
         "autoplay_speed": 7,
         "slide_transition": "slide"
-      }
+      },
+      "disabled": true
     },
     "rnd": {
       "type": "image-with-text",
