@@ -624,6 +624,17 @@
         "color_bg": "#f5f5f5",
         "color_text": ""
       }
+    },
+    "page_schema": {
+      "type": "page-schema",
+      "name": "Page schema (SEO / AI)",
+      "settings": {
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "page_node": "AboutPage",
+        "main_entity": "organization",
+        "description": "Our unique experience and know how, along with the combination of traditional manufacturing with updated technology, enables us to be present in demanding markets around the world. Going on our fourth generation as a family business, we develop fabrics with outstanding design, function and performance."
+      }
     }
   },
   "order": [
@@ -645,6 +656,7 @@
     "locations",
     "rich_text_bhDWeE",
     "official_resellers_QhQVwc",
-    "cta_close"
+    "cta_close",
+    "page_schema"
   ]
 }

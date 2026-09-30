@@ -72,6 +72,33 @@
 
 {% if section.settings.layout == 'carousel' %}</div>{% endif %}
 
+{%- comment -%}
+  Optional ItemList schema, generated from the SAME blocks as the visible tiles so the two cannot
+  drift. Same pattern as grade-cards: set a List ID (e.g. `sectors` → <page URL>#sectors) and point
+  a page node at it (Page schema / FAQ + schema "Main entity"). Empty or deleted collections are skipped.
+{%- endcomment -%}
+{%- if section.settings.emit_itemlist -%}
+  {%- liquid
+    assign cl_pos = 0
+    assign cl_list_id = section.settings.list_id | strip | split: '#' | last
+  -%}
+  {%- capture cl_items -%}
+    {%- for block in section.blocks -%}
+      {%- if block.settings.collection == blank -%}{%- continue -%}{%- endif -%}
+      {%- assign cl_c = collections[block.settings.collection] -%}
+      {%- if cl_c == blank or cl_c.url == blank -%}{%- continue -%}{%- endif -%}
+      {%- assign cl_pos = cl_pos | plus: 1 -%}
+      {%- if cl_pos > 1 -%},{%- endif -%}
+      {"@type":"ListItem","position":{{ cl_pos }},"name":{{ cl_c.title | json }},"url":{{ shop.url | append: cl_c.url | json }}}
+    {%- endfor -%}
+  {%- endcapture -%}
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ItemList"
+      {%- if cl_list_id != blank -%},"@id":{{ canonical_url | append: '#' | append: cl_list_id | json }}{%- endif -%}
+      ,"name":{{ section.settings.list_name | default: section.settings.title | json }},"numberOfItems":{{ cl_pos }},"itemListElement":[{{ cl_items }}]}
+  </script>
+{%- endif -%}
+
 
 {% schema %}
   {
@@ -147,7 +174,11 @@
         "id": "alternate_bg_color",
         "label": "Use alternate section color",
         "default": false
-      }
+      },
+      { "type": "header", "content": "Structured data (SEO / AI)" },
+      { "type": "checkbox", "id": "emit_itemlist", "label": "Emit ItemList schema", "default": false },
+      { "type": "text", "id": "list_name", "label": "List name (schema)", "info": "Defaults to the heading." },
+      { "type": "text", "id": "list_id", "label": "List ID", "info": "e.g. sectors → @id <page URL>#sectors. Reference it from Page schema or FAQ + schema 'Main entity'." }
     ],
     "blocks": [
       {

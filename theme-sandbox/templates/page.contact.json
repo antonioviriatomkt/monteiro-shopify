@@ -74,11 +74,23 @@
         "map_style": "silver",
         "image": "shopify://shop_images/monteiro-fabrics1_e7e495ae-8bf7-41e7-8d15-cc3b3023ced0.jpg"
       }
+    },
+    "page_schema": {
+      "type": "page-schema",
+      "name": "Page schema (SEO / AI)",
+      "settings": {
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "page_node": "ContactPage",
+        "main_entity": "organization",
+        "description": "Tell us about your project and our team will get back to you. The more detail you share — sector, application, specifications — the faster we can help."
+      }
     }
   },
   "order": [
     "0f381630-0258-4047-a808-5e56a1673116",
     "contactblock",
-    "6c32a779-98eb-4121-a503-79e25a3e06a7"
+    "6c32a779-98eb-4121-a503-79e25a3e06a7",
+    "page_schema"
   ]
 }

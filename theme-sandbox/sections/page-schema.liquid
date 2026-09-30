@@ -1,0 +1,167 @@
+{% comment %}
+  Page schema — structured data only, renders nothing visible.
+
+  The schema-only sibling of `faq-schema`, for editorial /pages/ that have no real Q&A (so no
+  FAQPage). It uses the SAME @id conventions, so the graphs of both sections and of the global
+  snippet line up:
+    <page URL>#webpage     the page node (WebPage / CollectionPage / AboutPage / ContactPage)
+    <page URL>#breadcrumb  BreadcrumbList
+    <shop URL>/#website    isPartOf      (snippets/structured-data-organization.liquid)
+    <shop URL>/#organization publisher / mainEntity (same snippet)
+  A collection subject is referenced as <collection URL>#webpage — the @id `faq-schema` gives the
+  CollectionPage node on the collection pages themselves.
+
+  "Subject" blocks feed `about`: pick a collection or a product. A picker whose resource no longer
+  exists renders as blank and is skipped, so a deleted product can never leave a dead reference.
+
+  An ItemList on the page (e.g. Collection list with "Emit ItemList schema") is linked through
+  "Main entity" = "An @id on this page" + the list ID, e.g. `sectors`.
+
+  Task: WORK/Clients/Monteiro-Fabrics/tasks/schema-paginas-assinatura-e-hub-sectores.md
+{% endcomment %}
+
+{%- liquid
+  assign ps_node = section.settings.page_node | default: 'WebPage'
+  assign ps_webpage_id = canonical_url | append: '#webpage'
+  assign ps_breadcrumb_id = canonical_url | append: '#breadcrumb'
+  assign ps_site_id = shop.url | append: '/#website'
+  assign ps_org_id = shop.url | append: '/#organization'
+  assign ps_name = section.settings.name | default: page.title | default: page_title
+
+  assign ps_main_entity_id = ''
+  if section.settings.main_entity == 'organization'
+    assign ps_main_entity_id = ps_org_id
+  elsif section.settings.main_entity == 'on_page'
+    assign ps_local = section.settings.main_entity_id | strip | split: '#' | last
+    if ps_local != blank
+      assign ps_main_entity_id = canonical_url | append: '#' | append: ps_local
+    endif
+  endif
+
+  assign ps_parent_url = ''
+  assign ps_parent_raw = section.settings.crumb_parent_url | strip
+  if section.settings.crumb_parent != blank and ps_parent_raw != blank
+    if ps_parent_raw contains '://'
+      assign ps_parent_url = ps_parent_raw
+    else
+      assign ps_parent_url = shop.url | append: ps_parent_raw
+    endif
+  endif
+-%}
+
+{%- capture ps_about -%}
+  {%- assign ps_n = 0 -%}
+  {%- for block in section.blocks -%}
+    {%- liquid
+      assign ps_c = block.settings.collection
+      assign ps_p = block.settings.product
+    -%}
+    {%- if ps_c != blank and ps_c.url != blank -%}
+      {%- assign ps_n = ps_n | plus: 1 -%}{%- if ps_n > 1 -%},{%- endif -%}
+      {%- assign ps_u = shop.url | append: ps_c.url -%}
+      {"@type":"CollectionPage","@id":{{ ps_u | append: '#webpage' | json }},"url":{{ ps_u | json }},"name":{{ ps_c.title | json }}}
+    {%- elsif ps_p != blank and ps_p.url != blank -%}
+      {%- assign ps_n = ps_n | plus: 1 -%}{%- if ps_n > 1 -%},{%- endif -%}
+      {%- assign ps_u = shop.url | append: ps_p.url -%}
+      {"@type":"Product","url":{{ ps_u | json }},"name":{{ ps_p.title | json }},"brand":{"@id":{{ ps_org_id | json }}}}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign ps_about = ps_about | strip -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {%- if section.settings.emit_breadcrumb -%}
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ ps_breadcrumb_id | json }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {{ section.settings.crumb_home | default: 'Home' | json }}, "item": {{ shop.url | append: '/' | json }} },
+        {%- if ps_parent_url != blank -%}
+        { "@type": "ListItem", "position": 2, "name": {{ section.settings.crumb_parent | json }}, "item": {{ ps_parent_url | json }} },
+        { "@type": "ListItem", "position": 3, "name": {{ section.settings.crumb_current | default: ps_name | json }}, "item": {{ canonical_url | json }} }
+        {%- else -%}
+        { "@type": "ListItem", "position": 2, "name": {{ section.settings.crumb_current | default: ps_name | json }}, "item": {{ canonical_url | json }} }
+        {%- endif -%}
+      ]
+    },
+    {%- endif -%}
+    {
+      "@type": {{ ps_node | json }},
+      "@id": {{ ps_webpage_id | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ ps_name | json }},
+      {%- if section.settings.description != blank -%}
+      "description": {{ section.settings.description | strip_html | strip_newlines | strip | json }},
+      {%- endif -%}
+      "inLanguage": {{ request.locale.iso_code | json }},
+      "isPartOf": { "@id": {{ ps_site_id | json }} },
+      "publisher": { "@id": {{ ps_org_id | json }} }
+      {%- if section.settings.emit_breadcrumb -%},
+      "breadcrumb": { "@id": {{ ps_breadcrumb_id | json }} }
+      {%- endif -%}
+      {%- if ps_main_entity_id != blank -%},
+      "mainEntity": { "@id": {{ ps_main_entity_id | json }} }
+      {%- endif -%}
+      {%- if ps_about != blank -%},
+      "about": [{{ ps_about }}]
+      {%- endif %}
+    }
+  ]
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Page schema (SEO / AI)",
+    "class": "section-page-schema",
+    "max_blocks": 6,
+    "settings": [
+      { "type": "paragraph", "content": "Structured data only — this section shows nothing on the page. Use FAQ + schema instead when the page has real questions." },
+      {
+        "type": "select", "id": "page_node", "label": "Page type",
+        "options": [
+          { "value": "WebPage", "label": "WebPage" },
+          { "value": "CollectionPage", "label": "CollectionPage (index / hub)" },
+          { "value": "AboutPage", "label": "AboutPage" },
+          { "value": "ContactPage", "label": "ContactPage" }
+        ],
+        "default": "WebPage"
+      },
+      { "type": "text", "id": "name", "label": "Page name", "info": "Leave blank to use the page title." },
+      { "type": "textarea", "id": "description", "label": "Page description (for schema)", "info": "Use the page's own copy. Leave blank to omit." },
+      {
+        "type": "select", "id": "main_entity", "label": "Main entity",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "organization", "label": "The organization (#organization)" },
+          { "value": "on_page", "label": "An @id on this page" }
+        ],
+        "default": "none"
+      },
+      { "type": "text", "id": "main_entity_id", "label": "Main entity @id", "info": "Only for 'An @id on this page', e.g. sectors → <page URL>#sectors. Must match an @id emitted on the page (Collection list / Grade cards list ID)." },
+      { "type": "header", "content": "Breadcrumb" },
+      { "type": "checkbox", "id": "emit_breadcrumb", "label": "Emit BreadcrumbList schema", "default": true },
+      { "type": "text", "id": "crumb_home", "label": "Home label", "default": "Home" },
+      { "type": "text", "id": "crumb_parent", "label": "Parent label (optional)" },
+      { "type": "url", "id": "crumb_parent_url", "label": "Parent URL (optional)" },
+      { "type": "text", "id": "crumb_current", "label": "Current page label", "info": "Leave blank to use the page name." }
+    ],
+    "blocks": [
+      {
+        "type": "subject",
+        "name": "Subject (about)",
+        "settings": [
+          { "type": "paragraph", "content": "What the page is about. Pick a collection OR a product; the collection wins if both are set." },
+          { "type": "collection", "id": "collection", "label": "Collection" },
+          { "type": "product", "id": "product", "label": "Product" }
+        ]
+      }
+    ],
+    "presets": [
+      { "name": "Page schema (SEO / AI)" }
+    ]
+  }
+{% endschema %}

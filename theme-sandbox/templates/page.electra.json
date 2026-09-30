@@ -606,6 +606,28 @@
         "cta_link": "shopify://products/electra-collection",
         "cta_style": "alt"
       }
+    },
+    "page_schema": {
+      "type": "page-schema",
+      "blocks": {
+        "subject_1": {
+          "type": "subject",
+          "settings": {
+            "product": "electra-collection"
+          }
+        }
+      },
+      "block_order": [
+        "subject_1"
+      ],
+      "name": "Page schema (SEO / AI)",
+      "settings": {
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "page_node": "WebPage",
+        "main_entity": "none",
+        "description": "Discover the Electra collection from Monteiro Fabrics, a groundbreaking antistatic healthcare upholstery line that blends cutting-edge safety with heartfelt design for healthcare heroes."
+      }
     }
   },
   "order": [
@@ -621,6 +643,7 @@
     "37b70038-bd52-4106-9b44-d747725f3175",
     "image_with_text_4HqE7g",
     "bf6d7cb5-7996-4b87-be15-ba49179fc31d",
-    "cta_close"
+    "cta_close",
+    "page_schema"
   ]
 }

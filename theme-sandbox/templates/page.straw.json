@@ -386,6 +386,28 @@
         "color_bg": "#f5f5f5",
         "color_text": ""
       }
+    },
+    "page_schema": {
+      "type": "page-schema",
+      "blocks": {
+        "subject_1": {
+          "type": "subject",
+          "settings": {
+            "product": "straw-collection"
+          }
+        }
+      },
+      "block_order": [
+        "subject_1"
+      ],
+      "name": "Page schema (SEO / AI)",
+      "settings": {
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "page_node": "WebPage",
+        "main_entity": "none",
+        "description": "Straw brings the warmth of textile with the strength of coated fabrics — a durable, easy-clean solution designed for high-traffic spaces and built to last for generations."
+      }
     }
   },
   "order": [
@@ -400,6 +422,7 @@
     "37b70038-bd52-4106-9b44-d747725f3175",
     "e2356296-1abb-42a0-a35f-8b864655eb14",
     "96186325-e209-4c72-b2c0-cc5c79e49b44",
-    "cta_close"
+    "cta_close",
+    "page_schema"
   ]
 }

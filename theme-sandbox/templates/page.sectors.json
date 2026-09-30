@@ -244,7 +244,10 @@
         "grid": 4,
         "grid_mobile": "2",
         "show_view_all": true,
-        "alternate_bg_color": false
+        "alternate_bg_color": false,
+        "emit_itemlist": true,
+        "list_name": "Our Sectors",
+        "list_id": "sectors"
       }
     },
     "performance_tech_sectors": {
@@ -417,6 +420,18 @@
         "color_bg": "#f5f5f5",
         "color_text": ""
       }
+    },
+    "page_schema": {
+      "type": "page-schema",
+      "name": "Page schema (SEO / AI)",
+      "settings": {
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "page_node": "CollectionPage",
+        "main_entity": "on_page",
+        "main_entity_id": "sectors",
+        "description": "Find the fabric engineered for the standards your space demands — from antimicrobial healthcare to fire-rated transport."
+      }
     }
   },
   "order": [
@@ -427,6 +442,7 @@
     "performance_tech_sectors",
     "68364a46-b8f6-408b-8c8a-03e332a8058d",
     "value_props_certs",
-    "cta_close"
+    "cta_close",
+    "page_schema"
   ]
 }
