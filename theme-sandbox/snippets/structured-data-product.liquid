@@ -151,7 +151,12 @@
     ],
   {%- endif -%}
   "offers": [
+    {%- comment -%}T1 (30/09): the "Request physical catalogue" variant is not an Offer. Comma written before each entry.{%- endcomment -%}
+    {%- assign mf_offers = 0 -%}
     {%- for variant in product.variants -%}
+      {%- assign mf_vt = variant.title | downcase -%}
+      {%- if mf_vt contains 'atalog' or mf_vt contains 'atálog' -%}{%- continue -%}{%- endif -%}
+      {%- if mf_offers > 0 %},{% endif %}
       {
         "@type" : "Offer",
         {%- if variant.sku != blank -%}
@@ -159,7 +164,8 @@
         {%- endif -%}
         "url" : {{ shop.url | append: variant.url | json }},
         "seller": { "@id": {{ mf_org_id | json }} }
-      }{% unless forloop.last %},{% endunless %}
+      }
+      {%- assign mf_offers = mf_offers | plus: 1 -%}
     {%- endfor -%}
   ]
 }

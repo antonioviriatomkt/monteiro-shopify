@@ -1,0 +1,44 @@
+{%- comment -%}
+  T1 (post-launch audit 30/09): the "Request physical catalogue" variant (a 0,00 € variant inside the
+  Color option, 34 variants on 28 products) is no longer shown as a colour swatch. main-product and
+  featured-product drop it from the Color <select>; this renders it as its own button instead.
+  Detection = variant title contains "atalog"/"atálog" — matches the value in all 6 locales
+  (catalogue · catálogo · catalogo · Katalog), 0 false positives on 30/09.
+  GET {{ routes.cart_add_url }}?id=… adds the variant and 302s to the cart (verified 30/09, EN + /pt).
+  PURE MOVE 1/2 have one catalogue variant per Style: the first one is used.
+  Usage: {% render 'mf-catalogue-button', product: product %}
+{%- endcomment -%}
+{%- liquid
+  assign mf_cat = false
+  for mf_v in product.variants
+    assign mf_t = mf_v.title | downcase
+    if mf_t contains 'atalog' or mf_t contains 'atálog'
+      assign mf_cat = mf_v
+      break
+    endif
+  endfor
+  case request.locale.iso_code
+    when 'pt'
+      assign mf_cat_label = 'Pedir o catálogo físico'
+    when 'fr'
+      assign mf_cat_label = 'Demander le catalogue physique'
+    when 'de'
+      assign mf_cat_label = 'Physischen Katalog anfordern'
+    when 'es'
+      assign mf_cat_label = 'Solicitar el catálogo físico'
+    when 'it'
+      assign mf_cat_label = 'Richiedi il catalogo fisico'
+    else
+      assign mf_cat_label = 'Request the physical catalogue'
+  endcase
+-%}
+{%- if mf_cat -%}
+  <div class="mf-catalogue">
+    <a class="button alt mf-catalogue__btn" rel="nofollow"
+       href="{{ routes.cart_add_url }}?id={{ mf_cat.id }}&quantity=1">{{ mf_cat_label }}</a>
+  </div>
+  <style>
+    .mf-catalogue { margin: 14px 0 4px; }
+    .mf-catalogue__btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; width: 100%; max-width: 100%; text-align: center; }
+  </style>
+{%- endif -%}

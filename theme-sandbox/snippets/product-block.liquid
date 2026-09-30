@@ -149,10 +149,16 @@
         {%- if cc_swatch_names_check contains cc_opt_check -%}
           <ul class="cc-swatches {% if settings.swatch_use_prod_images == true %}cc-swatches-prod-img cc-swatches-prod-img-{{ settings.swatch_prod_images_shape }}{% endif %}" data-option-name="{{ product_option.name | escape }}">
             {%- if product.options.size == 1 -%}
-              {%- comment -%}P1-1: limit — only option_limit swatches are displayed{%- endcomment -%}
-              {%- for variant in product.variants limit: option_limit -%}
+              {%- comment -%}P1-1: only option_limit swatches are displayed. T1 (30/09): catalogue variant skipped and not counted.{%- endcomment -%}
+              {%- assign mf_shown = 0 -%}
+              {%- assign mf_cat_n = 0 -%}
+              {%- for variant in product.variants -%}
+                {%- assign mf_vt = variant.title | downcase -%}
+                {%- if mf_vt contains 'atalog' or mf_vt contains 'atálog' -%}{%- assign mf_cat_n = mf_cat_n | plus: 1 -%}{%- continue -%}{%- endif -%}
+                {%- if mf_shown >= option_limit -%}{%- continue -%}{%- endif -%}
+                {%- assign mf_shown = mf_shown | plus: 1 -%}
                 {%- assign variant_image = variant.featured_media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {% if forloop.index <= option_limit %}
+                {% if true %}
                   <li>
                     <a rel="nofollow"
                        href="{{ product.url }}{{ param_symbol }}variant={{ variant.id }}"
@@ -176,13 +182,24 @@
                   </li>
                 {% endif %}
               {%- endfor -%}
-              {%- if product.variants.size > option_limit -%}
-                <li class="product-block__more-label"><span>&plus;{{ product.variants.size | minus: option_limit }}</span></li>
+              {%- assign mf_real = product.variants.size | minus: mf_cat_n -%}
+              {%- if mf_real > option_limit -%}
+                <li class="product-block__more-label"><span>&plus;{{ mf_real | minus: option_limit }}</span></li>
               {%- endif -%}
             {%- else -%}
               {%- assign product_option_position_0index = product_option.position | minus: 1 -%}
-              {%- comment -%}P1-1: limit — was 2 full variant scans per value (~56k iterations per CHANCE card) to show 3 swatches{%- endcomment -%}
-              {%- for product_option_value in product_option.values limit: option_limit -%}
+              {%- comment -%}P1-1: variant scans only for the option_limit values shown (was ~56k iterations per CHANCE card). T1 (30/09): catalogue value skipped and not counted.{%- endcomment -%}
+              {%- assign mf_cat_n = 0 -%}
+              {%- for mf_val in product_option.values -%}
+                {%- assign mf_vl = mf_val | downcase -%}
+                {%- if mf_vl contains 'atalog' or mf_vl contains 'atálog' -%}{%- assign mf_cat_n = mf_cat_n | plus: 1 -%}{%- endif -%}
+              {%- endfor -%}
+              {%- assign mf_shown = 0 -%}
+              {%- for product_option_value in product_option.values -%}
+                {%- assign mf_vl = product_option_value | downcase -%}
+                {%- if mf_vl contains 'atalog' or mf_vl contains 'atálog' -%}{%- continue -%}{%- endif -%}
+                {%- if mf_shown >= option_limit -%}{%- break -%}{%- endif -%}
+                {%- assign mf_shown = mf_shown | plus: 1 -%}
                 {%- liquid
                   assign option_value_variant = false
                   assign is_unavailable = true
@@ -200,7 +217,7 @@
                   endfor
                   assign variant_image = option_value_variant.featured_media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
                 -%}
-                {% if forloop.index <= option_limit %}
+                {% if true %}{%- comment -%}T1: mf_shown already caps at option_limit{%- endcomment -%}
                   <li>
                     <a rel="nofollow"
                        href="{{ product.url }}{{ param_symbol }}variant={{ option_value_variant.id }}"
@@ -224,8 +241,9 @@
                   </li>
                 {% endif %}
               {%- endfor -%}
-              {%- if product_option.values.size > option_limit -%}
-                <li class="product-block__more-label"><span>&plus;{{ product_option.values.size | minus: option_limit }}</span></li>
+              {%- assign mf_real = product_option.values.size | minus: mf_cat_n -%}
+              {%- if mf_real > option_limit -%}
+                <li class="product-block__more-label"><span>&plus;{{ mf_real | minus: option_limit }}</span></li>
               {%- endif -%}
             {%- endif -%}
           </ul>

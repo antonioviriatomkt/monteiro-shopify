@@ -504,6 +504,9 @@
                                     {% if block.settings.variant_style == 'underlined' or show_swatches %}class="noreplace" data-make-box{% endif %}
                               {% if show_swatches %}data-colour-swatch="true"{% endif %}>
                               {% for value in option.values %}
+                                {%- comment -%}T1 (30/09): catalogue variant is not a colour — rendered by mf-catalogue-button{%- endcomment -%}
+                                {%- assign mf_vl = value | downcase -%}
+                                {%- if mf_vl contains 'atalog' or mf_vl contains 'atálog' -%}{%- continue -%}{%- endif -%}
                                 <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
                               {% endfor %}
                             </select>
@@ -511,6 +514,7 @@
                           </div>
                         {% endfor %}
                       </div>
+                      {% render 'mf-catalogue-button', product: product %}
 
                     {% else %}
                       <input type="hidden" class="single_variant_availability" value="{{ product.variants.first.inventory_quantity }}"/>
