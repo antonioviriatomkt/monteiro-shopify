@@ -4,6 +4,10 @@ Changes made to **monteirofabrics.com**, newest first. Scope: the live website (
 metadata and redirects). This is distinct from the bundle-level [root log](/log.md), which records
 changes to this knowledge bundle.
 
+## 2026-09-30
+
+* **P1-1 — intermittent HTTP 500 on product pages fixed (live theme `195386114425`).** Shopify's `server-timing` showed failures at ~3 s `processing` with 2.3–2.6 s of Liquid `render`, driven by quadratic loops over the 236 CHANCE variants: `snippets/product-block.liquid` (the "Other Collections" carousel on every product page scanned all variants twice per colour to show 3 swatches, and built 236 hover-image URLs per card) and the swatch CSS in `sections/main-product.liquid`. Fix `05662d2`: card swatches `limit: 3` (identical output), card hover images capped at 12, swatch CSS in one variant pass (identical rules), thumbnail CSS only when thumbnails render, dead `<noscript>` removed from `snippets/media.liquid`. Cold renders after: 0/30 × 500; CHANCE render median 251 ms (was ~2,400). CHANCE HTML still ~1.27 MB (product JSON + 237 gallery slides) — carried to T3.
+
 ## 2026-09-17
 
 * **Abrasion metafields corrected on live product data** (António's decisions). `custom.abrasion_resistance` definition gains the choice `≥ 400.000 (FRANK PES BLACK: 150.000)`. LAGUNA → `≥ 150.000` (Essentials ED.01 V1 is in force; `applicability` loses Marine Interior + Aviation). PURE MOVE [2/3] → the new FRANK choice. PURE MOVE [3/3] → `≥ 150.000`. CHANCE [1/7] [5/7] [6/7] → `≥ 400.000 (metallic colours: 150.000)` plus a metallic-colours footnote in the description spec table. Stray `custom.descri_o_2_pure_move` deleted from CHANCE [1/7]. Catalogue links on live CHANCE deliberately **not** repointed to AGO2026 (CHANCE 2.0 must not surface before launch). Translated `body_html` of the three CHANCE pages is now outdated and lacks the footnote.
