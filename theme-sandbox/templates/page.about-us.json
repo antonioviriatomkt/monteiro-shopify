@@ -79,126 +79,79 @@
       }
     },
     "gallery_heritage": {
-      "type": "gallery",
+      "type": "timeline-expand",
+      "settings": {
+        "title": "A lifetime company",
+        "desktop_height": 520,
+        "expand_factor": 6,
+        "gap": 8,
+        "year_size": 44,
+        "full_width": true,
+        "alternate_bg_color": false
+      },
       "blocks": {
         "g1917": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/monteiro_fabrics_1.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "The Monteiro Ribas group is a family owned group founded in 1917",
             "title": "1917",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "The Monteiro Ribas group is a family owned group founded in 1917"
           }
         },
         "g1950": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/History1.jpg",
-            "video_external": "",
-            "enlarge_image": true,
-            "subheading": "It started as a tannery which became a market leader in the 1950's.",
             "title": "1950",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "It started as a tannery which became a market leader in the 1950's."
           }
         },
         "g1960": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/monteiro_fabrics_12.jpg",
-            "video_external": "",
-            "enlarge_image": true,
-            "subheading": "In the 1960's the group started diversifying and expanding its range.",
             "title": "1960",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "In the 1960's the group started diversifying and expanding its range."
           }
         },
         "g1970": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/monteiro_fabrics_13.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "The production of PU coated fabrics began.",
             "title": "1970",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "The production of PU coated fabrics began."
           }
         },
         "g1998": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-5.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "The coated-fabrics business unit of Monteiro Ribas achieves ISO 9001 certification.",
             "title": "1998",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "The coated-fabrics business unit of Monteiro Ribas achieves ISO 9001 certification."
           }
         },
         "g2013": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/LAB-FABRICS-1.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "Our R&D department is created as an autonomous structure.",
             "title": "2013",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "Our R&D department is created as an autonomous structure."
           }
         },
         "g2019": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/green-plants-background.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "We achieve environmental certification to ISO 14001:2015.",
             "title": "2019",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "We achieve environmental certification to ISO 14001:2015."
           }
         },
         "g2023": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/monteiro-fabrics-portugal-factory4.jpg",
-            "video_external": "",
-            "enlarge_image": false,
-            "subheading": "Monteiro Fabrics opens its office in Germany.",
             "title": "2023",
-            "title_width": 12,
-            "heading_h1": false,
-            "button_label": "",
-            "link": "",
-            "text_alignment": "position--left position--bottom"
+            "subheading": "Monteiro Fabrics opens its office in Germany."
           }
         }
       },
@@ -211,19 +164,7 @@
         "g2013",
         "g2019",
         "g2023"
-      ],
-      "settings": {
-        "title": "A lifetime company",
-        "grid": 4,
-        "desktop_image_height": 600,
-        "mobile_image_height": 440,
-        "title_size": 40,
-        "enable_margin": true,
-        "full_width": true,
-        "enable_carousel": true,
-        "overlay_style_tint": true,
-        "alternate_bg_color": false
-      }
+      ]
     },
     "worldwide": {
       "type": "image-with-text",
