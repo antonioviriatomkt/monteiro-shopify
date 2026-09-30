@@ -17,7 +17,8 @@
       break
     endif
   endfor
-  case request.locale.iso_code
+  assign mf_loc = request.locale.iso_code | slice: 0, 2
+  case mf_loc
     when 'pt'
       assign mf_cat_label = 'Pedir o catálogo físico'
     when 'fr'

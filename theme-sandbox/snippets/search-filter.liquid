@@ -109,6 +109,7 @@
                     <select id="filter-by-{{ filter.label | handle }}" name="{{ filter.values.first.param_name }}">
                       <option value="">{{ 'collections.filtering.all' | t }}</option>
                       {%- for value in filter.values -%}
+                        {%- assign mf_fl = value.label | downcase -%}{%- if mf_fl contains 'atalog' or mf_fl contains 'atálog' -%}{%- continue -%}{%- endif -%}{%- comment -%}T1: catalogue is not a colour{%- endcomment -%}
                         {%- if value.count > 0 or section.settings.show_filter_deadends %}
                           {%- assign num_available_options = num_available_options | plus: 1 -%}
                           <option value="{{ value.value | escape }}" {% if value.active %}selected{% endif %} {% if value.count == 0 and value.active == false %}disabled{% endif %}>
@@ -216,6 +217,7 @@
                   {%- if filter_group_is_swatch -%}
                     <ul class="cc-swatches">
                       {%- for value in filter.values -%}
+                        {%- assign mf_fl = value.label | downcase -%}{%- if mf_fl contains 'atalog' or mf_fl contains 'atálog' -%}{%- continue -%}{%- endif -%}{%- comment -%}T1: catalogue is not a colour{%- endcomment -%}
                         {%- if value.count > 0 or section.settings.show_filter_deadends %}
                           {%- assign num_available_options = num_available_options | plus: 1 -%}
                           <li data-tag="{{ value.label | handle }}">
@@ -242,6 +244,7 @@
                     </ul>
                   {%- else -%}
                     {%- for value in filter.values -%}
+                      {%- assign mf_fl = value.label | downcase -%}{%- if mf_fl contains 'atalog' or mf_fl contains 'atálog' -%}{%- continue -%}{%- endif -%}{%- comment -%}T1: catalogue is not a colour{%- endcomment -%}
                       {%- if value.count > 0 or section.settings.show_filter_deadends %}
                         {%- assign num_available_options = num_available_options | plus: 1 -%}
                         <label class="cc-checkbox">
