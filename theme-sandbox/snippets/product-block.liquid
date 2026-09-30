@@ -47,16 +47,27 @@
     assign images_before_featured = ""
     assign images_after_featured = ""
 
+    comment
+      P1-1 (2026-09-30): capped at 12 images. It used to list every image (236 on CHANCE grades),
+      costing ~1,400 img_url calls per 'Other Collections' carousel and pushing renders into 500s.
+    endcomment
+    assign card_image_count = 0
     for media in product_images
       if media.id == product.featured_media.id
         assign active_media_found = true
       endif
 
-      assign image_placeholder = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
-      if active_media_found
-        assign images_after_featured = images_after_featured | append: "," | append: image_placeholder
-      else
-        assign images_before_featured = images_before_featured | append: "," | append: image_placeholder
+      if active_media_found or card_image_count < 11
+        assign image_placeholder = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+        if active_media_found
+          assign images_after_featured = images_after_featured | append: "," | append: image_placeholder
+        else
+          assign images_before_featured = images_before_featured | append: "," | append: image_placeholder
+        endif
+        assign card_image_count = card_image_count | plus: 1
+      endif
+      if active_media_found and card_image_count >= 12
+        break
       endif
     endfor
 
@@ -138,7 +149,8 @@
         {%- if cc_swatch_names_check contains cc_opt_check -%}
           <ul class="cc-swatches {% if settings.swatch_use_prod_images == true %}cc-swatches-prod-img cc-swatches-prod-img-{{ settings.swatch_prod_images_shape }}{% endif %}" data-option-name="{{ product_option.name | escape }}">
             {%- if product.options.size == 1 -%}
-              {%- for variant in product.variants -%}
+              {%- comment -%}P1-1: limit — only option_limit swatches are displayed{%- endcomment -%}
+              {%- for variant in product.variants limit: option_limit -%}
                 {%- assign variant_image = variant.featured_media.preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 {% if forloop.index <= option_limit %}
                   <li>
@@ -169,7 +181,8 @@
               {%- endif -%}
             {%- else -%}
               {%- assign product_option_position_0index = product_option.position | minus: 1 -%}
-              {%- for product_option_value in product_option.values -%}
+              {%- comment -%}P1-1: limit — was 2 full variant scans per value (~56k iterations per CHANCE card) to show 3 swatches{%- endcomment -%}
+              {%- for product_option_value in product_option.values limit: option_limit -%}
                 {%- liquid
                   assign option_value_variant = false
                   assign is_unavailable = true

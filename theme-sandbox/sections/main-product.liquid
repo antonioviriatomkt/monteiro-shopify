@@ -52,6 +52,8 @@
      data-is-preorder="{{ is_preorder_product }}"
      data-product-id="{{ product.id }}"
      data-enable-history-state="true">
+  {%- comment -%}P1-1: thumbnail CSS only when thumbnails are actually rendered (same condition as below){%- endcomment -%}
+  {%- if section.settings.show_thumbnails and product.media.size > 1 and section.settings.media_style == "one-column" -%}
   {% style %}
     {% for media in product.media %}
       @media(max-width:767px){
@@ -61,6 +63,7 @@
       }
     {% endfor %}
   {% endstyle %}
+  {%- endif -%}
 
   {% if enable_mobile_sticky_cart and has_buy_buttons %}
     <div class="product-area__add-to-cart-xs footer-button-xs" data-show-in-quickbuy="false">
@@ -220,55 +223,60 @@
                 {%- endif -%}
               {% endstyle %}
             {%- elsif settings.swatch_enabled and settings.swatch_use_prod_images == true -%}
+              {%- comment -%}
+                P1-1 (2026-09-30): one pass over the variants instead of values x variants x options.
+                The old nested loop ran ~56k iterations on 236-colour CHANCE products (a render-timeout
+                500 risk). Same CSS: for each colour value, the first variant carrying it that has an
+                image. Rule order follows variant order, which does not matter for these selectors.
+              {%- endcomment -%}
               {%- assign found_first_image = false -%}
+              {%- assign swatch_opt_idx = -1 -%}
+              {%- for product_option in product.options_with_values -%}
+                {%- assign product_option_name_lowercase = product_option.name | downcase -%}
+                {%- assign cc_opt_check = "," | append: product_option_name_lowercase | append: "," -%}
+                {%- if cc_swatch_names_check contains cc_opt_check -%}
+                  {%- assign swatch_opt_idx = forloop.index0 -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
 
+              {%- if swatch_opt_idx >= 0 -%}
               {% style %}
-                {%- for product_option in product.options_with_values -%}
-                  {%- assign product_option_name_lowercase = product_option.name | downcase -%}
-                  {%- assign cc_opt_check = "," | append: product_option_name_lowercase | append: "," -%}
-                  {%- if cc_swatch_names_check contains cc_opt_check -%}
-                    {%- for value in product_option.values -%}
-                      {%- for variant in product.variants -%}
-                        {%- assign break_variant_loop = false -%}
-                        {%- for option in variant.options -%}
-                          {%- if option == value and variant.featured_media.preview_image -%}
-                            {%- assign break_variant_loop = true -%}
-                            {%- assign swatch_value = value | replace: '"', '\"' -%}
-                            {% if settings.swatch_prod_images_shape == "natural" %}
-                              {%- if found_first_image == false -%}
-                                .product-area[data-product-id="{{ product.id }}"] .cc-swatches-prod-img ul li a {
-                                  padding-top: {{ 1 | divided_by: variant.featured_media.preview_image.aspect_ratio | times: 100 }}%;
-                                }
-                                {%- assign found_first_image = true -%}
-                              {%- endif -%}
-
-                              .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ swatch_value }}"] {
-                                padding-top: {{ 1 | divided_by: variant.featured_media.preview_image.aspect_ratio | times: 100 }}%;
-                              }
-                            {% endif %}
-
-                            {% if product.variants.size > 1 %}
-                              .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ swatch_value }}"]::before {
-                                background-image: url({{ variant.featured_media.preview_image | img_url: '180x', crop: 'center' }});
-                              }
-                            {%- else -%}
-                              .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ current_variant.id }}"]::before {
-                                background-image: url({{ current_variant.featured_media.preview_image | img_url: '180x', crop: 'center' }});
-                              }
-                            {%- endif -%}
-
-                            {%- break -%}
-                          {%- endif -%}
-                        {%- endfor -%}
-                        {%- if break_variant_loop -%}
-                          {%- break -%}
+                {%- assign swatch_seen = "¦" -%}
+                {%- for variant in product.variants -%}
+                  {%- if variant.featured_media.preview_image -%}
+                    {%- assign value = variant.options[swatch_opt_idx] -%}
+                    {%- assign swatch_key = "¦" | append: value | append: "¦" -%}
+                    {%- unless swatch_seen contains swatch_key -%}
+                      {%- assign swatch_seen = swatch_seen | append: value | append: "¦" -%}
+                      {%- assign swatch_value = value | replace: '"', '\"' -%}
+                      {% if settings.swatch_prod_images_shape == "natural" %}
+                        {%- if found_first_image == false -%}
+                          .product-area[data-product-id="{{ product.id }}"] .cc-swatches-prod-img ul li a {
+                            padding-top: {{ 1 | divided_by: variant.featured_media.preview_image.aspect_ratio | times: 100 }}%;
+                          }
+                          {%- assign found_first_image = true -%}
                         {%- endif -%}
-                      {%- endfor -%}
-                    {%- endfor -%}
-                    {%- break -%}
+
+                        .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ swatch_value }}"] {
+                          padding-top: {{ 1 | divided_by: variant.featured_media.preview_image.aspect_ratio | times: 100 }}%;
+                        }
+                      {% endif %}
+
+                      {% if product.variants.size > 1 %}
+                        .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ swatch_value }}"]::before {
+                          background-image: url({{ variant.featured_media.preview_image | img_url: '180x', crop: 'center' }});
+                        }
+                      {%- else -%}
+                        .product-area[data-product-id="{{ product.id }}"] .option--{{ swatch_option_name_lowercase | handle }} select[data-colour-swatch="true"] + .clickyboxes [data-value="{{ current_variant.id }}"]::before {
+                          background-image: url({{ current_variant.featured_media.preview_image | img_url: '180x', crop: 'center' }});
+                        }
+                      {%- endif -%}
+                    {%- endunless -%}
                   {%- endif -%}
                 {%- endfor -%}
               {% endstyle %}
+              {%- endif -%}
             {%- endif -%}
 
             {%- for block in section.blocks -%}

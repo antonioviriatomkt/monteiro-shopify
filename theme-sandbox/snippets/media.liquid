@@ -26,9 +26,7 @@
                 data-cc-animate-delay="{{ animate }}s"
              {% endif %}
         >
-        <noscript>
-          <img data-src="{{ media.preview_image | img_url: '1024x1024' }}" alt="{{ media.preview_image.alt | escape }}">
-        </noscript>
+        {%- comment -%}P1-1: removed a <noscript> fallback that used data-src (never loads without JS) — 237 dead copies per CHANCE page.{%- endcomment -%}
       </div>
 
     </div>
