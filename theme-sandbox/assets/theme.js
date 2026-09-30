@@ -7720,6 +7720,30 @@ jQuery(function($){
 
   /// Bind pseudo-page-to-page animation event
   $(document).on('click', '[data-cc-animate-click]', function (e) {
+    // MF 2026-09-30: in-page anchor links (e.g. About Us dropdown -> #history) must not trigger the
+    // page-transition veil. On the same page the browser only jumps to the hash and never reloads,
+    // so the veil stayed up until the 8 s failsafe. Same page = target id exists here (locale
+    // handles differ, e.g. /pt/pages/sobre-nos, so the path cannot be compared).
+    const mfHref = $(this).attr('href') || '';
+    const mfHash = mfHref.indexOf('#') > -1 ? mfHref.slice(mfHref.indexOf('#') + 1) : '';
+    if (mfHash) {
+      const mfTarget = document.getElementById(mfHash);
+      if (mfTarget) {
+        e.preventDefault();
+        const mfGo = function () {
+          mfTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (history.pushState) { history.pushState(null, '', '#' + mfHash); }
+        };
+        if ($('body.modal-active').length && typeof closeThemeModal === 'function') {
+          closeThemeModal(true);
+          setTimeout(mfGo, 320);
+        } else {
+          mfGo();
+        }
+        return false;
+      }
+      return; // anchor on another page: plain navigation, no veil
+    }
     if((theme.settings.animationEnabledDesktop  && theme.viewport.isSm()) ||
       (theme.settings.animationEnabledMobile && theme.viewport.isXs())) {
       if ((window.location.hostname === this.hostname || !this.hostname.length)
