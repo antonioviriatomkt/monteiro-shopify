@@ -11502,6 +11502,12 @@ gift-card-recipient ::placeholder {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  /* T7 30/09: 44x44 tap target (was 20x20); icon stays 20px */
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .section-footer .section-footer__newsletter-block .signup-form form button svg {
   height: 20px;

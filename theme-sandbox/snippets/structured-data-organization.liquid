@@ -80,7 +80,7 @@
               "contactType": "sales",
               "telephone": {{ mf_telephone | json }},
               {%- if mf_email != blank %}"email": {{ mf_email | json }},{% endif %}
-              "availableLanguage": ["en", "pt", "fr", "de", "es"]
+              "availableLanguage": ["en", "pt", "fr", "de", "es", "it"]
             }{% if mf_tel_de != blank %},{% endif %}
           {%- endif %}
           {%- if mf_tel_de != blank %}
@@ -95,9 +95,13 @@
           {%- endif %}
         ],
       {%- endif %}
+      {%- comment -%} T7/sd-l2 (30/09): every network linked in the footer, read from the theme's social settings. {%- endcomment -%}
       {%- assign mf_same_as = '' -%}
       {%- if mf_linkedin != blank %}{% assign mf_same_as = mf_same_as | append: mf_linkedin | append: ',' %}{% endif %}
       {%- if mf_instagram != blank %}{% assign mf_same_as = mf_same_as | append: mf_instagram | append: ',' %}{% endif %}
+      {%- if settings.social_facebook_url != blank %}{% assign mf_same_as = mf_same_as | append: settings.social_facebook_url | append: ',' %}{% endif %}
+      {%- if settings.social_youtube_url != blank %}{% assign mf_same_as = mf_same_as | append: settings.social_youtube_url | append: ',' %}{% endif %}
+      {%- if settings.social_pinterest_url != blank %}{% assign mf_same_as = mf_same_as | append: settings.social_pinterest_url | append: ',' %}{% endif %}
       {%- if mf_same_as != blank %}
         {%- assign mf_same_as_list = mf_same_as | split: ',' %}
         "sameAs": [
@@ -106,7 +110,9 @@
           {%- endfor -%}
         ],
       {%- endif %}
-      "description": {{ shop.description | default: shop.name | strip_html | json }}
+      {%- comment -%} sd-m2, António 30/09: legacy since 1917 (Monteiro Ribas group), coated fabrics since 1967. {%- endcomment -%}
+      "foundingDate": "1917",
+      "description": "Family-owned Portuguese manufacturer of PVC and PU coated upholstery fabrics for contract, hospitality, healthcare, marine and automotive interiors. A legacy since 1917; coated fabrics made in Porto since 1967."
     },
     {
       "@type": "WebSite",

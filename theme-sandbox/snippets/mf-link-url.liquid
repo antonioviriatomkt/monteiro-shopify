@@ -1,0 +1,21 @@
+{%- comment -%}
+  Outputs a menu link URL. Shopify localises PAGE/COLLECTION/BLOG links itself, but a custom
+  (http_link) path like "/pages/about-us#history" stays unprefixed, so on /pt, /fr, /de, /es, /it
+  it dropped the visitor back to English. Prefix relative custom paths with the current locale root.
+  T7 post-launch audit, 2026-09-30.
+{%- endcomment -%}
+{%- liquid
+  assign mf_u = link.url
+  if link.type == 'http_link' and routes.root_url != '/'
+    assign mf_first = mf_u | slice: 0
+    assign mf_two = mf_u | slice: 0, 2
+    if mf_first == '/' and mf_two != '//'
+      assign mf_prefix = routes.root_url | append: '/'
+      assign mf_head = mf_u | slice: 0, mf_prefix.size
+      if mf_head != mf_prefix and mf_u != routes.root_url
+        assign mf_u = routes.root_url | append: mf_u
+      endif
+    endif
+  endif
+  echo mf_u
+-%}

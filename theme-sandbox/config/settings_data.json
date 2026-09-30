@@ -177,7 +177,7 @@
             "type": "text",
             "settings": {
               "title": "Monteiro Fabrics",
-              "text": "<p>Monteiro Fabrics grew from a passion for quality coated fabrics and was built on a legacy that dates back to 1917. Now in the fourth generation as a family business, we develop fabrics with exceptional design, function, sustainablity and performance. </p>",
+              "text": "<p>Monteiro Fabrics grew from a passion for quality coated fabrics and was built on a legacy that dates back to 1917. Now in the fourth generation as a family business, we develop fabrics with exceptional design, function, sustainability and performance. </p>",
               "image": "shopify://shop_images/logo-png-1.png",
               "image_width": 100,
               "show_social_icons": false
@@ -216,7 +216,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "lower_menu": "menu-rodap",
+          "lower_menu": "",
           "show_payment_icons": false,
           "show_country_selector": true,
           "show_language_selector": true

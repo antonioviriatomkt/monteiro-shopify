@@ -52,7 +52,7 @@
     <meta itemprop="name" content="{{ shop.name }}">
     <a data-cc-animate-click class="logo" href="{{ shop.url }}" itemprop="url">
       {% if section.settings.logo != blank %}
-        {% assign double_logo_width = section.settings.logo_width | default: 250 | times: 2 %}
+        {% assign double_logo_width = section.settings.desktop_logo_width | default: section.settings.logo_width | default: 250 | times: 2 %}
         {% capture img_size %}{% if double_logo_width > 2048 %}2048{% else %}{{ double_logo_width }}{% endif %}x{% endcapture %}
         <img src="{{ section.settings.logo | img_url: img_size }}" alt="{{ shop.name | escape }}" itemprop="logo" />
       {% else %}
@@ -74,7 +74,7 @@
 
     <meta itemprop="name" content="{{ shop.name }}">
     {% if section.settings.logo != blank %}
-      {% assign double_logo_width = section.settings.logo_width | default: 250 | times: 2 %}
+      {% assign double_logo_width = section.settings.desktop_logo_width | default: section.settings.logo_width | default: 250 | times: 2 %}
       {% capture img_size %}{% if double_logo_width > 2048 %}2048{% else %}{{ double_logo_width }}{% endif %}x{% endcapture %}
       <img src="{{ section.settings.logo | img_url: img_size }}" alt="{{ shop.name | escape }}" itemprop="logo"
            width="{{ section.settings.logo.width }}" height="{{ section.settings.logo.height }}"/>
@@ -129,7 +129,7 @@
                 {%- endif -%}
 
                 <li class="{% if link.active %}active{% endif %}{% if link.links != blank %} contains-children{% endif %}{% if has_mega_drop_down %} contains-mega-menu{% endif %}{% if featured_links contains link.title %} featured-link{% endif %}">
-                  <a {% if link.links == blank %}data-cc-animate-click{% endif %} href="{{ link.url }}" class="{% if link.active %}active{% endif %} {% if link.links != blank %}has-children{% endif %}" {% if link.links != blank %}aria-haspopup="true"{% endif %}>
+                  <a {% if link.links == blank %}data-cc-animate-click{% endif %} href="{% render 'mf-link-url', link: link %}" class="{% if link.active %}active{% endif %} {% if link.links != blank %}has-children{% endif %}" {% if link.links != blank %}aria-haspopup="true"{% endif %}>
                     {{ link.title }}
                   </a>
 
@@ -162,7 +162,7 @@
 
                       {% for child_link in link.links %}
                         <li class="{% if child_link.active %}active{% endif %}{% if child_link.links != blank %} contains-children{% endif %}{% if featured_links contains child_link.title %} featured-link{% endif %}">
-                          <a {% if child_link.links == blank %}data-cc-animate-click{% endif %} href="{{ child_link.url }}" class="{% if child_link.links != blank %}has-children column-title{% endif %}" {% if child_link.links != blank %}aria-haspopup="true"{% endif %}>
+                          <a {% if child_link.links == blank %}data-cc-animate-click{% endif %} href="{% render 'mf-link-url', link: child_link %}" class="{% if child_link.links != blank %}has-children column-title{% endif %}" {% if child_link.links != blank %}aria-haspopup="true"{% endif %}>
                             {{ child_link.title }}
 
                             {% if child_link.links != blank %}
@@ -174,7 +174,7 @@
                             <ul>
                               {% for child_child_link in child_link.links %}
                                 <li class="{% if child_child_link.active %}active{% endif %}{% if featured_links contains child_child_link.title %} featured-link{% endif %}">
-                                  <a data-cc-animate-click href="{{ child_child_link.url }}">{{ child_child_link.title }}</a>
+                                  <a data-cc-animate-click href="{% render 'mf-link-url', link: child_child_link %}">{{ child_child_link.title }}</a>
                                 </li>
                               {% endfor %}
                             </ul>
@@ -271,7 +271,7 @@
               <ul>
                 {% for link in linklists[section.settings.menu_linklist].links %}
                 <li class="{% if link.active %}active{% endif %} {% if featured_links contains link.title %} featured-link{% endif %}">
-                  <a href="{{ link.url }}" {% if link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
+                  <a href="{% render 'mf-link-url', link: link %}" {% if link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
                     <span>{{ link.title }}</span>
                   </a>
 
@@ -292,14 +292,14 @@
                       {% comment %} Break out the mega menu with titles {% endcomment %}
                       {% for child_link in link.links %}
                         <li class="{% if child_link.active %}active{% endif %} main-nav__mega-title">
-                          <a href="{{ child_link.url }}" {% if child_link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
+                          <a href="{% render 'mf-link-url', link: child_link %}" {% if child_link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
                             <span>{{ child_link.title }}</span>
                           </a>
                         </li>
 
                         {% for child_child_link in child_link.links %}
                           <li class="{% if child_child_link.active %}active{% endif %} {% if featured_links contains child_child_link.title %} featured-link{% endif %}">
-                            <a data-cc-animate-click href="{{ child_child_link.url }}">
+                            <a data-cc-animate-click href="{% render 'mf-link-url', link: child_child_link %}">
                               <span>{{ child_child_link.title }}</span>
                             </a>
                           </li>
@@ -310,7 +310,7 @@
                       {% comment %} Render an ordinary child nav {% endcomment %}
                       {% for child_link in link.links %}
                       <li class="{% if child_link.active %}active{% endif %} {% if featured_links contains child_link.title %} featured-link{% endif %}">
-                        <a href="{{ child_link.url }}" {% if child_link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
+                        <a href="{% render 'mf-link-url', link: child_link %}" {% if child_link.links != blank %}aria-haspopup="true"{% else %}data-cc-animate-click{% endif %}>
                           <span>{{ child_link.title }}</span>
                         </a>
 
@@ -318,7 +318,7 @@
                         <ul>
                           {% for child_child_link in child_link.links %}
                           <li class="{% if child_child_link.active %}active{% endif %} {% if featured_links contains child_child_link.title %} featured-link{% endif %}">
-                            <a data-cc-animate-click href="{{ child_child_link.url }}">
+                            <a data-cc-animate-click href="{% render 'mf-link-url', link: child_child_link %}">
                               <span>{{ child_child_link.title }}</span>
                             </a>
                           </li>
