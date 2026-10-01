@@ -54,7 +54,10 @@
           assign mf_io_name = product.title
         endif
       -%}
-      {%- unless section.settings.image_link == blank or section.settings.text contains '</a>' -%}<a href="{{ section.settings.image_link }}"{% if mf_io_name != blank %} aria-label="{{ mf_io_name | strip_html | escape }}{% if section.settings.image_link contains '.pdf' or section.settings.image_link contains 'dropbox' %} (PDF){% endif %}"{% endif %}>{%- endunless -%}
+      {%- comment -%} T5 follow-up (01/10): when the overlay has a title (often the page H1) the whole banner is no longer a link to the PDF — the heading must not live inside a download link. The catalogue stays reachable from its own button/link. {%- endcomment -%}
+      {%- assign mf_io_link = section.settings.image_link -%}
+      {%- if section.settings.title != blank -%}{%- assign mf_io_link = blank -%}{%- endif -%}
+      {%- unless mf_io_link == blank or section.settings.text contains '</a>' -%}<a href="{{ section.settings.image_link }}"{% if mf_io_name != blank %} aria-label="{{ mf_io_name | strip_html | escape }}{% if section.settings.image_link contains '.pdf' or section.settings.image_link contains 'dropbox' %} (PDF){% endif %}"{% endif %}>{%- endunless -%}
 
         {% if section.settings.image == blank %}
           <div class="placeholder-image placeholder--banner {% if show_overlay_text %}dark{% endif %}">
@@ -122,7 +125,7 @@
           </div>
         {% endif %}
 
-      {%- unless section.settings.image_link == blank or section.settings.text contains '</a>' -%}</a>{%- endunless -%}
+      {%- unless mf_io_link == blank or section.settings.text contains '</a>' -%}</a>{%- endunless -%}
     </div>
 
   {%- unless section.settings.full_width -%}</div>{%- endunless -%}

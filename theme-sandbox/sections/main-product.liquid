@@ -844,7 +844,28 @@
                 {% when 'image' %}
                   {% if block.settings.image != blank %}
                     <div class="product-detail__gap-sm inline-width-container" style="max-width: {{ block.settings.image_width }}px" {{ block.shopify_attributes }}>
-                      {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
+                      {%- comment -%} T5 follow-up (01/10): the PURE MOVE "next" arrow is an image link with no alt — give it a name. {%- endcomment -%}
+                      {%- liquid
+                        assign mf_il = block.settings.image.alt
+                        if mf_il == blank
+                          assign mf_loc = request.locale.iso_code | slice: 0, 2
+                          case mf_loc
+                            when 'pt'
+                              assign mf_il = 'Mais cores'
+                            when 'fr'
+                              assign mf_il = 'Plus de couleurs'
+                            when 'de'
+                              assign mf_il = 'Weitere Farben'
+                            when 'es'
+                              assign mf_il = 'Más colores'
+                            when 'it'
+                              assign mf_il = 'Altri colori'
+                            else
+                              assign mf_il = 'More colours'
+                          endcase
+                        endif
+                      -%}
+                      {% if block.settings.url != blank %}<a href="{{ block.settings.url }}" aria-label="{{ mf_il | escape }}">{% endif %}
                       {% render 'responsive-image', image: block.settings.image %}
                       {% if block.settings.url != blank %}</a>{% endif %}
                     </div>

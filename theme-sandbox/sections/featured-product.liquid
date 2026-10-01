@@ -1105,7 +1105,10 @@
   {{ product | json }}
 </script>
 
+{%- comment -%} T6 / sd-m3 (01/10): on pages and articles the product is referenced, not repeated — the full Product node lives on its own /products/ URL (and on CHANCE grade collection pages, T3). {%- endcomment -%}
+{%- unless template.name == 'page' or template.name == 'article' -%}
 {% render 'structured-data-product', product: product, current_variant: current_variant %}
+{%- endunless -%}
 
 </div>
 

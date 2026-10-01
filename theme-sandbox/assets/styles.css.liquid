@@ -14999,3 +14999,22 @@ a.product-tag:hover, a.product-tag:focus-visible { background: #1f1f1f; color: #
 /* "+232" colour counter on product cards: room for 3–4 digits */
 .product-block ul.cc-swatches li.product-block__more-label, .collection-block ul.cc-swatches li.product-block__more-label { width: auto; min-width: 24px; }
 .product-block ul.cc-swatches .product-block__more-label span, .collection-block ul.cc-swatches .product-block__more-label span { width: auto; min-width: 23px; padding: 0 2px; white-space: nowrap; overflow: visible; }
+
+/* ============================================================
+   Post-launch follow-ups (01/10/2026)
+   ============================================================ */
+/* Spec tables: hide the empty trailing rows some translations still carry (EN rows removed in the data) */
+.rte table tr:has(> td:first-child > span:only-child:empty):has(> td:last-child > span:only-child:empty) { display: none; }
+/* Product intro (rich-text above the gallery) clamped on mobile */
+.mf-clamp-toggle { display: none; }
+@media (max-width: 767px) {
+  .mf-clamp:not(.is-open) { max-height: 7.5em; overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+  .mf-clamp-toggle { display: inline-block; margin-top: 8px; padding: 10px 0; min-height: 44px; background: none; border: 0; color: #2F519B; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+}
+/* Slideshow dots: keep the 20 px look, give a 44 px hit area */
+.slick-dots li button.custom-dot { position: relative; }
+.slick-dots li button.custom-dot::after { content: ""; position: absolute; inset: -12px; }
+/* AMAZÓNIA page: the long pull-quote heading is too big on mobile (~13 lines) */
+@media (max-width: 767px) {
+  [id$="__image_with_text_hA8gpn"] h2, [id$="__image_with_text_hA8gpn"] .h2 { font-size: 24px !important; line-height: 1.3 !important; }
+}

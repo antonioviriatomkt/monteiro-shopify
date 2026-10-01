@@ -349,6 +349,7 @@
     },
     "image_with_text_4HqE7g": {
       "type": "image-with-text",
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "subheading": "",

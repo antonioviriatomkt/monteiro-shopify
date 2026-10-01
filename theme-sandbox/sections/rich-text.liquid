@@ -79,9 +79,32 @@
       {% endif %}
 
       {% if section.settings.text != blank %}
-        <div class="rte inherit-colors {% if section.settings.enlarge_text %}large-text{% endif %} align-{{ section.settings.text_alignment }}" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s">
+        {%- comment -%} T5 follow-up (01/10): on product pages the intro above the gallery is clamped on mobile (LAGUNA ~760 px before the first image). {%- endcomment -%}
+        {%- assign mf_clamp = false -%}
+        {%- if template.name == 'product' and section.settings.heading_h1 -%}{%- assign mf_clamp = true -%}{%- endif -%}
+        <div class="rte inherit-colors {% if section.settings.enlarge_text %}large-text{% endif %} align-{{ section.settings.text_alignment }}{% if mf_clamp %} mf-clamp{% endif %}" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s"{% if mf_clamp %} id="mf-clamp-{{ section.id }}"{% endif %}>
           {{ section.settings.text }}
         </div>
+        {%- if mf_clamp -%}
+          {%- liquid
+            assign mf_loc = request.locale.iso_code | slice: 0, 2
+            case mf_loc
+              when 'pt'
+                assign mf_rm = 'Ler mais'
+              when 'fr'
+                assign mf_rm = 'Lire la suite'
+              when 'de'
+                assign mf_rm = 'Weiterlesen'
+              when 'es'
+                assign mf_rm = 'Leer más'
+              when 'it'
+                assign mf_rm = 'Leggi di più'
+              else
+                assign mf_rm = 'Read more'
+            endcase
+          -%}
+          <button type="button" class="mf-clamp-toggle" aria-expanded="false" aria-controls="mf-clamp-{{ section.id }}" onclick="var t=document.getElementById(this.getAttribute('aria-controls'));t.classList.add('is-open');this.setAttribute('aria-expanded','true');this.hidden=true;">{{ mf_rm }}</button>
+        {%- endif -%}
       {% endif %}
 
       {% if section.settings.button_label != blank %}

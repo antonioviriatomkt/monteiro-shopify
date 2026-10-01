@@ -46,9 +46,30 @@
         {% if section.settings.collection != blank %}
           {% assign collection = collections[section.settings.collection] %}
           {%- comment -%} T5 (01/10): on a product page the carousel skips the product itself. {%- endcomment -%}
-          {%- assign mf_self_id = 0 -%}{%- if template.name == 'product' -%}{%- assign mf_self_id = product.id -%}{%- endif -%}
+          {%- assign mf_self_id = 0 -%}{%- assign mf_fam = '' -%}
+          {%- if template.name == 'product' -%}
+            {%- assign mf_self_id = product.id -%}
+            {%- comment -%} T5 follow-up (01/10): products split into numbered parts (mobility-fabrics-pure-move-1/2/3) show their siblings first. {%- endcomment -%}
+            {%- assign mf_hp = product.handle | split: '-' -%}
+            {%- assign mf_last = mf_hp | last -%}
+            {%- assign mf_lastn = mf_last | plus: 0 -%}
+            {%- if mf_lastn > 0 -%}{%- assign mf_fam = product.handle | remove_last: mf_last -%}{%- endif -%}
+          {%- endif -%}
+          {%- assign mf_sib_ids = '|' -%}
+          {%- if mf_fam != blank -%}
+            {%- for product in collection.products -%}
+              {%- if product.id != mf_self_id and product.handle contains mf_fam -%}
+                {%- assign mf_sib_ids = mf_sib_ids | append: product.id | append: '|' -%}
+                <div class="swiper-slide">
+                  {% render 'product-block', product: product, product_class: product_class, i: forloop.index, animate: 0.4, show_vendor: section.settings.show_vendor, hide_swatches: section.settings.hide_swatches %}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
           {% for product in collection.products limit: 13 %}
             {%- if product.id == mf_self_id -%}{%- continue -%}{%- endif -%}
+            {%- assign mf_k = '|' | append: product.id | append: '|' -%}
+            {%- if mf_sib_ids contains mf_k -%}{%- continue -%}{%- endif -%}
             <div class="swiper-slide">
               {% assign animate_delay = forloop.index | times: 0.4 %}
               {% render 'product-block', product: product, product_class: product_class, i: forloop.index, animate: animate_delay, show_vendor: section.settings.show_vendor, hide_swatches: section.settings.hide_swatches %}
