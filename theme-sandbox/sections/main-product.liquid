@@ -2,6 +2,25 @@
 
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
+  comment
+    T5 (01/10/2026): with no ?variant= in the URL, open on the variant whose image IS the product's
+    featured image, so the main image and the selected colour agree (before: WHITE selected by
+    default looked like an empty image on ELEFANTE, GARBE, FURNA, FLORA, VILLA NABUK; MARINA
+    showed PEACH with AMBER selected). Catalogue variants never qualify. Choose the default colour
+    by choosing the featured image in Admin.
+  endcomment
+  if product.selected_variant == blank and product.featured_media
+    for mf_dv in product.variants
+      assign mf_dvt = mf_dv.title | downcase
+      if mf_dvt contains 'atalog' or mf_dvt contains 'atálog'
+        continue
+      endif
+      if mf_dv.available and mf_dv.featured_media.id == product.featured_media.id
+        assign current_variant = mf_dv
+        break
+      endif
+    endfor
+  endif
   assign featured_media = current_variant.featured_media | default: product.featured_media
   assign media_columns_to_show = 1
   assign swatch_option_name_lowercase = settings.swatch_option_name | downcase | split: "," | first | strip
