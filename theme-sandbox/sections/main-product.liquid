@@ -522,7 +522,7 @@
                               {%- endif -%}
                             {% endcapture %}
                             <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
-                              {{- option.name -}}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ option.selected_value }}</span>{%- endif -%}
+                              {%- comment -%} T5: selected value follows current_variant (featured-image default), not option.selected_value. {%- endcomment -%}{%- assign mf_oi = option.position | minus: 1 -%}{%- assign mf_osv = current_variant.options[mf_oi] | default: option.selected_value -%}{{- option.name -}}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ mf_osv }}</span>{%- endif -%}
                               {%- if block.settings.variant_style == 'underlined' and show_swatches == false -%}{{ size_chart_html }}{%- endif -%}
                             </label>
                             <select id="option-{{ option.name | handle }}-{{ product.id }}"
@@ -532,7 +532,7 @@
                                 {%- comment -%}T1 (30/09): catalogue variant is not a colour — rendered by mf-catalogue-button{%- endcomment -%}
                                 {%- assign mf_vl = value | downcase -%}
                                 {%- if mf_vl contains 'atalog' or mf_vl contains 'atálog' -%}{%- continue -%}{%- endif -%}
-                                <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                                <option value="{{ value | escape }}" {% if mf_osv == value %}selected{% endif %}>{{ value }}</option>
                               {% endfor %}
                             </select>
                             {% if block.settings.variant_style == 'dropdown' or show_swatches %}{{ size_chart_html }}{% endif %}
