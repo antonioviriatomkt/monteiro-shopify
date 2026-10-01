@@ -124,7 +124,7 @@
       "popup_checkout": "Zur Kasse",
       "popup_continue_shopping": "Einkauf fortzusetzen",
       "backorder": "ist auf Lager und wird versandt, sobald es wieder verfügbar ist",
-      "sale": "Sale"
+      "sale": "Angebot"
     },
     "general": {
       "include_taxes": "inkl. MwSt.",
@@ -192,7 +192,7 @@
   "layout": {
     "navigation": {
       "back": "Zurück",
-      "home": "Home",
+      "home": "Startseite",
       "cart": "Warenkorb"
     },
     "cart_summary": {
@@ -214,7 +214,7 @@
       "menu_aria_label": "Hauptnavigation"
     },
     "customer": {
-      "account": "Account",
+      "account": "Konto",
       "log_out": "Ausloggen"
     }
   },
@@ -364,7 +364,7 @@
       "update": "Adresse aktualisieren"
     },
     "login": {
-      "title": "Login",
+      "title": "Anmelden",
       "email": "E-Mail",
       "password": "Passwort",
       "forgot_password": "Haben Sie Ihr Passwort vergessen?",
