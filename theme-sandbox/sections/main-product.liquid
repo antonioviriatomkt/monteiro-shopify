@@ -183,6 +183,16 @@
       {% if section.settings.sticky_behaviour == "bottom" %}style="top: var(--nav-height)" data-cc-sticky-scroll-top{% endif %}>
       <div class="product-area__details__header" data-cc-animate data-cc-animate-delay="0.8s" data-cc-animate-duration="1.2s">
         <div class="product-detail__form">
+          {%- comment -%}
+            T5 (01/10): visible breadcrumb + BreadcrumbList microdata. On these two templates the H1 is
+            in the image banner, so the breadcrumb opens the details column; on the others it sits
+            above the H1 in the rich-text section (sections/rich-text.liquid).
+          {%- endcomment -%}
+          {%- if template.name == 'product' and is_featured_product != true -%}
+            {%- if template.suffix == 'product-chance-5-final' or template.suffix == 'produto-peel-nowarranty' or template.suffix == 'product-pure-move1' or template.suffix == 'product-chance-4-final' -%}
+              {% render 'breadcrumbs' %}
+            {%- endif -%}
+          {%- endif -%}
 
           {% if product != blank %}
             {% capture product_form_class %}product-purchase-form feedback-{{ settings.cart_type }}{% endcapture %}
@@ -357,8 +367,6 @@
                         assign heading_tag = "h1"
                       endif
                     -%}
-                    {%- comment -%} T5 (01/10): visible breadcrumb (+ BreadcrumbList microdata) above the H1. {%- endcomment -%}
-                    {%- if template.name == 'product' -%}{% render 'breadcrumbs' %}{%- endif -%}
                     <{{ heading_tag }} class="product-area__details__title product-detail__gap-sm h2" {{ block.shopify_attributes }}>{{ product.title }}</{{ heading_tag }}>
                   {% endif %}
 

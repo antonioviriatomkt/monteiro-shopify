@@ -60,7 +60,10 @@
       continue
     endif
     assign mf_c = collections[mf_h]
-    if mf_c.handle != mf_h
+    comment
+      Not handle == mf_h: on /pt etc. the collection comes back with its TRANSLATED handle.
+    endcomment
+    if mf_c.id == blank
       continue
     endif
     assign mf_seen = mf_seen | append: mf_h | append: '|'

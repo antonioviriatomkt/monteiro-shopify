@@ -42,7 +42,7 @@
     assign mf_page = pages[mf_sp]
   endif
 -%}
-{%- if mf_sp != blank and mf_page.handle == mf_sp -%}
+{%- if mf_sp != blank and mf_page.id != blank -%}
   {%- liquid
     assign mf_loc = request.locale.iso_code | slice: 0, 2
     case mf_loc

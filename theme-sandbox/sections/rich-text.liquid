@@ -66,6 +66,10 @@
         </div>
       {% endif %}
 
+      {%- comment -%} T5 (01/10): on product pages the breadcrumb sits right above the H1. {%- endcomment -%}
+      {%- if template.name == 'product' and section.settings.heading_h1 and section.settings.title != blank -%}
+        {% render 'breadcrumbs' %}
+      {%- endif -%}
       {% if section.settings.title != blank %}
         <{{ heading_tag }} class="feature-header align-{{ section.settings.text_alignment }}
           {% if section.settings.title_size >= 86 %}feature-header--large{% endif %}

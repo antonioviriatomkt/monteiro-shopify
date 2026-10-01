@@ -39,7 +39,7 @@
         {% else %}
           {%- comment -%} T5 (01/10): no collection context → Home / Coated fabrics / product. {%- endcomment -%}
           {%- assign mf_bc_c = collections['coated-fabrics'] -%}
-          {%- if mf_bc_c.handle == 'coated-fabrics' -%}
+          {%- if mf_bc_c.id != blank -%}
           <li class="mf-breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
             <a class="mf-breadcrumbs__link" itemprop="item" href="{{ mf_bc_c.url }}">
               <span itemprop="name">{{ mf_bc_c.title }}</span>
