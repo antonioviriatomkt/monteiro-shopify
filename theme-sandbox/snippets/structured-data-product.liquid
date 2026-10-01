@@ -130,7 +130,8 @@
       assign mf_desc = product.description | strip_html | strip_newlines | truncate: 300
     endif
   -%}
-  "description": {{ mf_desc | strip_html | strip_newlines | strip | json }},
+  {%- comment -%} page_description arrives HTML-escaped; decode before json so "&amp;" does not reach the node. {%- endcomment -%}
+  "description": {{ mf_desc | strip_html | strip_newlines | replace: '&amp;', '&' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | strip | json }},
   {%- if current_variant.sku != blank -%}
     "sku": {{ current_variant.sku | json }},
   {%- endif -%}
