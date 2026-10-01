@@ -5,6 +5,7 @@
   - add_content_class {string} [optional] - Additional class(es) to add to the content element
   - toggle_icon {string} [optional] - Custom icon markup, e.g. '<span class="icon">...</span>'
   - escape_titles {boolean} [optional] - Whether to HTML-escape the titles. Default is false.
+  - title_tag {string} [optional] - wrap each title in this heading tag (e.g. 'h2'), T5 01/10/2026.
 
   One of the following three forms of content should also be provided:
   1. content_snippet {string} - Helper snippet to use to generate content
@@ -59,7 +60,7 @@
             assign title = title | escape
           endif
 
-          render 'accordion-item', title: title, content: item_contents[forloop.index0], add_content_class: add_content_class, toggle_icon: toggle_icon, item_open: item_open
+          render 'accordion-item', title: title, title_tag: title_tag, content: item_contents[forloop.index0], add_content_class: add_content_class, toggle_icon: toggle_icon, item_open: item_open
         endif
       endfor
     endif

@@ -105,6 +105,8 @@
   "@id": {{ shop.url | append: collection.url | append: '#product' | json }},
   "url": {{ shop.url | append: collection.url | json }},
   {%- else -%}
+  {%- comment -%} T5 / sd-m3 (01/10): @id = the (locale-prefixed) product URL + #product, same base as url. {%- endcomment -%}
+  "@id": {{ shop.url | append: product.url | append: '#product' | json }},
   "url": {{ shop.url | append: product.url | json }},
   {%- endif -%}
   {%- if product.featured_media.preview_image -%}
@@ -113,7 +115,22 @@
       {{ product.featured_media.preview_image.src | img_url: image_size | prepend: "https:" | json }}
     ],
   {%- endif -%}
-  "description": {{ product.description | strip_html | json }},
+  {%- comment -%}
+    T5 / sd-m4 (01/10): description = the SEO meta description (written in 6 languages), not the
+    body_html, which is the raw spec table. On the product page that is page_description (already
+    localised); elsewhere the product's own description_tag; last resort a 300-char excerpt.
+  {%- endcomment -%}
+  {%- liquid
+    if template.name == 'product' and page_description != blank
+      assign mf_desc = page_description
+    else
+      assign mf_desc = product.metafields.global.description_tag.value | default: product.metafields.global.description_tag
+    endif
+    if mf_desc == blank
+      assign mf_desc = product.description | strip_html | strip_newlines | truncate: 300
+    endif
+  -%}
+  "description": {{ mf_desc | strip_html | strip_newlines | strip | json }},
   {%- if current_variant.sku != blank -%}
     "sku": {{ current_variant.sku | json }},
   {%- endif -%}

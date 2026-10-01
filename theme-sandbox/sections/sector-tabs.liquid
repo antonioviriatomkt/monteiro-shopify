@@ -103,7 +103,8 @@
                   </a>
                   <div>
                     <a class="st-name" href="{{ product.url }}" data-cta="sector_product" data-collection="{{ product.handle }}">{{ product.title | remove: ' COLLECTION' | remove: ' Collection' | escape }}</a>
-                    {%- if product.vendor != blank and product.vendor != shop.name -%}<span class="st-tagline">{{ product.vendor | escape }}</span>{%- endif -%}
+                    {%- capture mf_tl -%}{% render 'mf-tagline', product: product %}{%- endcapture -%}
+                    {%- if mf_tl != blank -%}<span class="st-tagline">{{ mf_tl }}</span>{%- endif -%}
                   </div>
                   <a class="st-sample" href="{{ product.url }}" data-cta="orgatec_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
                 </li>

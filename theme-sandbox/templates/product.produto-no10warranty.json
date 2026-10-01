@@ -204,7 +204,7 @@
         "5fdee4da-0268-4a28-acde-bc10c85101b3": {
           "type": "link",
           "settings": {
-            "text": "Download Tecnhnical File",
+            "text": "Download Technical File",
             "url": "{{ product.metafields.custom.download_file2.value }}",
             "text_style": "button_primary",
             "open_new_window": true
@@ -272,6 +272,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "show_product_recommendations": true,
         "title": "Other Collections",

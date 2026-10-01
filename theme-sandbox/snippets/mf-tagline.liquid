@@ -1,0 +1,14 @@
+{%- comment -%}
+  T5 (01/10/2026): the collection tagline used to live in product.vendor, which also feeds
+  brand in analytics/feeds (and leaked into a Spanish title). It moves to the translatable
+  metafield custom.tagline; vendor becomes "Monteiro Fabrics". Fallback: the old vendor value,
+  but never the shop name. Outputs plain text (escaped), nothing when empty.
+  Usage: {%- capture t -%}{% render 'mf-tagline', product: product %}{%- endcapture -%}
+{%- endcomment -%}
+{%- liquid
+  assign mf_tl = product.metafields.custom.tagline.value | default: product.metafields.custom.tagline
+  if mf_tl == blank and product.vendor != shop.name and product.vendor != 'Monteiro Fabrics'
+    assign mf_tl = product.vendor
+  endif
+  echo mf_tl | strip | escape
+-%}

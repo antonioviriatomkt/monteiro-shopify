@@ -45,7 +45,10 @@
       <div class="swiper-wrapper" data-normheights=".image" data-normheights-inner="img">
         {% if section.settings.collection != blank %}
           {% assign collection = collections[section.settings.collection] %}
-          {% for product in collection.products limit: 12 %}
+          {%- comment -%} T5 (01/10): on a product page the carousel skips the product itself. {%- endcomment -%}
+          {%- assign mf_self_id = 0 -%}{%- if template.name == 'product' -%}{%- assign mf_self_id = product.id -%}{%- endif -%}
+          {% for product in collection.products limit: 13 %}
+            {%- if product.id == mf_self_id -%}{%- continue -%}{%- endif -%}
             <div class="swiper-slide">
               {% assign animate_delay = forloop.index | times: 0.4 %}
               {% render 'product-block', product: product, product_class: product_class, i: forloop.index, animate: animate_delay, show_vendor: section.settings.show_vendor, hide_swatches: section.settings.hide_swatches %}

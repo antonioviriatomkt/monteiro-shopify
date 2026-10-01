@@ -1,0 +1,64 @@
+{%- comment -%}
+  T5 (post-launch audit, 01/10/2026): product → its collection's signature page. Before this the
+  only route was the hidden menu. Map by product handle; a page that is missing or unpublished
+  renders nothing. page.url carries the locale prefix. Labels follow the mf-catalogue-button
+  pattern (2-letter locale).
+  To add a collection: one `when` line below.
+  Usage: {% render 'mf-signature-link', product: product %}
+{%- endcomment -%}
+{%- liquid
+  assign mf_sp = ''
+  assign mf_sn = ''
+  case product.handle
+    when 'chance-classic', 'chance-outdoor', 'chance-mediflex', 'chance-bioblend', 'chance-crib-7-b1', 'chance-crib-5'
+      assign mf_sp = 'chance-collection'
+      assign mf_sn = 'CHANCE'
+    when 'amazonia-collection'
+      assign mf_sp = 'amazonia-collection-coated-fabrics-by-nini-andrade-silva'
+      assign mf_sn = 'AMAZÓNIA'
+    when 'electra-collection'
+      assign mf_sp = 'electra-medical-upholstery'
+      assign mf_sn = 'ELECTRA'
+    when 'origin-collection'
+      assign mf_sp = 'origin-sustainable-fabrics'
+      assign mf_sn = 'ORIGIN'
+    when 'peel-collection'
+      assign mf_sp = 'peel-collection'
+      assign mf_sn = 'PEEL'
+    when 'straw-collection'
+      assign mf_sp = 'straw'
+      assign mf_sn = 'STRAW'
+    when 'siesta-collection'
+      assign mf_sp = 'siesta-outdoor-upholstery'
+      assign mf_sn = 'SIESTA'
+    when 'mobility-fabrics-pure-move-1', 'mobility-fabrics-pure-move-2', 'mobility-fabrics-pure-move-3'
+      assign mf_sp = 'mobility'
+      assign mf_sn = 'PURE MOVE'
+    when 'pure-convertible'
+      assign mf_sp = 'mobility'
+      assign mf_sn = 'PURE CONVERTIBLE'
+  endcase
+  if mf_sp != blank
+    assign mf_page = pages[mf_sp]
+  endif
+-%}
+{%- if mf_sp != blank and mf_page.handle == mf_sp -%}
+  {%- liquid
+    assign mf_loc = request.locale.iso_code | slice: 0, 2
+    case mf_loc
+      when 'pt'
+        assign mf_sl = 'Descobrir a colecção ' | append: mf_sn
+      when 'fr'
+        assign mf_sl = 'Découvrir la collection ' | append: mf_sn
+      when 'de'
+        assign mf_sl = 'Die Kollektion ' | append: mf_sn | append: ' entdecken'
+      when 'es'
+        assign mf_sl = 'Descubrir la colección ' | append: mf_sn
+      when 'it'
+        assign mf_sl = 'Scopri la collezione ' | append: mf_sn
+      else
+        assign mf_sl = 'Discover the ' | append: mf_sn | append: ' collection'
+    endcase
+  -%}
+  <p class="mf-signature-link"><a href="{{ mf_page.url }}">{{ mf_sl }} <span aria-hidden="true">&rarr;</span></a></p>
+{%- endif -%}

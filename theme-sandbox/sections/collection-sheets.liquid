@@ -113,8 +113,8 @@
           <div class="cs-top">
             <div>
               <h3 class="cs-name"><a href="{{ product.url }}" data-cta="sheet_title" data-collection="{{ product.handle }}">{{ name | escape }}</a></h3>
-              {%- assign tagline = block.settings.tagline | default: product.vendor -%}
-              {%- if tagline != blank and tagline != shop.name -%}<span class="cs-tagline">{{ tagline | escape }}</span>{%- endif -%}
+              {%- capture mf_tl -%}{% render 'mf-tagline', product: product %}{%- endcapture -%}
+              {%- if block.settings.tagline != blank -%}<span class="cs-tagline">{{ block.settings.tagline | escape }}</span>{%- elsif mf_tl != blank -%}<span class="cs-tagline">{{ mf_tl }}</span>{%- endif -%}
             </div>
             {%- if block.settings.best_for != blank -%}
               <div class="cs-best">

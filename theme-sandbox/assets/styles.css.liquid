@@ -14974,3 +14974,28 @@ html:not(.touch) .blog-chip:hover {
     line-height: 1.6em;
   }
 }
+
+/* ============================================================
+   T5 — product template (post-launch audit, 01/10/2026)
+   ============================================================ */
+/* sector chips are now links */
+a.product-tag { transition: background-color .2s ease, color .2s ease; }
+a.product-tag:hover, a.product-tag:focus-visible { background: #1f1f1f; color: #fff; }
+/* link to the collection's signature page, under the chips */
+.mf-signature-link { margin: 4px 0 16px; font-size: 14px; letter-spacing: .02em; text-align: left; }
+.mf-signature-link a { color: #2F519B; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+/* breadcrumb above the product H1 */
+.template-product .product-area__details .mf-breadcrumbs { margin: 0 0 14px; }
+/* accordion titles are now <h2> — keep the old look (the theme centres/recolours h1–h3) */
+.cc-accordion-item__heading { display: inline; margin: 0; padding: 0; font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit; text-align: inherit; line-height: inherit; }
+/* spec tables: never wider than the column; scroll inside if a table really needs the width */
+.product-area .rte table, .cc-accordion-item__content table { width: 100% !important; max-width: 100%; height: auto !important; }
+.product-area .rte, .cc-accordion-item__content.rte { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+/* section heading ("Other Collections" + "View all") wraps on small screens instead of overflowing */
+@media (max-width: 767px) {
+  .section-heading { flex-wrap: wrap; gap: 6px 16px; }
+  .section-heading h2 { padding-right: 0; }
+}
+/* "+232" colour counter on product cards: room for 3–4 digits */
+.product-block ul.cc-swatches li.product-block__more-label, .collection-block ul.cc-swatches li.product-block__more-label { width: auto; min-width: 24px; }
+.product-block ul.cc-swatches .product-block__more-label span, .collection-block ul.cc-swatches .product-block__more-label span { width: auto; min-width: 23px; padding: 0 2px; white-space: nowrap; overflow: visible; }

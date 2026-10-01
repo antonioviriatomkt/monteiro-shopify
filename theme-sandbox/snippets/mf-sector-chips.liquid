@@ -1,0 +1,72 @@
+{%- comment -%}
+  T5 (post-launch audit, 01/10/2026): the product's sector tags render as LINKS to the sector
+  collections, not as dead <span>s. Tag → collection handle map below (case-insensitive).
+  Internal tags with no sector page ("All", "natrue", "CHANCE") are not shown.
+  Several tags can share a collection (MARINE / Marine Interior / marine exterior → marine;
+  Restaurants → hospitality-fabrics, which /collections/restaurants-fabrics 301s to) — each
+  collection appears once. The chip text is the collection's own (translated) title and
+  collection.url carries the locale prefix.
+  Usage: {% render 'mf-sector-chips', product: product %}
+{%- endcomment -%}
+{%- liquid
+  assign mf_seen = '|'
+  assign mf_out = ''
+  for tag in product.tags
+    assign mf_t = tag | downcase | strip
+    assign mf_h = ''
+    case mf_t
+      when 'retail'
+        assign mf_h = 'retail'
+      when 'office'
+        assign mf_h = 'office-fabrics-upholstery'
+      when 'hospitality', 'restaurants'
+        assign mf_h = 'hospitality-fabrics'
+      when 'public spaces'
+        assign mf_h = 'public-spaces'
+      when 'healthcare'
+        assign mf_h = 'healthcare'
+      when 'medical'
+        assign mf_h = 'medical'
+      when 'fitness'
+        assign mf_h = 'fitness-1'
+      when 'residential'
+        assign mf_h = 'residential-1'
+      when 'recreational vehicles'
+        assign mf_h = 'recreational-vehicles'
+      when 'marine', 'marine interior', 'marine exterior'
+        assign mf_h = 'marine'
+      when 'fashion', 'luggage', 'handbags'
+        assign mf_h = 'fashion'
+      when 'contract'
+        assign mf_h = 'contract'
+      when 'outdoor'
+        assign mf_h = 'outdoor'
+      when 'automotive'
+        assign mf_h = 'automotive'
+      when 'motorcycle'
+        assign mf_h = 'motorcycle'
+      when 'mass transportation'
+        assign mf_h = 'mass-transportation'
+      when 'aviation'
+        assign mf_h = 'aviation'
+      when 'train', 'trains'
+        assign mf_h = 'train'
+    endcase
+    if mf_h == blank
+      continue
+    endif
+    assign mf_key = '|' | append: mf_h | append: '|'
+    if mf_seen contains mf_key
+      continue
+    endif
+    assign mf_c = collections[mf_h]
+    if mf_c.handle != mf_h
+      continue
+    endif
+    assign mf_seen = mf_seen | append: mf_h | append: '|'
+    assign mf_out = mf_out | append: '<a class="product-tag" href="' | append: mf_c.url | append: '">' | append: mf_c.title | append: '</a>'
+  endfor
+-%}
+{%- if mf_out != blank -%}
+  <nav class="product-tags" aria-label="Sectors">{{ mf_out }}</nav>
+{%- endif -%}

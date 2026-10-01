@@ -357,6 +357,8 @@
                         assign heading_tag = "h1"
                       endif
                     -%}
+                    {%- comment -%} T5 (01/10): visible breadcrumb (+ BreadcrumbList microdata) above the H1. {%- endcomment -%}
+                    {%- if template.name == 'product' -%}{% render 'breadcrumbs' %}{%- endif -%}
                     <{{ heading_tag }} class="product-area__details__title product-detail__gap-sm h2" {{ block.shopify_attributes }}>{{ product.title }}</{{ heading_tag }}>
                   {% endif %}
 
@@ -409,13 +411,9 @@
                         endif
                       -%}
 
-                      {% if product.tags.size > 0 %}
-                        <div class="product-tags">
-                          {% for tag in product.tags %}
-                            <span class="product-tag">{{ tag }}</span>
-                          {% endfor %}
-                        </div>
-                      {% endif %}
+                      {%- comment -%} T5 (01/10): sector chips are links; signature-page link below them. {%- endcomment -%}
+                      {% render 'mf-sector-chips', product: product %}
+                      {% render 'mf-signature-link', product: product %}
 
                       {%- if block.settings.icon != "none" -%}
                         {%- capture description_title -%}
@@ -427,7 +425,7 @@
                       {%- endif -%}
 
                       <div class="product-detail-accordion">
-                        {% render 'accordion', allow_multi_open: true, add_content_class: 'rte', first_item_open: description_is_open, item1_title: description_title, item1_content: product.description %}
+                        {% render 'accordion', allow_multi_open: true, title_tag: 'h2', add_content_class: 'rte', first_item_open: description_is_open, item1_title: description_title, item1_content: product.description %}
                       </div>
                     {% else %}
                       <div class="product-detail__form__description product-detail__gap-lg rte align-left" {{ block.shopify_attributes }}>
@@ -771,7 +769,7 @@
 
                   {%- if content != blank -%}
                     <div class="product-detail-accordion" {{ block.shopify_attributes }}>
-                      {% render 'accordion', allow_multi_open: true, add_content_class: 'rte', first_item_open: block.settings.open, item1_title: title, item1_content: content %}
+                      {% render 'accordion', allow_multi_open: true, title_tag: 'h2', add_content_class: 'rte', first_item_open: block.settings.open, item1_title: title, item1_content: content %}
                     </div>
                   {%- endif -%}
 
@@ -790,7 +788,7 @@
                   {%- endcapture -%}
 
                   <div class="product-detail-accordion" {{ block.shopify_attributes }} data-show-in-quickbuy="false">
-                    {% render 'accordion', allow_multi_open: true, add_content_class: 'rte', first_item_open: block.settings.open, item1_title: title, item1_content: content %}
+                    {% render 'accordion', allow_multi_open: true, title_tag: 'h2', add_content_class: 'rte', first_item_open: block.settings.open, item1_title: title, item1_content: content %}
                   </div>
 
                 {%- when 'text' -%}
