@@ -1,5 +1,5 @@
 {%- comment -%}
-  Product node — Product + Offer, rendered from sections/main-product.liquid and
+  Product node — Product (no Offer since 2026-10-02), rendered from sections/main-product.liquid and
   sections/featured-product.liquid.
 
   Task: WORK/Clients/Monteiro-Fabrics/tasks/schema-product-additional-property.md
@@ -44,6 +44,10 @@
 
   What remains is what is true: url + seller. Expect Search Console to report two missing fields on
   Product (price and availability). That is the accepted cost, not a regression.
+
+  SUPERSEDED 2026-10-02 (SD-A1): the Offer is gone entirely — no price means no valid Offer for
+  Google. Accepted cost: one Product-snippets error per page ("Either offers, review or
+  aggregateRating should be specified"). No impact on ranking; Merchant listings no longer apply.
 {%- endcomment -%}
 
 {%- liquid
@@ -139,7 +143,6 @@
     product.vendor holds a marketing tagline ("Knitted look. Timeless shades."), not a brand name,
     so it must not be used here. The brand is the company, declared once in the Organization node.
   {%- endcomment -%}
-  "brand": { "@id": {{ mf_org_id | json }} },
   {% if current_variant.barcode != blank %}
     "mpn": {{ current_variant.barcode | json }},
   {% endif %}
@@ -168,23 +171,12 @@
       {%- endfor -%}
     ],
   {%- endif -%}
-  "offers": [
-    {%- comment -%}T1 (30/09): the "Request physical catalogue" variant is not an Offer. Comma written before each entry.{%- endcomment -%}
-    {%- assign mf_offers = 0 -%}
-    {%- for variant in product.variants -%}
-      {%- assign mf_vt = variant.title | downcase -%}
-      {%- if mf_vt contains 'atalog' or mf_vt contains 'atálog' -%}{%- continue -%}{%- endif -%}
-      {%- if mf_offers > 0 %},{% endif %}
-      {
-        "@type" : "Offer",
-        {%- if variant.sku != blank -%}
-          "sku": {{ variant.sku | json }},
-        {%- endif -%}
-        "url" : {{ shop.url | append: variant.url | json }},
-        "seller": { "@id": {{ mf_org_id | json }} }
-      }
-      {%- assign mf_offers = mf_offers | plus: 1 -%}
-    {%- endfor -%}
-  ]
+  {%- comment -%}
+    SD-A1 (02/10): no "offers". With no price there is no valid Offer for Google, and an
+    url+seller Offer produced one "missing price" error per variant (470 on /collections/chance).
+    Decision: WORK/Clients/Monteiro-Fabrics/decisions/2026-10-02-product-sem-offers.md
+    brand stays LAST so no trailing comma is left whichever optional block above is empty.
+  {%- endcomment -%}
+  "brand": { "@id": {{ mf_org_id | json }} }
 }
 </script>
