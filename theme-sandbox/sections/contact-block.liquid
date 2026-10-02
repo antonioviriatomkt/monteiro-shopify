@@ -129,6 +129,12 @@
               <textarea id="cb-message" name="contact[body]" required>{{ form.body }}</textarea>
             </div>
 
+            {%- comment -%} Honeypot for the Sender copy (not a contact[] field, so Shopify ignores it). {%- endcomment -%}
+            <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
+              <label for="cb-website">Website</label>
+              <input type="text" id="cb-website" name="cb_website" tabindex="-1" autocomplete="off" value="">
+            </div>
+
             <button type="submit" class="cb-submit">{{ section.settings.submit_label | default: 'Send' | escape }}</button>
           {% endif %}
         {% endform %}
@@ -151,6 +157,33 @@
   </div>
 </div>
 
+{%- comment -%}
+  Lead copy to Sender (2026-10-02). The native contact form only emails the store, so each
+  valid submission is also beaconed to the Cloudflare Worker `contact-to-sender`, which adds
+  the person to Sender group enzoW5 (what the Leads report reads). Fire-and-forget: the
+  native submit is never delayed or blocked. Source: APP/workers/contact-to-sender/.
+{%- endcomment -%}
+{%- assign cb_endpoint = section.settings.lead_endpoint | default: 'https://contact-to-sender.antoniodias.workers.dev' -%}
+<script>
+  (function () {
+    var root = document.getElementById('cb-{{ section.id }}');
+    var form = root && root.querySelector('form');
+    if (!form || !navigator.sendBeacon) return;
+    var url = {{ cb_endpoint | json }};
+    form.addEventListener('submit', function () {
+      try {
+        var v = function (n) { var el = form.elements[n]; return el ? el.value : ''; };
+        var data = {
+          name: v('contact[name]'), company: v('contact[Company]'), email: v('contact[email]'),
+          phone: v('contact[Phone]'), country: v('contact[Country]'), sector: v('contact[Sector]'),
+          message: v('contact[body]'), website: v('cb_website'), page: location.pathname
+        };
+        navigator.sendBeacon(url, new Blob([JSON.stringify(data)], { type: 'text/plain' }));
+      } catch (e) {}
+    });
+  })();
+</script>
+
 {% schema %}
   {
     "name": "Contact block",
@@ -162,6 +195,7 @@
       { "type": "header", "content": "Form" },
       { "type": "text", "id": "submit_label", "label": "Submit button label", "default": "Send message" },
       { "type": "textarea", "id": "sector_options", "label": "Sector / application options (one per line)", "default": "Healthcare & medical\nHospitality\nPublic spaces\nPublic transport\nMarine\nAutomotive\nRetail\nFitness\nOther" },
+      { "type": "text", "id": "lead_endpoint", "label": "Lead copy endpoint (Sender Worker)", "info": "Leave blank to use the default Worker. Each submission is also added to Sender group enzoW5." },
       { "type": "text", "id": "success_message", "label": "Success message", "default": "Thanks — your message has been sent. Our team will be in touch shortly." },
       { "type": "header", "content": "Reach us directly" },
       { "type": "text", "id": "side_title", "label": "Side title", "default": "Prefer to reach us directly?" },
