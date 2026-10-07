@@ -223,7 +223,7 @@
             "accent": "#3b3b39",
             "cta_label": "Talk to the technical team",
             "cta_link": "shopify://pages/contact",
-            "schema_link": false
+            "schema_link": true
           }
         }
       },
@@ -678,7 +678,8 @@
         "line_color": "#e6e6e2",
         "accent": "#3b3b39",
         "emit_itemlist": true,
-        "list_name": "Monteiro Technical Hub"
+        "list_name": "Monteiro Technical Hub",
+        "list_id": "technical-hub"
       }
     },
     "faq": {

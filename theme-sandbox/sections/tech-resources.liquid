@@ -114,7 +114,7 @@
   {%- endcapture -%}
   {%- if pos > 0 -%}
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"ItemList","name":{{ section.settings.list_name | default: 'Technical Hub' | json }},"itemListElement":[{{ itemlist_items }}]}
+      {"@context":"https://schema.org","@type":"ItemList"{%- if section.settings.list_id != blank -%},"@id":{{ canonical_url | append: '#' | append: section.settings.list_id | json }}{%- endif -%},"name":{{ section.settings.list_name | default: 'Technical Hub' | json }},"itemListElement":[{{ itemlist_items }}]}
     </script>
   {%- endif -%}
 {%- endif -%}
@@ -140,7 +140,8 @@
       { "type": "color", "id": "accent", "label": "Accent", "default": "#2F519B" },
       { "type": "header", "content": "SEO" },
       { "type": "checkbox", "id": "emit_itemlist", "label": "Emit ItemList structured data", "default": true },
-      { "type": "text", "id": "list_name", "label": "ItemList name", "default": "Monteiro Technical Hub" }
+      { "type": "text", "id": "list_name", "label": "ItemList name", "default": "Monteiro Technical Hub" },
+      { "type": "text", "id": "list_id", "label": "List ID", "info": "e.g. technical-hub → @id <page URL>#technical-hub." }
     ],
     "blocks": [
       {
