@@ -113,7 +113,7 @@
       "settings": {
         "eyebrow": "Engineered for performance",
         "title": "Built into every metre",
-        "bg_color": "#2f519b",
+        "bg_color": "#3b3b39",
         "text_color": "#ffffff",
         "cta_label": "Find the right fabric for your application",
         "cta_link": "shopify://pages/contact"
@@ -129,7 +129,7 @@
             "title": "Healthcare",
             "stat": "",
             "text": "Hospital furniture, patient seating, clinics, waiting areas and care environments. Engineered for: Daily disinfection · fluid exposure · intensive use · flame performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View healthcare fabrics",
             "cta_link": "shopify://collections/healthcare",
             "schema_link": true
@@ -142,7 +142,7 @@
             "title": "Medical",
             "stat": "",
             "text": "Medical equipment, treatment equipment, specialist seating and examination environments. Engineered for: Aggressive cleaning · chemical exposure · skin contact · regulatory requirements. Features: antibacterial & antiviral.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View medical fabrics",
             "cta_link": "shopify://collections/medical",
             "schema_link": true
@@ -155,7 +155,7 @@
             "title": "Medical transport",
             "stat": "",
             "text": "Ambulances, medical transport interiors and patient transport seating. Engineered for: Fluid-proof surfaces · frequent disinfection · heavy use · fire performance. Features: antibacterial & antiviral · flame retardant · abrasion resistant.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View medical fabrics",
             "cta_link": "shopify://collections/medical",
             "schema_link": true
@@ -168,7 +168,7 @@
             "title": "Transportation & mobility",
             "stat": "",
             "text": "Train interiors, mass transportation and passenger seating. Engineered for: High abrasion · fire safety · continuous passenger turnover · long service cycles. Features: flame retardant · abrasion resistant · long lasting.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View transport fabrics",
             "cta_link": "shopify://collections/mass-transportation",
             "schema_link": true
@@ -181,7 +181,7 @@
             "title": "Contract & public spaces",
             "stat": "",
             "text": "High-traffic seating, public facilities and commercial interiors. Engineered for: Constant public use · heavy abrasion · stain resistance · fire performance. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View public-space fabrics",
             "cta_link": "shopify://collections/public-spaces",
             "schema_link": true
@@ -194,7 +194,7 @@
             "title": "Fitness",
             "stat": "",
             "text": "Fitness equipment, gym seating and training environments. Engineered for: Sweat · body oils · repetitive friction · intensive cleaning. Features: abrasion resistant.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View fitness fabrics",
             "cta_link": "shopify://collections/fitness-1",
             "schema_link": true
@@ -207,7 +207,7 @@
             "title": "Sports & arenas",
             "stat": "",
             "text": "Stadium seating, arenas, venues and event spaces. Engineered for: Weather exposure · high traffic · stain resistance · long-term durability. Features: flame retardant · abrasion resistant · ink & stain resistant · long lasting.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "View arena fabrics",
             "cta_link": "shopify://collections/public-spaces",
             "schema_link": true
@@ -220,7 +220,7 @@
             "title": "Safety & protection",
             "stat": "",
             "text": "Protective equipment and safety applications. Engineered for: Mechanical resistance · durability · regulatory compliance · application-specific requirements. Features: long lasting.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "Talk to the technical team",
             "cta_link": "shopify://pages/contact",
             "schema_link": false
@@ -449,9 +449,9 @@
         "eyebrow": "The process",
         "title": "From requirement to production",
         "intro": "<p>Technical expertise is not a claim. It is a process.</p>",
-        "bg_color": "#2f519b",
+        "bg_color": "#3b3b39",
         "text_color": "#ffffff",
-        "line_color": "#8195c3"
+        "line_color": "#888886"
       }
     },
     "custom": {
@@ -502,7 +502,7 @@
         "bg_color": "#fafaf8",
         "text_color": "#111111",
         "line_color": "#e0e0dc",
-        "accent": "#2f519b"
+        "accent": "#3b3b39"
       }
     },
     "credentials": {
@@ -515,7 +515,7 @@
             "title": "Made in Portugal",
             "stat": "over 100 years",
             "text": "Over 100 years of industrial legacy.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "",
             "cta_link": "",
             "schema_link": true
@@ -528,7 +528,7 @@
             "title": "ISO 9001 & 14001",
             "stat": "2015 editions",
             "text": "ISO 9001:2015 and ISO 14001:2015 management-system certification by TÜV Rheinland.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "",
             "cta_link": "",
             "schema_link": true
@@ -541,7 +541,7 @@
             "title": "10-year warranty",
             "stat": "",
             "text": "Backed by a 10-year warranty.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "",
             "cta_link": "",
             "schema_link": true
@@ -554,7 +554,7 @@
             "title": "VVV+",
             "stat": "LAV rating",
             "text": "No animal-derived materials. Ranked VVV+, the highest level of the Animal Free Fashion ethical rating designed by LAV.",
-            "accent": "#2f519b",
+            "accent": "#3b3b39",
             "cta_label": "",
             "cta_link": "",
             "schema_link": true
@@ -676,7 +676,7 @@
         "text_color": "#111111",
         "card_bg": "#fafaf8",
         "line_color": "#e6e6e2",
-        "accent": "#2f519b",
+        "accent": "#3b3b39",
         "emit_itemlist": true,
         "list_name": "Monteiro Technical Hub"
       }
