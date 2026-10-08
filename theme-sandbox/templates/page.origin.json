@@ -155,6 +155,7 @@
     },
     "37b70038-bd52-4106-9b44-d747725f3175": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--19138112651567__37b70038-bd52-4106-9b44-d747725f3175-vendor_and_type-1": {
           "type": "vendor_and_type",
