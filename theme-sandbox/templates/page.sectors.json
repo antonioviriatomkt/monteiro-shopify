@@ -134,13 +134,6 @@
             "collection": "public-spaces"
           }
         },
-        "s_rest": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "restaurants-fabrics"
-          }
-        },
         "s_retail": {
           "type": "collection",
           "settings": {
@@ -203,13 +196,6 @@
             "collection": "mass-transportation"
           }
         },
-        "s_train": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "train"
-          }
-        },
         "s_rv": {
           "type": "collection",
           "settings": {
@@ -223,7 +209,6 @@
         "s_hosp",
         "s_office",
         "s_public",
-        "s_rest",
         "s_retail",
         "s_resid",
         "s_fitness",
@@ -234,7 +219,6 @@
         "s_moto",
         "s_avia",
         "s_mass",
-        "s_train",
         "s_rv"
       ],
       "name": "Sectors",
