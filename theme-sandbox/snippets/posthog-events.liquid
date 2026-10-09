@@ -119,7 +119,7 @@
     }
   }, true);
 
-  /* Contact + newsletter forms (native Shopify {% form 'contact' %}) */
+  /* Contact + newsletter forms (native Shopify contact form) */
   document.addEventListener('submit', function (ev) {
     var f = ev.target;
     if (!f || !f.matches || !f.matches('form[action*="/contact"]')) return;
