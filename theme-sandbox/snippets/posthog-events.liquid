@@ -1,0 +1,137 @@
+{%- comment -%}
+  PostHog custom events — Monteiro Fabrics (2026-10-09).
+  Rendered in layout/theme.liquid right after posthog.init.
+  Events: sample_requested · catalogue_downloaded · technical_file_requested · lead_submitted
+  Also: super properties on every event, and PostHog distinct_id + entry UTMs written to the
+  cart as attributes so €0 sample orders can be tied back to their source.
+  Vault: WORK/Clients/Monteiro-Fabrics/projects/posthog-uso-completo.md
+{%- endcomment -%}
+<script>
+(function () {
+  if (!window.posthog) return;
+  var ph = window.posthog;
+
+  /* Super properties: sent with every event from here on. */
+  ph.register({
+    mf_locale: {{ request.locale.iso_code | json }},
+    mf_country: {{ localization.country.iso_code | json }},
+    mf_template: {{ template.name | json }}{% if template.suffix != blank %},
+    mf_template_suffix: {{ template.suffix | json }}{% endif %}
+  });
+
+  function sectorFromPath() {
+    var m = location.pathname.match(/\/collections\/([^\/]+)/);
+    return m ? m[1] : null;
+  }
+  function productCtx() {
+    {%- if product -%}
+    return { product_handle: {{ product.handle | json }}, product_title: {{ product.title | json }}, product_type: {{ product.type | json }} };
+    {%- else -%}
+    return {};
+    {%- endif -%}
+  }
+  function findVariant(variantId) {
+    var nodes = document.querySelectorAll('script[id^="cc-product-json-"]');
+    for (var i = 0; i < nodes.length; i++) {
+      try {
+        var p = JSON.parse(nodes[i].textContent);
+        for (var j = 0; j < p.variants.length; j++) {
+          if (String(p.variants[j].id) === String(variantId)) return { product: p, variant: p.variants[j] };
+        }
+      } catch (e) {}
+    }
+    return null;
+  }
+  function fileName(href) {
+    try { return decodeURIComponent(new URL(href, location.href).pathname.split('/').pop()); } catch (e) { return href; }
+  }
+  /* Entry source for this browser session (first page of the session wins). */
+  var ENTRY_KEY = 'mf_entry_v1';
+  (function rememberEntry() {
+    try {
+      if (sessionStorage.getItem(ENTRY_KEY)) return;
+      var q = new URLSearchParams(location.search), e = {};
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'].forEach(function (k) {
+        if (q.get(k)) e[k] = q.get(k).slice(0, 200);
+      });
+      if (document.referrer) {
+        try { var h = new URL(document.referrer).hostname; if (h !== location.hostname) e.referrer = h; } catch (x) {}
+      }
+      e.landing = location.pathname;
+      sessionStorage.setItem(ENTRY_KEY, JSON.stringify(e));
+    } catch (x) {}
+  })();
+  function entry() {
+    try { return JSON.parse(sessionStorage.getItem(ENTRY_KEY) || '{}'); } catch (x) { return {}; }
+  }
+  var cartTagged = false;
+  function tagCart() {
+    if (cartTagged) return;
+    cartTagged = true;
+    try {
+      var attrs = { ph_distinct_id: ph.get_distinct_id(), ph_session_id: ph.get_session_id() };
+      var e = entry();
+      Object.keys(e).forEach(function (k) { attrs['ph_' + k] = e[k]; });
+      fetch('{{ routes.cart_update_url }}.js', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ attributes: attrs }), keepalive: true
+      });
+    } catch (e) {}
+  }
+
+  document.addEventListener('click', function (ev) {
+    var el = ev.target.closest && ev.target.closest('button[name="add"], a[href]');
+    if (!el) return;
+
+    /* Sample / physical catalogue added to cart */
+    if (el.matches('button[name="add"]')) {
+      var form = el.form || el.closest('form');
+      var vid = form ? new FormData(form).get('id') : null;
+      var hit = vid ? findVariant(vid) : null;
+      var props = Object.assign({}, productCtx(), { sector: sectorFromPath(), variant_id: vid });
+      if (hit) {
+        props.product_handle = hit.product.handle;
+        props.product_title = hit.product.title;
+        props.colour = hit.variant.title;
+        props.kind = /catal/i.test(hit.variant.title + ' ' + hit.product.title) ? 'physical_catalogue' : 'sample';
+      }
+      ph.capture('sample_requested', props);
+      tagCart();
+      return;
+    }
+
+    var href = el.getAttribute('href') || '';
+    /* Technical file (Sender form) */
+    if (href.indexOf('stats.sender.net/forms') !== -1) {
+      var fid = (href.match(/forms\/([^\/?#]+)/) || [])[1] || null;
+      ph.capture('technical_file_requested', Object.assign({}, productCtx(), { sender_form: fid, sector: sectorFromPath() }));
+      return;
+    }
+    /* Catalogue PDF / Dropbox */
+    if (/\.pdf(\?|#|$)|dropbox\.com/i.test(href)) {
+      ph.capture('catalogue_downloaded', Object.assign({}, productCtx(), { file: fileName(href), sector: sectorFromPath() }));
+      return;
+    }
+    /* Physical catalogue via direct cart link */
+    if (/\/cart\/add\?id=/.test(href)) {
+      ph.capture('sample_requested', Object.assign({}, productCtx(), { kind: 'physical_catalogue', variant_id: (href.match(/id=(\d+)/) || [])[1] }));
+      tagCart();
+    }
+  }, true);
+
+  /* Contact + newsletter forms (native Shopify {% form 'contact' %}) */
+  document.addEventListener('submit', function (ev) {
+    var f = ev.target;
+    if (!f || !f.matches || !f.matches('form[action*="/contact"]')) return;
+    var fd = new FormData(f);
+    var email = (fd.get('contact[email]') || '').trim().toLowerCase();
+    var isNewsletter = (fd.get('contact[tags]') || '').indexOf('newsletter') !== -1 || f.id === 'footer_newsletter_signup';
+    var props = { form: isNewsletter ? 'newsletter' : 'contact', form_id: f.id || null };
+    if (email) {
+      props.email_domain = email.split('@')[1] || null;
+      ph.identify(email, { email: email });
+    }
+    ph.capture('lead_submitted', props);
+  }, true);
+})();
+</script>
