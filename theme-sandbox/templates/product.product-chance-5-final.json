@@ -62,7 +62,8 @@
           "type": "price",
           "settings": {
             "show_tax_and_shipping": false
-          }
+          },
+          "disabled": true
         },
         "8865a2ae-d558-4024-9d20-6614b94046a2": {
           "type": "image",
@@ -70,14 +71,16 @@
             "image": "shopify://shop_images/Image-Arrow-PNG2.png",
             "image_width": 80,
             "url": "{{ product.metafields.custom.url_chance_next_colors.value }}"
-          }
+          },
+          "disabled": true
         },
         "a67b1027-095e-4daa-bc56-fae6ded9358a": {
           "type": "text",
           "settings": {
             "text": "Show more {{ product.metafields.custom.n_de_cores_chance_.value }} colors",
             "text_style": "uppercase"
-          }
+          },
+          "disabled": true
         },
         "f36eedaf-2fb2-45f7-8be8-f6289eb8179d": {
           "type": "link",

@@ -1113,7 +1113,7 @@
 </div>
 
 
-{% if sc_many %}{% render 'swatch-collapse' %}{% endif %}
+{% if sc_many %}{% render 'swatch-collapse', n_colours: product.metafields.custom.n_de_cores_chance_.value %}{% endif %}
 {% schema %}
   {
     "name": "Featured product",

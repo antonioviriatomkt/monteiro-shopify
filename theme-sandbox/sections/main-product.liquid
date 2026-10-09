@@ -1164,7 +1164,7 @@
 </script>
 
 
-{% if sc_many %}{% render 'swatch-collapse' %}{% endif %}
+{% if sc_many %}{% render 'swatch-collapse', n_colours: product.metafields.custom.n_de_cores_chance_.value %}{% endif %}
 {%- comment -%} T3 (30/09): grade products canonicalise to their collection, which carries the Product node. {%- endcomment -%}
 {%- assign mf_grade_key = ',' | append: product.handle | append: ',' -%}
 {%- unless ',chance-classic,chance-outdoor,chance-mediflex,chance-bioblend,chance-crib-5,chance-crib-7-b1,' contains mf_grade_key -%}
