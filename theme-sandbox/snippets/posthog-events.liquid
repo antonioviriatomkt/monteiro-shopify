@@ -9,14 +9,36 @@
 <script>
 (function () {
   if (!window.posthog) return;
-  var ph = window.posthog;
+  /* Always go through window.posthog at call time (never a cached reference), and never capture
+     before the library has loaded: whenReady() runs now if loaded, otherwise queues the call and
+     flushes it from onFeatureFlags or a short poll (15 s max). */
+  function P() { return window.posthog; }
+  function isReady() { var p = P(); return !!(p && p.__loaded && typeof p.capture === 'function'); }
+  var queue = [], timer = null;
+  function flush() {
+    if (!isReady()) return false;
+    queue.splice(0).forEach(function (fn) { try { fn(); } catch (e) {} });
+    return true;
+  }
+  function whenReady(fn) {
+    if (isReady()) { try { fn(); } catch (e) {} return; }
+    queue.push(fn);
+    if (timer) return;
+    var n = 0;
+    timer = setInterval(function () { if (flush() || ++n > 150) { clearInterval(timer); timer = null; } }, 100);
+  }
+  try { P().onFeatureFlags(flush); } catch (e) {}
+  /* capture helper; opts e.g. { transport: 'sendBeacon' } for events fired as the page unloads */
+  function cap(name, props, opts) { whenReady(function () { P().capture(name, props, opts); }); }
 
   /* Super properties: sent with every event from here on. */
-  ph.register({
-    mf_locale: {{ request.locale.iso_code | json }},
-    mf_country: {{ localization.country.iso_code | json }},
-    mf_template: {{ template.name | json }}{% if template.suffix != blank %},
-    mf_template_suffix: {{ template.suffix | json }}{% endif %}
+  whenReady(function () {
+    P().register({
+      mf_locale: {{ request.locale.iso_code | json }},
+      mf_country: {{ localization.country.iso_code | json }},
+      mf_template: {{ template.name | json }}{% if template.suffix != blank %},
+      mf_template_suffix: {{ template.suffix | json }}{% endif %}
+    });
   });
 
   function sectorFromPath() {
@@ -67,16 +89,19 @@
   var cartTagged = false;
   function tagCart() {
     if (cartTagged) return;
-    cartTagged = true;
-    try {
-      var attrs = { ph_distinct_id: ph.get_distinct_id(), ph_session_id: ph.get_session_id() };
-      var e = entry();
-      Object.keys(e).forEach(function (k) { attrs['ph_' + k] = e[k]; });
-      fetch('{{ routes.cart_update_url }}.js', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ attributes: attrs }), keepalive: true
-      });
-    } catch (e) {}
+    whenReady(function () {
+      if (cartTagged) return;
+      cartTagged = true;
+      try {
+        var attrs = { ph_distinct_id: P().get_distinct_id(), ph_session_id: P().get_session_id() };
+        var e = entry();
+        Object.keys(e).forEach(function (k) { attrs['ph_' + k] = e[k]; });
+        fetch('{{ routes.cart_update_url }}.js', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ attributes: attrs }), keepalive: true
+        });
+      } catch (e) {}
+    });
   }
 
   document.addEventListener('click', function (ev) {
@@ -95,7 +120,7 @@
         props.colour = hit.variant.title;
         props.kind = /catal/i.test(hit.variant.title + ' ' + hit.product.title) ? 'physical_catalogue' : 'sample';
       }
-      ph.capture('sample_requested', props);
+      cap('sample_requested', props);
       tagCart();
       return;
     }
@@ -104,34 +129,60 @@
     /* Technical file (Sender form) */
     if (href.indexOf('stats.sender.net/forms') !== -1) {
       var fid = (href.match(/forms\/([^\/?#]+)/) || [])[1] || null;
-      ph.capture('technical_file_requested', Object.assign({}, productCtx(), { sender_form: fid, sector: sectorFromPath() }));
+      cap('technical_file_requested', Object.assign({}, productCtx(), { sender_form: fid, sector: sectorFromPath() }), { transport: 'sendBeacon' });
       return;
     }
     /* Catalogue PDF / Dropbox */
     if (/\.pdf(\?|#|$)|dropbox\.com/i.test(href)) {
-      ph.capture('catalogue_downloaded', Object.assign({}, productCtx(), { file: fileName(href), sector: sectorFromPath() }));
+      cap('catalogue_downloaded', Object.assign({}, productCtx(), { file: fileName(href), sector: sectorFromPath() }), { transport: 'sendBeacon' });
       return;
     }
     /* Physical catalogue via direct cart link */
     if (/\/cart\/add\?id=/.test(href)) {
-      ph.capture('sample_requested', Object.assign({}, productCtx(), { kind: 'physical_catalogue', variant_id: (href.match(/id=(\d+)/) || [])[1] }));
+      cap('sample_requested', Object.assign({}, productCtx(), { kind: 'physical_catalogue', variant_id: (href.match(/id=(\d+)/) || [])[1] }), { transport: 'sendBeacon' });
       tagCart();
     }
   }, true);
 
-  /* Contact + newsletter forms (native Shopify contact form) */
+  /* Contact + newsletter forms (native Shopify contact form: POST, full page reload).
+     The request must survive the unload, hence transport sendBeacon. */
+  var SENT_KEY = 'mf_lead_sent', EMAIL_KEY = 'mf_lead_email';
   document.addEventListener('submit', function (ev) {
     var f = ev.target;
     if (!f || !f.matches || !f.matches('form[action*="/contact"]')) return;
     var fd = new FormData(f);
     var email = (fd.get('contact[email]') || '').trim().toLowerCase();
     var isNewsletter = (fd.get('contact[tags]') || '').indexOf('newsletter') !== -1 || f.id === 'footer_newsletter_signup';
-    var props = { form: isNewsletter ? 'newsletter' : 'contact', form_id: f.id || null };
+    var props = { form: isNewsletter ? 'newsletter' : 'contact', form_id: f.id || null, page: location.pathname };
     if (email) {
       props.email_domain = email.split('@')[1] || null;
-      ph.identify(email, { email: email });
+      /* identify() is not sent by beacon: remember the email so the return page can (re)identify. */
+      try { sessionStorage.setItem(EMAIL_KEY, email); } catch (e) {}
     }
-    ph.capture('lead_submitted', props);
+    if (!isReady()) return;   /* not loaded yet: the contact_posted return fallback covers it */
+    if (email) P().identify(email, { email: email });
+    P().capture('lead_submitted', props, { transport: 'sendBeacon' });
+    try { sessionStorage.setItem(SENT_KEY, '1'); } catch (e) {}
   }, true);
+
+  /* Return from the native POST (/pages/contact?contact_posted=true): identify, and fall back to
+     capturing the lead if the submit-time beacon never ran. The flag stops refresh duplicates. */
+  if (/[?&]contact_posted=true(&|$)/.test(location.search)) {
+    whenReady(function () {
+      var email = null, sent = false;
+      try { email = sessionStorage.getItem(EMAIL_KEY); sessionStorage.removeItem(EMAIL_KEY); } catch (e) {}
+      if (email) { try { P().identify(email, { email: email }); } catch (e) {} }
+      try { sent = !!sessionStorage.getItem(SENT_KEY); } catch (e) {}
+      if (sent) return;
+      var props = {
+        form: location.hash === '#footer_newsletter_signup' ? 'newsletter' : 'contact',
+        form_id: location.hash ? location.hash.slice(1) : null,
+        page: location.pathname, source: 'contact_posted_return'
+      };
+      if (email) props.email_domain = email.split('@')[1] || null;
+      P().capture('lead_submitted', props);
+      try { sessionStorage.setItem(SENT_KEY, '1'); } catch (e) {}
+    });
+  }
 })();
 </script>
