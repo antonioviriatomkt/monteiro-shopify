@@ -86,22 +86,26 @@
   function entry() {
     try { return JSON.parse(sessionStorage.getItem(ENTRY_KEY) || '{}'); } catch (x) { return {}; }
   }
-  var cartTagged = false;
+  var cartTagged = false, cartTagging = false;
+  /* Runs ~1.5 s after the add so the theme's own /cart/add.js has created the cart first;
+     writing attributes to a cart that does not exist yet loses them. */
   function tagCart() {
-    if (cartTagged) return;
-    whenReady(function () {
-      if (cartTagged) return;
-      cartTagged = true;
-      try {
-        var attrs = { ph_distinct_id: P().get_distinct_id(), ph_session_id: P().get_session_id() };
-        var e = entry();
-        Object.keys(e).forEach(function (k) { attrs['ph_' + k] = e[k]; });
-        fetch('{{ routes.cart_update_url }}.js', {
-          method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ attributes: attrs }), keepalive: true
-        });
-      } catch (e) {}
-    });
+    if (cartTagged || cartTagging) return;
+    cartTagging = true;
+    setTimeout(function () {
+      whenReady(function () {
+        try {
+          var attrs = { ph_distinct_id: P().get_distinct_id(), ph_session_id: P().get_session_id() };
+          var e = entry();
+          Object.keys(e).forEach(function (k) { attrs['ph_' + k] = e[k]; });
+          fetch('{{ routes.cart_update_url }}.js', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ attributes: attrs }), keepalive: true
+          }).then(function (r) { if (r.ok) cartTagged = true; cartTagging = false; },
+                  function () { cartTagging = false; });
+        } catch (e) { cartTagging = false; }
+      });
+    }, 1500);
   }
 
   document.addEventListener('click', function (ev) {
