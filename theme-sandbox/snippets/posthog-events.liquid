@@ -94,6 +94,10 @@
     cartTagging = true;
     setTimeout(function () {
       whenReady(function () {
+        /* person_profiles is 'identified_only': an anonymous visitor has no person, so the checkout
+           pixel would create one at checkout and lose the first touch. Create it here, in the
+           browser, so it carries $initial_* (referrer, landing page, UTMs) before checkout. */
+        try { P().createPersonProfile(); } catch (e) {}
         try {
           var attrs = { ph_distinct_id: P().get_distinct_id(), ph_session_id: P().get_session_id() };
           var e = entry();

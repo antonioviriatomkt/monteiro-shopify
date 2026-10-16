@@ -1,4 +1,4 @@
-// PostHog — Shopify Custom Pixel (Monteiro Fabrics, 2026-10-09)
+// PostHog — Shopify Custom Pixel (Monteiro Fabrics, 2026-10-09; merge fix 2026-10-16)
 // Where: Shopify Admin → Settings → Customer events → Add custom pixel → name "PostHog checkout"
 //        → paste this file → Permission: "Not required" → Data sale: "Data collected does not qualify
 //        as data sale" → Save → Connect.
@@ -30,7 +30,7 @@ function attr(checkout, key) {
 async function send(event, checkout, extra) {
   const ids = await phIds();
   // Fallback: the distinct_id the theme wrote into the cart attributes.
-  const distinctId = ids.distinct_id || attr(checkout, 'ph_distinct_id') || ('checkout_' + checkout.token);
+  const distinctId = attr(checkout, 'ph_distinct_id') || ids.distinct_id || ('checkout_' + checkout.token);
   const lines = (checkout.lineItems || []).map((l) => ({
     product: l.variant && l.variant.product ? l.variant.product.title : l.title,
     variant: l.variant ? l.variant.title : undefined,
@@ -58,6 +58,15 @@ async function send(event, checkout, extra) {
       ph_landing: attr(checkout, 'ph_landing'),
     }, extra || {}),
   };
+  // First-touch fallback from the cart attributes the theme wrote. $set_once never overwrites,
+  // so a person already created in the browser (theme snippet) keeps its own $initial_* values.
+  const once = {};
+  [['$initial_utm_source', 'ph_utm_source'], ['$initial_utm_medium', 'ph_utm_medium'],
+   ['$initial_utm_campaign', 'ph_utm_campaign'], ['$initial_utm_term', 'ph_utm_term'],
+   ['$initial_utm_content', 'ph_utm_content'], ['$initial_gclid', 'ph_gclid'],
+   ['$initial_referring_domain', 'ph_referrer'], ['$initial_pathname', 'ph_landing']]
+    .forEach(([k, a]) => { const v = attr(checkout, a); if (v) once[k] = v; });
+  if (Object.keys(once).length) body.properties.$set_once = once;
   try {
     await fetch(PH_HOST + '/i/v0/e/', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -71,7 +80,7 @@ analytics.subscribe('checkout_started', (event) => send('checkout_started', even
 analytics.subscribe('checkout_completed', async (event) => {
   const c = event.data.checkout;
   const ids = await phIds();
-  const distinctId = ids.distinct_id || attr(c, 'ph_distinct_id');
+  const distinctId = attr(c, 'ph_distinct_id') || ids.distinct_id;
   await send('checkout_completed', c, { order_id: c.order ? c.order.id : undefined });
   // Identify the buyer by email so the order joins the person who browsed (B2B lead).
   if (c.email && distinctId) {
