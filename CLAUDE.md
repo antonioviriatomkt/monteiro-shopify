@@ -95,6 +95,28 @@ are superseded by `bin/mf`** — `deploy-files.mjs`, `deploy-section.mjs`, `depl
 `pull-files.mjs`, `deploy-thank-you-template.mjs`. `MF_THEME_DIR` selects the mirror for the rest
 (default `theme-sandbox`).
 
+## Supabase signal collectors (since 2026-10-20)
+
+Daily snapshots of GSC, Shopify orders and Sender leads into Supabase project
+**`btlkcbilpsjtyiqwnsal`** — shared with the VA Properties portal, so everything is prefixed
+`signals_` and nothing else there is ours to touch.
+
+| Piece | Where |
+|---|---|
+| Schema, flags, cron | `supabase/migrations/20261020142301_signals_collectors.sql` |
+| Edge Functions | `supabase/functions/collect-{gsc,shopify,sender}` + `_shared/signals.ts` (deploy with `verify_jwt: false`, ship `_shared` alongside) |
+| Schedule | pg_cron `signals-collect-*`, 05:00 / 05:05 / 05:10 Lisbon (04+05 UTC with an hour guard) |
+| Runs, errors, deltas | `public.signals_collector_runs` |
+| Secrets | Vault: `gsc_service_account_json`, `shopify_admin_token`, `sender_api_token`, `signals_cron_key` (generated) — read only via `signals_get_secret` |
+
+- Run by hand: `select public.signals_invoke('collect-gsc', '{"backfill": true}');` — answers 202, the
+  function chains itself past the 150 s wall clock and writes one row in `signals_collector_runs`.
+- `is_test` / `is_ucp` are set by triggers. Test emails live in `signals_test_identities` (seeded in
+  the DB, **never in this repo**); after editing a rule run `select public.signals_reflag();`.
+- Shopify only returns 60 days of orders unless the token has **`read_all_orders`**.
+- Sender's `/groups/{id}/subscribers` lists active subscribers only — `collect-sender` scans
+  `/subscribers` and filters by tag to keep unsubscribed / bounced leads.
+
 ## Known state
 
 - **2026-09-30 — redesign published.** `195386114425` is MAIN; Showcase `162670182703` unpublished
