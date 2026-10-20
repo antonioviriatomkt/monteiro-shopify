@@ -158,11 +158,22 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
     (params.backfill ? BACKFILL_SINCE : new Date(Date.now() - 3 * 86_400_000).toISOString());
   const q = `${field}:>='${since}'`;
 
+  // Without read_all_orders Shopify silently returns only the last 60 days — say so in the run row.
+  const notes: Record<string, unknown> = {};
+  if (!params.cursor) {
+    const scopes = (await gql('{ currentAppInstallation { accessScopes { handle } } }', {}))
+      .currentAppInstallation.accessScopes.map((s: { handle: string }) => s.handle);
+    notes.scopes = scopes.join(',');
+    if (Date.now() - Date.parse(since) > 60 * 86_400_000 && !scopes.includes('read_all_orders')) {
+      notes.warning = 'token lacks read_all_orders: orders older than 60 days are not returned';
+    }
+  }
+
   let after = (params.cursor as string) ?? null;
   let rows = 0, truncated = 0, samples = 0;
   while (true) {
     if (Date.now() > deadline) {
-      return { rows, details: { orders: rows, samples, line_items_truncated: truncated },
+      return { rows, details: { ...notes, orders: rows, samples, line_items_truncated: truncated },
         next: { field, since, cursor: after } };
     }
     const data = await gql(ORDERS, { q, after });
@@ -179,5 +190,5 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
     if (!data.orders.pageInfo.hasNextPage) break;
     after = data.orders.pageInfo.endCursor;
   }
-  return { rows, details: { orders: rows, samples, line_items_truncated: truncated, query: q } };
+  return { rows, details: { ...notes, orders: rows, samples, line_items_truncated: truncated, query: q } };
 });
