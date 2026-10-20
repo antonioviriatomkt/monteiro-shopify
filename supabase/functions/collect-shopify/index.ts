@@ -68,9 +68,19 @@ const ORDERS = `query($q: String!, $after: String) {
         lastVisit { source landingPage }
       }
       lineItems(first: 50) {
-        pageInfo { hasNextPage }
+        pageInfo { hasNextPage endCursor }
         nodes { title quantity sku variantTitle product { id handle productType } }
       }
+    }
+  }
+}`;
+
+// Old sample orders run past 50 lines; fetch the rest so line_items and collections are complete.
+const MORE_LINES = `query($id: ID!, $after: String) {
+  order(id: $id) {
+    lineItems(first: 100, after: $after) {
+      pageInfo { hasNextPage endCursor }
+      nodes { title quantity sku variantTitle product { id handle productType } }
     }
   }
 }`;
@@ -170,14 +180,22 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
   }
 
   let after = (params.cursor as string) ?? null;
-  let rows = 0, truncated = 0, samples = 0;
+  let rows = 0, paged = 0, samples = 0;
   while (true) {
     if (Date.now() > deadline) {
-      return { rows, details: { ...notes, orders: rows, samples, line_items_truncated: truncated },
+      return { rows, details: { ...notes, orders: rows, samples, line_items_extra_pages: paged },
         next: { field, since, cursor: after } };
     }
     const data = await gql(ORDERS, { q, after });
     const nodes = data.orders.nodes;
+    for (const o of nodes) {
+      let li = o.lineItems;
+      while (li?.pageInfo?.hasNextPage) {
+        li = (await gql(MORE_LINES, { id: o.id, after: li.pageInfo.endCursor })).order.lineItems;
+        o.lineItems.nodes.push(...li.nodes);
+        paged++;
+      }
+    }
     // deno-lint-ignore no-explicit-any
     await loadCollections(nodes.flatMap((o: any) => (o.lineItems?.nodes ?? []).map((l: any) => l.product?.id).filter(Boolean)));
     const now = new Date().toISOString();
@@ -185,10 +203,8 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
     await upsert('signals_shopify_orders', batch, 'order_id');
     rows += batch.length;
     samples += batch.filter((r: { total: number }) => r.total === 0).length;
-    // deno-lint-ignore no-explicit-any
-    truncated += nodes.filter((o: any) => o.lineItems?.pageInfo?.hasNextPage).length;
     if (!data.orders.pageInfo.hasNextPage) break;
     after = data.orders.pageInfo.endCursor;
   }
-  return { rows, details: { ...notes, orders: rows, samples, line_items_truncated: truncated, query: q } };
+  return { rows, details: { ...notes, orders: rows, samples, line_items_extra_pages: paged, query: q } };
 });
