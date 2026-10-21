@@ -15,31 +15,34 @@
   endif
 -%}
 <style>
-  .sector-cta{ --sc-rule:#dbdbdb; --sc-muted:#464654; margin: 8px 0 4px; }
-  .sector-cta__box{ display:grid; grid-template-columns:auto 1fr; grid-template-areas:"proof proof" "actions hint";
-    align-items:center; gap:18px 28px; border-top:1px solid var(--sc-rule); border-bottom:1px solid var(--sc-rule); padding:18px 0; }
-  .sector-cta__proof{ grid-area:proof; list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 24px; }
-  .sector-cta__item{ display:flex; gap:8px; align-items:flex-start; margin:0; padding:0; min-width:0; }
+  .sector-cta{ --sc-rule:#dbdbdb; --sc-muted:#464654; margin: 8px 0 20px; }
+  .sector-cta__box{ display:flex; flex-direction:column; align-items:center; gap:20px; max-width:1120px; margin:0 auto;
+    border-top:1px solid var(--sc-rule); border-bottom:1px solid var(--sc-rule); padding:22px 0; text-align:center; }
+  .sector-cta__proof{ order:1; list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:14px 40px; }
+  .sector-cta__item{ display:flex; gap:9px; align-items:flex-start; margin:0; padding:0; min-width:0; text-align:left; }
   .sector-cta__item::before{ content:none; }
-  .sector-cta__icon{ flex:none; width:18px; height:18px; margin-top:1px; stroke:var(--sc-muted); fill:none;
+  .sector-cta__icon{ flex:none; width:20px; height:20px; margin-top:1px; stroke:var(--sc-muted); fill:none;
     stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
-  .sector-cta__title{ display:block; font-weight:600; font-size:14px; line-height:1.3; }
-  .sector-cta__note{ display:block; font-size:12px; line-height:1.3; color:var(--sc-muted); }
-  .sector-cta__actions{ grid-area:actions; display:flex; gap:12px; }
+  .sector-cta__title{ display:block; font-weight:600; font-size:15px; line-height:1.3; }
+  .sector-cta__note{ display:block; font-size:13px; line-height:1.3; color:var(--sc-muted); }
+  .sector-cta__actions{ order:2; display:flex; justify-content:center; gap:12px; }
   .sector-cta__actions .button{ margin:0; white-space:nowrap; }
-  .sector-cta__hint{ grid-area:hint; margin:0; font-size:14px; line-height:1.4; color:var(--sc-muted); text-align:left; scroll-margin-top:110px; }
+  .sector-cta__hint{ order:3; margin:-6px 0 0; font-size:14px; line-height:1.4; color:var(--sc-muted); text-align:center; scroll-margin-top:110px; }
   @media (max-width: 1023px){
-    .sector-cta__box{ grid-template-columns:1fr; grid-template-areas:"actions" "proof" "hint"; }
-    .sector-cta__proof{ justify-content:flex-start; }
+    .sector-cta__box{ align-items:stretch; }
+    .sector-cta__actions{ order:0; }
     .sector-cta__actions .button{ flex:1 1 0; text-align:center; }
+    .sector-cta__hint{ margin-top:0; }
   }
   @media (max-width: 767px){
     .sector-cta{ margin-top:0; }
     .sector-cta__box{ gap:14px; padding:14px 0; }
     .sector-cta__proof{ display:grid; grid-template-columns:1fr 1fr; gap:10px 14px; }
+    .sector-cta__title{ font-size:14px; }
+    .sector-cta__note{ font-size:12px; }
     .sector-cta__actions{ gap:8px; }
     .sector-cta__actions .button{ padding-left:10px; padding-right:10px; font-size:13px; white-space:normal; }
-    .sector-cta__hint{ font-size:13px; }
+    .sector-cta__hint{ font-size:13px; text-align:left; }
   }
 </style>
 <div class="sector-cta wide-container" data-sector-cta>
