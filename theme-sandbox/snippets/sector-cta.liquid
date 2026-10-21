@@ -4,6 +4,7 @@
   WORK/Clients/Monteiro-Fabrics/paid-advertising/2026-09_sector-campaigns/5-landing-pages-audit-2026-10-21.md
   Rendered by sections/main-collection.liquid when its setting `show_sector_cta` is on (off by default).
   All text comes from locales: collections.sector_cta.*
+  2026-10-21: bottom rule removed (António) — border kept transparent so the gap to the filters is unchanged.
   ⚠️ 10-year warranty and stock service do NOT cover every product (António, 21/10) — they stay
   qualified "on stock-service fabrics". Never make either a general claim here.
 {%- endcomment -%}
@@ -17,7 +18,7 @@
 <style>
   .sector-cta{ --sc-rule:#dbdbdb; --sc-muted:#464654; margin: 8px 0 20px; }
   .sector-cta__box{ display:flex; flex-direction:column; align-items:center; gap:20px; max-width:1120px; margin:0 auto;
-    border-top:1px solid var(--sc-rule); border-bottom:1px solid var(--sc-rule); padding:22px 0; text-align:center; }
+    border-top:1px solid var(--sc-rule); border-bottom:1px solid transparent; padding:22px 0; text-align:center; }
   .sector-cta__proof{ order:1; list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:14px 40px; }
   .sector-cta__item{ display:flex; gap:9px; align-items:flex-start; margin:0; padding:0; min-width:0; text-align:left; }
   .sector-cta__item::before{ content:none; }
