@@ -25,16 +25,30 @@
     "credentials": {
       "type": "fabric-spec-icons",
       "blocks": {
-        "c1": { "type": "icon", "settings": { "icon": "flame", "label": "BS 5852 Crib 5 & Crib 7" } },
-        "c2": { "type": "icon", "settings": { "icon": "long-lasting", "label": "10-year warranty" } },
-        "c3": { "type": "icon", "settings": { "icon": "easy-clean", "label": "Easy to clean" } }
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "BS 5852 Crib 5 & Crib 7"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Alcohol resistant"
+          }
+        }
       },
-      "block_order": ["c1", "c2", "c3"],
+      "block_order": [
+        "c1",
+        "c3"
+      ],
       "settings": {
         "eyebrow": "Fire performance",
         "title": "Tested for contract seating",
         "body_position": "above",
-        "columns": 3,
+        "columns": 2,
         "bg_color": "#FFFFFF",
         "text_color": "#111111"
       }
@@ -42,13 +56,49 @@
     "faq": {
       "type": "faq-schema",
       "blocks": {
-        "q1": { "type": "faq", "settings": { "question": "What do BS 5852 Crib 5 and Crib 7 mean?", "answer": "<p>BS 5852 is the British Standard method for assessing the ignitability of upholstered seating. Crib 5 and Crib 7 are two of its wooden-crib ignition sources; Crib 7 is the larger and more demanding of the two.</p>" } },
-        "q2": { "type": "faq", "settings": { "question": "Which fabric meets Crib 7?", "answer": "<p>CHANCE Crib 7 | B1. It is also certified to DIN 4102 B1 and NF P 92-507 M1, and is designed for high-traffic venues such as stadiums and auditoriums.</p>" } },
-        "q3": { "type": "faq", "settings": { "question": "Do these fabrics carry other fire certifications?", "answer": "<p>Yes. Each collection lists its full set of fire certifications on its product page — for example EN 1021-1+2 and IMO 2010 FTP Code Part 8 on several collections. Ask our team for the test reports your project requires.</p>" } },
-        "q4": { "type": "faq", "settings": { "question": "Does the fabric certificate cover the finished chair?", "answer": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build — foam, interliner and fabric — for your own project.</p>" } },
-        "q5": { "type": "faq", "settings": { "question": "Can I order samples?", "answer": "<p>Yes — samples are free. Add them to your cart from any collection, or contact us for project specifications.</p>" } }
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What do BS 5852 Crib 5 and Crib 7 mean?",
+            "answer": "<p>BS 5852 is the British Standard method for assessing the ignitability of upholstered seating. Crib 5 and Crib 7 are two of its wooden-crib ignition sources; Crib 7 is the larger and more demanding of the two.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Which fabric meets Crib 7?",
+            "answer": "<p>CHANCE Crib 7 | B1. It is also certified to DIN 4102 B1 and NF P 92-507 M1, and is designed for high-traffic venues such as stadiums and auditoriums.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do these fabrics carry other fire certifications?",
+            "answer": "<p>Yes. Each collection lists its full set of fire certifications on its product page — for example EN 1021-1+2 and IMO 2010 FTP Code Part 8 on several collections. Ask our team for the test reports your project requires.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the fabric certificate cover the finished chair?",
+            "answer": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build — foam, interliner and fabric — for your own project.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — samples are free. Add them to your cart from any collection, or contact us for project specifications.</p>"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
       "settings": {
         "eyebrow": "Fire-retardant fabrics — answered",
         "title": "Frequently asked questions",
@@ -62,7 +112,7 @@
         "crumb_current": "Fire-Retardant Upholstery Fabrics",
         "emit_collectionpage": true,
         "cp_name": "Fire-Retardant Upholstery Fabrics",
-        "cp_description": "Coated upholstery fabrics tested to BS 5852 Crib 5 and Crib 7 for contract seating. Made in Portugal by Monteiro Fabrics, with a 10-year warranty and free samples."
+        "cp_description": "Coated upholstery fabrics tested to BS 5852 Crib 5 and Crib 7 for contract seating. Made in Portugal by Monteiro Fabrics, with free samples."
       }
     },
     "cta": {
@@ -85,5 +135,10 @@
       }
     }
   },
-  "order": ["main", "credentials", "faq", "cta"]
+  "order": [
+    "main",
+    "credentials",
+    "faq",
+    "cta"
+  ]
 }

@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 20,
         "heading_h1": true,
-        "text": "<p>Monteiro's coated upholstery fabrics are a durable vegan leather alternative made in Portugal. A coated fabric is a textile base finished with a protective polymer coating, giving a hard-wearing, easy to clean surface that is stain- and water-resistant, flame-retardant, phthalate-free and REACH-compliant.</p><p>Browse the full range below, or speak to a specialist for project specifications and free samples.</p>",
+        "text": "<p>Monteiro's coated upholstery fabrics are a durable vegan leather alternative made in Portugal. A coated fabric is a textile base finished with a protective polymer coating, giving a hard-wearing surface. Every collection is fire-tested for upholstery.</p><p>Browse the full range below, or speak to a specialist for project specifications and free samples.</p>",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -62,35 +62,28 @@
           "type": "icon",
           "settings": {
             "icon": "abrasion",
-            "label": "Abrasion resistant"
+            "label": "Abrasion-tested"
           }
         },
         "c2": {
           "type": "icon",
           "settings": {
             "icon": "easy-clean",
-            "label": "Easy to clean"
+            "label": "Alcohol resistant"
           }
         },
         "c3": {
           "type": "icon",
           "settings": {
             "icon": "flame",
-            "label": "Flame retardant"
-          }
-        },
-        "c4": {
-          "type": "icon",
-          "settings": {
-            "icon": "light-resistant",
-            "label": "Colour-fast and light resistant"
+            "label": "Fire tested"
           }
         },
         "c5": {
           "type": "icon",
           "settings": {
-            "icon": "long-lasting",
-            "label": "Long lasting"
+            "icon": "vegan",
+            "label": "Animal-free"
           }
         }
       },
@@ -98,7 +91,6 @@
         "c1",
         "c2",
         "c3",
-        "c4",
         "c5"
       ],
       "settings": {
@@ -106,7 +98,7 @@
         "title": "Why coated fabrics",
         "body": "",
         "body_position": "above",
-        "columns": 5,
+        "columns": 4,
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "cta_label": "",
@@ -128,35 +120,21 @@
           "type": "spec",
           "settings": {
             "label": "Surface",
-            "value": "Smooth, non-absorbent, leather-like"
+            "value": "Leather-like coated surface"
           }
         },
         "s3": {
           "type": "spec",
           "settings": {
             "label": "Abrasion resistance",
-            "value": "Heavy-duty, contract grade"
-          }
-        },
-        "s4": {
-          "type": "spec",
-          "settings": {
-            "label": "Stain & water resistance",
-            "value": "High; wipe-clean surface"
-          }
-        },
-        "s5": {
-          "type": "spec",
-          "settings": {
-            "label": "Cleanability",
-            "value": "Wipe-clean with mild detergent"
+            "value": "Up to 400,000 Martindale, by collection"
           }
         },
         "s6": {
           "type": "spec",
           "settings": {
-            "label": "Flame retardancy",
-            "value": "Meets contract upholstery fire-safety standards"
+            "label": "Fire performance",
+            "value": "Certified per collection — see each collection's standards"
           }
         },
         "s7": {
@@ -164,20 +142,6 @@
           "settings": {
             "label": "Animal-free",
             "value": "Vegan leather alternative"
-          }
-        },
-        "s8": {
-          "type": "spec",
-          "settings": {
-            "label": "Phthalates",
-            "value": "Phthalate-free"
-          }
-        },
-        "s9": {
-          "type": "spec",
-          "settings": {
-            "label": "Chemical compliance",
-            "value": "REACH-compliant"
           }
         },
         "s10": {
@@ -192,12 +156,8 @@
         "s1",
         "s2",
         "s3",
-        "s4",
-        "s5",
         "s6",
         "s7",
-        "s8",
-        "s9",
         "s10"
       ],
       "settings": {
@@ -221,21 +181,21 @@
           "type": "faq",
           "settings": {
             "question": "What are coated fabrics?",
-            "answer": "<p>Coated fabrics are textiles finished with a protective polymer coating bonded to a fabric base. The coating creates a smooth, non-absorbent, leather-like surface that is hard-wearing, easy to clean and resistant to stains and water — making coated fabrics a practical upholstery material across many sectors.</p>"
+            "answer": "<p>Coated fabrics are textiles finished with a protective polymer coating bonded to a fabric base. The coating creates a smooth, leather-like surface — making coated fabrics a practical upholstery material across many sectors.</p>"
           }
         },
         "q2": {
           "type": "faq",
           "settings": {
             "question": "How are coated fabrics different from real leather?",
-            "answer": "<p>Unlike real leather, coated fabrics are animal-free and made to a consistent specification, so colour, texture and performance are uniform across every roll. They offer a leather-like look and feel while being easier to clean, more colour-fast and free from the natural variation and marks found in hides.</p>"
+            "answer": "<p>Unlike real leather, coated fabrics are animal-free and made to a specification, without the natural variation and marks found in hides. They offer a leather-like look and feel.</p>"
           }
         },
         "q3": {
           "type": "faq",
           "settings": {
-            "question": "Are coated fabrics durable and easy to clean?",
-            "answer": "<p>Yes. Coated fabrics are abrasion-resistant and contract-grade, built to withstand heavy use. The non-absorbent surface wipes clean with a mild detergent and resists stains and water, so they stay looking good with minimal maintenance.</p>"
+            "question": "How durable are coated fabrics?",
+            "answer": "<p>Abrasion resistance goes up to 400,000 Martindale, depending on the collection, and every collection resists alcohol-based cleaners. Each collection page lists its figures.</p>"
           }
         },
         "q4": {
@@ -249,7 +209,7 @@
           "type": "faq",
           "settings": {
             "question": "What are coated fabrics used for?",
-            "answer": "<p>Coated fabrics are specified across healthcare, hospitality, office, marine, automotive, retail, public spaces and more — anywhere upholstery needs to be hard-wearing, easy to clean and resistant to stains and water.</p>"
+            "answer": "<p>Coated fabrics are specified across healthcare, hospitality, office, marine, automotive, retail, public spaces and more — anywhere upholstery needs to be hard-wearing and fire-tested.</p>"
           }
         },
         "q6": {
@@ -282,7 +242,7 @@
         "crumb_current": "Coated Upholstery Fabrics",
         "emit_collectionpage": true,
         "cp_name": "Coated Upholstery Fabrics",
-        "cp_description": "Durable coated upholstery fabrics — a vegan leather alternative made in Portugal. Hard-wearing, easy to clean, stain- and water-resistant, flame-retardant and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_description": "Coated upholstery fabrics — a vegan leather alternative made in Portugal. Hard-wearing and fire-tested for upholstery. Made in Portugal by Monteiro Fabrics.",
         "cp_url": "https://www.monteirofabrics.com/collections/coated-fabrics"
       }
     },

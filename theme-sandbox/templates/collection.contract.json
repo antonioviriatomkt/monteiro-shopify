@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 20,
         "heading_h1": true,
-        "text": "<p>Monteiro's contract upholstery fabrics are commercial-grade coated fabrics for hospitality, office, healthcare, retail and public-space projects. Every fabric in the collection is built for heavy-duty durability and is flame-retardant, stain-resistant, easy to clean and REACH-compliant — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "text": "<p>Monteiro's contract upholstery fabrics are commercial coated fabrics for hospitality, office, healthcare, retail and public-space projects. Every fabric in the collection is fire-certified for upholstered seating — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
         "image_width": 120,
         "text_alignment": "center",
         "enlarge_text": false,
@@ -51,18 +51,46 @@
     "credentials": {
       "type": "fabric-spec-icons",
       "blocks": {
-        "c1": { "type": "icon", "settings": { "icon": "abrasion", "label": "Heavy-duty abrasion resistant" } },
-        "c2": { "type": "icon", "settings": { "icon": "flame", "label": "Flame retardant" } },
-        "c3": { "type": "icon", "settings": { "icon": "easy-clean", "label": "Easy to clean" } },
-        "c4": { "type": "icon", "settings": { "icon": "light-resistant", "label": "Colour-fast and light resistant" } },
-        "c5": { "type": "icon", "settings": { "icon": "long-lasting", "label": "Long lasting" } }
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "abrasion",
+            "label": "Up to 400,000 Martindale"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "Fire certified"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "easy-clean",
+            "label": "Alcohol resistant"
+          }
+        },
+        "c5": {
+          "type": "icon",
+          "settings": {
+            "icon": "vegan",
+            "label": "Animal-free"
+          }
+        }
       },
-      "block_order": ["c1", "c2", "c3", "c4", "c5"],
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c5"
+      ],
       "settings": {
         "eyebrow": "Performance & compliance",
         "title": "Built to commercial standards",
         "body_position": "above",
-        "columns": 5,
+        "columns": 4,
         "bg_color": "#FFFFFF",
         "text_color": "#111111"
       }
@@ -70,18 +98,49 @@
     "specs": {
       "type": "spec-table",
       "blocks": {
-        "s1": { "type": "spec", "settings": { "label": "Material", "value": "Coated fabric" } },
-        "s2": { "type": "spec", "settings": { "label": "Abrasion resistance", "value": "Heavy-duty, contract grade" } },
-        "s3": { "type": "spec", "settings": { "label": "Stain resistance", "value": "High; non-absorbent surface" } },
-        "s4": { "type": "spec", "settings": { "label": "Cleanability", "value": "Wipe-clean with mild detergent" } },
-        "s5": { "type": "spec", "settings": { "label": "Flame retardancy", "value": "Meets contract upholstery fire-safety standards" } },
-        "s6": { "type": "spec", "settings": { "label": "Light & colour fastness", "value": "Colour-fast, resists fading" } },
-        "s7": { "type": "spec", "settings": { "label": "Phthalates", "value": "Phthalate-free" } },
-        "s8": { "type": "spec", "settings": { "label": "Chemical compliance", "value": "REACH-compliant" } },
-        "s9": { "type": "spec", "settings": { "label": "Care", "value": "No solvents or abrasive cleaners required" } },
-        "s10": { "type": "spec", "settings": { "label": "Origin", "value": "Made in Portugal" } }
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Up to 400,000 Martindale, by collection"
+          }
+        },
+        "s5": {
+          "type": "spec",
+          "settings": {
+            "label": "Fire performance",
+            "value": "Certified per collection — EN 1021, BS 5852, IMO, NF P 92-507 and more"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        },
+        "s11": {
+          "type": "spec",
+          "settings": {
+            "label": "Animal-free",
+            "value": "Every collection — no animal materials"
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s5",
+        "s11",
+        "s10"
+      ],
       "settings": {
         "eyebrow": "Technical specifications",
         "title": "Engineered for contract projects",
@@ -101,35 +160,35 @@
           "type": "faq",
           "settings": {
             "question": "What are contract upholstery fabrics?",
-            "answer": "<p>Contract upholstery fabrics are commercial-grade materials made for high-use furniture in professional environments rather than the home. Monteiro's contract fabrics are coated fabrics engineered for heavy-duty durability — flame-retardant, stain-resistant, easy to clean and REACH-compliant — suitable for hospitality, office, healthcare, retail and public-space projects.</p>"
+            "answer": "<p>Contract upholstery fabrics are commercial-grade materials made for high-use furniture in professional environments rather than the home. Monteiro's contract fabrics are coated fabrics, each fire-certified for upholstered seating. Together they cover hospitality, office, healthcare, retail and public-space projects.</p>"
           }
         },
         "q2": {
           "type": "faq",
           "settings": {
             "question": "How do contract fabrics differ from residential ones?",
-            "answer": "<p>Contract fabrics are built to withstand far more intensive use than residential upholstery. They offer heavier-duty abrasion resistance, meet commercial fire-safety standards, resist staining and fading, and are designed to be cleaned frequently — so they keep performing in busy public and commercial settings.</p>"
+            "answer": "<p>Contract fabrics are built for far more intensive use than residential upholstery: they are abrasion-tested and fire-certified for commercial seating.</p>"
           }
         },
         "q3": {
           "type": "faq",
           "settings": {
             "question": "How durable are they?",
-            "answer": "<p>The collection is engineered for heavy-duty, contract-grade durability. The coated surface resists abrasion, staining and fading, and stands up to repeated cleaning, making it well suited to high-traffic commercial seating that needs to last.</p>"
+            "answer": "<p>Abrasion resistance goes up to 400,000 Martindale, depending on the collection — each collection page lists its figure. Ask us which suits your traffic levels.</p>"
           }
         },
         "q4": {
           "type": "faq",
           "settings": {
             "question": "Do they meet fire-safety standards for commercial projects?",
-            "answer": "<p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Ask our team for the specific certificates and test reports your project requires. For seating that must meet BS 5852 Crib 5 or Crib 7, see our <a href=\"/collections/fire-retardant-upholstery-fabrics\">fire-retardant upholstery fabrics</a>.</p>"
+            "answer": "<p>Yes. Every collection carries fire certification for upholstered seating — EN 1021 on all but CHANCE Crib 7 | B1 (BS 5852 Crib 7), with BS 5852, IMO or NF P 92-507 on many. Ask our team for the specific certificates and test reports your project requires. For seating that must meet BS 5852 Crib 5 or Crib 7, see our <a href=\"/collections/fire-retardant-upholstery-fabrics\">fire-retardant upholstery fabrics</a>.</p>"
           }
         },
         "q5": {
           "type": "faq",
           "settings": {
             "question": "Which sectors are these fabrics used in?",
-            "answer": "<p>They are specified across commercial sectors including hotels and hospitality, offices and workplaces, healthcare, retail, restaurants and bars, and public spaces — anywhere that demands hard-wearing, easy-to-clean upholstery.</p>"
+            "answer": "<p>They are specified across commercial sectors including hotels and hospitality, offices and workplaces, healthcare, retail, restaurants and bars, and public spaces — anywhere upholstery must meet commercial fire-safety standards.</p>"
           }
         },
         "q6": {
@@ -140,7 +199,14 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
       "settings": {
         "eyebrow": "Contract fabrics — answered",
         "title": "Frequently asked questions",
@@ -154,7 +220,7 @@
         "crumb_current": "Contract Upholstery Fabrics",
         "emit_collectionpage": true,
         "cp_name": "Contract Upholstery Fabrics",
-        "cp_description": "Commercial-grade coated upholstery fabrics for hospitality, office, healthcare, retail and public-space projects. Heavy-duty, flame-retardant, stain-resistant and easy to clean. Made in Portugal by Monteiro Fabrics.",
+        "cp_description": "Commercial coated upholstery fabrics for hospitality, office, healthcare, retail and public-space projects. Fire-certified for upholstered seating. Made in Portugal by Monteiro Fabrics.",
         "cp_url": "https://www.monteirofabrics.com/collections/contract"
       }
     },
@@ -178,5 +244,12 @@
       }
     }
   },
-  "order": ["intro", "main", "credentials", "specs", "faq", "cta"]
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
 }

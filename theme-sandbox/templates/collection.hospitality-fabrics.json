@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 20,
         "heading_h1": true,
-        "text": "<p>Monteiro's hospitality upholstery fabrics are contract-grade coated fabrics for hotels, lobbies, lounges, bars and restaurants. Built for high-traffic durability, every fabric in the collection is stain-resistant, flame-retardant and easy to clean — REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "text": "<p>Monteiro's hospitality upholstery fabrics are contract coated fabrics for hotels, lobbies, lounges, bars and restaurants. Every fabric in the collection is fire-certified for upholstered seating — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -62,28 +62,28 @@
           "type": "icon",
           "settings": {
             "icon": "abrasion",
-            "label": "Abrasion resistant for high-traffic use"
+            "label": "Up to 400,000 Martindale"
           }
         },
         "c2": {
           "type": "icon",
           "settings": {
             "icon": "easy-clean",
-            "label": "Easy to clean"
+            "label": "Alcohol resistant"
           }
         },
         "c3": {
           "type": "icon",
           "settings": {
             "icon": "flame",
-            "label": "Flame retardant"
+            "label": "Fire certified"
           }
         },
         "c4": {
           "type": "icon",
           "settings": {
-            "icon": "long-lasting",
-            "label": "Long lasting"
+            "icon": "vegan",
+            "label": "Animal-free"
           }
         },
         "c5": {
@@ -128,56 +128,14 @@
           "type": "spec",
           "settings": {
             "label": "Abrasion resistance",
-            "value": "Heavy-duty, contract grade for high-traffic seating"
-          }
-        },
-        "s3": {
-          "type": "spec",
-          "settings": {
-            "label": "Stain resistance",
-            "value": "High; non-absorbent surface"
-          }
-        },
-        "s4": {
-          "type": "spec",
-          "settings": {
-            "label": "Cleanability",
-            "value": "Wipe-clean with mild detergent"
+            "value": "Up to 400,000 Martindale, by collection"
           }
         },
         "s5": {
           "type": "spec",
           "settings": {
-            "label": "Flame retardancy",
-            "value": "Meets contract upholstery fire-safety standards"
-          }
-        },
-        "s6": {
-          "type": "spec",
-          "settings": {
-            "label": "Light & colour fastness",
-            "value": "Colour-fast, resists fading"
-          }
-        },
-        "s7": {
-          "type": "spec",
-          "settings": {
-            "label": "Phthalates",
-            "value": "Phthalate-free"
-          }
-        },
-        "s8": {
-          "type": "spec",
-          "settings": {
-            "label": "Chemical compliance",
-            "value": "REACH-compliant"
-          }
-        },
-        "s9": {
-          "type": "spec",
-          "settings": {
-            "label": "Care",
-            "value": "No solvents or abrasive cleaners required"
+            "label": "Fire performance",
+            "value": "Certified per collection — EN 1021, BS 5852 and more"
           }
         },
         "s10": {
@@ -186,18 +144,20 @@
             "label": "Origin",
             "value": "Made in Portugal"
           }
+        },
+        "s11": {
+          "type": "spec",
+          "settings": {
+            "label": "Animal-free",
+            "value": "Every collection — no animal materials"
+          }
         }
       },
       "block_order": [
         "s1",
         "s2",
-        "s3",
-        "s4",
         "s5",
-        "s6",
-        "s7",
-        "s8",
-        "s9",
+        "s11",
         "s10"
       ],
       "settings": {
@@ -221,35 +181,35 @@
           "type": "faq",
           "settings": {
             "question": "What makes a fabric suitable for hospitality interiors?",
-            "answer": "<p>Hospitality upholstery fabrics must stand up to heavy daily use, resist stains and spills, clean up quickly between guests and meet fire-safety requirements — while still looking refined. Monteiro's hospitality fabrics are contract-grade coated fabrics that are abrasion-resistant, easy to clean, flame-retardant and REACH-compliant.</p>"
+            "answer": "<p>Hospitality upholstery fabrics must stand up to heavy daily use, resist alcohol-based cleaners and meet fire-safety requirements — while still looking refined. Monteiro's hospitality fabrics are contract coated fabrics that are abrasion-tested and fire-certified.</p>"
           }
         },
         "q2": {
           "type": "faq",
           "settings": {
             "question": "Are these fabrics durable enough for high-traffic hotel and lobby use?",
-            "answer": "<p>Yes. The collection is contract grade, with heavy-duty abrasion resistance engineered for the constant use seen in hotels, lobbies and lounges. The coated surface holds up to repeated sitting, cleaning and movement without quickly showing wear.</p>"
+            "answer": "<p>The collection is abrasion-tested to up to 400,000 Martindale, depending on the collection — each collection page lists its figure — for the constant use seen in hotels, lobbies and lounges.</p>"
           }
         },
         "q3": {
           "type": "faq",
           "settings": {
-            "question": "Are hospitality fabrics stain-resistant and easy to clean?",
-            "answer": "<p>Yes. The non-absorbent coated surface resists stains and wipes clean with a mild detergent, so spills from food and drink can be removed quickly. Avoid solvents and abrasive cleaners to keep the surface in good condition.</p>"
+            "question": "How are hospitality fabrics cleaned?",
+            "answer": "<p>Every collection resists alcohol-based cleaners. Ask us for each collection's care instructions.</p>"
           }
         },
         "q4": {
           "type": "faq",
           "settings": {
             "question": "Do the fabrics meet fire-safety standards for contract projects?",
-            "answer": "<p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Fire-safety requirements vary by country and project, so ask our team for the specific certificates your project requires.</p>"
+            "answer": "<p>Yes. Every collection carries fire certification for upholstered seating. Fire-safety requirements vary by country and project, so ask our team for the specific certificates your project requires.</p>"
           }
         },
         "q5": {
           "type": "faq",
           "settings": {
             "question": "Where are Monteiro hospitality fabrics used?",
-            "answer": "<p>They are specified for hotels, lobbies and reception areas, lounges, bars, restaurants and spas — anywhere that demands durable, stain-resistant, easy-to-clean seating that still looks the part for guests.</p>"
+            "answer": "<p>They are specified for hotels, lobbies and reception areas, lounges, bars, restaurants and spas — anywhere that demands durable, fire-certified seating that still looks the part for guests.</p>"
           }
         },
         "q6": {
@@ -282,7 +242,7 @@
         "crumb_current": "Hospitality Upholstery Fabrics",
         "emit_collectionpage": true,
         "cp_name": "Hospitality Upholstery Fabrics",
-        "cp_description": "Contract-grade coated upholstery fabrics for hotels, lobbies, lounges, bars and restaurants. Durable, stain-resistant, flame-retardant and easy to clean. Made in Portugal by Monteiro Fabrics.",
+        "cp_description": "Contract coated upholstery fabrics for hotels, lobbies, lounges, bars and restaurants. Durable and fire-certified. Made in Portugal by Monteiro Fabrics.",
         "cp_url": "https://www.monteirofabrics.com/collections/hospitality-fabrics"
       }
     },

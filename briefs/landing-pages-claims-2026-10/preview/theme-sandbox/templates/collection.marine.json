@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "intro": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Marine &amp; yacht upholstery",
+        "title": "Marine Interior Upholstery Fabrics",
+        "title_size": 46,
+        "title_width": 20,
+        "heading_h1": true,
+        "text": "<p>Monteiro's marine interior upholstery fabrics are coated fabrics for yacht and boat interiors. Every fabric in the collection is tested to IMO 2010 FTP Code Part 8, light-resistant and mould-resistant (Sanitized® antifungal) — REACH-compliant and made in Portugal. For seating on deck, choose LIMA, MARINA, SIESTA or CHANCE Outdoor.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": true,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_content": false,
+        "show_collection_image": false,
+        "description_position": "top",
+        "layout": "rows",
+        "grid": 4,
+        "grid_mobile": "2",
+        "products_per_page": 12,
+        "enable_infinite_scroll": false,
+        "show_vendor": true,
+        "show_filter_counts": true,
+        "show_filter_deadends": false,
+        "ajax_products": true,
+        "filter_mode_desktop": "simple",
+        "filter_mode_mobile": "sidebar",
+        "sticky_sidebar": true,
+        "collapse_filters_method": "none",
+        "collapse_sort_by": true,
+        "enable_sorting": false,
+        "show_featured_in_sort": true
+      }
+    },
+    "credentials": {
+      "type": "fabric-spec-icons",
+      "blocks": {
+        "c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "flame",
+            "label": "IMO 2010 FTP Code Part 8"
+          }
+        },
+        "c2": {
+          "type": "icon",
+          "settings": {
+            "icon": "light-resistant",
+            "label": "Light resistant"
+          }
+        },
+        "c3": {
+          "type": "icon",
+          "settings": {
+            "icon": "anti-microbial",
+            "label": "Mould resistant"
+          }
+        },
+        "c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "long-lasting",
+            "label": "Long lasting"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "eyebrow": "Performance & compliance",
+        "title": "Built for life on the water",
+        "body": "",
+        "body_position": "above",
+        "columns": 4,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "cta_label": "",
+        "cta_link": "",
+        "cta_style": "primary"
+      }
+    },
+    "specs": {
+      "type": "spec-table",
+      "blocks": {
+        "s1": {
+          "type": "spec",
+          "settings": {
+            "label": "Material",
+            "value": "Coated fabric"
+          }
+        },
+        "s2": {
+          "type": "spec",
+          "settings": {
+            "label": "Light fastness",
+            "value": "Light-resistant"
+          }
+        },
+        "s3": {
+          "type": "spec",
+          "settings": {
+            "label": "Sea water",
+            "value": "Colour-fast to water and sea water on MARINA, SIESTA, CHANCE Classic and CHANCE Outdoor"
+          }
+        },
+        "s4": {
+          "type": "spec",
+          "settings": {
+            "label": "Mould",
+            "value": "Sanitized® antifungal protection"
+          }
+        },
+        "s6": {
+          "type": "spec",
+          "settings": {
+            "label": "Abrasion resistance",
+            "value": "Up to 400,000 Martindale, by collection"
+          }
+        },
+        "s7": {
+          "type": "spec",
+          "settings": {
+            "label": "Fire performance",
+            "value": "IMO 2010 FTP Code Part 8 on every collection"
+          }
+        },
+        "s9": {
+          "type": "spec",
+          "settings": {
+            "label": "Chemical compliance",
+            "value": "REACH-compliant"
+          }
+        },
+        "s10": {
+          "type": "spec",
+          "settings": {
+            "label": "Origin",
+            "value": "Made in Portugal"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s6",
+        "s7",
+        "s9",
+        "s10"
+      ],
+      "settings": {
+        "eyebrow": "Technical specifications",
+        "title": "Engineered for marine interiors",
+        "intro": "",
+        "align": "center",
+        "note": "",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "cta_label": "Request the technical data sheet",
+        "cta_link": "shopify://pages/contact",
+        "cta_style": "alt"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes a fabric suitable for marine and yacht interiors?",
+            "answer": "<p>Marine interior fabrics must cope with strong sunlight, salt air, humidity and frequent cleaning while staying comfortable on board. Monteiro's marine fabrics are coated fabrics that are tested to IMO 2010 FTP Code Part 8, light-resistant and mould-resistant (Sanitized® antifungal).</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Are these fabrics light-resistant?",
+            "answer": "<p>Yes — every collection is light-resistant. For exterior seating, choose a collection made for inside and outside use: LIMA, MARINA, SIESTA or CHANCE Outdoor.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they resist mould and sea water?",
+            "answer": "<p>Every collection has Sanitized® antifungal protection against mould. MARINA, SIESTA, CHANCE Classic and CHANCE Outdoor are also colour-fast to water and sea water.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they meet fire-safety standards?",
+            "answer": "<p>Every collection is tested to IMO 2010 FTP Code Part 8 and is REACH-compliant. Ask our team for the marine certificates your project requires.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are these fabrics used?",
+            "answer": "<p>They are specified for yacht and boat interiors — cabins, saloons, seating, headboards and cruise furniture — anywhere on board that demands durable, light-resistant upholstery.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I order samples?",
+            "answer": "<p>Yes — request free samples or the full technical data sheet, and our specialists will help you match the right fabric to your specification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Marine fabrics — answered",
+        "title": "Frequently asked questions",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "line_color": "#e0e0dc",
+        "emit_breadcrumb": true,
+        "crumb_home": "Home",
+        "crumb_home_url": "https://www.monteirofabrics.com/",
+        "crumb_current": "Marine Interior Upholstery Fabrics",
+        "emit_collectionpage": true,
+        "cp_name": "Marine Interior Upholstery Fabrics",
+        "cp_description": "Coated upholstery fabrics for yacht and boat interiors: IMO 2010 FTP Code Part 8 tested, light-resistant and mould-resistant. Made in Portugal by Monteiro Fabrics.",
+        "cp_url": "https://www.monteirofabrics.com/collections/marine"
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Speak to a marine upholstery specialist",
+        "title_size": 34,
+        "title_width": 22,
+        "heading_h1": false,
+        "text": "<p>Tell us about your vessel or project and we'll recommend the right fabric for inside or on deck, share the relevant certificates and send samples.</p>",
+        "image_width": 120,
+        "button_label": "Speak to a specialist",
+        "button_link": "shopify://pages/contact",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "alt",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "intro",
+    "main",
+    "credentials",
+    "specs",
+    "faq",
+    "cta"
+  ]
+}

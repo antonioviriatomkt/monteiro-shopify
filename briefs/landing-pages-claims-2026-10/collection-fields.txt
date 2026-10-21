@@ -1,0 +1,32 @@
+COLLECTION FIELDS (SEO title / meta description / collection description). Unlisted = unchanged.
+
+healthcare
+  SEO meta: Sanitized® antibacterial coated fabrics for hospital and clinic seating: EN 1021 tested, bleach-resistant collections, Crib 5 options. Made in Portugal. Free samples.
+  description: "Introducing our top-of-the-line medical-grade upholstery fabrics" -> "Introducing our healthcare upholstery fabrics"; Performance line -> "antimicrobial · alcohol-resistant · EN 1021 fire tested."
+
+marine
+  SEO meta: Coated upholstery fabrics for yacht and boat interiors: IMO 2010 FTP Code Part 8 tested, light- and mould-resistant, made in Portugal. Free samples.
+  description: "Our marine portfolio includes purpose-engineered collections — each developed for specific performance requirements, aesthetic preferences, and budget parameters." Performance: "IMO FTP Code Part 8 · light-resistant · mould-resistant."
+
+outdoor
+  SEO title: Outdoor Upholstery Fabrics | Light- & Mould-Resistant
+  SEO meta: Coated fabrics for terrace and patio furniture: light- and mould-resistant (Sanitized®), easy to clean. Made in Portugal. Free samples.
+  description: "Coated fabrics made for outdoor furniture." Performance: "light-resistant · mould-resistant · easy to clean."
+
+contract
+  SEO title: Contract Upholstery Fabrics | Fire-Certified, Made in Portugal
+  SEO meta: Commercial coated fabrics for hospitality, office, healthcare, retail and public interiors: fire-certified, up to 400,000 Martindale. Made in Portugal.
+
+hospitality-fabrics
+  SEO meta: Contract coated fabrics for hotel, bar and restaurant seating: up to 400,000 Martindale, fire-certified. Made in Portugal. Free samples.
+  description: keep paragraph 1; Performance: "fire-certified · up to 400,000 Martindale."
+
+coated-fabrics
+  SEO title: Coated Upholstery Fabrics | Made in Portugal   (was "| PVC & PU, Made in Portugal" — FLORA, the only PU fabric, is not in this collection)
+  SEO meta: Our catalogue of coated upholstery fabrics: a hard-wearing vegan leather alternative, fire-tested, made in Portugal. Order free samples.
+
+fire-retardant-upholstery-fabrics
+  SEO meta: Coated upholstery fabrics tested to BS 5852 Crib 5 and Crib 7. Made in Portugal, with free samples for specifiers.
+  description (visible intro) ¶1: "...From the 236-colour CHANCE range to heavy-duty MARA, FURNA and GARBE, every fabric here is made in Portugal and backed by a 10-year warranty." -> "...From the 236-colour CHANCE range to 400,000-Martindale MARA, FURNA and GARBE, every fabric here is made in Portugal."
+
+Decisions applied: "Made in Portugal" treated as a company-level fact (all Monteiro fabrics are made in Porto) incl. PEEL. LIMA's range text printed on LIMA's own catalogue counts as printed for LIMA. ORIGIN stays in contract/hospitality/coated. 10-year warranty and stock service never as blanket claims.

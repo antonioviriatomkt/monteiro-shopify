@@ -1,0 +1,383 @@
+## collection.healthcare.json
+  intro.text
+    - <p>Monteiro's healthcare upholstery fabrics are medical-grade coated fabrics engineered for hospitals, clinics, care homes and patient seating. Every fabric in the collection is antimicrobial, fluid-proof and easy to disinfect with alcohol- and bleach-based cleaners — REACH-compliant, phthalate-free and made in Portugal.</p><p>Specifying for medical devices or clinical equipment? See our <a href='/collections/medical' title='Medical-grade upholstery fabrics'>medical-grade fabrics</a>.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's healthcare upholstery fabrics are coated fabrics for hospitals, clinics, care homes and patient seating. Every collection here carries Sanitized® antimicrobial and antifungal protection, is tested to EN 1021 and resists alcohol-based disinfectants — REACH-compliant and made in Portugal. For bleach-based cleaning, choose a bleach-tested collection such as CHANCE Mediflex, MARA or FURNA.</p><p>Specifying for medical devices or clinical equipment? See our <a href='/collections/medical' title='Fabrics for medical equipment'>fabrics for medical equipment</a>.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c2.label
+    - Easy to clean and disinfect
+    + Resists alcohol disinfectants
+  credentials/c3.label
+    - Flame retardant
+    + EN 1021 fire tested
+  credentials/c4.label
+    - Abrasion resistant
+    + Up to 400,000 Martindale
+  specs/s2.value
+    - Yes — inhibits bacteria, fungi and mould
+    + Sanitized® antibacterial and antifungal protection
+  specs/s3.value
+    - Wipe-clean; compatible with alcohol and diluted-bleach disinfectants
+    + Resists alcohol-based disinfectants; bleach-tested collections available
+  specs/s4 REMOVED (Fluid barrier: Waterproof, non-absorbent surface)
+  specs/s5 REMOVED (Stain resistance: High)
+  specs/s6.value
+    - Heavy-duty, contract grade
+    + Up to 400,000 Martindale, by collection
+  specs/s7.label
+    - Flame retardancy
+    + Fire performance
+  specs/s7.value
+    - Meets contract upholstery fire-safety standards
+    + EN 1021-1+2, NFPA 260 and Cal TB 117 on every collection; BS 5852 Crib 5 on CHANCE Crib 5, MARA, FURNA, GARBE and ELEFANTE
+  specs/s8 REMOVED (Phthalates: Phthalate-free)
+  specs/s10 REMOVED (Care: No solvents or abrasive cleaners required)
+  faq.cp_description
+    - Medical-grade antimicrobial coated upholstery fabrics for hospitals, clinics, care homes and patient seating. Easy to disinfect, fluid-proof, flame-retardant and REACH-compliant. Made in Portugal by Monteiro Fabrics.
+    + Coated upholstery fabrics for hospitals, clinics, care homes and patient seating: Sanitized® antimicrobial, EN 1021 fire tested, resistant to alcohol-based disinfectants, REACH-compliant. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Healthcare upholstery fabrics must withstand repeated disinfection, resist fluids and stains, inhibit microbial growth and meet fire-safety requirements — while staying comfortable for patients. Monteiro's healthcare fabrics are antimicrobial coated fabrics that are waterproof, easy to clean and REACH-compliant.</p>
+    + <p>Healthcare upholstery fabrics must withstand repeated disinfection, inhibit microbial growth and meet fire-safety requirements — while staying comfortable for patients. Monteiro's healthcare fabrics are coated fabrics with Sanitized® antimicrobial and antifungal protection and REACH compliance.</p>
+  faq/q2.answer
+    - <p>Yes. The coated surface is designed to be wiped down with alcohol-based disinfectants and diluted bleach solutions used in clinical cleaning protocols, without cracking or losing colour. Avoid abrasive pads and undiluted solvents.</p>
+    + <p>Every collection here resists alcohol-based disinfectants. For bleach-based protocols, choose a bleach-tested collection such as CHANCE Mediflex, MARA or FURNA — ask us for the test reports. Avoid abrasive pads and undiluted solvents.</p>
+  faq/q3.answer
+    - <p>Yes — the collection inhibits the growth of bacteria, fungi and mould on the fabric surface, helping maintain hygiene on high-contact healthcare seating.</p>
+    + <p>Yes — every collection here carries Sanitized® antibacterial and antifungal protection. CHANCE Mediflex is also tested for antiviral activity (ISO 18184) and to ISO 10993 for cytotoxicity, skin sensitisation and irritation.</p>
+  faq/q4.answer
+    - <p>They are specified for hospital and clinic furniture, patient and examination seating, wheelchairs and mobility seating, dental practices and care-home upholstery — anywhere that demands hygienic, hard-wearing, easy-to-clean surfaces.</p>
+    + <p>They are specified for hospital and clinic furniture, patient and examination seating, wheelchairs and mobility seating, dental practices and care-home upholstery — anywhere that demands hygienic, hard-wearing surfaces.</p>
+  faq/q5.question
+    - Are the fabrics flame-retardant and REACH-compliant?
+    + Which fire standards do the fabrics meet?
+  faq/q5.answer
+    - <p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Ask our team for the specific certificates and test reports your project requires.</p>
+    + <p>Every collection here is tested to EN 1021-1+2, NFPA 260 and Cal TB 117. CHANCE Crib 5, MARA, FURNA, GARBE and ELEFANTE are also tested to BS 5852 Crib 5. All are REACH-compliant. Ask our team for the certificates your project requires.</p>
+## collection.marine.json
+  intro.text
+    - <p>Monteiro's marine interior upholstery fabrics are coated fabrics for yacht and boat interiors, engineered to perform in demanding on-board conditions. Every fabric in the collection is UV-resistant, salt- and water-resistant, mildew-resistant, flame-retardant and easy to clean — phthalate-free and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's marine interior upholstery fabrics are coated fabrics for yacht and boat interiors. Every fabric in the collection is tested to IMO 2010 FTP Code Part 8, light-resistant and mould-resistant (Sanitized® antifungal) — REACH-compliant and made in Portugal. For seating on deck, choose LIMA, MARINA, SIESTA or CHANCE Outdoor.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c1.icon
+    - water-repellent
+    + flame
+  credentials/c1.label
+    - Water repellent
+    + IMO 2010 FTP Code Part 8
+  credentials/c2.label
+    - UV and light resistant
+    + Light resistant
+  credentials/c3.icon
+    - flame
+    + anti-microbial
+  credentials/c3.label
+    - Flame retardant
+    + Mould resistant
+  credentials/c4.icon
+    - abrasion
+    + long-lasting
+  credentials/c4.label
+    - Abrasion resistant
+    + Long lasting
+  credentials/c5 REMOVED (Easy to clean: )
+  credentials.columns
+    - 5
+    + 4
+  specs/s2.label
+    - UV & light fastness
+    + Light fastness
+  specs/s2.value
+    - UV-resistant; resists fading in strong sunlight
+    + Light-resistant
+  specs/s3.label
+    - Water resistance
+    + Sea water
+  specs/s3.value
+    - Water-repellent, non-absorbent surface
+    + Colour-fast to water and sea water on MARINA, SIESTA, CHANCE Classic and CHANCE Outdoor
+  specs/s4.label
+    - Salt & moisture
+    + Mould
+  specs/s4.value
+    - Resists salt, humidity and mildew
+    + Sanitized® antifungal protection
+  specs/s5 REMOVED (Cleanability: Wipe-clean with mild detergent)
+  specs/s6.value
+    - Heavy-duty, contract grade
+    + Up to 400,000 Martindale, by collection
+  specs/s7.label
+    - Flame retardancy
+    + Fire performance
+  specs/s7.value
+    - Meets contract upholstery fire-safety standards
+    + IMO 2010 FTP Code Part 8 on every collection
+  specs/s8 REMOVED (Phthalates: Phthalate-free)
+  faq.cp_description
+    - UV- and water-resistant coated upholstery fabrics for yacht and boat interiors; mildew-resistant, flame-retardant, easy to clean; made in Portugal.
+    + Coated upholstery fabrics for yacht and boat interiors: IMO 2010 FTP Code Part 8 tested, light-resistant and mould-resistant. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Marine interior fabrics must cope with strong sunlight, salt air, humidity and frequent cleaning while staying comfortable on board. Monteiro's marine fabrics are coated fabrics that are UV-resistant, water-repellent, mildew-resistant and easy to clean, with a wipe-clean surface built for life on the water.</p>
+    + <p>Marine interior fabrics must cope with strong sunlight, salt air, humidity and frequent cleaning while staying comfortable on board. Monteiro's marine fabrics are coated fabrics that are tested to IMO 2010 FTP Code Part 8, light-resistant and mould-resistant (Sanitized® antifungal).</p>
+  faq/q2.question
+    - Are these fabrics UV-resistant and colour-fast in strong sun?
+    + Are these fabrics light-resistant?
+  faq/q2.answer
+    - <p>Yes. The collection is UV-resistant and engineered to resist fading in strong sunlight, helping interiors keep their colour through extended exposure on deck and through cabin glazing.</p>
+    + <p>Yes — every collection is light-resistant. For exterior seating, choose a collection made for inside and outside use: LIMA, MARINA, SIESTA or CHANCE Outdoor.</p>
+  faq/q3.question
+    - Are they water- and mildew-resistant?
+    + Do they resist mould and sea water?
+  faq/q3.answer
+    - <p>Yes — the coated surface is water-repellent and non-absorbent, and resists salt, humidity and mildew. This keeps the fabric hygienic and easy to maintain in damp, salt-laden marine environments.</p>
+    + <p>Every collection has Sanitized® antifungal protection against mould. MARINA, SIESTA, CHANCE Classic and CHANCE Outdoor are also colour-fast to water and sea water.</p>
+  faq/q4.answer
+    - <p>The fabrics meet contract upholstery fire-safety standards and are phthalate-free and REACH-compliant. Ask our team for the specific marine certificates your project requires.</p>
+    + <p>Every collection is tested to IMO 2010 FTP Code Part 8 and is REACH-compliant. Ask our team for the marine certificates your project requires.</p>
+  faq/q5.answer
+    - <p>They are specified for yacht and boat interiors — cabins, saloons, seating, headboards and cruise furniture — anywhere on board that demands durable, UV- and water-resistant, easy-to-clean upholstery.</p>
+    + <p>They are specified for yacht and boat interiors — cabins, saloons, seating, headboards and cruise furniture — anywhere on board that demands durable, light-resistant upholstery.</p>
+  cta.text
+    - <p>Tell us about your vessel or project and we'll recommend the right UV- and water-resistant fabric, share the relevant certificates and send samples.</p>
+    + <p>Tell us about your vessel or project and we'll recommend the right fabric for inside or on deck, share the relevant certificates and send samples.</p>
+## collection.outdoor.json
+  intro.text
+    - <p>Monteiro's outdoor upholstery fabrics are weatherproof coated fabrics engineered for outdoor and patio furniture. Every fabric in the collection is UV-resistant, water-repellent and mildew-resistant, easy to clean — REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's outdoor upholstery fabrics are coated fabrics made for outdoor and patio furniture. Every fabric in the collection is light-resistant, mould-resistant (Sanitized® antifungal) and easy to clean — REACH-compliant and made in Portugal. MARINA, SIESTA and CHANCE Outdoor are also colour-fast to water.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c1.icon
+    - water-repellent
+    + anti-microbial
+  credentials/c1.label
+    - Water repellent
+    + Mould resistant
+  credentials/c2.label
+    - UV and light resistant
+    + Light resistant
+  specs/s2.label
+    - UV & light fastness
+    + Light fastness
+  specs/s2.value
+    - UV-resistant; resists fading in direct sun
+    + Light-resistant
+  specs/s3.label
+    - Water resistance
+    + Water
+  specs/s3.value
+    - Water-repellent, non-absorbent surface
+    + Colour-fast to water on MARINA, SIESTA and CHANCE Outdoor
+  specs/s4.value
+    - Mildew-resistant
+    + Sanitized® antifungal protection
+  specs/s5.value
+    - Wipe-clean with mild detergent
+    + Easy clean
+  specs/s6.value
+    - Heavy-duty, contract grade
+    + Up to 400,000 Martindale, by collection
+  specs/s7 REMOVED (Phthalates: Phthalate-free)
+  specs/s9 REMOVED (Care: No solvents or abrasive cleaners required)
+  faq.cp_description
+    - Weatherproof, UV- and water-resistant coated upholstery fabrics for outdoor and patio furniture. Mildew-resistant and easy to clean. Made in Portugal by Monteiro Fabrics.
+    + Coated upholstery fabrics for outdoor and patio furniture: light-resistant, mould-resistant and easy to clean. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Outdoor upholstery fabrics must withstand sun, rain and humidity without fading, absorbing water or growing mould — while staying easy to clean and hard-wearing. Monteiro's outdoor fabrics are weatherproof coated fabrics that are UV-resistant, water-repellent, mildew-resistant and REACH-compliant.</p>
+    + <p>Outdoor upholstery fabrics must withstand sun, rain and humidity while staying easy to clean and hard-wearing. Monteiro's outdoor fabrics are coated fabrics that are light-resistant, mould-resistant (Sanitized® antifungal), easy to clean and REACH-compliant.</p>
+  faq/q2.question
+    - Are these fabrics UV-resistant and fade-proof in direct sun?
+    + Do these fabrics hold their colour in the sun?
+  faq/q2.answer
+    - <p>Yes. The collection is UV-resistant and engineered to resist fading when exposed to direct sunlight, helping the fabric keep its colour through prolonged outdoor use.</p>
+    + <p>Every collection is light-resistant. CHANCE Outdoor is designed to withstand extreme conditions and offers excellent light fastness.</p>
+  faq/q3.question
+    - Are they water-repellent and mildew-resistant?
+    + Do they resist mould and water?
+  faq/q3.answer
+    - <p>Yes — the coated surface is water-repellent and non-absorbent, so moisture sits on top rather than soaking in, and the fabric is mildew-resistant to limit mould growth in damp outdoor conditions.</p>
+    + <p>Every collection carries Sanitized® antifungal protection against mould, and the coated surface is easy to clean. MARINA, SIESTA and CHANCE Outdoor are also colour-fast to water.</p>
+  faq/q4.answer
+    - <p>The coated surface is wipe-clean with a mild detergent and water. Avoid solvents and abrasive cleaners, which can damage the surface.</p>
+    + <p>The coated surface is easy to clean. Ask us for each collection's care instructions.</p>
+  faq/q5.answer
+    - <p>They are specified for terraces, patios, poolside seating, garden furniture, outdoor hospitality and balconies — anywhere that demands weatherproof, hard-wearing, easy-to-clean upholstery.</p>
+    + <p>They are specified for terraces, patios, garden furniture, outdoor hospitality and balconies — anywhere that demands light-resistant, hard-wearing, easy-to-clean upholstery.</p>
+  cta.text
+    - <p>Tell us about your project and we'll recommend the right weatherproof fabric, share the relevant certificates and send samples.</p>
+    + <p>Tell us about your project and we'll recommend the right outdoor fabric, share the relevant certificates and send samples.</p>
+## collection.contract.json
+  intro.text
+    - <p>Monteiro's contract upholstery fabrics are commercial-grade coated fabrics for hospitality, office, healthcare, retail and public-space projects. Every fabric in the collection is built for heavy-duty durability and is flame-retardant, stain-resistant, easy to clean and REACH-compliant — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's contract upholstery fabrics are commercial coated fabrics for hospitality, office, healthcare, retail and public-space projects. Every fabric in the collection is fire-certified for upholstered seating — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c1.label
+    - Heavy-duty abrasion resistant
+    + Up to 400,000 Martindale
+  credentials/c2.label
+    - Flame retardant
+    + Fire certified
+  credentials/c3.label
+    - Easy to clean
+    + Alcohol resistant
+  credentials/c5.icon
+    - long-lasting
+    + vegan
+  credentials/c5.label
+    - Long lasting
+    + Animal-free
+  credentials/c4 REMOVED (Colour-fast and light resistant: )
+  credentials.columns
+    - 5
+    + 4
+  specs/s2.value
+    - Heavy-duty, contract grade
+    + Up to 400,000 Martindale, by collection
+  specs/s3 REMOVED (Stain resistance: High; non-absorbent surface)
+  specs/s4 REMOVED (Cleanability: Wipe-clean with mild detergent)
+  specs/s5.label
+    - Flame retardancy
+    + Fire performance
+  specs/s5.value
+    - Meets contract upholstery fire-safety standards
+    + Certified per collection — EN 1021, BS 5852, IMO, NF P 92-507 and more
+  specs/s6 REMOVED (Light & colour fastness: Colour-fast, resists fading)
+  specs/s7 REMOVED (Phthalates: Phthalate-free)
+  specs/s8 REMOVED (Chemical compliance: REACH-compliant)
+  specs/s9 REMOVED (Care: No solvents or abrasive cleaners required)
+  specs/s11 ADDED {'label': 'Animal-free', 'value': 'Every collection — no animal materials'}
+  faq.cp_description
+    - Commercial-grade coated upholstery fabrics for hospitality, office, healthcare, retail and public-space projects. Heavy-duty, flame-retardant, stain-resistant and easy to clean. Made in Portugal by Monteiro Fabrics.
+    + Commercial coated upholstery fabrics for hospitality, office, healthcare, retail and public-space projects. Fire-certified for upholstered seating. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Contract upholstery fabrics are commercial-grade materials made for high-use furniture in professional environments rather than the home. Monteiro's contract fabrics are coated fabrics engineered for heavy-duty durability — flame-retardant, stain-resistant, easy to clean and REACH-compliant — suitable for hospitality, office, healthcare, retail and public-space projects.</p>
+    + <p>Contract upholstery fabrics are commercial-grade materials made for high-use furniture in professional environments rather than the home. Monteiro's contract fabrics are coated fabrics, each fire-certified for upholstered seating — suitable for hospitality, office, healthcare, retail and public-space projects.</p>
+  faq/q2.answer
+    - <p>Contract fabrics are built to withstand far more intensive use than residential upholstery. They offer heavier-duty abrasion resistance, meet commercial fire-safety standards, resist staining and fading, and are designed to be cleaned frequently — so they keep performing in busy public and commercial settings.</p>
+    + <p>Contract fabrics are built for far more intensive use than residential upholstery: they are abrasion-tested and fire-certified for commercial seating.</p>
+  faq/q3.answer
+    - <p>The collection is engineered for heavy-duty, contract-grade durability. The coated surface resists abrasion, staining and fading, and stands up to repeated cleaning, making it well suited to high-traffic commercial seating that needs to last.</p>
+    + <p>Abrasion resistance goes up to 400,000 Martindale, depending on the collection — each collection page lists its figure. Ask us which suits your traffic levels.</p>
+  faq/q4.answer
+    - <p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Ask our team for the specific certificates and test reports your project requires. For seating that must meet BS 5852 Crib 5 or Crib 7, see our <a href="/collections/fire-retardant-upholstery-fabrics">fire-retardant upholstery fabrics</a>.</p>
+    + <p>Yes. Every collection carries fire certification for upholstered seating — EN 1021 on all but CHANCE Crib 7 | B1 (BS 5852 Crib 7), with BS 5852, IMO or NF P 92-507 on many. Ask our team for the specific certificates and test reports your project requires. For seating that must meet BS 5852 Crib 5 or Crib 7, see our <a href="/collections/fire-retardant-upholstery-fabrics">fire-retardant upholstery fabrics</a>.</p>
+  faq/q5.answer
+    - <p>They are specified across commercial sectors including hotels and hospitality, offices and workplaces, healthcare, retail, restaurants and bars, and public spaces — anywhere that demands hard-wearing, easy-to-clean upholstery.</p>
+    + <p>They are specified across commercial sectors including hotels and hospitality, offices and workplaces, healthcare, retail, restaurants and bars, and public spaces — anywhere upholstery must meet commercial fire-safety standards.</p>
+## collection.hospitality-fabrics.json
+  intro.text
+    - <p>Monteiro's hospitality upholstery fabrics are contract-grade coated fabrics for hotels, lobbies, lounges, bars and restaurants. Built for high-traffic durability, every fabric in the collection is stain-resistant, flame-retardant and easy to clean — REACH-compliant and made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's hospitality upholstery fabrics are contract coated fabrics for hotels, lobbies, lounges, bars and restaurants. Every fabric in the collection is fire-certified for upholstered seating — made in Portugal.</p><p>Browse the collection below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c1.label
+    - Abrasion resistant for high-traffic use
+    + Up to 400,000 Martindale
+  credentials/c2.label
+    - Easy to clean
+    + Alcohol resistant
+  credentials/c3.label
+    - Flame retardant
+    + Fire certified
+  credentials/c4.icon
+    - long-lasting
+    + vegan
+  credentials/c4.label
+    - Long lasting
+    + Animal-free
+  specs/s2.value
+    - Heavy-duty, contract grade for high-traffic seating
+    + Up to 400,000 Martindale, by collection
+  specs/s3 REMOVED (Stain resistance: High; non-absorbent surface)
+  specs/s4 REMOVED (Cleanability: Wipe-clean with mild detergent)
+  specs/s5.label
+    - Flame retardancy
+    + Fire performance
+  specs/s5.value
+    - Meets contract upholstery fire-safety standards
+    + Certified per collection — EN 1021, BS 5852 and more
+  specs/s6 REMOVED (Light & colour fastness: Colour-fast, resists fading)
+  specs/s7 REMOVED (Phthalates: Phthalate-free)
+  specs/s8 REMOVED (Chemical compliance: REACH-compliant)
+  specs/s9 REMOVED (Care: No solvents or abrasive cleaners required)
+  specs/s11 ADDED {'label': 'Animal-free', 'value': 'Every collection — no animal materials'}
+  faq.cp_description
+    - Contract-grade coated upholstery fabrics for hotels, lobbies, lounges, bars and restaurants. Durable, stain-resistant, flame-retardant and easy to clean. Made in Portugal by Monteiro Fabrics.
+    + Contract coated upholstery fabrics for hotels, lobbies, lounges, bars and restaurants. Durable and fire-certified. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Hospitality upholstery fabrics must stand up to heavy daily use, resist stains and spills, clean up quickly between guests and meet fire-safety requirements — while still looking refined. Monteiro's hospitality fabrics are contract-grade coated fabrics that are abrasion-resistant, easy to clean, flame-retardant and REACH-compliant.</p>
+    + <p>Hospitality upholstery fabrics must stand up to heavy daily use, clean up quickly between guests and meet fire-safety requirements — while still looking refined. Monteiro's hospitality fabrics are contract coated fabrics that are abrasion-tested and fire-certified.</p>
+  faq/q2.answer
+    - <p>Yes. The collection is contract grade, with heavy-duty abrasion resistance engineered for the constant use seen in hotels, lobbies and lounges. The coated surface holds up to repeated sitting, cleaning and movement without quickly showing wear.</p>
+    + <p>The collection is abrasion-tested to up to 400,000 Martindale, depending on the collection — each collection page lists its figure — for the constant use seen in hotels, lobbies and lounges.</p>
+  faq/q3.question
+    - Are hospitality fabrics stain-resistant and easy to clean?
+    + How are hospitality fabrics cleaned?
+  faq/q3.answer
+    - <p>Yes. The non-absorbent coated surface resists stains and wipes clean with a mild detergent, so spills from food and drink can be removed quickly. Avoid solvents and abrasive cleaners to keep the surface in good condition.</p>
+    + <p>Every collection resists alcohol-based cleaners. Ask us for each collection's care instructions.</p>
+  faq/q4.answer
+    - <p>Yes. The fabrics meet contract upholstery fire-safety standards and are REACH-compliant and phthalate-free. Fire-safety requirements vary by country and project, so ask our team for the specific certificates your project requires.</p>
+    + <p>Yes. Every collection carries fire certification for upholstered seating. Fire-safety requirements vary by country and project, so ask our team for the specific certificates your project requires.</p>
+  faq/q5.answer
+    - <p>They are specified for hotels, lobbies and reception areas, lounges, bars, restaurants and spas — anywhere that demands durable, stain-resistant, easy-to-clean seating that still looks the part for guests.</p>
+    + <p>They are specified for hotels, lobbies and reception areas, lounges, bars, restaurants and spas — anywhere that demands durable, fire-certified seating that still looks the part for guests.</p>
+## collection.coated-fabrics.json
+  intro.text
+    - <p>Monteiro's coated upholstery fabrics are a durable vegan leather alternative made in Portugal. A coated fabric is a textile base finished with a protective polymer coating, giving a hard-wearing, easy to clean surface that is stain- and water-resistant, flame-retardant, phthalate-free and REACH-compliant.</p><p>Browse the full range below, or speak to a specialist for project specifications and free samples.</p>
+    + <p>Monteiro's coated upholstery fabrics are a durable vegan leather alternative made in Portugal. A coated fabric is a textile base finished with a protective polymer coating, giving a hard-wearing surface. Every collection is fire-tested for upholstery.</p><p>Browse the full range below, or speak to a specialist for project specifications and free samples.</p>
+  credentials/c1.label
+    - Abrasion resistant
+    + Abrasion-tested
+  credentials/c2.label
+    - Easy to clean
+    + Alcohol resistant
+  credentials/c3.label
+    - Flame retardant
+    + Fire tested
+  credentials/c5.icon
+    - long-lasting
+    + vegan
+  credentials/c5.label
+    - Long lasting
+    + Animal-free
+  credentials/c4 REMOVED (Colour-fast and light resistant: )
+  credentials.columns
+    - 5
+    + 4
+  specs/s2.value
+    - Smooth, non-absorbent, leather-like
+    + Leather-like coated surface
+  specs/s3.value
+    - Heavy-duty, contract grade
+    + Up to 400,000 Martindale, by collection
+  specs/s4 REMOVED (Stain & water resistance: High; wipe-clean surface)
+  specs/s5 REMOVED (Cleanability: Wipe-clean with mild detergent)
+  specs/s6.label
+    - Flame retardancy
+    + Fire performance
+  specs/s6.value
+    - Meets contract upholstery fire-safety standards
+    + Certified per collection — see each collection's standards
+  specs/s8 REMOVED (Phthalates: Phthalate-free)
+  specs/s9 REMOVED (Chemical compliance: REACH-compliant)
+  faq.cp_description
+    - Durable coated upholstery fabrics — a vegan leather alternative made in Portugal. Hard-wearing, easy to clean, stain- and water-resistant, flame-retardant and REACH-compliant. Made in Portugal by Monteiro Fabrics.
+    + Coated upholstery fabrics — a vegan leather alternative made in Portugal. Hard-wearing and fire-tested for upholstery. Made in Portugal by Monteiro Fabrics.
+  faq/q1.answer
+    - <p>Coated fabrics are textiles finished with a protective polymer coating bonded to a fabric base. The coating creates a smooth, non-absorbent, leather-like surface that is hard-wearing, easy to clean and resistant to stains and water — making coated fabrics a practical upholstery material across many sectors.</p>
+    + <p>Coated fabrics are textiles finished with a protective polymer coating bonded to a fabric base. The coating creates a smooth, leather-like surface — making coated fabrics a practical upholstery material across many sectors.</p>
+  faq/q2.answer
+    - <p>Unlike real leather, coated fabrics are animal-free and made to a consistent specification, so colour, texture and performance are uniform across every roll. They offer a leather-like look and feel while being easier to clean, more colour-fast and free from the natural variation and marks found in hides.</p>
+    + <p>Unlike real leather, coated fabrics are animal-free and made to a specification, without the natural variation and marks found in hides. They offer a leather-like look and feel.</p>
+  faq/q3.question
+    - Are coated fabrics durable and easy to clean?
+    + How durable are coated fabrics?
+  faq/q3.answer
+    - <p>Yes. Coated fabrics are abrasion-resistant and contract-grade, built to withstand heavy use. The non-absorbent surface wipes clean with a mild detergent and resists stains and water, so they stay looking good with minimal maintenance.</p>
+    + <p>Abrasion resistance goes up to 400,000 Martindale, depending on the collection, and every collection resists alcohol-based cleaners. Each collection page lists its figures.</p>
+  faq/q5.answer
+    - <p>Coated fabrics are specified across healthcare, hospitality, office, marine, automotive, retail, public spaces and more — anywhere upholstery needs to be hard-wearing, easy to clean and resistant to stains and water.</p>
+    + <p>Coated fabrics are specified across healthcare, hospitality, office, marine, automotive, retail, public spaces and more — anywhere upholstery needs to be hard-wearing and fire-tested.</p>
+## collection.fire-retardant.json
+  credentials/c2 REMOVED (10-year warranty: )
+  credentials/c3.label
+    - Easy to clean
+    + Alcohol resistant
+  credentials.columns
+    - 3
+    + 2
+  faq.cp_description
+    - Coated upholstery fabrics tested to BS 5852 Crib 5 and Crib 7 for contract seating. Made in Portugal by Monteiro Fabrics, with a 10-year warranty and free samples.
+    + Coated upholstery fabrics tested to BS 5852 Crib 5 and Crib 7 for contract seating. Made in Portugal by Monteiro Fabrics, with free samples.
+DRY RUN
