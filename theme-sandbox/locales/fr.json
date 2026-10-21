@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Trier par"
+    },
+    "sector_cta": {
+      "samples": "Échantillons gratuits",
+      "stock": "Service de stock dès un rouleau",
+      "stock_note": "sur les tissus du service de stock",
+      "warranty": "Garantie 10 ans",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "fabricant certifié",
+      "made_in": "Fabriqué au Portugal",
+      "made_in_note": "tissus enduits depuis 1967",
+      "order_samples": "Commander des échantillons",
+      "talk_specialist": "Parler à un spécialiste",
+      "hint": "Choisissez un tissu et une couleur, puis ajoutez l'échantillon gratuit à votre panier."
     }
   },
   "faq": {

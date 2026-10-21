@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Organizar por"
+    },
+    "sector_cta": {
+      "samples": "Amostras grátis",
+      "stock": "Serviço de Stock a partir de um rolo",
+      "stock_note": "nos tecidos do Serviço de Stock",
+      "warranty": "Garantia de 10 anos",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "fabricante certificado",
+      "made_in": "Fabricado em Portugal",
+      "made_in_note": "tecidos revestidos desde 1967",
+      "order_samples": "Encomendar amostras grátis",
+      "talk_specialist": "Falar com um especialista",
+      "hint": "Escolha um tecido e uma cor e adicione a amostra grátis ao carrinho."
     }
   },
   "faq": {

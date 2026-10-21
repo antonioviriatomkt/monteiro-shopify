@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Sort by"
+    },
+    "sector_cta": {
+      "samples": "Free samples",
+      "stock": "Stock service from one roll",
+      "stock_note": "on stock-service fabrics",
+      "warranty": "10-year warranty",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "certified manufacturer",
+      "made_in": "Made in Portugal",
+      "made_in_note": "coated fabrics since 1967",
+      "order_samples": "Order free samples",
+      "talk_specialist": "Talk to a specialist",
+      "hint": "Choose a fabric and a colour, then add the free sample to your cart."
     }
   },
   "faq": {

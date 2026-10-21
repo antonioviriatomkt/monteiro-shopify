@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Sortieren nach"
+    },
+    "sector_cta": {
+      "samples": "Kostenlose Muster",
+      "stock": "Lagerservice ab einer Rolle",
+      "stock_note": "für Stoffe aus dem Lagerservice",
+      "warranty": "10 Jahre Garantie",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "zertifizierter Hersteller",
+      "made_in": "Made in Portugal",
+      "made_in_note": "beschichtete Stoffe seit 1967",
+      "order_samples": "Kostenlose Muster bestellen",
+      "talk_specialist": "Mit Experten sprechen",
+      "hint": "Wählen Sie einen Stoff und eine Farbe und legen Sie dann das kostenlose Muster in den Warenkorb."
     }
   },
   "faq": {

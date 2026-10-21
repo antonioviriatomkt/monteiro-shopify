@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -6,6 +15,7 @@
         "show_collection_content": true,
         "show_collection_image": false,
         "description_position": "top",
+        "show_sector_cta": true,
         "layout": "rows",
         "grid": 4,
         "grid_mobile": "2",

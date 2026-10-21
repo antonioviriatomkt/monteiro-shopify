@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Ordina per"
+    },
+    "sector_cta": {
+      "samples": "Campioni gratuiti",
+      "stock": "Stock Service a partire da un rotolo",
+      "stock_note": "sui tessuti dello Stock Service",
+      "warranty": "Garanzia di 10 anni",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "produttore certificato",
+      "made_in": "Made in Portugal",
+      "made_in_note": "tessuti spalmati dal 1967",
+      "order_samples": "Ordinate campioni gratuiti",
+      "talk_specialist": "Parlate con uno specialista",
+      "hint": "Scegliete un tessuto e un colore, poi aggiungete il campione gratuito al carrello."
     }
   },
   "faq": {

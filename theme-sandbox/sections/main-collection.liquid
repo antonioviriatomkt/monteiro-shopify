@@ -58,6 +58,10 @@
       </div>
     {%- endif -%}
 
+    {%- if section.settings.show_sector_cta and paginate.current_page == 1 -%}
+      {%- render 'sector-cta' -%}
+    {%- endif -%}
+
     {% render "search-filter",
       mode: "collection",
       results: collection,
@@ -114,6 +118,13 @@
             "label": "Bottom"
           }
         ]
+      },
+      {
+        "type": "checkbox",
+        "id": "show_sector_cta",
+        "label": "Show sector conversion block",
+        "info": "Proof points + Order free samples / Talk to a specialist above the grid (snippet sector-cta, text in locales: collections.sector_cta). For the Google Ads sector landing pages.",
+        "default": false
       },
       {
         "type": "header",

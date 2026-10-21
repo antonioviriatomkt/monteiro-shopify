@@ -274,6 +274,19 @@
     },
     "sorting": {
       "title": "Ordenar por"
+    },
+    "sector_cta": {
+      "samples": "Muestras gratis",
+      "stock": "Servicio de Stock desde un rollo",
+      "stock_note": "en los tejidos del Servicio de Stock",
+      "warranty": "Garantía de 10 años",
+      "iso": "ISO 9001 & 14001",
+      "iso_note": "fabricante certificado",
+      "made_in": "Fabricado en Portugal",
+      "made_in_note": "tejidos recubiertos desde 1967",
+      "order_samples": "Pedir muestras gratis",
+      "talk_specialist": "Hablar con un especialista",
+      "hint": "Elija un tejido y un color y, a continuación, añada la muestra gratis a su carrito."
     }
   },
   "faq": {

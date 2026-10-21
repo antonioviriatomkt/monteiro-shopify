@@ -37,6 +37,7 @@
         "show_collection_content": false,
         "show_collection_image": false,
         "description_position": "top",
+        "show_sector_cta": true,
         "layout": "rows",
         "grid": 4,
         "grid_mobile": "2",
