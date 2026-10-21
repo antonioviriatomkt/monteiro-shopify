@@ -112,7 +112,8 @@
         "cta_label": "",
         "cta_link": "",
         "cta_style": "primary"
-      }
+      },
+      "disabled": true
     },
     "specs": {
       "type": "spec-table",

@@ -61,8 +61,8 @@
         "c1": {
           "type": "icon",
           "settings": {
-            "icon": "flame",
-            "label": "IMO 2010 FTP Code Part 8"
+            "icon": "anti-microbial",
+            "label": "Antimicrobial & antifungal"
           }
         },
         "c2": {
@@ -75,15 +75,15 @@
         "c3": {
           "type": "icon",
           "settings": {
-            "icon": "anti-microbial",
-            "label": "Mould resistant"
+            "icon": "long-lasting",
+            "label": "Long lasting"
           }
         },
         "c4": {
           "type": "icon",
           "settings": {
-            "icon": "long-lasting",
-            "label": "Long lasting"
+            "icon": "reach",
+            "label": "REACH compliant"
           }
         }
       },

@@ -93,7 +93,8 @@
         "columns": 4,
         "bg_color": "#FFFFFF",
         "text_color": "#111111"
-      }
+      },
+      "disabled": true
     },
     "specs": {
       "type": "spec-table",

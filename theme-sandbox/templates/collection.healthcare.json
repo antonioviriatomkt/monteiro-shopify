@@ -62,35 +62,28 @@
           "type": "icon",
           "settings": {
             "icon": "anti-microbial",
-            "label": "Anti-microbial and anti-fungal"
+            "label": "Antimicrobial & antifungal"
           }
         },
         "c2": {
           "type": "icon",
           "settings": {
-            "icon": "easy-clean",
-            "label": "Resists alcohol disinfectants"
+            "icon": "flame",
+            "label": "Flame retardant"
           }
         },
         "c3": {
           "type": "icon",
           "settings": {
-            "icon": "flame",
-            "label": "EN 1021 fire tested"
+            "icon": "reach",
+            "label": "REACH compliant"
           }
         },
         "c4": {
           "type": "icon",
           "settings": {
-            "icon": "abrasion",
-            "label": "Up to 400,000 Martindale"
-          }
-        },
-        "c5": {
-          "type": "icon",
-          "settings": {
-            "icon": "reach",
-            "label": "REACH compliant"
+            "icon": "vegan",
+            "label": "100% vegan"
           }
         }
       },
@@ -98,15 +91,14 @@
         "c1",
         "c2",
         "c3",
-        "c4",
-        "c5"
+        "c4"
       ],
       "settings": {
         "eyebrow": "Performance & compliance",
         "title": "Built for clinical use",
         "body": "",
         "body_position": "above",
-        "columns": 5,
+        "columns": 4,
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "cta_label": "",

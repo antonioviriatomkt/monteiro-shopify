@@ -29,20 +29,20 @@
           "type": "icon",
           "settings": {
             "icon": "flame",
-            "label": "BS 5852 Crib 5 & Crib 7"
+            "label": "Flame retardant"
           }
         },
-        "c3": {
+        "c2": {
           "type": "icon",
           "settings": {
-            "icon": "easy-clean",
-            "label": "Alcohol resistant"
+            "icon": "vegan",
+            "label": "100% vegan"
           }
         }
       },
       "block_order": [
         "c1",
-        "c3"
+        "c2"
       ],
       "settings": {
         "eyebrow": "Fire performance",

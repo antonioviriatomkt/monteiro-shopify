@@ -62,7 +62,7 @@
           "type": "icon",
           "settings": {
             "icon": "anti-microbial",
-            "label": "Mould resistant"
+            "label": "Antimicrobial & antifungal"
           }
         },
         "c2": {
@@ -76,7 +76,7 @@
           "type": "icon",
           "settings": {
             "icon": "easy-clean",
-            "label": "Easy to clean"
+            "label": "Easy clean"
           }
         },
         "c4": {
