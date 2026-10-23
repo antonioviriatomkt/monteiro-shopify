@@ -494,7 +494,7 @@
         "title_size": 40,
         "title_width": 24,
         "heading_h1": false,
-        "text": "<p>Can’t find your answer above? Send us your enquiry and our specialists will get back to you as soon as possible.</p>",
+        "text": "",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -509,31 +509,24 @@
       }
     },
     "help_contact_form": {
-      "type": "apps",
-      "blocks": {
-        "forms_inline_help": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "278222",
-            "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#ffffff",
-            "links_color": "#1878b9",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_help"
-      ],
+      "type": "contact-block",
       "settings": {
-        "skip_container": false
+        "eyebrow": "Help",
+        "title": "",
+        "intro": "<p>Can’t find your answer above? Tell us about your project — sector, application, specifications — and our specialists will get back to you.</p>",
+        "submit_label": "Send message",
+        "sector_options": "Healthcare & medical\nHospitality\nPublic spaces\nPublic transport\nMarine\nAutomotive\nRetail\nFitness\nFashion\nOther",
+        "success_message": "Thanks — your message has been sent. Our team will be in touch shortly.",
+        "side_title": "Prefer to reach us directly?",
+        "email": "hello@monteirofabrics.com",
+        "phone": "+351 228 338 640",
+        "hours": "Mon–Fri, 8:00–18:00 (WET)",
+        "side_note": "",
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "field_bg": "#fafaf8",
+        "line_color": "#d9d9d4",
+        "accent": "#2f519b"
       }
     },
     "help_contact_email": {
