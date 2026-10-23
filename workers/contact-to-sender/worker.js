@@ -4,7 +4,9 @@
  * The theme's `contact-block` (native Shopify {% form 'contact' %}) only emails the store.
  * This Worker receives a copy of each submission (navigator.sendBeacon from the theme) and
  *   1. writes it to Supabase (`signals_lead_events`, via the RPC `signals_ingest_lead`) — the
- *      system of record for leads since v2, with the PostHog id + entry UTMs the theme sends;
+ *      system of record for leads since v2, with the PostHog id + entry UTMs the theme sends.
+ *      Technical-file submissions (kind 'technical_file', sent by posthog-events.liquid after the
+ *      Sender popup succeeds) take the same door and skip step 2;
  *   2. upserts the person into Sender group `enzoW5` — marketing copy only (best-effort).
  * The response is 200 as soon as Supabase accepted the row; a Sender failure is logged, not fatal.
  *
@@ -66,6 +68,8 @@ async function toSupabase(env, d, email, request) {
     name: clip(d.name, 120), company: clip(d.company, 200), country: clip(d.country, 100),
     sector: clip(d.sector, 100), phone: clip(d.phone, 40), message: clip(d.message, 4000),
     page: clip(d.page, 300), locale: clip(d.locale, 10),
+    sender_form: clip(d.sender_form, 40), product_handle: clip(d.product_handle, 120), product_title: clip(d.product_title, 200),
+    collection: clip(d.collection, 120),
     ip_country: request.cf && request.cf.country ? String(request.cf.country) : '',
     user_agent: clip(request.headers.get('User-Agent') || '', 300),
   };
@@ -146,10 +150,13 @@ export default {
     try { supa = await toSupabase(env, d, email, request); }
     catch (err) { console.log('supabase', String(err)); }
 
-    // 2. Marketing copy, after the response (never delays the visitor).
-    ctx.waitUntil(toSender(env, d, email, phoneRaw, phone)
-      .then(s => console.log('sender', s))
-      .catch(err => console.log('sender', String(err))));
+    // 2. Marketing copy, after the response (never delays the visitor). A technical-file lead is
+    //    already in Sender (the popup submitted Sender's own form), so only contact forms go.
+    if (d.kind !== 'technical_file') {
+      ctx.waitUntil(toSender(env, d, email, phoneRaw, phone)
+        .then(s => console.log('sender', s))
+        .catch(err => console.log('sender', String(err))));
+    }
 
     return new Response(supa === 'ok' ? 'ok' : 'stored?', { status: supa === 'ok' ? 200 : 502, headers: h });
   },
