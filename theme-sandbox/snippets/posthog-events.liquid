@@ -167,6 +167,19 @@
       if (email) P().identify(email, { email: email });
       P().capture('technical_file_submitted', props, { transport: 'sendBeacon' });
     });
+    /* Lead of record (2026-10-23): the same submission goes to the contact-to-sender Worker as
+       kind technical_file, with the PostHog id + session entry, so Supabase has it with attribution
+       (Sender keeps the subscriber + the PDF redirect; the Worker skips Sender for this kind). */
+    if (email && navigator.sendBeacon) {
+      try {
+        var lead = { kind: 'technical_file', email: email, page: location.pathname, locale: {{ request.locale.iso_code | json }},
+          sender_form: d.sender_form || null, product_handle: props.product_handle || null, product_title: props.product_title || null,
+          collection: props.collection || null, sector: props.sector || null };
+        try { lead.ph_distinct_id = P().get_distinct_id(); lead.ph_session_id = P().get_session_id(); } catch (e) {}
+        var e = entry(); Object.keys(e).forEach(function (k) { lead['ph_' + k] = e[k]; });
+        navigator.sendBeacon('https://contact-to-sender.antoniodias.workers.dev', new Blob([JSON.stringify(lead)], { type: 'text/plain' }));
+      } catch (e) {}
+    }
   });
   (function reidentifyTf() {
     var email = null;
