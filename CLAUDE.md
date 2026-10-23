@@ -138,6 +138,8 @@ update them in the session that changes a task or a credential.
 |---|---|
 | Probes table + view, cron, health view with `health` | `supabase/migrations/20261023113000_signals_probes.sql` (+ `…113500_signals_invoke_health.sql`) |
 | Edge Function | `supabase/functions/collect-health` — pg_cron `signals-collect-health` 05:15 Lisbon |
+| Lead ingestion v2 (23/10) | Worker `workers/contact-to-sender/worker.js` → RPC `signals_ingest_lead` (Vault `signals_ingest_key`) → `signals_lead_events`; migration `20261023121000_signals_lead_events.sql`. Sender gets a marketing copy only. After deploying the Worker set `update public.signals_settings set value = now()::text where key = 'worker_v2_live_at'` so Sender `enzoW5` API rows become `worker_mirror` |
+| Attribution | `signals_leads_origin` / `signals_origin()` — `20261023123000_signals_leads_origin.sql`: cart `ph_*` → Worker `ph_*` → Shopify journey only when not a reset. The daily Notion job reads this; nothing else decides origin |
 | Probes | site home (+ PostHog/GTM/Clarity in HTML) · `/pt` · sitemap · Worker `contact-to-sender` (OPTIONS 204) · Shopify Admin token · Sender token · portal · PostHog theme events 24 h (Vault `posthog_personal_api_key`, allowlisted in `signals_get_secret` since 23/10 — verified: pageviews 311, theme events 23) |
 | Run by hand | `select public.signals_invoke('collect-health');` → `select * from public.signals_probes_latest;` |
 
