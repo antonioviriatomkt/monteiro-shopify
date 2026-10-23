@@ -1,4 +1,4 @@
-// Shared runtime for the Monteiro Fabrics collectors (collect-gsc, collect-shopify, collect-sender).
+// Shared runtime for the Monteiro Fabrics collectors (collect-gsc, collect-shopify, collect-sender, collect-health).
 //
 // Each collector is a `step`: it does as much work as fits in its time budget and either finishes or
 // returns `next` — the params for a continuation call. `serve` chains those calls (same run row), so a
@@ -64,7 +64,7 @@ function mergeDetails(a: Record<string, unknown>, b: Record<string, unknown> = {
   return out;
 }
 
-export function serve(source: 'gsc' | 'shopify' | 'sender', fn: string, step: Step) {
+export function serve(source: 'gsc' | 'shopify' | 'sender' | 'health', fn: string, step: Step) {
   Deno.serve(async (req) => {
     if (req.method !== 'POST') return new Response('POST only', { status: 405 });
     if (!sameKey(req.headers.get('x-signals-key') ?? '', await secret('signals_cron_key'))) {

@@ -69,8 +69,11 @@ The token cannot change repository settings by design, only contents.
 
 ### B2B lead jobs
 
-Two scheduled tasks feed the Notion `<MONTH> LEADS` pages: `daily-b2b-leads-to-notion` (06:00)
-and `weekly-b2b-leads-email` (Mon 08:00). Both draw from **two** sources, and both matter:
+**Since 22–23/10 neither scheduled task runs these scripts.** `Daily b2b leads to notion` (06:00)
+reads Sender, Shopify (orders + Shopify Forms) and PostHog through the MCP connectors and upserts the
+Notion base `MF — LEADS`; `Weekly b2b leads email` (Mon 08:00) reads only that base. The prompts live
+in the vault (`reporting/automacao-leads-diaria-prompt.md`, `…-semanal-prompt.md`). The scripts below
+are **legacy** reference for the same two sources:
 
 | Source | How | Script |
 |---|---|---|
@@ -121,6 +124,25 @@ Daily snapshots of GSC, Shopify orders and Sender leads into Supabase project
   `signals_shopify_form_submissions`, one row per (customer, `custom.message` updatedAt). Shopify keeps
   only the latest message. `{"phase":"forms"}` = forms only, `{"forms":false}` = orders only.
   Migration `20261023092909_signals_shopify_forms.sql`.
+
+## Control centre + external probes (since 2026-10-23)
+
+The **MF Central de Controlo** (Claude Dashboard artifact, António's account) reads this project live:
+`signals_collector_health`, `cron.job`/`cron.job_run_details`, `signals_flags`, `signals_pulse_runs`,
+`vault.secrets` (names only), `signals_leads_weekly`, `signals_gsc_totals_rolling`, `signals_leads`
+(+ `signals_shopify_orders` for the cart `ph_utm_*` origin) and `signals_probes_latest`. The two
+hand-kept lists there (Claude scheduled tasks, platform/credential map) are JSON files on the artifact —
+update them in the session that changes a task or a credential.
+
+| Piece | Where |
+|---|---|
+| Probes table + view, cron, health view with `health` | `supabase/migrations/20261023113000_signals_probes.sql` (+ `…113500_signals_invoke_health.sql`) |
+| Edge Function | `supabase/functions/collect-health` — pg_cron `signals-collect-health` 05:15 Lisbon |
+| Probes | site home (+ PostHog/GTM/Clarity in HTML) · `/pt` · sitemap · Worker `contact-to-sender` (OPTIONS 204) · Shopify Admin token · Sender token · portal · PostHog theme events 24 h (**only if Vault has `posthog_personal_api_key`** — otherwise the row says skipped) |
+| Run by hand | `select public.signals_invoke('collect-health');` → `select * from public.signals_probes_latest;` |
+
+Source `health` is now valid in `signals_collector_runs`, so H1/H2 watch it too. No H-rule reads
+`signals_probes` yet: a failed probe shows on the dashboard, not in the pulse.
 
 ## Rules + daily pulse (Task 3, since 2026-10-23)
 
