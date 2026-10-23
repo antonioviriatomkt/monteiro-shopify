@@ -185,8 +185,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     })
 </script>
 {% render 'posthog-events' %}
-{%- comment -%} Technical-file popup — test page only until the live test passes (2026-10-23). {%- endcomment -%}
-{%- if template.suffix == 'tf-popup-test' -%}{% render 'tf-popup' %}{%- endif -%}
+{%- comment -%} Technical-file popup on every TF link (live test passed 2026-10-23). {%- endcomment -%}
+{% render 'tf-popup' %}
 </head>
 <script type="text/javascript">
 _linkedin_partner_id = "5243921";
