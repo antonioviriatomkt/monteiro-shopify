@@ -1,13 +1,19 @@
-// collect-shopify — orders of monteiro-fabrics.myshopify.com (sample €0 and paid alike).
+// collect-shopify — orders of monteiro-fabrics.myshopify.com (sample €0 and paid alike), then
+// Shopify Forms contact-form submissions (customers tagged shopify-forms-278222).
 //
 // Body (all optional):
-//   {}                         daily run: orders updated in the last 3 days (new + cancelled/edited)
-//   { "backfill": true }       orders created since 2025-02-01
+//   {}                         daily run: orders updated in the last 3 days (new + cancelled/edited),
+//                              then a full scan of the Shopify Forms customers (~5 pages)
+//   { "backfill": true }       orders created since 2025-02-01, then the forms scan
 //   { "field": "created_at" | "updated_at", "since": "<ISO>" }
-// Writes signals_shopify_orders. is_test / is_ucp are set by the table trigger, not here.
+//   { "phase": "forms" }       forms scan only (also the continuation of a run that ran out of time)
+//   { "forms": false }         orders only
+// Writes signals_shopify_orders and signals_shopify_form_submissions. is_test / is_ucp are set by the
+// table triggers, not here. Run row: `rows` stays the order count (as before 23/10); the forms phase
+// reports in details.form_submissions / form_customers / form_customers_without_message.
 // Vault: shopify_admin_token, or shopify_client_id + shopify_client_secret (client-credentials app).
 
-import { optionalSecret, secret, serve, sleep, upsert } from '../_shared/signals.ts';
+import { optionalSecret, type Params, secret, serve, sleep, type StepResult, upsert } from '../_shared/signals.ts';
 
 const SHOP = 'monteiro-fabrics.myshopify.com';
 const API = `https://${SHOP}/admin/api/2026-07/graphql.json`;
@@ -162,7 +168,7 @@ function toRow(o: any, now: string) {
   };
 }
 
-serve('shopify', 'collect-shopify', async (params, deadline) => {
+async function collectOrders(params: Params, deadline: number): Promise<StepResult> {
   const field = (params.field as string) ?? (params.backfill ? 'created_at' : 'updated_at');
   const since = (params.since as string) ??
     (params.backfill ? BACKFILL_SINCE : new Date(Date.now() - 3 * 86_400_000).toISOString());
@@ -184,7 +190,7 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
   while (true) {
     if (Date.now() > deadline) {
       return { rows, details: { ...notes, orders: rows, samples, line_items_extra_pages: paged },
-        next: { field, since, cursor: after } };
+        next: { field, since, cursor: after, ...(params.forms === false ? { forms: false } : {}) } };
     }
     const data = await gql(ORDERS, { q, after });
     const nodes = data.orders.nodes;
@@ -207,4 +213,69 @@ serve('shopify', 'collect-shopify', async (params, deadline) => {
     after = data.orders.pageInfo.endCursor;
   }
   return { rows, details: { ...notes, orders: rows, samples, line_items_extra_pages: paged, query: q } };
+}
+
+// ── Shopify Forms ──
+// Each submission creates/updates a customer tagged shopify-forms-278222 with metafields custom.message
+// and custom.company. Shopify keeps only the latest message, so one row per (customer, message
+// updatedAt): a new message from a known customer adds a row, a re-run changes nothing. Customers
+// with the tag but no message are skipped. Full scan every run — the tag holds ~200 customers.
+const FORMS_TAG = 'shopify-forms-278222';
+const FORMS = `query($after: String) {
+  customers(first: 50, after: $after, sortKey: ID, query: "tag:${FORMS_TAG}") {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      id createdAt tags
+      defaultEmailAddress { emailAddress }
+      defaultAddress { countryCodeV2 company }
+      message: metafield(namespace: "custom", key: "message") { value updatedAt }
+      company: metafield(namespace: "custom", key: "company") { value }
+    }
+  }
+}`;
+
+async function collectForms(params: Params, deadline: number): Promise<StepResult> {
+  let after = (params.forms_cursor as string) ?? null;
+  let rows = 0, customers = 0, skipped = 0;
+  while (true) {
+    if (Date.now() > deadline) {
+      return { rows: 0, details: { form_submissions: rows, form_customers: customers,
+        form_customers_without_message: skipped }, next: { phase: 'forms', forms_cursor: after } };
+    }
+    const data = await gql(FORMS, { after });
+    const now = new Date().toISOString();
+    // deno-lint-ignore no-explicit-any
+    const nodes: any[] = data.customers.nodes;
+    customers += nodes.length;
+    const batch = nodes.filter((c) => c.message?.updatedAt).map((c) => ({
+      customer_id: Number(String(c.id).split('/').pop()),
+      submitted_at: c.message.updatedAt,
+      email: (c.defaultEmailAddress?.emailAddress ?? '').trim().toLowerCase() || null,
+      company: (c.company?.value ?? '').trim() || c.defaultAddress?.company || null,
+      country: c.defaultAddress?.countryCodeV2 ?? null,
+      message: c.message.value ?? null,
+      customer_created_at: c.createdAt,
+      tags: c.tags ?? [],
+      collected_at: now,
+    }));
+    skipped += nodes.length - batch.length;
+    await upsert('signals_shopify_form_submissions', batch, 'customer_id,submitted_at');
+    rows += batch.length;
+    if (!data.customers.pageInfo.hasNextPage) break;
+    after = data.customers.pageInfo.endCursor;
+  }
+  return { rows: 0, details: { form_submissions: rows, form_customers: customers,
+    form_customers_without_message: skipped } };
+}
+
+// Orders first, then forms in the same run (same run row, same health rules). A run that runs out
+// of time in either phase continues itself; an error in either marks the run as error.
+serve('shopify', 'collect-shopify', async (params, deadline) => {
+  if (params.phase === 'forms') return collectForms(params, deadline);
+  const orders = await collectOrders(params, deadline);
+  if (orders.next || params.forms === false) return orders;
+  const forms = Date.now() < deadline
+    ? await collectForms({}, deadline)
+    : { rows: 0, details: {}, next: { phase: 'forms' } };
+  return { rows: orders.rows, details: { ...orders.details, ...forms.details }, next: forms.next };
 });
