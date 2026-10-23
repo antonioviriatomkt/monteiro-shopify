@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "tf_test": {
+      "type": "custom-liquid",
+      "settings": {
+        "no_margins": false,
+        "custom_liquid": "<div style=\"padding:40px 16px;text-align:center\"><h1 style=\"text-align:left;color:inherit\">TF popup test (unlisted)</h1><p><a class=\"button\" href=\"https://stats.sender.net/forms/egjnjd/view\">Download Technical File</a> (PEEL, egjnjd)</p><p><a class=\"button\" href=\"https://stats.sender.net/forms/dG60B3/view\">Download Technical File</a> (CHANCE 2.0, dG60B3 — inactive form, must fall back to the hosted link)</p></div>"
+      }
+    }
+  },
+  "order": ["tf_test"]
+}

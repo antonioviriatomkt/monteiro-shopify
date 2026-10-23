@@ -1,7 +1,7 @@
 {%- comment -%}
   PostHog custom events — Monteiro Fabrics (2026-10-09).
   Rendered in layout/theme.liquid right after posthog.init.
-  Events: sample_requested · catalogue_downloaded · technical_file_requested · lead_submitted
+  Events: sample_requested · catalogue_downloaded · technical_file_requested · technical_file_submitted · lead_submitted
   Also: super properties on every event, and PostHog distinct_id + entry UTMs written to the
   cart as attributes so €0 sample orders can be tied back to their source.
   Vault: WORK/Clients/Monteiro-Fabrics/projects/posthog-uso-completo.md
@@ -151,6 +151,28 @@
       tagCart();
     }
   }, true);
+
+  /* Technical file submitted in the on-site popup (snippets/tf-popup.liquid). Sender redirects
+     to the file right after, so the event goes by beacon and the email is kept for a
+     re-identify on the next page of the session, in case the $identify request was cut off. */
+  var TF_EMAIL_KEY = 'mf_tf_email';
+  document.addEventListener('mf:tf-submitted', function (ev) {
+    var d = ev.detail || {}, email = d.email || null;
+    var props = Object.assign({}, productCtx(), { sender_form: d.sender_form || null, sector: sectorFromPath(), page: location.pathname });
+    if (email) {
+      props.email_domain = email.split('@')[1] || null;
+      try { sessionStorage.setItem(TF_EMAIL_KEY, email); } catch (e) {}
+    }
+    whenReady(function () {
+      if (email) P().identify(email, { email: email });
+      P().capture('technical_file_submitted', props, { transport: 'sendBeacon' });
+    });
+  });
+  (function reidentifyTf() {
+    var email = null;
+    try { email = sessionStorage.getItem(TF_EMAIL_KEY); sessionStorage.removeItem(TF_EMAIL_KEY); } catch (e) {}
+    if (email) whenReady(function () { P().identify(email, { email: email }); });
+  })();
 
   /* Contact + newsletter forms (native Shopify contact form: POST, full page reload).
      The request must survive the unload, hence transport sendBeacon. */

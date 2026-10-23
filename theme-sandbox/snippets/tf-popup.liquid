@@ -1,0 +1,105 @@
+{%- comment -%}
+  Technical-file popup (2026-10-23). Rendered in layout/theme.liquid.
+  Every "Download Technical File" link points at a Sender-hosted form
+  (stats.sender.net/forms/<id>/view — product metafield custom.download_file2 or a page template).
+  Instead of leaving the site, the click opens the same Sender embed form in a <dialog> here, so the
+  theme sees the email: on success it dispatches `mf:tf-submitted` { sender_form, email } on
+  document, which posthog-events turns into identify + technical_file_submitted. Sender is unchanged
+  (same forms, groups dNYvDp + per-collection, redirect to the PDF after submit).
+  The Sender SDK comes from the Sender app (universal.js), not from this theme. It renders the
+  embed into a same-origin about:blank iframe, so the form is reachable via contentDocument.
+  Progressive enhancement: no JS, no SDK, unknown form id, or nothing rendered in 3 s → the link's
+  own href (the hosted form) is followed, as before.
+  Vault: WORK/Clients/Monteiro-Fabrics/tasks/website/ficha-tecnica-popup-sender-atribuicao.md
+{%- endcomment -%}
+<style>
+  .mf-tf-dialog { width: min(480px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); padding: 40px 16px 16px; border: 0; border-radius: 4px; background: #fff; color: #000; text-align: center; overflow: auto; }
+  .mf-tf-dialog::backdrop { background: rgba(0, 0, 0, .5); }
+  .mf-tf-dialog__close { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; padding: 0; border: 0; background: none; color: inherit; font-size: 24px; line-height: 1; cursor: pointer; }
+  .mf-tf-dialog__title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .mf-tf-dialog .sender-form-field { font-size: 0; min-height: 200px; }
+  @media (max-width: 599px) {
+    .mf-tf-dialog { width: 100vw; max-height: 100dvh; margin: auto 0 0; border-radius: 0; }
+  }
+</style>
+<script>
+(function () {
+  var LOAD_TIMEOUT = 3000;
+  var dialogs = {};
+
+  function formConfig(id) {
+    var forms = window.senderObjects && window.senderObjects.forms;
+    if (!forms || !forms.length || !window.senderForms || typeof window.senderForms.render !== 'function') return null;
+    for (var i = 0; i < forms.length; i++) if (forms[i] && forms[i].id === id) return forms[i];
+    return null;
+  }
+
+  function build(cfg, label) {
+    var d = document.createElement('dialog');
+    d.className = 'mf-tf-dialog';
+    d.setAttribute('aria-modal', 'true');
+    d.setAttribute('aria-labelledby', 'mf-tf-title-' + cfg.id);
+    d.innerHTML = '<h2 class="mf-tf-dialog__title" id="mf-tf-title-' + cfg.id + '"></h2>'
+      + '<button type="button" class="mf-tf-dialog__close" aria-label="{{ 'general.accessibility_labels.close' | t | escape }}">&times;</button>'
+      + '<div class="sender-form-field" data-sender-form-id="' + cfg.embed_hash + '"></div>';
+    d.querySelector('h2').textContent = label;
+    d.querySelector('.mf-tf-dialog__close').addEventListener('click', function () { d.close(); });
+    /* click on the backdrop (outside the dialog box) closes it */
+    d.addEventListener('click', function (ev) { if (ev.target === d) d.close(); });
+    document.body.appendChild(d);
+    return d;
+  }
+
+  /* Watch the Sender iframe: remember the email on submit, report success when Sender shows
+     .sender-form-success (it does so only after the server accepted the subscription, then
+     redirects to the file). Validation errors never show it. */
+  function watch(d, cfg) {
+    var iframe = d.querySelector('.sender-form-field iframe');
+    var doc = iframe && iframe.contentDocument;
+    if (!doc || d._mfWatched) return !!doc;
+    d._mfWatched = true;
+    var email = '';
+    function readEmail() {
+      var el = doc.querySelector('input[type="email"]');
+      if (el && el.value) email = el.value.trim().toLowerCase();
+    }
+    /* keys typed in the form stay in the iframe, so the dialog's own Esc never fires */
+    doc.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') d.close(); });
+    doc.addEventListener('submit', readEmail, true);
+    doc.addEventListener('click', function (ev) { if (ev.target.closest && ev.target.closest('form button')) readEmail(); }, true);
+    var reported = false;
+    new MutationObserver(function () {
+      var ok = doc.querySelector('.sender-form-success');
+      if (reported || !ok || ok.style.display !== 'block') return;
+      reported = true;
+      readEmail();
+      document.dispatchEvent(new CustomEvent('mf:tf-submitted', { detail: { sender_form: cfg.id, email: email || null } }));
+    }).observe(doc, { subtree: true, attributes: true, attributeFilter: ['style'] });
+    return true;
+  }
+
+  function open(link, id) {
+    var cfg = formConfig(id);
+    if (!cfg || !cfg.embed_hash || cfg.is_active === false) return false;
+    var d = dialogs[id] || (dialogs[id] = build(cfg, (link.textContent || '').trim()));
+    try { d.showModal(); } catch (e) { return false; }
+    if (watch(d, cfg)) return true;
+    try { window.senderForms.render(id); } catch (e) {}
+    var t0 = Date.now();
+    (function poll() {
+      if (watch(d, cfg)) return;
+      if (Date.now() - t0 > LOAD_TIMEOUT) { d.close(); delete dialogs[id]; d.remove(); location.href = link.href; return; }
+      setTimeout(poll, 100);
+    })();
+    return true;
+  }
+
+  document.addEventListener('click', function (ev) {
+    if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    var a = ev.target.closest && ev.target.closest('a[href*="stats.sender.net/forms/"]');
+    if (!a || typeof HTMLDialogElement !== 'function') return;
+    var id = (a.getAttribute('href').match(/forms\/([^\/?#]+)/) || [])[1];
+    if (id && open(a, id)) ev.preventDefault();
+  });
+})();
+</script>
