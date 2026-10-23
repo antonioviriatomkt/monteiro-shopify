@@ -116,6 +116,29 @@ Daily snapshots of GSC, Shopify orders and Sender leads into Supabase project
 - Shopify only returns 60 days of orders unless the token has **`read_all_orders`**.
 - Sender's `/groups/{id}/subscribers` lists active subscribers only — `collect-sender` scans
   `/subscribers` and filters by tag to keep unsubscribed / bounced leads.
+- **Shopify Forms (since 2026-10-23):** `collect-shopify` phase 2 scans customers tagged
+  `shopify-forms-278222` (inline form on /pages/faq-s, contact-form1, ORGATEC, tradeshow) into
+  `signals_shopify_form_submissions`, one row per (customer, `custom.message` updatedAt). Shopify keeps
+  only the latest message. `{"phase":"forms"}` = forms only, `{"forms":false}` = orders only.
+  Migration `20261023092909_signals_shopify_forms.sql`.
+
+## Rules + daily pulse (Task 3, since 2026-10-23)
+
+Deterministic detection on the `signals_*` tables; a Claude run only reads a payload and writes words.
+
+| Piece | Where |
+|---|---|
+| Schema, rules, cron | `supabase/migrations/20261023094317_signals_rules_pulse.sql` (+ `…094350_…_revoke_tables.sql`) |
+| Thresholds | `public.signals_rules` — tune with `UPDATE`, no migration; evidence in each `description` |
+| Lead events | view `signals_leads` (`excluded_reason` null = corporate-domain lead). Contact form = Sender `enzoW5` source API/FORM + Shopify Forms; Sender SHOPIFY rows are always `shopify_sync` (vault decision 2026-10-23) |
+| Detection | `signals_detect()` — pg_cron `signals-detect` 05:30 Lisbon → `signals_flags` (one row per episode), `signals_leads_seen` |
+| Pulse | `select public.signals_pulse_prepare('daily'|'weekly')` → write ≤10 lines from the payload → deliver → `select public.signals_pulse_ack(<run_id>)`. Daily `noop: true` = send nothing |
+
+- **Blocklist:** `FREE` in `scripts/leads-lib.mjs` is the only edited list. **After editing it, run
+  `node scripts/sync-free-email-domains.mjs`** and execute the printed SQL with the connector; then
+  `--fingerprint` must equal `select public.signals_free_email_domains_fingerprint();`.
+- Team personal addresses → `signals_test_identities` (DB only), then `select public.signals_reflag();`.
+- Health rules H1–H6 watch the collectors and `signals-*` cron jobs; G-rules use final GSC days only.
 
 ## Known state
 
