@@ -138,7 +138,7 @@ update them in the session that changes a task or a credential.
 |---|---|
 | Probes table + view, cron, health view with `health` | `supabase/migrations/20261023113000_signals_probes.sql` (+ `…113500_signals_invoke_health.sql`) |
 | Edge Function | `supabase/functions/collect-health` — pg_cron `signals-collect-health` 05:15 Lisbon |
-| Probes | site home (+ PostHog/GTM/Clarity in HTML) · `/pt` · sitemap · Worker `contact-to-sender` (OPTIONS 204) · Shopify Admin token · Sender token · portal · PostHog theme events 24 h (**only if Vault has `posthog_personal_api_key`** — otherwise the row says skipped) |
+| Probes | site home (+ PostHog/GTM/Clarity in HTML) · `/pt` · sitemap · Worker `contact-to-sender` (OPTIONS 204) · Shopify Admin token · Sender token · portal · PostHog theme events 24 h (Vault `posthog_personal_api_key`, allowlisted in `signals_get_secret` since 23/10 — verified: pageviews 311, theme events 23) |
 | Run by hand | `select public.signals_invoke('collect-health');` → `select * from public.signals_probes_latest;` |
 
 Source `health` is now valid in `signals_collector_runs`, so H1/H2 watch it too. No H-rule reads
