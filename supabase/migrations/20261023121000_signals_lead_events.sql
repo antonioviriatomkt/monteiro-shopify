@@ -47,7 +47,8 @@ create or replace function public.signals_lead_events_flag() returns trigger
 language plpgsql set search_path to '' as $$
 begin
   new.is_test := exists (select 1 from public.signals_test_identities t
-                         where lower(t.email) = lower(new.email))
+                         where (t.kind = 'email' and lower(t.value) = lower(new.email))
+                            or (t.kind = 'company' and lower(t.value) = lower(coalesce(new.company, ''))))
                  or coalesce(new.company, '') ilike '%TEST%'
                  or coalesce(new.name, '') ilike '%TEST%';
   return new;
