@@ -157,6 +157,7 @@ Deterministic detection on the `signals_*` tables; a Claude run only reads a pay
 | Lead events | view `signals_leads` (`excluded_reason` null = corporate-domain lead). Contact form = Sender `enzoW5` source API/FORM + Shopify Forms; Sender SHOPIFY rows are always `shopify_sync` (vault decision 2026-10-23) |
 | Detection | `signals_detect()` — pg_cron `signals-detect` 05:30 Lisbon → `signals_flags` (one row per episode), `signals_leads_seen` |
 | Pulse | `select public.signals_pulse_prepare('daily'|'weekly')` → write ≤10 lines from the payload → deliver → `select public.signals_pulse_ack(<run_id>)`. Daily `noop: true` = send nothing |
+| Proposals (Task 4, 26/10) | `supabase/migrations/20261026090451…_104556_signals_proposals_*.sql`. Rules P0 (settings) P1 CTR gap · P2 striking distance · P3 cannibalisation · P5 lead landing; weights by ICP sector in `signals_page_weights`; view `signals_proposal_candidates` (scored). Weekly `prepare` adds `proposals` (≤3, draft) → ack makes them `proposed`. Claude stores wording with `signals_proposal_text(id, text)`; decisions `signals_proposal_decide(id, 'approved'|'rejected'|'applied', note)`. T1 = EN title/meta only |
 
 - **Blocklist:** `FREE` in `scripts/leads-lib.mjs` is the only edited list. **After editing it, run
   `node scripts/sync-free-email-domains.mjs`** and execute the printed SQL with the connector; then
