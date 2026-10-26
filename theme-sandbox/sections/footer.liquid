@@ -139,6 +139,44 @@
           </div>
 
         {% endif %}
+        {%- if section.settings.show_archiproducts and section.settings.archiproducts_url != blank -%}
+          {%- liquid
+            assign ap_lang = localization.language.iso_code | slice: 0, 2
+            case ap_lang
+              when 'pt'
+                assign ap_label = 'Encontre-nos no Archiproducts'
+              when 'fr'
+                assign ap_label = 'Retrouvez-nous sur Archiproducts'
+              when 'it'
+                assign ap_label = 'Trovaci su Archiproducts'
+              when 'es'
+                assign ap_label = 'Encuéntranos en Archiproducts'
+              when 'de'
+                assign ap_label = 'Finden Sie uns auf Archiproducts'
+              else
+                assign ap_label = 'Find us on Archiproducts'
+            endcase
+            assign ap_url = section.settings.archiproducts_url
+            assign ap_slug = ap_url | split: '?' | first | split: '/' | last
+            assign ap_path_lang = 'en'
+            if 'it,fr,es,de' contains ap_lang
+              assign ap_path_lang = ap_lang
+            endif
+            if ap_url contains 'archiproducts.com/en/'
+              assign ap_url = 'https://www.archiproducts.com/' | append: ap_path_lang | append: '/' | append: ap_slug
+            endif
+          -%}
+          {%- comment -%} Locale-aware link: /en/monteiro-fabrics → /it|fr|es|de/monteiro-fabrics (PT/other → EN). {%- endcomment -%}
+          <div class="section-footer__partner">
+            <a class="section-footer__partner-link" href="{{ ap_url }}" target="_blank" rel="noopener" aria-label="{{ ap_label | escape }}">
+              {%- if section.settings.archiproducts_badge != blank -%}
+                {{ section.settings.archiproducts_badge | image_url: width: 400 | image_tag: alt: ap_label, width: section.settings.archiproducts_badge_width, loading: 'lazy', class: 'section-footer__partner-badge', style: 'height:auto' }}
+              {%- else -%}
+                {{ ap_label }}
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
         {% if section.settings.lower_menu != blank %}
           <div class="section-footer__lower-menu">
             <ul class="section-footer__lower-menu__list">
@@ -172,6 +210,13 @@
 </div>
 
 
+<style>
+  .section-footer .section-footer__partner { margin-bottom: 1em; }
+  .section-footer .section-footer__partner-link { display: inline-block; text-decoration: none; }
+  .section-footer .section-footer__partner-badge { display: block; max-width: 100%; }
+  @media (min-width: 768px) { .section-footer .section-footer__partner { text-align: right; } .section-footer .section-footer__partner-link { margin-left: auto; } }
+</style>
+
 {% schema %}
   {
     "name": "Footer",
@@ -183,6 +228,39 @@
         "id": "lower_menu",
         "label": "Lower footer menu",
         "info": "This menu won't show dropdown items."
+      },
+      {
+        "type": "header",
+        "content": "Archiproducts"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_archiproducts",
+        "label": "Show Archiproducts link",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "archiproducts_url",
+        "label": "Archiproducts brand page (EN URL)",
+        "default": "https://www.archiproducts.com/en/monteiro-fabrics",
+        "info": "IT/FR/ES/DE visitors are sent to the same page in their language; PT and others get EN."
+      },
+      {
+        "type": "image_picker",
+        "id": "archiproducts_badge",
+        "label": "Official Archiproducts badge",
+        "info": "Without an image, a text link is shown."
+      },
+      {
+        "type": "range",
+        "id": "archiproducts_badge_width",
+        "min": 60,
+        "max": 240,
+        "step": 10,
+        "unit": "px",
+        "label": "Badge width",
+        "default": 140
       },
       {
         "type": "header",
