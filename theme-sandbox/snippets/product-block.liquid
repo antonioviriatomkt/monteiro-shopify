@@ -126,7 +126,7 @@
           {% if mp4_url != blank %}
             {% render 'inline-video', video: mp4_url, image: primary_image %}
           {% else %}
-            {% render 'responsive-image', image: primary_image, min_aspect_ratio: 0.6 %}
+            {% render 'responsive-image', image: primary_image, min_aspect_ratio: 0.6, eager: eager %}
           {% endif %}
 
           {% unless settings.prod_label_layout contains 'marquee' %}

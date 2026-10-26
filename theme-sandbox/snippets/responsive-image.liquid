@@ -16,6 +16,10 @@
       <img class="rimage__image lazyload fade-in {% if cover %}cover{% endif %}" data-src="{{ image | img_url: initial }}" alt="{{ image.alt | escape }}">
       {% assign initial = false %}
     {% endif %}
+    {%- if eager -%}
+      {%- capture eager_style -%}{% if image.presentation %}object-position: {{ image.presentation.focal_point }}{% endif %}{%- endcapture -%}
+      {{ image | image_url: width: 1080 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '460, 540, 720, 900, 1080', sizes: '(min-width: 1024px) 25vw, 50vw', class: 'rimage__image', alt: image.alt, style: eager_style }}
+    {%- else -%}
     {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
     <img class="rimage__image lazyload{% if manual_image_load %}--manual{% endif %} fade-in {% if cover %}cover{% endif %}"
       data-src="{{ img_url }}"
@@ -27,6 +31,7 @@
       height="{{ image.height }}"
       {% if cover %}data-parent-fit="cover"{% endif %}
       {% if image.presentation %}style="object-position: {{ image.presentation.focal_point }}"{% endif %}>
+    {%- endif -%}
 
     <noscript>
       {% assign img_url = image | img_url: '1024x1024' %}

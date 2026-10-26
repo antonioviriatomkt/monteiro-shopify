@@ -421,7 +421,14 @@
           {% endfor %}
         {% elsif mode == "collection" %}
           {% for product in results.products %}
-            {% render 'product-block', product: product, product_class: product_class, i: forloop.index, show_vendor: section.settings.show_vendor %}
+            {%- liquid
+              # LCP (fix 9a, 26/10): first row on page 1 loads eagerly, not via lazysizes
+              assign eager_img = false
+              if paginate.current_page == 1 and forloop.index <= section.settings.grid
+                assign eager_img = true
+              endif
+            -%}
+            {% render 'product-block', product: product, product_class: product_class, i: forloop.index, show_vendor: section.settings.show_vendor, eager: eager_img %}
           {% endfor %}
         {% endif %}
       </div>
