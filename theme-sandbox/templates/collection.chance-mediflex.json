@@ -13,6 +13,7 @@
       "type": "rich-text",
       "settings": {
         "subheading": "Healthcare · CHANCE 2.0",
+        "subheading_link": "shopify://collections/healthcare",
         "title": "CHANCE Mediflex",
         "title_size": 46,
         "title_width": 20,
@@ -28,8 +29,7 @@
         "no_padding_bottom": true,
         "color_scheme": "standard",
         "color_bg": "",
-        "color_text": "",
-        "subheading_link": "shopify://collections/healthcare"
+        "color_text": ""
       }
     },
     "product": {
@@ -121,7 +121,7 @@
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "cta_label": "DOWNLOAD CATALOGUE",
-        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/MR_web_cat_CHANCE_2.0_AGO2026_Ipad_bx.pdf?v=1787072645",
+        "cta_link": "https://cdn.shopify.com/s/files/1/0711/9801/5791/files/CHANCE_MEDIFLEX.pdf?v=1793018503",
         "cta_style": "primary"
       }
     },
@@ -307,16 +307,20 @@
         "crumb_home": "CHANCE 2.0",
         "crumb_home_url": "https://www.monteirofabrics.com/pages/chance-collection",
         "crumb_current": "CHANCE Mediflex",
+        "page_node": "CollectionPage",
         "emit_collectionpage": true,
         "cp_name": "CHANCE Mediflex",
+        "webpage_headline": "",
         "cp_description": "CHANCE Mediflex — the healthcare grade of CHANCE 2.0. Bi-elastic, antimicrobial and antiviral coated fabric built for intensive disinfection. Made in Portugal.",
-        "cp_url": "https://www.monteirofabrics.com/collections/chance-mediflex"
+        "cp_url": "https://www.monteirofabrics.com/collections/chance-mediflex",
+        "webpage_main_entity": ""
       }
     },
     "cta": {
       "type": "rich-text",
       "settings": {
         "subheading": "Bring CHANCE Mediflex to your project",
+        "subheading_link": "",
         "title": "Specify with confidence.",
         "title_size": 44,
         "title_width": 12,
