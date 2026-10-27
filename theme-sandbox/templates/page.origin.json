@@ -408,18 +408,11 @@
             "label": "Recreational vehicles"
           }
         },
-        "a_ret": {
-          "type": "icon",
-          "settings": {
-            "icon": "retail",
-            "label": "Retail"
-          }
-        },
         "a_sta": {
           "type": "icon",
           "settings": {
             "icon": "stationary",
-            "label": "Stationary"
+            "label": "Stationery"
           }
         }
       },
@@ -428,7 +421,6 @@
         "a_hos",
         "a_off",
         "a_rv",
-        "a_ret",
         "a_sta"
       ],
       "name": "Fabric spec icons — applications",
@@ -437,7 +429,7 @@
         "title": "",
         "body": "<p>With a pleasant and smooth touch, ORIGIN responds to our real concerns with<br/>sustainability and the responsible use of natural resources.</p>",
         "body_position": "below",
-        "columns": 6,
+        "columns": 5,
         "bg_color": "#ffffff",
         "text_color": "#111111",
         "cta_label": "",
