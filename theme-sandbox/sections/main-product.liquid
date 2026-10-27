@@ -522,7 +522,7 @@
                               {%- endif -%}
                             {% endcapture %}
                             <label {% if option.name == 'default' %}class="hidden"{% endif %} for="option-{{ option.name | handle }}-{{ product.id }}">
-                              {%- comment -%} T5: selected value follows current_variant (featured-image default), not option.selected_value. {%- endcomment -%}{%- assign mf_oi = option.position | minus: 1 -%}{%- assign mf_osv = current_variant.options[mf_oi] | default: option.selected_value -%}{{- option.name -}}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ mf_osv }}</span>{%- endif -%}
+                              {%- comment -%} T5: selected value follows current_variant (featured-image default), not option.selected_value. {%- endcomment -%}{%- assign mf_oi = option.position | minus: 1 -%}{%- assign mf_osv = current_variant.options[mf_oi] | default: option.selected_value -%}{%- if option.name == 'Color' and request.locale.iso_code == 'en' -%}Colour{%- else -%}{{- option.name -}}{%- endif -%}{%- if show_swatches -%}: <span class="cc-swatches__label">{{ mf_osv }}</span>{%- endif -%}
                               {%- if block.settings.variant_style == 'underlined' and show_swatches == false -%}{{ size_chart_html }}{%- endif -%}
                             </label>
                             <select id="option-{{ option.name | handle }}-{{ product.id }}"

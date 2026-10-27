@@ -27,6 +27,10 @@ endif
 <meta property="og:type" content="{{ og_type }}">
 <meta property="og:description" content="{{ og_description }}">
 
+{%- comment -%} 27/10: a page can set its own 1200x630 share image in page.metafields.custom.og_image {%- endcomment -%}
+{%- if template.name == 'page' and page.metafields.custom.og_image.value != blank -%}
+  {%- assign page_image = page.metafields.custom.og_image.value -%}
+{%- endif -%}
 {%- if page_image -%}
   <meta property="og:image" content="https:{{ page_image | img_url: '1200x1200' }}">
   <meta property="og:image:secure_url" content="https:{{ page_image | img_url: '1200x1200' }}">

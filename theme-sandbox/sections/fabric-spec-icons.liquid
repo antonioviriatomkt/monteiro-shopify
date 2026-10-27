@@ -19,7 +19,7 @@
     #si-{{ section.id }} .si-item img { display: block; width: 100%; max-width: 150px; margin: 0 auto; }
     #si-{{ section.id }} .si-cta { text-align: center; margin-top: 44px; }
     @media (max-width: 749px) {
-      #si-{{ section.id }} .si-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 12px; max-width: 360px; }
+      #si-{{ section.id }} .si-grid { grid-template-columns: repeat({% if section.blocks.size == 3 %}3{% else %}2{% endif %}, minmax(0, 1fr)); gap: 24px {% if section.blocks.size == 3 %}8px{% else %}12px{% endif %}; max-width: 360px; }{%- comment -%} 27/10 STRAW: 3 icons = one row on mobile (was 2+1) {%- endcomment -%}
       #si-{{ section.id }} .si-title { font-size: 24px; }
     }
   {% endstyle %}
