@@ -193,7 +193,22 @@
         <div class="copyright">
           <span class="copy">&copy; {{ "now" | date: "%Y" }} <a data-cc-animate-click href="{{ routes.root_url }}">{{ shop.name }}</a>.</span>
 
-          {{ powered_by_link }}
+          {% if section.settings.show_viriato_credit and section.settings.viriato_url != blank -%}
+            {%- liquid
+              assign vv_url = section.settings.viriato_url | split: '?' | first
+              assign vv_lang = localization.language.iso_code | slice: 0, 2
+              if vv_url contains 'viriato.com.pt'
+                if vv_lang == 'pt'
+                  assign vv_url = 'https://viriato.com.pt/pt'
+                else
+                  assign vv_url = 'https://viriato.com.pt/en'
+                endif
+              endif
+            -%}
+            <a class="viriato-credit" target="_blank" rel="noopener nofollow" href="{{ vv_url }}">Powered by Viriato</a>
+          {%- else -%}
+            {{ powered_by_link }}
+          {%- endif -%}
 
         </div>
       </div>
@@ -231,6 +246,23 @@
         "label": "Archiproducts brand page (EN URL)",
         "default": "https://www.archiproducts.com/en/monteiro-fabrics",
         "info": "IT/FR/ES/DE visitors are sent to the same page in their language; PT and others get EN."
+      },
+      {
+        "type": "header",
+        "content": "Footer credit"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_viriato_credit",
+        "label": "Show \"Powered by Viriato\" (replaces \"Powered by Shopify\")",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "viriato_url",
+        "label": "Viriato website",
+        "default": "https://viriato.com.pt",
+        "info": "PT visitors go to /pt, everyone else to /en. Untick to restore \"Powered by Shopify\"."
       },
       {
         "type": "header",
