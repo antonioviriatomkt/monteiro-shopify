@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/monteiro-fabrics-portugal-factory4.jpg",
+        "image": "shopify://shop_images/DX5A0903.jpg",
         "height": "fixed",
         "height_desktop": 600,
         "height_mobile": 550,
@@ -18,27 +27,40 @@
         "button_link": "",
         "button_2_label": "",
         "button_2_link": "",
+        "button_style": "solid",
         "image_link": "",
         "overlay_position": "position--hcenter position--vcenter",
         "full_width": true,
         "mobile_overlay_under": false,
-        "overlay_style_tint": true,
-        "button_style": "solid"
+        "overlay_style_tint": true
+      }
+    },
+    "audience": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Who we supply",
+        "title": "Built for trade buyers",
+        "title_size": 38,
+        "title_width": 12,
+        "text": "<p>Furniture and seating manufacturers, upholsterers, contract and hospitality fit-out, specifiers and interior architects, and fabric distributors.</p><p><strong>Trade supply only — sold by the roll.</strong></p>",
+        "button_label": "Request free samples",
+        "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_2_label": "Talk to a specialist",
+        "button_2_link": "/pages/upholstery-fabric-manufacturer#request",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/DSC9991_edit-2.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
       }
     },
     "proof": {
       "type": "proof-strip",
-      "settings": {
-        "alignment": "center",
-        "alternate_bg_color": false,
-        "padding": 48,
-        "show_lines": false,
-        "custom_spacing": true,
-        "space_top": 24,
-        "space_bottom": 80,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 68
-      },
       "blocks": {
         "proof_1": {
           "type": "item",
@@ -87,42 +109,21 @@
         "proof_3",
         "proof_4",
         "proof_5"
-      ]
-    },
-    "audience": {
-      "type": "image-with-text",
+      ],
       "settings": {
-        "subheading": "Who we supply",
-        "title": "Built for trade buyers",
-        "title_size": 38,
-        "title_width": 12,
-        "text": "<p>Furniture and seating manufacturers, upholsterers, contract and hospitality fit-out, specifiers and interior architects, and fabric distributors.</p><p><strong>Trade supply only — sold by the roll.</strong></p>",
-        "button_label": "Request free samples",
-        "button_link": "/pages/upholstery-fabric-manufacturer#request",
-        "button_2_label": "Talk to a specialist",
-        "button_2_link": "/pages/upholstery-fabric-manufacturer#request",
-        "text_alignment": "left",
-        "text_width": 50,
-        "button_style": "primary",
-        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-6_a6236486-5612-4b72-a5fa-c535d4ece9a4.jpg",
-        "image_width": 80,
-        "image_position": "right",
-        "media_size": "cover",
-        "color_scheme": "standard",
-        "color_bg": "",
-        "color_text": ""
+        "alignment": "center",
+        "alternate_bg_color": false,
+        "custom_spacing": true,
+        "space_top": 24,
+        "space_bottom": 80,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 68,
+        "show_lines": false,
+        "padding": 48
       }
     },
     "direct": {
       "type": "text-columns-with-images",
-      "settings": {
-        "title": "Direct from the manufacturer",
-        "text_alignment": "left",
-        "button_style": "link",
-        "media_shape": "natural",
-        "alternate_bg_color": true,
-        "full_width": false
-      },
       "blocks": {
         "direct_1": {
           "type": "text_block",
@@ -198,31 +199,18 @@
         "direct_4",
         "direct_5",
         "direct_6"
-      ]
+      ],
+      "settings": {
+        "title": "Direct from the manufacturer",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
+      }
     },
     "sheets": {
       "type": "collection-sheets",
-      "settings": {
-        "title": "Where trade buyers start",
-        "link_label": "",
-        "link_url": "",
-        "intro": "<p>Six collections with the figures buyers ask for first. Every one is available as a free sample.</p>",
-        "show_swatches": true,
-        "sample_label": "Add free sample",
-        "details_label": "Full technical sheet",
-        "footnote": "<p>Figures from the current web catalogues. The complete list of fire standards and the test reports are on each product page.</p>",
-        "label_weight": "Weight",
-        "label_composition": "Composition",
-        "label_abrasion": "Abrasion",
-        "label_colours": "Colours",
-        "label_fire": "Fire",
-        "label_hygiene": "Hygiene",
-        "label_warranty": "Warranty",
-        "alternate_bg_color": false,
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "spec_layout": "list"
-      },
       "blocks": {
         "sheets_1": {
           "type": "sheet",
@@ -346,12 +334,34 @@
         "sheets_4",
         "sheets_5",
         "sheets_6"
-      ]
+      ],
+      "settings": {
+        "title": "Where trade buyers start",
+        "link_label": "",
+        "link_url": "",
+        "intro": "<p>Six collections with the figures buyers ask for first. Every one is available as a free sample.</p>",
+        "spec_layout": "list",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "<p>Figures from the current web catalogues. The complete list of fire standards and the test reports are on each product page.</p>",
+        "label_weight": "Weight",
+        "label_composition": "Composition",
+        "label_abrasion": "Abrasion",
+        "label_colours": "Colours",
+        "label_fire": "Fire",
+        "label_hygiene": "Hygiene",
+        "label_warranty": "Warranty",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
     },
     "story": {
       "type": "rich-text",
       "settings": {
         "subheading": "Monteiro Fabrics",
+        "subheading_link": "",
         "title": "A family company since 1917",
         "title_size": 38,
         "title_width": 24,
@@ -360,6 +370,8 @@
         "image_width": 120,
         "button_label": "",
         "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
         "button_style": "auto",
         "text_alignment": "center",
         "enlarge_text": false,
@@ -372,14 +384,6 @@
     },
     "process": {
       "type": "process-steps",
-      "settings": {
-        "eyebrow": "How it works",
-        "title": "From sample to roll",
-        "intro": "",
-        "bg_color": "#3b3b39",
-        "text_color": "#ffffff",
-        "line_color": "#888886"
-      },
       "blocks": {
         "process_1": {
           "type": "step",
@@ -416,7 +420,15 @@
         "process_1",
         "process_2",
         "process_3"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "title": "From sample to roll",
+        "intro": "",
+        "bg_color": "#3b3b39",
+        "text_color": "#ffffff",
+        "line_color": "#888886"
+      }
     },
     "request_anchor": {
       "type": "anchor",
@@ -443,26 +455,15 @@
         "phone": "+351 228 338 640",
         "hours": "Mon–Fri, 9:00–18:00 (WET)",
         "side_note": "<p>Samples are free. Stock-service fabrics are available from a single roll.</p>",
-        "bg_color": "#FAFAF8",
+        "bg_color": "#fafaf8",
         "text_color": "#111111",
-        "field_bg": "#FFFFFF",
-        "line_color": "#D9D9D4",
-        "accent": "#2F519B"
+        "field_bg": "#ffffff",
+        "line_color": "#d9d9d4",
+        "accent": "#2f519b"
       }
     },
     "faq": {
       "type": "faq-schema",
-      "settings": {
-        "eyebrow": "Trade buyers — answered",
-        "title": "FAQ",
-        "intro": "",
-        "open_first": true,
-        "bg_color": "#ffffff",
-        "text_color": "#111111",
-        "line_color": "#D9D9D4",
-        "emit_breadcrumb": false,
-        "emit_collectionpage": false
-      },
       "blocks": {
         "faq_1": {
           "type": "faq",
@@ -506,12 +507,33 @@
         "faq_3",
         "faq_4",
         "faq_5"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "Trade buyers — answered",
+        "title": "FAQ",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "line_color": "#d9d9d4",
+        "emit_breadcrumb": false,
+        "crumb_home": "Home",
+        "crumb_home_url": "",
+        "crumb_current": "Healthcare Upholstery Fabrics",
+        "page_node": "CollectionPage",
+        "emit_collectionpage": false,
+        "cp_name": "Healthcare Upholstery Fabrics",
+        "webpage_headline": "",
+        "cp_description": "",
+        "cp_url": "",
+        "webpage_main_entity": ""
+      }
     },
     "cta": {
       "type": "rich-text",
       "settings": {
         "subheading": "",
+        "subheading_link": "",
         "title": "Talk to the people who make the fabric",
         "title_size": 36,
         "title_width": 24,
@@ -520,6 +542,8 @@
         "image_width": 120,
         "button_label": "Request free samples",
         "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_2_label": "",
+        "button_2_link": "",
         "button_style": "primary",
         "text_alignment": "center",
         "enlarge_text": false,
