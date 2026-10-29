@@ -191,8 +191,17 @@ Deterministic detection on the `signals_*` tables; a Claude run only reads a pay
 - The sandbox theme carries two junk files from an interrupted push:
   `assets/styles.css.liquid.tmp.10532.*` — delete them in the theme editor.
 
+- **Ads landing pages (2026-10-29).** `templates/page.ads-lp-manufacturer.json` → `/pages/upholstery-fabric-manufacturer`
+  (Google Ads C1 01_Supplier; page `seo.hidden` = noindex). Built **only from existing sections** (site design);
+  LP 2 (Crib 5) and LP 3 (Marine) follow the same model. Optional settings added for it — all default to the
+  previous look: `collection-sheets.spec_layout` (Simple list), `proof-strip.show_lines` + `custom_spacing`,
+  `image-with-text-overlay.button_style`, `rich-text` / `image-with-text` `button_2_*`, `contact-block`
+  `sector_label` / `need_label` / `need_options` / `message_label`.
+
 ## Gotchas that have cost time
 
+- **António edits LP images in the theme editor.** Before pushing a template, pull that one file from the live
+  theme (`theme pull --only templates/<file>`), commit it, then apply your change on top — never push a stale copy.
 - `bin/mf pull` overwrites **committed local-ahead** files too (e.g. the three sandbox templates
   above). After a pull, `git checkout --` whatever you did not mean to refresh, then commit.
 - Shopify JSON templates are **JSONC** — strip the leading `/* … */` before `json.load`.
