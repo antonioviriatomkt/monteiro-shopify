@@ -55,6 +55,16 @@
   #sheets-{{ sid }}.cs--list .cs-certs{ margin-top:22px; padding-top:18px; border-top:1px solid var(--cs-rule); }
   #sheets-{{ sid }}.cs--list .cs-certs em{ font-style:normal; color:var(--cs-muted); }
   #sheets-{{ sid }}.cs--list .cs-actions{ margin-top:0; }
+  /* No rules between rows; the text column is as tall as the main swatch, so the CTAs sit on its
+     bottom edge (colour chips go on a second grid row under the swatch). */
+  #sheets-{{ sid }}.cs--list .cs-row{ border-top:0; border-bottom:0; row-gap:10px; align-items:stretch; }
+  #sheets-{{ sid }}.cs--list .cs-row > div:first-child{ display:contents; }
+  #sheets-{{ sid }}.cs--list .cs-media{ grid-column:1; grid-row:1; }
+  #sheets-{{ sid }}.cs--list .cs-swatches{ grid-column:1; grid-row:2; margin-top:0; }
+  #sheets-{{ sid }}.cs--list .cs-body{ grid-column:2; grid-row:1; }
+  @media (max-width:767px){
+    #sheets-{{ sid }}.cs--list .cs-body{ grid-column:1; grid-row:3; margin-top:8px; }
+  }
   #sheets-{{ sid }} .cs-foot{ margin-top:36px; font-size:13px; color:var(--cs-muted); max-width:760px; }
   @media (max-width:1023px){
     #sheets-{{ sid }} .cs-row{ grid-template-columns:220px minmax(0,1fr); gap:28px; }
