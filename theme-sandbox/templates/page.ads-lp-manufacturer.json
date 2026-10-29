@@ -344,7 +344,7 @@
         "show_swatches": true,
         "sample_label": "Add free sample",
         "details_label": "Full technical sheet",
-        "footnote": "<p>Figures from the current web catalogues. The complete list of fire standards and the test reports are on each product page.</p>",
+        "footnote": "",
         "label_weight": "Weight",
         "label_composition": "Composition",
         "label_abrasion": "Abrasion",
