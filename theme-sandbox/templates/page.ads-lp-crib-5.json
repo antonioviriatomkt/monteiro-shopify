@@ -21,7 +21,7 @@
         "title_size": 60,
         "title_width": 14,
         "heading_h1": true,
-        "text": "<p>Seven coated fabrics from six collections tested to BS 5852 Crib 5, plus CHANCE Crib 7 | B1 for higher-risk venues. For contract seating in hotels, restaurants, healthcare, offices and public spaces.</p>",
+        "text": "<p>Seven coated fabrics from six collections tested to BS 5852 Crib 5, plus CHANCE Crib 7 | B1 for stadiums, auditoriums and high-traffic public venues. For contract seating in hotels, restaurants and offices.</p>",
         "enlarge_text": true,
         "button_label": "",
         "button_link": "",
@@ -82,8 +82,8 @@
           "type": "item",
           "settings": {
             "icon": "star",
-            "title": "Up to 400,000 Martindale",
-            "text": "<p>Abrasion, ISO 5470-2.</p>"
+            "title": "400,000 Martindale",
+            "text": "<p>ISO 5470-2. CHANCE metallic colours: 150,000.</p>"
           }
         },
         "proof_4": {
@@ -341,7 +341,7 @@
             "enable_image": false,
             "image_width": 700,
             "title": "Built for contract use",
-            "text": "<p>Up to 400,000 Martindale, colour matching and tailor-made development for projects.</p>",
+            "text": "<p>400,000 Martindale abrasion, colour matching and tailor-made development for projects.</p>",
             "button_label": "",
             "link": ""
           }
@@ -493,7 +493,7 @@
         "faq_4": {
           "type": "faq",
           "settings": {
-            "question": "Does the certificate cover my finished chair?",
+            "question": "Does the test report cover my finished chair?",
             "answer": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build for your own project.</p>"
           }
         },
@@ -531,10 +531,10 @@
         "emit_breadcrumb": false,
         "crumb_home": "Home",
         "crumb_home_url": "",
-        "crumb_current": "Healthcare Upholstery Fabrics",
+        "crumb_current": "Crib 5 upholstery fabric",
         "page_node": "CollectionPage",
         "emit_collectionpage": false,
-        "cp_name": "Healthcare Upholstery Fabrics",
+        "cp_name": "Crib 5 upholstery fabric",
         "webpage_headline": "",
         "cp_description": "",
         "cp_url": "",
