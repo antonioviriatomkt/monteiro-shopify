@@ -1,0 +1,624 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/DX5A0903.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 550,
+        "subheading": "IMO 2010 FTP Code Part 8 · Made in Portugal",
+        "title": "Marine upholstery fabric",
+        "title_size": 60,
+        "title_width": 14,
+        "heading_h1": true,
+        "text": "<p>Coated upholstery fabrics for yacht and boat interiors and on deck, tested to IMO 2010 FTP Code Part 8. For boatbuilders, shipyards and marine upholsterers.</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "solid",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "intro": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Who it’s for",
+        "title": "Built for boatbuilders and marine upholsterers",
+        "title_size": 38,
+        "title_width": 12,
+        "text": "<p>Boatbuilders and shipyards, marine upholsterers, yacht interior designers and fabric distributors — for interiors and on deck.</p><p><strong>Re-covering a single seat? We supply trade buyers by the roll only.</strong></p>",
+        "button_label": "Request free samples",
+        "button_link": "/pages/marine-upholstery-fabric#request",
+        "button_2_label": "Talk to a marine specialist",
+        "button_2_link": "/pages/marine-upholstery-fabric#request",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/DSC9991_edit-2.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "proof": {
+      "type": "proof-strip",
+      "blocks": {
+        "proof_1": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "IMO 2010 FTP Code Part 8",
+            "text": "<p>Every fabric on this page.</p>"
+          }
+        },
+        "proof_2": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Anti-microbial & anti-fungal",
+            "text": "<p>Sanitized® finish on every fabric here.</p>"
+          }
+        },
+        "proof_3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Colour matching",
+            "text": "<p>To your interior scheme.</p>"
+          }
+        },
+        "proof_4": {
+          "type": "item",
+          "settings": {
+            "icon": "award",
+            "title": "Free samples",
+            "text": "<p>Of every collection, posted to you.</p>"
+          }
+        },
+        "proof_5": {
+          "type": "item",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Made in Portugal since 1967",
+            "text": "<p>ISO 9001 & ISO 14001.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "proof_1",
+        "proof_2",
+        "proof_3",
+        "proof_4",
+        "proof_5"
+      ],
+      "settings": {
+        "alignment": "center",
+        "alternate_bg_color": false,
+        "custom_spacing": true,
+        "space_top": 24,
+        "space_bottom": 80,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 68,
+        "show_lines": false,
+        "padding": 48
+      }
+    },
+    "deck": {
+      "type": "collection-sheets",
+      "blocks": {
+        "deck_1": {
+          "type": "sheet",
+          "settings": {
+            "product": "marina-collection",
+            "name": "",
+            "tagline": "Marine interior and exterior. Colour-fast to water and sea water.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "17 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · six standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "deck_2": {
+          "type": "sheet",
+          "settings": {
+            "product": "siesta-collection",
+            "name": "",
+            "tagline": "Marine interior and exterior. Colour-fast to water and sea water.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "11 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · FMVSS302",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "deck_3": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-outdoor",
+            "name": "CHANCE Outdoor",
+            "tagline": "Outdoor, marine interior and exterior. Colour-fast to water and sea water.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · FMVSS302",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "deck_4": {
+          "type": "sheet",
+          "settings": {
+            "product": "lima-collection",
+            "name": "",
+            "tagline": "Marine interior and exterior (cruise).",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 150.000 Martindale",
+            "abrasion_note": "",
+            "colours": "30 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · FMVSS302 · UNI 9175 3.IM",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "deck_1",
+        "deck_2",
+        "deck_3",
+        "deck_4"
+      ],
+      "settings": {
+        "title": "On deck and inside",
+        "link_label": "",
+        "link_url": "",
+        "intro": "<p>Marine interior and exterior grades. Every one is available as a free sample.</p>",
+        "spec_layout": "list",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "",
+        "label_weight": "Weight",
+        "label_composition": "Composition",
+        "label_abrasion": "Abrasion",
+        "label_colours": "Colours",
+        "label_fire": "Fire",
+        "label_hygiene": "Hygiene",
+        "label_warranty": "Warranty",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "interior": {
+      "type": "collection-sheets",
+      "blocks": {
+        "interior_1": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-classic",
+            "name": "CHANCE Classic",
+            "tagline": "236 colours, one iconic texture. Colour-fast to water and sea water.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · thirteen standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "interior_2": {
+          "type": "sheet",
+          "settings": {
+            "product": "glam-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "42 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "interior_3": {
+          "type": "sheet",
+          "settings": {
+            "product": "laguna-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "41 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "interior_4": {
+          "type": "sheet",
+          "settings": {
+            "product": "beta-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "42 colours",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "interior_1",
+        "interior_2",
+        "interior_3",
+        "interior_4"
+      ],
+      "settings": {
+        "title": "Interior — cabins and saloons",
+        "link_label": "",
+        "link_url": "",
+        "intro": "<p>Marine interior grades with the figures buyers ask for first.</p>",
+        "spec_layout": "list",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "<p>Every fabric on this page is tested to IMO 2010 FTP Code Part 8 and has a Sanitized® anti-microbial and anti-fungal finish. We send the fire test reports for the fabrics you shortlist.</p>",
+        "label_weight": "Weight",
+        "label_composition": "Composition",
+        "label_abrasion": "Abrasion",
+        "label_colours": "Colours",
+        "label_fire": "Fire",
+        "label_hygiene": "Hygiene",
+        "label_warranty": "Warranty",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "performance": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "perf_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Marine fire safety",
+            "text": "<p>Every fabric here is tested to IMO 2010 FTP Code Part 8. Test reports on request.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "perf_2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Anti-microbial & anti-fungal",
+            "text": "<p>Sanitized® finish on every fabric on this page.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "perf_3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Water and sea water",
+            "text": "<p>MARINA, SIESTA, CHANCE Outdoor and CHANCE Classic are colour-fast to water, chlorinated water and sea water.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "perf_4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Light resistant",
+            "text": "<p>Every fabric on this page is light resistant.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "perf_1",
+        "perf_2",
+        "perf_3",
+        "perf_4"
+      ],
+      "settings": {
+        "title": "Built for the marine environment",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
+      }
+    },
+    "story": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Monteiro Fabrics",
+        "subheading_link": "",
+        "title": "A family company since 1917",
+        "title_size": 38,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Specialists in coated fabrics since 1967, now in our fourth generation and part of the Monteiro Ribas group.</p><p><strong>Trusted by marine trim specialists: Seat Innovation · Merima · MBS Fabrics</strong></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "process": {
+      "type": "process-steps",
+      "blocks": {
+        "process_1": {
+          "type": "step",
+          "settings": {
+            "title": "Ask",
+            "lead": "Tell us about your project.",
+            "text": "Interior or on deck, collections and quantities — one request covers several fabrics.",
+            "stat": "",
+            "stat_label": ""
+          }
+        },
+        "process_2": {
+          "type": "step",
+          "settings": {
+            "title": "Sample",
+            "lead": "Get free samples.",
+            "text": "Samples of any fabric on this page, posted to you.",
+            "stat": "",
+            "stat_label": ""
+          }
+        },
+        "process_3": {
+          "type": "step",
+          "settings": {
+            "title": "Order",
+            "lead": "Order by the roll.",
+            "text": "By the roll, with the fire test reports for your project.",
+            "stat": "",
+            "stat_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "process_1",
+        "process_2",
+        "process_3"
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "title": "From sample to roll",
+        "intro": "",
+        "bg_color": "#3b3b39",
+        "text_color": "#ffffff",
+        "line_color": "#888886"
+      }
+    },
+    "request_anchor": {
+      "type": "anchor",
+      "settings": {
+        "anchor_id": "request"
+      }
+    },
+    "request": {
+      "type": "contact-block",
+      "settings": {
+        "eyebrow": "Free samples · Marine",
+        "title": "Request free marine samples",
+        "intro": "<p>Tell us what you are working on. Trade enquiries only.</p>",
+        "submit_label": "Send request",
+        "sector_label": "I am a…",
+        "sector_options": "Boatbuilder or shipyard\nMarine upholsterer\nYacht interior designer\nFabric distributor\nOther",
+        "need_label": "I need",
+        "need_options": "Free samples\nA quote\nFire test reports\nTo talk to a marine specialist",
+        "message_label": "Project / vessel details — interior or on deck, fabrics, quantities",
+        "lead_endpoint": "",
+        "success_message": "Thank you — request received. A Monteiro specialist will contact you by email.",
+        "side_title": "Prefer to reach us directly?",
+        "email": "info@monteirofabrics.com",
+        "phone": "+351 228 338 640",
+        "hours": "Mon–Fri, 9:00–18:00 (WET)",
+        "side_note": "<p>Samples are free. We send the fire test reports for the fabrics you shortlist.</p>",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "field_bg": "#ffffff",
+        "line_color": "#d9d9d4",
+        "accent": "#2f519b"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Which fabrics can I use on deck?",
+            "answer": "<p>MARINA, SIESTA, LIMA and CHANCE Outdoor are made for marine interior and exterior use.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Do the fabrics meet marine fire standards?",
+            "answer": "<p>Every collection on this page is tested to IMO 2010 FTP Code Part 8. Ask us for the test reports for your project.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do they resist mould and sea water?",
+            "answer": "<p>Every fabric on this page has a Sanitized® anti-microbial and anti-fungal finish. MARINA, SIESTA, CHANCE Outdoor and CHANCE Classic are also colour-fast to water and sea water.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Can you match our colours?",
+            "answer": "<p>Yes, we offer colour matching.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Are samples free?",
+            "answer": "<p>Yes — samples of every collection are free.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "How do you sell?",
+            "answer": "<p>By the roll, to trade buyers only.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
+      "settings": {
+        "eyebrow": "Marine — answered",
+        "title": "FAQ",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "line_color": "#d9d9d4",
+        "emit_breadcrumb": false,
+        "crumb_home": "Home",
+        "crumb_home_url": "",
+        "crumb_current": "Marine upholstery fabric",
+        "page_node": "CollectionPage",
+        "emit_collectionpage": false,
+        "cp_name": "Marine upholstery fabric",
+        "webpage_headline": "",
+        "cp_description": "",
+        "cp_url": "",
+        "webpage_main_entity": ""
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "subheading_link": "",
+        "title": "Planning a refit or a new build?",
+        "title_size": 36,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Get your samples before the season starts.</p>",
+        "image_width": 120,
+        "button_label": "Request free samples",
+        "button_link": "/pages/marine-upholstery-fabric#request",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "proof",
+    "deck",
+    "interior",
+    "performance",
+    "story",
+    "process",
+    "request_anchor",
+    "request",
+    "faq",
+    "cta"
+  ]
+}
