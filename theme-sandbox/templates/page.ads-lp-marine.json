@@ -130,7 +130,7 @@
           "settings": {
             "product": "marina-collection",
             "name": "",
-            "tagline": "Marine interior and exterior. Colour-fast to water and sea water.",
+            "tagline": "Marine interior and exterior.",
             "best_for": "",
             "weight": "",
             "composition": "",
@@ -139,7 +139,7 @@
             "colours": "17 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · six standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior & exterior · colour-fast to sea water (ISO 105-E02)",
             "badges": "",
             "note": ""
           }
@@ -149,7 +149,7 @@
           "settings": {
             "product": "siesta-collection",
             "name": "",
-            "tagline": "Marine interior and exterior. Colour-fast to water and sea water.",
+            "tagline": "Marine interior and exterior.",
             "best_for": "",
             "weight": "",
             "composition": "",
@@ -158,7 +158,7 @@
             "colours": "11 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · FMVSS302",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior & exterior · colour-fast to sea water (ISO 105-E02) · cold-crack resistant",
             "badges": "",
             "note": ""
           }
@@ -168,7 +168,7 @@
           "settings": {
             "product": "chance-outdoor",
             "name": "CHANCE Outdoor",
-            "tagline": "Outdoor, marine interior and exterior. Colour-fast to water and sea water.",
+            "tagline": "Outdoor, marine interior and exterior.",
             "best_for": "",
             "weight": "",
             "composition": "",
@@ -177,7 +177,7 @@
             "colours": "236 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · NFPA 260 · Cal. TB 117 · FMVSS302",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior & exterior · colour-fast to sea water (ISO 105-E02) · −40 to +80 °C (ISO 4675)",
             "badges": "",
             "note": ""
           }
@@ -196,7 +196,7 @@
             "colours": "30 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · FMVSS302 · UNI 9175 3.IM",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior & exterior (cruise)",
             "badges": "",
             "note": ""
           }
@@ -224,7 +224,7 @@
         "label_colours": "Colours",
         "label_fire": "Fire",
         "label_hygiene": "Hygiene",
-        "label_warranty": "Warranty",
+        "label_warranty": "Marine use",
         "alternate_bg_color": false,
         "padding_top": 70,
         "padding_bottom": 70
@@ -238,7 +238,7 @@
           "settings": {
             "product": "chance-classic",
             "name": "CHANCE Classic",
-            "tagline": "236 colours, one iconic texture. Colour-fast to water and sea water.",
+            "tagline": "236 colours, one iconic texture.",
             "best_for": "",
             "weight": "",
             "composition": "",
@@ -247,7 +247,7 @@
             "colours": "236 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · fourteen standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior · colour-fast to sea water (ISO 105-E02) · −40 to +80 °C (ISO 4675)",
             "badges": "",
             "note": ""
           }
@@ -266,7 +266,7 @@
             "colours": "42 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior",
             "badges": "",
             "note": ""
           }
@@ -285,7 +285,7 @@
             "colours": "41 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior",
             "badges": "",
             "note": ""
           }
@@ -304,7 +304,7 @@
             "colours": "42 colours",
             "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · ten standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
-            "warranty": "",
+            "warranty": "Interior",
             "badges": "",
             "note": ""
           }
@@ -332,7 +332,7 @@
         "label_colours": "Colours",
         "label_fire": "Fire",
         "label_hygiene": "Hygiene",
-        "label_warranty": "Warranty",
+        "label_warranty": "Marine use",
         "alternate_bg_color": false,
         "padding_top": 70,
         "padding_bottom": 70
