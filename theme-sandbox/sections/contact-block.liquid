@@ -112,7 +112,7 @@
                 <input type="text" id="cb-country" name="contact[Country]" value="{{ form.Country }}">
               </div>
               <div class="cb-field">
-                <label for="cb-sector">Sector / application</label>
+                <label for="cb-sector">{{ section.settings.sector_label | default: 'Sector / application' | escape }}</label>
                 <select id="cb-sector" name="contact[Sector]" class="original-selector">
                   <option value="">Select…</option>
                   {% assign sectors = section.settings.sector_options | newline_to_br | split: '<br />' %}
@@ -124,8 +124,23 @@
               </div>
             </div>
 
+            {%- comment -%} Optional "I need…" select (ads LPs, 2026-10-29). Hidden when need_options is blank. {%- endcomment -%}
+            {%- if section.settings.need_options != blank -%}
+              <div class="cb-field">
+                <label for="cb-need">{{ section.settings.need_label | default: 'I need' | escape }} <span class="req">*</span></label>
+                <select id="cb-need" name="contact[Need]" class="original-selector" required>
+                  <option value="">Select…</option>
+                  {% assign needs = section.settings.need_options | newline_to_br | split: '<br />' %}
+                  {% for n in needs %}
+                    {% assign opt = n | strip_newlines | strip %}
+                    {% if opt != blank %}<option value="{{ opt | escape }}">{{ opt | escape }}</option>{% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+            {%- endif -%}
+
             <div class="cb-field">
-              <label for="cb-message">Message <span class="req">*</span></label>
+              <label for="cb-message">{{ section.settings.message_label | default: 'Message' | escape }} <span class="req">*</span></label>
               <textarea id="cb-message" name="contact[body]" required>{{ form.body }}</textarea>
             </div>
 
@@ -176,7 +191,7 @@
         var data = {
           name: v('contact[name]'), company: v('contact[Company]'), email: v('contact[email]'),
           phone: v('contact[Phone]'), country: v('contact[Country]'), sector: v('contact[Sector]'),
-          message: v('contact[body]'), website: v('cb_website'), page: location.pathname,
+          message: (v('contact[Need]') ? 'Need: ' + v('contact[Need]') + '\n\n' : '') + v('contact[body]'), website: v('cb_website'), page: location.pathname,
           kind: 'contact_form', locale: {{ request.locale.iso_code | json }}
         };
         /* Attribution (2026-10-23): same PostHog id + session-entry data the cart attributes carry,
@@ -202,7 +217,11 @@
       { "type": "richtext", "id": "intro", "label": "Intro" },
       { "type": "header", "content": "Form" },
       { "type": "text", "id": "submit_label", "label": "Submit button label", "default": "Send message" },
+      { "type": "text", "id": "sector_label", "label": "Sector field label", "default": "Sector / application" },
       { "type": "textarea", "id": "sector_options", "label": "Sector / application options (one per line)", "default": "Healthcare & medical\nHospitality\nPublic spaces\nPublic transport\nMarine\nAutomotive\nRetail\nFitness\nOther" },
+      { "type": "text", "id": "need_label", "label": "'I need' field label", "default": "I need" },
+      { "type": "textarea", "id": "need_options", "label": "'I need' options (one per line)", "info": "Leave blank to hide the field (default)." },
+      { "type": "text", "id": "message_label", "label": "Message field label", "default": "Message" },
       { "type": "text", "id": "lead_endpoint", "label": "Lead copy endpoint (Sender Worker)", "info": "Leave blank to use the default Worker. Each submission is stored in Supabase (signals_lead_events) and copied to Sender group enzoW5." },
       { "type": "text", "id": "success_message", "label": "Success message", "default": "Thanks — your message has been sent. Our team will be in touch shortly." },
       { "type": "header", "content": "Reach us directly" },

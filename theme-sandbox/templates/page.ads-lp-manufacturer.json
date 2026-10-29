@@ -1,457 +1,505 @@
 {
   "sections": {
     "hero": {
-      "type": "ads-lp-hero",
+      "type": "image-with-text-overlay",
       "settings": {
-        "eyebrow": "Coated fabrics · Porto, Portugal",
-        "heading": "Upholstery fabric manufacturer — coated fabrics made in Portugal since 1967",
-        "text": "<p>We make coated upholstery fabrics in Porto and sell them by the roll to furniture manufacturers, upholsterers and contract specifiers. Often called faux leather or vinyl, and made for commercial seating.</p>",
-        "placeholder": "Made in Porto since 1967",
-        "primary_label": "Request free samples",
-        "primary_need": "Free samples",
-        "secondary_label": "Talk to a specialist",
-        "secondary_need": "To talk to a specialist",
-        "footnote": "* On stock-service fabrics."
+        "image": "shopify://shop_images/monteiro-fabrics-portugal-factory4.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 560,
+        "subheading": "Coated fabrics · Made in Porto since 1967",
+        "title": "Upholstery fabric manufacturer",
+        "title_size": 60,
+        "title_width": 14,
+        "heading_h1": true,
+        "text": "<p>We make coated upholstery fabrics in Portugal and sell them by the roll to furniture manufacturers, upholsterers and contract specifiers. Often called faux leather or vinyl, and made for commercial seating.</p>",
+        "enlarge_text": true,
+        "button_label": "Request free samples",
+        "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_2_label": "Talk to a specialist",
+        "button_2_link": "/pages/upholstery-fabric-manufacturer#request",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "cta_bar": {
+      "type": "landing-cta",
+      "settings": {
+        "heading": "",
+        "subheading": "Free samples of every collection · Trade supply, sold by the roll",
+        "alignment": "center",
+        "quote_label": "Request free samples",
+        "quote_anchor": "#request",
+        "data_cta": "adslp_manufacturer_request",
+        "phone_label": "+351 228 338 640",
+        "background": "#FFFFFF",
+        "text_color": "#111111",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "proof": {
+      "type": "proof-strip",
+      "settings": {
+        "alignment": "left",
+        "alternate_bg_color": false,
+        "padding": 24
       },
       "blocks": {
-        "hero_0": {
-          "type": "proof",
+        "proof_1": {
+          "type": "item",
           "settings": {
-            "text": "Manufacturer since 1967"
+            "icon": "map_pin",
+            "title": "Made in Portugal since 1967",
+            "text": "<p>Family company since 1917, coated fabrics since 1967.</p>"
           }
         },
-        "hero_1": {
-          "type": "proof",
+        "proof_2": {
+          "type": "item",
           "settings": {
-            "text": "ISO 9001 & ISO 14001"
+            "icon": "award",
+            "title": "ISO 9001 & ISO 14001",
+            "text": "<p>Certified quality and environmental management.</p>"
           }
         },
-        "hero_2": {
-          "type": "proof",
+        "proof_3": {
+          "type": "item",
           "settings": {
-            "text": "Free samples of every collection"
+            "icon": "check",
+            "title": "Free samples",
+            "text": "<p>Of every collection, posted to you.</p>"
           }
         },
-        "hero_3": {
-          "type": "proof",
+        "proof_4": {
+          "type": "item",
           "settings": {
-            "text": "Stock service from one roll*"
+            "icon": "truck",
+            "title": "Stock service from one roll",
+            "text": "<p>On stock-service fabrics.</p>"
           }
         },
-        "hero_4": {
-          "type": "proof",
+        "proof_5": {
+          "type": "item",
           "settings": {
-            "text": "10-year warranty*"
+            "icon": "shield",
+            "title": "10-year warranty",
+            "text": "<p>The longest on the market, on stock-service fabrics.</p>"
           }
         }
       },
       "block_order": [
-        "hero_0",
-        "hero_1",
-        "hero_2",
-        "hero_3",
-        "hero_4"
+        "proof_1",
+        "proof_2",
+        "proof_3",
+        "proof_4",
+        "proof_5"
       ]
     },
     "audience": {
-      "type": "ads-lp-points",
+      "type": "rich-text",
       "settings": {
-        "layout": "chips",
-        "background": "white",
-        "eyebrow": "Who we supply",
-        "heading": "Built for trade buyers",
-        "intro": "",
-        "closing": "Trade supply only — sold by the roll."
-      },
-      "blocks": {
-        "audience_0": {
-          "type": "item",
-          "settings": {
-            "title": "Furniture & seating manufacturers",
-            "text": ""
-          }
-        },
-        "audience_1": {
-          "type": "item",
-          "settings": {
-            "title": "Upholsterers",
-            "text": ""
-          }
-        },
-        "audience_2": {
-          "type": "item",
-          "settings": {
-            "title": "Contract & hospitality fit-out",
-            "text": ""
-          }
-        },
-        "audience_3": {
-          "type": "item",
-          "settings": {
-            "title": "Specifiers and interior architects",
-            "text": ""
-          }
-        },
-        "audience_4": {
-          "type": "item",
-          "settings": {
-            "title": "Fabric distributors",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "audience_0",
-        "audience_1",
-        "audience_2",
-        "audience_3",
-        "audience_4"
-      ]
+        "subheading": "Who we supply",
+        "title": "Built for trade buyers",
+        "title_size": 38,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Furniture and seating manufacturers, upholsterers, contract and hospitality fit-out, specifiers and interior architects, and fabric distributors.</p><p><strong>Trade supply only — sold by the roll.</strong></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     },
     "direct": {
-      "type": "ads-lp-points",
+      "type": "text-columns-with-images",
       "settings": {
-        "layout": "cards",
-        "background": "soft",
-        "eyebrow": "Why buy from the mill",
-        "heading": "Direct from the manufacturer",
-        "intro": "",
-        "closing": ""
+        "title": "Direct from the manufacturer",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
       },
       "blocks": {
-        "direct_0": {
-          "type": "item",
-          "settings": {
-            "title": "Colour matching",
-            "text": "We match colours to your project."
-          }
-        },
         "direct_1": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "title": "Tailor-made development",
-            "text": "New textures, colours and finishes developed with you for larger projects."
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Colour matching",
+            "text": "<p>We match colours to your project.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "direct_2": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "title": "Stock service",
-            "text": "Selected fabrics available from stock from a single roll. CHANCE Classic is ready to ship from stock in 48 hours."
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Tailor-made development",
+            "text": "<p>New textures, colours and finishes developed with you for larger projects.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "direct_3": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "title": "10-year warranty",
-            "text": "The longest on the market, on our stock-service fabrics."
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Stock service",
+            "text": "<p>Selected fabrics available from stock from a single roll. CHANCE Classic is ready to ship from stock in 48 hours.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "direct_4": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
-            "title": "Certified quality",
-            "text": "ISO 9001 quality and ISO 14001 environmental management."
+            "enable_image": false,
+            "image_width": 700,
+            "title": "10-year warranty",
+            "text": "<p>The longest on the market, on our stock-service fabrics.</p>",
+            "button_label": "",
+            "link": ""
           }
         },
         "direct_5": {
-          "type": "item",
+          "type": "text_block",
           "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Certified quality",
+            "text": "<p>ISO 9001 quality and ISO 14001 environmental management.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "direct_6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
             "title": "Made in Portugal",
-            "text": "Coated in Porto, with a European supply base."
+            "text": "<p>Coated in Porto, with a European supply base.</p>",
+            "button_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "direct_0",
         "direct_1",
         "direct_2",
         "direct_3",
         "direct_4",
-        "direct_5"
+        "direct_5",
+        "direct_6"
+      ]
+    },
+    "sheets": {
+      "type": "collection-sheets",
+      "settings": {
+        "title": "Where trade buyers start",
+        "link_label": "",
+        "link_url": "",
+        "intro": "<p>Six collections with the figures buyers ask for first. Every one is available as a free sample.</p>",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "<p>Figures from the current web catalogues. The complete list of fire standards and the test reports are on each product page.</p>",
+        "label_weight": "Weight",
+        "label_composition": "Composition",
+        "label_abrasion": "Abrasion",
+        "label_colours": "Colours",
+        "label_fire": "Fire",
+        "label_hygiene": "Hygiene",
+        "label_warranty": "Warranty",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      },
+      "blocks": {
+        "sheets_1": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-classic",
+            "name": "CHANCE Classic",
+            "tagline": "236 colours, one iconic texture.",
+            "best_for": "",
+            "weight": "660 g/m²",
+            "composition": "PVC 87% · PES 8% · CO 5%",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "EN 1021-1+2 · EN 597-1+2 · IMO 2010 FTP Code Part 8 · NFPA 260 · Cal. TB 117",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "10 years · stock service",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_2": {
+          "type": "sheet",
+          "settings": {
+            "product": "mara-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "920 g/m²",
+            "composition": "PVC 76% · CO 24%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "48 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · IMO 2010 FTP Code Part 8 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "10 years",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_3": {
+          "type": "sheet",
+          "settings": {
+            "product": "furna-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "760 g/m²",
+            "composition": "PVC 83% · CO 17%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "34 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · IMO 2010 FTP Code Part 8 · eleven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "10 years",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_4": {
+          "type": "sheet",
+          "settings": {
+            "product": "glam-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "660 g/m²",
+            "composition": "PVC 87% · PES 8% · CO 5%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "42 colours",
+            "fire": "EN 1021-1+2 · EN 597-1+2 · IMO 2010 FTP Code Part 8 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "10 years",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_5": {
+          "type": "sheet",
+          "settings": {
+            "product": "peel-collection",
+            "name": "",
+            "tagline": "Made with chestnut by-products.",
+            "best_for": "",
+            "weight": "800 g/m²",
+            "composition": "Plant-based materials 60% · PVC 40%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "8 colours",
+            "fire": "EN 1021-1+2 · BS 5852 Crib 5 · FMVSS302 · NF P 92-503 M2",
+            "hygiene": "",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_6": {
+          "type": "sheet",
+          "settings": {
+            "product": "marina-collection",
+            "name": "",
+            "tagline": "Marine interior and exterior.",
+            "best_for": "",
+            "weight": "690 g/m²",
+            "composition": "PVC 80% · PES 20%",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "17 colours",
+            "fire": "EN 1021-1+2 · IMO 2010 FTP Code Part 8 · NFPA 260 · Cal. TB 117 · six standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "sheets_1",
+        "sheets_2",
+        "sheets_3",
+        "sheets_4",
+        "sheets_5",
+        "sheets_6"
       ]
     },
     "story": {
-      "type": "ads-lp-points",
+      "type": "rich-text",
       "settings": {
-        "layout": "chips",
-        "background": "white",
-        "eyebrow": "Monteiro Fabrics",
-        "heading": "A family company since 1917",
-        "intro": "<p>Specialists in coated fabrics since 1967, now in our fourth generation. Part of the Monteiro Ribas group.</p>",
-        "closing": ""
-      },
-      "blocks": {
-        "story_0": {
-          "type": "item",
-          "settings": {
-            "title": "Official supplier to McDonald’s",
-            "text": ""
-          }
-        },
-        "story_1": {
-          "type": "item",
-          "settings": {
-            "title": "Savoy Palace",
-            "text": ""
-          }
-        },
-        "story_2": {
-          "type": "item",
-          "settings": {
-            "title": "Vila Foz",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "story_0",
-        "story_1",
-        "story_2"
-      ]
+        "subheading": "Monteiro Fabrics",
+        "title": "A family company since 1917",
+        "title_size": 38,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Specialists in coated fabrics since 1967, now in our fourth generation and part of the Monteiro Ribas group.</p><p><strong>Official supplier to McDonald’s · Savoy Palace · Vila Foz</strong></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
     },
-    "collections": {
-      "type": "ads-lp-collections",
+    "process": {
+      "type": "process-steps",
       "settings": {
-        "background": "soft",
-        "eyebrow": "Collections",
-        "heading": "Where trade buyers start",
-        "intro": "<p>Add the collections you want to your sample request — samples are free.</p>",
-        "add_label": "Add to sample request",
-        "added_label": "Added to request ✓",
-        "note": ""
-      },
-      "blocks": {
-        "collections_0": {
-          "type": "collection",
-          "settings": {
-            "product": "chance-classic",
-            "title": "CHANCE",
-            "fact_1": "236 colours, one iconic texture",
-            "fact_2": "Six grades, including healthcare, Crib 5, Crib 7 and outdoor",
-            "fact_3": "",
-            "request_value": "CHANCE"
-          }
-        },
-        "collections_1": {
-          "type": "collection",
-          "settings": {
-            "product": "mara-collection",
-            "title": "MARA",
-            "fact_1": "400,000 Martindale",
-            "fact_2": "BS 5852 Crib 5",
-            "fact_3": "",
-            "request_value": "MARA"
-          }
-        },
-        "collections_2": {
-          "type": "collection",
-          "settings": {
-            "product": "furna-collection",
-            "title": "FURNA",
-            "fact_1": "400,000 Martindale",
-            "fact_2": "BS 5852 Crib 5",
-            "fact_3": "",
-            "request_value": "FURNA"
-          }
-        },
-        "collections_3": {
-          "type": "collection",
-          "settings": {
-            "product": "glam-collection",
-            "title": "GLAM",
-            "fact_1": "400,000 Martindale",
-            "fact_2": "42 colours",
-            "fact_3": "",
-            "request_value": "GLAM"
-          }
-        },
-        "collections_4": {
-          "type": "collection",
-          "settings": {
-            "product": "peel-collection",
-            "title": "PEEL",
-            "fact_1": "Made with chestnut by-products",
-            "fact_2": "400,000 Martindale",
-            "fact_3": "BS 5852 Crib 5",
-            "request_value": "PEEL"
-          }
-        },
-        "collections_5": {
-          "type": "collection",
-          "settings": {
-            "product": "marina-collection",
-            "title": "MARINA",
-            "fact_1": "Marine interior and exterior",
-            "fact_2": "400,000 Martindale",
-            "fact_3": "",
-            "request_value": "MARINA"
-          }
-        }
-      },
-      "block_order": [
-        "collections_0",
-        "collections_1",
-        "collections_2",
-        "collections_3",
-        "collections_4",
-        "collections_5"
-      ]
-    },
-    "sectors": {
-      "type": "ads-lp-points",
-      "settings": {
-        "layout": "chips",
-        "background": "white",
-        "eyebrow": "Sectors",
-        "heading": "Where our fabrics are used",
-        "intro": "",
-        "closing": ""
-      },
-      "blocks": {
-        "sectors_0": {
-          "type": "item",
-          "settings": {
-            "title": "Contract & hospitality",
-            "text": ""
-          }
-        },
-        "sectors_1": {
-          "type": "item",
-          "settings": {
-            "title": "Office",
-            "text": ""
-          }
-        },
-        "sectors_2": {
-          "type": "item",
-          "settings": {
-            "title": "Healthcare",
-            "text": ""
-          }
-        },
-        "sectors_3": {
-          "type": "item",
-          "settings": {
-            "title": "Marine & outdoor",
-            "text": ""
-          }
-        },
-        "sectors_4": {
-          "type": "item",
-          "settings": {
-            "title": "Mobility",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "sectors_0",
-        "sectors_1",
-        "sectors_2",
-        "sectors_3",
-        "sectors_4"
-      ]
-    },
-    "steps": {
-      "type": "ads-lp-points",
-      "settings": {
-        "layout": "steps",
-        "background": "white",
         "eyebrow": "How it works",
-        "heading": "From sample to roll",
+        "title": "From sample to roll",
         "intro": "",
-        "closing": ""
+        "bg_color": "#3b3b39",
+        "text_color": "#ffffff",
+        "line_color": "#888886"
       },
       "blocks": {
-        "steps_0": {
-          "type": "item",
+        "process_1": {
+          "type": "step",
           "settings": {
-            "title": "Tell us about your project",
-            "text": "Sector, fabrics and quantities."
+            "title": "Ask",
+            "lead": "Tell us about your project.",
+            "text": "Sector, collections and quantities — one request covers several collections.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "steps_1": {
-          "type": "item",
+        "process_2": {
+          "type": "step",
           "settings": {
-            "title": "Get free samples",
-            "text": "Of any collection, posted to you."
+            "title": "Sample",
+            "lead": "Get free samples.",
+            "text": "Samples of any collection, posted to you.",
+            "stat": "",
+            "stat_label": ""
           }
         },
-        "steps_2": {
-          "type": "item",
+        "process_3": {
+          "type": "step",
           "settings": {
-            "title": "Order by the roll",
-            "text": "From stock or made for your project, with certificates on request."
+            "title": "Order",
+            "lead": "Order by the roll.",
+            "text": "From stock or made for your project, with test reports on request.",
+            "stat": "",
+            "stat_label": ""
           }
         }
       },
       "block_order": [
-        "steps_0",
-        "steps_1",
-        "steps_2"
+        "process_1",
+        "process_2",
+        "process_3"
       ]
+    },
+    "request_anchor": {
+      "type": "anchor",
+      "settings": {
+        "anchor_id": "request"
+      }
     },
     "request": {
-      "type": "ads-lp-request",
+      "type": "contact-block",
       "settings": {
         "eyebrow": "Free samples · Quotes",
-        "heading": "Request free samples or a quote",
-        "intro": "<p>Tell us what you are working on. Samples are free, and one request can cover several collections.</p>",
+        "title": "Request free samples or a quote",
+        "intro": "<p>Tell us what you are working on. Trade enquiries only.</p>",
+        "submit_label": "Send request",
+        "sector_label": "I am a…",
+        "sector_options": "Furniture or seating manufacturer\nUpholsterer\nContract or fit-out\nSpecifier or designer\nFabric distributor\nOther",
+        "need_label": "I need",
+        "need_options": "Free samples\nA quote\nTechnical sheets\nTo talk to a specialist",
+        "message_label": "Project details — collections, quantities, timing",
+        "lead_endpoint": "",
+        "success_message": "Thank you — request received. A Monteiro specialist will contact you by email.",
+        "side_title": "Prefer to reach us directly?",
         "email": "info@monteirofabrics.com",
         "phone": "+351 228 338 640",
-        "role_options": "Furniture manufacturer\nUpholsterer\nContract or fit-out\nSpecifier or designer\nDistributor\nOther",
-        "need_options": "Free samples\nA quote\nTechnical sheets\nTo talk to a specialist",
-        "add_need": "Free samples",
-        "collections_label": "Collections of interest",
-        "collection_options": "CHANCE\nMARA\nFURNA\nGLAM\nPEEL\nMARINA\nNot sure yet",
-        "extra_label": "",
-        "extra_options": "",
-        "details_label": "Project details (optional)",
-        "submit_label": "Send request",
-        "micro": "<p>Trade enquiries only. By sending, you agree to our <a href=\"/policies/privacy-policy\">privacy policy</a>.</p>",
-        "success_title": "Thank you — request received.",
-        "success_text": "A Monteiro specialist will contact you by email.",
-        "lead_endpoint": ""
+        "hours": "Mon–Fri, 9:00–18:00 (WET)",
+        "side_note": "<p>Samples are free. Stock-service fabrics are available from a single roll.</p>",
+        "bg_color": "#FAFAF8",
+        "text_color": "#111111",
+        "field_bg": "#FFFFFF",
+        "line_color": "#D9D9D4",
+        "accent": "#2F519B"
       }
     },
     "faq": {
-      "type": "ads-lp-faq",
+      "type": "faq-schema",
       "settings": {
-        "eyebrow": "FAQ",
-        "heading": "Questions from trade buyers"
+        "eyebrow": "Trade buyers — answered",
+        "title": "FAQ",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "line_color": "#D9D9D4",
+        "emit_breadcrumb": false,
+        "emit_collectionpage": false
       },
       "blocks": {
-        "faq_0": {
-          "type": "qa",
+        "faq_1": {
+          "type": "faq",
           "settings": {
             "question": "Are you a manufacturer or a distributor?",
             "answer": "<p>Manufacturer. We have been making coated upholstery fabrics in Porto, Portugal, since 1967.</p>"
           }
         },
-        "faq_1": {
-          "type": "qa",
+        "faq_2": {
+          "type": "faq",
           "settings": {
             "question": "How do you sell?",
             "answer": "<p>By the roll, to trade buyers only. Stock-service fabrics are available from a single roll, and CHANCE Classic is ready to ship from stock in 48 hours.</p>"
           }
         },
-        "faq_2": {
-          "type": "qa",
+        "faq_3": {
+          "type": "faq",
           "settings": {
             "question": "Which certifications do your fabrics have?",
             "answer": "<p>Certification depends on the collection: EN 1021, BS 5852 Crib 5, IMO 2010 FTP Code Part 8 and others. Each collection lists its standards, and we send the test reports on request.</p>"
           }
         },
-        "faq_3": {
-          "type": "qa",
+        "faq_4": {
+          "type": "faq",
           "settings": {
             "question": "Are samples really free?",
             "answer": "<p>Yes — samples of every collection are free.</p>"
           }
         },
-        "faq_4": {
-          "type": "qa",
+        "faq_5": {
+          "type": "faq",
           "settings": {
             "question": "Can you match a colour or develop a fabric for our project?",
             "answer": "<p>Yes. We offer colour matching and tailor-made development.</p>"
@@ -459,30 +507,46 @@
         }
       },
       "block_order": [
-        "faq_0",
         "faq_1",
         "faq_2",
         "faq_3",
-        "faq_4"
+        "faq_4",
+        "faq_5"
       ]
     },
     "cta": {
-      "type": "ads-lp-cta",
+      "type": "rich-text",
       "settings": {
-        "heading": "Talk to the people who make the fabric.",
+        "subheading": "",
+        "title": "Talk to the people who make the fabric",
+        "title_size": 36,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Tell us the collections, quantities and standards you need. We will send samples and the test reports for your project.</p>",
+        "image_width": 120,
         "button_label": "Request free samples",
-        "need": "Free samples"
+        "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
       }
     }
   },
   "order": [
     "hero",
+    "cta_bar",
+    "proof",
     "audience",
     "direct",
+    "sheets",
     "story",
-    "collections",
-    "sectors",
-    "steps",
+    "process",
+    "request_anchor",
     "request",
     "faq",
     "cta"
