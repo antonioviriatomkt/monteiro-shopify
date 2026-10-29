@@ -108,12 +108,17 @@
       {% endif %}
 
       {% if section.settings.button_label != blank %}
-        <div class="button-row inherit-colors" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s">
+        {%- comment -%} Optional second button (29/10): secondary/outlined, beside the first. {%- endcomment -%}
+        {%- capture rt_justify -%}{% if section.settings.text_alignment == 'left' %}flex-start{% elsif section.settings.text_alignment == 'right' %}flex-end{% else %}center{% endif %}{%- endcapture -%}
+        <div class="button-row inherit-colors" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s"{% if section.settings.button_2_label != blank %} style="display:flex;flex-wrap:wrap;gap:16px;justify-content:{{ rt_justify }};"{% endif %}>
           <a data-cc-animate-click class="
             {% if section.settings.button_style != 'auto' %}button-custom {% endif %}
             {% if section.settings.button_style == 'link' %}link-display {% if section.settings.enlarge_text %}type-2{% endif %}{% else %}button {% if section.settings.button_style == 'secondary' %}alt{% endif %}{% endif %}" href="{{ section.settings.button_link }}">
             {{ section.settings.button_label | escape }}
           </a>
+          {%- if section.settings.button_2_label != blank -%}
+            <a data-cc-animate-click class="button alt" style="margin:0;" href="{{ section.settings.button_2_link }}">{{ section.settings.button_2_label | escape }}</a>
+          {%- endif -%}
         </div>
       {% endif %}
     </div>
@@ -200,6 +205,16 @@
         "type": "url",
         "id": "button_link",
         "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "button_2_label",
+        "label": "Second button (optional)"
+      },
+      {
+        "type": "url",
+        "id": "button_2_link",
+        "label": "Second button link"
       },
       {
         "type": "select",

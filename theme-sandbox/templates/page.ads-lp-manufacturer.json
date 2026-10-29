@@ -6,7 +6,7 @@
         "image": "shopify://shop_images/monteiro-fabrics-portugal-factory4.jpg",
         "height": "fixed",
         "height_desktop": 600,
-        "height_mobile": 650,
+        "height_mobile": 550,
         "subheading": "Coated fabrics · Made in Porto since 1967",
         "title": "Upholstery fabric manufacturer",
         "title_size": 60,
@@ -14,10 +14,10 @@
         "heading_h1": true,
         "text": "<p>We make coated upholstery fabrics in Portugal and sell them by the roll to furniture manufacturers, upholsterers and contract specifiers. Often called faux leather or vinyl, and made for commercial seating.</p>",
         "enlarge_text": true,
-        "button_label": "Request free samples",
-        "button_link": "/pages/upholstery-fabric-manufacturer#request",
-        "button_2_label": "Talk to a specialist",
-        "button_2_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
         "image_link": "",
         "overlay_position": "position--hcenter position--vcenter",
         "full_width": true,
@@ -29,9 +29,9 @@
     "proof": {
       "type": "proof-strip",
       "settings": {
-        "alignment": "left",
+        "alignment": "center",
         "alternate_bg_color": false,
-        "padding": 24,
+        "padding": 48,
         "show_lines": false
       },
       "blocks": {
@@ -94,16 +94,18 @@
         "heading_h1": false,
         "text": "<p>Furniture and seating manufacturers, upholsterers, contract and hospitality fit-out, specifiers and interior architects, and fabric distributors.</p><p><strong>Trade supply only — sold by the roll.</strong></p>",
         "image_width": 120,
-        "button_label": "",
-        "button_link": "",
-        "button_style": "auto",
+        "button_label": "Request free samples",
+        "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_style": "primary",
         "text_alignment": "center",
         "enlarge_text": false,
         "full_width": false,
         "no_padding_bottom": false,
         "color_scheme": "standard",
         "color_bg": "",
-        "color_text": ""
+        "color_text": "",
+        "button_2_label": "Talk to a specialist",
+        "button_2_link": "/pages/upholstery-fabric-manufacturer#request"
       }
     },
     "direct": {
