@@ -1,0 +1,583 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/DX5A0903.jpg",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 550,
+        "subheading": "BS 5852 tested · Made in Portugal",
+        "title": "Crib 5 upholstery fabric",
+        "title_size": 60,
+        "title_width": 14,
+        "heading_h1": true,
+        "text": "<p>Seven coated fabrics from six collections tested to BS 5852 Crib 5, plus CHANCE Crib 7 | B1 for higher-risk venues. For contract seating in hotels, restaurants, healthcare, offices and public spaces.</p>",
+        "enlarge_text": true,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "solid",
+        "image_link": "",
+        "overlay_position": "position--hcenter position--vcenter",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style_tint": true
+      }
+    },
+    "intro": {
+      "type": "image-with-text",
+      "settings": {
+        "subheading": "Crib 5 or Crib 7?",
+        "title": "Tested to the standard you specify",
+        "title_size": 38,
+        "title_width": 12,
+        "text": "<p>BS 5852 is the British Standard method for assessing the ignitability of upholstered seating. Crib 5 and Crib 7 are two of its wooden-crib ignition sources; Crib 7 is the larger and more demanding of the two. For venues that call for Crib 7, choose CHANCE Crib 7 | B1.</p><p><a href=\"/blogs/technical-hub/crib-5-vs-crib-7\" target=\"_blank\">Read the full guide →</a></p><p><strong>Trade supply only — sold by the roll.</strong></p>",
+        "button_label": "Request free samples",
+        "button_link": "/pages/crib-5-upholstery-fabric#request",
+        "button_2_label": "Request fire test reports",
+        "button_2_link": "/pages/crib-5-upholstery-fabric#request",
+        "text_alignment": "left",
+        "text_width": 50,
+        "button_style": "primary",
+        "image": "shopify://shop_images/DSC9991_edit-2.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "proof": {
+      "type": "proof-strip",
+      "blocks": {
+        "proof_1": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "BS 5852 Crib 5",
+            "text": "<p>Seven fabrics tested.</p>"
+          }
+        },
+        "proof_2": {
+          "type": "item",
+          "settings": {
+            "icon": "award",
+            "title": "Crib 7 option",
+            "text": "<p>CHANCE Crib 7 | B1.</p>"
+          }
+        },
+        "proof_3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Up to 400,000 Martindale",
+            "text": "<p>Abrasion, ISO 5470-2.</p>"
+          }
+        },
+        "proof_4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Free samples",
+            "text": "<p>Of every collection, posted to you.</p>"
+          }
+        },
+        "proof_5": {
+          "type": "item",
+          "settings": {
+            "icon": "map_pin",
+            "title": "Manufacturer since 1967",
+            "text": "<p>Coated in Porto, Portugal.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "proof_1",
+        "proof_2",
+        "proof_3",
+        "proof_4",
+        "proof_5"
+      ],
+      "settings": {
+        "alignment": "center",
+        "alternate_bg_color": false,
+        "custom_spacing": true,
+        "space_top": 24,
+        "space_bottom": 80,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 68,
+        "show_lines": false,
+        "padding": 48
+      }
+    },
+    "sheets": {
+      "type": "collection-sheets",
+      "blocks": {
+        "sheets_1": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-crib-5",
+            "name": "CHANCE Crib 5",
+            "tagline": "Developed for hospitality environments where safety is essential.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · IMO 2010 FTP Code Part 8 · eleven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_2": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-crib-7-b1",
+            "name": "CHANCE Crib 7 | B1",
+            "tagline": "For stadiums, auditoriums and high-traffic public venues.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "BS 5852 Crib 7 · DIN 4102 B1 · NF P 92-507 M1 · seven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_3": {
+          "type": "sheet",
+          "settings": {
+            "product": "chance-bioblend",
+            "name": "CHANCE Bioblend",
+            "tagline": "65% biobased content, with by-products from chestnut processing.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "≥ 400.000 Martindale",
+            "abrasion_note": "metallic colours 150.000",
+            "colours": "236 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · NF P 92-507 M2 · FMVSS302",
+            "hygiene": "",
+            "warranty": "",
+            "badges": "",
+            "note": "<p>Samples available; ask for lead time.</p>"
+          }
+        },
+        "sheets_4": {
+          "type": "sheet",
+          "settings": {
+            "product": "mara-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "48 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · IMO 2010 FTP Code Part 8 · ten standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_5": {
+          "type": "sheet",
+          "settings": {
+            "product": "furna-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "34 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · IMO 2010 FTP Code Part 8 · eleven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_6": {
+          "type": "sheet",
+          "settings": {
+            "product": "garbe-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "34 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · IMO 2010 FTP Code Part 8 · eleven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_7": {
+          "type": "sheet",
+          "settings": {
+            "product": "elefante-collection",
+            "name": "",
+            "tagline": "",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "14 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · IMO 2010 FTP Code Part 8 · eleven standards in total",
+            "hygiene": "Sanitized® antimicrobial finish",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        },
+        "sheets_8": {
+          "type": "sheet",
+          "settings": {
+            "product": "peel-collection",
+            "name": "",
+            "tagline": "Made with chestnut by-products.",
+            "best_for": "",
+            "weight": "",
+            "composition": "",
+            "abrasion": "400.000 Martindale",
+            "abrasion_note": "",
+            "colours": "8 colours",
+            "fire": "BS 5852 Crib 5 · EN 1021-1+2 · FMVSS302 · NF P 92-503 M2",
+            "hygiene": "",
+            "warranty": "",
+            "badges": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "sheets_1",
+        "sheets_2",
+        "sheets_3",
+        "sheets_4",
+        "sheets_5",
+        "sheets_6",
+        "sheets_7",
+        "sheets_8"
+      ],
+      "settings": {
+        "title": "Which fabric meets which standard",
+        "link_label": "",
+        "link_url": "",
+        "intro": "<p>Eight fabrics, the fire standards each was tested to, and the figures buyers ask for first. Every one is available as a free sample.</p>",
+        "spec_layout": "list",
+        "show_swatches": true,
+        "sample_label": "Add free sample",
+        "details_label": "Full technical sheet",
+        "footnote": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build — foam, interliner and fabric — for your own project. We send the test reports for the fabrics you shortlist.</p>",
+        "label_weight": "Weight",
+        "label_composition": "Composition",
+        "label_abrasion": "Abrasion",
+        "label_colours": "Colours",
+        "label_fire": "Fire",
+        "label_hygiene": "Hygiene",
+        "label_warranty": "Warranty",
+        "alternate_bg_color": false,
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
+    "why": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "why_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Manufacturer, not a distributor",
+            "text": "<p>Coated in Porto since 1967.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "why_2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Certified quality",
+            "text": "<p>ISO 9001 quality and ISO 14001 environmental management.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "why_3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 700,
+            "title": "Built for contract use",
+            "text": "<p>Up to 400,000 Martindale, colour matching and tailor-made development for projects.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "why_1",
+        "why_2",
+        "why_3"
+      ],
+      "settings": {
+        "title": "Why Monteiro",
+        "text_alignment": "left",
+        "button_style": "link",
+        "media_shape": "natural",
+        "alternate_bg_color": true,
+        "full_width": false
+      }
+    },
+    "story": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Monteiro Fabrics",
+        "subheading_link": "",
+        "title": "A family company since 1917",
+        "title_size": 38,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Specialists in coated fabrics since 1967, now in our fourth generation and part of the Monteiro Ribas group.</p><p><strong>Official supplier to McDonald’s · Savoy Palace · Vila Foz</strong></p>",
+        "image_width": 120,
+        "button_label": "",
+        "button_link": "",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "auto",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    },
+    "process": {
+      "type": "process-steps",
+      "blocks": {
+        "process_1": {
+          "type": "step",
+          "settings": {
+            "title": "Ask",
+            "lead": "Tell us about your project.",
+            "text": "Collections, the standard you need and quantities — one request covers several fabrics.",
+            "stat": "",
+            "stat_label": ""
+          }
+        },
+        "process_2": {
+          "type": "step",
+          "settings": {
+            "title": "Sample",
+            "lead": "Get free samples.",
+            "text": "Samples of any fabric on this page, posted to you.",
+            "stat": "",
+            "stat_label": ""
+          }
+        },
+        "process_3": {
+          "type": "step",
+          "settings": {
+            "title": "Order",
+            "lead": "Order by the roll.",
+            "text": "By the roll, with the test reports for your project.",
+            "stat": "",
+            "stat_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "process_1",
+        "process_2",
+        "process_3"
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "title": "From sample to roll",
+        "intro": "",
+        "bg_color": "#3b3b39",
+        "text_color": "#ffffff",
+        "line_color": "#888886"
+      }
+    },
+    "request_anchor": {
+      "type": "anchor",
+      "settings": {
+        "anchor_id": "request"
+      }
+    },
+    "request": {
+      "type": "contact-block",
+      "settings": {
+        "eyebrow": "Free samples · Test reports",
+        "title": "Request free samples or test reports",
+        "intro": "<p>Tell us what you are working on. Trade enquiries only.</p>",
+        "submit_label": "Send request",
+        "sector_label": "I am a…",
+        "sector_options": "Furniture or seating manufacturer\nUpholsterer\nContract or fit-out\nSpecifier or designer\nFabric distributor\nOther",
+        "need_label": "I need",
+        "need_options": "Free samples\nFire test reports\nA quote\nTo talk to a specialist",
+        "message_label": "Project details — fabrics, required standard (Crib 5 / Crib 7), quantities",
+        "lead_endpoint": "",
+        "success_message": "Thank you — request received. A Monteiro specialist will contact you by email.",
+        "side_title": "Prefer to reach us directly?",
+        "email": "info@monteirofabrics.com",
+        "phone": "+351 228 338 640",
+        "hours": "Mon–Fri, 9:00–18:00 (WET)",
+        "side_note": "<p>Samples are free. We send the fire test reports for the fabrics you shortlist.</p>",
+        "bg_color": "#fafaf8",
+        "text_color": "#111111",
+        "field_bg": "#ffffff",
+        "line_color": "#d9d9d4",
+        "accent": "#2f519b"
+      }
+    },
+    "faq": {
+      "type": "faq-schema",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Which of your fabrics meet BS 5852 Crib 5?",
+            "answer": "<p>CHANCE Crib 5, CHANCE Bioblend, MARA, FURNA, GARBE, ELEFANTE and PEEL.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Which fabric meets Crib 7?",
+            "answer": "<p>CHANCE Crib 7 | B1. It also meets DIN 4102 B1 and NF P 92-507 M1.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I get the test reports?",
+            "answer": "<p>Yes. Tell us which fabrics you are shortlisting and we will send the reports.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Does the certificate cover my finished chair?",
+            "answer": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build for your own project.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Are samples free?",
+            "answer": "<p>Yes — samples of every collection are free.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "How do you sell?",
+            "answer": "<p>By the roll, to trade buyers only.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
+      "settings": {
+        "eyebrow": "Crib 5 — answered",
+        "title": "FAQ",
+        "intro": "",
+        "open_first": true,
+        "bg_color": "#ffffff",
+        "text_color": "#111111",
+        "line_color": "#d9d9d4",
+        "emit_breadcrumb": false,
+        "crumb_home": "Home",
+        "crumb_home_url": "",
+        "crumb_current": "Healthcare Upholstery Fabrics",
+        "page_node": "CollectionPage",
+        "emit_collectionpage": false,
+        "cp_name": "Healthcare Upholstery Fabrics",
+        "webpage_headline": "",
+        "cp_description": "",
+        "cp_url": "",
+        "webpage_main_entity": ""
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "subheading_link": "",
+        "title": "Shortlist your Crib 5 fabrics",
+        "title_size": 36,
+        "title_width": 24,
+        "heading_h1": false,
+        "text": "<p>Free samples, and the fire test reports for the fabrics you shortlist.</p>",
+        "image_width": 120,
+        "button_label": "Request free samples",
+        "button_link": "/pages/crib-5-upholstery-fabric#request",
+        "button_2_label": "",
+        "button_2_link": "",
+        "button_style": "primary",
+        "text_alignment": "center",
+        "enlarge_text": false,
+        "full_width": false,
+        "no_padding_bottom": false,
+        "color_scheme": "standard",
+        "color_bg": "",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "proof",
+    "sheets",
+    "why",
+    "story",
+    "process",
+    "request_anchor",
+    "request",
+    "faq",
+    "cta"
+  ]
+}
