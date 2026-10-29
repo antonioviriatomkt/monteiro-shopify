@@ -31,6 +31,10 @@
     #proof-strip-{{ section.id }} .proof-strip__item{ border-left:0 !important; padding-left:0 !important; padding-top:14px; padding-bottom:14px; }
     #proof-strip-{{ section.id }} .proof-strip__item + .proof-strip__item{ border-top:1px solid var(--ps-rule); }
   }
+  {%- if section.settings.show_lines == false -%}
+  /* show_lines off (29/10): no top/bottom rules, no dividers between items. */
+  #proof-strip-{{ section.id }}, #proof-strip-{{ section.id }} .proof-strip__item{ border:0 !important; }
+  {%- endif -%}
 </style>
 
 <div id="proof-strip-{{ section.id }}" class="proof-strip {% if section.settings.alignment == 'center' %}proof-strip--center{% endif %}" data-section-id="{{ section.id }}">
@@ -68,6 +72,7 @@
     { "type": "select", "id": "alignment", "label": "Item alignment", "default": "left",
       "options": [ { "value": "left", "label": "Icon beside text" }, { "value": "center", "label": "Icon above text, centred" } ] },
     { "type": "checkbox", "id": "alternate_bg_color", "label": "Use alternate section color", "default": false },
+    { "type": "checkbox", "id": "show_lines", "label": "Show divider lines", "default": true },
     { "type": "range", "id": "padding", "label": "Vertical padding", "min": 0, "max": 60, "step": 4, "default": 24, "unit": "px" }
   ],
   "blocks": [

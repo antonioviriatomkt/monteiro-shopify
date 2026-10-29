@@ -7,6 +7,12 @@
 
 <div id="section-id-{{ section.id }}" class="section-id-{{ section.id }}" data-section-type="image-with-text-overlay" data-cc-animate>
   {% style %}
+    {%- if section.settings.button_style == 'solid' -%}
+    /* button_style = solid (29/10): same pair as landing-cta — dark filled + white outlined, spaced. */
+    #section-id-{{ section.id }} .line-3{ display:flex; flex-wrap:wrap; justify-content:center; gap:16px; }
+    #section-id-{{ section.id }} .line-3 .button{ background:#464654; color:#fff; border:1px solid #464654; margin:0; }
+    #section-id-{{ section.id }} .line-3 .button.alt{ background:#fff; color:#464654; border:1px solid #464654; }
+    {%- endif -%}
     {%- if section.settings.height == 'fixed' -%}
     #section-id-{{ section.id }} .rimage-outer-wrapper,
     #section-id-{{ section.id }} .placeholder-image {
@@ -260,6 +266,13 @@
         "type": "url",
         "id": "button_2_link",
         "label": "Second button link"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "default": "theme",
+        "options": [ { "value": "theme", "label": "Theme (white)" }, { "value": "solid", "label": "Dark + outlined" } ]
       },
       {
         "type": "url",
