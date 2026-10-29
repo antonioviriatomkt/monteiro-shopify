@@ -49,6 +49,12 @@
   #sheets-{{ sid }} .cs-actions a.cs-link:after{ content:""; width:16px; height:1px; background:currentColor; transition:width .2s; }
   #sheets-{{ sid }} .cs-actions a.cs-link:hover{ color:var(--cs-text); }
   #sheets-{{ sid }} .cs-actions a.cs-link:hover:after{ width:26px; }
+  /* spec_layout = list (ads LPs, 29/10): no weight/composition, every spec as a label/value row,
+     right column stretched to the media column (name on top, CTAs on the swatch baseline). */
+  #sheets-{{ sid }}.cs--list .cs-body{ display:flex; flex-direction:column; justify-content:space-between; gap:20px; }
+  #sheets-{{ sid }}.cs--list .cs-certs{ margin-top:22px; padding-top:18px; border-top:1px solid var(--cs-rule); }
+  #sheets-{{ sid }}.cs--list .cs-certs em{ font-style:normal; color:var(--cs-muted); }
+  #sheets-{{ sid }}.cs--list .cs-actions{ margin-top:0; }
   #sheets-{{ sid }} .cs-foot{ margin-top:36px; font-size:13px; color:var(--cs-muted); max-width:760px; }
   @media (max-width:1023px){
     #sheets-{{ sid }} .cs-row{ grid-template-columns:220px minmax(0,1fr); gap:28px; }
@@ -69,7 +75,8 @@
   }
 </style>
 
-<div id="sheets-{{ sid }}" class="collection-sheets" data-section-id="{{ sid }}">
+{%- assign list_layout = false -%}{%- if section.settings.spec_layout == 'list' -%}{%- assign list_layout = true -%}{%- endif -%}
+<div id="sheets-{{ sid }}" class="collection-sheets{% if list_layout %} cs--list{% endif %}" data-section-id="{{ sid }}">
   <div class="container container--large">
     {%- if section.settings.title != blank or section.settings.link_label != blank -%}
       <div class="cs-head">
@@ -109,7 +116,8 @@
           {%- endif -%}
         </div>
 
-        <div>
+        <div class="cs-body">
+          <div>
           <div class="cs-top">
             <div>
               <h3 class="cs-name"><a href="{{ product.url }}" data-cta="sheet_title" data-collection="{{ product.handle }}">{{ name | escape }}</a></h3>
@@ -124,6 +132,7 @@
             {%- endif -%}
           </div>
 
+          {%- unless list_layout -%}
           <div class="cs-stats">
             <div class="cs-stat"><b>{{ section.settings.label_weight | default: 'Weight' | escape }}</b><span>{{ block.settings.weight | default: '—' | escape }}</span></div>
             <div class="cs-stat"><b>{{ section.settings.label_composition | default: 'Composition' | escape }}</b><span>{{ block.settings.composition | default: '—' | escape }}</span></div>
@@ -131,7 +140,13 @@
             <div class="cs-stat"><b>{{ section.settings.label_colours | default: 'Colours' | escape }}</b><span>{{ block.settings.colours | default: '—' | escape }}</span></div>
           </div>
 
+          {%- endunless -%}
+
           <div class="cs-certs">
+            {%- if list_layout -%}
+              {%- if block.settings.abrasion != blank -%}<b>{{ section.settings.label_abrasion | default: 'Abrasion' | escape }}</b><span>{{ block.settings.abrasion | escape }}{% if block.settings.abrasion_note != blank %} <em>({{ block.settings.abrasion_note | escape }})</em>{% endif %}</span>{%- endif -%}
+              {%- if block.settings.colours != blank -%}<b>{{ section.settings.label_colours | default: 'Colours' | escape }}</b><span>{{ block.settings.colours | escape }}</span>{%- endif -%}
+            {%- endif -%}
             {%- if block.settings.fire != blank -%}<b>{{ section.settings.label_fire | default: 'Fire' | escape }}</b><span>{{ block.settings.fire | escape }}</span>{%- endif -%}
             {%- if block.settings.hygiene != blank -%}<b>{{ section.settings.label_hygiene | default: 'Hygiene' | escape }}</b><span>{{ block.settings.hygiene | escape }}</span>{%- endif -%}
             {%- if block.settings.warranty != blank -%}<b>{{ section.settings.label_warranty | default: 'Warranty' | escape }}</b><span>{{ block.settings.warranty | escape }}</span>{%- endif -%}
@@ -145,6 +160,7 @@
           {%- endif -%}
           {%- if block.settings.note != blank -%}<div class="cs-note">{{ block.settings.note }}</div>{%- endif -%}
 
+          </div>
           <div class="cs-actions">
             <a class="button" href="{{ product.url }}" data-cta="orgatec_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
             <a class="cs-link" href="{{ product.url }}" data-cta="sheet_details" data-collection="{{ product.handle }}">{{ section.settings.details_label | default: 'Full technical sheet' | escape }}</a>
@@ -168,6 +184,7 @@
     { "type": "text", "id": "link_label", "label": "Heading link label", "default": "All office upholstery fabrics" },
     { "type": "url", "id": "link_url", "label": "Heading link" },
     { "type": "richtext", "id": "intro", "label": "Intro" },
+    { "type": "select", "id": "spec_layout", "label": "Spec layout", "info": "Simple list hides weight and composition.", "default": "strip", "options": [ { "value": "strip", "label": "Figure strip" }, { "value": "list", "label": "Simple list" } ] },
     { "type": "checkbox", "id": "show_swatches", "label": "Show colour swatches under the image", "default": true },
     { "type": "text", "id": "sample_label", "label": "Sample button label", "default": "Add free sample" },
     { "type": "text", "id": "details_label", "label": "Details link label", "default": "Full technical sheet" },
