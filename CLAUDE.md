@@ -197,8 +197,14 @@ Deterministic detection on the `signals_*` tables; a Claude run only reads a pay
   previous look: `collection-sheets.spec_layout` (Simple list), `proof-strip.show_lines` + `custom_spacing`,
   `image-with-text-overlay.button_style`, `rich-text` / `image-with-text` `button_2_*`, `contact-block`
   `sector_label` / `need_label` / `need_options` / `message_label`.
+  `image-with-text.mobile_image` (above / below / hidden; default above) — the 3 ads LPs use «below» so the section-2 image
+  doesn't stack under the hero on mobile (29/10).
 
 ## Gotchas that have cost time
+
+- **A new section setting and the templates that use it cannot go in the same push.** Shopify validates the
+  template against the *remote* schema and silently drops the unknown key (29/10, `mobile_image`). Push the section
+  first, then the templates — and check the remote template kept the setting.
 
 - **António edits LP images in the theme editor.** Before pushing a template, pull that one file from the live
   theme (`theme pull --only templates/<file>`), commit it, then apply your change on top — never push a stale copy.
