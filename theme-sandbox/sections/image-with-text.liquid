@@ -41,6 +41,18 @@
     }
   }
 
+  {%- comment -%} Optional mobile media placement (29/10, ads LPs). Default "above" = theme behaviour. {%- endcomment -%}
+  {%- if section.settings.mobile_image == 'below' -%}
+  @media (max-width: 767px) {
+    #section-id-{{ section.id }} .image-with-text__text { order: 1; }
+    #section-id-{{ section.id }} .image-with-text__image { order: 2; }
+  }
+  {%- elsif section.settings.mobile_image == 'hidden' -%}
+  @media (max-width: 767px) {
+    #section-id-{{ section.id }} .image-with-text__image { display: none; }
+  }
+  {%- endif -%}
+
   @media (min-width: 992px) {
     .section-id-{{ section.id }} .feature-header {
       font-size: {{ section.settings.title_size }}px;
@@ -294,6 +306,18 @@
             "value": "left",
             "label": "Left"
           }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "mobile_image",
+        "label": "Media on mobile",
+        "info": "Below text keeps it from stacking under a hero image.",
+        "default": "above",
+        "options": [
+          { "value": "above", "label": "Above text" },
+          { "value": "below", "label": "Below text" },
+          { "value": "hidden", "label": "Hidden" }
         ]
       },
       {

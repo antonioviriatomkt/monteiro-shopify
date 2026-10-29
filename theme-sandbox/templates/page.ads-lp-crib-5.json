@@ -56,7 +56,8 @@
         "media_size": "cover",
         "color_scheme": "standard",
         "color_bg": "",
-        "color_text": ""
+        "color_text": "",
+        "mobile_image": "below"
       }
     },
     "proof": {
