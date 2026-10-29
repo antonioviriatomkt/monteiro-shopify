@@ -1,0 +1,235 @@
+{% comment %}
+  Ads LP — request form (2026-10-29). Native Shopify contact form (store email + the return URL
+  ?contact_posted=true that fires GTM generate_lead and the PostHog lead_submitted fallback), plus
+  the same fire-and-forget beacon to the contact-to-sender Worker as sections/contact-block.liquid
+  (Supabase signals_lead_events + Sender enzoW5, with PostHog id and session-entry attribution).
+  Collection chips are ticked by the "Add to request" buttons of sections/ads-lp-collections.liquid;
+  any element with data-ads-lp-need="…" pre-selects "I need…" and jumps here (#request).
+{% endcomment %}
+{{ 'ads-lp.css' | asset_url | stylesheet_tag }}
+
+{%- assign roles = section.settings.role_options | newline_to_br | split: '<br />' -%}
+{%- assign needs = section.settings.need_options | newline_to_br | split: '<br />' -%}
+{%- assign cols = section.settings.collection_options | newline_to_br | split: '<br />' -%}
+{%- assign extras = section.settings.extra_options | newline_to_br | split: '<br />' -%}
+
+<section class="ads-lp ads-lp-req ads-lp__section ads-lp__section--soft" id="request">
+  <div class="ads-lp__wrap">
+    <div class="ads-lp-req__grid">
+      <div class="ads-lp-req__aside">
+        {% if section.settings.eyebrow != blank %}<div class="ads-lp__eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+        <h2 class="ads-lp__h2">{{ section.settings.heading | escape }}</h2>
+        {% if section.settings.intro != blank %}<div class="ads-lp__intro">{{ section.settings.intro }}</div>{% endif %}
+        {% if section.settings.email != blank or section.settings.phone != blank %}
+          <div class="ads-lp-req__contact">
+            {% if section.settings.email != blank %}<div><a href="mailto:{{ section.settings.email | escape }}" data-ads-lp-cta="email">{{ section.settings.email | escape }}</a></div>{% endif %}
+            {% if section.settings.phone != blank %}<div><a href="tel:{{ section.settings.phone | remove: ' ' | escape }}" data-ads-lp-cta="phone">{{ section.settings.phone | escape }}</a></div>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ads-lp-req__form" id="ads-lp-req-{{ section.id }}">
+        {% form 'contact', id: 'ads-lp-request' %}
+          {% if form.posted_successfully? %}
+            <div class="ads-lp-req__success" role="status">
+              <strong>{{ section.settings.success_title | escape }}</strong>
+              {{ section.settings.success_text | escape }}
+            </div>
+          {% else %}
+            {% if form.errors %}
+              <div class="ads-lp-req__errors">{{ form.errors | default_errors }}</div>
+            {% endif %}
+
+            <div class="ads-lp-req__row">
+              <div class="ads-lp-req__field">
+                <label for="lp-name">Name <span class="ads-lp-req__req">*</span></label>
+                <input type="text" id="lp-name" name="contact[name]" autocomplete="name" required>
+              </div>
+              <div class="ads-lp-req__field">
+                <label for="lp-company">Company <span class="ads-lp-req__req">*</span></label>
+                <input type="text" id="lp-company" name="contact[Company]" autocomplete="organization" required>
+              </div>
+            </div>
+            <div class="ads-lp-req__row">
+              <div class="ads-lp-req__field">
+                <label for="lp-email">Work email <span class="ads-lp-req__req">*</span></label>
+                <input type="email" id="lp-email" name="contact[email]" autocomplete="email" required>
+              </div>
+              <div class="ads-lp-req__field">
+                <label for="lp-country">Country <span class="ads-lp-req__req">*</span></label>
+                <input type="text" id="lp-country" name="contact[Country]" autocomplete="country-name" required>
+              </div>
+            </div>
+            <div class="ads-lp-req__row">
+              <div class="ads-lp-req__field">
+                <label for="lp-role">I am a… <span class="ads-lp-req__req">*</span></label>
+                <select id="lp-role" name="contact[Role]" required class="original-selector">
+                  <option value="">Select…</option>
+                  {% for r in roles %}{% assign o = r | strip_newlines | strip %}{% if o != blank %}<option value="{{ o | escape }}">{{ o | escape }}</option>{% endif %}{% endfor %}
+                </select>
+              </div>
+              <div class="ads-lp-req__field">
+                <label for="lp-need">I need… <span class="ads-lp-req__req">*</span></label>
+                <select id="lp-need" name="contact[Need]" required class="original-selector">
+                  <option value="">Select…</option>
+                  {% for n in needs %}{% assign o = n | strip_newlines | strip %}{% if o != blank %}<option value="{{ o | escape }}">{{ o | escape }}</option>{% endif %}{% endfor %}
+                </select>
+              </div>
+            </div>
+
+            {% if section.settings.extra_label != blank %}
+              <div class="ads-lp-req__field">
+                <label for="lp-extra">{{ section.settings.extra_label | escape }}</label>
+                <select id="lp-extra" name="contact[{{ section.settings.extra_label | escape }}]" class="original-selector">
+                  <option value="">Select…</option>
+                  {% for x in extras %}{% assign o = x | strip_newlines | strip %}{% if o != blank %}<option value="{{ o | escape }}">{{ o | escape }}</option>{% endif %}{% endfor %}
+                </select>
+              </div>
+            {% endif %}
+
+            {% if cols.size > 0 and section.settings.collection_options != blank %}
+              <fieldset class="ads-lp-req__fieldset">
+                <legend class="ads-lp-req__legend">{{ section.settings.collections_label | escape }}</legend>
+                <div class="ads-lp-req__checks">
+                  {% for c in cols %}{% assign o = c | strip_newlines | strip %}{% if o != blank %}
+                    <label class="ads-lp-req__check"><input type="checkbox" value="{{ o | escape }}" data-ads-lp-col><span>{{ o | escape }}</span></label>
+                  {% endif %}{% endfor %}
+                </div>
+                <input type="hidden" name="contact[Collections]" value="" data-ads-lp-cols-out>
+              </fieldset>
+            {% endif %}
+
+            <div class="ads-lp-req__field">
+              <label for="lp-details">{{ section.settings.details_label | escape }}</label>
+              <textarea id="lp-details" name="contact[Project details]"></textarea>
+            </div>
+
+            <input type="hidden" name="contact[body]" value="Request from {{ request.path | escape }}" data-ads-lp-body>
+            <input type="hidden" name="contact[Landing page]" value="{{ request.path | escape }}">
+            <input type="hidden" name="contact[gclid]" value="" data-ads-lp-gclid>
+            <div class="ads-lp-req__hp" aria-hidden="true">
+              <label for="lp-website">Website</label>
+              <input type="text" id="lp-website" name="lp_website" tabindex="-1" autocomplete="off" value="">
+            </div>
+
+            <button type="submit" class="ads-lp__btn ads-lp-req__submit">{{ section.settings.submit_label | escape }}</button>
+            {% if section.settings.micro != blank %}<div class="ads-lp-req__micro">{{ section.settings.micro }}</div>{% endif %}
+          {% endif %}
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- assign lp_endpoint = section.settings.lead_endpoint | default: 'https://contact-to-sender.antoniodias.workers.dev' -%}
+<script>
+  (function () {
+    var root = document.getElementById('ads-lp-req-{{ section.id }}');
+    if (!root) return;
+    var form = root.querySelector('form');
+    var GKEY = 'mf_lp_gclid';
+
+    /* gclid arrives on the landing URL only; keep it for the session (the POST return drops it). */
+    try {
+      var g = new URLSearchParams(location.search).get('gclid');
+      if (g) sessionStorage.setItem(GKEY, g);
+    } catch (e) {}
+
+    /* Back from the native POST: bring the confirmation into view. */
+    if (/[?&]contact_posted=true(&|$)/.test(location.search)) {
+      setTimeout(function () { document.getElementById('request').scrollIntoView({ block: 'start' }); }, 60);
+    }
+    if (!form) return;
+
+    var need = form.querySelector('#lp-need');
+    var chips = [].slice.call(form.querySelectorAll('[data-ads-lp-col]'));
+    var out = form.querySelector('[data-ads-lp-cols-out]');
+
+    function syncButtons() {
+      var on = chips.filter(function (c) { return c.checked; }).map(function (c) { return c.value; });
+      if (out) out.value = on.join(', ');
+      [].forEach.call(document.querySelectorAll('[data-ads-lp-add]'), function (b) {
+        var pressed = on.indexOf(b.getAttribute('data-ads-lp-add')) !== -1;
+        if (!b.hasAttribute('data-label-off')) b.setAttribute('data-label-off', b.textContent);
+        b.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+        b.textContent = pressed ? (b.getAttribute('data-label-on') || b.getAttribute('data-label-off')) : b.getAttribute('data-label-off');
+      });
+    }
+    chips.forEach(function (c) { c.addEventListener('change', syncButtons); });
+
+    document.addEventListener('click', function (ev) {
+      var a = ev.target.closest && ev.target.closest('[data-ads-lp-need]');
+      if (a && need) {
+        var v = a.getAttribute('data-ads-lp-need');
+        if (v) { [].forEach.call(need.options, function (o) { if (o.value === v) need.value = v; }); }
+      }
+      var add = ev.target.closest && ev.target.closest('[data-ads-lp-add]');
+      if (add) {
+        var key = add.getAttribute('data-ads-lp-add');
+        chips.forEach(function (c) { if (c.value === key) c.checked = !c.checked; });
+        syncButtons();
+        if (need && !need.value) { [].forEach.call(need.options, function (o) { if (o.value === {{ section.settings.add_need | json }}) need.value = o.value; }); }
+      }
+    });
+
+    form.addEventListener('submit', function () {
+      var v = function (n) { var el = form.elements[n]; return el ? (el.value || '').trim() : ''; };
+      syncButtons();
+      try { var gl = sessionStorage.getItem(GKEY); if (gl) form.querySelector('[data-ads-lp-gclid]').value = gl; } catch (e) {}
+      var lines = [
+        'Role: ' + v('contact[Role]'), 'Need: ' + v('contact[Need]'),
+        out && out.value ? 'Collections: ' + out.value : '',
+        form.querySelector('#lp-extra') ? form.querySelector('#lp-extra').name.replace(/^contact\[|\]$/g, '') + ': ' + form.querySelector('#lp-extra').value : '',
+        v('contact[Project details]') ? 'Details: ' + v('contact[Project details]') : ''
+      ].filter(Boolean);
+      var body = lines.join('\n');
+      form.querySelector('[data-ads-lp-body]').value = body + '\n\n— ' + location.pathname;
+
+      if (!navigator.sendBeacon) return;
+      try {
+        var data = {
+          name: v('contact[name]'), company: v('contact[Company]'), email: v('contact[email]'),
+          country: v('contact[Country]'), sector: v('contact[Role]'), message: body,
+          website: v('lp_website'), page: location.pathname, kind: 'contact_form',
+          locale: {{ request.locale.iso_code | json }}
+        };
+        try { if (window.posthog && window.posthog.get_distinct_id) { data.ph_distinct_id = window.posthog.get_distinct_id(); data.ph_session_id = window.posthog.get_session_id(); } } catch (e) {}
+        try {
+          var entry = JSON.parse(sessionStorage.getItem('mf_entry_v1') || '{}');
+          Object.keys(entry).forEach(function (k) { data['ph_' + k] = entry[k]; });
+        } catch (e) {}
+        navigator.sendBeacon({{ lp_endpoint | json }}, new Blob([JSON.stringify(data)], { type: 'text/plain' }));
+      } catch (e) {}
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Ads LP — request form",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Request free samples or a quote" },
+    { "type": "richtext", "id": "intro", "label": "Intro" },
+    { "type": "text", "id": "email", "label": "Email (side)", "default": "info@monteirofabrics.com" },
+    { "type": "text", "id": "phone", "label": "Phone (side)", "default": "+351 228 338 640" },
+    { "type": "header", "content": "Fields" },
+    { "type": "textarea", "id": "role_options", "label": "'I am a…' options (one per line)",
+      "default": "Furniture manufacturer\nUpholsterer\nContract or fit-out\nSpecifier or designer\nDistributor\nOther" },
+    { "type": "textarea", "id": "need_options", "label": "'I need…' options (one per line)",
+      "default": "Free samples\nA quote\nTechnical sheets\nTo talk to a specialist" },
+    { "type": "text", "id": "add_need", "label": "'I need…' value set by 'Add to request'", "default": "Free samples" },
+    { "type": "text", "id": "collections_label", "label": "Collections label", "default": "Collections of interest" },
+    { "type": "textarea", "id": "collection_options", "label": "Collections (one per line — must match the cards' form value)" },
+    { "type": "text", "id": "extra_label", "label": "Extra question (optional)", "info": "Leave blank to hide. Also the field name in the email." },
+    { "type": "textarea", "id": "extra_options", "label": "Extra question options (one per line)" },
+    { "type": "text", "id": "details_label", "label": "Details label", "default": "Project details (optional)" },
+    { "type": "text", "id": "submit_label", "label": "Submit label", "default": "Send request" },
+    { "type": "richtext", "id": "micro", "label": "Small print under the button" },
+    { "type": "text", "id": "success_title", "label": "Success title", "default": "Thank you — request received." },
+    { "type": "text", "id": "success_text", "label": "Success text", "default": "A Monteiro specialist will contact you by email." },
+    { "type": "text", "id": "lead_endpoint", "label": "Lead copy endpoint (Worker)", "info": "Blank = contact-to-sender Worker (Supabase + Sender enzoW5)." }
+  ],
+  "presets": [ { "name": "Ads LP — request form" } ]
+}
+{% endschema %}

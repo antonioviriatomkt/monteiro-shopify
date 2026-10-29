@@ -1,0 +1,63 @@
+{% comment %}
+  Ads LP — points (2026-10-29). One section, three layouts: chips (audience, sectors, names),
+  cards (title + text) and steps (numbered). Family: sections/ads-lp-*.liquid + assets/ads-lp.css.
+{% endcomment %}
+{{ 'ads-lp.css' | asset_url | stylesheet_tag }}
+
+{%- assign layout = section.settings.layout -%}
+<section class="ads-lp ads-lp-points ads-lp__section{% if section.settings.background == 'soft' %} ads-lp__section--soft{% endif %}">
+  <div class="ads-lp__wrap">
+    {% if section.settings.eyebrow != blank %}<div class="ads-lp__eyebrow">{{ section.settings.eyebrow | escape }}</div>{% endif %}
+    {% if section.settings.heading != blank %}<h2 class="ads-lp__h2">{{ section.settings.heading | escape }}</h2>{% endif %}
+    {% if section.settings.intro != blank %}<div class="ads-lp__intro">{{ section.settings.intro }}</div>{% endif %}
+
+    {% if layout == 'chips' %}
+      <ul class="ads-lp-points__chips">
+        {% for block in section.blocks %}<li class="ads-lp-points__chip" {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</li>{% endfor %}
+      </ul>
+    {% elsif layout == 'steps' %}
+      <ol class="ads-lp-points__steps">
+        {% for block in section.blocks %}
+          <li class="ads-lp-points__step" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title | escape }}</h3>
+            {% if block.settings.text != blank %}<p>{{ block.settings.text | escape }}</p>{% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <ul class="ads-lp-points__cards">
+        {% for block in section.blocks %}
+          <li class="ads-lp-points__card" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title | escape }}</h3>
+            {% if block.settings.text != blank %}<p>{{ block.settings.text | escape }}</p>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if section.settings.closing != blank %}<p class="ads-lp__closing">{{ section.settings.closing | escape }}</p>{% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ads LP — points",
+  "settings": [
+    { "type": "select", "id": "layout", "label": "Layout", "default": "cards",
+      "options": [ { "value": "chips", "label": "Chips" }, { "value": "cards", "label": "Cards" }, { "value": "steps", "label": "Numbered steps" } ] },
+    { "type": "select", "id": "background", "label": "Background", "default": "white",
+      "options": [ { "value": "white", "label": "White" }, { "value": "soft", "label": "Light grey" } ] },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "richtext", "id": "intro", "label": "Intro" },
+    { "type": "text", "id": "closing", "label": "Closing line (bold)" }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Item", "settings": [
+      { "type": "text", "id": "title", "label": "Title" },
+      { "type": "textarea", "id": "text", "label": "Text (cards and steps only)" }
+    ] }
+  ],
+  "presets": [ { "name": "Ads LP — points" } ]
+}
+{% endschema %}
