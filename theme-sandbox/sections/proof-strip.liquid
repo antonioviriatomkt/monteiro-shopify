@@ -31,6 +31,12 @@
     #proof-strip-{{ section.id }} .proof-strip__item{ border-left:0 !important; padding-left:0 !important; padding-top:14px; padding-bottom:14px; }
     #proof-strip-{{ section.id }} .proof-strip__item + .proof-strip__item{ border-top:1px solid var(--ps-rule); }
   }
+  {%- if section.settings.custom_spacing -%}
+  /* custom_spacing (29/10): separate top/bottom padding, desktop and mobile — e.g. to mirror the next
+     section's own top spacing so the strip sits evenly between the hero and the next section. */
+  #proof-strip-{{ section.id }}{ padding: {{ section.settings.space_top }}px 0 {{ section.settings.space_bottom }}px; }
+  @media (max-width: 767px){ #proof-strip-{{ section.id }}{ padding: {{ section.settings.space_top_mobile }}px 0 {{ section.settings.space_bottom_mobile }}px; } }
+  {%- endif -%}
   {%- if section.settings.show_lines == false -%}
   /* show_lines off (29/10): no top/bottom rules, no dividers between items. */
   #proof-strip-{{ section.id }}, #proof-strip-{{ section.id }} .proof-strip__item{ border:0 !important; }
@@ -72,6 +78,11 @@
     { "type": "select", "id": "alignment", "label": "Item alignment", "default": "left",
       "options": [ { "value": "left", "label": "Icon beside text" }, { "value": "center", "label": "Icon above text, centred" } ] },
     { "type": "checkbox", "id": "alternate_bg_color", "label": "Use alternate section color", "default": false },
+    { "type": "checkbox", "id": "custom_spacing", "label": "Custom top/bottom spacing", "info": "Replaces 'Vertical padding' with the four values below.", "default": false },
+    { "type": "range", "id": "space_top", "label": "Space above (desktop)", "min": 0, "max": 200, "step": 4, "default": 48, "unit": "px" },
+    { "type": "range", "id": "space_bottom", "label": "Space below (desktop)", "min": 0, "max": 200, "step": 4, "default": 48, "unit": "px" },
+    { "type": "range", "id": "space_top_mobile", "label": "Space above (mobile)", "min": 0, "max": 200, "step": 4, "default": 32, "unit": "px" },
+    { "type": "range", "id": "space_bottom_mobile", "label": "Space below (mobile)", "min": 0, "max": 200, "step": 4, "default": 32, "unit": "px" },
     { "type": "checkbox", "id": "show_lines", "label": "Show divider lines", "default": true },
     { "type": "range", "id": "padding", "label": "Vertical padding", "min": 0, "max": 60, "step": 4, "default": 24, "unit": "px" }
   ],

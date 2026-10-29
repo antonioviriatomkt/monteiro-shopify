@@ -32,7 +32,12 @@
         "alignment": "center",
         "alternate_bg_color": false,
         "padding": 48,
-        "show_lines": false
+        "show_lines": false,
+        "custom_spacing": true,
+        "space_top": 100,
+        "space_bottom": 0,
+        "space_top_mobile": 48,
+        "space_bottom_mobile": 0
       },
       "blocks": {
         "proof_1": {
