@@ -98,8 +98,8 @@
           "type": "item",
           "settings": {
             "icon": "map_pin",
-            "title": "Made in Portugal since 1967",
-            "text": "<p>ISO 9001 & ISO 14001.</p>"
+            "title": "Made in Portugal",
+            "text": "<p>Coated-fabric specialists since 1967.</p>"
           }
         }
       },
@@ -245,7 +245,7 @@
             "abrasion": "≥ 400.000 Martindale",
             "abrasion_note": "metallic colours 150.000",
             "colours": "236 colours",
-            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · thirteen standards in total",
+            "fire": "IMO 2010 FTP Code Part 8 · EN 1021-1+2 · EN 597-1+2 · fourteen standards in total",
             "hygiene": "Sanitized® antimicrobial finish",
             "warranty": "",
             "badges": "",
@@ -380,7 +380,7 @@
             "enable_image": false,
             "image_width": 700,
             "title": "Light resistant",
-            "text": "<p>Every fabric on this page is light resistant.</p>",
+            "text": "<p>MARINA, SIESTA, CHANCE, GLAM, LAGUNA and BETA are light resistant.</p>",
             "button_label": "",
             "link": ""
           }
