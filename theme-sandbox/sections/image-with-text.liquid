@@ -99,7 +99,9 @@
       <div class="rte align-{{ section.settings.text_alignment }}" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s">{{ section.settings.text }}</div>
       {% if section.settings.button_label != blank %}
 
-      <div class="button-row" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.4s">
+      {%- comment -%} Optional second button (29/10): secondary/outlined, beside the first. {%- endcomment -%}
+      {%- capture iwt_justify -%}{% if section.settings.text_alignment == 'left' %}flex-start{% elsif section.settings.text_alignment == 'right' %}flex-end{% else %}center{% endif %}{%- endcapture -%}
+      <div class="button-row" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.4s"{% if section.settings.button_2_label != blank %} style="display:flex;flex-wrap:wrap;gap:16px;justify-content:{{ iwt_justify }};"{% endif %}>
         {% if section.settings.button_link != blank %}
           <a data-cc-animate-click class="
             {% if section.settings.button_style != 'auto' %}button-custom {% endif %}
@@ -118,6 +120,9 @@
         {% else %}
           </a>
         {% endif %}
+        {%- if section.settings.button_2_label != blank -%}
+          <a data-cc-animate-click class="button alt" style="margin:0;" href="{{ section.settings.button_2_link }}">{{ section.settings.button_2_label | escape }}</a>
+        {%- endif -%}
       </div>
 
       {% endif %}
@@ -184,6 +189,16 @@
         "type": "url",
         "id": "button_link",
         "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "button_2_label",
+        "label": "Second button (optional)"
+      },
+      {
+        "type": "url",
+        "id": "button_2_link",
+        "label": "Second button link"
       },
       {
         "type": "select",

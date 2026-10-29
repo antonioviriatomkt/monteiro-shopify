@@ -34,10 +34,10 @@
         "padding": 48,
         "show_lines": false,
         "custom_spacing": true,
-        "space_top": 100,
-        "space_bottom": 0,
-        "space_top_mobile": 48,
-        "space_bottom_mobile": 0
+        "space_top": 24,
+        "space_bottom": 80,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 68
       },
       "blocks": {
         "proof_1": {
@@ -90,27 +90,27 @@
       ]
     },
     "audience": {
-      "type": "rich-text",
+      "type": "image-with-text",
       "settings": {
         "subheading": "Who we supply",
         "title": "Built for trade buyers",
         "title_size": 38,
-        "title_width": 24,
-        "heading_h1": false,
+        "title_width": 12,
         "text": "<p>Furniture and seating manufacturers, upholsterers, contract and hospitality fit-out, specifiers and interior architects, and fabric distributors.</p><p><strong>Trade supply only — sold by the roll.</strong></p>",
-        "image_width": 120,
         "button_label": "Request free samples",
         "button_link": "/pages/upholstery-fabric-manufacturer#request",
+        "button_2_label": "Talk to a specialist",
+        "button_2_link": "/pages/upholstery-fabric-manufacturer#request",
+        "text_alignment": "left",
+        "text_width": 50,
         "button_style": "primary",
-        "text_alignment": "center",
-        "enlarge_text": false,
-        "full_width": false,
-        "no_padding_bottom": false,
+        "image": "shopify://shop_images/MONTEIRO_FABRICS_2_SITE_TEST-6_a6236486-5612-4b72-a5fa-c535d4ece9a4.jpg",
+        "image_width": 80,
+        "image_position": "right",
+        "media_size": "cover",
         "color_scheme": "standard",
         "color_bg": "",
-        "color_text": "",
-        "button_2_label": "Talk to a specialist",
-        "button_2_link": "/pages/upholstery-fabric-manufacturer#request"
+        "color_text": ""
       }
     },
     "direct": {
@@ -533,8 +533,8 @@
   },
   "order": [
     "hero",
-    "proof",
     "audience",
+    "proof",
     "direct",
     "sheets",
     "story",
