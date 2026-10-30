@@ -4315,6 +4315,21 @@ theme.ProductMediaGallery = function ($gallery, $thumbs, isFeaturedProduct, isQu
     var startIndex = $gallery.find('.current-img').index();
     swiper.slideTo(startIndex, 0);
 
+    // MF 30/10/2026 (T6 step 3): load the active slide and its neighbours. After slideTo() to the
+    // variant's image, lazysizes never re-checked the moved slides, leaving blank slots (SIESTA mobile).
+    function mfUnveilNear() {
+      if (!swiper || !window.lazySizes) return;
+      var spv = parseInt(swiper.params.slidesPerView, 10) || 1;
+      $swiperCont.find('.swiper-slide').slice(Math.max(0, swiper.activeIndex - 1), swiper.activeIndex + spv + 1)
+        .find('img.lazyload, img.lazyload--manual').each(function () {
+          $(this).removeClass('lazyload--manual').addClass('lazyload');
+          lazySizes.loader.unveil(this);
+        });
+    }
+    mfUnveilNear();
+    swiper.on('slideChangeTransitionStart', mfUnveilNear);
+    swiper.on('resize', mfUnveilNear);
+
     if(isCarouselLayout) {
       if(underlineSelectedMedia) {
         $gallery.find('.current-img .product-media').addClass('product-media--active-variant');
