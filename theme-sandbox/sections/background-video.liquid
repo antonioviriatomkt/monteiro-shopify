@@ -98,6 +98,7 @@
                 {%- if section.settings.title != blank -%}
                   <{{ heading_tag }} class="line-1  {% if section.settings.title_size >= 86 %}line-1--large{% endif %}">
                       {{ section.settings.title }}
+                      {%- if section.settings.h1_descriptor != blank -%}<span class="mf-h1-descriptor">{{ section.settings.h1_descriptor }}</span>{%- endif -%}
                   </{{ heading_tag }}>
                 {%- endif -%}
                 {%- if section.settings.text != blank -%}
@@ -187,6 +188,12 @@
         "label": "Set as primary page heading",
         "info": "Uses <h1> tag. One per page recommended. [Learn more](https://cleancanvas.co.uk/support/showcase/seo#inner-anchor-0)",
         "default": false
+      },
+      {
+        "type": "text",
+        "id": "h1_descriptor",
+        "label": "Heading descriptor (SEO)",
+        "info": "Small descriptive line shown under the heading, inside the same heading tag. Use on the primary page heading."
       },
       {
         "type": "richtext",
