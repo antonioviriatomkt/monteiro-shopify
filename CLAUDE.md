@@ -31,6 +31,12 @@ Both targets now push with `--allow-live` (`sandbox` = MAIN since 2026-09-30). *
 `bash bin/mf push` re-pulls first and refuses if the remote moved under a file you have no local
 commits for. Do not reach past it with `MF_FORCE=1` without reading the diff.
 
+## Working copy = a clone of this repo (since 2026-10-30)
+
+Work from a fresh clone of GitHub in the cloud workspace, **not** from the OneDrive `REPOS/APP`
+folder (being retired; it is behind GitHub from `5792463`). `bin/mf` works there (npx reaches
+Shopify). Copy only the two gitignored tokens (`.shopify-theme-token`, `.github-token`) into the clone.
+
 ## One credential per job
 
 | Job | Use | Never |
@@ -201,6 +207,11 @@ Deterministic detection on the `signals_*` tables; a Claude run only reads a pay
   doesn't stack under the hero on mobile (29/10).
 
 ## Gotchas that have cost time
+
+- **H1 descriptor (2026-10-30):** `background-video`, `slideshow` (block) and `image-with-text-overlay`
+  have a text setting `h1_descriptor` — a small line rendered *inside* the heading
+  (`.mf-h1-descriptor`, end of `styles.css.liquid`). Used on the 7 signature pages; translations via
+  `translationsRegister` on `OnlineStoreThemeJsonTemplate/page.<name>?theme_id=195386114425`.
 
 - **A new section setting and the templates that use it cannot go in the same push.** Shopify validates the
   template against the *remote* schema and silently drops the unknown key (29/10, `mobile_image`). Push the section
