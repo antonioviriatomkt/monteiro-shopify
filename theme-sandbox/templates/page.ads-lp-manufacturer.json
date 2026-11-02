@@ -343,7 +343,7 @@
         "intro": "<p>Six collections with the figures buyers ask for first. Every one is available as a free sample.</p>",
         "spec_layout": "list",
         "show_swatches": true,
-        "sample_label": "Add free sample",
+        "sample_label": "View collection",
         "details_label": "Full technical sheet",
         "footnote": "",
         "label_weight": "Weight",
@@ -355,7 +355,8 @@
         "label_warranty": "Warranty",
         "alternate_bg_color": false,
         "padding_top": 70,
-        "padding_bottom": 70
+        "padding_bottom": 70,
+        "sample_cta_id": "lp_view_collection"
       }
     },
     "story": {

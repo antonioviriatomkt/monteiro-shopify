@@ -216,7 +216,7 @@
         "intro": "<p>Marine interior and exterior grades. Every one is available as a free sample.</p>",
         "spec_layout": "list",
         "show_swatches": true,
-        "sample_label": "Add free sample",
+        "sample_label": "View collection",
         "details_label": "Full technical sheet",
         "footnote": "",
         "label_weight": "Weight",
@@ -228,7 +228,10 @@
         "label_warranty": "Marine use",
         "alternate_bg_color": false,
         "padding_top": 70,
-        "padding_bottom": 70
+        "padding_bottom": 70,
+        "sample_cta_id": "lp_view_collection",
+        "request_label": "Request free samples",
+        "request_link": "/pages/marine-upholstery-fabric#request"
       }
     },
     "interior": {
@@ -324,7 +327,7 @@
         "intro": "<p>Marine interior grades with the figures buyers ask for first.</p>",
         "spec_layout": "list",
         "show_swatches": true,
-        "sample_label": "Add free sample",
+        "sample_label": "View collection",
         "details_label": "Full technical sheet",
         "footnote": "<p>Every fabric on this page is tested to IMO 2010 FTP Code Part 8 and has a Sanitized® anti-microbial and anti-fungal finish. We send the fire test reports for the fabrics you shortlist.</p>",
         "label_weight": "Weight",
@@ -336,7 +339,10 @@
         "label_warranty": "Marine use",
         "alternate_bg_color": false,
         "padding_top": 70,
-        "padding_bottom": 70
+        "padding_bottom": 70,
+        "sample_cta_id": "lp_view_collection",
+        "request_label": "Request free samples",
+        "request_link": "/pages/marine-upholstery-fabric#request"
       }
     },
     "performance": {
@@ -606,6 +612,16 @@
         "color_bg": "",
         "color_text": ""
       }
+    },
+    "sticky_cta": {
+      "type": "sticky-cta",
+      "settings": {
+        "label": "Request free samples",
+        "link": "#request",
+        "data_cta": "lp_sticky_request",
+        "show_after": 500,
+        "background": "#ffffff"
+      }
     }
   },
   "order": [
@@ -620,6 +636,7 @@
     "request_anchor",
     "request",
     "faq",
-    "cta"
+    "cta",
+    "sticky_cta"
   ]
 }

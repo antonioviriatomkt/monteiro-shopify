@@ -1,0 +1,51 @@
+{%- comment -%}
+  Sticky CTA bar — mobile only. Fixed to the bottom of the screen once the visitor scrolls past the
+  hero; hides again while the target form is on screen, so it never covers the form it points to.
+  Built 02/11/2026 for the Google Ads landing pages (Marine first). Reusable on any page template.
+{%- endcomment -%}
+{%- assign sid = section.id -%}
+{%- assign target = section.settings.link | default: '#request' -%}
+<style>
+  #scta-{{ sid }}{ position:fixed; left:0; right:0; bottom:0; z-index:40; padding:10px 16px calc(10px + env(safe-area-inset-bottom)); background:{{ section.settings.background }}; box-shadow:0 -2px 12px rgba(0,0,0,.12); transform:translateY(110%); transition:transform .25s ease; }
+  #scta-{{ sid }}.is-on{ transform:none; }
+  #scta-{{ sid }} a{ display:block; width:100%; text-align:center; padding:14px 16px; margin:0; }
+  @media (min-width: 768px){ #scta-{{ sid }}{ display:none; } }
+</style>
+<div id="scta-{{ sid }}" class="sticky-cta" aria-hidden="true">
+  <a class="button" href="{{ target }}" data-cta="{{ section.settings.data_cta | default: 'lp_sticky_request' | escape }}" tabindex="-1">{{ section.settings.label | escape }}</a>
+</div>
+<script>
+  (function(){
+    var bar = document.getElementById('scta-{{ sid }}'); if(!bar) return;
+    var link = bar.querySelector('a');
+    var hash = ({{ target | json }}.split('#')[1] || '');
+    var anchor = hash ? document.getElementById(hash) : null;
+    var formSection = anchor ? (anchor.closest('.shopify-section') || anchor).nextElementSibling : null;
+    var formVisible = false, start = {{ section.settings.show_after | default: 500 }};
+    function update(){
+      var on = window.scrollY > start && !formVisible;
+      bar.classList.toggle('is-on', on);
+      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      link.tabIndex = on ? 0 : -1;
+    }
+    if (formSection && 'IntersectionObserver' in window){
+      new IntersectionObserver(function(entries){ formVisible = entries[0].isIntersecting; update(); }, { threshold: 0.05 }).observe(formSection);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Sticky CTA (mobile)",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Button label", "default": "Request free samples" },
+    { "type": "text", "id": "link", "label": "Button link", "info": "Same-page anchor, e.g. #request (the Anchor section's ID).", "default": "#request" },
+    { "type": "text", "id": "data_cta", "label": "Tracking id (data-cta)", "default": "lp_sticky_request" },
+    { "type": "range", "id": "show_after", "label": "Show after scrolling", "min": 100, "max": 1500, "step": 50, "default": 500, "unit": "px" },
+    { "type": "color", "id": "background", "label": "Bar background", "default": "#ffffff" }
+  ],
+  "presets": [ { "name": "Sticky CTA (mobile)" } ]
+}
+{% endschema %}

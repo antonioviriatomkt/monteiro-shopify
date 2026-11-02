@@ -22,6 +22,9 @@
   #sheets-{{ sid }} .cs-media .placeholder-svg{ width:100%; height:100%; display:block; fill:#c4c4c4; background:#e9e7e2; }
   #sheets-{{ sid }} .cs-swatches{ display:flex; gap:6px; align-items:center; margin-top:10px; }
   #sheets-{{ sid }} .cs-swatches i{ width:28px; height:28px; display:block; border:0; background-size:cover; background-position:center; }
+  #sheets-{{ sid }} .cs-swatches a{ display:block; line-height:0; outline-offset:2px; }
+  #sheets-{{ sid }} .cs-swatches a:hover i{ box-shadow:0 0 0 1px var(--cs-text); }
+  #sheets-{{ sid }} .cs-actions .cs-btn-alt{ background:transparent; color:var(--cs-text); border:1px solid var(--cs-text); }
   #sheets-{{ sid }} .cs-swatches small{ font-size:12px; color:var(--cs-muted); margin-left:4px; }
   #sheets-{{ sid }} .cs-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:24px; }
   #sheets-{{ sid }} .cs-name{ font-size:22px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; line-height:1.2; margin:0; text-align:left; color:var(--cs-text); }
@@ -115,10 +118,10 @@
           </a>
           {%- if section.settings.show_swatches -%}
             {%- assign shown = 0 -%}
-            <div class="cs-swatches" aria-hidden="true">
+            <div class="cs-swatches">
               {%- for v in product.variants -%}
                 {%- if v.image and shown < 5 and v.image != product.featured_image -%}
-                  <i style="background-image:url('{{ v.image | image_url: width: 80 }}')"></i>
+                  <a href="{{ v.url }}" data-cta="sheet_swatch" data-collection="{{ product.handle }}" title="{{ v.title | escape }}" aria-label="{{ name | escape }} — {{ v.title | escape }}"><i style="background-image:url('{{ v.image | image_url: width: 80 }}')"></i></a>
                   {%- assign shown = shown | plus: 1 -%}
                 {%- endif -%}
               {%- endfor -%}
@@ -172,7 +175,10 @@
 
           </div>
           <div class="cs-actions">
-            <a class="button" href="{{ product.url }}" data-cta="orgatec_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
+            <a class="button" href="{{ product.url }}" data-cta="{{ section.settings.sample_cta_id | default: 'orgatec_samples' | escape }}" data-cta-slot="{{ product.handle }}">{{ section.settings.sample_label | default: 'Add free sample' | escape }}</a>
+            {%- if section.settings.request_label != blank and section.settings.request_link != blank -%}
+              <a class="button cs-btn-alt" href="{{ section.settings.request_link }}" data-cta="lp_request_samples" data-cta-slot="{{ product.handle }}">{{ section.settings.request_label | escape }}</a>
+            {%- endif -%}
             <a class="cs-link" href="{{ product.url }}" data-cta="sheet_details" data-collection="{{ product.handle }}">{{ section.settings.details_label | default: 'Full technical sheet' | escape }}</a>
           </div>
         </div>
@@ -196,7 +202,10 @@
     { "type": "richtext", "id": "intro", "label": "Intro" },
     { "type": "select", "id": "spec_layout", "label": "Spec layout", "info": "Simple list hides weight and composition.", "default": "strip", "options": [ { "value": "strip", "label": "Figure strip" }, { "value": "list", "label": "Simple list" } ] },
     { "type": "checkbox", "id": "show_swatches", "label": "Show colour swatches under the image", "default": true },
-    { "type": "text", "id": "sample_label", "label": "Sample button label", "default": "Add free sample" },
+    { "type": "text", "id": "sample_label", "label": "Main button label (links to the product page)", "default": "Add free sample" },
+    { "type": "text", "id": "sample_cta_id", "label": "Main button tracking id (data-cta)", "default": "orgatec_samples" },
+    { "type": "text", "id": "request_label", "label": "Second button label (optional)", "info": "E.g. Request free samples. Shown only with a link." },
+    { "type": "url", "id": "request_link", "label": "Second button link (e.g. this page #request)" },
     { "type": "text", "id": "details_label", "label": "Details link label", "default": "Full technical sheet" },
     { "type": "richtext", "id": "footnote", "label": "Footnote" },
     { "type": "header", "content": "Labels (translate here)" },

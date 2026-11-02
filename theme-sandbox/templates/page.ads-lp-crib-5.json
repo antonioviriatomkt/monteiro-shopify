@@ -296,7 +296,7 @@
         "intro": "<p>Eight fabrics, the fire standards each was tested to, and the figures buyers ask for first. Every one is available as a free sample.</p>",
         "spec_layout": "list",
         "show_swatches": true,
-        "sample_label": "Add free sample",
+        "sample_label": "View collection",
         "details_label": "Full technical sheet",
         "footnote": "<p>A fire test covers the fabric as tested with the composite described in its report. Confirm the full upholstery build — foam, interliner and fabric — for your own project. We send the test reports for the fabrics you shortlist.</p>",
         "label_weight": "Weight",
@@ -308,7 +308,8 @@
         "label_warranty": "Warranty",
         "alternate_bg_color": false,
         "padding_top": 70,
-        "padding_bottom": 70
+        "padding_bottom": 70,
+        "sample_cta_id": "lp_view_collection"
       }
     },
     "why": {
