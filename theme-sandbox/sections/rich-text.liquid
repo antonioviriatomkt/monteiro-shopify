@@ -113,7 +113,7 @@
         <div class="button-row inherit-colors" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.3s"{% if section.settings.button_2_label != blank %} style="display:flex;flex-wrap:wrap;gap:16px;justify-content:{{ rt_justify }};"{% endif %}>
           <a data-cc-animate-click class="
             {% if section.settings.button_style != 'auto' %}button-custom {% endif %}
-            {% if section.settings.button_style == 'link' %}link-display {% if section.settings.enlarge_text %}type-2{% endif %}{% else %}button {% if section.settings.button_style == 'secondary' %}alt{% endif %}{% endif %}" href="{{ section.settings.button_link }}">
+            {% if section.settings.button_style == 'link' %}link-display {% if section.settings.enlarge_text %}type-2{% endif %}{% else %}button {% if section.settings.button_style == 'secondary' %}alt{% endif %}{% endif %}" href="{{ section.settings.button_link }}{% if section.settings.button_anchor != blank %}#{{ section.settings.button_anchor | remove: '#' | strip }}{% endif %}">
             {{ section.settings.button_label | escape }}
           </a>
           {%- if section.settings.button_2_label != blank -%}
@@ -205,6 +205,12 @@
         "type": "url",
         "id": "button_link",
         "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "button_anchor",
+        "label": "Button link anchor (optional)",
+        "info": "Section id on the target page, without #. Keeps the link localised, e.g. quality-sustainability."
       },
       {
         "type": "text",
