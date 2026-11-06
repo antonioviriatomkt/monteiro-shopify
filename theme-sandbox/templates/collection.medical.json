@@ -17,7 +17,7 @@
         "title_size": 46,
         "title_width": 26,
         "heading_h1": true,
-        "text": "<p>Monteiro's medical-grade fabrics are technical coated textiles engineered for medical devices, clinical equipment and specialist medical seating — the <strong>Mediflex</strong>, <strong>Electra</strong> and <strong>Flora</strong> ranges, made in Portugal.</p><p>Furnishing general hospital, clinic or care-home seating? Browse our <a href='/collections/healthcare' title='Healthcare upholstery fabrics'>healthcare upholstery fabrics</a>.</p>",
+        "text": "<p>Monteiro's medical-grade fabrics are technical coated textiles engineered for medical devices, clinical equipment and specialist medical seating — the <strong>Mediflex</strong>, <strong>Electra</strong> and <strong>CHANCE Classic</strong> ranges, made in Portugal.</p><p>Furnishing general hospital, clinic or care-home seating? Browse our <a href='/collections/healthcare' title='Healthcare upholstery fabrics'>healthcare upholstery fabrics</a>.</p>",
         "image_width": 120,
         "button_label": "",
         "button_link": "",
@@ -125,14 +125,14 @@
     "specs": {
       "type": "spec-table",
       "blocks": {
-        "s1": { "type": "spec", "settings": { "label": "Range", "value": "Mediflex, Electra and Flora" } },
+        "s1": { "type": "spec", "settings": { "label": "Range", "value": "Mediflex, Electra and CHANCE Classic" } },
         "s2": { "type": "spec", "settings": { "label": "Material", "value": "Technical, medical-grade coated fabric" } },
         "s3": { "type": "spec", "settings": { "label": "Antimicrobial & antifungal", "value": "Yes — inhibits bacteria, fungi and mould" } },
         "s4": { "type": "spec", "settings": { "label": "Disinfection", "value": "Wipe-clean; compatible with alcohol and diluted-bleach disinfectants" } },
         "s5": { "type": "spec", "settings": { "label": "Fluid barrier", "value": "Waterproof, non-absorbent surface" } },
         "s6": { "type": "spec", "settings": { "label": "Stretch", "value": "Bi-elastic options for shaped and moulded surfaces (Mediflex)" } },
         "s7": { "type": "spec", "settings": { "label": "Abrasion resistance", "value": "Heavy-duty, contract grade" } },
-        "s8": { "type": "spec", "settings": { "label": "Flame retardancy", "value": "By fabric — Flora: FMVSS302, EN 1021-1/2, BS 5852 Crib 5, IMO FTP Part 8 · Mediflex: FMVSS302, EN 1021-1/2, IMO FTP Part 8, Cal. TB 117, NFPA 260 · Electra: FMVSS302, EN 1021-1/2, Cal. TB 117, NFPA 260" } },
+        "s8": { "type": "spec", "settings": { "label": "Flame retardancy", "value": "By fabric — Mediflex: FMVSS302, EN 1021-1/2, IMO FTP Part 8, Cal. TB 117, NFPA 260 · Electra: FMVSS302, EN 1021-1/2, Cal. TB 117, NFPA 260 · CHANCE Classic: FMVSS302, EN 1021-1/2, EN 597-1/2, IMO FTP Part 8, Cal. TB 117, NFPA 260" } },
         "s9": { "type": "spec", "settings": { "label": "Phthalates", "value": "Phthalate-free" } },
         "s10": { "type": "spec", "settings": { "label": "Chemical compliance", "value": "REACH-compliant" } },
         "s11": { "type": "spec", "settings": { "label": "Certificates", "value": "Test standards and certificates listed per fabric on the technical data sheet" } },
@@ -178,7 +178,7 @@
         "crumb_current": "Medical-Grade Upholstery Fabrics",
         "emit_collectionpage": true,
         "cp_name": "Medical-Grade Upholstery Fabrics",
-        "cp_description": "Medical-grade antimicrobial coated fabrics — Mediflex, Electra and Flora — for medical devices, clinical equipment and specialist medical seating. Fluid-proof, disinfectant-tolerant, phthalate-free and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
+        "cp_description": "Medical-grade antimicrobial coated fabrics — Mediflex, Electra and CHANCE Classic — for medical devices, clinical equipment and specialist medical seating. Fluid-proof, disinfectant-tolerant, phthalate-free and REACH-compliant. Made in Portugal by Monteiro Fabrics.",
         "cp_url": "https://www.monteirofabrics.com/collections/medical"
       }
     },
