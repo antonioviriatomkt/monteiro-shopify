@@ -1,0 +1,6 @@
+-- 2026-11-23 audit E-01/F-04: the ±10 min dedup in signals_ingest_lead raced — parallel beacons from
+-- repeat clicks each saw no earlier row and all inserted (9 rows in 26 s on 16/11). Fix: a
+-- transaction-scoped advisory lock per email+kind before the lookup:
+--   perform pg_advisory_xact_lock(hashtextextended('signals_ingest_lead|' || v_email || '|' || v_kind, 0));
+-- Applied 23/11 via the Supabase connector; the rest of the body is unchanged
+-- (`select pg_get_functiondef('public.signals_ingest_lead(text,jsonb)'::regprocedure)`).

@@ -193,6 +193,9 @@
   document.addEventListener('submit', function (ev) {
     var f = ev.target;
     if (!f || !f.matches || !f.matches('form[action*="/contact"]')) return;
+    /* One lead_submitted per send (2026-11-23): contact-block clears the flag if the send resets. */
+    if (f.getAttribute('data-cb-captured')) return;
+    f.setAttribute('data-cb-captured', '1');
     var fd = new FormData(f);
     var email = (fd.get('contact[email]') || '').trim().toLowerCase();
     var isNewsletter = (fd.get('contact[tags]') || '').indexOf('newsletter') !== -1 || f.id === 'footer_newsletter_signup';

@@ -4,6 +4,39 @@
   custom fields (Company, Phone, Country, Sector) are emailed as contact[...].
 {% endcomment %}
 
+{%- comment -%}
+  Business-email rule + double-send guard (2026-11-23, audit E-01/F-04). Strings per locale,
+  since the rest of the form has no locale file. Personal (free-mail) addresses are blocked in
+  the browser before the native POST, the beacon and PostHog's lead_submitted.
+{%- endcomment -%}
+{%- assign cb_lang = request.locale.iso_code | slice: 0, 2 -%}
+{%- case cb_lang -%}
+  {%- when 'pt' -%}
+    {%- assign cb_t_hint = 'Use o email da sua empresa. Não são aceites endereços pessoais (Gmail, Hotmail, Yahoo…).' -%}
+    {%- assign cb_t_err = 'Indique o email da sua empresa. Este formulário não aceita endereços de email pessoais.' -%}
+    {%- assign cb_t_sending = 'A enviar…' -%}
+  {%- when 'fr' -%}
+    {%- assign cb_t_hint = 'Utilisez votre adresse e-mail professionnelle. Les adresses personnelles (Gmail, Hotmail, Yahoo…) ne sont pas acceptées.' -%}
+    {%- assign cb_t_err = 'Veuillez saisir votre adresse e-mail professionnelle. Ce formulaire n’accepte pas les adresses personnelles.' -%}
+    {%- assign cb_t_sending = 'Envoi…' -%}
+  {%- when 'de' -%}
+    {%- assign cb_t_hint = 'Bitte verwenden Sie Ihre geschäftliche E-Mail-Adresse. Private Adressen (Gmail, Hotmail, Yahoo…) werden nicht akzeptiert.' -%}
+    {%- assign cb_t_err = 'Bitte geben Sie Ihre geschäftliche E-Mail-Adresse ein. Private E-Mail-Adressen sind in diesem Formular nicht möglich.' -%}
+    {%- assign cb_t_sending = 'Wird gesendet…' -%}
+  {%- when 'es' -%}
+    {%- assign cb_t_hint = 'Utilice el correo electrónico de su empresa. No se aceptan direcciones personales (Gmail, Hotmail, Yahoo…).' -%}
+    {%- assign cb_t_err = 'Introduzca el correo electrónico de su empresa. Este formulario no admite direcciones personales.' -%}
+    {%- assign cb_t_sending = 'Enviando…' -%}
+  {%- when 'it' -%}
+    {%- assign cb_t_hint = 'Utilizzi l’indirizzo e-mail aziendale. Gli indirizzi personali (Gmail, Hotmail, Yahoo…) non sono accettati.' -%}
+    {%- assign cb_t_err = 'Inserisca l’indirizzo e-mail aziendale. Questo modulo non accetta indirizzi e-mail personali.' -%}
+    {%- assign cb_t_sending = 'Invio in corso…' -%}
+  {%- else -%}
+    {%- assign cb_t_hint = 'Please use your company email address. Personal addresses (Gmail, Hotmail, Yahoo…) are not accepted.' -%}
+    {%- assign cb_t_err = 'Please enter your company email address. Personal email addresses can’t be used with this form.' -%}
+    {%- assign cb_t_sending = 'Sending…' -%}
+{%- endcase -%}
+
 <div class="section-contact-block" data-section-type="contact-block"
      style="background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
   {% assign accent = section.settings.accent %}
@@ -35,6 +68,10 @@
       display: inline-block; padding: 15px 38px; font-size: 15px; font-weight: 600; letter-spacing: 0.03em;
       background: {{ accent }}; color: #fff; border: 0; border-radius: 0; cursor: pointer; transition: opacity .2s; }
     #cb-{{ section.id }} .cb-submit:hover { opacity: 0.9; }
+    #cb-{{ section.id }} .cb-submit[disabled] { opacity: 0.6; cursor: wait; }
+    #cb-{{ section.id }} .cb-hint { margin: 7px 0 0; font-size: 13px; line-height: 1.45; opacity: 0.75; }
+    #cb-{{ section.id }} .cb-email-err { margin: 7px 0 0; font-size: 13px; line-height: 1.45; color: #c0392b; font-weight: 600; }
+    #cb-{{ section.id }} .cb-field input.cb-invalid { border-color: #c0392b; }
 
     #cb-{{ section.id }} .cb-side { border-left: 3px solid {{ accent }}; padding-left: 24px; }
     #cb-{{ section.id }} .cb-side-title { font-size: 15px; font-weight: 600; letter-spacing: 0.02em; margin: 0 0 18px; }
@@ -98,7 +135,10 @@
             <div class="cb-row">
               <div class="cb-field">
                 <label for="cb-email">Email <span class="req">*</span></label>
-                <input type="email" id="cb-email" name="contact[email]" required value="{{ form.email }}">
+                <input type="email" id="cb-email" name="contact[email]" required autocomplete="email"
+                       aria-describedby="cb-email-hint-{{ section.id }} cb-email-err-{{ section.id }}" value="{{ form.email }}">
+                <p class="cb-hint" id="cb-email-hint-{{ section.id }}">{{ cb_t_hint }}</p>
+                <p class="cb-email-err" id="cb-email-err-{{ section.id }}" role="alert" hidden>{{ cb_t_err }}</p>
               </div>
               <div class="cb-field">
                 <label for="cb-phone">Phone</label>
@@ -179,6 +219,64 @@
   native submit is never delayed or blocked. Source: APP/workers/contact-to-sender/.
 {%- endcomment -%}
 {%- assign cb_endpoint = section.settings.lead_endpoint | default: 'https://contact-to-sender.antoniodias.workers.dev' -%}
+{%- comment -%}
+  Guard (2026-11-23). Runs at window/capture, i.e. before posthog-events.liquid (document/capture)
+  and the beacon below (form/bubble), so a blocked or repeated submit reaches neither:
+  - personal email → stop, show the inline error, focus the field;
+  - first valid submit → button disabled + «Sending…»; later user submits (clicks, Enter) are cancelled,
+    script re-submits (Shopify's hCaptcha) are let through.
+  Reset on bfcache return (Back button) and after 10 s in case the POST never navigated.
+{%- endcomment -%}
+<script>
+  (function () {
+    var root = document.getElementById('cb-{{ section.id }}');
+    var form = root && root.querySelector('form');
+    if (!form) return;
+    var input = form.elements['contact[email]'];
+    var err = document.getElementById('cb-email-err-{{ section.id }}');
+    var btn = form.querySelector('.cb-submit');
+    var label = btn ? btn.textContent : '';
+    /* Free-mail providers: whole families (any TLD) + exact consumer domains. Exact names only, so
+       corporate domains of the same companies (orange.com, vodafone.com, att.com…) still pass. */
+    var FREE_FAMILY = /^(gmail|googlemail|hotmail|outlook|live|windowslive|yahoo|ymail|aol|icloud|gmx|yandex|protonmail|proton)\.[a-z.]+$/;
+    var FREE_EXACT = "me.com mac.com msn.com rocketmail.com aim.com web.de t-online.de freenet.de arcor.de mail.com email.com inbox.com mail.ru inbox.ru list.ru bk.ru rambler.ru ya.ru pm.me tutanota.com tutamail.com tuta.io zohomail.com zohomail.eu hushmail.com fastmail.com mailbox.org posteo.de posteo.net sapo.pt netcabo.pt clix.pt iol.pt vodafone.pt meo.pt free.fr orange.fr wanadoo.fr laposte.net sfr.fr neuf.fr bbox.fr libero.it virgilio.it tiscali.it alice.it tin.it email.it seznam.cz centrum.cz email.cz wp.pl o2.pl interia.pl onet.pl op.pl naver.com daum.net hanmail.net nate.com qq.com 163.com 126.com yeah.net sina.com sina.cn sohu.com foxmail.com 139.com rediffmail.com btinternet.com sky.com talktalk.net blueyonder.co.uk ntlworld.com virginmedia.com comcast.net verizon.net att.net sbcglobal.net bellsouth.net cox.net charter.net earthlink.net shaw.ca rogers.com sympatico.ca bigpond.com optusnet.com.au telus.net terra.com.br uol.com.br bol.com.br ig.com.br abv.bg ukr.net i.ua telenet.be skynet.be hetnet.nl ziggo.nl kpnmail.nl planet.nl bluewin.ch aon.at chello.at numericable.fr sunrise.ch terra.es terra.com telefonica.net".split(' ');
+    function isPersonal(v) {
+      var d = (v || '').trim().toLowerCase().split('@')[1] || '';
+      return !!d && (FREE_FAMILY.test(d) || FREE_EXACT.indexOf(d) !== -1);
+    }
+    function show(on) {
+      if (err) err.hidden = !on;
+      if (input) input.classList.toggle('cb-invalid', on);
+      if (input) input.setAttribute('aria-invalid', on ? 'true' : 'false');
+    }
+    if (input) {
+      input.addEventListener('blur', function () { if (input.value) show(isPersonal(input.value)); });
+      input.addEventListener('input', function () { if (err && !err.hidden && !isPersonal(input.value)) show(false); });
+    }
+    function reset() {
+      form.removeAttribute('data-cb-sending'); form.removeAttribute('data-cb-beaconed'); form.removeAttribute('data-cb-captured');
+      if (btn) { btn.disabled = false; btn.textContent = label; btn.removeAttribute('aria-busy'); }
+    }
+    window.addEventListener('submit', function (ev) {
+      if (ev.target !== form) return;
+      if (input && isPersonal(input.value)) {
+        ev.preventDefault(); ev.stopImmediatePropagation();
+        show(true); input.focus();
+        return;
+      }
+      if (form.getAttribute('data-cb-sending')) {
+        /* Only user-made repeats are cancelled; a script re-submit (Shopify's hCaptcha) passes. */
+        if (ev.isTrusted) { ev.preventDefault(); ev.stopImmediatePropagation(); }
+        return;
+      }
+      show(false);
+      form.setAttribute('data-cb-sending', '1');
+      if (btn) { btn.disabled = true; btn.setAttribute('aria-busy', 'true'); btn.textContent = {{ cb_t_sending | json }}; }
+      setTimeout(reset, 10000);
+    }, true);
+    window.addEventListener('pageshow', function (ev) { if (ev.persisted) reset(); });
+  })();
+</script>
 <script>
   (function () {
     var root = document.getElementById('cb-{{ section.id }}');
@@ -186,6 +284,8 @@
     if (!form || !navigator.sendBeacon) return;
     var url = {{ cb_endpoint | json }};
     form.addEventListener('submit', function () {
+      if (form.getAttribute('data-cb-beaconed')) return;   /* one copy per send (hCaptcha re-submits) */
+      form.setAttribute('data-cb-beaconed', '1');
       try {
         var v = function (n) { var el = form.elements[n]; return el ? el.value : ''; };
         var data = {
